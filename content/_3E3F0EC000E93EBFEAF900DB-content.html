@@ -1,0 +1,179 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Product Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93D6AAC4F0089-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Product Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Product Domain::Product Addendum Figures::Figure Pr.08 - Product Offering Price<br>
+</span><span class="ElementTitle">Diagram Figure Pr.08 - Product Offering Price<br>
+</span><span class="ElementDocumentation">The price of a ProductOffering or a bundle may be simple or quite complex.  A simple price could be the charge associated with the monthly rental of a cable modem. Or, a price could encompass many different components. A typical introductory wireless offering, for example, will have an activation cost, a monthly cost, a number of free minutes, a cost for extra minutes, and some sort of promotional component. It might also include a corporate discount for business users. Each of these elements must be described in order to paint an accurate picture of the overall price charged for any ProductOffering.  </br>This part of the SID model presents a set of components that can be combined to offer a complete and accurate description of the price charged for an offering. A secondary consideration is to define those components in such a way that they can be readily implemented in a typical billing system.</br>A ProductOffering may have any number of prices, each of which is made up of a single component or a composite of a number of components.  The Product Offering Price model employs the composite/component modeling pattern used throughout the SID to represent simple and complex prices, as illustrated in the figure below.</br>ProductOfferingPrices can be dependent upon a ProductSpecCharValueUse as shown in the figure above.  For example, a provider may offer a photo printing service for mobile phone pictures.  The price may depend on the size of the photo or the type of finish of the photo; $.20 for a 3 by 5, plain finish, $.25 for a 5 by 7, plain finish, and so forth.  The values associated with the size (3 by 5, 5 by 7, and so forth) and finish (plain, glossy, matte, and so forth) can be stored as ProductSpecCharacteristicValues.</br>ProductOfferingPrice, which may have a complex structure (composition) and involve complex billing / rating capabilities, could be defined in a ”pricing catalog” as a reusable component pre-defined for given ProductSpecs and then selected for use by the ProductOffering to be published in the ProductCatalog.</br>The ProductSpecification to ProductOfferingPrice association allows the use of the ProductOfferingPrice entity as a “pricing specification component” defined for ProductSpecifications.  For a given ProductSpecification, the “pricing catalog” may contain several pricing component candidates for use. When defining the ProductOffering, pre-defined pricing components (ProductOfferingPrices) for ProductSpecs, can be selected to value the ProductOffering.  Existing pricing components may also be individually altered or new ones defined for a given ProductOffering.</br>Figure Pr.8 also shows an association between ProductOfferingPrice and PriceEvent.  The PriceEvent business entity represents an occurrence (happening) or schedule that triggers the creation of a billing charge for a ProductOffering.  For example, a PriceEvent instance may represent the end of a month when monthly recurring billing charges are created.   In some cases, the creation of a charge associated with a ProductOfferingPrice may be triggered by multiple events.  For example, a penalty (ProductOfferingPrice) may be triggered by over- or under-usage of a service.  Under- and over-usage are represented as two separate PriceEvent entity instances.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EBFEAF900DB.GIF" alt="Figure Pr.08 - Product Offering Price" usemap="#map_3E3F0EC000E93EBFEAF900DB"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EBFEAF900DB">
+<area shape="rect" coords="0,0,0,0" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_L-_P.wG.i.oE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_L_EIQG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_L-_P.wG.i.oE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_L_EIQG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_L-_P.wG.i.oE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="182,116,186,128" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_L-_P.wG.i.oE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_L_EIQG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="181,62,186,74" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_L_EIQG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="112,89,300,101" href="_L-8.z.gG.i.oE.e.iDY.a8.o.oHA01Q-content.html" alt="ProductSpecCharUseEnumeratedBy">
+<area shape="poly" coords="204,57,204,134,194,134,194,57,204,57" href="_L-8.z.gG.i.oE.e.iDY.a8.o.oHA01Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_3E3F0EC000E94237A36B0224" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E94237A36B02A6" alt="_productSpecCharacteristicValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_3E3F0EC000E94237A36B0224" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E94237A36B02A6" alt="_productSpecCharacteristicValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_3E3F0EC000E94237A36B0224" alt="_productOfferingPrice">
+<area shape="rect" coords="369,279,373,291" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_3E3F0EC000E94237A36B0224" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E94237A36B02A6" alt="_productSpecCharacteristicValueUse">
+<area shape="rect" coords="243,185,247,197" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E94237A36B02A6" alt="_productSpecCharacteristicValueUse">
+<area shape="rect" coords="248,246,417,258" href="_3E3F0EC000E94237A3690307-content.html" alt="ProdSpecCharValueUseInfuences">
+<area shape="poly" coords="242,182,242,266,411,266,411,276,232,276,232,182,242,182" href="_3E3F0EC000E94237A3690307-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.w.k.u1.sNH.fE.eKHYL.i.dR.s2GF.g" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.w.k.y.gENH.fE.eKHYL.i.dR.s2GF.g" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.w.k.u1.sNH.fE.eKHYL.i.dR.s2GF.g" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.w.k.y.gENH.fE.eKHYL.i.dR.s2GF.g" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.w.k.u1.sNH.fE.eKHYL.i.dR.s2GF.g" alt="prodSpecCharValueUse">
+<area shape="rect" coords="278,164,282,176" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.w.k.u1.sNH.fE.eKHYL.i.dR.s2GF.g" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.w.k.y.gENH.fE.eKHYL.i.dR.s2GF.g" alt="productOffering">
+<area shape="rect" coords="423,164,427,176" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.w.k.y.gENH.fE.eKHYL.i.dR.s2GF.g" alt="productOffering">
+<area shape="rect" coords="283,140,425,152" href="_.w.k.sZ.cNH.fE.eKHYL.i.dR.s2GF.g-content.html" alt="ProductOfferingDetermines">
+<area shape="poly" coords="439,164,270,164,270,154,439,154,439,164" href="_.w.k.sZ.cNH.fE.eKHYL.i.dR.s2GF.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.n.m.u.dQG.i.nE.e.iDY.a8.o.oHA01Q" alt="productSpecCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DBBF30316-content.html#_.n.m.zV.wG.i.nE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.n.m.u.dQG.i.nE.e.iDY.a8.o.oHA01Q" alt="productSpecCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DBBF30316-content.html#_.n.m.zV.wG.i.nE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="0,0,0,0" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.n.m.u.dQG.i.nE.e.iDY.a8.o.oHA01Q" alt="productSpecCharacteristicValue">
+<area shape="rect" coords="132,224,137,236" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html#_.n.m.u.dQG.i.nE.e.iDY.a8.o.oHA01Q" alt="productSpecCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DBBF30316-content.html#_.n.m.zV.wG.i.nE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="133,184,137,196" href="_3E3F0EC000E93C5DBBF30316-content.html#_.n.m.zV.wG.i.nE.e.iDY.a8.o.oHA01Q" alt="prodSpecCharValueUse">
+<area shape="rect" coords="47,199,225,211" href="_.n.m.rZ8G.i.nE.e.iDY.a8.o.oHA01Q-content.html" alt="ProdSpecCharValueUseDefinedBy">
+<area shape="poly" coords="155,182,155,239,145,239,145,182,155,182" href="_.n.m.rZ8G.i.nE.e.iDY.a8.o.oHA01Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_C.m.iS.oG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_C.m.nLIG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_C.m.iS.oG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_C.m.nLIG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_C.m.iS.oG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="299,34,303,46" href="_3E3F0EC000E93C5DB97B0118-content.html#_C.m.iS.oG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_C.m.nLIG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecification">
+<area shape="rect" coords="768,134,773,146" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html#_C.m.nLIG.i.oE.e.iDY.a8.o.oHA01Q" alt="productSpecification">
+<area shape="rect" coords="429,34,632,46" href="_C.m.f2YG.i.oE.e.iDY.a8.o.oHA01Q-content.html" alt="ProductSpecificationFurtherDefinedBy">
+<area shape="poly" coords="757,153,757,59,283,59,283,49,767,49,767,153,757,153" href="_C.m.f2YG.i.oE.e.iDY.a8.o.oHA01Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E947BF8CFF038A" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E947BF8D00006D" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E947BF8CFF038A" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E947BF8D00006D" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E947BF8CFF038A" alt="_productOfferingPrice">
+<area shape="rect" coords="583,271,589,284" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E947BF8CFF038A" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E947BF8D00006D" alt="_productSpecification">
+<area shape="rect" coords="748,202,754,215" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E947BF8D00006D" alt="_productSpecification">
+<area shape="rect" coords="677,235,908,248" href="_3E3F0EC000E947BF8CFD029F-content.html" alt="ProductSpecificationPossiblyValuedBy">
+<area shape="poly" coords="773,201,773,292,575,292,575,283,763,283,763,201,773,201" href="_3E3F0EC000E947BF8CFD029F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EBFC9AE02C1-content.html#_3E3F0EC000E93EE7F12C0239" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EE7F12C023A" alt="_priceEvent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EBFC9AE02C1-content.html#_3E3F0EC000E93EE7F12C0239" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EE7F12C023A" alt="_priceEvent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EBFC9AE02C1-content.html#_3E3F0EC000E93EE7F12C0239" alt="_productOfferingPrice">
+<area shape="rect" coords="588,336,592,350" href="_3E3F0EC000E93EBFC9AE02C1-content.html#_3E3F0EC000E93EE7F12C0239" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EE7F12C023A" alt="_priceEvent">
+<area shape="rect" coords="825,336,829,350" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EE7F12C023A" alt="_priceEvent">
+<area shape="rect" coords="602,306,821,320" href="_3E3F0EC000E93EE7F12C0238-content.html" alt="ComponentProdOfferPriceGovernedBy">
+<area shape="poly" coords="838,332,575,332,575,322,838,322,838,332" href="_3E3F0EC000E93EE7F12C0238-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="513,248,517,262" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="513,202,517,216" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="507,228,651,242" href="_3E3F0EC000E93D6BDB0A03C7-content.html" alt="ProductOfferingValuedBy">
+<area shape="poly" coords="503,202,503,264,493,264,493,202,503,202" href="_3E3F0EC000E93D6BDB0A03C7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E85197B02D7-content.html" alt="Generalization">
+<area shape="poly" coords="673,412,673,407,489,407,489,365,499,365,499,397,683,397,683,412,673,412" href="_3E3F0EC000E93E85197B02D7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E851976029E-content.html" alt="Generalization">
+<area shape="poly" coords="324,426,324,397,489,397,489,365,499,365,499,407,334,407,334,426,324,426" href="_3E3F0EC000E93E851976029E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E85192D004A-content.html#_3E3F0EC000E93E85199C00C2" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93E85199C00EA" alt="_compositeProdOfferPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E85192D004A-content.html#_3E3F0EC000E93E85199C00C2" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93E85199C00EA" alt="_compositeProdOfferPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E85192D004A-content.html#_3E3F0EC000E93E85199C00C2" alt="_productOfferingPrice">
+<area shape="rect" coords="395,319,399,333" href="_3E3F0EC000E93E85192D004A-content.html#_3E3F0EC000E93E85199C00C2" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93E85199C00EA" alt="_compositeProdOfferPrice">
+<area shape="rect" coords="266,410,270,424" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93E85199C00EA" alt="_compositeProdOfferPrice">
+<area shape="rect" coords="149,315,370,329" href="_3E3F0EC000E93E85199803DD-content.html" alt="CompositeProdOfferPriceComprisedOf">
+<area shape="poly" coords="287,426,287,334,411,334,411,344,297,344,297,426,287,426" href="_3E3F0EC000E93E85199803DD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="109,134,272,185" href="_L.k.d.h0G.i.mE.e.iDY.a8.o.oHA01Q-content.html" alt="ProdSpecCharValueUse">
+<area shape="rect" coords="134,9,285,60" href="_.l.hV.wAG.i.lE.e.iDY.a8.o.oHA01Q-content.html" alt="ProductSpecCharUse">
+<area shape="rect" coords="9,239,214,290" href="_3E3F0EC000E93C5DBBF30316-content.html" alt="ProductSpecCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6D16180227" alt="brand">
+<area shape="rect" coords="681,153,843,204" href="_3E3F0EC000E93C5DB97B0118-content.html" alt="ProductSpecification">
+<area shape="rect" coords="417,336,567,351" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDBC900B4" alt="validFor">
+<area shape="rect" coords="417,320,567,335" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EC019DF02A2" alt="description">
+<area shape="rect" coords="417,304,567,319" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EBFBE720167" alt="name">
+<area shape="rect" coords="417,288,567,303" href="_3E3F0EC000E93CD366DF029E-content.html#_-.eXZ4H.u4E.e.m32PUJUD.d2.u.w" alt="ID">
+<area shape="rect" coords="411,264,577,368" href="_3E3F0EC000E93CD366DF029E-content.html" alt="ProductOfferingPrice">
+<area shape="rect" coords="838,302,948,353" href="_3E3F0EC000E93EBFC9AE02C1-content.html" alt="PriceEvent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="439,154,575,205" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="237,426,423,477" href="_3E3F0EC000E93E85192D004A-content.html" alt="CompositeProdOfferPrice">
+<area shape="rect" coords="587,468,769,483" href="_3E3F0EC000E93E28C3CD0383-content.html#_3E3F0EC000E9423B2F7F0179" alt="price">
+<area shape="rect" coords="587,452,769,467" href="_3E3F0EC000E93E28C3CD0383-content.html#_3E3F0EC000E93EBFC24103DF" alt="unitOfMeasure">
+<area shape="rect" coords="587,436,769,451" href="_3E3F0EC000E93E28C3CD0383-content.html#_3E3F0EC000E93EBFC9650243" alt="priceType">
+<area shape="rect" coords="581,412,779,503" href="_3E3F0EC000E93E28C3CD0383-content.html" alt="ComponentProdOfferPrice">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Pr.08 - Product Offering Price</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93D6AAC4F0089-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Product Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

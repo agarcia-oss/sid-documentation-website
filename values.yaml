@@ -1,0 +1,40 @@
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: registry-soe-tc.shared-nonprod.cloud.si.orange.es/thirdparties
+  name: externaldns
+  tag: 0.5.6
+  pullPolicy: IfNotPresent
+
+nameOverride: external-dns
+fullnameOverride: external-dns
+sistema: arqfun
+component: tools
+namespace: tools
+
+deployment:
+  restartPolicy: Always
+  serviceAccount: tools-admin
+  terminationGracePeriodSeconds: 30
+  containers:
+    args:
+    - --source=service
+    - --source=ingress
+    - --domain-filter=cloud-test.cloud.si.orange.es
+    - --provider=aws
+    - --aws-zone-type=private
+    - --registry=txt
+    - --txt-prefix=txt.
+    - --txt-owner-id=arqfun
+    ports: {}
+    resources: {}
+    env:
+      - name: HTTP_PROXY
+        value: http://proxy.cloud-test.cloud.si.orange.es:3128
+      - name: HTTPS_PROXY
+        value: http://proxy.cloud-test.cloud.si.orange.es:3128
+      - name: NO_PROXY
+        value: 100.64.0.0/10,172.20.0.0/16,localhost,127.0.0.1,169.254.169.254,10.159.0.0/16,10.113.0.0/16,.si.orange.es,.internal,.cosmos.es.ftgroup,.svc

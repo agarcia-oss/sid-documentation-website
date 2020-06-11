@@ -1,0 +1,247 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Party Payment Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_D2.mGILQ.bE.e.e.lCY.z.gV3C0.i.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Party Payment Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Business Partner Domain::Party Bill Collection ABE::Party Payment ABE::Party Payment Addendum Figures::PR.01 - Payment Method and Payment Plan<br>
+</span><span class="ElementTitle">Diagram PR.01 - Payment Method and Payment Plan<br>
+</span><span class="ElementDocumentation">A PartyPayment represents the transfer of wealth from one Party to another. So it is received from a PartyRole and made to a PartyRole.</br>The PartyPayment might be either inbound or outbound and always uses a PaymentMethod.</br>A PartyPayment might specify the BankAccount to which the payment is transferred.</br>The diagram below shows different types of PaymentMethods identified at the present time, currently allowed for paying due amounts such as CheckPM, DigitalWalletPM, LoyaltyBurnPM...</br>As all the PaymentMethod might not be yet described as a sub-class of PaymentMethod, a PaymentMethod might be described a PaymentMethodSpecification defining the characteristics.</br>ThirdPartyCollectionPM is an example of payment method, using which payment can be made through the third party, such as bank transfer, payment tool(like PayPal, Alipay).</br>A PaymentMethod is owned by a PartyRole.</br>A PaymentPlan may specify PaymentMethods to use for auto-pay. If several PaymentMethod are specified, a priority is given to each of them. Over time, PartyPayments are collected according to the PaymentPlan.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_C.o.m90H8YE.eW6B5Y3R6.iX.i.w.GIF" alt="PR.01 - Payment Method and Payment Plan" usemap="#map_C.o.m90H8YE.eW6B5Y3R6.iX.i.w"></td>
+</tr>
+</table>
+<map name="map_C.o.m90H8YE.eW6B5Y3R6.iX.i.w">
+<area shape="rect" coords="0,0,0,0" href="_1.b.a.c.sHGCE.eWQ.d.v.hRAXKO.sA-content.html" alt="Generalization">
+<area shape="poly" coords="206,573,206,552,438,552,438,495,448,495,448,562,216,562,216,573,206,573" href="_1.b.a.c.sHGCE.eWQ.d.v.hRAXKO.sA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.tU4.cE.eO_X.pEX.s37Q.e.w-content.html#_F.o.kS4F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyCollectionPM">
+<area shape="rect" coords="0,0,0,0" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html#_F.o.u.q8F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyPaymentAgency">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.tU4.cE.eO_X.pEX.s37Q.e.w-content.html#_F.o.kS4F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyCollectionPM">
+<area shape="rect" coords="0,0,0,0" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html#_F.o.u.q8F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyPaymentAgency">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.tU4.cE.eO_X.pEX.s37Q.e.w-content.html#_F.o.kS4F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyCollectionPM">
+<area shape="rect" coords="999,623,1003,635" href="_.a.i.f.w.tU4.cE.eO_X.pEX.s37Q.e.w-content.html#_F.o.kS4F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyCollectionPM">
+<area shape="rect" coords="0,0,0,0" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html#_F.o.u.q8F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyPaymentAgency">
+<area shape="rect" coords="855,89,860,101" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html#_F.o.u.q8F.u.tE.eWQJND.nU7AOQA" alt="thirdPartyPaymentAgency">
+<area shape="rect" coords="896,197,994,209" href="_F.o.d.lMF.u.tE.eWQJND.nU7AOQA-content.html" alt="TPPAOwnsTPCPM">
+<area shape="poly" coords="850,78,1008,78,1008,617,988,617,988,607,999,607,999,88,850,88,850,78" href="_F.o.d.lMF.u.tE.eWQJND.nU7AOQA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.p0.kF8FL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethodSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_.p0.oXYFL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.p0.kF8FL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethodSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_.p0.oXYFL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.p0.kF8FL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethodSpecification">
+<area shape="rect" coords="739,472,756,484" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.p0.kF8FL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethodSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_.p0.oXYFL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="506,472,510,484" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_.p0.oXYFL.kE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="532,450,730,462" href="_.p0.h.p.sFL.kE.eWPA.vIYYW.iWM.g-content.html" alt="PaymentMethodSpecificationSpecifies">
+<area shape="poly" coords="499,459,765,459,765,469,499,469,499,459" href="_.p0.h.p.sFL.kE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_3N23.wFL.jE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_3N57EFL.jE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_3N23.wFL.jE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_3N57EFL.jE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_3N23.wFL.jE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="345,449,350,461" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_3N23.wFL.jE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_3N57EFL.jE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="212,449,216,461" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_3N57EFL.jE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="216,424,342,436" href="_3N.z0.cFL.jE.eWPA.vIYYW.iWM.g-content.html" alt="PaymentMethodUsedBy">
+<area shape="poly" coords="207,436,361,436,361,446,207,446,207,436" href="_3N.z0.cFL.jE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_RPRIAFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_RPU.yYFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_RPRIAFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_RPU.yYFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_RPRIAFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="81,385,85,397" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_RPRIAFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlanPaymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_RPU.yYFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlan">
+<area shape="rect" coords="81,329,86,341" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_RPU.yYFL.gE.eWPA.vIYYW.iWM.g" alt="paymentPlan">
+<area shape="rect" coords="28,357,182,369" href="_RPO.r.wFL.gE.eWPA.vIYYW.iWM.g-content.html" alt="PaymentPlanUsesForAutoPay">
+<area shape="poly" coords="104,323,104,404,94,404,94,323,104,323" href="_RPO.r.wFL.gE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.w.d.mT.oFL.dE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.w.d.q.lEFL.dE.eWPA.vIYYW.iWM.g" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.w.d.mT.oFL.dE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.w.d.q.lEFL.dE.eWPA.vIYYW.iWM.g" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.w.d.mT.oFL.dE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="511,409,515,421" href="_3E3F0EC000E93C2319BC02EE-content.html#_.w.d.mT.oFL.dE.eWPA.vIYYW.iWM.g" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.w.d.q.lEFL.dE.eWPA.vIYYW.iWM.g" alt="partyRole">
+<area shape="rect" coords="765,284,770,296" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.w.d.q.lEFL.dE.eWPA.vIYYW.iWM.g" alt="partyRole">
+<area shape="rect" coords="553,379,719,391" href="_.w.d.j3YFL.dE.eWPA.vIYYW.iWM.g-content.html" alt="PartyRoleOwnsPaymentMethod">
+<area shape="poly" coords="754,280,754,408,499,408,499,398,744,398,744,280,754,280" href="_.w.d.j3YFL.dE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.n.b.o8YAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyPayment2">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.n.b.b.hAAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.n.b.o8YAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyPayment2">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.n.b.b.hAAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.n.b.o8YAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyPayment2">
+<area shape="rect" coords="520,214,524,226" href="_3E3F0EC000E93C2319BC02EE-content.html#_.n.b.o8YAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyPayment2">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.n.b.b.hAAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyRole">
+<area shape="rect" coords="680,214,685,226" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.n.b.b.hAAAGE.eW0V.o.o.o.iZB.dW.w" alt="partyRole">
+<area shape="rect" coords="544,189,658,201" href="_.n.bS-IAAGE.eW0V.o.o.o.iZB.dW.w-content.html" alt="PartyPaymentMadeTo">
+<area shape="poly" coords="691,213,515,213,515,203,691,203,691,213" href="_.n.bS-IAAGE.eW0V.o.o.o.iZB.dW.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tZ.k4.cE.eO_X.pEX.s37Q.e.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.dU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tZ.k4.cE.eO_X.pEX.s37Q.e.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.dU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tZ.k4.cE.eO_X.pEX.s37Q.e.w" alt="partyPayment">
+<area shape="rect" coords="520,264,524,276" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tZ.k4.cE.eO_X.pEX.s37Q.e.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.dU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="670,264,687,276" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.dU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="535,243,681,255" href="_.a.eOU3E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyPaymentReceivedFrom">
+<area shape="poly" coords="691,263,515,263,515,253,691,253,691,263" href="_.a.eOU3E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.t04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Generalization">
+<area shape="poly" coords="765,107,765,179,755,179,755,107,765,107" href="_.a.i.f.w.t04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_N.hL.p.gFL.cE.eWPA.vIYYW.iWM.g" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_N.hSXMFL.cE.eWPA.vIYYW.iWM.g" alt="bankAccount">
+<area shape="rect" coords="0,0,0,0" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_N.hL.p.gFL.cE.eWPA.vIYYW.iWM.g" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_N.hSXMFL.cE.eWPA.vIYYW.iWM.g" alt="bankAccount">
+<area shape="rect" coords="0,0,0,0" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_N.hL.p.gFL.cE.eWPA.vIYYW.iWM.g" alt="partyPayment">
+<area shape="rect" coords="412,156,416,168" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_N.hL.p.gFL.cE.eWPA.vIYYW.iWM.g" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_N.hSXMFL.cE.eWPA.vIYYW.iWM.g" alt="bankAccount">
+<area shape="rect" coords="406,100,423,112" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_N.hSXMFL.cE.eWPA.vIYYW.iWM.g" alt="bankAccount">
+<area shape="rect" coords="367,128,505,140" href="_N.hGJ8FL.cE.eWPA.vIYYW.iWM.g-content.html" alt="PartyPaymentTransferedTo">
+<area shape="poly" coords="435,94,435,174,425,174,425,94,435,94" href="_N.hGJ8FL.cE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_EL.nLEFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="301,633,301,552,438,552,438,495,448,495,448,562,310,562,310,633,301,633" href="_EL.nLEFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_CV.nS.wFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="361,573,361,552,438,552,438,495,448,495,448,562,370,562,370,573,361,573" href="_CV.nS.wFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_B.q.wX4FJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="446,633,446,562,438,562,438,495,448,495,448,552,455,552,455,633,446,633" href="_B.q.wX4FJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_BJ.t.gUFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="488,573,488,562,438,562,438,495,448,495,448,552,498,552,498,573,488,573" href="_BJ.t.gUFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_A.p.oSEFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="669,573,669,562,438,562,438,495,448,495,448,552,679,552,679,573,669,573" href="_A.p.oSEFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_AMT.c4FJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="881,573,881,562,438,562,438,495,448,495,448,552,891,552,891,573,881,573" href="_AMT.c4FJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.jP.yVEPPTE.eS-G.dQ.j.w2A.r.b.g-content.html" alt="Generalization">
+<area shape="poly" coords="600,748,600,721,669,721,669,690,679,690,679,731,610,731,610,748,600,748" href="_.jP.yVEPPTE.eS-G.dQ.j.w2A.r.b.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.o.b_L.tPO8E.eS-G.dQ.j.w2A.r.b.g-content.html" alt="Generalization">
+<area shape="poly" coords="725,748,725,731,669,731,669,690,679,690,679,721,735,721,735,748,725,748" href="_.o.b_L.tPO8E.eS-G.dQ.j.w2A.r.b.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.h04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.h04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.h04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="442,327,446,339" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.h04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="442,377,447,389" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="356,352,488,364" href="_.a.i.f.w.s.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyPaymentMadeUsing">
+<area shape="poly" coords="425,394,425,323,435,323,435,394,425,394" href="_.a.i.f.w.s.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.o04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.e04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.o04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.e04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.o04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="317,245,321,257" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.o04.cE.eO_X.pEX.s37Q.e.w" alt="_partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.e04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="198,245,202,257" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.e04.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="178,223,341,235" href="_.a.i.f.w.vE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PaymentPlanMadeAccordingTo">
+<area shape="poly" coords="175,232,345,232,345,242,175,242,175,232" href="_.a.i.f.w.vE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="171,573,299,624" href="_.s48FUHGCE.eWQ.d.v.hRAXKO.sA-content.html" alt="DigitalWalletPM">
+<area shape="rect" coords="771,505,952,520" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_7.p-L0FL.lE.eWPA.vIYYW.iWM.g" alt="validFor">
+<area shape="rect" coords="771,489,952,504" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_.j.l1.dYFL.lE.eWPA.vIYYW.iWM.g" alt="description">
+<area shape="rect" coords="771,473,952,488" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_.i.aJ.tYFL.lE.eWPA.vIYYW.iWM.g" alt="name">
+<area shape="rect" coords="771,458,952,473" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html#_AL.l84FL.mE.eWPA.vIYYW.iWM.g" alt="ID">
+<area shape="rect" coords="765,434,962,538" href="_-.s74.cFL.jE.eWPA.vIYYW.iWM.g-content.html" alt="PaymentMethodSpecification">
+<area shape="rect" coords="16,444,200,459" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_.t.gB.dUFL.fE.eWPA.vIYYW.iWM.g" alt="priority">
+<area shape="rect" coords="16,428,200,443" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html#_.sEUUUFL.fE.eWPA.vIYYW.iWM.g" alt="validFor">
+<area shape="rect" coords="9,404,209,476" href="_M.z6M.cFL.fE.eWPA.vIYYW.iWM.g-content.html" alt="PaymentPlanPaymentMethod">
+<area shape="rect" coords="697,251,821,266" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="697,235,821,250" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="697,219,821,234" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="697,203,821,218" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="691,179,831,283" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="670,59,852,110" href="_.a.i.f.w.tU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="ThirdPartyPaymentAgency">
+<area shape="rect" coords="346,65,513,80" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_.qOXS4.fO9E.eS-G.dQ.j.w2A.r.b.g" alt="validFor">
+<area shape="rect" coords="346,49,513,64" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_.qOXS3_O9E.eS-G.dQ.j.w2A.r.b.g" alt="bankAccountNumber">
+<area shape="rect" coords="346,33,513,48" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html#_.qOXS3.fO9E.eS-G.dQ.j.w2A.r.b.g" alt="type">
+<area shape="rect" coords="339,9,522,97" href="_.qOXS1PO9E.eS-G.dQ.j.w2A.r.b.g-content.html" alt="BankAccount">
+<area shape="rect" coords="791,613,980,628" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html#_ZGEVEPO9E.eS-G.dQ.j.w2A.r.b.g" alt="accountNameInThirdParty">
+<area shape="rect" coords="791,597,980,612" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html#__2.u.y.oOY.pE.d-.e.j.r.wF9U1.vR.w" alt="thirdPartyType">
+<area shape="rect" coords="785,573,990,645" href="_7MIE.sOY.pE.d-.e.j.r.wF9U1.vR.w-content.html" alt="ThirdPartyCollectionPM">
+<area shape="rect" coords="311,573,435,624" href="_P-WL0LUME.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyBurnPM">
+<area shape="rect" coords="685,748,798,799" href="_.o.b_L.s.vO8E.eS-G.dQ.j.w2A.r.b.g-content.html" alt="DebitCardPM">
+<area shape="rect" coords="545,748,661,799" href="_K8.bKIOY.pE.d-.e.j.r.wF9U1.vR.w-content.html" alt="CreditCardPM">
+<area shape="rect" coords="252,657,350,672" href="_.t.h.g_MPO1E.eS-G.dQ.j.w2A.r.b.g-content.html#_.t.h.g_M_O1E.eS-G.dQ.j.w2A.r.b.g" alt="checkID">
+<area shape="rect" coords="246,633,360,689" href="_.t.h.g_MPO1E.eS-G.dQ.j.w2A.r.b.g-content.html" alt="CheckPM">
+<area shape="rect" coords="392,657,507,672" href="_.x0A7QOY.oE.d-.e.j.r.wF9U1.vR.w-content.html#_E.kS.jYOY.pE.d-.e.j.r.wF9U1.vR.w" alt="cashierInfo">
+<area shape="rect" coords="386,633,517,689" href="_.x0A7QOY.oE.d-.e.j.r.wF9U1.vR.w-content.html" alt="CashPM">
+<area shape="rect" coords="617,661,767,676" href="_.o.b_L.oPO8E.eS-G.dQ.j.w2A.r.b.g-content.html#_.o.b_L.q.vO8E.eS-G.dQ.j.w2A.r.b.g" alt="CVV">
+<area shape="rect" coords="617,645,767,660" href="_.o.b_L.oPO8E.eS-G.dQ.j.w2A.r.b.g-content.html#_.o.b_L.qPO8E.eS-G.dQ.j.w2A.r.b.g" alt="expirationDate">
+<area shape="rect" coords="617,629,767,644" href="_.o.b_L.oPO8E.eS-G.dQ.j.w2A.r.b.g-content.html#_.o.b_L.p.vO8E.eS-G.dQ.j.w2A.r.b.g" alt="bankCardType">
+<area shape="rect" coords="617,613,767,628" href="_.o.b_L.oPO8E.eS-G.dQ.j.w2A.r.b.g-content.html#_.o.b_L.pPO8E.eS-G.dQ.j.w2A.r.b.g" alt="nameOnCard">
+<area shape="rect" coords="617,597,767,612" href="_.o.b_L.oPO8E.eS-G.dQ.j.w2A.r.b.g-content.html#_.o.b_L.o_O8E.eS-G.dQ.j.w2A.r.b.g" alt="cardNumber">
+<area shape="rect" coords="610,573,776,693" href="_.o.b_L.oPO8E.eS-G.dQ.j.w2A.r.b.g-content.html" alt="BankCardPM">
+<area shape="rect" coords="460,573,604,624" href="_WCF5.cL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html" alt="AccountBalancePM">
+<area shape="rect" coords="351,294,507,309" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.zU.zJ.gFJJE.eWPA.vIYYW.iWM.g" alt="description">
+<area shape="rect" coords="351,278,507,293" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_B.h4.s.kFJFE.eWPA.vIYYW.iWM.g" alt="status">
+<area shape="rect" coords="351,262,507,277" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_APC.k.oFJFE.eWPA.vIYYW.iWM.g" alt="direction">
+<area shape="rect" coords="351,246,507,261" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b.k4.cE.eO_X.pEX.s37Q.e.w" alt="remainingAmount">
+<area shape="rect" coords="351,230,507,245" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.bU4.cE.eO_X.pEX.s37Q.e.w" alt="date">
+<area shape="rect" coords="351,214,507,229" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.bE4.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="351,198,507,213" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.a04.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="345,174,517,326" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyPayment">
+<area shape="rect" coords="18,294,168,309" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.n.b.kY.cE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="maxTrialTimes">
+<area shape="rect" coords="18,278,168,293" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.nE4.cE.eO_X.pEX.s37Q.e.w" alt="status">
+<area shape="rect" coords="18,262,168,277" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.m04.cE.eO_X.pEX.s37Q.e.w" alt="type">
+<area shape="rect" coords="18,246,168,261" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.m.k4.cE.eO_X.pEX.s37Q.e.w" alt="priority">
+<area shape="rect" coords="18,230,168,245" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.l.eT.a.gE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="paymentPeriod">
+<area shape="rect" coords="18,214,168,229" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.j.pH.a.gE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="paymentDay">
+<area shape="rect" coords="18,198,168,213" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.h.d0A.kE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="totalAmount">
+<area shape="rect" coords="18,182,168,197" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_ZV1M0E.tIE.eW.b.rY.n6A.t.s.hB.g" alt="maxAmount">
+<area shape="rect" coords="18,166,168,181" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.qI.tUE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="validFor">
+<area shape="rect" coords="18,150,168,165" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.mU4.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="11,126,177,326" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PaymentPlan">
+<area shape="rect" coords="367,466,491,481" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.iP.jK.sFJHE.eWPA.vIYYW.iWM.g" alt="validFor">
+<area shape="rect" coords="367,450,491,465" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.hU4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="367,434,491,449" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.hE4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="367,418,491,433" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.g04.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="361,394,501,498" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PaymentMethod">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>PR.01 - Payment Method and Payment Plan</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_D2.mGILQ.bE.e.e.lCY.z.gV3C0.i.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Party Payment Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

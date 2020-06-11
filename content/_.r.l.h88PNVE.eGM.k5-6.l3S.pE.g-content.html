@@ -1,0 +1,154 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Customer Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E941C18CF80135-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Customer Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Customer Domain::Customer Addendum Figures::Figure C.22 - Dunning Scenario and Case<br>
+</span><span class="ElementTitle">Diagram Figure C.22 - Dunning Scenario and Case<br>
+</span><span class="ElementDocumentation">The Dunning ABE is part of the Customer Bill Collection ABE.</br>This section is intended to define the scope of information used by the dunning process.</br>More precisely, this section describes information produced and consumed by the level 3 business processes from eTOM </br>        ·1.1.1.11.3 Manage Customer Debt Collection</br>        ·and 1.1.1.1.14 Support Bill Payments &amp; Receivable Management</br>The diagram below presents the dunning catalogue and the corresponding cases.</br>Each telecommunication operator has to define its dunning strategy. This strategy is described by DunningScenario. Each DunningScenario contains the dunning rules to apply to a case, the order in which applying them, the events that trigger dunning rules evaluation, the actions that must be done etc</br>The DunningCaseRules are specified by DunningRule that is a type of PolicyRule.</br>This allows specifying for each dunning rule:</br>    · the events that trigger the evaluation of the rule (Ex: due debt not paid after 8 days),</br>    · conditions that have to be evaluated (Ex: no bill dispute in progress)</br>    · and actions that have to be done (Ex: send a dunning letter)</br>A DunningScenario is assigned to a CustomerAccount, depending on the Holder quality (Ex: a more tolerant DunningScenario is assigned to VIPs).</br>If no specific DunningScenario is assigned to a CustomerAccount, a default scenario is applied.</br>As soon as an event triggering a DunningRule occurs on a CustomerAccount, a DunningCase is created according to the DunningScenario assigned to the CustomerAccount.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.r.l.h88PNVE.eGM.k5-6.l3S.pE.g.GIF" alt="Figure C.22 - Dunning Scenario and Case" usemap="#map_.r.l.h88PNVE.eGM.k5-6.l3S.pE.g"></td>
+</tr>
+</table>
+<map name="map_.r.l.h88PNVE.eGM.k5-6.l3S.pE.g">
+<area shape="rect" coords="0,0,0,0" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.w.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningRule">
+<area shape="rect" coords="0,0,0,0" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.xPN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.w.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningRule">
+<area shape="rect" coords="0,0,0,0" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.xPN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.w.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningRule">
+<area shape="rect" coords="279,438,284,450" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.w.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningRule">
+<area shape="rect" coords="0,0,0,0" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.xPN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="529,443,533,455" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_VF.s.j.xPN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="317,464,503,476" href="_VF.s.j.wPN.eE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningRuleIsDoneInAccordanceTo">
+<area shape="poly" coords="552,469,270,469,270,459,552,459,552,469" href="_VF.s.j.wPN.eE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O4.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O5PN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O4.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O5PN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O4.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="608,357,612,369" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O4.fN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O5PN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="607,419,612,431" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_E.t5O5PN.eE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="634,381,753,411" href="_E.t5O4PN.eE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningCaseContains">
+<area shape="poly" coords="630,351,630,439,620,439,620,351,630,351" href="_E.t5O4PN.eE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3YPN.cE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3Y_N.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3YPN.cE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3Y_N.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3YPN.cE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="480,302,485,314" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3YPN.cE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3Y_N.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="347,302,351,314" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.ySF3Y_N.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="357,326,465,338" href="_.yR_.w.wPN.cE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningCaseApplies">
+<area shape="poly" coords="543,331,280,331,280,321,543,321,543,331" href="_.yR_.w.wPN.cE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.j.uENQ.fN.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.j.uENRPN.cE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.j.uENQ.fN.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.j.uENRPN.cE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.j.uENQ.fN.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="591,275,595,287" href="_3E3F0EC000E93C8D16D901C7-content.html#_.j.uENQ.fN.cE.eGM.k5-6.l3S.pE.g" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.j.uENRPN.cE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="472,158,477,170" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.j.uENRPN.cE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="483,134,714,173" href="_.j.uENQPN.cE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningCaseConcernsOverdueDebtFrom">
+<area shape="poly" coords="463,168,586,168,586,294,576,294,576,178,463,178,463,168" href="_.j.uENQPN.cE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_6G.nLU.fNWE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_6G.tR8PNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_6G.nLU.fNWE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_6G.tR8PNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_6G.nLU.fNWE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="191,426,207,438" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_6G.nLU.fNWE.eGM.k5-6.l3S.pE.g" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_6G.tR8PNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="197,372,201,384" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html#_6G.tR8PNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="219,381,357,411" href="_6G.nLUPNWE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningScenarioContains">
+<area shape="poly" coords="219,367,219,444,209,444,209,367,219,367" href="_6G.nLUPNWE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.q6.bVAPNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.q6.n.iQ.vNWE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.q6.bVAPNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.q6.n.iQ.vNWE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.q6.bVAPNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="171,268,188,280" href="_3E3F0EC000E93C8D16D901C7-content.html#_.q6.bVAPNWE.eGM.k5-6.l3S.pE.g" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.q6.n.iQ.vNWE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="303,154,307,166" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_.q6.n.iQ.vNWE.eGM.k5-6.l3S.pE.g" alt="customerAccount">
+<area shape="rect" coords="139,144,278,164" href="_.q6VOYPNWE.eGM.k5-6.l3S.pE.g-content.html" alt="CustomerAccountFollows">
+<area shape="poly" coords="328,178,201,178,201,294,191,294,191,168,328,168,328,178" href="_.q6VOYPNWE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.p0.h.c4PNWE.eGM.k5-6.l3S.pE.g-content.html" alt="Generalization">
+<area shape="poly" coords="160,466,104,466,104,456,160,456,160,466" href="_.p0.h.c4PNWE.eGM.k5-6.l3S.pE.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="377,124,381,136" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="371,58,387,70" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="402,91,502,103" href="_3E3F0EC000E93C8E643F00AD-content.html" alt="CustomerPosseses">
+<area shape="poly" coords="399,50,399,144,389,144,389,50,399,50" href="_3E3F0EC000E93C8E643F00AD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="558,478,703,493" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_N.uH4IP.d.iE.eGM.k5-6.l3S.pE.g" alt="outbreakDate">
+<area shape="rect" coords="558,462,703,477" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html#_36X.j.sPZ.rE.eGM.k5-6.l3S.pE.g" alt="ID">
+<area shape="rect" coords="552,439,713,499" href="_HN.b3.oPNXE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningCaseRule">
+<area shape="rect" coords="9,444,106,483" href="_J_K.yYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html" alt="PolicyRule">
+<area shape="rect" coords="160,444,272,483" href="_K.u.l.f.oPNWE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningRule">
+<area shape="rect" coords="549,334,687,349" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_Y.sHGAPZ.tE.eGM.k5-6.l3S.pE.g" alt="startingDate">
+<area shape="rect" coords="549,318,687,333" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html#_.nZ.oVQPZ.rE.eGM.k5-6.l3S.pE.g" alt="ID">
+<area shape="rect" coords="543,294,697,354" href="_7.g.gL4PNVE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningCase">
+<area shape="rect" coords="156,350,273,365" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_CC.oO.wPO.bE.eGM.k5-6.l3S.pE.g" alt="isDefault">
+<area shape="rect" coords="156,334,273,349" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_WOYU.wPZ.sE.eGM.k5-6.l3S.pE.g" alt="name">
+<area shape="rect" coords="156,318,273,333" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html#_DV5L0PZ.sE.eGM.k5-6.l3S.pE.g" alt="ID">
+<area shape="rect" coords="149,294,282,370" href="_9YF_.oPNVE.eGM.k5-6.l3S.pE.g-content.html" alt="DunningScenario">
+<area shape="rect" coords="328,144,465,183" href="_3E3F0EC000E93C8D16D901C7-content.html" alt="CustomerAccount">
+<area shape="rect" coords="330,33,454,48" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8D408B00E9" alt="customerRank">
+<area shape="rect" coords="323,9,463,53" href="_3E3F0EC000E93C8D1698008D-content.html" alt="Customer">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure C.22 - Dunning Scenario and Case</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E941C18CF80135-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Customer Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

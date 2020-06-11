@@ -1,0 +1,679 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Policy Variable ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for PolicyConditionVendor">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E03C76B023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Variable ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE</span>
+<br>
+<span class="ElementTitle">Class PolicyConditionVendor</span>
+<p>
+<a name="documentationSection"></a>This is a concrete base class that provides a general extension mechanism for representing PolicyConditions that have not been modeled with the attributes specified in this model. This class uses two of its properties (constraintData and constraintEncoding) for defining the content and format of a vendor-specific condition. Its other two attributes are used to describe the type of condition that this represents, and to provide a standard definition of a TRUE or FALSE response. This latter enables this object to interoperate with other PolicyVariableStandard objects as part of a PolicyConditon clause.</br></br>Standardized extensions are not expected to use this class.</br></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::constraintData" href="#_3E3F0EC000E93D77E58C027B"><img border="0" src="../images/-486202163_icon.png" alt="constraintData"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::constraintData" href="#_3E3F0EC000E93D77E58C027B">constraintData</a></td><td>
+<p>
+<a name="documentationSection"></a>The constraintData attribute is a string that provides a general extension mechanism for representing PolicyConditions that have not been modeled with specific attributes (as specified in this model). The format of this attribute is determined by the OID value stored in the constraintEncoding attribute of this class. The constraintEncoding attribute provides a convenient and simple mechanism by which a Policy Server can determine whether it supports the values stored in an instance of constraintData. If it doesn't recognize any of the OID values in the constraintEncoding attribute, then it will not know how to interpret the data in the corresponding constraintData attributes. The action for the policy decision point to take in case it does not recognize the format of this data could itself be modeled as a PolicyRule, governing the behavior of the Policy Server.</br></br>Notes:</br>Not present in the ITU specs. The CIM defines a similar attribute called Constraint.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::constraintEncoding" href="#_3E3F0EC000E93D77E58C027C"><img border="0" src="../images/-486202163_icon.png" alt="constraintEncoding"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::constraintEncoding" href="#_3E3F0EC000E93D77E58C027C">constraintEncoding</a></td><td>
+<p>
+<a name="documentationSection"></a>The constraintEncoding attribute is a string that is used to represent an OID that in turn identifies the encoding and semantics of the constraintData attribute in this instance.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called ConstraintEncoding.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::conditionType" href="#_3E3F0EC000E93D77E58C027D"><img border="0" src="../images/-486202163_icon.png" alt="conditionType"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::conditionType" href="#_3E3F0EC000E93D77E58C027D">conditionType</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a free-form string that can be used to define the type of condition that this instance is checking.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::conditionResponse" href="#_3E3F0EC000E93E5C468A0214"><img border="0" src="../images/-486202163_icon.png" alt="conditionResponse"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::conditionResponse" href="#_3E3F0EC000E93E5C468A0214">conditionResponse</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that is used to allow a 'standard' definition of a TRUE/FALSE response to be made by an external system attached to the model at this point. This will allow integration with a generalized policy processing engine.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard" href="_3E3F0EC000E93D77E58C02A1-content.html"><img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard" href="_3E3F0EC000E93D77E58C02A1-content.html">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard::allowedValueTypes" href="_3E3F0EC000E93D77E58C02A1-content.html#_3E3F0EC000E93E03EC81020D"><img border="0" src="../images/-486202163_icon.png" alt="allowedValueTypes"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard::allowedValueTypes" href="_3E3F0EC000E93D77E58C02A1-content.html#_3E3F0EC000E93E03EC81020D">allowedValueTypes</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable" href="_3E3F0EC000E93D77E58C0298-content.html"><img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable" href="_3E3F0EC000E93D77E58C0298-content.html">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyValue" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072"><img border="0" src="../images/-486202163_icon.png" alt="_policyValue"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyValue" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072">_policyValue</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyOperator" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E"><img border="0" src="../images/-486202163_icon.png" alt="_policyOperator"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyOperator" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E">_policyOperator</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyStatement" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E"><img border="0" src="../images/-486202163_icon.png" alt="_policyStatement"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyStatement" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E">_policyStatement</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy">&nbsp;SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_policyApplication">&nbsp;_policyApplication, <img border="0" src="../images/-486202163_icon.png" alt="keywords">&nbsp;keywords, <img border="0" src="../images/-486202163_icon.png" alt="policyName">&nbsp;policyName, <img border="0" src="../images/-486202163_icon.png" alt="_policyRepository">&nbsp;_policyRepository, <img border="0" src="../images/-486202163_icon.png" alt="_policyDomain">&nbsp;_policyDomain</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/-486202163_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/-486202163_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/-486202163_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/-486202163_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/-486202163_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/-486202163_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/-486202163_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/-486202163_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/-486202163_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/-486202163_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/-486202163_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/-486202163_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">PolicyConditionVendor</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E03C76B023C-content.html">Policy Variable ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E03C76B023C-content.html">Policy Variable ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E03C76B023C-content.html">Policy Variable ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E5C468A0214">conditionResponse</a></span>
+<pre>Public&nbsp;Boolean conditionResponse</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that is used to allow a 'standard' definition of a TRUE/FALSE response to be made by an external system attached to the model at this point. This will allow integration with a generalized policy processing engine.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E5C468A0214"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">conditionResponse</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::conditionResponse</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C027D">conditionType</a></span>
+<pre>Public&nbsp;String conditionType</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a free-form string that can be used to define the type of condition that this instance is checking.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C027D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">conditionType</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::conditionType</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C027B">constraintData</a></span>
+<pre>Public&nbsp;String constraintData</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>The constraintData attribute is a string that provides a general extension mechanism for representing PolicyConditions that have not been modeled with specific attributes (as specified in this model). The format of this attribute is determined by the OID value stored in the constraintEncoding attribute of this class. The constraintEncoding attribute provides a convenient and simple mechanism by which a Policy Server can determine whether it supports the values stored in an instance of constraintData. If it doesn't recognize any of the OID values in the constraintEncoding attribute, then it will not know how to interpret the data in the corresponding constraintData attributes. The action for the policy decision point to take in case it does not recognize the format of this data could itself be modeled as a PolicyRule, governing the behavior of the Policy Server.</br></br>Notes:</br>Not present in the ITU specs. The CIM defines a similar attribute called Constraint.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C027B"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">constraintData</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::constraintData</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C027C">constraintEncoding</a></span>
+<pre>Public&nbsp;String constraintEncoding</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>The constraintEncoding attribute is a string that is used to represent an OID that in turn identifies the encoding and semantics of the constraintData attribute in this instance.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called ConstraintEncoding.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C027C"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">constraintEncoding</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FBBE0313-content.html">PolicyConditionVendor</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionVendor::constraintEncoding</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E03C76B023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Variable ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

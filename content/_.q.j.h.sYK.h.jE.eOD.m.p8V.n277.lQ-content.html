@@ -1,0 +1,181 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Metric Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.f.d.kB.cN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Metric Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Metric ABE::Metric Addendum Figures::Figure Me.16 - Basic Metric Measure Entities<br>
+</span><span class="ElementTitle">Diagram Figure Me.16 - Basic Metric Measure Entities<br>
+</span><span class="ElementDocumentation">Once metrics are defined the values associated with them can be captured.  Figure Me.21 – Metric shows the MetricMeasure entity and its directly related entities.</br>The MetricMeasure might be collected for 0..1 RootEntity because some entities may be explicitly related to a MetricMeasure, such as those entities currently in the Performance, including Service and Resource, and SLA entities, including ProductOffering and ServiceSpecification. These explicit associations represent a more detailed association than the more general association to RootEntity.</br>This diagram uses RootEntity as an abstract concept showing how any entity can be associated to MetricMeasure.</br>Since RootEntity is also a real class in the SID model and is the base class of several ABEs (Resource, ResourceSpec, Service, ServiceSpec and Policy) this diagram also includes examples on how to model Metrics that measure entities which are not subclasses of RootEntity in the SID model. </br>For example, suppose there is a need to collect a metric for the Service instance of RootEntityType. The first step is to select one of the  MetricDefinition(s) for it, then the MetricDefMeasure to use, then the MetricDefinitionDeterminationMethod. </br>The MetricMeasure is associated to the method and to RootEntity (not RootEntityType) that represents for example the instance of Service for which the MetricMeasure is being collected. </br>There are indirect associations (i.e. derived) from the MetricMeasure to the MetricDefMeasure via the association to MetricDefinitionDeterminationMethod and from MetricMeasure to MetricDefinition via its association to MetricDefMeasure.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.q.j.h.sYK.h.jE.eOD.m.p8V.n277.lQ.GIF" alt="Figure Me.16 - Basic Metric Measure Entities" usemap="#map_.q.j.h.sYK.h.jE.eOD.m.p8V.n277.lQ"></td>
+</tr>
+</table>
+<map name="map_.q.j.h.sYK.h.jE.eOD.m.p8V.n277.lQ">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2KW4BV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metric">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2GF.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2KW4BV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metric">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2GF.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2KW4BV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metric">
+<area shape="rect" coords="352,343,357,355" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2KW4BV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metric">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2GF.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="148,295,152,307" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.a2GF.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="88,319,226,331" href="_.a2EQQBV_E.eOT6.s.gJ.t.s-.j4.g-content.html" alt="MetricMeasuredDefinedBy">
+<area shape="poly" coords="165,297,165,349,364,349,364,359,155,359,155,297,165,297" href="_.a2EQQBV_E.eOT6.s.gJ.t.s-.j4.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_B.g88YN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_B.gW.f.cN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_B.g88YN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_B.gW.f.cN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_B.g88YN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefMeasure">
+<area shape="rect" coords="174,181,179,193" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_B.g88YN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_B.gW.f.cN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="175,232,179,244" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_B.gW.f.cN.z7E.eK.x.q4T-.pM.g.h.eQ" alt="_metricDefinitionDeterminationMethod">
+<area shape="rect" coords="70,207,239,219" href="_B.f.d.u.oN.z7E.eK.x.q4T-.pM.g.h.eQ-content.html" alt="MetricDefMeasureDeterminedBy">
+<area shape="poly" coords="157,249,157,177,167,177,167,249,157,249" href="_B.f.d.u.oN.z7E.eK.x.q4T-.pM.g.h.eQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.y.vHB.sMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.y.vB.iIMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricMeasure">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.y.vHB.sMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.y.vB.iIMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricMeasure">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.y.vHB.sMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricDefMeasure">
+<area shape="rect" coords="237,149,242,161" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.y.vHB.sMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.y.vB.iIMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricMeasure">
+<area shape="rect" coords="392,306,396,318" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.y.vB.iIMSGE.eO.w6.v.dFB.aC.o_.w" alt="_metricMeasure">
+<area shape="rect" coords="251,124,395,136" href="_.y.u_F4MSGE.eO.w6.v.dFB.aC.o_.w-content.html" alt="MetricDefMeasureDescribes">
+<area shape="poly" coords="403,327,403,148,231,148,231,138,413,138,413,327,403,327" href="_.y.u_F4MSGE.eO.w6.v.dFB.aC.o_.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="169,60,174,72" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="170,114,174,126" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="63,82,264,94" href="_5V.q94N53E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefinitionMeasuredAccordingTo">
+<area shape="poly" coords="159,129,159,57,169,57,169,129,159,129" href="_5V.q94N53E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_.yMIBQB.o.gE.eO.p8N6K.iAI.s1.g" alt="productMetric">
+<area shape="rect" coords="0,0,0,0" href="_FR.mS.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_.yMTAYB.o.gE.eO.p8N6K.iAI.s1.g" alt="product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_.yMIBQB.o.gE.eO.p8N6K.iAI.s1.g" alt="productMetric">
+<area shape="rect" coords="0,0,0,0" href="_FR.mS.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_.yMTAYB.o.gE.eO.p8N6K.iAI.s1.g" alt="product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_.yMIBQB.o.gE.eO.p8N6K.iAI.s1.g" alt="productMetric">
+<area shape="rect" coords="279,475,285,487" href="_3E3F0EC000E93C5DB98B03E2-content.html#_.yMIBQB.o.gE.eO.p8N6K.iAI.s1.g" alt="productMetric">
+<area shape="rect" coords="0,0,0,0" href="_FR.mS.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_.yMTAYB.o.gE.eO.p8N6K.iAI.s1.g" alt="product">
+<area shape="rect" coords="129,475,135,487" href="_FR.mS.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_.yMTAYB.o.gE.eO.p8N6K.iAI.s1.g" alt="product">
+<area shape="rect" coords="134,439,283,464" href="_.yL-QQB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="ProductMetricCollectedFor">
+<area shape="poly" coords="124,464,289,464,289,474,124,474,124,464" href="_.yL-QQB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_A.a.x.t.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_YR568B.o.gE.eO.p8N6K.iAI.s1.g" alt="customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_YSKZ.oB.o.gE.eO.p8N6K.iAI.s1.g" alt="customerMetric">
+<area shape="rect" coords="0,0,0,0" href="_A.a.x.t.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_YR568B.o.gE.eO.p8N6K.iAI.s1.g" alt="customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_YSKZ.oB.o.gE.eO.p8N6K.iAI.s1.g" alt="customerMetric">
+<area shape="rect" coords="0,0,0,0" href="_A.a.x.t.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_YR568B.o.gE.eO.p8N6K.iAI.s1.g" alt="customer">
+<area shape="rect" coords="743,473,749,485" href="_A.a.x.t.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html#_YR568B.o.gE.eO.p8N6K.iAI.s1.g" alt="customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_YSKZ.oB.o.gE.eO.p8N6K.iAI.s1.g" alt="customerMetric">
+<area shape="rect" coords="583,473,589,485" href="_3E3F0EC000E93C8D1698008D-content.html#_YSKZ.oB.o.gE.eO.p8N6K.iAI.s1.g" alt="customerMetric">
+<area shape="rect" coords="585,439,745,464" href="_YR.lK0B.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="CustomerMetricCollectedFor">
+<area shape="poly" coords="572,464,758,464,758,474,572,474,572,464" href="_YR.lK0B.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_QZZG.kB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="Generalization">
+<area shape="poly" coords="501,439,501,421,420,421,420,380,430,380,430,411,511,411,511,439,501,439" href="_QZZG.kB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_P.lU.lUB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="Generalization">
+<area shape="poly" coords="344,439,344,411,420,411,420,380,430,380,430,421,354,421,354,439,344,439" href="_P.lU.lUB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_Q.dK.i.wBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_rootEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_Q.dRQ.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="metric">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_Q.dK.i.wBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_rootEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_Q.dRQ.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="metric">
+<area shape="rect" coords="0,0,0,0" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_Q.dK.i.wBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_rootEntity">
+<area shape="rect" coords="471,225,488,237" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_Q.dK.i.wBV_E.eOT6.s.gJ.t.s-.j4.g" alt="_rootEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_Q.dRQ.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="metric">
+<area shape="rect" coords="471,306,475,318" href="_3E3F0EC000E93CDA9E0C0384-content.html#_Q.dRQ.cBV_E.eOT6.s.gJ.t.s-.j4.g" alt="metric">
+<area shape="rect" coords="476,264,574,276" href="_Q.c.p.lYBV_E.eOT6.s.gJ.t.s-.j4.g-content.html" alt="MetricCollectedFor">
+<area shape="poly" coords="460,327,460,215,470,215,470,327,460,327" href="_Q.c.p.lYBV_E.eOT6.s.gJ.t.s-.j4.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.a.iJ.xULTWE.eO.s.zOI.e.h.a.dD.bQ" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_ITVLYBS.vE.eOJX4.jBMGKFN.w" alt="captureFrequency">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.x8P0.oBS.uE.eOJX4.jBMGKFN.w" alt="captureMethod">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.y.l.hDQN54E.eK.r.x6.vY.l-.rD.f.g" alt="valueType">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_P5E5YN54E.eK.r.x6.vY.l-.rD.f.g" alt="capturePeriod">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_L6.q.jEN54E.eK.r.x6.vY.l-.rD.f.g" alt="accuracy">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_I.xO.s8N54E.eK.r.x6.vY.l-.rD.f.g" alt="unitOfMeasure">
+<area shape="rect" coords="94,129,233,180" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.i.n2YALTUE.eO.s.zOI.e.h.a.dD.bQ" alt="collectionType">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.gZG.o.gLTUE.eO.s.zOI.e.h.a.dD.bQ" alt="perspective">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_R.aT.w.gP.k.wE.eK.y.aMFUG5.vBW.w" alt="metricLevel">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_-.pYWYN57E.eK.r.x6.vY.l-.rD.f.g" alt="lastUsed">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_8.x.n.j.gN57E.eK.r.x6.vY.l-.rD.f.g" alt="entryDate">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.x.u.f0UN57E.eK.r.x6.vY.l-.rD.f.g" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_KJI44N5.pE.eK.r.x6.vY.l-.rD.f.g" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_U.lUBUN.z_E.eK.x.q4T-.pM.g.h.eQ" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_2.e7.u.gN.z8E.eK.x.q4T-.pM.g.h.eQ" alt="ID">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_J.w.tPIH04E.eO.iY.q.x.wU.q84N.g" alt="validFor">
+<area shape="rect" coords="99,9,227,60" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html" alt="MetricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DC43C01F3" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DC4480254" alt="status">
+<area shape="rect" coords="9,439,126,503" href="_3E3F0EC000E93C5DB98B03E2-content.html" alt="Product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8D408B00E9" alt="customerRank">
+<area shape="rect" coords="758,439,913,503" href="_3E3F0EC000E93C8D1698008D-content.html" alt="Customer">
+<area shape="rect" coords="289,439,412,503" href="_FR.mS.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="ProductMetric">
+<area shape="rect" coords="440,439,574,503" href="_A.a.x.t.wB.o.gE.eO.p8N6K.iAI.s1.g-content.html" alt="CustomerMetric">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_.eEEY4LTWE.eO.s.zOI.e.h.a.dD.bQ" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_ZAURIA.m.uE.eO4.v7U.zM36OMQ" alt="derivationFormula">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_0DX.y.kAQ.uE.eO1Q9FFRFBT4A" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_L.i97.cAQ.tE.eO1Q9FFRFBT4A" alt="xLSFormula">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_37NR.sAQ.sE.eO1Q9FFRFBT4A" alt="proseFormula">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_J.xN.fYAQ.sE.eO1Q9FFRFBT4A" alt="exceptionAction">
+<area shape="rect" coords="0,0,0,0" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html#_.yB.c.zYN.z4E.eK.x.q4T-.pM.g.h.eQ" alt="type">
+<area shape="rect" coords="41,249,286,300" href="_.j12.l.cN.z6E.eK.x.q4T-.pM.g.h.eQ-content.html" alt="MetricDefinitionDeterminationMethod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C0390" alt="ID">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038F" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038E" alt="name">
+<area shape="rect" coords="449,154,644,218" href="_3E3F0EC000E93CDA9E0C0384-content.html" alt="RootEntity">
+<area shape="rect" coords="370,351,475,366" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_XL.rCIBV_E.eOT6.s.gJ.t.s-.j4.g" alt="value">
+<area shape="rect" coords="364,327,485,383" href="_XJGQ4N.z4E.eK.x.q4T-.pM.g.h.eQ-content.html" alt="MetricMeasure">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Me.16 - Basic Metric Measure Entities</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.f.d.kB.cN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Metric Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

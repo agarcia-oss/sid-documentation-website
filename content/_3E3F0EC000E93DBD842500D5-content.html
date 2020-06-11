@@ -1,0 +1,166 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Resource Facing Service Examples ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for CoS4Bundle">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_I.uH.z.wAG.fE.e.a.xW.b8WQC_.n.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Facing Service Examples ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Service Domain::Service ABE::Resource Facing Service ABE::Resource Facing Service Examples ABE</span>
+<br>
+<span class="ElementTitle">Class CoS4Bundle</span>
+<p>
+<a name="documentationSection"></a>This class represents the Class of Service settings for a specific ServiceBundle. ServiceBundles are related to ServicePackages via the packageContainsServiceBundles aggregation. Thus, this enables different CoS settings to be associated with a ServicePackage, which is what the Customer acquires via a Product.</br></br>This version of the Service model defines four exemplary subclasses of ServiceBundle for defining four different groups of Class of Service (CoS). The idea is to use each CoSBundle class to represent the Class of Service settings for a specific ServiceBundle. This enables different CoS settings to be associated with the different CustomerFacingServices that are defined by a particular ServicePackage, which is what the Customer acquires via a Product. For example, CoS1 could be used for VoIP, CoS2 could be used for mission-critical applications, CoS3 could be used for all other applications that are not mission-critical but require better than best-effort delivery, and CoS4 could define best effort service delivery.</br></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle">&nbsp;SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="hasMultipleQoSTypes">&nbsp;hasMultipleQoSTypes, <img border="0" src="../images/-486202163_icon.png" alt="_servicePackage">&nbsp;_servicePackage</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite">&nbsp;SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService">&nbsp;SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_customerFacingService">&nbsp;_customerFacingService, <img border="0" src="../images/-486202163_icon.png" alt="rfsStatus">&nbsp;rfsStatus, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingServiceComposite">&nbsp;_resourceFacingServiceComposite, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingServiceRole">&nbsp;_resourceFacingServiceRole, <img border="0" src="../images/-486202163_icon.png" alt="_protocol">&nbsp;_protocol, <img border="0" src="../images/-486202163_icon.png" alt="_logicalResource">&nbsp;_logicalResource, <img border="0" src="../images/-486202163_icon.png" alt="_physicalResource">&nbsp;_physicalResource, <img border="0" src="../images/-486202163_icon.png" alt="_resource">&nbsp;_resource, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingServiceSpec">&nbsp;_resourceFacingServiceSpec, <img border="0" src="../images/-486202163_icon.png" alt="serviceCandidate">&nbsp;serviceCandidate, <img border="0" src="../images/-486202163_icon.png" alt="logicalResource">&nbsp;logicalResource</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Service Domain::Service ABE::Service">&nbsp;SID Models::Service Domain::Service ABE::Service</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/-486202163_icon.png" alt="_device">&nbsp;_device, <img border="0" src="../images/-486202163_icon.png" alt="isServiceEnabled">&nbsp;isServiceEnabled, <img border="0" src="../images/-486202163_icon.png" alt="hasStarted">&nbsp;hasStarted, <img border="0" src="../images/-486202163_icon.png" alt="isMandatory">&nbsp;isMandatory, <img border="0" src="../images/-486202163_icon.png" alt="startMode">&nbsp;startMode, <img border="0" src="../images/-486202163_icon.png" alt="isStateful">&nbsp;isStateful, <img border="0" src="../images/-486202163_icon.png" alt="_serviceRole">&nbsp;_serviceRole, <img border="0" src="../images/-486202163_icon.png" alt="_physicalResourceRole">&nbsp;_physicalResourceRole, <img border="0" src="../images/-486202163_icon.png" alt="_serviceCharacteristicValue">&nbsp;_serviceCharacteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="_serviceSpecification">&nbsp;_serviceSpecification, <img border="0" src="../images/-486202163_icon.png" alt="_serviceUsage">&nbsp;_serviceUsage, <img border="0" src="../images/-486202163_icon.png" alt="_servicePerformance">&nbsp;_servicePerformance, <img border="0" src="../images/-486202163_icon.png" alt="_partyRole4">&nbsp;_partyRole4, <img border="0" src="../images/-486202163_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/-486202163_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/-486202163_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/-486202163_icon.png" alt="_commonServiceInfo">&nbsp;_commonServiceInfo, <img border="0" src="../images/-486202163_icon.png" alt="_serviceInvolvementRole">&nbsp;_serviceInvolvementRole, <img border="0" src="../images/-486202163_icon.png" alt="serviceCapacity">&nbsp;serviceCapacity, <img border="0" src="../images/-486202163_icon.png" alt="serviceCapacityDemand">&nbsp;serviceCapacityDemand, <img border="0" src="../images/-486202163_icon.png" alt="serviceConfiguration">&nbsp;serviceConfiguration, <img border="0" src="../images/-486202163_icon.png" alt="serviceConfigSpec">&nbsp;serviceConfigSpec, <img border="0" src="../images/-486202163_icon.png" alt="serviceTest">&nbsp;serviceTest, <img border="0" src="../images/-486202163_icon.png" alt="serviceRelationship">&nbsp;serviceRelationship, <img border="0" src="../images/-486202163_icon.png" alt="serviceRelationship2">&nbsp;serviceRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/-486202163_icon.png" alt="problem1">&nbsp;problem1</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/-486202163_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/-486202163_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/-486202163_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/-486202163_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/-486202163_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/-486202163_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/-486202163_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/-486202163_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/-486202163_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/-486202163_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/-486202163_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/-486202163_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/-486202163_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/-486202163_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/-486202163_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue">example</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">CoS4Bundle</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_I.uH.z.wAG.fE.e.a.xW.b8WQC_.n.oA-content.html">Resource Facing Service Examples ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_I.uH.z.wAG.fE.e.a.xW.b8WQC_.n.oA-content.html">Resource Facing Service Examples ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_I.uH.z.wAG.fE.e.a.xW.b8WQC_.n.oA-content.html">Resource Facing Service Examples ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Service Domain::Service ABE::Resource Facing Service ABE::Resource Facing Service Examples ABE::CoS4Bundle</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_I.uH.z.wAG.fE.e.a.xW.b8WQC_.n.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Facing Service Examples ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

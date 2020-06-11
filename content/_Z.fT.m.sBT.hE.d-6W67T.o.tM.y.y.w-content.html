@@ -1,0 +1,176 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Product Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93D6AAC4F0089-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Product Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Product Domain::Product Addendum Figures::Figure Pr.30 - Modeling a matrix with dimensions based on PLASpec and ProductSpec Characteristics<br>
+</span><span class="ElementTitle">Diagram Figure Pr.30 - Modeling a matrix with dimensions based on PLASpec and ProductSpec Characteristics<br>
+</span><span class="ElementDocumentation">As described in the use cases, a typical implementation of PricingLogicAlgorithm requires parameters which are multi-dimensional matrices, in which each dimension is defined by the valid values for a specific characteristic. For example, if we have PLA which rates events based on customer type, we can have one instantiation in which customer type is either residential or commercial (and in which case the size of the dimension of the matrix is 2) and in other instantiation the customer type can be student, normal and senior citizen (in this case the size of the dimension is 3).</br>Modeling the matrix</br>As described above, the matrices are defined by the possible valid values of characteristics (from ProductSpec or PLASpec), so we can define the matrix itself using the self-association CharacteristicSpecificationReferences. This was correct if CharacteristicValue and ProductCharacteristicValue were the same entity. Since currently these entities do not share a common base class there is a need to create some more complex modeling in order to create a matrix.</br>Note: MatrixSpecDimention is associated to a single entity either ProductSpecCharacteristic or CharacteristicSpecification – but it is always associated to one (association to none or both entities is not allowed, so this class (MatrixSpecDimention) is a specification for a single dimension of the matrix.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_Z.fT.m.sBT.hE.d-6W67T.o.tM.y.y.w.GIF" alt="Figure Pr.30 - Modeling a matrix with dimensions based on PLASpec and ProductSpec Characteristics" usemap="#map_Z.fT.m.sBT.hE.d-6W67T.o.tM.y.y.w"></td>
+</tr>
+</table>
+<map name="map_Z.fT.m.sBT.hE.d-6W67T.o.tM.y.y.w">
+<area shape="rect" coords="0,0,0,0" href="_.x.p.tF.cG.i.kE.e.iDY.a8.o.oHA01Q-content.html" alt="Generalization">
+<area shape="poly" coords="250,412,250,257,437,257,437,190,447,190,447,267,260,267,260,412,250,412" href="_.x.p.tF.cG.i.kE.e.iDY.a8.o.oHA01Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="382,47,387,61" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="498,104,504,118" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="403,47,607,61" href="_.s6E.u4O.f.rE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="CharacteristicSpecFurtherDefinedBy">
+<area shape="poly" coords="482,129,482,76,374,76,374,66,492,66,492,129,482,129" href="_.s6E.u4O.f.rE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC52B0188-content.html#_.c7T.lE.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.c7.dWEO.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC52B0188-content.html#_.c7T.lE.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.c7.dWEO.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC52B0188-content.html#_.c7T.lE.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="205,52,210,66" href="_3E3F0EC000E93DDEC52B0188-content.html#_.c7T.lE.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.c7.dWEO.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecification">
+<area shape="rect" coords="111,105,129,119" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.c7.dWEO.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecification">
+<area shape="rect" coords="26,52,186,66" href="_.c7T.lEO.f.rE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="EntitySpecFurtherDefinedBy">
+<area shape="poly" coords="100,141,100,71,226,71,226,81,110,81,110,141,100,141" href="_.c7T.lEO.f.rE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.r.i6K.gBT.rE.d-6W67T.o.tM.y.y.w" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.r.kG.dUBT.rE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.r.i6K.gBT.rE.d-6W67T.o.tM.y.y.w" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.r.kG.dUBT.rE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.r.i6K.gBT.rE.d-6W67T.o.tM.y.y.w" alt="_characteristicSpecification">
+<area shape="rect" coords="581,193,602,206" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.r.i6K.gBT.rE.d-6W67T.o.tM.y.y.w" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.r.kG.dUBT.rE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension">
+<area shape="rect" coords="589,478,595,491" href="_3E3F0EC000E94462ADF80016-content.html#_.r.kG.dUBT.rE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension">
+<area shape="rect" coords="560,289,742,302" href="_.r.i.d.e.kBT.rE.d-6W67T.o.tM.y.y.w-content.html" alt="DimensionDefinedByCharSpec">
+<area shape="poly" coords="534,440,639,440,639,187,576,187,576,177,649,177,649,450,534,450,534,440" href="_.r.i.d.e.kBT.rE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C631E8103A7-content.html#_.nA.dI.cRT.qE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.nA.mSY.hT.qE.d-6W67T.o.tM.y.y.w" alt="_productSpecCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C631E8103A7-content.html#_.nA.dI.cRT.qE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.nA.mSY.hT.qE.d-6W67T.o.tM.y.y.w" alt="_productSpecCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C631E8103A7-content.html#_.nA.dI.cRT.qE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="457,482,463,495" href="_3E3F0EC000E93C631E8103A7-content.html#_.nA.dI.cRT.qE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.nA.mSY.hT.qE.d-6W67T.o.tM.y.y.w" alt="_productSpecCharacteristic">
+<area shape="rect" coords="170,477,191,490" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_.nA.mSY.hT.qE.d-6W67T.o.tM.y.y.w" alt="_productSpecCharacteristic">
+<area shape="rect" coords="196,504,427,517" href="_.nA.dI.cBT.qE.d-6W67T.o.tM.y.y.w-content.html" alt="DimensionDefinedByProductSpecChar">
+<area shape="poly" coords="205,473,205,498,439,498,439,481,449,481,449,508,195,508,195,473,205,473" href="_.nA.dI.cBT.qE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.j.p.xIBP6E.d-O57.wBCB.zL.fA-content.html#_S.aL.n4RQBE.d-O57.wBCB.zL.fA" alt="_productSpecCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C631E8103A7-content.html#_S.aVY4BQBE.d-O57.wBCB.zL.fA" alt="_pricingLogicAlgorithmSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.j.p.xIBP6E.d-O57.wBCB.zL.fA-content.html#_S.aL.n4RQBE.d-O57.wBCB.zL.fA" alt="_productSpecCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C631E8103A7-content.html#_S.aVY4BQBE.d-O57.wBCB.zL.fA" alt="_pricingLogicAlgorithmSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.j.p.xIBP6E.d-O57.wBCB.zL.fA-content.html#_S.aL.n4RQBE.d-O57.wBCB.zL.fA" alt="_productSpecCharacteristic">
+<area shape="rect" coords="118,390,124,403" href="_S.j.p.xIBP6E.d-O57.wBCB.zL.fA-content.html#_S.aL.n4RQBE.d-O57.wBCB.zL.fA" alt="_productSpecCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C631E8103A7-content.html#_S.aVY4BQBE.d-O57.wBCB.zL.fA" alt="_pricingLogicAlgorithmSpec">
+<area shape="rect" coords="118,317,124,330" href="_3E3F0EC000E93C631E8103A7-content.html#_S.aVY4BQBE.d-O57.wBCB.zL.fA" alt="_pricingLogicAlgorithmSpec">
+<area shape="rect" coords="23,345,228,358" href="_S.aL.n4BQBE.d-O57.wBCB.zL.fA-content.html" alt="PLASpecTakesProdCharacteristics">
+<area shape="poly" coords="141,308,141,412,131,412,131,308,141,308" href="_S.aL.n4BQBE.d-O57.wBCB.zL.fA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_4VXC0BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.kF8RT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.t28BT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixCharacteristicSpec">
+<area shape="rect" coords="0,0,0,0" href="_4VXC0BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.kF8RT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.t28BT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixCharacteristicSpec">
+<area shape="rect" coords="0,0,0,0" href="_4VXC0BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.kF8RT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="469,397,475,410" href="_4VXC0BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.kF8RT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixSpecDimension2">
+<area shape="rect" coords="0,0,0,0" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.t28BT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixCharacteristicSpec">
+<area shape="rect" coords="469,361,475,374" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_O.t.t28BT.iE.d-6W67T.o.tM.y.y.w" alt="_matrixCharacteristicSpec">
+<area shape="rect" coords="381,379,607,392" href="_O.t.kF8BT.iE.d-6W67T.o.tM.y.y.w-content.html" alt="MatrixCharSpecDimensionsDefinedBy">
+<area shape="poly" coords="492,360,492,412,482,412,482,360,492,360" href="_O.t.kF8BT.iE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_D.hH.b.oBT.iE.d-6W67T.o.tM.y.y.w-content.html" alt="Generalization">
+<area shape="poly" coords="516,312,516,267,437,267,437,190,447,190,447,257,526,257,526,312,516,312" href="_D.hH.b.oBT.iE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462B1C80150-content.html#_3E3F0EC000E94462B0290010" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462B1C80150-content.html#_3E3F0EC000E947A743E2030D" alt="charSpecSeq">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462B1C80150-content.html#_3E3F0EC000E94462B029000F" alt="charRelationshipType">
+<area shape="rect" coords="634,23,853,87" href="_3E3F0EC000E94462B1C80150-content.html" alt="CharacteristicSpecRelationship">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="573,74,579,87" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="618,153,624,166" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="poly" coords="576,163,612,163,612,97,574,97,574,129,564,129,564,87,622,87,622,173,576,173,576,163" href="_3E3F0EC000E94462B1C80150-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.qEV3.cBP-E.d-O57.wBCB.zL.fA-content.html" alt="Generalization">
+<area shape="poly" coords="100,261,100,223,110,223,110,261,100,261" href="_.qEV3.cBP-E.d-O57.wBCB.zL.fA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.w8P.oAO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.t.n6J.cO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="extensible">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o_O.uIO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="maxCardinality">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.lM.y-UO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="minCardinality">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.c.bVI.sO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="canBeOverridden">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_UT4.g.cO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="isPackage">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_N.p.a.z.kO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="unique">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_H.zG.g.cO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_CQUNUO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="name">
+<area shape="rect" coords="226,44,376,108" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="EntitySpecCharUse">
+<area shape="rect" coords="70,412,263,476" href="_3E3F0EC000E93C631E8103A7-content.html" alt="ProductSpecCharacteristic">
+<area shape="rect" coords="376,452,527,467" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_YR.t.xMBT.sE.d-6W67T.o.tM.y.y.w" alt="validFor">
+<area shape="rect" coords="376,436,527,451" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html#_KU.s.c.sBT.sE.d-6W67T.o.tM.y.y.w" alt="seqNum">
+<area shape="rect" coords="369,412,536,484" href="_8Z.r.z4BP6E.d-O57.wBCB.zL.fA-content.html" alt="MatrixSpecDimension">
+<area shape="rect" coords="429,312,615,363" href="_4VXC0BP6E.d-O57.wBCB.zL.fA-content.html" alt="MatrixCharacteristicSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02B8" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AB" alt="derivationFormula">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9475EBBC502C1" alt="extensible">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60280" alt="maxCardinality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60271" alt="minCardinality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AA" alt="valueType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E946F97EB7003E" alt="unique">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A9" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A8" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A7" alt="ID">
+<area shape="rect" coords="383,129,578,193" href="_3E3F0EC000E94462ADF80016-content.html" alt="CharacteristicSpecification">
+<area shape="rect" coords="12,261,205,312" href="_S.j.p.xIBP6E.d-O57.wBCB.zL.fA-content.html" alt="PricingLogicAlgorithmSpec">
+<area shape="rect" coords="18,194,187,209" href="_3E3F0EC000E93DDEC52B0188-content.html#_3E3F0EC000E93C5DC5040164" alt="status">
+<area shape="rect" coords="18,178,187,193" href="_3E3F0EC000E93DDEC52B0188-content.html#_3E3F0EC000E93C5DC4F6015A" alt="validFor">
+<area shape="rect" coords="12,141,197,226" href="_3E3F0EC000E93DDEC52B0188-content.html" alt="EntitySpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Pr.30 - Modeling a matrix with dimensions based on PLASpec and ProductSpec Characteristics</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93D6AAC4F0089-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Product Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

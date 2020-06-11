@@ -1,0 +1,45 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=7,8,9,10">
+<title>SID Models</title>
+<style type="text/css">
+            @import "dojo/dijit/themes/tundra/tundra.css";
+            @import "WebPublish.css";
+            @import "3E3F0EC000E9-icons.css";
+            .dijitTreeContent {cursor:default;white-space:nowrap !important}
+        </style>
+        <script type="text/javascript" src="dojo/dojo/dojo.js"
+            djConfig="parseOnLoad: true"></script>
+        <script type="text/javascript" src="dojo/dojo/webpublish.js"></script>
+        <script language="JavaScript" type="text/javascript">
+            dojo.require("dojo.data.ItemFileReadStore");
+            dojo.require("dijit.Tree");
+        </script>
+</head>
+<body class="tundra">
+<h2>SID Models</h2>
+<div dojoType="dojo.data.ItemFileReadStore" jsId="modelStore" url="3E3F0EC000E9-tree.json"></div>
+        <div dojoType="dijit.tree.ForestStoreModel" jsId="treeModel" 
+            store="modelStore" query="{top:'true'}"
+            childrenAttrs="children"></div>
+        <div dojoType="dijit.Tree" jsId="tree" model="treeModel" showRoot="false">
+            <script type="dojo/method" event="getIconClass" args="item, opened">
+                var icon = null;
+                try {
+                    icon = item && modelStore.getValue(item, "icon");
+                } catch (e) {
+                    // leave icon null;
+                }
+                return icon || "noteIcon";
+            </script>
+            <script type="dojo/method" event="onClick" args="item">
+                var url = modelStore.getValue(item, "object");
+                if (url != null) {
+                    window.open(url, "elementFrame");
+                }
+            </script>
+</div>
+</body>
+</html>

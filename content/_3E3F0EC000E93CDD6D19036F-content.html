@@ -1,0 +1,1220 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HolderAtomic ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for Slot">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E2C3CF800C9-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">HolderAtomic ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE</span>
+<br>
+<span class="ElementTitle">Class Slot</span>
+<p>
+<a name="documentationSection"></a>This is a concrete class that has two main purposes. One is to model the ability of a hosting board to accept a daughter card to add or complete the base functionality of the hosting board. The second is to represent the different expansion slots supported by a Chassis.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::hasAdapter" href="#_3E3F0EC000E93CDD6CD1011F"><img border="0" src="../images/-486202163_icon.png" alt="hasAdapter"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::hasAdapter" href="#_3E3F0EC000E93CDD6CD1011F">hasAdapter</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, indicates that this slot has an adapter installed that enables it to accept other types of cards (e.g., fitting an adapter on two Slots enable them to accept a Card that otherwise could not be accommodated). If its value is FALSE, then no adapter is present. This is an optional attribute.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::slotNumber" href="#_3E3F0EC000E93CDD6CD10120"><img border="0" src="../images/-486202163_icon.png" alt="slotNumber"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::slotNumber" href="#_3E3F0EC000E93CDD6CD10120">slotNumber</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a 16-bit unsigned integer attribute that represents an index into the system slot table. For example, this could be the hardware ID number (starting with 1) for each expansion slot. The number is independent of whether or not the Slot is occupied. This is a REQUIRED attribute.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::slotPurpose" href="#_3E3F0EC000E93CDD6CD10121"><img border="0" src="../images/-486202163_icon.png" alt="slotPurpose"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::slotPurpose" href="#_3E3F0EC000E93CDD6CD10121">slotPurpose</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer that defines the purpose of this Slot. A specific value below, such as System, means that the Slot is intended only to accept System cards. Values include:</br></br> 0: Unknown</br> 1: System</br> 2: Networking</br> 3: Port Adapter</br> 4: Memory</br> 5: Hardware Assist</br> 6: Video</br> 7: General Computing</br> 8: General Purpose</br></br>Hardware assist is a generic category for specialty boards that provide hardware functionality to assist in the processing of one or more functions. Examples are special cards for processing IPsec-based encryption.</br></br>General computing boards represent cards that have additional and/or auxiliary computing power that can be used for a variety of tasks (not just video rendering or encryption).</br></br>General purpose boards represent cards that have a variety of features (e.g., memory and computing).</br></br>This is an optional attribute.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::purposeDescription" href="#_3E3F0EC000E93CDD6CD10122"><img border="0" src="../images/-486202163_icon.png" alt="purposeDescription"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::purposeDescription" href="#_3E3F0EC000E93CDD6CD10122">purposeDescription</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a free-form string that defines the physically unique characteristics of this Slot. This is an optional attribute.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Slot </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot" href="#_3E3F0EC000E93CDD6D640309"><img border="0" src="../images/-486202163_icon.png" alt="_slot"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot" href="#_3E3F0EC000E93CDD6D640309">_slot</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Slot </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot1" href="#_3E3F0EC000E93CDD6D64030B"><img border="0" src="../images/-486202163_icon.png" alt="_slot1"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot1" href="#_3E3F0EC000E93CDD6D64030B">_slot1</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Slot </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot2" href="#_3E3F0EC000E93CDD6DFE030B"><img border="0" src="../images/-486202163_icon.png" alt="_slot2"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot2" href="#_3E3F0EC000E93CDD6DFE030B">_slot2</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Slot </td><td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot3" href="#_3E3F0EC000E93CDD6DFE0315"><img border="0" src="../images/-486202163_icon.png" alt="_slot3"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot3" href="#_3E3F0EC000E93CDD6DFE0315">_slot3</a></td><td></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic" href="_3E3F0EC000E93DDEEACC0367-content.html"><img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic" href="_3E3F0EC000E93DDEEACC0367-content.html">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic::physicalDescription" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202AD"><img border="0" src="../images/-486202163_icon.png" alt="physicalDescription"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic::physicalDescription" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202AD">physicalDescription</a>, <a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic::uniquePhysical" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202C1"><img border="0" src="../images/-486202163_icon.png" alt="uniquePhysical"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::HolderAtomic::uniquePhysical" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202C1">uniquePhysical</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::EquipmentHolder">&nbsp;SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::EquipmentHolder</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="type">&nbsp;type, <img border="0" src="../images/-486202163_icon.png" alt="state">&nbsp;state, <img border="0" src="../images/-486202163_icon.png" alt="manufacturer">&nbsp;manufacturer, <img border="0" src="../images/-486202163_icon.png" alt="location">&nbsp;location, <img border="0" src="../images/-486202163_icon.png" alt="ituArcStateAndStatusList">&nbsp;ituArcStateAndStatusList, <img border="0" src="../images/-486202163_icon.png" alt="isReportingAlarms">&nbsp;isReportingAlarms, <img border="0" src="../images/-486202163_icon.png" alt="expectedOrInstalledEquipmentRef">&nbsp;expectedOrInstalledEquipmentRef, <img border="0" src="../images/-486202163_icon.png" alt="asapRef">&nbsp;asapRef, <img border="0" src="../images/-486202163_icon.png" alt="acceptableEquipmentTypeList">&nbsp;acceptableEquipmentTypeList, <img border="0" src="../images/-486202163_icon.png" alt="acceptableEquipmentList">&nbsp;acceptableEquipmentList, <img border="0" src="../images/-486202163_icon.png" alt="typeOfHolder">&nbsp;typeOfHolder, <img border="0" src="../images/-486202163_icon.png" alt="isSolitaryHolder">&nbsp;isSolitaryHolder, <img border="0" src="../images/-486202163_icon.png" alt="holderStatus">&nbsp;holderStatus, <img border="0" src="../images/-486202163_icon.png" alt="_holderComposite">&nbsp;_holderComposite, <img border="0" src="../images/-486202163_icon.png" alt="_equipment">&nbsp;_equipment, <img border="0" src="../images/-486202163_icon.png" alt="_hardware2">&nbsp;_hardware2</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Hardware ABE::PhysicalContainer">&nbsp;SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Hardware ABE::PhysicalContainer</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="hotSwappable">&nbsp;hotSwappable, <img border="0" src="../images/-486202163_icon.png" alt="removable">&nbsp;removable, <img border="0" src="../images/-486202163_icon.png" alt="replaceable">&nbsp;replaceable, <img border="0" src="../images/-486202163_icon.png" alt="_physicalCapacity">&nbsp;_physicalCapacity</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Hardware ABE::ManagedHardware">&nbsp;SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Hardware ABE::ManagedHardware</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="additionalInfo">&nbsp;additionalInfo, <img border="0" src="../images/-486202163_icon.png" alt="administrativeState">&nbsp;administrativeState, <img border="0" src="../images/-486202163_icon.png" alt="physicalAlarmReportingEnabled">&nbsp;physicalAlarmReportingEnabled, <img border="0" src="../images/-486202163_icon.png" alt="physicalAlarmStatus">&nbsp;physicalAlarmStatus, <img border="0" src="../images/-486202163_icon.png" alt="coolingRequirements">&nbsp;coolingRequirements, <img border="0" src="../images/-486202163_icon.png" alt="hardwarePurpose">&nbsp;hardwarePurpose, <img border="0" src="../images/-486202163_icon.png" alt="_hardwareRole">&nbsp;_hardwareRole</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Hardware ABE::Hardware">&nbsp;SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Hardware ABE::Hardware</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="depth">&nbsp;depth, <img border="0" src="../images/-486202163_icon.png" alt="height">&nbsp;height, <img border="0" src="../images/-486202163_icon.png" alt="measurementUnits">&nbsp;measurementUnits, <img border="0" src="../images/-486202163_icon.png" alt="weight">&nbsp;weight, <img border="0" src="../images/-486202163_icon.png" alt="weightUnits">&nbsp;weightUnits, <img border="0" src="../images/-486202163_icon.png" alt="width">&nbsp;width, <img border="0" src="../images/-486202163_icon.png" alt="_physicalConnector">&nbsp;_physicalConnector, <img border="0" src="../images/-486202163_icon.png" alt="_hardware">&nbsp;_hardware, <img border="0" src="../images/-486202163_icon.png" alt="_hardware1">&nbsp;_hardware1, <img border="0" src="../images/-486202163_icon.png" alt="_physicalLink">&nbsp;_physicalLink, <img border="0" src="../images/-486202163_icon.png" alt="_physicalDevice">&nbsp;_physicalDevice, <img border="0" src="../images/-486202163_icon.png" alt="_device">&nbsp;_device, <img border="0" src="../images/-486202163_icon.png" alt="_equipmentHolder">&nbsp;_equipmentHolder, <img border="0" src="../images/-486202163_icon.png" alt="_commonPlatformEnumeration">&nbsp;_commonPlatformEnumeration</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::PhysicalResource">&nbsp;SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::PhysicalResource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_uniqueRepresentation">&nbsp;_uniqueRepresentation, <img border="0" src="../images/-486202163_icon.png" alt="_place2">&nbsp;_place2, <img border="0" src="../images/-486202163_icon.png" alt="_localPlace">&nbsp;_localPlace, <img border="0" src="../images/-486202163_icon.png" alt="_replacementSet">&nbsp;_replacementSet, <img border="0" src="../images/-486202163_icon.png" alt="manufactureDate">&nbsp;manufactureDate, <img border="0" src="../images/-486202163_icon.png" alt="otherIdentifier">&nbsp;otherIdentifier, <img border="0" src="../images/-486202163_icon.png" alt="powerState">&nbsp;powerState, <img border="0" src="../images/-486202163_icon.png" alt="serialNumber">&nbsp;serialNumber, <img border="0" src="../images/-486202163_icon.png" alt="versionNumber">&nbsp;versionNumber, <img border="0" src="../images/-486202163_icon.png" alt="_product2">&nbsp;_product2, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingService1">&nbsp;_resourceFacingService1, <img border="0" src="../images/-486202163_icon.png" alt="physicalResourceRole">&nbsp;physicalResourceRole</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::Resource">&nbsp;SID Models::Resource Domain::Resource ABE::Resource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_managementDomain">&nbsp;_managementDomain, <img border="0" src="../images/-486202163_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/-486202163_icon.png" alt="_resourceRole">&nbsp;_resourceRole, <img border="0" src="../images/-486202163_icon.png" alt="_resourceSpecification">&nbsp;_resourceSpecification, <img border="0" src="../images/-486202163_icon.png" alt="_resourceUsage">&nbsp;_resourceUsage, <img border="0" src="../images/-486202163_icon.png" alt="usageState">&nbsp;usageState, <img border="0" src="../images/-486202163_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/-486202163_icon.png" alt="_performance2">&nbsp;_performance2, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService, <img border="0" src="../images/-486202163_icon.png" alt="_product">&nbsp;_product, <img border="0" src="../images/-486202163_icon.png" alt="_resourceCharacteristicValue">&nbsp;_resourceCharacteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="_resourceSecurityEntity">&nbsp;_resourceSecurityEntity, <img border="0" src="../images/-486202163_icon.png" alt="_securityEventCollectionMethod">&nbsp;_securityEventCollectionMethod, <img border="0" src="../images/-486202163_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/-486202163_icon.png" alt="_securityThreatTool">&nbsp;_securityThreatTool, <img border="0" src="../images/-486202163_icon.png" alt="_commonResourceInfo">&nbsp;_commonResourceInfo, <img border="0" src="../images/-486202163_icon.png" alt="_partyRole3">&nbsp;_partyRole3, <img border="0" src="../images/-486202163_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/-486202163_icon.png" alt="resourceCapacity">&nbsp;resourceCapacity, <img border="0" src="../images/-486202163_icon.png" alt="resourceCapacityDemand">&nbsp;resourceCapacityDemand, <img border="0" src="../images/-486202163_icon.png" alt="_resourceInvolvementRole">&nbsp;_resourceInvolvementRole, <img border="0" src="../images/-486202163_icon.png" alt="_resourceUser">&nbsp;_resourceUser, <img border="0" src="../images/-486202163_icon.png" alt="runningSoftwareStatistics">&nbsp;runningSoftwareStatistics, <img border="0" src="../images/-486202163_icon.png" alt="software">&nbsp;software, <img border="0" src="../images/-486202163_icon.png" alt="compoundResource">&nbsp;compoundResource, <img border="0" src="../images/-486202163_icon.png" alt="resourceConfiguration">&nbsp;resourceConfiguration, <img border="0" src="../images/-486202163_icon.png" alt="resourceConfigSpec">&nbsp;resourceConfigSpec, <img border="0" src="../images/-486202163_icon.png" alt="resourceTest">&nbsp;resourceTest, <img border="0" src="../images/-486202163_icon.png" alt="resourceRelationship">&nbsp;resourceRelationship, <img border="0" src="../images/-486202163_icon.png" alt="resourceRelationship2">&nbsp;resourceRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="resource">&nbsp;resource, <img border="0" src="../images/-486202163_icon.png" alt="resource22">&nbsp;resource22, <img border="0" src="../images/-486202163_icon.png" alt="problem2">&nbsp;problem2, <img border="0" src="../images/-486202163_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/-486202163_icon.png" alt="_alarm_3">&nbsp;_alarm_3, <img border="0" src="../images/-486202163_icon.png" alt="_alarm_2">&nbsp;_alarm_2, <img border="0" src="../images/-486202163_icon.png" alt="_alarm_1">&nbsp;_alarm_1, <img border="0" src="../images/-486202163_icon.png" alt="alarm">&nbsp;alarm</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/-486202163_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/-486202163_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/-486202163_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/-486202163_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/-486202163_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/-486202163_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/-486202163_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/-486202163_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/-486202163_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/-486202163_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/-486202163_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/-486202163_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/-486202163_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/-486202163_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/-486202163_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">Slot</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3CF800C9-content.html">HolderAtomic ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3CF800C9-content.html">HolderAtomic ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3CF800C9-content.html">HolderAtomic ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6D640309">_slot</a></span>
+<pre>Public&nbsp;Slot _slot</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6D640309"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D620270-content.html">AdjacentSlotDetails</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_slot</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D64030B">_slot1</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6D64030B">_slot1</a></span>
+<pre>Public&nbsp;Slot _slot1</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6D64030B"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D620270-content.html">AdjacentSlotDetails</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_slot1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D640309">_slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6DFE030B">_slot2</a></span>
+<pre>Public&nbsp;Slot _slot2</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6DFE030B"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6DFC0235-content.html">SlotInSlot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_slot2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE0315">_slot3</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6DFE0315">_slot3</a></span>
+<pre>Public&nbsp;Slot _slot3</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6DFE0315"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6DFC0235-content.html">SlotInSlot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_slot3</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE030B">_slot2</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::_slot3</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6CD1011F">hasAdapter</a></span>
+<pre>Public&nbsp;Boolean hasAdapter</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, indicates that this slot has an adapter installed that enables it to accept other types of cards (e.g., fitting an adapter on two Slots enable them to accept a Card that otherwise could not be accommodated). If its value is FALSE, then no adapter is present. This is an optional attribute.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6CD1011F"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">hasAdapter</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::hasAdapter</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6CD10122">purposeDescription</a></span>
+<pre>Public&nbsp;String purposeDescription</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a free-form string that defines the physically unique characteristics of this Slot. This is an optional attribute.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6CD10122"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">purposeDescription</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::purposeDescription</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6CD10120">slotNumber</a></span>
+<pre>Public&nbsp;Integer slotNumber</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a 16-bit unsigned integer attribute that represents an index into the system slot table. For example, this could be the hardware ID number (starting with 1) for each expansion slot. The number is independent of whether or not the Slot is occupied. This is a REQUIRED attribute.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6CD10120"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">slotNumber</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::slotNumber</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD6CD10121">slotPurpose</a></span>
+<pre>Public&nbsp;Integer slotPurpose</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer that defines the purpose of this Slot. A specific value below, such as System, means that the Slot is intended only to accept System cards. Values include:</br></br> 0: Unknown</br> 1: System</br> 2: Networking</br> 3: Port Adapter</br> 4: Memory</br> 5: Hardware Assist</br> 6: Video</br> 7: General Computing</br> 8: General Purpose</br></br>Hardware assist is a generic category for specialty boards that provide hardware functionality to assist in the processing of one or more functions. Examples are special cards for processing IPsec-based encryption.</br></br>General computing boards represent cards that have additional and/or auxiliary computing power that can be used for a variety of tasks (not just video rendering or encryption).</br></br>General purpose boards represent cards that have a variety of features (e.g., memory and computing).</br></br>This is an optional attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD6CD10121"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">slotPurpose</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD6D19036F-content.html">Slot</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::PhysicalResource ABE::Equipment Holder ABE::HolderAtomic ABE::Slot::slotPurpose</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E2C3CF800C9-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">HolderAtomic ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Product Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93D6AAC4F0089-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Product Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Product Domain::Product Addendum Figures::Figure Pr.38 - Loyalty Rule<br>
+</span><span class="ElementTitle">Diagram Figure Pr.38 - Loyalty Rule<br>
+</span><span class="ElementDocumentation">A LoyaltyRule specifies:</br>•	Events triggering the evaluation of the rule (LoyaltyEvent)</br>  o	Ex: Every first of a month, a CustomerOrder of Top-Up</br>•	Conditions that have to be checked (LoyaltyCondition)</br>  o	Ex: If the invoice amount is above 100 €, If more than 2 hours of international call</br>•	Actions that should be performed if the condition clause is evaluated to TRUE (LoyaltyAction)</br>  o	Ex: Give 50 SMS free, Credit 10 points on the LoyaltyAccount</br></br>Loyalty Rules may result in</br>•	either rewards directly used / usable by the customer</br>  o	Ex: 5% more time on the communications package after 6 months of age, and 10% after one year ...</br>•	or loyalty earn that are gathered on an account to be used to pay later a ProductOffering</br>  o	Ex: 400 points to welcome a subscription then 10 points for every Euro charged. The points collected can be used to buy rewards like a USB stick, 100 SMS…</br>The different types of LoyaltyEvent may be event that occurs on BillingAccount (Ex: amount of Invoice, recurring charge), on PartyRole (Ex: CustomerOrder amount), on Products (Ex: monthly international usage volume).</br>A LoyaltyAction may correspond either to a CustomerOrder (Ex: 100 SMS free), or to an Interaction (Ex: a SMS notifying the 100 SMS free) or to a LoyaltyEarn (Ex: 100 points on the LoyaltyAccount)</br>Each time a LoyaltyEvent happens, LoyaltyConditions from LoyaltyRules triggered by this type of event are evaluated. </br>If the result is true, a LoyaltyExecutionPoint is noted tracking the application of the rule and triggering BusinessInteraction, CustomerOrder or LoyaltyEarn. A LoyaltyExecutionPoint is a type of PolicyExecutionPoint.</br></br>Depending on event’s type used in LoyaltyRule, the LoyaltyProgramProduct will specify entities from which it computes events (BillingAccount, Product…). The way to specify these boundaries from which loyalty events are collected to calculate the gains is not yet represented in this diagram and needs to be further studied.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_S.v.v.y4LUAE.eO.s.zOI.e.h.a.dD.bQ.GIF" alt="Figure Pr.38 - Loyalty Rule" usemap="#map_S.v.v.y4LUAE.eO.s.zOI.e.h.a.dD.bQ"></td>
+</tr>
+</table>
+<map name="map_S.v.v.y4LUAE.eO.s.zOI.e.h.a.dD.bQ">
+<area shape="rect" coords="0,0,0,0" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_.iWN.l.sM6.zE.e.eHS.fTDQ0.v.qN.w" alt="loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.iWRQEM6.zE.e.eHS.fTDQ0.v.qN.w" alt="usageVolumeBalanceEntry">
+<area shape="rect" coords="0,0,0,0" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_.iWN.l.sM6.zE.e.eHS.fTDQ0.v.qN.w" alt="loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.iWRQEM6.zE.e.eHS.fTDQ0.v.qN.w" alt="usageVolumeBalanceEntry">
+<area shape="rect" coords="0,0,0,0" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_.iWN.l.sM6.zE.e.eHS.fTDQ0.v.qN.w" alt="loyaltyExecutionPoint">
+<area shape="rect" coords="353,323,370,335" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_.iWN.l.sM6.zE.e.eHS.fTDQ0.v.qN.w" alt="loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.iWRQEM6.zE.e.eHS.fTDQ0.v.qN.w" alt="usageVolumeBalanceEntry">
+<area shape="rect" coords="353,392,370,404" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.iWRQEM6.zE.e.eHS.fTDQ0.v.qN.w" alt="usageVolumeBalanceEntry">
+<area shape="rect" coords="310,369,509,381" href="_.iWLJ.cM6.zE.e.eHS.fTDQ0.v.qN.w-content.html" alt="UsageVolumeBalanceEntryTriggeredBy">
+<area shape="poly" coords="342,414,342,315,352,315,352,414,342,414" href="_.iWLJ.cM6.zE.e.eHS.fTDQ0.v.qN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.m_.oLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="0,0,0,0" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.d1.sLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.m_.oLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="0,0,0,0" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.d1.sLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.m_.oLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="523,293,528,305" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.m_.oLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="0,0,0,0" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.d1.sLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="398,293,402,305" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.tG.d1.sLUFE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="403,271,523,283" href="_.tGR.o.cLUFE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyActionDescribes">
+<area shape="poly" coords="374,279,553,279,553,289,374,289,374,279" href="_.tGR.o.cLUFE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tS.z.cLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tL.e.sLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tS.z.cLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tL.e.sLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tS.z.cLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="327,232,331,244" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tS.z.cLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tL.e.sLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="615,136,620,148" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.h.tL.e.sLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="315,172,543,184" href="_.h.tB.t.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyExecutionPointResultsFromApplying">
+<area shape="poly" coords="633,153,344,153,344,254,334,254,334,143,633,143,633,153" href="_.h.tB.t.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3U.yELUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEarn">
+<area shape="rect" coords="0,0,0,0" href="_V2-F.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3OEYLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3U.yELUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEarn">
+<area shape="rect" coords="0,0,0,0" href="_V2-F.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3OEYLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3U.yELUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEarn">
+<area shape="rect" coords="237,197,254,209" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3U.yELUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEarn">
+<area shape="rect" coords="0,0,0,0" href="_V2-F.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3OEYLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="243,239,248,251" href="_V2-F.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.x3OEYLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="158,218,288,230" href="_.x2.wKULUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyEarnIsTriggeredBy">
+<area shape="poly" coords="226,254,226,195,236,195,236,254,226,254" href="_.x2.wKULUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U.z.mH.sLUFE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Generalization">
+<area shape="poly" coords="214,290,161,290,161,280,214,280,214,290" href="_U.z.mH.sLUFE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C1903F90074-content.html#_4.m.j.qMLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint2">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_4.m.qX4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_customerOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C1903F90074-content.html#_4.m.j.qMLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint2">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_4.m.qX4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_customerOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C1903F90074-content.html#_4.m.j.qMLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint2">
+<area shape="rect" coords="294,498,311,510" href="_3E3F0EC000E93C1903F90074-content.html#_4.m.j.qMLUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint2">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_4.m.qX4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_customerOrder">
+<area shape="rect" coords="296,338,313,350" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_4.m.qX4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_customerOrder">
+<area shape="rect" coords="185,483,333,495" href="_4.mO6ELUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="CustomerOrderIsTriggeredBy">
+<area shape="poly" coords="283,513,283,315,293,315,293,513,283,513" href="_4.mO6ELUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_1Q4.u4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_1RB40LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_businessInteraction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_1Q4.u4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_1RB40LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_businessInteraction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_1Q4.u4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="224,392,241,404" href="_3E3F0EC000E93C19002102B4-content.html#_1Q4.u4LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_1RB40LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_businessInteraction">
+<area shape="rect" coords="224,319,241,331" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_1RB40LUEE.eO.s.zOI.e.h.a.dD.bQ" alt="_businessInteraction">
+<area shape="rect" coords="90,349,260,361" href="_1Q.x.aILUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="BusinessInteractionIsTriggeredBy">
+<area shape="poly" coords="214,414,214,315,224,315,224,414,214,414" href="_1Q.x.aILUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.l2.x.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEvent">
+<area shape="rect" coords="0,0,0,0" href="_.pLN6YLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.mA.i.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.l2.x.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEvent">
+<area shape="rect" coords="0,0,0,0" href="_.pLN6YLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.mA.i.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.l2.x.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEvent">
+<area shape="rect" coords="845,244,861,256" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.l2.x.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyEvent">
+<area shape="rect" coords="0,0,0,0" href="_.pLN6YLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.mA.i.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="843,429,859,441" href="_.pLN6YLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.g.mA.i.oLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="806,220,928,232" href="_.g.l.p9ULUBE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyRuleTriggeredBy">
+<area shape="poly" coords="870,185,870,449,860,449,860,185,870,185" href="_.g.l.p9ULUBE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.bX8LUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyCondition">
+<area shape="rect" coords="0,0,0,0" href="_.nHVXELUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.i.s.sLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.bX8LUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyCondition">
+<area shape="rect" coords="0,0,0,0" href="_.nHVXELUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.i.s.sLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.bX8LUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyCondition">
+<area shape="rect" coords="770,350,786,362" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.bX8LUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyCondition">
+<area shape="rect" coords="0,0,0,0" href="_.nHVXELUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.i.s.sLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="768,190,784,202" href="_.nHVXELUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.c-.i.s.sLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="656,331,828,343" href="_.c-SOALUBE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyRuleShallBeDeterminedBy">
+<area shape="poly" coords="795,185,795,364,785,364,785,185,795,185" href="_.c-SOALUBE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZW_.kLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="0,0,0,0" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZ.e7YLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZW_.kLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="0,0,0,0" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZ.e7YLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZW_.kLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="679,237,695,249" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZW_.kLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyAction">
+<area shape="rect" coords="0,0,0,0" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZ.e7YLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="679,189,695,201" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html#_UZ.e7YLUBE.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="653,209,760,221" href="_UZPD.wLUBE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyRuleResultsIn">
+<area shape="poly" coords="708,185,708,254,698,254,698,185,708,185" href="_UZPD.wLUBE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_ESLIULT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXF.s.cLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXI.v.wLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="0,0,0,0" href="_ESLIULT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXF.s.cLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXI.v.wLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="0,0,0,0" href="_ESLIULT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXF.s.cLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="740,76,756,88" href="_ESLIULT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXF.s.cLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyRule">
+<area shape="rect" coords="0,0,0,0" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXI.v.wLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="745,110,750,122" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_.xXI.v.wLT8E.eO.s.zOI.e.h.a.dD.bQ" alt="_loyaltyProgramProdSpec">
+<area shape="rect" coords="685,93,855,105" href="_.xXDQMLT8E.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyProgramProdSpecDefines">
+<area shape="poly" coords="768,75,768,124,758,124,758,75,768,75" href="_.xXDQMLT8E.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_LP.x1.oM6.zE.e.eHS.fTDQ0.v.qN.w" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_.k.d5J4MS.tE.e.eN0_.w.z6.h.a8F.g" alt="value">
+<area shape="rect" coords="0,0,0,0" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html#_.j.nZ.m.wMS.tE.e.eN0_.w.z6.h.a8F.g" alt="date">
+<area shape="rect" coords="309,414,490,465" href="_6.aI.pQM.u0E.e.e.hC.p.q.uE0_75.g-content.html" alt="UsageVolumeBalanceEntry">
+<area shape="rect" coords="9,254,163,318" href="_3E3F0EC000E93EDA857301A5-content.html" alt="PolicyExecutionPoint">
+<area shape="rect" coords="199,513,362,577" href="_3E3F0EC000E93C1903F90074-content.html" alt="CustomerOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C445E9D0326" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C2C94CB02FC" alt="endDate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C221C9301AC" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C221C4A039C" alt="startDate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C447FD80224" alt="ID">
+<area shape="rect" coords="49,414,234,478" href="_3E3F0EC000E93C19002102B4-content.html" alt="BusinessInteraction">
+<area shape="rect" coords="141,166,287,181" href="_V2-F.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html#_.y.sB-.cLZ.iE.eODG56H.jXL.zMA" alt="quantity">
+<area shape="rect" coords="134,129,296,198" href="_V2-F.sLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyEarn">
+<area shape="rect" coords="214,254,376,318" href="_S.lSS.gLUEE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyExecutionPoint">
+<area shape="rect" coords="553,254,784,318" href="_.kZIEYLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyAction">
+<area shape="rect" coords="713,449,944,513" href="_.pLN6YLUAE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyEvent">
+<area shape="rect" coords="603,364,834,428" href="_.nHVXELUAE.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyCondition">
+<area shape="rect" coords="655,46,870,61" href="_ESLIULT7E.eO.s.zOI.e.h.a.dD.bQ-content.html#_F.w.rF.oLUGE.eO.s.zOI.e.h.a.dD.bQ" alt="needsLoyaltyAccount">
+<area shape="rect" coords="649,9,880,78" href="_ESLIULT7E.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyProgramProdSpec">
+<area shape="rect" coords="633,124,895,188" href="_P.dL.oMLT7E.eO.s.zOI.e.h.a.dD.bQ-content.html" alt="LoyaltyRule">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Pr.38 - Loyalty Rule</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93D6AAC4F0089-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Product Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

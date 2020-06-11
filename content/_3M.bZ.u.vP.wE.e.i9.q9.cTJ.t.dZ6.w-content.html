@@ -1,0 +1,2333 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Converged Network ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for TerminationPointEncapsulation">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Converged Network ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE</span>
+<br>
+<span class="ElementTitle">Class TerminationPointEncapsulation</span>
+<p>
+<a name="documentationSection"></a>The TerminationPointEncapsulation (TPE) represents one or more functions that terminate/originate a signal that adapt a signal for use, and that enable a signal to propagate. Hence a TPE can represent the end point of a signal flow. The TPE can also represent the intermediate point of a signal flow.</br></br>A TPE is capable of encapsulating multiple transport functions (G.805 termination functions, adapters, points etc.) at many different layers where the encapsulated transport functions are all related to the same signal flow.  The encapsulated layers may be exposed via usage of instances of LayerTermination (LT).</br></br>The TPE deals equivalently with unidirectional and bidirectional flows.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::tpeType" href="#_3M.bZ.v.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="tpeType"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::tpeType" href="#_3M.bZ.v.fP.wE.e.i9.q9.cTJ.t.dZ6.w">tpeType</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute represents the name of the specification that describes the construction of the TPE emphasising for example the access to the TPE and whether it is associated with a physical port directly or not. Amongst other things this attribute would identify whether the TPE is a PTP, CTP or FTP.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">AlarmSeverityAssignmentProfile </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_asapRefList" href="#_3M.bZ.v_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_asapRefList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_asapRefList" href="#_3M.bZ.v_P.wE.e.i9.q9.cTJ.t.dZ6.w">_asapRefList</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute indicates the assignment of one or more Alarm Severity Assignment Profiles (ASAP) to the TPE.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType"> </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_egressTmdRef" href="#_3M.bZ.w_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_egressTmdRef"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_egressTmdRef" href="#_3M.bZ.w_P.wE.e.i9.q9.cTJ.t.dZ6.w">_egressTmdRef</a></td><td>
+<p>
+<a name="documentationSection"></a>Pointer to a Tmd associated with the traffic leaving the TPE (i.e. egress).</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType"> </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_ingressTmdRef" href="#_3M.bZ.x_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_ingressTmdRef"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_ingressTmdRef" href="#_3M.bZ.x_P.wE.e.i9.q9.cTJ.t.dZ6.w">_ingressTmdRef</a></td><td>
+<p>
+<a name="documentationSection"></a>Pointer to a Tmd associated with the traffic arriving at the TPE (i.e. ingress).</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">TerminationPointEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_protectedTpeRefList" href="#_3M.bZ.y_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_protectedTpeRefList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_protectedTpeRefList" href="#_3M.bZ.y_P.wE.e.i9.q9.cTJ.t.dZ6.w">_protectedTpeRefList</a></td><td>
+<p>
+<a name="documentationSection"></a>Identifies one other TPE that is in a protection relationship with the TPE with this pointer.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Equipment </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_supportedTpeRefList" href="#_3M.bZ.z_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_supportedTpeRefList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_supportedTpeRefList" href="#_3M.bZ.z_P.wE.e.i9.q9.cTJ.t.dZ6.w">_supportedTpeRefList</a></td><td>
+<p>
+<a name="documentationSection"></a>The list of TPEs supported by a specific equipment.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">TerminationPointEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_tpeInOtherViewRefList" href="#_3M.bZ0_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_tpeInOtherViewRefList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_tpeInOtherViewRefList" href="#_3M.bZ0_P.wE.e.i9.q9.cTJ.t.dZ6.w">_tpeInOtherViewRefList</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute lists TPEs (in other name spaces) that represent at least some of the same resources in the network as the referencing TPE. For example this supports the navigation between a fully virtualized TPE and a TPE more closely bound to the physical equipment (such as the relationship between an SNP of the ASON Control Plane and a CTP of the physical network).</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">PhysicalPort </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_attachedTpeRefList" href="#_3M.bZ1_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="_attachedTpeRefList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_attachedTpeRefList" href="#_3M.bZ1_P.wE.e.i9.q9.cTJ.t.dZ6.w">_attachedTpeRefList</a></td><td>
+<p>
+<a name="documentationSection"></a>Lists the TPEs that are attached to the PhysicalPort.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::isEquipmentProtected" href="#_3M.bZ2_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="isEquipmentProtected"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::isEquipmentProtected" href="#_3M.bZ2_P.wE.e.i9.q9.cTJ.t.dZ6.w">isEquipmentProtected</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute indicates whether or not the TPE is supported by a protected Equipment.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType"> </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::egressTmdState" href="#_3M.bZ3_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="egressTmdState"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::egressTmdState" href="#_3M.bZ3_P.wE.e.i9.q9.cTJ.t.dZ6.w">egressTmdState</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute contains the state of consistency between a TPE and its associated egress TransmissionDescriptor.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType"> </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::ingressTmdState" href="#_3M.bZ5PP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="ingressTmdState"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::ingressTmdState" href="#_3M.bZ5PP.wE.e.i9.q9.cTJ.t.dZ6.w">ingressTmdState</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute contains the state of consistency between a TPE and its associated ingress TransmissionDescriptor.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType"> </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::managedelement" href="#_3M.bZ6.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="managedelement"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::managedelement" href="#_3M.bZ6.fP.wE.e.i9.q9.cTJ.t.dZ6.w">managedelement</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">TopologicalLink </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::topologicallink1" href="#_3M.b.aL_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="topologicallink1"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::topologicallink1" href="#_3M.b.aL_P.wE.e.i9.q9.cTJ.t.dZ6.w">topologicallink1</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">TopologicalLink </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::topologicallink" href="#_3M.b.aJ_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="topologicallink"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::topologicallink" href="#_3M.b.aJ_P.wE.e.i9.q9.cTJ.t.dZ6.w">topologicallink</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">TerminationPointEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation1" href="#_3M.b.aS.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="terminationpointencapsulation1"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation1" href="#_3M.b.aS.fP.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation1</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">TerminationPointEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation2" href="#_3M.b.aUPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="terminationpointencapsulation2"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation2" href="#_3M.b.aUPP.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation2</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">TerminationPointEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation" href="#_3M.b.aQ_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/-486202163_icon.png" alt="terminationpointencapsulation"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation" href="#_3M.b.aQ_P.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation</a></td><td></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::LogicalResource ABE::LogicalResource">&nbsp;SID Models::Resource Domain::Resource ABE::LogicalResource ABE::LogicalResource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="lrStatus">&nbsp;lrStatus, <img border="0" src="../images/-486202163_icon.png" alt="serviceState">&nbsp;serviceState, <img border="0" src="../images/-486202163_icon.png" alt="isOperational">&nbsp;isOperational, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingService3">&nbsp;_resourceFacingService3, <img border="0" src="../images/-486202163_icon.png" alt="resourceFacingService">&nbsp;resourceFacingService, <img border="0" src="../images/-486202163_icon.png" alt="logicalResourceRole">&nbsp;logicalResourceRole</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Resource Domain::Resource ABE::Resource">&nbsp;SID Models::Resource Domain::Resource ABE::Resource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_managementDomain">&nbsp;_managementDomain, <img border="0" src="../images/-486202163_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/-486202163_icon.png" alt="_resourceRole">&nbsp;_resourceRole, <img border="0" src="../images/-486202163_icon.png" alt="_resourceSpecification">&nbsp;_resourceSpecification, <img border="0" src="../images/-486202163_icon.png" alt="_resourceUsage">&nbsp;_resourceUsage, <img border="0" src="../images/-486202163_icon.png" alt="usageState">&nbsp;usageState, <img border="0" src="../images/-486202163_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/-486202163_icon.png" alt="_performance2">&nbsp;_performance2, <img border="0" src="../images/-486202163_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService, <img border="0" src="../images/-486202163_icon.png" alt="_product">&nbsp;_product, <img border="0" src="../images/-486202163_icon.png" alt="_resourceCharacteristicValue">&nbsp;_resourceCharacteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="_resourceSecurityEntity">&nbsp;_resourceSecurityEntity, <img border="0" src="../images/-486202163_icon.png" alt="_securityEventCollectionMethod">&nbsp;_securityEventCollectionMethod, <img border="0" src="../images/-486202163_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/-486202163_icon.png" alt="_securityThreatTool">&nbsp;_securityThreatTool, <img border="0" src="../images/-486202163_icon.png" alt="_commonResourceInfo">&nbsp;_commonResourceInfo, <img border="0" src="../images/-486202163_icon.png" alt="_partyRole3">&nbsp;_partyRole3, <img border="0" src="../images/-486202163_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/-486202163_icon.png" alt="resourceCapacity">&nbsp;resourceCapacity, <img border="0" src="../images/-486202163_icon.png" alt="resourceCapacityDemand">&nbsp;resourceCapacityDemand, <img border="0" src="../images/-486202163_icon.png" alt="_resourceInvolvementRole">&nbsp;_resourceInvolvementRole, <img border="0" src="../images/-486202163_icon.png" alt="_resourceUser">&nbsp;_resourceUser, <img border="0" src="../images/-486202163_icon.png" alt="runningSoftwareStatistics">&nbsp;runningSoftwareStatistics, <img border="0" src="../images/-486202163_icon.png" alt="software">&nbsp;software, <img border="0" src="../images/-486202163_icon.png" alt="compoundResource">&nbsp;compoundResource, <img border="0" src="../images/-486202163_icon.png" alt="resourceConfiguration">&nbsp;resourceConfiguration, <img border="0" src="../images/-486202163_icon.png" alt="resourceConfigSpec">&nbsp;resourceConfigSpec, <img border="0" src="../images/-486202163_icon.png" alt="resourceTest">&nbsp;resourceTest, <img border="0" src="../images/-486202163_icon.png" alt="resourceRelationship">&nbsp;resourceRelationship, <img border="0" src="../images/-486202163_icon.png" alt="resourceRelationship2">&nbsp;resourceRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="resource">&nbsp;resource, <img border="0" src="../images/-486202163_icon.png" alt="resource22">&nbsp;resource22, <img border="0" src="../images/-486202163_icon.png" alt="problem2">&nbsp;problem2, <img border="0" src="../images/-486202163_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/-486202163_icon.png" alt="_alarm_3">&nbsp;_alarm_3, <img border="0" src="../images/-486202163_icon.png" alt="_alarm_2">&nbsp;_alarm_2, <img border="0" src="../images/-486202163_icon.png" alt="_alarm_1">&nbsp;_alarm_1, <img border="0" src="../images/-486202163_icon.png" alt="alarm">&nbsp;alarm</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/-486202163_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/-486202163_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/-486202163_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/1359289239_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-486202163_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/-486202163_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/-486202163_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/-486202163_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/-486202163_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/-486202163_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/-486202163_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/-486202163_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/-486202163_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/-486202163_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/-486202163_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/-486202163_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/-486202163_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/-486202163_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/-486202163_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/-486202163_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">TerminationPointEncapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Converged Network ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Converged Network ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Converged Network ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ.v_P.wE.e.i9.q9.cTJ.t.dZ6.w">_asapRefList</a></span>
+<pre>Public&nbsp;AlarmSeverityAssignmentProfile _asapRefList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute indicates the assignment of one or more Alarm Severity Assignment Profiles (ASAP) to the TPE.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.v_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aP.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">AsapIsAssignedToTpe</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_asapRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_.jB.gIAGA.gE.eCRR.pP5K.uJL.vQ-content.html#_3M.b.aP_P.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_asapRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.jB.gIAGA.gE.eCRR.pP5K.uJL.vQ-content.html">AlarmSeverityAssignmentProfile</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ1_P.wE.e.i9.q9.cTJ.t.dZ6.w">_attachedTpeRefList</a></span>
+<pre>Public&nbsp;PhysicalPort _attachedTpeRefList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Lists the TPEs that are attached to the PhysicalPort.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ1_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_attachedTpeRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_attachedTpeRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDADAAE016F-content.html">PhysicalPort</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ.w_P.wE.e.i9.q9.cTJ.t.dZ6.w">_egressTmdRef</a></span>
+<pre>Public&nbsp; _egressTmdRef</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Pointer to a Tmd associated with the traffic leaving the TPE (i.e. egress).</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.w_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aO.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">EgressTmdIsAssignedToTpe</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_egressTmdRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_egressTmdRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ.x_P.wE.e.i9.q9.cTJ.t.dZ6.w">_ingressTmdRef</a></span>
+<pre>Public&nbsp; _ingressTmdRef</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Pointer to a Tmd associated with the traffic arriving at the TPE (i.e. ingress).</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.x_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aN.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">IngressTmdIsAssignedToTpe</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_ingressTmdRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_ingressTmdRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ.y_P.wE.e.i9.q9.cTJ.t.dZ6.w">_protectedTpeRefList</a></span>
+<pre>Public&nbsp;TerminationPointEncapsulation _protectedTpeRefList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Identifies one other TPE that is in a protection relationship with the TPE with this pointer.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.y_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aT_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TpeProtectsTpe</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_protectedTpeRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.b.aUPP.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation2</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_protectedTpeRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ.z_P.wE.e.i9.q9.cTJ.t.dZ6.w">_supportedTpeRefList</a></span>
+<pre>Public&nbsp;Equipment _supportedTpeRefList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>The list of TPEs supported by a specific equipment.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.z_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_supportedTpeRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_supportedTpeRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAFB610004-content.html">Equipment</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ0_P.wE.e.i9.q9.cTJ.t.dZ6.w">_tpeInOtherViewRefList</a></span>
+<pre>Public&nbsp;TerminationPointEncapsulation _tpeInOtherViewRefList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute lists TPEs (in other name spaces) that represent at least some of the same resources in the network as the referencing TPE. For example this supports the navigation between a fully virtualized TPE and a TPE more closely bound to the physical equipment (such as the relationship between an SNP of the ASON Control Plane and a CTP of the physical network).</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ0_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TpeRepresentsTpeInOtherView</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_tpeInOtherViewRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.b.aQ_P.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::_tpeInOtherViewRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ3_P.wE.e.i9.q9.cTJ.t.dZ6.w">egressTmdState</a></span>
+<pre>Public&nbsp; egressTmdState</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute contains the state of consistency between a TPE and its associated egress TransmissionDescriptor.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ3_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">egressTmdState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::egressTmdState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ5PP.wE.e.i9.q9.cTJ.t.dZ6.w">ingressTmdState</a></span>
+<pre>Public&nbsp; ingressTmdState</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute contains the state of consistency between a TPE and its associated ingress TransmissionDescriptor.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ5PP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">ingressTmdState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::ingressTmdState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ2_P.wE.e.i9.q9.cTJ.t.dZ6.w">isEquipmentProtected</a></span>
+<pre>Public&nbsp;Boolean isEquipmentProtected</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute indicates whether or not the TPE is supported by a protected Equipment.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ2_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">isEquipmentProtected</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::isEquipmentProtected</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ6.fP.wE.e.i9.q9.cTJ.t.dZ6.w">managedelement</a></span>
+<pre>Public&nbsp; managedelement</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ6.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">managedelement</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::managedelement</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.b.aQ_P.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation</a></span>
+<pre>Public&nbsp;TerminationPointEncapsulation terminationpointencapsulation</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.aQ_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TpeRepresentsTpeInOtherView</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">terminationpointencapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.bZ0_P.wE.e.i9.q9.cTJ.t.dZ6.w">_tpeInOtherViewRefList</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.b.aS.fP.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation1</a></span>
+<pre>Public&nbsp;TerminationPointEncapsulation terminationpointencapsulation1</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.aS.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aR.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">«names» TpeIsBoundToClientOrServerTpe</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">terminationpointencapsulation1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.b.aUPP.wE.e.i9.q9.cTJ.t.dZ6.w">terminationpointencapsulation2</a></span>
+<pre>Public&nbsp;TerminationPointEncapsulation terminationpointencapsulation2</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.aUPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aT_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TpeProtectsTpe</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">terminationpointencapsulation2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.bZ.y_P.wE.e.i9.q9.cTJ.t.dZ6.w">_protectedTpeRefList</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::terminationpointencapsulation2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.b.aJ_P.wE.e.i9.q9.cTJ.t.dZ6.w">topologicallink</a></span>
+<pre>Public&nbsp;TopologicalLink topologicallink</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.aJ_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aJ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TlIsTerminatedByZEndTpes</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">topologicallink</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ7PP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.bZ-PP.wE.e.i9.q9.cTJ.t.dZ6.w">_zEndTpeRefList</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::topologicallink</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ7PP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TopologicalLink</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.b.aL_P.wE.e.i9.q9.cTJ.t.dZ6.w">topologicallink1</a></span>
+<pre>Public&nbsp;TopologicalLink topologicallink1</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.aL_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aL.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TlIsTerminatedByAEndTpes</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">topologicallink1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ7PP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.bZ9PP.wE.e.i9.q9.cTJ.t.dZ6.w">_aEndTpeRefList</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::topologicallink1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ7PP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TopologicalLink</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-486202163_icon.png" alt="">&nbsp;<a name="_3M.bZ.v.fP.wE.e.i9.q9.cTJ.t.dZ6.w">tpeType</a></span>
+<pre>Public&nbsp;String tpeType</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute represents the name of the specification that describes the construction of the TPE emphasising for example the access to the TPE and whether it is associated with a physical port directly or not. Amongst other things this attribute would identify whether the TPE is a PTP, CTP or FTP.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.v.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">tpeType</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZ.u.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">TerminationPointEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::LogicalResource ABE::Converged Network ABE::TerminationPointEncapsulation::tpeType</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Converged Network ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

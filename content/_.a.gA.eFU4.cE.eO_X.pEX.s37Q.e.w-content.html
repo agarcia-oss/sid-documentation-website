@@ -1,0 +1,159 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Party Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.a.e.k5.sE4.cE.eO_X.pEX.s37Q.e.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Business Partner Domain::Party Addendum Figures::UNUSED Figure P.28 - Dunning Scenario and Case<br>
+</span><span class="ElementTitle">Diagram UNUSED Figure P.28 - Dunning Scenario and Case<br>
+</span><span class="ElementDocumentation">The Dunning ABE is part of the Customer Bill Collection ABE.</br>This section is intended to define the scope of information used by the dunning process.</br>More precisely, this section describes information produced and consumed by the level 3 business processes from eTOM </br>        ·1.1.1.11.3 Manage Customer Debt Collection</br>        ·and 1.1.1.1.14 Support Bill Payments &amp; Receivable Management</br>The diagram below presents the dunning catalogue and the corresponding cases.</br>Each telecommunication operator has to define its dunning strategy. This strategy is described by DunningScenario. Each DunningScenario contains the dunning rules to apply to a case, the order in which applying them, the events that trigger dunning rules evaluation, the actions that must be done etc</br>The DunningCaseRules are specified by DunningRule that is a type of PolicyRule.</br>This allows specifying for each dunning rule:</br>    · the events that trigger the evaluation of the rule (Ex: due debt not paid after 8 days),</br>    · conditions that have to be evaluated (Ex: no bill dispute in progress)</br>    · and actions that have to be done (Ex: send a dunning letter)</br>A DunningScenario is assigned to a CustomerAccount, depending on the Holder quality (Ex: a more tolerant DunningScenario is assigned to VIPs).</br>If no specific DunningScenario is assigned to a CustomerAccount, a default scenario is applied.</br>As soon as an event triggering a DunningRule occurs on a CustomerAccount, a DunningCase is created according to the DunningScenario assigned to the CustomerAccount.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.a.gA.eFU4.cE.eO_X.pEX.s37Q.e.w.GIF" alt="UNUSED Figure P.28 - Dunning Scenario and Case" usemap="#map_.a.gA.eFU4.cE.eO_X.pEX.s37Q.e.w"></td>
+</tr>
+</table>
+<map name="map_.a.gA.eFU4.cE.eO_X.pEX.s37Q.e.w">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tY04.cE.eO_X.pEX.s37Q.e.w" alt="_partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.qU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tY04.cE.eO_X.pEX.s37Q.e.w" alt="_partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.qU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tY04.cE.eO_X.pEX.s37Q.e.w" alt="_partyAccount">
+<area shape="rect" coords="365,63,369,75" href="_3E3F0EC000E93C2319BC02EE-content.html#_.a.eN.tY04.cE.eO_X.pEX.s37Q.e.w" alt="_partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.qU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="359,119,375,131" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.qU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyRole">
+<area shape="rect" coords="303,91,474,103" href="_.a.eOU2E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyRolePossesesPartyAccount">
+<area shape="poly" coords="387,57,387,137,377,137,377,57,387,57" href="_.a.eOU2E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_04.cE.eO_X.pEX.s37Q.e.w" alt="dunningRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w9.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_04.cE.eO_X.pEX.s37Q.e.w" alt="dunningRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w9.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_04.cE.eO_X.pEX.s37Q.e.w" alt="dunningRule">
+<area shape="rect" coords="279,437,284,449" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_04.cE.eO_X.pEX.s37Q.e.w" alt="dunningRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w9.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="529,442,533,454" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w9.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="317,464,503,476" href="_.a.i.gX.dU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningRuleIsDoneInAccordanceTo">
+<area shape="poly" coords="552,468,270,468,270,458,552,458,552,468" href="_.a.i.gX.dU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w6U4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_E4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w6U4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_E4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w6U4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="637,362,641,374" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w6U4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_E4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="637,414,642,426" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w_E4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="663,380,782,410" href="_.a.i.gX.dE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningCaseContains">
+<area shape="poly" coords="660,357,660,432,650,432,650,357,660,357" href="_.a.i.gX.dE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w5.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w3.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w5.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w3.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w5.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="488,302,493,314" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w5.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w3.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="396,302,400,314" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w3.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="386,326,494,338" href="_.a.i.gX.c04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningCaseApplies">
+<area shape="poly" coords="543,330,338,330,338,320,543,320,543,330" href="_.a.i.gX.c04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.zU4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w404.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.zU4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w404.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.zU4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="502,145,506,157" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.zU4.cE.eO_X.pEX.s37Q.e.w" alt="dunningCase">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w404.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="595,216,600,228" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w404.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="478,120,709,159" href="_.a.eOU4E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningCaseConcernsOverdueDebtFrom">
+<area shape="poly" coords="440,159,595,159,595,287,585,287,585,169,440,169,440,159" href="_.a.eOU4E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w204.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w804.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w204.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w804.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w204.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="205,376,221,388" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w204.cE.eO_X.pEX.s37Q.e.w" alt="dunningCaseRule">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w804.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="211,421,215,433" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w804.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="234,381,372,411" href="_.a.i.f.w-U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningScenarioContains">
+<area shape="poly" coords="234,373,234,437,224,437,224,373,234,373" href="_.a.i.f.w-U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w2E4.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w2E4.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="264,145,281,157" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="dunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w2E4.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="189,229,193,241" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w2E4.cE.eO_X.pEX.s37Q.e.w" alt="partyAccount">
+<area shape="rect" coords="144,137,283,157" href="_.a.eOU304.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyAccountFollows">
+<area shape="poly" coords="328,172,209,172,209,287,199,287,199,162,328,162,328,172" href="_.a.eOU304.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w8.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Generalization">
+<area shape="poly" coords="160,462,104,462,104,452,160,452,160,462" href="_.a.i.f.w8.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="334,9,427,60" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="558,484,762,499" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.gX.cU4.cE.eO_X.pEX.s37Q.e.w" alt="outbreakDate">
+<area shape="rect" coords="558,468,762,483" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.xEU4.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="552,432,772,505" href="_.a.i.f.w-.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningCaseRule">
+<area shape="rect" coords="9,437,106,476" href="_J_K.yYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html" alt="PolicyRule">
+<area shape="rect" coords="160,437,272,489" href="_.a.i.f.w8E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningRule">
+<area shape="rect" coords="549,340,746,355" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w7.k4.cE.eO_X.pEX.s37Q.e.w" alt="startingDate">
+<area shape="rect" coords="549,324,746,339" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w7E4.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="543,287,756,360" href="_.a.i.f.w4U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningCase">
+<area shape="rect" coords="156,356,331,371" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w1.k4.cE.eO_X.pEX.s37Q.e.w" alt="isDefault">
+<area shape="rect" coords="156,340,331,355" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w1U4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="156,324,331,339" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w004.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="149,287,340,376" href="_.a.i.f.w0U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="DunningScenario">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.m04.cE.eO_X.pEX.s37Q.e.w" alt="pin">
+<area shape="rect" coords="0,0,0,0" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eOU.mU4.cE.eO_X.pEX.s37Q.e.w" alt="creditLimit">
+<area shape="rect" coords="328,137,442,176" href="_.a.eOU.jE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyAccount">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>UNUSED Figure P.28 - Dunning Scenario and Case</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.a.e.k5.sE4.cE.eO_X.pEX.s37Q.e.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

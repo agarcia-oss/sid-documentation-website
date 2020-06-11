@@ -1,0 +1,218 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Party Privacy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_J.mVEYO2NE.eS.tB.e28.d1ETEA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Party Privacy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Party Privacy ABE::Party Privacy Addendum Figures::Figure Ppr.02 - Party Privacy Profile Type overview<br>
+</span><span class="ElementTitle">Diagram Figure Ppr.02 - Party Privacy Profile Type overview<br>
+</span><span class="ElementDocumentation">Thanks to the capacity of RootEntityType / RootEntity that enables the description of any information of the model, we can specify the available options of Privacy for each information concerned by Privacy.</br>The following Figure Ppr.1602 – Party Privacy Profile Type overview gives an overview on how to specify the information concerned by Privacy rules and the Privacy rules themselves.</br>A PartyPrivacyProfileType specifies for a Party playing a type of PartyRole (PartyRoleSpecification) such as Customer or User and possibly restricted to a context such as a set of ProductOfferings, all the available options that the Party may choose for each information concerned by the Privacy.</br>A PartyPrivacyProfileType may specify Privacy for several information using PartyPrivacyProfileTypeCharacteristic.</br>Each PartyPrivacyProfileTypeCharacteristic may specifyies:</br>•	the one or many information concerned by the Privacy (CharacteristicSpecification via RootEntityTypeCharUse),</br>•	the PartyRoleSpecifications that must apply the Privacy rule (For example, specific rules might be specified about the postal address for Party playing a role of shipping company),</br>•	and the corresponding Privacy rule (i.e. available choices for the party) using PartyPrivacyProfileTypeCharValue.</br>A PartyPrivacyProfileTypeCharacteristic has a privacyType such as “Internal Purpose”, “External Purpose”, “Internal Retention” or “External Retention”.</br>If the privacyType is “Internal Purpose” or “External Purpose”, then the PartyPrivacyProfileTypeCharacteristic specifies the usage purpose of the information concerned by the privacy such as Administration, Marketing, Research…</br>The criticityLevel specifies a level of criticity for the set of Personal Identifiable Information (PII) defined by RootEntityTypeCharUse. </br>Each PartyPrivacyProfileTypeCharacteristic is categorized by a PrivacyCategory for helping Graphical User Interface (GUI) to have a nice presentation for Privacy viewing and configuration.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.gSZYAOO.aE.eS59.v.h.iBG5.x.f.g.GIF" alt="Figure Ppr.02 - Party Privacy Profile Type overview" usemap="#map_.gSZYAOO.aE.eS59.v.h.iBG5.x.f.g"></td>
+</tr>
+</table>
+<map name="map_.gSZYAOO.aE.eS59.v.h.iBG5.x.f.g">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_6K2FMGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_6K-BAGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_6K2FMGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_6K-BAGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_6K2FMGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyRoleSpecification">
+<area shape="rect" coords="251,169,255,181" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_6K2FMGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_6K-BAGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="55,172,59,184" href="_3E3F0EC000E93E961AB2001A-content.html#_6K-BAGN.pE.eW.gT.e.k.h3N0.eFA" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="54,158,378,170" href="_6K.vX.gGN.pE.eW.gT.e.k.h3N0.eFA-content.html" alt="PartyPrivacyProfileTypeCharacteristicDefinedForPartyRoleSpec">
+<area shape="poly" coords="364,189,49,189,49,61,58,61,58,179,364,179,364,189" href="_6K.vX.gGN.pE.eW.gT.e.k.h3N0.eFA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_.o.fXT.k.e.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o.f.g.d.gO.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_.o.fXT.k.e.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o.f.g.d.gO.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_.o.fXT.k.e.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="482,447,488,459" href="_3E3F0EC000E93F4AD33702BD-content.html#_.o.fXT.k.e.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o.f.g.d.gO.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityType">
+<area shape="rect" coords="326,447,332,459" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o.f.g.d.gO.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityType">
+<area shape="rect" coords="314,425,500,437" href="_.o.fXT.kO.f.qE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="RootEntityTypeFurtherDefinedBy">
+<area shape="poly" coords="296,433,518,433,518,443,296,443,296,433" href="_.o.fXT.kO.f.qE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_Y.z.i4.oO2RE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_Y.zX5.gO2RE.eSQHL.k.hYUW.b.f.w" alt="rootEntityTypeCharUse2">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_Y.z.i4.oO2RE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_Y.zX5.gO2RE.eSQHL.k.hYUW.b.f.w" alt="rootEntityTypeCharUse2">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_Y.z.i4.oO2RE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="561,276,567,288" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_Y.z.i4.oO2RE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_Y.zX5.gO2RE.eSQHL.k.hYUW.b.f.w" alt="rootEntityTypeCharUse2">
+<area shape="rect" coords="554,330,574,342" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_Y.zX5.gO2RE.eSQHL.k.hYUW.b.f.w" alt="rootEntityTypeCharUse2">
+<area shape="rect" coords="406,303,678,315" href="_Y.zJQAO2RE.eSQHL.k.hYUW.b.f.w-content.html" alt="PartyPrivacyProfileTypeCharacteristicDefinedBy">
+<area shape="poly" coords="544,348,544,271,554,271,554,348,544,348" href="_Y.zJQAO2RE.eSQHL.k.hYUW.b.f.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.o9KC0O.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o9KC0-.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.o9KC0O.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o9KC0-.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.o9KC0O.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="726,428,732,440" href="_3E3F0EC000E94462ADF80016-content.html#_.o9KC0O.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_rootEntityTypeCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o9KC0-.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification">
+<area shape="rect" coords="889,428,895,440" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o9KC0-.f.qE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification">
+<area shape="rect" coords="696,450,924,462" href="_.o9A44O.f.qE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="CharacteristicSpecificationUsedToDefine">
+<area shape="poly" coords="927,455,694,455,694,445,927,445,927,455" href="_.o9A44O.f.qE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.iX4OO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.bDIOO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="0,0,0,0" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.iX4OO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.bDIOO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="0,0,0,0" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.iX4OO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="743,88,749,100" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.iX4OO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.bDIOO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="1046,141,1052,153" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.n.h.bDIOO.dE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="788,58,1025,70" href="_.n.hQ.rEOO.dE.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyRoleProfileTypeDescribedBy">
+<area shape="poly" coords="1029,214,1029,81,731,81,731,71,1039,71,1039,214,1029,214" href="_.n.hQ.rEOO.dE.eS59.v.h.iBG5.x.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_R8.l.hUOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_R8TN.cOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="0,0,0,0" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_R8.l.hUOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_R8TN.cOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="0,0,0,0" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_R8.l.hUOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="633,241,639,253" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_R8.l.hUOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_R8TN.cOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="917,241,923,253" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_R8TN.cOO.gE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharValue">
+<area shape="rect" coords="628,206,932,218" href="_R8LR.oOO.gE.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileTypeCharacteristicEnumeratedBy">
+<area shape="poly" coords="932,236,621,236,621,226,932,226,932,236" href="_R8LR.oOO.gE.eS59.v.h.iBG5.x.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_.a6.gE0OQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyCategory">
+<area shape="rect" coords="0,0,0,0" href="_JR.a.uQOQ.fE.eS59.v.h.iBG5.x.f.g-content.html#_.a6U.e.oOQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_.a6.gE0OQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyCategory">
+<area shape="rect" coords="0,0,0,0" href="_JR.a.uQOQ.fE.eS59.v.h.iBG5.x.f.g-content.html#_.a6U.e.oOQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_.a6.gE0OQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyCategory">
+<area shape="rect" coords="158,252,164,264" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_.a6.gE0OQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyCategory">
+<area shape="rect" coords="0,0,0,0" href="_JR.a.uQOQ.fE.eS59.v.h.iBG5.x.f.g-content.html#_.a6U.e.oOQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="348,252,354,264" href="_JR.a.uQOQ.fE.eS59.v.h.iBG5.x.f.g-content.html#_.a6U.e.oOQ.fE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="156,272,453,284" href="_.a6NJ4OQ.fE.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileTypeCharacteristicCategorizedBy">
+<area shape="poly" coords="364,272,149,272,149,262,364,262,364,272" href="_.a6NJ4OQ.fE.eS59.v.h.iBG5.x.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.vQFS.sN-RE.eS59.v.h.iBG5.x.f.g-content.html#_2.cJQ.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_2.b_.f.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyUsagePurpose">
+<area shape="rect" coords="0,0,0,0" href="_.vQFS.sN-RE.eS59.v.h.iBG5.x.f.g-content.html#_2.cJQ.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_2.b_.f.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyUsagePurpose">
+<area shape="rect" coords="0,0,0,0" href="_.vQFS.sN-RE.eS59.v.h.iBG5.x.f.g-content.html#_2.cJQ.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="349,233,355,245" href="_.vQFS.sN-RE.eS59.v.h.iBG5.x.f.g-content.html#_2.cJQ.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_2.b_.f.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyUsagePurpose">
+<area shape="rect" coords="179,233,199,245" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_2.b_.f.wN-RE.eS59.v.h.iBG5.x.f.g" alt="privacyUsagePurpose">
+<area shape="rect" coords="184,193,353,222" href="_2.b1.u.wN-RE.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileTypeCharacteristicDefinedFor">
+<area shape="poly" coords="173,223,364,223,364,233,173,233,173,223" href="_2.b1.u.wN-RE.eS59.v.h.iBG5.x.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_.uLM.oIO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.uLA.a4O2QE.eSQHL.k.hYUW.b.f.w" alt="partyRoleSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_.uLM.oIO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.uLA.a4O2QE.eSQHL.k.hYUW.b.f.w" alt="partyRoleSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_.uLM.oIO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="538,43,544,55" href="_3E3F0EC000E93E961AB2001A-content.html#_.uLM.oIO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.uLA.a4O2QE.eSQHL.k.hYUW.b.f.w" alt="partyRoleSpecification2">
+<area shape="rect" coords="219,43,225,55" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_.uLA.a4O2QE.eSQHL.k.hYUW.b.f.w" alt="partyRoleSpecification2">
+<area shape="rect" coords="270,23,482,35" href="_.uK.xKUO2QE.eSQHL.k.hYUW.b.f.w-content.html" alt="PartyPrivacyProfileTypeApplicableFor">
+<area shape="poly" coords="209,36,553,36,553,46,209,46,209,36" href="_.uK.xKUO2QE.eSQHL.k.hYUW.b.f.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#__Z.a.d4OO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#__.aJ.d.sOO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#__Z.a.d4OO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#__.aJ.d.sOO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#__Z.a.d4OO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="573,120,579,132" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#__Z.a.d4OO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#__.aJ.d.sOO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="573,158,579,170" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#__.aJ.d.sOO.bE.eS59.v.h.iBG5.x.f.g" alt="privacyPartyProfileType">
+<area shape="rect" coords="492,139,704,151" href="__ZT.wMOO.bE.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileTypeDescribedBy">
+<area shape="poly" coords="597,118,597,173,587,173,587,118,597,118" href="__ZT.wMOO.bE.eS59.v.h.iBG5.x.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_2I43.cO2QE.eSQHL.k.hYUW.b.f.w" alt="productOffering2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2JDP.gO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_2I43.cO2QE.eSQHL.k.hYUW.b.f.w" alt="productOffering2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2JDP.gO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_2I43.cO2QE.eSQHL.k.hYUW.b.f.w" alt="productOffering2">
+<area shape="rect" coords="533,98,539,110" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html#_2I43.cO2QE.eSQHL.k.hYUW.b.f.w" alt="productOffering2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2JDP.gO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="339,98,345,110" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2JDP.gO2QE.eSQHL.k.hYUW.b.f.w" alt="partyPrivacyProfileType">
+<area shape="rect" coords="343,73,535,85" href="_2I.s.qMO2QE.eSQHL.k.hYUW.b.f.w-content.html" alt="PartyPrivacyProfileTypeLimitedTo">
+<area shape="poly" coords="553,94,326,94,326,84,553,84,553,94" href="_2I.s.qMO2QE.eSQHL.k.hYUW.b.f.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="525,500,687,515" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_XR7UAO.f.mE.d-.qM.vG.jM6.f.x.w.w" alt="validFor">
+<area shape="rect" coords="525,484,687,499" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_TZ.iGIO.f.mE.d-.qM.vG.jM6.f.x.w.w" alt="extensible">
+<area shape="rect" coords="525,468,687,483" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_Q.gK.sUO.f.mE.d-.qM.vG.jM6.f.x.w.w" alt="maxCardinality">
+<area shape="rect" coords="525,452,687,467" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_M.s-.u.kO.f.mE.d-.qM.vG.jM6.f.x.w.w" alt="minCardinality">
+<area shape="rect" coords="525,436,687,451" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_IY.bJIO.f.mE.d-.qM.vG.jM6.f.x.w.w" alt="canBeOverridden">
+<area shape="rect" coords="525,420,687,435" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_F.nQCAO.f.mE.d-.qM.vG.jM6.f.x.w.w" alt="isPackage">
+<area shape="rect" coords="525,404,687,419" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_-5.gX.oO.f.lE.d-.qM.vG.jM6.f.x.w.w" alt="unique">
+<area shape="rect" coords="525,388,687,403" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_8C0.eYO.f.lE.d-.qM.vG.jM6.f.x.w.w" alt="description">
+<area shape="rect" coords="525,372,687,387" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_4.xURYO.f.lE.d-.qM.vG.jM6.f.x.w.w" alt="name">
+<area shape="rect" coords="518,348,696,532" href="_.hDXOUO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="RootEntityTypeCharUse">
+<area shape="rect" coords="938,238,1159,253" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html#_S.x.q4IOQBE.eS59.v.h.iBG5.x.f.g" alt="validityDuration">
+<area shape="rect" coords="932,214,1169,270" href="_5.nC2.kN99E.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileTypeCharValue">
+<area shape="rect" coords="14,263,151,314" href="_JR.a.uQOQ.fE.eS59.v.h.iBG5.x.f.g-content.html" alt="PrivacyCategory">
+<area shape="rect" coords="16,217,166,232" href="_.vQFS.sN-RE.eS59.v.h.iBG5.x.f.g-content.html#_.y.m.m.i.kN-RE.eS59.v.h.iBG5.x.f.g" alt="name">
+<area shape="rect" coords="9,193,175,249" href="_.vQFS.sN-RE.eS59.v.h.iBG5.x.f.g-content.html" alt="PrivacyUsagePurpose">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AE10325" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AFA019A" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AF403C2" alt="name">
+<area shape="rect" coords="39,13,211,64" href="_3E3F0EC000E93E961AB2001A-content.html" alt="PartyRoleSpecification">
+<area shape="rect" coords="370,213,613,228" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_.eG7H.cGN.pE.eW.gT.e.k.h3N0.eFA" alt="criticalityLevel">
+<area shape="rect" coords="370,197,613,212" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html#_I.p.c-.cN-BE.eS59.v.h.iBG5.x.f.g" alt="privacyType">
+<area shape="rect" coords="364,173,623,274" href="_CZ.e8.kN9-E.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileTypeCharacteristic">
+<area shape="rect" coords="553,23,733,121" href="_.j.lT.v.oN97E.eS59.v.h.iBG5.x.f.g-content.html" alt="PartyPrivacyProfileType">
+<area shape="rect" coords="934,531,1113,546" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02B8" alt="validFor">
+<area shape="rect" coords="934,515,1113,530" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AB" alt="derivationFormula">
+<area shape="rect" coords="934,499,1113,514" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9475EBBC502C1" alt="extensible">
+<area shape="rect" coords="934,483,1113,498" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60280" alt="maxCardinality">
+<area shape="rect" coords="934,467,1113,482" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60271" alt="minCardinality">
+<area shape="rect" coords="934,451,1113,466" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AA" alt="valueType">
+<area shape="rect" coords="934,435,1113,450" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E946F97EB7003E" alt="unique">
+<area shape="rect" coords="934,419,1113,434" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A9" alt="description">
+<area shape="rect" coords="934,403,1113,418" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A8" alt="name">
+<area shape="rect" coords="934,387,1113,402" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A7" alt="ID">
+<area shape="rect" coords="927,363,1122,563" href="_3E3F0EC000E94462ADF80016-content.html" alt="CharacteristicSpecification">
+<area shape="rect" coords="146,460,289,475" href="_3E3F0EC000E93F4AD33702BD-content.html#_6BIAYO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="dynamicAttrAssoc">
+<area shape="rect" coords="146,444,289,459" href="_3E3F0EC000E93F4AD33702BD-content.html#_.z.i.g-MO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="description">
+<area shape="rect" coords="146,428,289,443" href="_3E3F0EC000E93F4AD33702BD-content.html#_.l.vU.eQBK.yE.eC.bEM.iDOIHV1.g" alt="name">
+<area shape="rect" coords="146,412,289,427" href="_3E3F0EC000E93F4AD33702BD-content.html#_.z.i.iMUO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="ID">
+<area shape="rect" coords="139,388,298,492" href="_3E3F0EC000E93F4AD33702BD-content.html" alt="RootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="194,83,328,134" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Ppr.02 - Party Privacy Profile Type overview</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_J.mVEYO2NE.eS.tB.e28.d1ETEA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Party Privacy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>
