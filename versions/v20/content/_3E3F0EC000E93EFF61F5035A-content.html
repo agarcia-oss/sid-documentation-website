@@ -1,0 +1,128 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure LR.32 - Example Instance Implementation of a CompoundResource<br>
+</span><span class="ElementTitle">Diagram Figure LR.32 - Example Instance Implementation of a CompoundResource<br>
+</span><span class="ElementDocumentation">The following Figure shows a Router modeled as a type of ResourceElement.  The PhysicalResource entities and LogicalResource entities are identified in different colors on the Figure to help show their different instances. </br>A Router is a shorthand notation for a set of PhysicalResources, LogicalResources, and optionally CompoundResources that collectively represent the physical and logical aspects of the Router. The concept of a CompoundResource helps simplify representing complex devices and ensures that commands and policies that affect the physical and logical aspects of a device are sent to both the physical and logical components of the device.</br>CompoundResource has two subclasses, called ResourceElement and ResourceCollection. Both of these subclasses represent managed entities that may have physical and logical aspects.</br>It should be noted that this is, in reality, another use of the composite pattern.</br>A ResourceElement is an entity that is individually manageable. For example, a Router can be modeled as a ResourceElement. Different PhysicalResource objects can model the physical aspects of the Router in detail, and different LogicalResource objects can model the logical aspects of the Router in detail. If the Router was a modular Router that was made up of different PhysicalDevices having different logical capabilities, then each of these “sub-devices” could be represented as a CompoundResource. ResourceElement aggregates an appropriate set of PhysicalResource, LogicalResource, and CompoundResource objects, enabling a high-level view of all of the aspects of the Resource to be provided.</br>A ResourceCollection is an entity that is also individually manageable. If we “look inside” a ResourceCollection object, we find an aggregate entity consisting of at least one ResourceElement and zero or more ResourceCollection entities. This is represented by the HasCompoundResources aggregation. For example, a Network can be modeled as a subclass of ResourceCollection. A Network can be made up of other Networks and/or SubNetworks. Each Network or SubNetwork can, be made up of physical and logical components. Each node in the network can be represented by a ResourceElement. Thus, the ResourceCollection enables a single entity to represent a set of ResourceElements. This is very convenient for many different types of applications. One important example is topology applications, that support the ‘drill-down” of elements. That is, imagine a network appearing as a single icon in a topology map. This would be a ResourceCollection. Now, imagine the user double-clicks on that icon, bringing up the next level of detail. This would show the different components of the Network, such as SubNetworks and individual network devices. These would be examples of ResourceElements. The process can continue for as many levels as desired because the HasCompoundResources cardinality on the component side is 1..*.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EFF61F5035A.PNG" alt="Figure LR.32 - Example Instance Implementation of a CompoundResource" usemap="#map_3E3F0EC000E93EFF61F5035A"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EFF61F5035A">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_25.n8MBY.wE.eO7DM.mB23.c.aMA" alt="_resource2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_25.q_.gBY.wE.eO7DM.mB23.c.aMA" alt="compoundResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_25.n8MBY.wE.eO7DM.mB23.c.aMA" alt="_resource2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_25.q_.gBY.wE.eO7DM.mB23.c.aMA" alt="compoundResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_25.n8MBY.wE.eO7DM.mB23.c.aMA" alt="_resource2">
+<area shape="rect" coords="617,23,623,39" href="_3E3F0EC000E93EA8B3440213-content.html#_25.n8MBY.wE.eO7DM.mB23.c.aMA" alt="_resource2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_25.q_.gBY.wE.eO7DM.mB23.c.aMA" alt="compoundResource">
+<area shape="rect" coords="260,119,266,135" href="_3E3F0EC000E93DDE851703CB-content.html#_25.q_.gBY.wE.eO7DM.mB23.c.aMA" alt="compoundResource">
+<area shape="rect" coords="220,68,422,84" href="_25.l.f8BY.wE.eO7DM.mB23.c.aMA-content.html" alt="CompoundResourceComposedOf">
+<area shape="poly" coords="270,138,270,33,627,33,627,43,280,43,280,138,270,138" href="_25.l.f8BY.wE.eO7DM.mB23.c.aMA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFF10080268-content.html" alt="Generalization">
+<area shape="poly" coords="341,138,341,89,676,89,676,57,686,57,686,99,351,99,351,138,341,138" href="_3E3F0EC000E93EFF10080268-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C67530315-content.html#_3E3F0EC000E93EA96B050186" alt="_compoundResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_3E3F0EC000E93EA96B050190" alt="_resourceElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C67530315-content.html#_3E3F0EC000E93EA96B050186" alt="_compoundResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_3E3F0EC000E93EA96B050190" alt="_resourceElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C67530315-content.html#_3E3F0EC000E93EA96B050186" alt="_compoundResource">
+<area shape="rect" coords="187,144,213,161" href="_3E3F0EC000E93E9C67530315-content.html#_3E3F0EC000E93EA96B050186" alt="_compoundResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_3E3F0EC000E93EA96B050190" alt="_resourceElement">
+<area shape="rect" coords="109,278,135,295" href="_3E3F0EC000E93EA8B3440213-content.html#_3E3F0EC000E93EA96B050190" alt="_resourceElement">
+<area shape="rect" coords="23,200,205,217" href="_3E3F0EC000E93EA96B0303A0-content.html" alt="HasCompoundResources">
+<area shape="poly" coords="142,308,90,308,90,159,218,159,218,169,100,169,100,298,142,298,142,308" href="_3E3F0EC000E93EA96B0303A0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B70F0309-content.html" alt="Generalization">
+<area shape="poly" coords="444,278,444,227,301,227,301,185,311,185,311,217,454,217,454,278,444,278" href="_3E3F0EC000E93EA8B70F0309-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B70B012D-content.html" alt="Generalization">
+<area shape="poly" coords="221,273,221,217,301,217,301,185,311,185,311,227,231,227,231,273,221,273" href="_3E3F0EC000E93EA8B70B012D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Generalization">
+<area shape="poly" coords="1051,137,1051,99,676,99,676,57,686,57,686,89,1060,89,1060,137,1051,137" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Generalization">
+<area shape="poly" coords="641,136,641,89,676,89,676,57,686,57,686,99,651,99,651,136,641,136" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBA7D03CC-content.html" alt="Generalization">
+<area shape="poly" coords="647,383,647,325,657,325,657,383,647,383" href="_3E3F0EC000E93DDEBA7D03CC-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Generalization">
+<area shape="poly" coords="648,278,648,183,658,183,658,278,648,278" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFF624902CF-content.html" alt="Generalization">
+<area shape="poly" coords="429,381,429,325,439,325,439,381,429,381" href="_3E3F0EC000E93EFF624902CF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA8B3440213-content.html#_.z.m5I4P.uRE.eKD.n.p.k.z.i7.dD1.w" alt="status">
+<area shape="rect" coords="218,138,393,189" href="_3E3F0EC000E93EA8B3440213-content.html" alt="CompoundResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="627,9,734,60" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+<area shape="rect" coords="142,273,312,324" href="_3E3F0EC000E93E9C67530315-content.html" alt="ResourceCollection">
+<area shape="rect" coords="565,383,748,434" href="_3E3F0EC000E93DDEBA4600CA-content.html" alt="PhysicalDeviceAtomic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDDB56400AB" alt="canMixPower">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5910219" alt="isComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5A801C2" alt="deviceGroupID">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0180" alt="configurationOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0182" alt="backplaneNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0181" alt="backplaneIndependent">
+<area shape="rect" coords="583,278,724,329" href="_3E3F0EC000E93CDAB4C90013-content.html" alt="PhysicalDevice">
+<area shape="rect" coords="378,381,466,448" href="_3E3F0EC000E93EB1D58C0139-content.html" alt="Router">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAD87C026B" alt="isOperational">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0164" alt="serviceState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0166" alt="lrStatus">
+<area shape="rect" coords="981,137,1132,188" href="_3E3F0EC000E93CDAA51A00F6-content.html" alt="LogicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0167" alt="versionNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0163" alt="serialNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0162" alt="powerState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0160" alt="otherIdentifier">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD015E" alt="manufactureDate">
+<area shape="rect" coords="567,136,726,187" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+<area shape="rect" coords="371,278,529,329" href="_3E3F0EC000E93E9C669C0217-content.html" alt="ResourceElement">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure LR.32 - Example Instance Implementation of a CompoundResource</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

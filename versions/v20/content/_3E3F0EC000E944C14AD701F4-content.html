@@ -1,0 +1,265 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Performance Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E944BD39480138-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Performance Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Performance ABE::_ Performance Addendum Figures::Figure PF.06 - Performance Indicator - Threshold, Consequence, Notification<br>
+</span><span class="ElementTitle">Diagram Figure PF.06 - Performance Indicator - Threshold, Consequence, Notification<br>
+</span><span class="ElementDocumentation">As stated earlier the PerformanceIndicatorSpecification and PerformanceIndicator entities provide the definition and values that are used to measure a specific aspect of the performance of an entity, such as number of lost packets and out of sequence packets.  The indicator is measured by one or more instances of the PerformanceThreshold entity.  The PerformanceThreshold entity, shown in Figure PF.06, defines a goal for a PerformanceIndicatorSpecification in terms of the threshold values, tolerances, grace periods, and a comparator.  The comparator is operator that specifies whether Performance Threshold is crossed when it is above or below a conformance target.  For example, a threshold may specify that when average lost packets indicator exceeds a value of 2000, then the threshold is crossed.  A relationship between the threshold and a PerformanceIndicator specifies which thresholds were applied to an instance of an indicator.  For example, the lost packets indicator with a value of 2500 would be associated with the threshold of no more than 2000 lost packets.</br>A Threshold may contain multiple threshold rules. Threshold rules may differ in the condition that they apply, a raise condition or a clear condition, and in the severity of the threshold crossing. As shown in Figure PF.06 a PerformanceThresholdRule may behave in one of two different ways. A PerformanceThresholdRule may explicitly define the rules for raising thresholds and clearing threshold in different severities. The PerformanceThresholdRuleDefinition entity provides attributes for various kinds of threshold logic definition. Alternatively, a Threshold rule may be defined by a named predefined logic that can be executed with parameters. In this case, the PerformanceThresholdRulePreDefined entity will hold the rule name, and the PerformanceThresholdRulePreDefinedParam will define the parameters that are required for executing the ThresholdRulePreDefined. As these parameters are often indicator specifications, they can be associated to the PerformanceIndicatorSpecification entity.</br>A PerformanceConsequence represents the action taken when a PerformanceThresholdRule is crossed. Different Consequences can be defined for different severities. If a violation is triggered by a PerformanceIndicator an association is created between the instance of PerformanceIndicator and one or more PerformanceConsequences.  The consequence prescribes that action to take via a prescribed action or may be related to a ConsequencePerformanceNotificationSpec, which is a type of PerformanceNotificationSpecification.  For example, the prescribed action may be to monitor the PerformanceIndicator more closely.  The notification specification overrides the prescribed of the PerformanceConsequence and indicates what type of notification should be raised, such as an alert or an alarm.  If a notification specification is associated with a consequence and an instance of PerformanceIndicator triggers a consequence, an instance of ConsequencePerformanceNotification is created and associated to the instance of PerformanceIndicator.  A ConsequencePerformanceNotification is a type of PerformanceNotification, which in turn is a type of Notification.  This is also shown in Figure PF.06. A specific common case of a PerformanceConsequence is the generation of alarms. In this case, it will be possible to specify the attributes of an alarm that will be raised by a PerformanceThresholdRule using the PerformanceAlarmSpecification entity.</br>This part of the Performance model enables the creation of any type of PerformanceIndicatorSpecification along with its thresholds, consequences, and notifications, without the need to make changes to the information model.  This satisfies the requirement for the model to be adaptable to change.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E944C14AD701F4.PNG" alt="Figure PF.06 - Performance Indicator - Threshold, Consequence, Notification" usemap="#map_3E3F0EC000E944C14AD701F4"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E944C14AD701F4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A1CB00CB-content.html#_.mI.tQ.gI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_.mI42.sI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A1CB00CB-content.html#_.mI.tQ.gI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_.mI42.sI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A1CB00CB-content.html#_.mI.tQ.gI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="869,54,889,70" href="_3E3F0EC000E94487A1CB00CB-content.html#_.mI.tQ.gI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_.mI42.sI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotification">
+<area shape="rect" coords="1319,742,1325,758" href="_3E3F0EC000E9445ACCE60290-content.html#_.mI42.sI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_.mI.h.qUI9BE.eOZE_.qG24Z4.xA-content.html" alt="Association">
+<area shape="poly" coords="1292,743,1433,743,1433,28,861,28,861,87,851,87,851,18,1443,18,1443,753,1292,753,1292,743" href="_.mI.h.qUI9BE.eOZE_.qG24Z4.xA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448790F0000F-content.html#_YA9S.sI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_YBM.jQI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotificationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448790F0000F-content.html#_YA9S.sI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_YBM.jQI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotificationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448790F0000F-content.html#_YA9S.sI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="930,156,936,172" href="_3E3F0EC000E9448790F0000F-content.html#_YA9S.sI9BE.eOZE_.qG24Z4.xA" alt="performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_YBM.jQI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotificationSpec">
+<area shape="rect" coords="973,234,993,250" href="_3E3F0EC000E9445ACCE60290-content.html#_YBM.jQI9BE.eOZE_.qG24Z4.xA" alt="consequencePerformanceNotificationSpec">
+<area shape="rect" coords="892,208,1104,224" href="_YA.t.bEI9BE.eOZE_.qG24Z4.xA-content.html" alt="PerformanceConsequenceSpecifies">
+<area shape="poly" coords="1007,268,910,268,910,151,920,151,920,258,1007,258,1007,268" href="_YA.t.bEI9BE.eOZE_.qG24Z4.xA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.o.f.s2MIF4E.eK.v.bLQ3.iK.x.r.uA" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_.o.f.u.rYIF4E.eK.v.bLQ3.iK.x.r.uA" alt="performancethresholdrulepredefinedparam">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.o.f.s2MIF4E.eK.v.bLQ3.iK.x.r.uA" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_.o.f.u.rYIF4E.eK.v.bLQ3.iK.x.r.uA" alt="performancethresholdrulepredefinedparam">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.o.f.s2MIF4E.eK.v.bLQ3.iK.x.r.uA" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="594,759,601,775" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.o.f.s2MIF4E.eK.v.bLQ3.iK.x.r.uA" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_.o.f.u.rYIF4E.eK.v.bLQ3.iK.x.r.uA" alt="performancethresholdrulepredefinedparam">
+<area shape="rect" coords="370,759,376,775" href="_3E3F0EC000E9445D647E029F-content.html#_.o.f.u.rYIF4E.eK.v.bLQ3.iK.x.r.uA" alt="performancethresholdrulepredefinedparam">
+<area shape="rect" coords="339,777,679,798" href="_.o.f.r.oEIF4E.eK.v.bLQ3.iK.x.r.uA-content.html" alt="ParamMappedToPerformanceIndicatorSpec">
+<area shape="poly" coords="325,744,646,744,646,753,325,753,325,744" href="_.o.f.r.oEIF4E.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iX7EIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefined">
+<area shape="rect" coords="0,0,0,0" href="_VL.kA.cIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iZJMIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefinedParams">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iX7EIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefined">
+<area shape="rect" coords="0,0,0,0" href="_VL.kA.cIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iZJMIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefinedParams">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iX7EIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefined">
+<area shape="rect" coords="177,693,183,709" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iX7EIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefined">
+<area shape="rect" coords="0,0,0,0" href="_VL.kA.cIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iZJMIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefinedParams">
+<area shape="rect" coords="176,603,183,619" href="_VL.kA.cIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.q.iZJMIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThresholdPreDefinedParams">
+<area shape="rect" coords="27,648,276,664" href="_.q.iXUAIA.kE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="ThresholdRulePreDefinedUsesParameter">
+<area shape="poly" coords="156,720,156,593,166,593,166,720,156,720" href="_.q.iXUAIA.kE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.iL.e.z.gIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Generalization">
+<area shape="poly" coords="156,527,156,406,286,406,286,374,296,374,296,416,165,416,165,527,156,527" href="_.iL.e.z.gIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_Z.wF7.kIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Generalization">
+<area shape="poly" coords="483,527,483,416,286,416,286,374,296,374,296,406,493,406,493,527,483,527" href="_Z.wF7.kIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_I.g.a4.oIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_thresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_I.g.d78IA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_I.g.a4.oIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_thresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_I.g.d78IA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_I.g.a4.oIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_thresholdRule">
+<area shape="rect" coords="588,318,606,334" href="_3E3F0EC000E9445ACCB5004E-content.html#_I.g.a4.oIA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_thresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_I.g.d78IA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThreshold">
+<area shape="rect" coords="426,318,433,334" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_I.g.d78IA.kE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceThreshold">
+<area shape="rect" coords="417,287,622,303" href="_I.gZD.cIA.kE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="ThresholdContainsThresholdRule">
+<area shape="poly" coords="633,350,394,350,394,341,633,341,633,350" href="_I.gZD.cIA.kE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E9445ACEBA001F" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E9445ACEBA0021" alt="_performanceRule">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E9445ACEBA001F" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E9445ACEBA0021" alt="_performanceRule">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E9445ACEBA001F" alt="_performanceConsequence">
+<area shape="rect" coords="759,224,765,240" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E9445ACEBA001F" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E9445ACEBA0021" alt="_performanceRule">
+<area shape="rect" coords="386,269,392,285" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E9445ACEBA0021" alt="_performanceRule">
+<area shape="rect" coords="468,242,690,258" href="_3E3F0EC000E9445ACEB802FD-content.html" alt="PerformanceThresholdRuleResultsIn">
+<area shape="poly" coords="352,309,352,254,739,254,739,151,749,151,749,264,362,264,362,309,352,309" href="_3E3F0EC000E9445ACEB802FD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_2.t.xE.cIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_2.t0H.wIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_alarmSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_2.t.xE.cIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_2.t0H.wIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_alarmSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_2.t.xE.cIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceConsequence">
+<area shape="rect" coords="463,128,470,144" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_2.t.xE.cIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_2.t0H.wIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_alarmSpecification">
+<area shape="rect" coords="680,128,700,144" href="_3E3F0EC000E9445ACCE60290-content.html#_2.t0H.wIA.lE.eK.v.bLQ3.iK.x.r.uA" alt="_alarmSpecification">
+<area shape="rect" coords="445,75,695,91" href="_2.t.vPQIA.lE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="ConsequenceContainsAlarmSpecification">
+<area shape="poly" coords="419,113,739,113,739,123,419,123,419,113" href="_2.t.vPQIA.lE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944CAE85601E4-content.html" alt="Generalization">
+<area shape="poly" coords="1124,610,1124,487,1134,487,1134,610,1124,610" href="_3E3F0EC000E944CAE85601E4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470FE19033B" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E94470FE19034A" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470FE19033B" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E94470FE19034A" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470FE19033B" alt="_performanceConsequence">
+<area shape="rect" coords="847,157,855,174" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470FE19033B" alt="_performanceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E94470FE19034A" alt="_performanceIndicator">
+<area shape="rect" coords="847,499,855,516" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E94470FE19034A" alt="_performanceIndicator">
+<area shape="rect" coords="745,290,982,307" href="_3E3F0EC000E94470FE1702EC-content.html" alt="PerformanceIndicatorResultsIn">
+<area shape="poly" coords="864,519,864,151,873,151,873,519,864,519" href="_3E3F0EC000E94470FE1702EC-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A20A038A-content.html" alt="Generalization">
+<area shape="poly" coords="1142,722,1142,658,1152,658,1152,722,1142,722" href="_3E3F0EC000E94487A20A038A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A1CB00CB-content.html#_3E3F0EC000E94479FCD601F8" alt="_consequencePerformanceNotificationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448790F0000F-content.html#_3E3F0EC000E94479FCD60207" alt="_consequencePerformanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A1CB00CB-content.html#_3E3F0EC000E94479FCD601F8" alt="_consequencePerformanceNotificationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448790F0000F-content.html#_3E3F0EC000E94479FCD60207" alt="_consequencePerformanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94487A1CB00CB-content.html#_3E3F0EC000E94479FCD601F8" alt="_consequencePerformanceNotificationSpec">
+<area shape="rect" coords="1258,315,1266,332" href="_3E3F0EC000E94487A1CB00CB-content.html#_3E3F0EC000E94479FCD601F8" alt="_consequencePerformanceNotificationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448790F0000F-content.html#_3E3F0EC000E94479FCD60207" alt="_consequencePerformanceNotification">
+<area shape="rect" coords="1256,695,1264,712" href="_3E3F0EC000E9448790F0000F-content.html#_3E3F0EC000E94479FCD60207" alt="_consequencePerformanceNotification">
+<area shape="rect" coords="1100,353,1368,370" href="_3E3F0EC000E94479FCD401FE-content.html" alt="PerformanceNotificationBasedUpon">
+<area shape="poly" coords="1272,722,1272,305,1282,305,1282,722,1272,722" href="_3E3F0EC000E94479FCD401FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9448791330138-content.html" alt="Generalization">
+<area shape="poly" coords="1167,257,1167,135,1176,135,1176,257,1167,257" href="_3E3F0EC000E9448791330138-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9446009150290" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E9446009150292" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9446009150290" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E9446009150292" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9446009150290" alt="_performanceIndicator">
+<area shape="rect" coords="788,508,796,525" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9446009150290" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E9446009150292" alt="_performanceThreshold">
+<area shape="rect" coords="815,378,823,395" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E9446009150292" alt="_performanceThreshold">
+<area shape="rect" coords="660,475,940,492" href="_3E3F0EC000E94460091401F4-content.html" alt="PerformanceIndicatorMeasuredUsing">
+<area shape="poly" coords="815,384,815,519,805,519,805,384,815,384" href="_3E3F0EC000E94460091401F4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445ACE9F0167" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9445ACE9F0169" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445ACE9F0167" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9445ACE9F0169" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445ACE9F0167" alt="_performanceThreshold">
+<area shape="rect" coords="657,406,665,423" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445ACE9F0167" alt="_performanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9445ACE9F0169" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="751,701,759,718" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E9445ACE9F0169" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="529,687,821,704" href="_3E3F0EC000E9445ACE9D0251-content.html" alt="PerformanceIndicatorSpecMeasuredBy">
+<area shape="poly" coords="717,720,717,384,727,384,727,720,717,720" href="_3E3F0EC000E9445ACE9D0251-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94479FC0A0135" alt="_performanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94479FA5403A8-content.html#_3E3F0EC000E94479FC0A0137" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94479FC0A0135" alt="_performanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94479FA5403A8-content.html#_3E3F0EC000E94479FC0A0137" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94479FC0A0135" alt="_performanceNotification">
+<area shape="rect" coords="1035,633,1043,650" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94479FC0A0135" alt="_performanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94479FA5403A8-content.html#_3E3F0EC000E94479FC0A0137" alt="_performanceIndicator">
+<area shape="rect" coords="854,572,880,589" href="_3E3F0EC000E94479FA5403A8-content.html#_3E3F0EC000E94479FC0A0137" alt="_performanceIndicator">
+<area shape="rect" coords="899,577,1199,594" href="_3E3F0EC000E94479FC0900EE-content.html" alt="ViolatedPerformanceIndicatorResultsIn">
+<area shape="poly" coords="894,567,894,639,1049,639,1049,649,884,649,884,567,894,567" href="_3E3F0EC000E94479FC0900EE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="830,552,838,569" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="751,658,1009,675" href="_3E3F0EC000E94470F6080356-content.html" alt="PerformanceIndicatorSpecDefines">
+<area shape="poly" coords="845,720,845,567,855,567,855,720,845,720" href="_3E3F0EC000E94470F6080356-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.l.iX.m8JB.hE.eKT.c4FW.rVE.dK.g" alt="thresholdParams">
+<area shape="rect" coords="9,720,327,789" href="_FLOT4IA.jE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="PerformanceThresholdRulePreDefinedParam">
+<area shape="rect" coords="16,527,296,596" href="_VL.kA.cIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="PerformanceThresholdRulePreDefined">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.y.o.vGQFPIE.eS.p.fL4RU.c2.o.bQ" alt="conformanceComparatorUpper">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.y.o.t4IFPIE.eS.p.fL4RU.c2.o.bQ" alt="conformanceTargetUpper">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.y.o.s.qAFPIE.eS.p.fL4RU.c2.o.bQ" alt="conformanceComparatorLower">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_.y.o.q00FPIE.eS.p.fL4RU.c2.o.bQ" alt="conformanceTargetLower">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E94461669D031C" alt="gracePeriods">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E94461669D02FD" alt="tolerancePeriod">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E94461669D02DE" alt="toleranceTarget">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E94461669D02BF" alt="thresholdTarget">
+<area shape="rect" coords="0,0,0,0" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html#_3E3F0EC000E94461669D029F" alt="conformancePeriod">
+<area shape="rect" coords="352,527,625,596" href="_FP8RQIA.iE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="PerformanceThresholdRuleDefinition">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_4.qJ.v0IC.tE.eK.v.bLQ3.iK.x.r.uA" alt="thresholdRuleSeverity">
+<area shape="rect" coords="0,0,0,0" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html#_.d.m.yQIIC.tE.eK.v.bLQ3.iK.x.r.uA" alt="thresholdRuleCondition">
+<area shape="rect" coords="184,309,396,378" href="_.xR-G8IA.hE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="PerformanceThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.bUUQ.sIW.vE.eK.a.sM.vU.h.l.y2JA" alt="perfAlarmThresholdCrossingDescription">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_.f_UGYIC.wE.eK.v.bLQ3.iK.x.r.uA" alt="perfAlarmSpecAdditionalText">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_VHTQ.cIC.vE.eK.v.bLQ3.iK.x.r.uA" alt="perfAlarmSpecSpecificProblem">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_L7X.sYIC.vE.eK.v.bLQ3.iK.x.r.uA" alt="perfAlarmSpecAlarmType">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_-.r.x.e.kIC.uE.eK.v.bLQ3.iK.x.r.uA" alt="perfAlarmSpecProbableCause">
+<area shape="rect" coords="0,0,0,0" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html#_1OD.m8IC.uE.eK.v.bLQ3.iK.x.r.uA" alt="perfAlamSpecSeverity">
+<area shape="rect" coords="184,90,421,159" href="_.g.w.d.x.kIA.jE.eK.v.bLQ3.iK.x.r.uA-content.html" alt="PerformanceAlarmSpecification">
+<area shape="rect" coords="1050,439,1170,490" href="_3E3F0EC000E93C1900540286-content.html" alt="Notification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E9446167010119" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E944616701010A" alt="prescribedAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E9446167010109" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E94461670100FA" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCE60290-content.html#_3E3F0EC000E944CAEC58006D" alt="ID">
+<area shape="rect" coords="739,87,951,154" href="_3E3F0EC000E9445ACCE60290-content.html" alt="PerformanceConsequence">
+<area shape="rect" coords="1009,722,1295,773" href="_3E3F0EC000E94487A1CB00CB-content.html" alt="ConsequencePerformanceNotification">
+<area shape="rect" coords="1007,257,1323,308" href="_3E3F0EC000E9448790F0000F-content.html" alt="ConsequencePerformanceNotificationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_4CRJEIC.wE.eK.v.bLQ3.iK.x.r.uA" alt="thresholdType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E94461669D033C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E94461669D0251" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E94461669D0232" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445ACCB5004E-content.html#_3E3F0EC000E944CAEC8502DE" alt="ID">
+<area shape="rect" coords="633,315,861,388" href="_3E3F0EC000E9445ACCB5004E-content.html" alt="PerformanceThreshold">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E944CAE16B02EE" alt="value">
+<area shape="rect" coords="785,519,973,570" href="_3E3F0EC000E9445D694A00AB-content.html" alt="PerformanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_.hUVB.cK.wEE.eC.w.u4.oQ.b.aL0.w.w" alt="indicatorUnit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_MRQ3UK.wEE.eC.w.u4.oQ.b.aL0.w.w" alt="collectionType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060280" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E944765A01030D" alt="derivationMethod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060271" alt="derivationAlgorithm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E944E4EAD00109" alt="indicatorType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060251" alt="indicatorCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060242" alt="perspective">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060232" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060222" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E944CAEA200157" alt="ID">
+<area shape="rect" coords="646,720,914,771" href="_3E3F0EC000E9445D647E029F-content.html" alt="PerformanceIndicatorSpecification">
+<area shape="rect" coords="1049,610,1249,661" href="_3E3F0EC000E94479FA5403A8-content.html" alt="PerformanceNotification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9447663930138-content.html#_3E3F0EC000E944CAEAAA005D" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9447663930138-content.html#_3E3F0EC000E944CAEAAA003E" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9447663930138-content.html#_3E3F0EC000E944CAEAAA002E" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9447663930138-content.html#_3E3F0EC000E944CAEAAA001F" alt="ID">
+<area shape="rect" coords="1034,87,1316,138" href="_3E3F0EC000E9447663930138-content.html" alt="PerformanceNotificationSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PF.06 - Performance Indicator - Threshold, Consequence, Notification</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E944BD39480138-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Performance Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

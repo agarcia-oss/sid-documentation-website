@@ -1,0 +1,178 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Calendar Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Calendar ABE::_ Calendar Addendum Figures::Figure Cal.04 - Detailed Structure<br>
+</span><span class="ElementTitle">Diagram Figure Cal.04 - Detailed Structure<br>
+</span><span class="ElementDocumentation">The following Figure shows the structure in more detail. Note that the Event and EventType entities should only be considered as placeholders until the SID has modeled this area in detail. </br>We will allow Calendars to be grouped, allowing for all of the Calendars for a workgroup to be combined into a workgroup overview Calendar. Note, however, that only simple Calendars can have CalendarEntries.</br><Note>Note that CalendarEntries are specific to each calendar, they aren’t shared. This gives the CalendarOwner complete control over the entries in their Calendar.</Note></br>We have defined three basic types of CalendarEntry; Journal Entries, Events and ToDos. The CalendarEntry entity is an abstract concept that we use to group common attributes and common associations to other entities.</br>Since both Event and ToDo entries can have Alarms attached, we have introduced an abstract entity “ActionEntry” to hold the common concepts.</br>A CalendarEntry has a related Temporal Expression, which contains the TimePeriod or collection of repeating TimePeriods. Note that when we create a recurring CalendarEntry that the Recurrence Rule will create a set of subsidiary Calendar Entries. We need to keep track of these as we may need to update or remove them if the recurrence rule is modified, or the recurring CalendarEntry is removed. Rather than have a main and subsidiary set of CalendarEntries, all the entries are made equal and there is a both-way reference between the Entries and the associated RecurrenceRule.</br>The recurrence rule could be specified using a frequency like weekly, monthly, yearly. This means that the duration between repetitions may vary (e.g. for a monthly frequency the duration will vary from 28 to 31 days)</br><Note>Note that there may be many ways to implement the Recurrence Temporal Expression; these may include Templates, Rules or Policy Engines or hard coded algorithms.</Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93E7F9A84028A.PNG" alt="Figure Cal.04 - Detailed Structure" usemap="#map_3E3F0EC000E93E7F9A84028A"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93E7F9A84028A">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="873,23,881,40" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="536,53,544,70" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9BA26703B0-content.html" alt="Association">
+<area shape="poly" coords="495,72,843,72,843,82,495,82,495,72" href="_3E3F0EC000E93E9BA26703B0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E8BC1130360" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E8BC113036A" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E8BC1130360" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E8BC113036A" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E8BC1130360" alt="_timeZone">
+<area shape="rect" coords="413,95,421,112" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E8BC1130360" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E8BC113036A" alt="_calendar">
+<area shape="rect" coords="410,178,418,195" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E8BC113036A" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E8BC1130161-content.html" alt="Association">
+<area shape="poly" coords="389,192,435,86,444,90,398,196,389,192" href="_3E3F0EC000E93E8BC1130161-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9FA102AA-content.html" alt="Generalization">
+<area shape="poly" coords="734,160,734,120,926,120,926,89,936,89,936,130,743,130,743,160,734,160" href="_3E3F0EC000E93E7F9FA102AA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B88A7009A-content.html" alt="Generalization">
+<area shape="poly" coords="1038,166,1038,130,926,130,926,89,936,89,936,120,1048,120,1048,166,1038,166" href="_3E3F0EC000E93E9B88A7009A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E516EA7039C-content.html" alt="Generalization">
+<area shape="poly" coords="415,301,415,272,384,272,384,218,394,218,394,262,425,262,425,301,415,301" href="_3E3F0EC000E93E516EA7039C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E9B51B501FC" alt="_calendarOwner">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E9B51B501FD" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E9B51B501FC" alt="_calendarOwner">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E9B51B501FD" alt="_calendar">
+<area shape="rect" coords="180,114,300,131" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E9B51B501FC" alt="_calendarOwner">
+<area shape="rect" coords="321,94,329,111" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E9B51B501FC" alt="_calendarOwner">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E9B51B501FD" alt="_calendar">
+<area shape="rect" coords="345,172,353,189" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E9B51B501FD" alt="_calendar">
+<area shape="rect" coords="181,151,364,168" href="_3E3F0EC000E93E9B51B501F2-content.html" alt="PartyRoleOwnsCalendar">
+<area shape="poly" coords="374,198,274,84,281,77,382,191,374,198" href="_3E3F0EC000E93E9B51B501F2-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E516EAA00D9-content.html" alt="Generalization">
+<area shape="poly" coords="303,301,303,262,384,262,384,218,394,218,394,272,313,272,313,301,303,301" href="_3E3F0EC000E93E516EAA00D9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E516E9B036C-content.html#_3E3F0EC000E93E516EAF0194" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E516EAF019E" alt="_compoundCalendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E516E9B036C-content.html#_3E3F0EC000E93E516EAF0194" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E516EAF019E" alt="_compoundCalendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E516E9B036C-content.html#_3E3F0EC000E93E516EAF0194" alt="_calendar">
+<area shape="rect" coords="303,189,311,206" href="_3E3F0EC000E93E516E9B036C-content.html#_3E3F0EC000E93E516EAF0194" alt="_calendar">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E516EAF019E" alt="_compoundCalendar">
+<area shape="rect" coords="212,259,220,276" href="_3E3F0EC000E93E41B1AC0222-content.html#_3E3F0EC000E93E516EAF019E" alt="_compoundCalendar">
+<area shape="rect" coords="183,220,233,237" href="_3E3F0EC000E93E516EAD0336-content.html" alt="{DAG}">
+<area shape="poly" coords="231,301,231,201,338,201,338,211,241,211,241,301,231,301" href="_3E3F0EC000E93E516EAD0336-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="116,88,124,105" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="178,88,186,105" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="96,43,206,60" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="214,81,89,81,89,71,214,71,214,81" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="596,268,604,285" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="665,198,691,215" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B896D0289-content.html" alt="Association">
+<area shape="poly" coords="730,187,610,305,603,298,723,180,730,187" href="_3E3F0EC000E93E9B896D0289-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="982,209,1008,226" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="667,299,675,316" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B89580008-content.html" alt="Association">
+<area shape="poly" coords="633,297,1002,185,1005,195,636,306,633,297" href="_3E3F0EC000E93E9B89580008-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B2340192-content.html" alt="Generalization">
+<area shape="poly" coords="544,525,544,357,591,357,591,325,601,325,601,367,554,367,554,525,544,525" href="_3E3F0EC000E93E41B2340192-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1E70064-content.html" alt="Generalization">
+<area shape="poly" coords="777,391,777,367,591,367,591,325,601,325,601,357,787,357,787,391,777,391" href="_3E3F0EC000E93E41B1E70064-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="986,415,994,432" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="879,415,887,432" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B24C0254-content.html" alt="Association">
+<area shape="poly" coords="871,397,1004,397,1004,407,871,407,871,397" href="_3E3F0EC000E93E41B24C0254-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1EB0147-content.html" alt="Generalization">
+<area shape="poly" coords="934,525,934,456,778,456,778,415,788,415,788,446,943,446,943,525,934,525" href="_3E3F0EC000E93E41B1EB0147-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1E9014E-content.html" alt="Generalization">
+<area shape="poly" coords="757,525,757,446,778,446,778,415,788,415,788,456,767,456,767,525,757,525" href="_3E3F0EC000E93E41B1E9014E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="394,64,497,91" href="_3E3F0EC000E93E41B4F400D6-content.html" alt="TimeZone">
+<area shape="rect" coords="843,65,1018,92" href="_3E3F0EC000E93E7F9C9A03B4-content.html" alt="TemporalExpression">
+<area shape="rect" coords="338,194,441,221" href="_3E3F0EC000E93E41B1AC0222-content.html" alt="Calendar">
+<area shape="rect" coords="214,57,321,84" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="152,301,319,328" href="_3E3F0EC000E93E516E9B036C-content.html" alt="CompoundCalendar">
+<area shape="rect" coords="9,64,91,91" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+<area shape="rect" coords="633,160,846,187" href="_3E3F0EC000E93E7F9F5B019B-content.html" alt="SimpleTemporalExpression">
+<area shape="rect" coords="527,301,665,328" href="_3E3F0EC000E93E41B1110189-content.html" alt="CalendarEntry">
+<area shape="rect" coords="919,166,1169,193" href="_3E3F0EC000E93E9B886E01E2-content.html" alt="RecurrenceTemporalExpression">
+<area shape="rect" coords="351,301,492,328" href="_3E3F0EC000E93E516E910264-content.html" alt="SimpleCalendar">
+<area shape="rect" coords="459,525,641,552" href="_3E3F0EC000E93E41B17B0326-content.html" alt="CalendarJournalEntry">
+<area shape="rect" coords="1004,390,1147,417" href="_3E3F0EC000E93E41B18E02C9-content.html" alt="CalendarAlarm">
+<area shape="rect" coords="693,391,873,418" href="_3E3F0EC000E93E41B1D50113-content.html" alt="CalendarActionEntry">
+<area shape="rect" coords="873,525,1006,552" href="_3E3F0EC000E93E41B15501E1-content.html" alt="CalendarToDo">
+<area shape="rect" coords="694,525,831,552" href="_3E3F0EC000E93E41B12F00A6-content.html" alt="CalendarEvent">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Cal.04 - Detailed Structure</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

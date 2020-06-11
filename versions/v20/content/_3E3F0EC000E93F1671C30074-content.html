@@ -1,0 +1,114 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-20 - PolicyApp Interactions<br>
+</span><span class="ElementTitle">Diagram Figure 1P-20 - PolicyApp Interactions<br>
+</span><span class="ElementDocumentation">The purpose of this section is to describe how policy can be used to build a policy based management system. </br>A PolicyApplication is a special type of entity for use in policy-based management applications.</br>The ScopedManagedEntities aggregation defines the set of ManagedEntities that are contained in a particular ManagementDomain. </br>The ScopedPolicyApplication aggregation defines which PolicyApplications are scoped by a particular PolicyDomain. This is an important concept, as this controls what PolicyApplications can work on what ManagedEntities. Note that containment in a ManagementDomain implies the ability for said ManagedEntities to be managed by a particular PolicyApplication. The HasPolicySubDomains recursive aggregation enables hierarchies of PolicyDomains to be constructed. This is particularly useful for associating organizational hierarchies to PolicyApplications.</br>The logic behind scoping in general, and the ScopedPolicyApplication and ScopedManagedEntities aggregations, is complicated and not suitable to a business discussion.</br>The PolicyAppInvolvedWith association defines the set of PolicyApplications that are involved with processing policy decisions and performing policy actions on a set of ManagedEntities. Note that this association does NOT imply an action being taken on a ManagedEntity. Rather, it shows that a PolicyApplication is involved with applying policy to a particular ManagedEntity. For example, a policy-based management system may be measuring the performance of a particular ManagedEntity, so that policy can be used to change its configuration if the performance violates an associated SLA. The monitoring PolicyApplication is not applying actions to the ManagedEntity – rather, it is performing monitoring on the ManagedEntity so that another PolicyApplication can correct the operation of the ManagedEntity if needed.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93F1671C30074.PNG" alt="Figure 1P-20 - PolicyApp Interactions" usemap="#map_3E3F0EC000E93F1671C30074"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93F1671C30074">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="705,31,713,48" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="679,169,687,186" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="585,119,760,136" href="_3E3F0EC000E93EDB868202A4-content.html" alt="PolicyAppInvolvedWith">
+<area shape="poly" coords="660,183,754,183,754,55,687,55,687,45,763,45,763,193,660,193,660,183" href="_3E3F0EC000E93EDB868202A4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D7F52F4029F" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93D7F52F402A1" alt="_policyDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D7F52F4029F" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93D7F52F402A1" alt="_policyDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D7F52F4029F" alt="_policyApplication">
+<area shape="rect" coords="479,188,487,205" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D7F52F4029F" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93D7F52F402A1" alt="_policyDomain">
+<area shape="rect" coords="227,194,235,211" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93D7F52F402A1" alt="_policyDomain">
+<area shape="poly" coords="212,179,507,179,507,189,212,189,212,179" href="_3E3F0EC000E93D7F52ED026D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAAE2C0113-content.html#_3E3F0EC000E93DDFB1A4004F" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDFB1A40051" alt="_managementDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAAE2C0113-content.html#_3E3F0EC000E93DDFB1A4004F" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDFB1A40051" alt="_managementDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAAE2C0113-content.html#_3E3F0EC000E93DDFB1A4004F" alt="_managedEntity">
+<area shape="rect" coords="522,48,530,65" href="_3E3F0EC000E93CDAAE2C0113-content.html#_3E3F0EC000E93DDFB1A4004F" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDFB1A40051" alt="_managementDomain">
+<area shape="rect" coords="275,53,283,70" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDFB1A40051" alt="_managementDomain">
+<area shape="rect" coords="318,23,495,40" href="_3E3F0EC000E93DDFB1890245-content.html" alt="ScopedManagedEntities">
+<area shape="poly" coords="260,39,546,39,546,49,260,49,260,39" href="_3E3F0EC000E93DDFB1890245-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E403EC502F2-content.html" alt="Generalization">
+<area shape="poly" coords="155,161,155,69,165,69,165,161,155,161" href="_3E3F0EC000E93E403EC502F2-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E20113" alt="_policyDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E2011E" alt="_policyDomain1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E20113" alt="_policyDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E2011E" alt="_policyDomain1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E20113" alt="_policyDomain">
+<area shape="rect" coords="199,210,207,227" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E20113" alt="_policyDomain">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E2011E" alt="_policyDomain1">
+<area shape="rect" coords="87,210,113,227" href="_3E3F0EC000E93D7B908703DE-content.html#_3E3F0EC000E93D80E4E2011E" alt="_policyDomain1">
+<area shape="rect" coords="23,256,188,273" href="_3E3F0EC000E93D80E4DE038E-content.html" alt="HasPolicySubDomains">
+<area shape="poly" coords="130,209,130,246,207,246,207,209,216,209,216,256,120,256,120,209,130,209" href="_3E3F0EC000E93D80E4DE038E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="507,160,663,211" href="_3E3F0EC000E93D7F51F50392-content.html" alt="PolicyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8EB0004E" alt="managementMethodSupported">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8E85007E" alt="managementMethodCurrent">
+<area shape="rect" coords="546,21,689,72" href="_3E3F0EC000E93DDE84F30225-content.html" alt="ManagedEntity">
+<area shape="rect" coords="87,161,215,212" href="_3E3F0EC000E93D7B908703DE-content.html" alt="PolicyDomain">
+<area shape="rect" coords="83,21,262,72" href="_3E3F0EC000E93CDAAE2C0113-content.html" alt="ManagementDomain">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-20 - PolicyApp Interactions</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

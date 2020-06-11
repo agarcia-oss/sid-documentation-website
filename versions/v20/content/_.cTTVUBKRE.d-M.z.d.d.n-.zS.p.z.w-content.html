@@ -1,0 +1,73 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.10 - Attributes of a PhysicalResource<br>
+</span><span class="ElementTitle">Diagram Figure PR.10 - Attributes of a PhysicalResource<br>
+</span><span class="ElementDocumentation">[] Filling in the Details</br>We’re now at the stage where we can add some detail. Given that we are building a Business Model, we will simply strive to identify certain essential attributes and relationships for PhysicalDevice as well as Hardware. We will not define methods, low-level attributes, association classes, and in general all of the detail that fully describe these entities. This detail will be provided in an accompanying System model. This model has already been built and is currently being refined. It will be formalized as part of a future phase of the SID work.</br>The following rules were used to define the set of attributes and relationships for this model:</br>Keep to high-level, business-oriented concepts (e.g., while some applications might need to know specific details about a physical object, the purpose of this model is to simply identify the key concepts necessary for the purposes specified in our use cases)</br>This is intended as a “minimalist” model. Subtypes and attributes should be added as required to suit the needs of a particular application. The attributes shown should be considered as suggested, not required, unless they are specified as mandatory.</br>[] PhysicalResource attributes</br>We’re now at the stage where we can add some detail. Given that we are building a Business Model, we will simply strive to identify certain essential attributes and relationships for PhysicalDevice as well as Hardware. We will not define methods, low-level attributes, association classes, and in general all of the detail that fully describe these entities. This detail will be provided in an accompanying System model. This model has already been built and is currently being refined. It will be formalized as part of a future phase of the SID work.</br>The following rules were used to define the set of attributes and relationships for this model:</br>Keep to high-level, business-oriented concepts (e.g., while some applications might need to know specific details about a physical object, the purpose of this model is to simply identify the key concepts necessary for the purposes specified in our use cases)</br>Note that these entities represent business concepts in a Service Provider that conforms to the eTOM process model [eTOM] (specifically, the Resource Development and Operations processes).</br>This is intended as a “minimalist” model. Subtypes and attributes should be added as required to suit the needs of a particular application. The attributes shown should be considered as suggested, not required, unless they are specified as mandatory.</br>Parent attributes are not repeated in their subclasses</br>Only significant entities are shown in the “related business entities” cells</br>We already introduced the notion of this entity as a superclass of our two main categories of physical objects: Device and Hardware. Hardware defined three types of objects – Equipment, EquipmentHolder, and AuxiliaryComponent. We abstracted this set of entities into a single entity, called PhysicalResource. This is defined as an abstract base class for describing different types of hardware that constitute a Product. It has two main purposes: (1) to collect common attributes and relationships for all hardware, and (2) to provide a convenient, single point where relationships with other managed objects can be defined.</br>Now, it’s time to see if we can discover common attributes that these three types of entities have in common. We’ll tie this into the concept of a PhysicalResourceSpecification in a minute.</br>The most obvious types of attributes that physical objects have in common are the set of attributes that define specific characteristics about a given physical object. These include who manufactured it and when, and what the model number of the object is. To this, inventory encourages us to add part number, SKU number, and serial number. </br>These six attributes are inherited by all subclasses of PhysicalResource.</br>The key in making the above model extensible and reusable is to use the concept of a Specification. A Specification is a way of defining the invariant characteristics and behavior (attributes and relationships in the Business View, along with methods and constraints in the System View) of a managed entity.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.cTTVUBKRE.d-M.z.d.d.n-.zS.p.z.w.PNG" alt="Figure PR.10 - Attributes of a PhysicalResource" usemap="#map_.cTTVUBKRE.d-M.z.d.d.n-.zS.p.z.w"></td>
+</tr>
+</table>
+<map name="map_.cTTVUBKRE.d-M.z.d.d.n-.zS.p.z.w">
+<area shape="rect" coords="266,101,450,116" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0167" alt="versionNumber">
+<area shape="rect" coords="266,85,450,100" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0163" alt="serialNumber">
+<area shape="rect" coords="266,69,450,84" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0162" alt="powerState">
+<area shape="rect" coords="266,53,450,68" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0160" alt="otherIdentifier">
+<area shape="rect" coords="266,37,450,52" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD015E" alt="manufactureDate">
+<area shape="rect" coords="259,13,459,133" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.10 - Attributes of a PhysicalResource</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

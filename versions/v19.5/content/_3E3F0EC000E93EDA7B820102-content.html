@@ -1,0 +1,126 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-19 - Simple PolicyAction<br>
+</span><span class="ElementTitle">Diagram Figure 1P-19 - Simple PolicyAction<br>
+</span><span class="ElementDocumentation">PolicyAction is an abstract base class that represents how to form the action clause of a PolicyRule. This consists of a single occurrence of a PolicyStatement, which is of the form:  {variable, operator, value}. It is shown in Figure below.</br>Policy actions have the semantics of “SET variable to value”, which is implemented by a PolicyStatement. In order to provide flexibility, SID defines two types of actions:</br>        •	pass actions are invoked if the condition clause was TRUE</br>        •	fail actions are invoked if the condition clause was FALSE</br></br>For simplicity, this Addendum will discuss the former type of actions (i.e., “pass actions”) only.</br>The ContainedPolicyActions aggregation is used for two distinct purposes. First, it is used to gather together discrete PolicyActions to form a PolicyAction clause. In this usage, the set of individual PolicyActionAtomic objects are aggregated by a PolicyActionComposite object.</br>The second use is to form compound PolicyActions. In this case, the PolicyActionAtomic object aggregates PolicyActionAtomic and/or PolicyActionComposite objects. The former provides a simple nested PolicyAction, while the latter provides structure for grouping the sub-actions that are dependent on a higher-level action.</br>The PolicyActionInPolicyRule aggregation defines the set of PolicyActions that are contained in this PolicyRule. This aggregation is implemented as a class in order to capture additional semantics that define how the PolicyActions operate.</br>A PolicyRule is considered malformed unless it defines at least one PolicyAction term. This is because otherwise, there is nothing for the PolicyRule to do.</br>The PolicyActionRuleDetails and ContainedPolicyActionDetails implement the semantics of the PolicyActionInPolicyRule and ContainedPolicyActions aggregations, respectively. Both of these classes define an attribute (order and containedActionOrder, respectively) that can be used to prioritize the execution order of PolicyActions in a PolicyRule. The difference is that the ContainedPolicyActionDetails is used to prioritize the execution of PolicyActions for nested and grouped PolicyActions.</br>[] PolicyActionAtomic</br>The PolicyActionAtomic class is the base class for all simple PolicyActions. A simple PolicyAction consists of a single Boolean clause, which is used to perform a single action. This consists of a single occurrence of a PolicyStatement, which is of the form:</br>    {SET | CLEAR} PolicyVariable to PolicyValue</br>The above is an example of an action type of PolicyStatement. The fact that a PolicyActionAtomic contains a PolicyStatement is a distinguishing characteristic of the PolicyActionAtomic class. It is distinctly different from the PolicyActionVendor, which does not use a PolicyStatement, and from PolicyActionComposite, which contains multiple PolicyAction objects.</br>The PolicyActionAtomic class has three attributes. The actionSequenceNumber attribute is a non-negative integer and represents the particular sequence in which this element is executed as part of the overall policy structure. This will allow a policy engine to reference externally supplied arguments to this object as it is executed.</br>The hasExecuted attribute is an enumerated integer that is set by a policy application to define the state of execution of this policyAction. Different values define whether this entity has executed or not, and whether any errors were associated with its execution.</br>Finally, hasSubActions is a Boolean attribute that, if TRUE, signifies that this PolicyAction has one or more sub-actions. Sub-actions are used to enforce a hierarchical nesting of actions, so that parent actions may control the evaluation and other semantics of the sub-actions that they contain.</br>The PolicyStatementInPolicyAction aggregation models the binding of a PolicyStatement object to a PolicyActionAtomic object. It is implemented as an aggregation (instead of an association) to emphasize the whole-part nature of this relationship.</br>The PolicyStatement serves as the main body of the PolicyActionAtomic object. This means that the design of the PolicyActionAtomic object is simplified – the PolicyActionAtomic object becomes an intelligent container that adds semantics to the PolicyStatement.</br>[] PolicyActionComposite</br>PolicyActionAtomic objects can also be used to form more complex action structures. A PolicyActionComposite object can be used to contain a group of PolicyActionAtomic objects – this grouping enables multiple PolicyActionAtomic objects to be executed as a group. Alternatively, a PolicyActionAtomic object can contain one or more PolicyActionAtomic objects (and PolicyActionComposite groups if desired) to provide the semantics of a nested PolicyAction. The difference is that a group of PolicyActions (i.e., PolicyActions contained in a PolicyActionComposite) are executed as a discrete set of actions, whereas a nested PolicyAction (i.e., PolicyActions embedded in another PolicyAction) execute as sub-actions of one larger action.</br>The PolicyActionComposite class is the base class for serving as a generic container in which to place PolicyActionAtomic, PolicyActionVendor, or PolicyActionComposite classes. The first two provide actions that this container groups, while the latter establishes a hierarchy in which to order the execution of PolicyActions. Each of these objects is linked to this object using the ContainedPolicyActions association.</br>The actionSequence attribute fulfills the same purpose as the actionSequenceNumber attribute of the PolicyActionAtomic class; the difference is that the actionSequence attribute applies to the entire PolicyActionComposite object.</br>The actionExecutionStrategy attribute is an enumerated integer that defines the execution strategy to be used upon the sequenced actions aggregated by this PolicyActionComposite object. Four different execution strategies are defined in this version of this spec. “Do Until Success” means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed). “Do All” means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails. In contrast, “Do Until Failure” means that actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped. Finally, “Do All Without Failure or Do Nothing” means that ALL actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</br>Finally, hasSubPolicyActions is a Boolean attribute that, if TRUE, signifies that this PolicyAction has one or more sub-actions. Sub-actions are used to enforce a hierarchical nesting of actions, so that parent actions may control the evaluation and other semantics of sub-actions that they contain.</br>[] PolicyActionVendor</br>The PolicyActionVendor class is a concrete base class that provides a general extension mechanism for representing PolicyActions that have not been modeled with the attributes specified in this model. This class uses two of its properties (actionData and actionEncoding) for defining the content and format of a vendor-specific condition. Its third property (actionResponse) is used to provide a standard result, so that this object can be placed with other PolicyAction objects in a PolicyRule object. Standardized extensions are not expected to use this class.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EDA7B820102.PNG" alt="Figure 1P-19 - Simple PolicyAction" usemap="#map_3E3F0EC000E93EDA7B820102"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EDA7B820102">
+<area shape="rect" coords="0,0,0,0" href="_.m5.c.wYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html" alt="Generalization">
+<area shape="poly" coords="901,305,901,248,911,248,911,305,901,305" href="_.m5.c.wYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E066D7D0319-content.html" alt="Generalization">
+<area shape="poly" coords="727,319,727,288,301,288,301,249,311,249,311,278,737,278,737,319,727,319" href="_3E3F0EC000E93E066D7D0319-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E5-content.html" alt="Generalization">
+<area shape="poly" coords="115,319,115,278,301,278,301,249,311,249,311,288,125,288,125,319,115,319" href="_3E3F0EC000E93D77E58C02E5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02D8-content.html" alt="Generalization">
+<area shape="poly" coords="451,319,451,288,301,288,301,249,311,249,311,278,461,278,461,319,451,319" href="_3E3F0EC000E93D77E58C02D8-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="580,124,758,139" href="_3E3F0EC000E93D782DB0014A-content.html#_3E3F0EC000E93D782DE50351" alt="order">
+<area shape="rect" coords="573,100,767,156" href="_3E3F0EC000E93D782DB0014A-content.html" alt="PolicyActionRuleDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="400,204,426,221" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="rect" coords="766,199,774,216" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="poly" coords="814,230,366,230,366,220,814,220,814,230" href="_3E3F0EC000E93D782DB0014A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="242,47,457,62" href="_3E3F0EC000E93E0666920069-content.html#_3E3F0EC000E93D9F7F120178" alt="containedActionOrder">
+<area shape="rect" coords="235,23,466,79" href="_3E3F0EC000E93E0666920069-content.html" alt="ContainedPolicyActionDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="345,116,353,133" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="rect" coords="216,166,242,183" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="poly" coords="249,201,249,118,369,118,369,201,359,201,359,128,259,128,259,201,249,201" href="_3E3F0EC000E93E0666920069-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93E066CC202CA" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93E066CC202D4" alt="_policyActionAtomic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93E066CC202CA" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93E066CC202D4" alt="_policyActionAtomic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93E066CC202CA" alt="_policyStatement">
+<area shape="rect" coords="459,490,467,507" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93E066CC202CA" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93E066CC202D4" alt="_policyActionAtomic">
+<area shape="rect" coords="473,407,499,424" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93E066CC202D4" alt="_policyActionAtomic">
+<area shape="rect" coords="215,452,447,469" href="_3E3F0EC000E93E066CBF012B-content.html" alt="PolicyStatementInPolicyAction">
+<area shape="poly" coords="452,403,452,515,442,515,442,403,452,403" href="_3E3F0EC000E93E066CBF012B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="874,305,982,356" href="_J_K.yYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html" alt="PolicyRule">
+<area shape="rect" coords="242,201,368,252" href="_3E3F0EC000E93D77E58C02E2-content.html" alt="PolicyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D78120401C2" alt="hasSubRules">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D77E58C025C" alt="isCNF">
+<area shape="rect" coords="814,200,956,251" href="_3E3F0EC000E93D77E58C025B-content.html" alt="PolicyRuleBase">
+<area shape="rect" coords="370,515,522,566" href="_3E3F0EC000E93D77E58C0294-content.html" alt="PolicyStatement">
+<area shape="rect" coords="342,375,549,390" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93E067B78003A" alt="hasSubActions">
+<area shape="rect" coords="342,359,549,374" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93DD8572B0196" alt="hasExecuted">
+<area shape="rect" coords="342,343,549,358" href="_3E3F0EC000E93D77E58C02D7-content.html#_3E3F0EC000E93D9C21090225" alt="actionSequenceNumber">
+<area shape="rect" coords="336,319,559,407" href="_3E3F0EC000E93D77E58C02D7-content.html" alt="PolicyActionAtomic">
+<area shape="rect" coords="643,375,809,390" href="_3E3F0EC000E93E066D370047-content.html#_3E3F0EC000E93E5C44CC0082" alt="actionResponse">
+<area shape="rect" coords="643,359,809,374" href="_3E3F0EC000E93E066D370047-content.html#_3E3F0EC000E93D77E58C02DE" alt="actionEncoding">
+<area shape="rect" coords="643,343,809,358" href="_3E3F0EC000E93E066D370047-content.html#_3E3F0EC000E93D77E58C02DD" alt="actionData">
+<area shape="rect" coords="637,319,819,407" href="_3E3F0EC000E93E066D370047-content.html" alt="PolicyActionVendor">
+<area shape="rect" coords="16,391,224,406" href="_3E3F0EC000E93D77E58C02E6-content.html#_3E3F0EC000E94071C2E6036F" alt="actionsCNF">
+<area shape="rect" coords="16,375,224,390" href="_3E3F0EC000E93D77E58C02E6-content.html#_3E3F0EC000E93D782067019A" alt="hasSubPolicyActions">
+<area shape="rect" coords="16,359,224,374" href="_3E3F0EC000E93D77E58C02E6-content.html#_3E3F0EC000E93D77E58C02E8" alt="actionExecutionStrategy">
+<area shape="rect" coords="16,343,224,358" href="_3E3F0EC000E93D77E58C02E6-content.html#_3E3F0EC000E93D77E58C02E7" alt="actionSequence">
+<area shape="rect" coords="9,319,233,423" href="_3E3F0EC000E93D77E58C02E6-content.html" alt="PolicyActionComposite">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-19 - Simple PolicyAction</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

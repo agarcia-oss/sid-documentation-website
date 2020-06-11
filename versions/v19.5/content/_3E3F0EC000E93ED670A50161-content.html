@@ -1,0 +1,102 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Service Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_PU.qFIM8JE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Service Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Service Domain::Service ABE::_ Service Addendum Figures::Figure SO.07 - Representing BGP as a LogicalResource<br>
+</span><span class="ElementTitle">Diagram Figure SO.07 - Representing BGP as a LogicalResource<br>
+</span><span class="ElementDocumentation">Let’s consider the simple example of a Customer purchasing a VPN. The VPN itself may be both a Product and a CustomerFacingService, since the VPN provides a number of functions (e.g., connectivity) that people commonly refer to as Services. Suppose the VPN is a particular type of VPN, defined by RFC2547bis. This specification mandates that BGP (the Border Gateway Protocol, which is an inter-domain routing protocol that is used to exchange reachability information with other BGP systems) is used for route advertisement. The Customer doesn’t buy BGP services, yet BGP is required for this type of VPN to function. Therefore, BGP is a ResourceFacingService.</br>The following Figure takes an extract from the LogicalResource model and shows that BGP is a particular type of RoutingProtocol. This model defines several different types of Protocols. A RoutingProtocol is a particular type of protocol that accomplishes routing  through the implementation of a specific algorithm. Protocols are modeled as a type of LogicalResource.</br>Note: Routing is defined as the process of finding a path to a destination.</br>To connect this properly, we also need the concept of a LogicalDevice. This is the logical analog to the PhysicalDevice class. A LogicalDevice is an abstract base class for all logical resources that are inherently manageable and make up a Product. It is used to describe different types of logical features and services that constitute a Product. It has two main purposes: (1) to collect common attributes and relationships for all logical resources, and (2) to provide a convenient, single point where relationships with other managed objects can be defined.)</br>Thus, BGP is associated with a ResourceFacingService through the RFServiceUsesProtocol aggregation.</br>The ProtocolServiceDetails association class defines the Protocols that are required by a particular ResourceFacingService.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93ED670A50161.PNG" alt="Figure SO.07 - Representing BGP as a LogicalResource" usemap="#map_3E3F0EC000E93ED670A50161"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93ED670A50161">
+<area shape="rect" coords="536,115,718,167" href="_3E3F0EC000E93E5FC6CE00ED-content.html" alt="ProtocolServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5FC6D100DD" alt="_protocol">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E93E5FC6D100F1" alt="_resourceFacingService2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5FC6D100DD" alt="_protocol">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E93E5FC6D100F1" alt="_resourceFacingService2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5FC6D100DD" alt="_protocol">
+<area shape="rect" coords="441,174,447,190" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5FC6D100DD" alt="_protocol">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E93E5FC6D100F1" alt="_resourceFacingService2">
+<area shape="rect" coords="433,75,453,91" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E93E5FC6D100F1" alt="_resourceFacingService2">
+<area shape="poly" coords="467,62,467,203,457,203,457,62,467,62" href="_3E3F0EC000E93E5FC6CE00ED-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E6002AC00C6-content.html" alt="Generalization">
+<area shape="poly" coords="451,447,445,414,454,412,461,445,451,447" href="_3E3F0EC000E93E6002AC00C6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E60029D03BD-content.html" alt="Generalization">
+<area shape="poly" coords="446,365,446,332,456,332,456,365,446,365" href="_3E3F0EC000E93E60029D03BD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF008F-content.html" alt="Generalization">
+<area shape="poly" coords="459,284,459,251,469,251,469,284,459,284" href="_3E3F0EC000E93DCCA5AF008F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Generalization">
+<area shape="poly" coords="79,125,79,66,89,66,89,125,79,125" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="418,446,505,497" href="_3E3F0EC000E93DCCA5AF0094-content.html" alt="BGP">
+<area shape="rect" coords="343,365,549,416" href="_3E3F0EC000E93E5FFFD8017C-content.html" alt="PathVectorRoutingProtocol">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E943719374011D" alt="portRangeEnd">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E9437193230112" alt="portRangeStart">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E9437192950268" alt="protocolDirection">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E94371924D00EA" alt="isEphemeral">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E943718DB0021C" alt="currentPortNumber">
+<area shape="rect" coords="424,203,506,254" href="_3E3F0EC000E93DCCA5AF0087-content.html" alt="Protocol">
+<area shape="rect" coords="341,33,501,48" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E62A5D10351" alt="rfsStatus">
+<area shape="rect" coords="334,9,510,65" href="_3E3F0EC000E93D5091AC0353-content.html" alt="ResourceFacingService">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAD87C026B" alt="isOperational">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0164" alt="serviceState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0166" alt="lrStatus">
+<area shape="rect" coords="12,125,144,176" href="_3E3F0EC000E93CDAA51A00F6-content.html" alt="LogicalResource">
+<area shape="rect" coords="393,284,525,335" href="_3E3F0EC000E93DCCA5AF0090-content.html" alt="RoutingProtocol">
+<area shape="rect" coords="16,37,152,52" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="9,13,161,69" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure SO.07 - Representing BGP as a LogicalResource</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_PU.qFIM8JE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Service Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

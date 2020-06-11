@@ -1,0 +1,114 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Root Business Entities Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Root Business Entities ABE::_ Root Business Entities Addendum Figures::Figure R.41 - Association Class Specification Meta-Model<br>
+</span><span class="ElementTitle">Diagram Figure R.41 - Association Class Specification Meta-Model<br>
+</span><span class="ElementDocumentation">The specification of this association is simple, because it assumes no history when an instance of a Base Station Controller’s association (SupportedBy) to a Mobile Switching Center is changed from one instance of a Mobile Switching Center to another. Otherwise the specification for the association would be an *-*, which means the specification for an association class (entity) should be introduced into the meta-model, as shown in Figure As.04 – Association Class Specification.</br>The model shown in the figure provides the capability to define a specification for an association class or not. The 0,1 multiplicity from AssociationSpecification to RootEntityType defines this capability.</br>It should be kept in mind that another meta-modeling option is to not add the association between AssociationSpecification and RootEntityType.  The equivalent support could be provided by adding an instance of RootEntityType that represents a class, rather than an association class.  This instance would be related to the two instances of the RootEntityTypes involved in the *-* association by creating two instances of AssocationSpecification. In modeling, this represent what is often referred to as an intersection or link entity, which represents the resolution of a *-* association.</br>The association meta-model is only part of the solution to support the dynamic addition of associations.  Application functionality, including user interfaces, must also be developed. A representative set of insights into functionality, excluding user interface details, will be described next.</br>An application could provide the capability (user interface and logic) to add instances of associations when adding an instance of a RootEntity.  This capability would determine if the RootEntityType that describes the RootEntity has any related instances of AssociationSpecification. The dynamicAttrAssoc attribute of RootEntityType would be used to determine this.</br>Implementing the meta-model to support the dynamic addition of classes and subclasses, both implicit and explicit, means that inheriting associations must be supported. For existing SID entities, this should be handled by transformation of the information model to the data model by rolling down the super-classes.</br>Application logic can be employed to support inheriting associations by copying instances of AssociationSpecifications and AssociationRoleSpecifications to subclasses for dynamically added classes and subclasses, both implicit and explicit. If copying, rather than true inheritance, is provided, then the ability to change the properties (attributes) of the specifications (Association and AssociationRole) of the subclasses should be prevented by the application to avoid inconsistencies. When an instance of an entity is created/updated the application can ask if an instance of an association must/may be added/updated.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_D.aK.nQO32E.e.a5.v.tC.b.eUP.o.nQ.PNG" alt="Figure R.41 - Association Class Specification Meta-Model" usemap="#map_D.aK.nQO32E.e.a5.v.tC.b.eUP.o.nQ"></td>
+</tr>
+</table>
+<map name="map_D.aK.nQO32E.e.a5.v.tC.b.eUP.o.nQ">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_QET-.oO32E.e.a5.v.tC.b.eUP.o.nQ" alt="rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_QE.pV0O32E.e.a5.v.tC.b.eUP.o.nQ" alt="associationSpecification">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_QET-.oO32E.e.a5.v.tC.b.eUP.o.nQ" alt="rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_QE.pV0O32E.e.a5.v.tC.b.eUP.o.nQ" alt="associationSpecification">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_QET-.oO32E.e.a5.v.tC.b.eUP.o.nQ" alt="rootEntityType">
+<area shape="rect" coords="114,133,134,149" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_QET-.oO32E.e.a5.v.tC.b.eUP.o.nQ" alt="rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_QE.pV0O32E.e.a5.v.tC.b.eUP.o.nQ" alt="associationSpecification">
+<area shape="rect" coords="476,28,496,44" href="_3E3F0EC000E93F4AD33702BD-content.html#_QE.pV0O32E.e.a5.v.tC.b.eUP.o.nQ" alt="associationSpecification">
+<area shape="rect" coords="151,23,453,39" href="_QDPA.kO32E.e.a5.v.tC.b.eUP.o.nQ-content.html" alt="AssociationSpecificationIncludesAssociationClass">
+<area shape="poly" coords="508,57,141,57,141,157,132,157,132,47,508,47,508,57" href="_QDPA.kO32E.e.a5.v.tC.b.eUP.o.nQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXG.g.oO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXIV0O.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationSpecification">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXG.g.oO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXIV0O.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationSpecification">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXG.g.oO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="587,136,594,152" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXG.g.oO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXIV0O.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationSpecification">
+<area shape="rect" coords="587,74,594,90" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.fXIV0O.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationSpecification">
+<area shape="rect" coords="506,105,719,121" href="_.fXF5.kO.y.gE.e.a.pXJ.y.l.xL.zJMA-content.html" alt="AssociationSpecificationDefinedBy">
+<area shape="poly" coords="611,70,611,157,601,157,601,70,611,70" href="_.fXF5.kO.y.gE.e.a.pXJ.y.l.xL.zJMA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_T.a.d.v.gO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_T.a.f.k.sO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_T.a.d.v.gO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_T.a.f.k.sO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_T.a.d.v.gO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="485,157,491,173" href="_3E3F0EC000E93F4AD33702BD-content.html#_T.a.d.v.gO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="associationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_T.a.f.k.sO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="rootEntityType">
+<area shape="rect" coords="215,157,222,173" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_T.a.f.k.sO.y.gE.e.a.pXJ.y.l.xL.zJMA" alt="rootEntityType">
+<area shape="rect" coords="271,166,429,182" href="_T.a.dI.cO.y.gE.e.a.pXJ.y.l.xL.zJMA-content.html" alt="RootEntityTypeInvolvedIn">
+<area shape="poly" coords="201,177,500,177,500,186,201,186,201,177" href="_T.a.dI.cO.y.gE.e.a.pXJ.y.l.xL.zJMA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_21.w_8O.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="navigable">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.yP.o.iUO.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="multiplicity">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.uQ.vD0O.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="aggregation">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.p4C.lQO.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="roleName">
+<area shape="rect" coords="0,0,0,0" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.l2E.k.oO.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="roleNbr">
+<area shape="rect" coords="500,157,720,209" href="_-.n_8QO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html" alt="AssociationRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.rFH.mMBC.rE.e.eWR6.i.cP.s.v.j.wA" alt="lifecycleStatus">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.dG.y.gUO.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.a.p.u.oAO.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_WWK.hEO.y.fE.e.a.pXJ.y.l.xL.zJMA" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html#_.d.yIU.oO.y.lE.e.a.pXJ.y.l.xL.zJMA" alt="ID">
+<area shape="rect" coords="508,21,701,73" href="_75RFIO.yWE.e.a.pXJ.y.l.xL.zJMA-content.html" alt="AssociationSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_6BIAYO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="dynamicAttrAssoc">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_.z.i.g-MO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_.l.vU.eQBK.yE.eC.bEM.iDOIHV1.g" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_.z.i.iMUO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="ID">
+<area shape="rect" coords="66,157,204,209" href="_3E3F0EC000E93F4AD33702BD-content.html" alt="RootEntityType">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure R.41 - Association Class Specification Meta-Model</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Customer Bill Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Customer Domain::Customer Bill ABE::_Customer Bill Addendum Figures::Figure C.27 - Customer Account Balance, Part 3<br>
+</span><span class="ElementTitle">Diagram Figure C.27 - Customer Account Balance, Part 3<br>
+</span><span class="ElementDocumentation">CustomerAccountBalance represents and tracks the amount remained or owed in certain CustomerAccount. The attribute remainedAmount is Quantity type. Here Quantity type represents both non-monetary balance and monetary balance. Non-monetary balance is applied to the service usage volume and monetary balance is applied to the monetary amount. CustomerBillingCreditBalance at the following section is a subclass of CustomerAccountBalance.</br>CustomerAccountBalanceTypeSpec describes and defines certain type of CustomerAccountBalance. Predefined CustomerAccountBalanceSpec will help to define different balances under CustomerAccount. The attribute accountBalanceType of CustomerAccountBalance and the attribute balanceType of CustomerAccountBalanceTypeSpec help to associate one or more CustomerAccountBalances with one CustomerAccountBalanceTypeSpec and the related CustomerAccountBalanceTypeSpec describes the type of CustomerAccountBalances.</br>BalanceUsageRule is balance-level rule information constraining the application of CustomerAccountBalance. It could describe the sharing rule, by which CustomerAccountBalance could be shared between different kinds of FinancialCharge which is related to different customer’s product charge. It could emphasize associated CustomerAccountBalance is only applicable for certain usage, for example only applicable for local phone call or domestic flow or intra-PLMN SMS. FinancialChargeSpec could be applied to BalanceUsageRule to help to describe specification of FinancialCharge and relate them to the sharing information and the private usage information. BalanceUsageRule also includes priority and other kinds of rules limits the application of CustomerAccountBalance. For example, the refund SMS account balance should be used before monetary account balance when SMS is used.</br>The payment model presented here is intended to support a converged payment model for both prepaid and postpaid condition. PaymentPlan could trigger CustomerPayment activities after Bill/AppliedCustomerBillingRate is calculated out. AccountBalancePM defines possible payment method using CustomerAccountBalance as payment source. When CustomerAccountBalance is the payment source, BalanceUsageRule constraints carrying out of payment activities.</br>Payment activity area is as shown in the Figure C.27 below.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.r9FUEMR.hE.eO.d1.pZ.wFDY.v3Q.PNG" alt="Figure C.27 - Customer Account Balance, Part 3" usemap="#map_.r9FUEMR.hE.eO.d1.pZ.wFDY.v3Q"></td>
+</tr>
+</table>
+<map name="map_.r9FUEMR.hE.eO.d1.pZ.wFDY.v3Q">
+<area shape="rect" coords="0,0,0,0" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_.d.tE.eUM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.d.tGT.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerPaymentItem">
+<area shape="rect" coords="0,0,0,0" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_.d.tE.eUM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.d.tGT.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerPaymentItem">
+<area shape="rect" coords="0,0,0,0" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_.d.tE.eUM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="264,510,270,526" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_.d.tE.eUM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.d.tGT.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerPaymentItem">
+<area shape="rect" coords="602,510,608,526" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.d.tGT.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerPaymentItem">
+<area shape="rect" coords="287,485,587,501" href="_.d.tDQMM4ZE.e.eHS.fTDQ0.v.qN.w-content.html" alt="CustomerAccountBalanceTakenAsPaymentTarget">
+<area shape="poly" coords="617,511,254,511,254,501,617,501,617,511" href="_.d.tDQMM4ZE.e.eHS.fTDQ0.v.qN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_XMYY.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="0,0,0,0" href="_WCF5.cL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_XM.dRAM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerAccountBalance">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_XMYY.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="0,0,0,0" href="_WCF5.cL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_XM.dRAM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerAccountBalance">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_XMYY.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="847,641,853,657" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_XMYY.gM4ZE.e.eHS.fTDQ0.v.qN.w" alt="accountBalancePM">
+<area shape="rect" coords="0,0,0,0" href="_WCF5.cL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_XM.dRAM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerAccountBalance">
+<area shape="rect" coords="268,544,274,560" href="_WCF5.cL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_XM.dRAM4ZE.e.eHS.fTDQ0.v.qN.w" alt="customerAccountBalance">
+<area shape="rect" coords="570,608,744,624" href="_XMVVMM4ZE.e.eHS.fTDQ0.v.qN.w-content.html" alt="AccountBalancePMPaysWith">
+<area shape="poly" coords="254,536,554,536,554,627,860,627,860,637,544,637,544,546,254,546,254,536" href="_XMVVMM4ZE.e.eHS.fTDQ0.v.qN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.lWU.g8M4UE.e.e.hC.p.q.uE0_75.g-content.html" alt="Generalization">
+<area shape="poly" coords="149,502,149,431,159,431,159,502,149,502" href="_.lWU.g8M4UE.e.e.hC.p.q.uE0_75.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_.rH.w7IM4UE.e.e.hC.p.q.uE0_75.g" alt="customerAccountBalance2">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.rH428M4UE.e.e.hC.p.q.uE0_75.g" alt="balanceUsageRule">
+<area shape="rect" coords="0,0,0,0" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_.rH.w7IM4UE.e.e.hC.p.q.uE0_75.g" alt="customerAccountBalance2">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.rH428M4UE.e.e.hC.p.q.uE0_75.g" alt="balanceUsageRule">
+<area shape="rect" coords="0,0,0,0" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_.rH.w7IM4UE.e.e.hC.p.q.uE0_75.g" alt="customerAccountBalance2">
+<area shape="rect" coords="172,552,178,568" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_.rH.w7IM4UE.e.e.hC.p.q.uE0_75.g" alt="customerAccountBalance2">
+<area shape="rect" coords="0,0,0,0" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.rH428M4UE.e.e.hC.p.q.uE0_75.g" alt="balanceUsageRule">
+<area shape="rect" coords="166,596,184,612" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html#_.rH428M4UE.e.e.hC.p.q.uE0_75.g" alt="balanceUsageRule">
+<area shape="rect" coords="25,574,269,590" href="_.rH.t30M4UE.e.e.hC.p.q.uE0_75.g-content.html" alt="CustomerAccountBalanceConstrainedBy">
+<area shape="poly" coords="152,614,152,551,161,551,161,614,152,614" href="_.rH.t30M4UE.e.e.hC.p.q.uE0_75.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_KI.lI8GALE.eSD.e6.aJND.z.vZA" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_KI.j60GALE.eSD.e6.aJND.z.vZA" alt="customerAccountBalance2">
+<area shape="rect" coords="0,0,0,0" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_KI.lI8GALE.eSD.e6.aJND.z.vZA" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_KI.j60GALE.eSD.e6.aJND.z.vZA" alt="customerAccountBalance2">
+<area shape="rect" coords="0,0,0,0" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_KI.lI8GALE.eSD.e6.aJND.z.vZA" alt="customerAccount">
+<area shape="rect" coords="129,290,136,306" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_KI.lI8GALE.eSD.e6.aJND.z.vZA" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_KI.j60GALE.eSD.e6.aJND.z.vZA" alt="customerAccountBalance2">
+<area shape="rect" coords="130,329,136,345" href="_3E3F0EC000E93C8D16D901C7-content.html#_KI.j60GALE.eSD.e6.aJND.z.vZA" alt="customerAccountBalance2">
+<area shape="rect" coords="23,310,299,326" href="_KI.i.s.sGALE.eSD.e6.aJND.z.vZA-content.html" alt="AccountBalanceAppliedToCustomerAccount">
+<area shape="poly" coords="157,290,157,346,147,346,147,290,157,290" href="_KI.i.s.sGALE.eSD.e6.aJND.z.vZA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.nU4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.i.k4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.nU4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.i.k4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.nU4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="951,387,957,403" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.nU4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.i.k4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="951,240,957,256" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.i.k4.cE.eO_X.pEX.s37Q.e.w" alt="_paymentPlan">
+<area shape="rect" coords="906,302,1117,318" href="_.a.i.f.w.s04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PaymentPlanUsePaymentMethod">
+<area shape="poly" coords="977,217,977,427,968,427,968,217,977,217" href="_.a.i.f.w.s04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.aS.d.nQH5YE.eW6B5Y3R6.iX.i.w" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.aS.mKIH5YE.eW6B5Y3R6.iX.i.w" alt="paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.aS.d.nQH5YE.eW6B5Y3R6.iX.i.w" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.aS.mKIH5YE.eW6B5Y3R6.iX.i.w" alt="paymentPlan">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.aS.d.nQH5YE.eW6B5Y3R6.iX.i.w" alt="customerAccount">
+<area shape="rect" coords="245,218,251,234" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.aS.d.nQH5YE.eW6B5Y3R6.iX.i.w" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.aS.mKIH5YE.eW6B5Y3R6.iX.i.w" alt="paymentPlan">
+<area shape="rect" coords="892,135,898,151" href="_3E3F0EC000E93C8D16D901C7-content.html#_.aS.mKIH5YE.eW6B5Y3R6.iX.i.w" alt="paymentPlan">
+<area shape="rect" coords="518,101,771,117" href="_.aSWS.gH5YE.eW6B5Y3R6.iX.i.w-content.html" alt="PaymentPlanAppliedToCustomerAccount">
+<area shape="poly" coords="910,127,583,127,583,240,230,240,230,231,573,231,573,117,910,117,910,127" href="_.aSWS.gH5YE.eW6B5Y3R6.iX.i.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_BJ.t.gUFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Generalization">
+<area shape="poly" coords="938,621,938,533,948,533,948,621,938,621" href="_BJ.t.gUFJJE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_7.u.rN.cH5.aE.eW6B5Y3R6.iX.i.w" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_7.u.xUEH5.aE.eW6B5Y3R6.iX.i.w" alt="customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_7.u.rN.cH5.aE.eW6B5Y3R6.iX.i.w" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_7.u.xUEH5.aE.eW6B5Y3R6.iX.i.w" alt="customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_7.u.rN.cH5.aE.eW6B5Y3R6.iX.i.w" alt="paymentMethod">
+<area shape="rect" coords="837,400,844,416" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_7.u.rN.cH5.aE.eW6B5Y3R6.iX.i.w" alt="paymentMethod">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_7.u.xUEH5.aE.eW6B5Y3R6.iX.i.w" alt="customerPayment">
+<area shape="rect" coords="846,295,852,311" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_7.u.xUEH5.aE.eW6B5Y3R6.iX.i.w" alt="customerPayment">
+<area shape="rect" coords="775,346,963,362" href="_7.u.o.xMH5.aE.eW6B5Y3R6.iX.i.w-content.html" alt="CustomerPaymentMadeUsing">
+<area shape="poly" coords="873,282,873,427,863,427,863,282,873,282" href="_7.u.o.xMH5.aE.eW6B5Y3R6.iX.i.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_1.nUM.s.e.b3E.d-.e.j.r.wF9U1.vR.w" alt="customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_1.n.dW.o.u.b3E.d-.e.j.r.wF9U1.vR.w" alt="_customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_1.nUM.s.e.b3E.d-.e.j.r.wF9U1.vR.w" alt="customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_1.n.dW.o.u.b3E.d-.e.j.r.wF9U1.vR.w" alt="_customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_1.nUM.s.e.b3E.d-.e.j.r.wF9U1.vR.w" alt="customerPayment">
+<area shape="rect" coords="751,193,758,208" href="_3E3F0EC000E93C8D1698008D-content.html#_1.nUM.s.e.b3E.d-.e.j.r.wF9U1.vR.w" alt="customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_1.n.dW.o.u.b3E.d-.e.j.r.wF9U1.vR.w" alt="_customer">
+<area shape="rect" coords="248,58,270,73" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_1.n.dW.o.u.b3E.d-.e.j.r.wF9U1.vR.w" alt="_customer">
+<area shape="rect" coords="371,27,587,42" href="_1.nUM.sO.b3E.d-.e.j.r.wF9U1.vR.w-content.html" alt="PaymentReceivedFromCustomer">
+<area shape="poly" coords="224,42,749,42,749,234,739,234,739,52,224,52,224,42" href="_1.nUM.sO.b3E.d-.e.j.r.wF9U1.vR.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_M0.d.bE.eY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_M0.m.lAOY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_M0.d.bE.eY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_M0.m.lAOY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_M0.d.bE.eY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerAccount">
+<area shape="rect" coords="238,277,245,292" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_M0.d.bE.eY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_M0.m.lAOY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerPayment">
+<area shape="rect" coords="702,277,709,292" href="_3E3F0EC000E93C8D16D901C7-content.html#_M0.m.lAOY.vE.d-.e.j.r.wF9U1.vR.w" alt="_customerPayment">
+<area shape="rect" coords="331,252,592,267" href="_M0.d.bEOY.vE.d-.e.j.r.wF9U1.vR.w-content.html" alt="CustomerPaymentReceivedFromCustAcc">
+<area shape="poly" coords="717,275,230,275,230,265,717,265,717,275" href="_M0.d.bEOY.vE.d-.e.j.r.wF9U1.vR.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qC.eYO.e2E.d-E1.b.o36.xI.p_Q" alt="_paymentItem">
+<area shape="rect" coords="0,0,0,0" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qMPY.u.e2E.d-E1.b.o36.xI.p_Q" alt="_customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qC.eYO.e2E.d-E1.b.o36.xI.p_Q" alt="_paymentItem">
+<area shape="rect" coords="0,0,0,0" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qMPY.u.e2E.d-E1.b.o36.xI.p_Q" alt="_customerPayment">
+<area shape="rect" coords="0,0,0,0" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qC.eYO.e2E.d-E1.b.o36.xI.p_Q" alt="_paymentItem">
+<area shape="rect" coords="705,424,712,439" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qC.eYO.e2E.d-E1.b.o36.xI.p_Q" alt="_paymentItem">
+<area shape="rect" coords="0,0,0,0" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qMPY.u.e2E.d-E1.b.o36.xI.p_Q" alt="_customerPayment">
+<area shape="rect" coords="705,300,712,315" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_I.qMPY.u.e2E.d-E1.b.o36.xI.p_Q" alt="_customerPayment">
+<area shape="rect" coords="564,359,747,374" href="_I.h.s.a.sO.e2E.d-E1.b.o36.xI.p_Q-content.html" alt="CustomerPaymentAppliedAs">
+<area shape="poly" coords="732,282,732,458,723,458,723,282,732,282" href="_I.h.s.a.sO.e2E.d-E1.b.o36.xI.p_Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="127,191,134,206" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8E644E00E1" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="120,84,142,99" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E93C8E644E0113" alt="_customer">
+<area shape="rect" coords="94,137,223,152" href="_3E3F0EC000E93C8E643F00AD-content.html" alt="CustomerPosseses">
+<area shape="poly" coords="155,69,155,222,145,222,145,69,155,69" href="_3E3F0EC000E93C8E643F00AD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="56,502,256,554" href="_.d1.v.r.cM4UE.e.e.hC.p.q.uE0_75.g-content.html" alt="CustomerAccountBalance">
+<area shape="rect" coords="917,187,1085,203" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.n.b.kY.cE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="maxTrialTimes">
+<area shape="rect" coords="917,170,1085,186" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.nE4.cE.eO_X.pEX.s37Q.e.w" alt="status">
+<area shape="rect" coords="917,153,1085,169" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.m04.cE.eO_X.pEX.s37Q.e.w" alt="type">
+<area shape="rect" coords="917,136,1085,152" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.m.k4.cE.eO_X.pEX.s37Q.e.w" alt="priority">
+<area shape="rect" coords="917,119,1085,135" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.l.eT.a.gE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="paymentPeriod">
+<area shape="rect" coords="917,102,1085,118" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.j.pH.a.gE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="paymentDay">
+<area shape="rect" coords="917,85,1085,101" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.h.d0A.kE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="totalAmount">
+<area shape="rect" coords="917,68,1085,84" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_ZV1M0E.tIE.eW.b.rY.n6A.t.s.hB.g" alt="maxAmount">
+<area shape="rect" coords="917,51,1085,67" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.qI.tUE.tIE.eW.b.rY.n6A.t.s.hB.g" alt="validFor">
+<area shape="rect" coords="917,34,1085,50" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.mU4.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="910,9,1094,220" href="_.a.i.f.w.l04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PaymentPlan">
+<area shape="rect" coords="873,503,1014,519" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.iP.jK.sFJHE.eWPA.vIYYW.iWM.g" alt="validFor">
+<area shape="rect" coords="873,486,1014,502" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.hU4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="873,469,1014,485" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.hE4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="873,452,1014,468" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.g04.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="866,427,1023,536" href="_.a.i.f.w.gU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PaymentMethod">
+<area shape="rect" coords="62,402,242,417" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_G.r.eHAF.w.oE.eSD.e6.aJND.z.vZA" alt="remainingAmount">
+<area shape="rect" coords="62,386,242,401" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_NW348L.i.eE.eOK5.t.kK.x.h3QZ.g" alt="validFor">
+<area shape="rect" coords="62,370,242,385" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html#_.mX.nE.cL.i.cE.eOK5.t.kK.x.h3QZ.g" alt="ID">
+<area shape="rect" coords="56,346,252,434" href="_GYZ5.sL.iYE.eOK5.t.kK.x.h3QZ.g-content.html" alt="AccountBalance">
+<area shape="rect" coords="86,670,230,685" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_.q857IL.jJE.eOK5.t.kK.x.h3QZ.g" alt="validFor">
+<area shape="rect" coords="86,654,230,669" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_N11.h.gL.jNE.eO.p5.t.v.fG.q.m.hNQ" alt="description">
+<area shape="rect" coords="86,638,230,653" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html#_.gIUXML.jJE.eOK5.t.kK.x.h3QZ.g" alt="ID">
+<area shape="rect" coords="79,614,239,702" href="_I.cPH.wL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html" alt="BalanceUsageRule">
+<area shape="rect" coords="717,234,879,285" href="_.d.w0.aEOY.lE.d-.e.j.r.wF9U1.vR.w-content.html" alt="CustomerPayment">
+<area shape="rect" coords="623,482,801,497" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html#_.m.t4P0JOBE.e.qMRPZ.l1.hI.nC.g" alt="appliedAmount">
+<area shape="rect" coords="617,458,811,514" href="_.wMTE.oOY.qE.d-.e.j.r.wF9U1.vR.w-content.html" alt="CustomerPaymentItem">
+<area shape="rect" coords="80,261,223,276" href="_3E3F0EC000E93C8D16D901C7-content.html#_MBZW.cI3.sE.e.q__.p.b.k4J.i7KA" alt="pin">
+<area shape="rect" coords="80,245,223,260" href="_3E3F0EC000E93C8D16D901C7-content.html#_LDXA4I3.sE.e.q__.p.b.k4J.i7KA" alt="creditLimit">
+<area shape="rect" coords="73,222,232,294" href="_3E3F0EC000E93C8D16D901C7-content.html" alt="CustomerAccount">
+<area shape="rect" coords="80,40,217,55" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8D408B00E9" alt="customerRank">
+<area shape="rect" coords="73,16,226,72" href="_3E3F0EC000E93C8D1698008D-content.html" alt="Customer">
+<area shape="rect" coords="860,621,1027,672" href="_WCF5.cL.i.aE.eOK5.t.kK.x.h3QZ.g-content.html" alt="AccountBalancePM">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure C.27 - Customer Account Balance, Part 3</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

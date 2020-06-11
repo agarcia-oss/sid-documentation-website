@@ -1,0 +1,147 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Root Business Entities Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Root Business Entities ABE::_ Root Business Entities Addendum Figures::Figure R.01 - View of the RootEntity Class<br>
+</span><span class="ElementTitle">Diagram Figure R.01 - View of the RootEntity Class<br>
+</span><span class="ElementDocumentation">This is the top of the SID class hierarchy. The purpose of the RootEntity is to define a set of attributes that are common to select SID entities in the Product, Service and Resource domains, such as Service, Service Specification, Resource, and Resource Specification, as well as Policy entities in the Common Business Entities domain. These properties enable us to name and describe all objects (manageable and unmanageable) in the environment.</br><Note>Note that six classes shown in the following Figure are abstract. This is because they are all conceptual in nature, and exist in order to organize information and concepts. The name attribute is a generic attribute that enables users of the SID to refer to an object using terminology defined by their application-specific needs. The description attribute is an optional attribute that enables users of the SID to customize the description of a SID object.  The ID attribute provides a unique identity to each entity.</Note></br>A RootEntity might be categorized by a RootEntityType that represents a SID Entity such as Product, ProductSpecification…</br>A RootEntity might be described by one or many Attachments such as brochure or manual that can be provided by the Service Provider to Customers when they by a Product.</br>The following subsections will expand on each of the subclasses of RootEntity, except for Collection. Collection represents collections of ManagedEntity objects. This enables common attributes and relationships and other semantics to be applied to different types of Collections of ManagedEntity objects. These can then be refined in the subclasses of Collection. It is currently only used in the Policy ABE (PolicyRepository and PolicyEventBase) and the Logical Resource ABE (ReplacementSet).<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_22FW4JL.fE.eWKV.aDAY.sD7.q.w.PNG" alt="Figure R.01 - View of the RootEntity Class" usemap="#map_22FW4JL.fE.eWKV.aDAY.sD7.q.w"></td>
+</tr>
+</table>
+<map name="map_22FW4JL.fE.eWKV.aDAY.sD7.q.w">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_.q_9.s8G.r3E.e.i.h75_A.j.rB-.iA" alt="language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_.rAJ6MG.r3E.e.i.h75_A.j.rB-.iA" alt="attachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_.q_9.s8G.r3E.e.i.h75_A.j.rB-.iA" alt="language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_.rAJ6MG.r3E.e.i.h75_A.j.rB-.iA" alt="attachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_.q_9.s8G.r3E.e.i.h75_A.j.rB-.iA" alt="language">
+<area shape="rect" coords="474,72,480,88" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_.q_9.s8G.r3E.e.i.h75_A.j.rB-.iA" alt="language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_.rAJ6MG.r3E.e.i.h75_A.j.rB-.iA" alt="attachment">
+<area shape="rect" coords="275,72,281,88" href="_3E3F0EC000E93C271496017C-content.html#_.rAJ6MG.r3E.e.i.h75_A.j.rB-.iA" alt="attachment">
+<area shape="rect" coords="325,48,424,64" href="_.q_1KEG.r3E.e.i.h75_A.j.rB-.iA-content.html" alt="AttachmentUses">
+<area shape="poly" coords="261,60,490,60,490,70,261,70,261,60" href="_.q_1KEG.r3E.e.i.h75_A.j.rB-.iA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_B.b53MK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_B.b-I.oK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecificationAttachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_B.b53MK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_B.b-I.oK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecificationAttachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_B.b53MK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecification">
+<area shape="rect" coords="602,163,622,179" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_B.b53MK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_B.b-I.oK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecificationAttachment">
+<area shape="rect" coords="267,163,273,179" href="_3E3F0EC000E93CDA9E0C0384-content.html#_B.b-I.oK0.xE.e.a.zDMG.f.zT.b.l9.g" alt="entitySpecificationAttachment">
+<area shape="rect" coords="314,142,572,158" href="_B.b.z.w.kK0.xE.e.a.zDMG.f.zT.b.l9.g-content.html" alt="RootEntityFurtherDescribedByAttachment">
+<area shape="poly" coords="261,154,627,154,627,164,261,164,261,154" href="_B.b.z.w.kK0.xE.e.a.zDMG.f.zT.b.l9.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E403E9100A8-content.html" alt="Generalization">
+<area shape="poly" coords="832,365,832,259,695,259,695,217,705,217,705,249,842,249,842,365,832,365" href="_3E3F0EC000E93E403E9100A8-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="__X37.sDS.wE.e.e2C.oC.qW21.c.f.w-content.html" alt="Generalization">
+<area shape="poly" coords="1013,365,1013,259,695,259,695,217,705,217,705,249,1023,249,1023,365,1013,365" href="__X37.sDS.wE.e.e2C.oC.qW21.c.f.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E48C37C0307-content.html" alt="Generalization">
+<area shape="poly" coords="1196,365,1196,259,695,259,695,217,705,217,705,249,1206,249,1206,365,1196,365" href="_3E3F0EC000E93E48C37C0307-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_H.cW.cAAM.iE.e.aYMZTO.w.dO.v.oQ-content.html" alt="Generalization">
+<area shape="poly" coords="606,365,606,249,695,249,695,217,705,217,705,259,616,259,616,365,606,365" href="_H.cW.cAAM.iE.e.aYMZTO.w.dO.v.oQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_3E3F0EC000E94649F45C0290" alt="_rootEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E94649F45C02EE" alt="_rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_3E3F0EC000E94649F45C0290" alt="_rootEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E94649F45C02EE" alt="_rootEntityType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F4AD33702BD-content.html#_3E3F0EC000E94649F45C0290" alt="_rootEntity">
+<area shape="rect" coords="772,165,778,181" href="_3E3F0EC000E93F4AD33702BD-content.html#_3E3F0EC000E94649F45C0290" alt="_rootEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E94649F45C02EE" alt="_rootEntityType">
+<area shape="rect" coords="994,168,1014,184" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E94649F45C02EE" alt="_rootEntityType">
+<area shape="rect" coords="794,138,958,154" href="_3E3F0EC000E94649F45B01D4-content.html" alt="RootEntityTypeCategorizes">
+<area shape="poly" coords="1026,165,769,165,769,155,1026,155,1026,165" href="_3E3F0EC000E94649F45B01D4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAAE2C0114-content.html" alt="Generalization">
+<area shape="poly" coords="386,365,386,249,695,249,695,217,705,217,705,259,395,259,395,365,386,365" href="_3E3F0EC000E93CDAAE2C0114-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5460368-content.html" alt="Generalization">
+<area shape="poly" coords="84,365,84,249,695,249,695,217,705,217,705,259,94,259,94,365,84,365" href="_3E3F0EC000E93DDEC5460368-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE850A010F-content.html" alt="Generalization">
+<area shape="poly" coords="232,365,232,249,695,249,695,217,705,217,705,259,241,259,241,365,232,365" href="_3E3F0EC000E93DDE850A010F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="496,51,645,67" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C29382000E9" alt="dialectNames">
+<area shape="rect" coords="496,34,645,50" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C29381B015A" alt="alphabetName">
+<area shape="rect" coords="490,9,655,84" href="_3E3F0EC000E93C271496017C-content.html" alt="Language">
+<area shape="rect" coords="47,203,253,219" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_.vU.i.xQF.dTE.e.i.pG64.fM.wB.h3.g" alt="attachedOnDateTime">
+<area shape="rect" coords="47,186,253,202" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_IN.uG.wF.dTE.e.i.pG64.fM.wB.h3.g" alt="content">
+<area shape="rect" coords="47,169,253,185" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_A.qKC.gM.oYE.e.e.lAO.fXBP7.b.b.g" alt="mimeType">
+<area shape="rect" coords="47,152,253,168" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHEK0.wE.e.a.zDMG.f.zT.b.l9.g" alt="type">
+<area shape="rect" coords="47,135,253,151" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHD.q0.wE.e.a.zDMG.f.zT.b.l9.g" alt="validFor">
+<area shape="rect" coords="47,118,253,134" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHDK0.wE.e.a.zDMG.f.zT.b.l9.g" alt="description">
+<area shape="rect" coords="47,101,253,117" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHC.q0.wE.e.a.zDMG.f.zT.b.l9.g" alt="name">
+<area shape="rect" coords="47,84,253,100" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHCK0.wE.e.a.zDMG.f.zT.b.l9.g" alt="link">
+<area shape="rect" coords="41,59,263,236" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html" alt="Attachment">
+<area shape="rect" coords="771,407,903,423" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93DCFD5D20220" alt="policyName">
+<area shape="rect" coords="771,390,903,406" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D77E58C0263" alt="keywords">
+<area shape="rect" coords="764,365,912,440" href="_3E3F0EC000E93D77E58C0262-content.html" alt="Policy">
+<area shape="rect" coords="945,365,1094,417" href="_.wL45.sDS.wE.e.e2C.oC.qW21.c.f.w-content.html" alt="RoleSpecification">
+<area shape="rect" coords="1126,407,1275,423" href="_3E3F0EC000E93CDDD3C501D5-content.html#_3E3F0EC000E93CDDD36401C5" alt="type">
+<area shape="rect" coords="1126,390,1275,406" href="_3E3F0EC000E93CDDD3C501D5-content.html#_3E3F0EC000E93CDDD36401C4" alt="orderMethod">
+<area shape="rect" coords="1120,365,1285,440" href="_3E3F0EC000E93CDDD3C501D5-content.html" alt="Collection">
+<area shape="rect" coords="515,407,706,423" href="_3E3F0EC000E93CDABB590195-content.html#_3E3F0EC000E93E628B5901EB" alt="roleSelectionMethod">
+<area shape="rect" coords="515,390,706,406" href="_3E3F0EC000E93CDABB590195-content.html#_3E3F0EC000E93E628704034D" alt="roleCombination">
+<area shape="rect" coords="508,365,715,440" href="_3E3F0EC000E93CDABB590195-content.html" alt="Role">
+<area shape="rect" coords="1032,204,1198,220" href="_3E3F0EC000E93F4AD33702BD-content.html#_6BIAYO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="dynamicAttrAssoc">
+<area shape="rect" coords="1032,187,1198,203" href="_3E3F0EC000E93F4AD33702BD-content.html#_.z.i.g-MO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="description">
+<area shape="rect" coords="1032,170,1198,186" href="_3E3F0EC000E93F4AD33702BD-content.html#_.l.vU.eQBK.yE.eC.bEM.iDOIHV1.g" alt="name">
+<area shape="rect" coords="1032,153,1198,169" href="_3E3F0EC000E93F4AD33702BD-content.html#_.z.i.iMUO.l4E.e.a.pXJ.y.l.xL.zJMA" alt="ID">
+<area shape="rect" coords="1026,128,1208,237" href="_3E3F0EC000E93F4AD33702BD-content.html" alt="RootEntityType">
+<area shape="rect" coords="16,407,161,423" href="_3E3F0EC000E93DDEC52B0188-content.html#_3E3F0EC000E93C5DC5040164" alt="status">
+<area shape="rect" coords="16,390,161,406" href="_3E3F0EC000E93DDEC52B0188-content.html#_3E3F0EC000E93C5DC4F6015A" alt="validFor">
+<area shape="rect" coords="9,365,170,440" href="_3E3F0EC000E93DDEC52B0188-content.html" alt="EntitySpecification">
+<area shape="rect" coords="303,365,481,417" href="_3E3F0EC000E93CDAAE2C0113-content.html" alt="ManagementDomain">
+<area shape="rect" coords="197,365,279,417" href="_3E3F0EC000E93DDE84EE01B9-content.html" alt="Entity">
+<area shape="rect" coords="633,187,761,203" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C0390" alt="ID">
+<area shape="rect" coords="633,170,761,186" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038F" alt="description">
+<area shape="rect" coords="633,153,761,169" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038E" alt="name">
+<area shape="rect" coords="627,128,771,220" href="_3E3F0EC000E93CDA9E0C0384-content.html" alt="RootEntity">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure R.01 - View of the RootEntity Class</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

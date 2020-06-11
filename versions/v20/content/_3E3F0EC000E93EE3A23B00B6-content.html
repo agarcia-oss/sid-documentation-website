@@ -1,0 +1,135 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.15 - ManagedHardware in More Detail<br>
+</span><span class="ElementTitle">Diagram Figure PR.15 - ManagedHardware in More Detail<br>
+</span><span class="ElementDocumentation">ManagedHardware is a subclass of Hardware, and is an abstract base class that adds additional semantics to the Hardware base class. These semantics are used to provide management information on the hardware. For example, attributes defined by this class can provide the administrative and operational state of the entity, and tell whether it has any alarms. Such attributes are physical in nature, and indicate physical things (e.g., a fiber cut). For most physical administrative and operational states, there is one or more corresponding logical administrative and operational states. ManagedHardware is shown in the Figure below.</br>The main difference between ManagedHardware and Hardware is that ManagedHardware entities have more than just a physical presence – they also have physical semantics that describe how the entity is managed. This is why PhysicalConnector is not a type of ManagedHardware – a PhysicalConnector is managed by physically inserting and removing it.</br>So, what is meant by physically managing a hardware entity? This is best explained by briefly examining the three attributes of the ManagedHardware class.</br>The administrativeState attribute is an enumerated integer that describes the current physical state of the ManagedHardware. Examples of this include starting up, shutting down, and in test.</br>The physicalAlarmReportingEnabled attribute is a Boolean, and defines whether physical alarm reporting for this object instance is enabled or not. Note that some physical entities are not capable of reporting physical alarms, while some are. In most cases, there are corresponding logical alarms. The ManagementEntity class hierarchy defines logical alarms, and correlates them to physical alarms.</br>The physicalAlarmStatus attribute is an enumerated integer that indicates the occurrence of an abnormal physical condition relating to an object. This attribute may also function as a summary indicator of alarm conditions associated with a specific resource. This attribute expands on the standard ITU semantics and updates them to include eTOM concepts.</br>The ManagedHardware class has two important subclasses, called PhysicalPort and PhysicalContainer. These are described in the next two sections, respectively.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE3A23B00B6.PNG" alt="Figure PR.15 - ManagedHardware in More Detail" usemap="#map_3E3F0EC000E93EE3A23B00B6"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE3A23B00B6">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFAD701BE-content.html" alt="Generalization">
+<area shape="poly" coords="705,445,705,388,601,388,601,347,611,347,611,378,715,378,715,445,705,445" href="_3E3F0EC000E93CDAFAD701BE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB2D023A-content.html" alt="Generalization">
+<area shape="poly" coords="367,445,367,378,601,378,601,347,611,347,611,388,377,388,377,445,367,445" href="_3E3F0EC000E93CDAFB2D023A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAEF8F01D9-content.html" alt="Generalization">
+<area shape="poly" coords="232,214,232,170,308,170,308,139,318,139,318,180,241,180,241,214,232,214" href="_3E3F0EC000E93CDAEF8F01D9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAE66B02C5-content.html" alt="Generalization">
+<area shape="poly" coords="599,214,599,180,308,180,308,139,318,139,318,170,609,170,609,214,599,214" href="_3E3F0EC000E93CDAE66B02C5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAF3570004" alt="_physicalConnector">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAF3570006" alt="_hardware2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAF3570004" alt="_physicalConnector">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAF3570006" alt="_hardware2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAF3570004" alt="_physicalConnector">
+<area shape="rect" coords="130,222,138,239" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAF3570004" alt="_physicalConnector">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAF3570006" alt="_hardware2">
+<area shape="rect" coords="223,132,249,149" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAF3570006" alt="_hardware2">
+<area shape="rect" coords="23,96,200,113" href="_3E3F0EC000E93CDAF3550098-content.html" alt="HardwareHasConnector">
+<area shape="poly" coords="258,127,96,127,96,237,157,237,157,246,86,246,86,117,258,117,258,127" href="_3E3F0EC000E93CDAF3550098-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93DDEF165001C" alt="_physicalConnector2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93DDEF1650026" alt="_physicalPort">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93DDEF165001C" alt="_physicalConnector2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93DDEF1650026" alt="_physicalPort">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93DDEF165001C" alt="_physicalConnector2">
+<area shape="rect" coords="282,273,290,290" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93DDEF165001C" alt="_physicalConnector2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93DDEF1650026" alt="_physicalPort">
+<area shape="rect" coords="281,417,289,434" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93DDEF1650026" alt="_physicalPort">
+<area shape="rect" coords="161,344,372,361" href="_3E3F0EC000E93DDEF16203BB-content.html" alt="PhysicalConnectorPlugsInto">
+<area shape="poly" coords="299,445,299,262,309,262,309,445,299,445" href="_3E3F0EC000E93DDEF16203BB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="339,81,347,98" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="250,75,276,92" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="185,23,323,40" href="_3E3F0EC000E93DDEE7070297-content.html" alt="ContainsHardware">
+<area shape="poly" coords="288,91,288,37,337,37,337,91,327,91,327,47,298,47,298,91,288,91" href="_3E3F0EC000E93DDEE7070297-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAF97003D4-content.html#_3E3F0EC000E93CDAD87C026E" alt="replaceable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAF97003D4-content.html#_3E3F0EC000E93CDAD87C026D" alt="removable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAF97003D4-content.html#_3E3F0EC000E93CDAD87C026A" alt="hotSwappable">
+<area shape="rect" coords="631,445,792,496" href="_3E3F0EC000E93CDAF97003D4-content.html" alt="PhysicalContainer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAC4490091" alt="typeOfConnector">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAC4490088" alt="pinDescription">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAC4490087" alt="inUse">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAC449007E" alt="gender">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAC3F10080-content.html#_3E3F0EC000E93CDAC449007D" alt="cableType">
+<area shape="rect" coords="157,214,319,265" href="_3E3F0EC000E93CDAC3F10080-content.html" alt="PhysicalConnector">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018D" alt="width">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018C" alt="weightUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018B" alt="weight">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018A" alt="measurementUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0189" alt="height">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0188" alt="depth">
+<area shape="rect" coords="258,91,369,142" href="_3E3F0EC000E93CDAB5F60264-content.html" alt="Hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B70020" alt="vendorPortName">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001F" alt="typeOfPPort">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001E" alt="portNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001D" alt="ifType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001C" alt="duplexMode">
+<area shape="rect" coords="294,445,417,496" href="_3E3F0EC000E93CDADAAE016F-content.html" alt="PhysicalPort">
+<area shape="rect" coords="475,318,731,333" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C026C" alt="hardwarePurpose">
+<area shape="rect" coords="475,302,731,317" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0269" alt="coolingRequirements">
+<area shape="rect" coords="475,286,731,301" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0268" alt="physicalAlarmStatus">
+<area shape="rect" coords="475,270,731,285" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0267" alt="physicalAlarmReportingEnabled">
+<area shape="rect" coords="475,254,731,269" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0266" alt="administrativeState">
+<area shape="rect" coords="475,238,731,253" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0265" alt="additionalInfo">
+<area shape="rect" coords="469,214,741,350" href="_3E3F0EC000E93CDAD87C0261-content.html" alt="ManagedHardware">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.15 - ManagedHardware in More Detail</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1145 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Security Vulnerability Scoring Algorithm ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for SecVulnerabilityScoreAlgorithm">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.l.aYV.cOZ0E.eG.r.y7Z.aD.sA_G.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Security Vulnerability Scoring Algorithm ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE</span>
+<br>
+<span class="ElementTitle">Class SecVulnerabilityScoreAlgorithm</span>
+<p>
+<a name="documentationSection"></a>A step-by-step procedure for calculating the a security vulnerability score.</br></br>Notes: For example, BaseScore = round-to-1-decimal(((0.6 * Impact) + (0.4 * Exploitability) – 1.5) * f(Impact)).</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::description" href="#_.u.gW.j.gO.fJE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="description"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::description" href="#_.u.gW.j.gO.fJE.eG.r.y7Z.aD.sA_G.w">description</a></td><td>
+<p>
+<a name="documentationSection"></a>A narrative that explains the security vulnerability score algorithm.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::ID" href="#_.u.gVVYO.fJE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="ID"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::ID" href="#_.u.gVVYO.fJE.eG.r.y7Z.aD.sA_G.w">ID</a></td><td>
+<p>
+<a name="documentationSection"></a>A unique identifier for the SecVulnerabilityScoringAlgorithm.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::name" href="#_.u.gV8.cO.fJE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="name"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::name" href="#_.u.gV8.cO.fJE.eG.r.y7Z.aD.sA_G.w">name</a></td><td>
+<p>
+<a name="documentationSection"></a>A word, term, or phrase by which the SecVulnerabilityScoringAlgorithmMember is known and distinguished from other SecVulnerabilityScoringAlgorithmMembers.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">SecurityVulnerabilityScore </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::securityVulnerabilityScore" href="#_S3.s.b.cOXGE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="securityVulnerabilityScore"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::securityVulnerabilityScore" href="#_S3.s.b.cOXGE.eG.r.y7Z.aD.sA_G.w">securityVulnerabilityScore</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">SecVulnerabilityScoreAlgorithmMember </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::secVulnerabilityScoreAlgorithmMember" href="#_4.c_E.wOW.lE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="secVulnerabilityScoreAlgorithmMember"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::secVulnerabilityScoreAlgorithmMember" href="#_4.c_E.wOW.lE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoreAlgorithmMember</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">SecVulnerabilityScoringMetricDefnAssignment </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::secVulnerabilityScoringMetricDefnAssignment" href="#_5M.r.cUOW.lE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="secVulnerabilityScoringMetricDefnAssignment"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::secVulnerabilityScoringMetricDefnAssignment" href="#_5M.r.cUOW.lE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoringMetricDefnAssignment</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">«baseType» TimePeriod </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::validFor" href="#_.u.gXK.kO.fJE.eG.r.y7Z.aD.sA_G.w"><img border="0" src="../images/30297464_icon.png" alt="validFor"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::validFor" href="#_.u.gXK.kO.fJE.eG.r.y7Z.aD.sA_G.w">validFor</a></td><td>
+<p>
+<a name="documentationSection"></a>The period of time for which a SecVulnerabilityScoringAlgorithmMember is applicable.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::version" href="#_N.v.xYYO.iEE.eG8.tLO.uT6NE5Q"><img border="0" src="../images/30297464_icon.png" alt="version"></a>&nbsp;<a title="SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::version" href="#_N.v.xYYO.iEE.eG8.tLO.uT6NE5Q">version</a></td><td>
+<p>
+<a name="documentationSection"></a>A number or text used to specify that a SecVulnerabilityScoreAlgorithm differs in certain respects from an earlier SecVulnerabilityScoreAlgorithm.</p>
+</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">SecVulnerabilityScoreAlgorithm</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.l.aYV.cOZ0E.eG.r.y7Z.aD.sA_G.w-content.html">Security Vulnerability Scoring Algorithm ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.l.aYV.cOZ0E.eG.r.y7Z.aD.sA_G.w-content.html">Security Vulnerability Scoring Algorithm ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_.l.aYV.cOZ0E.eG.r.y7Z.aD.sA_G.w-content.html">Security Vulnerability Scoring Algorithm ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.u.gW.j.gO.fJE.eG.r.y7Z.aD.sA_G.w">description</a></span>
+<pre>Public&nbsp;String description</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A narrative that explains the security vulnerability score algorithm.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.u.gW.j.gO.fJE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">description</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::description</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.u.gVVYO.fJE.eG.r.y7Z.aD.sA_G.w">ID</a></span>
+<pre>Public&nbsp;String ID</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A unique identifier for the SecVulnerabilityScoringAlgorithm.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.u.gVVYO.fJE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">ID</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::ID</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.u.gV8.cO.fJE.eG.r.y7Z.aD.sA_G.w">name</a></span>
+<pre>Public&nbsp;String name</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A word, term, or phrase by which the SecVulnerabilityScoringAlgorithmMember is known and distinguished from other SecVulnerabilityScoringAlgorithmMembers.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.u.gV8.cO.fJE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">name</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::name</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_S3.s.b.cOXGE.eG.r.y7Z.aD.sA_G.w">securityVulnerabilityScore</a></span>
+<pre>Public&nbsp;SecurityVulnerabilityScore securityVulnerabilityScore</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_S3.s.b.cOXGE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_S3.o.xEOXGE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithmUsedToCalculate</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">securityVulnerabilityScore</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_OA9HEOW.nE.eG.r.y7Z.aD.sA_G.w-content.html#_S3.w.s4OXGE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::securityVulnerabilityScore</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_OA9HEOW.nE.eG.r.y7Z.aD.sA_G.w-content.html">SecurityVulnerabilityScore</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_4.c_E.wOW.lE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoreAlgorithmMember</a></span>
+<pre>Public&nbsp;SecVulnerabilityScoreAlgorithmMember secVulnerabilityScoreAlgorithmMember</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_4.c_E.wOW.lE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_4.c7.aYOW.lE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithmDefinedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">secVulnerabilityScoreAlgorithmMember</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_EBE.d4OW.kE.eG.r.y7Z.aD.sA_G.w-content.html#_4.dE.kUOW.lE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::secVulnerabilityScoreAlgorithmMember</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_EBE.d4OW.kE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithmMember</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_5M.r.cUOW.lE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoringMetricDefnAssignment</a></span>
+<pre>Public&nbsp;SecVulnerabilityScoringMetricDefnAssignment secVulnerabilityScoringMetricDefnAssignment</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_5M.r.cUOW.lE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_5M.h.rUOW.lE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoringMetricDefnAssignmentScoredUsing</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">secVulnerabilityScoringMetricDefnAssignment</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_.bMQA.gOW.jE.eG.r.y7Z.aD.sA_G.w-content.html#_5M.l8.wOW.lE.eG.r.y7Z.aD.sA_G.w">secVulnerabilityScoreEquation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::secVulnerabilityScoringMetricDefnAssignment</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.bMQA.gOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoringMetricDefnAssignment</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.u.gXK.kO.fJE.eG.r.y7Z.aD.sA_G.w">validFor</a></span>
+<pre>Public&nbsp;«baseType» TimePeriod validFor</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>The period of time for which a SecVulnerabilityScoringAlgorithmMember is applicable.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.u.gXK.kO.fJE.eG.r.y7Z.aD.sA_G.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">validFor</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::validFor</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93C2319F50258-content.html">«baseType» TimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_N.v.xYYO.iEE.eG8.tLO.uT6NE5Q">version</a></span>
+<pre>Public&nbsp;String version</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A number or text used to specify that a SecVulnerabilityScoreAlgorithm differs in certain respects from an earlier SecVulnerabilityScoreAlgorithm.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_N.v.xYYO.iEE.eG8.tLO.uT6NE5Q"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">version</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tM.tVQOW.jE.eG.r.y7Z.aD.sA_G.w-content.html">SecVulnerabilityScoreAlgorithm</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::Security Vulnerability ABE::Security Vulnerability Scoring Definition ABE::Security Vulnerability Scoring Algorithm ABE::SecVulnerabilityScoreAlgorithm::version</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.l.aYV.cOZ0E.eG.r.y7Z.aD.sA_G.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Security Vulnerability Scoring Algorithm ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

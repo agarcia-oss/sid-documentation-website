@@ -1,0 +1,143 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-26 - Principal Relationships of a PolicyEnforcementPoint<br>
+</span><span class="ElementTitle">Diagram Figure 1P-26 - Principal Relationships of a PolicyEnforcementPoint<br>
+</span><span class="ElementDocumentation">A PolicyEnforcementPoint is a type of PolicyApplication, and is used to verify that a prescribed set of PolicyActions have been successfully executed on a set of PolicyTargets. A high-level drawing of the PEP and its important relationships is shown in Figure below.</br>A PolicyEnforcementPoint serves as an interface between the devices that policy is executed on and the policy decision-makers (such as the PolicyDecisionPoint) of the policy. PolicyEnforcementPoints request work to be performed from PolicyDecisionPoints, and then enforce decisions made by PolicyExecutionPoints on their PolicyTargets. One or more PolicyEnforcementPoints are contained in a PolicyServer.</br>The combination of a PolicyExecutionPoint and a PolicyEnforcementPoint enable the act of executing a decision (made by a PolicyExecutionPoint) to be separated from the act of ensuring that the executing actions were performed correctly, and had the desired results (both of these latter two functions are performed by the PolicyEnforcementPoint).</br>The EnforcesExecutionOf association defines the set of PolicyExecutionPoints that are enforced by a particular PolicyEnforcementPoint. This association was defined in the previous section, titled PolicyDecisionPoint (PDP).</br>Note that the DirectsEnforcementOf, EnforcesExecutionOf, and PolicyActionEnforcedBy associations are all implemented by association classes. This is because each of these associations has rich semantics that require a class to be properly expressed.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93F1705F50347.PNG" alt="Figure 1P-26 - Principal Relationships of a PolicyEnforcementPoint" usemap="#map_3E3F0EC000E93F1705F50347"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93F1705F50347">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDB8C5D02A4" alt="_managedEntity3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8C5D02B8" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDB8C5D02A4" alt="_managedEntity3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8C5D02B8" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDB8C5D02A4" alt="_managedEntity3">
+<area shape="rect" coords="284,62,292,79" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDB8C5D02A4" alt="_managedEntity3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8C5D02B8" alt="_policyEnforcementPoint">
+<area shape="rect" coords="42,311,50,328" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8C5D02B8" alt="_policyEnforcementPoint">
+<area shape="rect" coords="32,33,209,50" href="_3E3F0EC000E93EDB8C580397-content.html" alt="PolicyActionEnforcedBy">
+<area shape="poly" coords="24,331,24,53,308,53,308,63,34,63,34,331,24,331" href="_3E3F0EC000E93EDB8C580397-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="158,307,184,324" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="rect" coords="301,299,309,316" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="poly" coords="320,332,320,296,157,296,157,331,147,331,147,286,330,286,330,332,320,332" href="_3E3F0EC000E93F169F050294-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F52170319-content.html" alt="Generalization">
+<area shape="poly" coords="79,331,79,213,404,213,404,170,414,170,414,222,89,222,89,331,79,331" href="_3E3F0EC000E93D7F52170319-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="569,391,595,408" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="rect" coords="124,386,150,403" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="poly" coords="122,379,122,429,597,429,597,380,607,380,607,439,112,439,112,379,122,379" href="_3E3F0EC000E93EDA89BB00CE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="451,43,459,60" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="476,122,484,139" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="511,23,686,40" href="_3E3F0EC000E93EDB868202A4-content.html" alt="PolicyAppInvolvedWith">
+<area shape="poly" coords="473,136,497,136,497,67,449,67,449,58,507,58,507,146,473,146,473,136" href="_3E3F0EC000E93EDB868202A4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F521B02BB-content.html" alt="Generalization">
+<area shape="poly" coords="371,332,371,213,404,213,404,170,414,170,414,222,381,222,381,332,371,332" href="_3E3F0EC000E93D7F521B02BB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="529,308,555,325" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="420,308,428,325" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="poly" coords="406,332,406,287,566,287,566,332,556,332,556,297,416,297,416,332,406,332" href="_3E3F0EC000E93EDA89820144-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA86100007-content.html" alt="Generalization">
+<area shape="poly" coords="609,332,609,222,404,222,404,170,414,170,414,213,619,213,619,332,609,332" href="_3E3F0EC000E93EDA86100007-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F5D4D0095-content.html" alt="Generalization">
+<area shape="poly" coords="768,330,768,222,404,222,404,170,414,170,414,213,777,213,777,330,768,330" href="_3E3F0EC000E93D7F5D4D0095-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="563,125,716,143" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="563,107,716,125" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="563,89,716,107" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="557,89,721,142" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="482,163,508,180" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="837,252,863,269" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="634,155,780,172" href="_3E3F0EC000E93EDA87CC00EF-content.html" alt="ContainsPolicyApps">
+<area shape="poly" coords="863,330,863,155,473,155,473,145,872,145,872,330,863,330" href="_3E3F0EC000E93EDA87CC00EF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="9,331,204,382" href="_3E3F0EC000E93D77EE1201C6-content.html" alt="PolicyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8EB0004E" alt="managementMethodSupported">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8E85007E" alt="managementMethodCurrent">
+<area shape="rect" coords="308,39,451,90" href="_3E3F0EC000E93DDE84F30225-content.html" alt="ManagedEntity">
+<area shape="rect" coords="288,332,454,383" href="_3E3F0EC000E93D77EE090153-content.html" alt="PolicyDecisionPoint">
+<area shape="rect" coords="528,332,703,383" href="_3E3F0EC000E93EDA857301A5-content.html" alt="PolicyExecutionPoint">
+<area shape="rect" coords="319,122,475,173" href="_3E3F0EC000E93D7F51F50392-content.html" alt="PolicyApplication">
+<area shape="rect" coords="769,330,893,381" href="_3E3F0EC000E93D77EE190131-content.html" alt="PolicyServer">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-26 - Principal Relationships of a PolicyEnforcementPoint</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

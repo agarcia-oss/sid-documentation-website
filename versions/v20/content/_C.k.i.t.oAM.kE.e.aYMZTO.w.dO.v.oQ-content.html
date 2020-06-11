@@ -1,0 +1,182 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Resource Specification ABE Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fO.hA.wAMOE.e.aYMZTO.w.dO.v.oQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Specification ABE Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource Specification ABE::_ Resource Specification ABE Addendum Figures::Figure Res.13 - Resource Function Spec inheritance (OLD RS.03)<br>
+</span><span class="ElementTitle">Diagram Figure Res.13 - Resource Function Spec inheritance (OLD RS.03)<br>
+</span><span class="ElementDocumentation">The ResourceFunction / ResourceFunctionSpec concept is very broad and can be applied to many different domains:</br>        •	NetworkFunction / NetworkFunctionSpec would correspond to the description of the behavior of a function running in the network domain.</br>Instances of such artefacts can be specific function for a given layer (RouterFunction, SwichingFunction, GatewayFunction…).</br>        •	OfficeFunction / OfficeFunctionSpec and GameFunction / GameFunctionSpec would be respective specialization in the Office domain and Game domain.</br>        •	Another example could be MeteoFunction / MeteoFunctionSpec in the Meteo domain, consisting of describing how meteo data (pressure, temperature, wind) would be transformed to create meteo reports.</br>Instances of such MeteoFunction / MeteoFunctionSpec artefacts would be specifically created for different kinds of meteo reports: national, regional, local, mountain, see, storm, etc.…).</br><Note>The 16.0 model represented explicitly VNFSpecification as inheriting from SoftwareSpecification. After discussions it was considered being confusing. In the ETSI-NFV sense, a VNF is an “implementation of a NetworkFunction”; while the software that is used to realize this function is necessary, it is not the function in itself. </br>The 16.0 model represented explicitly PNFSpecification as an explicit class inheriting from CompoundSpecification. After discussions it was considered that from a general perspective what matters is the fact that a PhysicalResource may be associated with an EmbeddedSoftware.</br>The general model need to be extended if more specialized classes to represent NVF concepts are requested, such as NF, VNF, PNF.</br>It can be done either by creating new derived classes, or also by documenting “touch points” to external models from other SDOs (ex from ETSI-NFV or from OASIS-TOSCA).</br>The explicit separation of function from its various possible realizations (as pure software – SoftwareSpecification -, pure hardware – PhysicalBlackBoxSpecification – or software embedded in a box – SoftBlackBoxSpecification -) helps organizing specialized artefacts supporting virtualization.</Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_C.k.i.t.oAM.kE.e.aYMZTO.w.dO.v.oQ.PNG" alt="Figure Res.13 - Resource Function Spec inheritance (OLD RS.03)" usemap="#map_C.k.i.t.oAM.kE.e.aYMZTO.w.dO.v.oQ"></td>
+</tr>
+</table>
+<map name="map_C.k.i.t.oAM.kE.e.aYMZTO.w.dO.v.oQ">
+<area shape="rect" coords="0,0,0,0" href="_E_.hTUBLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="1312,552,1312,405,1255,405,1255,364,1265,364,1265,396,1322,396,1322,552,1312,552" href="_E_.hTUBLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_B.c.yAMBC2E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="1480,471,1480,364,1490,364,1490,471,1480,471" href="_B.c.yAMBC2E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3.q.bVUBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="1146,477,1146,396,1255,396,1255,364,1265,364,1265,405,1156,405,1156,477,1146,477" href="_3.q.bVUBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_V50.h.kBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="527,714,527,662,836,662,836,632,846,632,846,672,537,672,537,714,527,714" href="_V50.h.kBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_VXH.dIBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="1015,689,1015,672,836,672,836,632,846,632,846,662,1025,662,1025,689,1015,689" href="_VXH.dIBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U1G8QBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="860,789,860,672,836,672,836,632,846,632,846,662,870,662,870,789,860,789" href="_U1G8QBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_UO.tD.kBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="202,733,202,573,195,573,195,532,205,532,205,564,212,564,212,733,202,733" href="_UO.tD.kBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_STFEYBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="297,621,297,573,195,573,195,532,205,532,205,564,307,564,307,621,297,621" href="_STFEYBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.r.g.uEBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="92,621,92,564,195,564,195,532,205,532,205,573,102,573,102,621,92,621" href="_R.r.g.uEBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CAA036E-content.html#_.r1KWMAM.kE.e.aYMZTO.w.dO.v.oQ" alt="physicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25C630091-content.html#_.r1MLYAM.kE.e.aYMZTO.w.dO.v.oQ" alt="logicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CAA036E-content.html#_.r1KWMAM.kE.e.aYMZTO.w.dO.v.oQ" alt="physicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25C630091-content.html#_.r1MLYAM.kE.e.aYMZTO.w.dO.v.oQ" alt="logicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CAA036E-content.html#_.r1KWMAM.kE.e.aYMZTO.w.dO.v.oQ" alt="physicalResourceSpec">
+<area shape="rect" coords="1115,328,1121,344" href="_3E3F0EC000E93EE25CAA036E-content.html#_.r1KWMAM.kE.e.aYMZTO.w.dO.v.oQ" alt="physicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25C630091-content.html#_.r1MLYAM.kE.e.aYMZTO.w.dO.v.oQ" alt="logicalResourceSpec">
+<area shape="rect" coords="582,328,588,344" href="_3E3F0EC000E93EE25C630091-content.html#_.r1MLYAM.kE.e.aYMZTO.w.dO.v.oQ" alt="logicalResourceSpec">
+<area shape="rect" coords="798,304,906,320" href="_.r1JIEAM.kE.e.aYMZTO.w.dO.v.oQ-content.html" alt="LRSpecHostedBy">
+<area shape="poly" coords="534,317,1169,317,1169,326,534,326,534,317" href="_.r1JIEAM.kE.e.aYMZTO.w.dO.v.oQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.j_QA.oBC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="702,477,702,426,474,426,474,364,484,364,484,417,712,417,712,477,702,477" href="_.j_QA.oBC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.jW-.f.sBC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="212,477,212,417,474,417,474,364,484,364,484,426,222,426,222,477,212,477" href="_.jW-.f.sBC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.i3L.lUBC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="816,577,816,426,474,426,474,364,484,364,484,417,826,417,826,577,816,577" href="_.i3L.lUBC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.iSVL0BC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Generalization">
+<area shape="poly" coords="933,477,933,426,474,426,474,364,484,364,484,417,943,417,943,477,933,477" href="_.iSVL0BC0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_C8.nL.wIYME.eKS.k.uU.y3K96T.g-content.html" alt="Generalization">
+<area shape="poly" coords="480,583,480,526,490,526,490,583,480,583" href="_C8.nL.wIYME.eKS.k.uU.y3K96T.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.aOM.b4IYME.eKS.k.uU.y3K96T.g-content.html" alt="Generalization">
+<area shape="poly" coords="487,477,487,426,474,426,474,364,484,364,484,417,497,417,497,477,487,477" href="_.aOM.b4IYME.eKS.k.uU.y3K96T.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CF80294-content.html" alt="Generalization">
+<area shape="poly" coords="1252,315,1252,240,708,240,708,200,718,200,718,231,1262,231,1262,315,1252,315" href="_3E3F0EC000E93EE25CF80294-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CFB00FE-content.html" alt="Generalization">
+<area shape="poly" coords="444,315,444,231,708,231,708,200,718,200,718,240,454,240,454,315,444,315" href="_3E3F0EC000E93EE25CFB00FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFFA059031E-content.html#_3E3F0EC000E93EFFA1ED01FC" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EFFA1ED0224" alt="_compoundResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFFA059031E-content.html#_3E3F0EC000E93EFFA1ED01FC" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EFFA1ED0224" alt="_compoundResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFFA059031E-content.html#_3E3F0EC000E93EFFA1ED01FC" alt="_resourceSpecification">
+<area shape="rect" coords="879,172,885,188" href="_3E3F0EC000E93EFFA059031E-content.html#_3E3F0EC000E93EFFA1ED01FC" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EFFA1ED0224" alt="_compoundResourceSpec">
+<area shape="rect" coords="1503,233,1509,249" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EFFA1ED0224" alt="_compoundResourceSpec">
+<area shape="rect" coords="1074,145,1304,161" href="_3E3F0EC000E93EFFA1EC0010-content.html" alt="CompoundResourceSpecComposedOf">
+<area shape="poly" coords="1522,315,1522,169,800,169,800,159,1532,159,1532,315,1522,315" href="_3E3F0EC000E93EFFA1EC0010-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFFA0CC0106-content.html" alt="Generalization">
+<area shape="poly" coords="1473,315,1473,240,708,240,708,200,718,200,718,231,1483,231,1483,315,1473,315" href="_3E3F0EC000E93EFFA0CC0106-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_.h.l.r2AAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship2">
+<area shape="rect" coords="0,0,0,0" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.h.l.t.rMAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_.h.l.r2AAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship2">
+<area shape="rect" coords="0,0,0,0" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.h.l.t.rMAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_.h.l.r2AAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship2">
+<area shape="rect" coords="657,83,663,99" href="_3E3F0EC000E93DDEC5E70323-content.html#_.h.l.r2AAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship2">
+<area shape="rect" coords="0,0,0,0" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.h.l.t.rMAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification2">
+<area shape="rect" coords="656,132,663,148" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.h.l.t.rMAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification2">
+<area shape="rect" coords="481,109,697,125" href="_.h.l.q.n4AM.aE.e.aYMZTO.w.dO.v.oQ-content.html" alt="ResourceSpecificationReferencedBy">
+<area shape="poly" coords="637,151,637,81,647,81,647,151,637,151" href="_.h.l.q.n4AM.aE.e.aYMZTO.w.dO.v.oQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.c.eGRIAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_.c.eJU.cAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship">
+<area shape="rect" coords="0,0,0,0" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.c.eGRIAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_.c.eJU.cAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship">
+<area shape="rect" coords="0,0,0,0" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.c.eGRIAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification">
+<area shape="rect" coords="775,132,782,148" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_.c.eGRIAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_.c.eJU.cAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship">
+<area shape="rect" coords="776,83,782,99" href="_3E3F0EC000E93DDEC5E70323-content.html#_.c.eJU.cAM.aE.e.aYMZTO.w.dO.v.oQ" alt="resourceSpecificationRelationship">
+<area shape="rect" coords="723,109,922,125" href="_.c.eD04AM.aE.e.aYMZTO.w.dO.v.oQ-content.html" alt="ResourceSpecificationReferences">
+<area shape="poly" coords="803,81,803,151,793,151,793,81,803,81" href="_.c.eD04AM.aE.e.aYMZTO.w.dO.v.oQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1201,552,1436,604" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="ElectronicConnectionPointSpec">
+<area shape="rect" coords="1388,471,1590,523" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftBlackBoxSpecification">
+<area shape="rect" coords="1063,477,1240,529" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="PhysicalBlackBoxSpec">
+<area shape="rect" coords="770,789,968,858" href="__.o4.hABC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="StorageRequirementSpec">
+<area shape="rect" coords="222,621,385,690" href="_6P.mIIBC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="OfficeFunctionSpec">
+<area shape="rect" coords="9,621,187,690" href="_1N.w.l8BC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="NetworkFunctionSpec">
+<area shape="rect" coords="128,733,289,802" href="_4.bHS.wBC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="GameFunctionSpec">
+<area shape="rect" coords="907,689,1135,758" href="_B.sLO.cBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="ConnectivityRequirementSpec">
+<area shape="rect" coords="496,807,717,823" href="_8.lSNIBC.yE.e.e.iBJV.s.eVAY.dA-content.html#_R91UIF88E.eKYG6QMPWHJ.eQ" alt="virtualMemorySpaceTotal">
+<area shape="rect" coords="496,790,717,806" href="_8.lSNIBC.yE.e.e.iBJV.s.eVAY.dA-content.html#_R90GAF88E.eKYG6QMPWHJ.eQ" alt="swapSpaceAvailableTotal">
+<area shape="rect" coords="496,773,717,789" href="_8.lSNIBC.yE.e.e.iBJV.s.eVAY.dA-content.html#_R93.wYF88E.eKYG6QMPWHJ.eQ" alt="processMemorySizeMax">
+<area shape="rect" coords="496,756,717,772" href="_8.lSNIBC.yE.e.e.iBJV.s.eVAY.dA-content.html#_R92.iQF88E.eKYG6QMPWHJ.eQ" alt="pagingFileSizeTotal">
+<area shape="rect" coords="490,714,727,840" href="_8.lSNIBC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="ComputeRequirementSpec">
+<area shape="rect" coords="839,477,1039,529" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftConnectionPointSpec">
+<area shape="rect" coords="116,502,281,518" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_.a.dC40G8LE.e.i9W-GYK0.q.sK.w" alt="keyWords">
+<area shape="rect" coords="109,477,290,535" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="ResourceFunctionSpec">
+<area shape="rect" coords="621,477,796,529" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="ConnectionPointSpec">
+<area shape="rect" coords="721,602,959,618" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.l01.f.gBL0E.e.e.iBJV.s.eVAY.dA" alt="isVirtualizable">
+<area shape="rect" coords="714,577,968,635" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="HostingPlatformRequirementSpec">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_R9.z.e8F88E.eKYG6QMPWHJ.eQ" alt="numberProcessActiveTotal">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_R94-.gF88E.eKYG6QMPWHJ.eQ" alt="numUsersMax">
+<area shape="rect" coords="409,583,588,635" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html" alt="SoftwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_.d-_SEFEIE.eK.n-K55.iA3.mNA" alt="isExperimental">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_.d-_5IFEIE.eK.n-K55.iA3.mNA" alt="maintenanceVersion">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_.d_A.gMFEIE.eK.n-K55.iA3.mNA" alt="otherDesignator">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_.y.jMU.wF-UE.eKYG6QMPWHJ.eQ" alt="installSize">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_R94X.cF88E.eKYG6QMPWHJ.eQ" alt="isDistributable">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_2.p.mV.kF_5E.eKYG6QMPWHJ.eQ" alt="majorVersion">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_2.p.n.j.sF_5E.eKYG6QMPWHJ.eQ" alt="minorVersion">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_3E3F0EC000E93CDE25AD0323" alt="buildNumber">
+<area shape="rect" coords="0,0,0,0" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html#_3E3F0EC000E94366E801002F" alt="releaseStatus">
+<area shape="rect" coords="359,477,590,529" href="_5ZTMYG33E.eKS.yM.d.c.hR.z1.yQ-content.html" alt="SoftwareResourceSpecification">
+<area shape="rect" coords="1169,315,1346,367" href="_3E3F0EC000E93EE25C630091-content.html" alt="PhysicalResourceSpec">
+<area shape="rect" coords="365,315,536,367" href="_3E3F0EC000E93EE25CAA036E-content.html" alt="LogicalResourceSpec">
+<area shape="rect" coords="1381,315,1576,367" href="_3E3F0EC000E93EFFA059031E-content.html" alt="CompoundResourceSpec">
+<area shape="rect" coords="577,51,816,67" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_K.u.d.u.cA.x.hE.e.aR.pPE7.r-LMC.g" alt="validFor">
+<area shape="rect" coords="577,34,816,50" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html#_KG8.b.cA.x.hE.e.aR.pPE7.r-LMC.g" alt="type">
+<area shape="rect" coords="571,9,826,84" href="_-RO.p4AMZE.e.aYMZTO.w.dO.v.oQ-content.html" alt="ResourceSpecificationRelationship">
+<area shape="rect" coords="624,151,803,203" href="_3E3F0EC000E93DDEC5E70323-content.html" alt="ResourceSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Res.13 - Resource Function Spec inheritance (OLD RS.03)</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fO.hA.wAMOE.e.aYMZTO.w.dO.v.oQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Specification ABE Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

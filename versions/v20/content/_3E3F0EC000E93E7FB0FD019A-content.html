@@ -1,0 +1,150 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Calendar Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Calendar ABE::_ Calendar Addendum Figures::Figure Cal.09 - Entry Types<br>
+</span><span class="ElementTitle">Diagram Figure Cal.09 - Entry Types<br>
+</span><span class="ElementDocumentation">We will now look at the Calendar Entry Types in more detail.</br>CalendarEntry contains the common attributes for Journal, Event and ToDo entries.</br>AccessClassification refers to an entry being public or private and controls access to the entry by other than the CalendarOwner. IsRSVPRequested identifies if a return message is to be created when the entry is received.</br>Journal Entries allow notes to be added to the Calendar.</br>CalendarEvents relate to real world events. These may reserve Resources or Parties for a period of time in the calendar.</br>ToDo entries relate to reminders to check on progress for a task.</br>Events and ToDo entries can have associated Alarms. When the alarm conditions are satisfied, then the CalendarOwner can be notified in some way. The alarm trigger can be an absolute DateTimePoint and can be made relative to the start or end of the owning CalendarEntry, offset before or after the start/end by a given duration. The alarm can also be set to repeat, until the notification is responded to.</br>e.g. A meeting has been set for 9:00am on Tues 25 Mar 2003. An alarm is set to activate 5 minutes before the meeting starts and the alarm sound is to go for 10 seconds, repeating every minute for 10 minutes, or until a response is recorded.</br><Note>Note that an Alarm activation is really a type of Event. The Event could send messages to initiate various actions.</Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93E7FB0FD019A.PNG" alt="Figure Cal.09 - Entry Types" usemap="#map_3E3F0EC000E93E7FB0FD019A"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93E7FB0FD019A">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93EA48EE402F6" alt="_absoluteCalendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B61F02C0-content.html#_3E3F0EC000E93EA48EE402F8" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93EA48EE402F6" alt="_absoluteCalendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B61F02C0-content.html#_3E3F0EC000E93EA48EE402F8" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93EA48EE402F6" alt="_absoluteCalendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93EA48EE402F6" alt="_absoluteCalendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B61F02C0-content.html#_3E3F0EC000E93EA48EE402F8" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B61F02C0-content.html#_3E3F0EC000E93EA48EE402F8" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA48EE4013E-content.html" alt="Association">
+<area shape="poly" coords="1122,265,1122,465,1112,465,1112,265,1122,265" href="_3E3F0EC000E93EA48EE4013E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B6CE0204-content.html" alt="Generalization">
+<area shape="poly" coords="1103,465,1103,425,881,425,881,384,891,384,891,415,1113,415,1113,465,1103,465" href="_3E3F0EC000E93E41B6CE0204-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93E41B6F8000F" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B6F80011" alt="_place">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93E41B6F8000F" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B6F80011" alt="_place">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93E41B6F8000F" alt="_calendarActionEntry">
+<area shape="rect" coords="471,281,479,298" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93E41B6F8000F" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B6F80011" alt="_place">
+<area shape="rect" coords="459,175,485,192" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B6F80011" alt="_place">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B6F701D1-content.html" alt="Association">
+<area shape="poly" coords="508,166,508,311,498,311,498,166,508,166" href="_3E3F0EC000E93E41B6F701D1-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1EB0147-content.html" alt="Generalization">
+<area shape="poly" coords="556,465,556,422,441,422,441,384,451,384,451,412,565,412,565,465,556,465" href="_3E3F0EC000E93E41B1EB0147-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1E9014E-content.html" alt="Generalization">
+<area shape="poly" coords="304,465,304,412,441,412,441,384,451,384,451,422,314,422,314,465,304,465" href="_3E3F0EC000E93E41B1E9014E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="782,360,790,377" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41B24C03DB" alt="_calendarAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="547,360,555,377" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41B24C03E5" alt="_calendarActionEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B24C0254-content.html" alt="Association">
+<area shape="poly" coords="532,343,806,343,806,352,532,352,532,343" href="_3E3F0EC000E93E41B24C0254-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1E70064-content.html" alt="Generalization">
+<area shape="poly" coords="389,311,389,236,243,236,243,194,253,194,253,226,398,226,398,311,389,311" href="_3E3F0EC000E93E41B1E70064-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B6D00225-content.html" alt="Generalization">
+<area shape="poly" coords="857,458,857,415,881,415,881,384,891,384,891,425,867,425,867,458,857,458" href="_3E3F0EC000E93E41B6D00225-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B2340192-content.html" alt="Generalization">
+<area shape="poly" coords="94,465,94,226,243,226,243,194,253,194,253,236,104,236,104,465,94,465" href="_3E3F0EC000E93E41B2340192-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1050,237,1205,252" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E4823C80242" alt="principalLocation">
+<area shape="rect" coords="1050,221,1205,236" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E42F095003A" alt="comment">
+<area shape="rect" coords="1050,205,1205,220" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B9BA02C8" alt="timezoneUrl">
+<area shape="rect" coords="1050,189,1205,204" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B9B90045" alt="name">
+<area shape="rect" coords="1044,165,1215,269" href="_3E3F0EC000E93E41B4F400D6-content.html" alt="TimeZone">
+<area shape="rect" coords="1016,489,1198,504" href="_3E3F0EC000E93E41B61F02C0-content.html#_3E3F0EC000E93E41DF4C008D" alt="alarmDateTime">
+<area shape="rect" coords="1010,465,1208,509" href="_3E3F0EC000E93E41B61F02C0-content.html" alt="AbsoluteCalendarAlarm">
+<area shape="rect" coords="361,367,525,382" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93EA4864A00EB" alt="resources">
+<area shape="rect" coords="361,351,525,366" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41E6C1024A" alt="priority">
+<area shape="rect" coords="361,335,525,350" href="_3E3F0EC000E93E41B1D50113-content.html#_3E3F0EC000E93E41E5F702CC" alt="validFor">
+<area shape="rect" coords="354,311,534,387" href="_3E3F0EC000E93E41B1D50113-content.html" alt="CalendarActionEntry">
+<area shape="rect" coords="443,137,585,152" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C89BE780116" alt="validFor">
+<area shape="rect" coords="443,121,585,136" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C89BE750112" alt="ID">
+<area shape="rect" coords="436,97,594,169" href="_3E3F0EC000E93C86C87200D8-content.html" alt="Place">
+<area shape="rect" coords="813,367,955,382" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E46F7BD035B" alt="repeatCount">
+<area shape="rect" coords="813,351,955,366" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E46F7B802BD" alt="interval">
+<area shape="rect" coords="813,335,955,350" href="_3E3F0EC000E93E41B18E02C9-content.html#_3E3F0EC000E93E41DEB503BB" alt="alarmAction">
+<area shape="rect" coords="806,311,964,387" href="_3E3F0EC000E93E41B18E02C9-content.html" alt="CalendarAlarm">
+<area shape="rect" coords="773,498,950,513" href="_3E3F0EC000E93E41B62903BF-content.html#_3E3F0EC000E93E41DFBA01D5" alt="durationOffset">
+<area shape="rect" coords="773,482,950,497" href="_3E3F0EC000E93E41B62903BF-content.html#_3E3F0EC000E93E41DFB703A8" alt="alarmTrigger">
+<area shape="rect" coords="767,458,960,518" href="_3E3F0EC000E93E41B62903BF-content.html" alt="RelativeCalendarAlarm">
+<area shape="rect" coords="455,537,665,552" href="_3E3F0EC000E93E41B15501E1-content.html#_3E3F0EC000E93E46F70E0018" alt="actualCompletionDate">
+<area shape="rect" coords="455,521,665,536" href="_3E3F0EC000E93E41B15501E1-content.html#_3E3F0EC000E93E41E40102D4" alt="percentComplete">
+<area shape="rect" coords="455,505,665,520" href="_3E3F0EC000E93E41B15501E1-content.html#_3E3F0EC000E93E41E3F90337" alt="actionItem">
+<area shape="rect" coords="455,489,665,504" href="_3E3F0EC000E93E41B15501E1-content.html#_3E3F0EC000E93E41E3F3020C" alt="dueDate">
+<area shape="rect" coords="449,465,675,557" href="_3E3F0EC000E93E41B15501E1-content.html" alt="CalendarToDo">
+<area shape="rect" coords="237,489,380,504" href="_3E3F0EC000E93E41B12F00A6-content.html#_3E3F0EC000E93E41E3D60341" alt="freeBusyType">
+<area shape="rect" coords="230,465,389,509" href="_3E3F0EC000E93E41B12F00A6-content.html" alt="CalendarEvent">
+<area shape="rect" coords="16,489,182,504" href="_3E3F0EC000E93E41B17B0326-content.html#_3E3F0EC000E93E41E0A2019D" alt="entryDate">
+<area shape="rect" coords="9,465,191,509" href="_3E3F0EC000E93E41B17B0326-content.html" alt="CalendarJournalEntry">
+<area shape="rect" coords="156,177,336,192" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA48337020C" alt="lastModifiedDate">
+<area shape="rect" coords="156,161,336,176" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9E199B0100" alt="creationDate">
+<area shape="rect" coords="156,145,336,160" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F80D0053" alt="isRVSPRequested">
+<area shape="rect" coords="156,129,336,144" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F7E803C1" alt="accessClassification">
+<area shape="rect" coords="156,113,336,128" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0F201CF" alt="status">
+<area shape="rect" coords="156,97,336,112" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0F00117" alt="comment">
+<area shape="rect" coords="156,81,336,96" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0EC0176" alt="versionNr">
+<area shape="rect" coords="156,65,336,80" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41BAD30127" alt="summary">
+<area shape="rect" coords="156,49,336,64" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41BACD0178" alt="description">
+<area shape="rect" coords="156,33,336,48" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F7E303CD" alt="ID">
+<area shape="rect" coords="149,9,345,197" href="_3E3F0EC000E93E41B1110189-content.html" alt="CalendarEntry">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Cal.09 - Entry Types</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

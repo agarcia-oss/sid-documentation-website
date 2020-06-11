@@ -1,0 +1,74 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Usage Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E947BF8F9702FD-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Usage Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Usage ABE::_Usage Addendum Figures::Figure U.08 - Resource Service Product Usage - as different states of the same Usage class<br>
+</span><span class="ElementTitle">Diagram Figure U.08 - Resource Service Product Usage - as different states of the same Usage class<br>
+</span><span class="ElementDocumentation">The following Figure describes the model that resource, service and product usage as state of the same ContextUsage class.</br>The usageState attribute can take on one of the values "resource usage", "service usage" or "product usage".</br>Usage could be still modeled in one of the two approaches described in the Modeling Alternatives subchapter that located inside the "The Usage Information Model" subchapter.</br>[] Implementation option</br>In practice there is one usage entity that changes its state according to its progress in the rating process (resource usage guided to service usage that eventually guided to product usage). Actually, in most cases it starts its life as service usage (such as voice call CDR which already has the phone number in the record so there it is created in the state of service (phone line) usage) and moves to become in product usage state after guiding to customer and subscriber.</br>The Resource, Service and Product usage can be implemented in many ways. It could be implemented as-is (each of the entities inherit directly from Usage class and with no real association to the other entity) but this means quite a bit of extra data. But it also can be implemented in many other ways.</br>Most rating systems implement this usage state transition by simply adding new set of characteristics along the guiding process. For example, a VoIP service usage (usage record in "service state") might contains the call initiator, the call target and the fact that the service is VoIP (as well as other service characteristics) The guiding process will change the usage record state to be "product state" and simply will add the user information characteristics to this usage record.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E947C16E060203.PNG" alt="Figure U.08 - Resource Service Product Usage - as different states of the same Usage class" usemap="#map_3E3F0EC000E947C16E060203"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E947C16E060203">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C16E7B002E-content.html" alt="Generalization">
+<area shape="poly" coords="344,203,344,78,354,78,354,203,344,203" href="_3E3F0EC000E947C16E7B002E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="278,227,408,242" href="_3E3F0EC000E947C16E2502EE-content.html#_3E3F0EC000E947C16E5B009C" alt="usageState">
+<area shape="rect" coords="271,203,417,259" href="_3E3F0EC000E947C16E2502EE-content.html" alt="ContextUsage">
+<area shape="rect" coords="280,49,426,64" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C18A1403DC" alt="usageStatus">
+<area shape="rect" coords="280,33,426,48" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C1761B021F" alt="usageDate">
+<area shape="rect" coords="273,9,435,81" href="_3E3F0EC000E941C175ED0356-content.html" alt="Usage">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure U.08 - Resource Service Product Usage - as different states of the same Usage class</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E947BF8F9702FD-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Usage Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

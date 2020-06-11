@@ -1,0 +1,136 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-24 - Principal Relationships of a PolicyDecisionPoint<br>
+</span><span class="ElementTitle">Diagram Figure 1P-24 - Principal Relationships of a PolicyDecisionPoint<br>
+</span><span class="ElementDocumentation">A PolicyDecisionPoint is a type of PolicyApplication. It makes policy decisions for itself or for other entities that request such decisions, such as PolicyEnforcementPoints (PEPs) and PolicyExecutionPoints (PXPs). One or more PolicyDecisionPoints are contained in a PolicyServer.</br>PDPs use policies to configure or answer queries from policy-capable network elements or from an operator of the system. An example of a query is an RSVP admission request – a decision must be made to either accept or reject the request by the receiving network element. Since the network element doesn’t have any idea about the overall state of the network, it makes a request of the PDP, asking the PDP if the RSVP request should be allowed. Thus, the PDP serves as the interface between the network and higher-level processes.</br>The PolicyDecisionRequestedBy association defines the set of PolicyDecisions that are requested by a ManagedEntity. The semantics of this association are implemented by the DecisionRequestedDetails association class (not shown in the figure). This starts the management closed loop system by a request for a policy decision. Note that the full model allows for events and other entities to request policy decisions, not just ManagedEntities.</br>The DirectsExecutionOf association defines the set of PolicyExecutionPoints that a given PolicyDecisionPoint can direct.</br>The cardinality of this association is 1 on the PolicyDecisionPoint side and 1..n on the PolicyExecutionPoint side. This means that a PolicyDecisionPoint can provide decisions for one or more PolicyExecutionPoints (note that without a PolicyExecutionPoint, a PolicyDecisionPoint is useless). However, if multiple PolicyDecisionPoints are allowed to tell a given PolicyExecutionPoint what to do, then there is no guarantee that the PolicyDecisionPoints won’t conflict with each other. Thus, there can only be one PolicyDecisionPoint for a given PolicyExecutionPoint.</br>Similarly, the DirectsEnforcementOf association defines the set of PolicyEnforcementPoints that a given PolicyDecisionPoint can direct.</br>Note that there are separate associations that define which PolicyExecutionPoints and PolicyEnforcementPoints a particular PDP can control. This is because in the system view, there is a difference between instructing an application to change the configuration of a managed object versus instructing an application to monitor a particular managed object. Modern systems need the flexibility to define different roles and responsibilities for these two functions. Therefore, the semantics of the three associations that involve a PDP (i.e., the DirectsExecutionOf, DirectsEnforcementOf, and PolicyActionPerformedOn associations) are implemented as association classes.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93F1699290337.PNG" alt="Figure 1P-24 - Principal Relationships of a PolicyDecisionPoint" usemap="#map_3E3F0EC000E93F1699290337"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93F1699290337">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F169F050294-content.html#_3E3F0EC000E93F16A082026A" alt="pepCommMethod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F169F050294-content.html#_3E3F0EC000E93F16A0820269" alt="pepRequestTimePeriod">
+<area shape="rect" coords="294,502,522,551" href="_3E3F0EC000E93F169F050294-content.html" alt="PEPDirectionDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="119,368,145,385" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="rect" coords="544,367,552,384" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93F169F0902C1" alt="_policyDecisionPoint">
+<area shape="poly" coords="562,361,562,453,110,453,110,362,120,362,120,443,552,443,552,361,562,361" href="_3E3F0EC000E93F169F050294-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8D2702CC" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDB8D2702CE" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8D2702CC" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDB8D2702CE" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8D2702CC" alt="_policyDecisionPoint">
+<area shape="rect" coords="598,365,606,382" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8D2702CC" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDB8D2702CE" alt="_managedEntity">
+<area shape="rect" coords="436,44,444,61" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDB8D2702CE" alt="_managedEntity">
+<area shape="poly" coords="416,65,416,18,941,18,941,408,580,408,580,361,590,361,590,399,931,399,931,28,426,28,426,65,416,65" href="_3E3F0EC000E93EDB8D200308-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="400,362,426,379" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="517,364,525,381" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="poly" coords="534,361,534,410,427,410,427,362,436,362,436,400,524,400,524,361,534,361" href="_3E3F0EC000E93EDA89820144-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F521B02BB-content.html" alt="Generalization">
+<area shape="poly" coords="566,313,566,254,322,254,322,213,332,213,332,244,576,244,576,313,566,313" href="_3E3F0EC000E93D7F521B02BB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F52170319-content.html" alt="Generalization">
+<area shape="poly" coords="101,314,101,244,322,244,322,213,332,213,332,254,111,254,111,314,101,314" href="_3E3F0EC000E93D7F52170319-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="464,60,472,77" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="420,160,428,177" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="528,83,703,100" href="_3E3F0EC000E93EDB868202A4-content.html" alt="PolicyAppInvolvedWith">
+<area shape="poly" coords="402,174,508,174,508,84,447,84,447,75,518,75,518,184,402,184,402,174" href="_3E3F0EC000E93EDB868202A4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA86100007-content.html" alt="Generalization">
+<area shape="poly" coords="361,314,361,254,322,254,322,213,332,213,332,244,370,244,370,314,361,314" href="_3E3F0EC000E93EDA86100007-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F5D4D0095-content.html" alt="Generalization">
+<area shape="poly" coords="784,313,784,254,322,254,322,213,332,213,332,244,794,244,794,313,784,313" href="_3E3F0EC000E93D7F5D4D0095-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="609,175,762,193" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="609,157,762,175" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="609,139,762,157" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="603,139,767,192" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="403,196,429,213" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="849,341,875,358" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="535,198,681,215" href="_3E3F0EC000E93EDA87CC00EF-content.html" alt="ContainsPolicyApps">
+<area shape="poly" coords="850,333,872,333,872,198,402,198,402,188,881,188,881,342,850,342,850,333" href="_3E3F0EC000E93EDA87CC00EF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="489,313,655,364" href="_3E3F0EC000E93D77EE090153-content.html" alt="PolicyDecisionPoint">
+<area shape="rect" coords="9,314,204,365" href="_3E3F0EC000E93D77EE1201C6-content.html" alt="PolicyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8EB0004E" alt="managementMethodSupported">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8E85007E" alt="managementMethodCurrent">
+<area shape="rect" coords="306,65,449,116" href="_3E3F0EC000E93DDE84F30225-content.html" alt="ManagedEntity">
+<area shape="rect" coords="279,314,454,365" href="_3E3F0EC000E93EDA857301A5-content.html" alt="PolicyExecutionPoint">
+<area shape="rect" coords="249,165,405,216" href="_3E3F0EC000E93D7F51F50392-content.html" alt="PolicyApplication">
+<area shape="rect" coords="728,313,852,364" href="_3E3F0EC000E93D77EE190131-content.html" alt="PolicyServer">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-24 - Principal Relationships of a PolicyDecisionPoint</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

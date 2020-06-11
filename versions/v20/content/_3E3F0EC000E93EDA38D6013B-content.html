@@ -1,0 +1,87 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-11 - Simple PolicySet<br>
+</span><span class="ElementTitle">Diagram Figure 1P-11 - Simple PolicySet<br>
+</span><span class="ElementDocumentation">Both a PolicyGroup as well as a PolicyRule can act as intelligent containers. Therefore, the model abstracts this common capability and generalizes this into a common superclass, called PolicySet. A PolicySet can therefore be used to define common semantics for PolicyRules and PolicyGroups. </br>The name “PolicySet” is kept to ensure backward compatibility with the IETF model (RFC 3060 and those derived from it). A PolicySet is a type of collection class. This makes sense, since PolicyRules and PolicyGroups are also collection classes. Specifically, a PolicyRule collects PolicyEvents, PolicyConditions, and PolicyActions, while a PolicyGroup collects PolicyRules and PolicyGroups. Thus, a PolicySet can capture the common semantics (attributes, methods, relationships, and constraints) for policy collection classes. </br>Note that the composite pattern is not used. This is because the entities shown in Figure below are each collection, and therefore naturally have the ability to aggregate information.</br>Instead, what is important about these classes is their ability to form nested relationships (i.e., a PolicyRule within a PolicyRule as well as a PolicyGroup within a PolicyRule). There are important semantics that come into play, especially in the field of networking, that mandate the ability to have a set of nested PolicyRules (e.g., a rule: sub-rule relationship) as well as the ability to have a group of PolicyRules execute within the context of another PolicyRule. Similarly, one can have a PolicyGroup contain another PolicyGroup (thereby forming a hierarchical group of containers) as well as a PolicyGroup contain a PolicyRule. Thus, instead of the standard composite pattern, the pattern shown in following Figure is used instead. This pattern will be repeated for other structures, including PolicyConditions and PolicyActions.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EDA38D6013B.PNG" alt="Figure 1P-11 - Simple PolicySet" usemap="#map_3E3F0EC000E93EDA38D6013B"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EDA38D6013B">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025A-content.html" alt="Generalization">
+<area shape="poly" coords="473,211,473,176,355,176,355,135,364,135,364,166,482,166,482,211,473,211" href="_3E3F0EC000E93D77E58C025A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C024F-content.html" alt="Generalization">
+<area shape="poly" coords="228,209,228,166,355,166,355,135,364,135,364,176,238,176,238,209,228,209" href="_3E3F0EC000E93D77E58C024F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0335" alt="_policySet2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0336" alt="_policySet1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0335" alt="_policySet2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0336" alt="_policySet1">
+<area shape="rect" coords="461,23,549,40" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0335" alt="_policySet2">
+<area shape="rect" coords="459,48,467,65" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0335" alt="_policySet2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0336" alt="_policySet1">
+<area shape="rect" coords="228,42,254,59" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0336" alt="_policySet1">
+<area shape="poly" coords="271,73,271,24,450,24,450,73,440,73,440,34,281,34,281,73,271,73" href="_3E3F0EC000E93D77E58C0334-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D78120401C2" alt="hasSubRules">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D77E58C025C" alt="isCNF">
+<area shape="rect" coords="393,211,564,274" href="_3E3F0EC000E93D77E58C025B-content.html" alt="PolicyRuleBase">
+<area shape="rect" coords="164,209,303,272" href="_3E3F0EC000E93D77E58C024E-content.html" alt="PolicyGroup">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0258" alt="usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0257" alt="isMandatoryEvaluation">
+<area shape="rect" coords="248,73,470,139" href="_3E3F0EC000E93D77E58C0252-content.html" alt="PolicySet">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-11 - Simple PolicySet</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

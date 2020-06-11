@@ -1,0 +1,144 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Calendar Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Calendar ABE::_ Calendar Addendum Figures::Figure Cal.08 - Organizer &amp; Attendee in detail<br>
+</span><span class="ElementTitle">Diagram Figure Cal.08 - Organizer &amp; Attendee in detail<br>
+</span><span class="ElementDocumentation">We will abstract the Organizer and Attendee associations into a common entity, making the model easier to understand and more flexible. This now provides the concept of “Participation” where for each CalendarEntry there are Customers, Suppliers … participating in various ways. The participation can be delegated to someone else. Also, a secretary may reply on behalf of a manager, and this is recorded in the ParticipationSentBy association. In effect, CalendarEntryParticipation is an implementation of Roles using a simple attribute [Fowler-Roles] of participationType. Note that we deliberately have kept participationType separate from the PartyRole hierarchy, as they are independent.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93E8B9BB401A0.PNG" alt="Figure Cal.08 - Organizer &amp; Attendee in detail" usemap="#map_3E3F0EC000E93E8B9BB401A0"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93E8B9BB401A0">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41F42103DC-content.html#_3E3F0EC000E93E46F8C80296" alt="type">
+<area shape="rect" coords="854,415,1046,466" href="_3E3F0EC000E93E41F42103DC-content.html" alt="CalendarEntryAssociation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400AB" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400B5" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400AB" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400B5" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400AB" alt="_calendarEntry">
+<area shape="rect" coords="822,363,830,380" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400AB" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400B5" alt="_calendarEntry1">
+<area shape="rect" coords="820,348,828,365" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41F42400B5" alt="_calendarEntry1">
+<area shape="poly" coords="808,330,854,330,854,388,808,388,808,378,844,378,844,340,808,340,808,330" href="_3E3F0EC000E93E41F42103DC-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="388,186,590,201" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4EEDB032E" alt="requestStatus">
+<area shape="rect" coords="388,170,590,185" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93E41EC1A0124" alt="respondedParticipation">
+<area shape="rect" coords="388,154,590,169" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93E41EC0A02B2" alt="requestedParticipation">
+<area shape="rect" coords="388,138,590,153" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93E8B9C0801FB" alt="participationType">
+<area shape="rect" coords="381,114,599,218" href="_3E3F0EC000E93EA483F80119-content.html" alt="CalendarEntryParticipation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA483F8011A" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA483F8011B" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA483F8011A" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA483F8011B" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA483F8011A" alt="_partyRole">
+<area shape="rect" coords="175,284,183,301" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA483F8011A" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA483F8011B" alt="_calendarEntry">
+<area shape="rect" coords="602,354,610,371" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA483F8011B" alt="_calendarEntry">
+<area shape="poly" coords="614,348,165,273,166,263,615,338,614,348" href="_3E3F0EC000E93EA483F80119-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA484C10014" alt="_sender">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA484C10028" alt="_calendarEntryParticipation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA484C10014" alt="_sender">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA484C10028" alt="_calendarEntryParticipation">
+<area shape="rect" coords="157,184,225,201" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA484C10014" alt="_sender">
+<area shape="rect" coords="172,210,198,227" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA484C10014" alt="_sender">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA484C10028" alt="_calendarEntryParticipation">
+<area shape="rect" coords="380,167,388,184" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93EA484C10028" alt="_calendarEntryParticipation">
+<area shape="rect" coords="182,158,332,175" href="_3E3F0EC000E93EA484C000DA-content.html" alt="ParticipationSentBy">
+<area shape="poly" coords="382,193,166,242,164,232,380,184,382,193" href="_3E3F0EC000E93EA484C000DA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="71,300,79,317" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="83,382,91,399" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="112,328,299,345" href="_3E3F0EC000E93D813C62019D-content.html" alt="PartyRoleContactableVia">
+<area shape="poly" coords="93,398,86,300,96,299,103,397,93,398" href="_3E3F0EC000E93D813C62019D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B020E" alt="_delegatees">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B0218" alt="_delegator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B020E" alt="_delegatees">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B0218" alt="_delegator">
+<area shape="rect" coords="364,79,457,96" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B020E" alt="_delegatees">
+<area shape="rect" coords="498,73,506,90" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B020E" alt="_delegatees">
+<area shape="rect" coords="595,161,679,178" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B0218" alt="_delegator">
+<area shape="rect" coords="667,123,693,140" href="_3E3F0EC000E93EA483F80119-content.html#_3E3F0EC000E93EA4853B0218" alt="_delegator">
+<area shape="rect" coords="496,23,688,40" href="_3E3F0EC000E93EA48537023A-content.html" alt="ParticipationDelegatedTo">
+<area shape="poly" coords="597,159,660,159,660,61,496,61,496,114,486,114,486,51,669,51,669,169,597,169,597,159" href="_3E3F0EC000E93EA48537023A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2327260096-content.html" alt="Generalization">
+<area shape="poly" coords="104,485,104,439,114,439,114,485,104,485" href="_3E3F0EC000E93C2327260096-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="621,428,801,443" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA48337020C" alt="lastModifiedDate">
+<area shape="rect" coords="621,412,801,427" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9E199B0100" alt="creationDate">
+<area shape="rect" coords="621,396,801,411" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F80D0053" alt="isRVSPRequested">
+<area shape="rect" coords="621,380,801,395" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F7E803C1" alt="accessClassification">
+<area shape="rect" coords="621,364,801,379" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0F201CF" alt="status">
+<area shape="rect" coords="621,348,801,363" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0F00117" alt="comment">
+<area shape="rect" coords="621,332,801,347" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0EC0176" alt="versionNr">
+<area shape="rect" coords="621,316,801,331" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41BAD30127" alt="summary">
+<area shape="rect" coords="621,300,801,315" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41BACD0178" alt="description">
+<area shape="rect" coords="621,285,801,300" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F7E303CD" alt="ID">
+<area shape="rect" coords="614,261,810,461" href="_3E3F0EC000E93E41B1110189-content.html" alt="CalendarEntry">
+<area shape="rect" coords="16,282,158,297" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="16,266,158,281" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="16,250,158,265" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="16,234,158,249" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="9,210,167,302" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="28,422,170,437" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93C29379B0390" alt="validFor">
+<area shape="rect" coords="22,398,180,442" href="_3E3F0EC000E93C23250A0154-content.html" alt="ContactMedium">
+<area shape="rect" coords="41,509,183,524" href="_3E3F0EC000E93C2326E90078-content.html#_3E3F0EC000E93C42363800B9" alt="eMailAddress">
+<area shape="rect" coords="34,485,192,529" href="_3E3F0EC000E93C2326E90078-content.html" alt="EmailContact">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Cal.08 - Organizer &amp; Attendee in detail</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

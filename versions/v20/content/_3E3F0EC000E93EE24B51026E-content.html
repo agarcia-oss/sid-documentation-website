@@ -1,0 +1,94 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.09 -The Concept of a DeviceRole<br>
+</span><span class="ElementTitle">Diagram Figure PR.09 -The Concept of a DeviceRole<br>
+</span><span class="ElementDocumentation">Before we dive deeper, let’s clear up one thing that we previously hinted at. We have defined previously a Switch and a Router as types of Devices. We all know the basic difference between a Switch and a Router – the former forwards traffic, while the latter routes and forwards traffic. But what about the so-called “Layer 3” switches, which are Switches that have Routing capability?</br>Assume that our model actually did implement a router and a switch subclass of PhysicalDevice. One would then be tempted to invent a new subclass, called Layer3Switch, which subclasses a Switch and adds routing capabilities, to handle this new type of device. However, this is a poor solution, because now every time routing changes, we have to update the Router and the Layer3Switch class. Besides, this implies that a Layer3Switch can do everything that a full-blown Router can do, which is almost never the case. There are other problems too, but this is enough for now.</br>One may then be tempted to use multiple inheritance to solve this problem. However, this creates a new problem – one of extensibility. What if there is a “Layer4Switch” (unfortunately, some vendors do define such an animal!)? What if we want to differentiate between the type of routing done in a Router vs. those done in the Layer3Switch vs. those done in the Layer4Switch? What if there is a Router that has firewalling capabilities? The list is endless. Multiple inheritance cannot be used to solve all of these problems, and besides, many implementations don’t support multiple inheritance. We don’t want to compromise our ability to build a system view out of this business view!</br>Instead, a much more elegant and extensible solution is available – we can use the notion of roles. In fact, one of the strengths of a good model is to be able to reuse the same set of patterns over and over. Roles form a core part of the Party model, which (among other things) describes People, Organizations, and the functions (i.e., roles) that they play. This is documented in GB922 Common guide book (the Common Business Entity Addendum that defines Party and PartyRole).</br>Our approach is now simplified. Instead of trying to either define many subclasses or introduce multiple inheritance, we can instead define a set of roles that the device is meant to play. (It should be noted that this is another reason why the concept of a managed device is a good one – now, we can define a base concept of a managed device, and model its functionality by associating one or more roles to it as appropriate). This solves the mess of having the same generic function (such as routing) assigned to two different types of devices that implement that same generic function in different ways, producing different subsets of functionality.</br>Since the networking industry has shown to be ever-evolving, inheritance is not appropriate for capturing this behavior, as the behavior itself changes over time. In addition, by capturing the key functional concepts as roles, we can model present and future Devices as entities that can play many roles at one time.</br>Thus, by modelling DeviceRole as a separate concept from Device, we can represent these complex behaviors in an extensible manner.</br>The following Figure shows a simple model introducing the concept of a DeviceRole.</br>It should be noted that the Figure does not define all of the different types of roles that a Device can take on. This concept is clearly not a physical one, but rather a logical one, and will show up in other Addenda. It is brought up in this Addendum because this is a critical concept for modelling different types of devices, and the Physical Resource model must be able to interface with this concept. It also inspires us to see if there isn’t a similar concept that can be used to abstract similar differences in the physical world. In fact, there is a similarity, and is defined in the following section.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE24B51026E.PNG" alt="Figure PR.09 -The Concept of a DeviceRole" usemap="#map_3E3F0EC000E93EE24B51026E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE24B51026E">
+<area shape="rect" coords="0,0,0,0" href="_00WIMM3.zE.d6X.s.cU.zTHK53.w-content.html" alt="Generalization">
+<area shape="poly" coords="56,143,56,77,66,77,66,143,56,143" href="_00WIMM3.zE.d6X.s.cU.zTHK53.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5CB00D6-content.html" alt="Generalization">
+<area shape="poly" coords="658,142,658,112,451,112,451,77,461,77,461,102,667,102,667,142,658,142" href="_3E3F0EC000E93EB1D5CB00D6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5D402F4-content.html" alt="Generalization">
+<area shape="poly" coords="504,145,504,112,451,112,451,77,461,77,461,102,514,102,514,145,504,145" href="_3E3F0EC000E93EB1D5D402F4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5CE03AA-content.html" alt="Generalization">
+<area shape="poly" coords="359,144,359,102,451,102,451,77,461,77,461,112,369,112,369,144,359,144" href="_3E3F0EC000E93EB1D5CE03AA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5D2002A-content.html" alt="Generalization">
+<area shape="poly" coords="209,144,209,102,451,102,451,77,461,77,461,112,219,112,219,144,209,144" href="_3E3F0EC000E93EB1D5D2002A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="360,47,368,64" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="129,55,155,72" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="198,23,314,40" href="_3E3F0EC000E93EB1D5390286-content.html" alt="DeviceTakesOn">
+<area shape="poly" coords="113,40,398,40,398,50,113,50,113,40" href="_3E3F0EC000E93EB1D5390286-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="28,13,115,80" href="_3E3F0EC000E93EB1D514027E-content.html" alt="Device">
+<area shape="rect" coords="398,14,512,81" href="_3E3F0EC000E93EB1D5240301-content.html" alt="DeviceRole">
+<area shape="rect" coords="616,142,711,209" href="_3E3F0EC000E93EB1D59D02CB-content.html" alt="Encoder">
+<area shape="rect" coords="456,145,569,212" href="_3E3F0EC000E93EB1D5970237-content.html" alt="Encryption">
+<area shape="rect" coords="305,144,397,211" href="_3E3F0EC000E93EB1D58600EB-content.html" alt="Firewall">
+<area shape="rect" coords="171,144,258,211" href="_3E3F0EC000E93EB1D5900148-content.html" alt="Switch">
+<area shape="rect" coords="9,143,97,210" href="_3E3F0EC000E93EB1D58C0139-content.html" alt="Router">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.09 -The Concept of a DeviceRole</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

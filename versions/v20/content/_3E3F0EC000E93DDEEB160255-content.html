@@ -1,0 +1,709 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HolderComposite ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for HolderComposite">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E2C3D3900F5-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">HolderComposite ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE</span>
+<br>
+<span class="ElementTitle">Class HolderComposite</span>
+<p>
+<a name="documentationSection"></a>This class represents EquipmentHolders that are made up of other EquipmentHolders (i.e., instances of this class as well as the HolderAtomic base class). This provides the semantics of collecting a set of components, each of which is individually manageable, and being able to manage the set of objects as a whole. This containment is modeled using the HasHolders aggregation.</br></br>Each HolderComposite element can be a FRU.</br></br>A characteristic of this class is that its subclasses are physical objects that have complex cabling and mounting options. This class is meant to differentiate complex holders, like a Chassis, from simple holders, like a Slot.</br></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">EquipmentHolder </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::_equipmentHolder2" href="#_3E3F0EC000E93DDEEBE1036F"><img border="0" src="../images/30297464_icon.png" alt="_equipmentHolder2"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::_equipmentHolder2" href="#_3E3F0EC000E93DDEEBE1036F">_equipmentHolder2</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::cableManagementStrategy" href="#_3E3F0EC000E93DDEEBC60398"><img border="0" src="../images/30297464_icon.png" alt="cableManagementStrategy"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::cableManagementStrategy" href="#_3E3F0EC000E93DDEEBC60398">cableManagementStrategy</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a free-form string that contains information on how the various cables contained in the Chassis, Rack, or other type of HolderComposite object are connected and bundled. This property contains information to aid in the assembly and service of the cables contained in a SecureHolder object. This is an optional attribute.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::mountingOptions" href="#_3E3F0EC000E93DDEEBC603A2"><img border="0" src="../images/30297464_icon.png" alt="mountingOptions"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::mountingOptions" href="#_3E3F0EC000E93DDEEBC603A2">mountingOptions</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an enumerated 16-bit unsigned integer that defines how Equipment in this entity is mounted. Values include:</br></br> 0: Unknown</br> 1: Stand-alone</br> 2: Rack-mounted, free access</br> 3: Rack-mounted, restricted access</br> 4: Enclosed in another chassis</br></br>This is an optional attribute.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::serviceApproach" href="#_3E3F0EC000E93DDEEBC603AC"><img border="0" src="../images/30297464_icon.png" alt="serviceApproach"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::serviceApproach" href="#_3E3F0EC000E93DDEEBC603AC">serviceApproach</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an enumerated, integer-valued array that defines how this entity is serviced (e.g., from the top or front), whether it has sliding trays or removable sides, and/or whether the Frame is moveable (e.g., it has rollers). Values include:</br></br> 0: Unknown</br> 1: Custom</br> 2: Service From Top</br> 3: Service From Front</br> 4: Service From Back</br> 5: Service From Side</br> 6: Sliding Trays</br> 7: Removable Sides</br> 8: Moveable</br></br>This is an optional attribute.</br></p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::EquipmentHolder">&nbsp;SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::EquipmentHolder</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="type">&nbsp;type, <img border="0" src="../images/30297464_icon.png" alt="state">&nbsp;state, <img border="0" src="../images/30297464_icon.png" alt="manufacturer">&nbsp;manufacturer, <img border="0" src="../images/30297464_icon.png" alt="ituArcStateAndStatusList">&nbsp;ituArcStateAndStatusList, <img border="0" src="../images/30297464_icon.png" alt="isReportingAlarms">&nbsp;isReportingAlarms, <img border="0" src="../images/30297464_icon.png" alt="expectedOrInstalledEquipmentRef">&nbsp;expectedOrInstalledEquipmentRef, <img border="0" src="../images/30297464_icon.png" alt="asapRef">&nbsp;asapRef, <img border="0" src="../images/30297464_icon.png" alt="acceptableEquipmentTypeList">&nbsp;acceptableEquipmentTypeList, <img border="0" src="../images/30297464_icon.png" alt="acceptableEquipmentList">&nbsp;acceptableEquipmentList, <img border="0" src="../images/30297464_icon.png" alt="typeOfHolder">&nbsp;typeOfHolder, <img border="0" src="../images/30297464_icon.png" alt="isSolitaryHolder">&nbsp;isSolitaryHolder, <img border="0" src="../images/30297464_icon.png" alt="holderStatus">&nbsp;holderStatus, <img border="0" src="../images/30297464_icon.png" alt="_holderComposite">&nbsp;_holderComposite, <img border="0" src="../images/30297464_icon.png" alt="_equipment">&nbsp;_equipment, <img border="0" src="../images/30297464_icon.png" alt="_hardware2">&nbsp;_hardware2</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer">&nbsp;SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="hotSwappable">&nbsp;hotSwappable, <img border="0" src="../images/30297464_icon.png" alt="removable">&nbsp;removable, <img border="0" src="../images/30297464_icon.png" alt="replaceable">&nbsp;replaceable, <img border="0" src="../images/30297464_icon.png" alt="_physicalCapacity">&nbsp;_physicalCapacity</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware">&nbsp;SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="additionalInfo">&nbsp;additionalInfo, <img border="0" src="../images/30297464_icon.png" alt="administrativeState">&nbsp;administrativeState, <img border="0" src="../images/30297464_icon.png" alt="physicalAlarmReportingEnabled">&nbsp;physicalAlarmReportingEnabled, <img border="0" src="../images/30297464_icon.png" alt="physicalAlarmStatus">&nbsp;physicalAlarmStatus, <img border="0" src="../images/30297464_icon.png" alt="coolingRequirements">&nbsp;coolingRequirements, <img border="0" src="../images/30297464_icon.png" alt="hardwarePurpose">&nbsp;hardwarePurpose, <img border="0" src="../images/30297464_icon.png" alt="_hardwareRole">&nbsp;_hardwareRole</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware">&nbsp;SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="depth">&nbsp;depth, <img border="0" src="../images/30297464_icon.png" alt="height">&nbsp;height, <img border="0" src="../images/30297464_icon.png" alt="measurementUnits">&nbsp;measurementUnits, <img border="0" src="../images/30297464_icon.png" alt="weight">&nbsp;weight, <img border="0" src="../images/30297464_icon.png" alt="weightUnits">&nbsp;weightUnits, <img border="0" src="../images/30297464_icon.png" alt="width">&nbsp;width, <img border="0" src="../images/30297464_icon.png" alt="_physicalConnector">&nbsp;_physicalConnector, <img border="0" src="../images/30297464_icon.png" alt="_hardware">&nbsp;_hardware, <img border="0" src="../images/30297464_icon.png" alt="_hardware1">&nbsp;_hardware1, <img border="0" src="../images/30297464_icon.png" alt="_physicalLink">&nbsp;_physicalLink, <img border="0" src="../images/30297464_icon.png" alt="_physicalDevice">&nbsp;_physicalDevice, <img border="0" src="../images/30297464_icon.png" alt="_device">&nbsp;_device, <img border="0" src="../images/30297464_icon.png" alt="_equipmentHolder">&nbsp;_equipmentHolder, <img border="0" src="../images/30297464_icon.png" alt="_commonPlatformEnumeration">&nbsp;_commonPlatformEnumeration</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::PhysicalResource">&nbsp;SID Models::Resource Domain::Resource ABE::Physical Resource ABE::PhysicalResource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_uniqueRepresentation">&nbsp;_uniqueRepresentation, <img border="0" src="../images/30297464_icon.png" alt="_place2">&nbsp;_place2, <img border="0" src="../images/30297464_icon.png" alt="_localPlace">&nbsp;_localPlace, <img border="0" src="../images/30297464_icon.png" alt="_replacementSet">&nbsp;_replacementSet, <img border="0" src="../images/30297464_icon.png" alt="manufactureDate">&nbsp;manufactureDate, <img border="0" src="../images/30297464_icon.png" alt="otherIdentifier">&nbsp;otherIdentifier, <img border="0" src="../images/30297464_icon.png" alt="powerState">&nbsp;powerState, <img border="0" src="../images/30297464_icon.png" alt="serialNumber">&nbsp;serialNumber, <img border="0" src="../images/30297464_icon.png" alt="versionNumber">&nbsp;versionNumber, <img border="0" src="../images/30297464_icon.png" alt="_product2">&nbsp;_product2, <img border="0" src="../images/30297464_icon.png" alt="physicalResourceRole">&nbsp;physicalResourceRole, <img border="0" src="../images/30297464_icon.png" alt="logicalResource">&nbsp;logicalResource</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Resource">&nbsp;SID Models::Resource Domain::Resource ABE::Resource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_managementDomain">&nbsp;_managementDomain, <img border="0" src="../images/30297464_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/30297464_icon.png" alt="_resourceRole">&nbsp;_resourceRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceSpecification">&nbsp;_resourceSpecification, <img border="0" src="../images/30297464_icon.png" alt="_resourceUsage">&nbsp;_resourceUsage, <img border="0" src="../images/30297464_icon.png" alt="usageState">&nbsp;usageState, <img border="0" src="../images/30297464_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/30297464_icon.png" alt="_performance2">&nbsp;_performance2, <img border="0" src="../images/30297464_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService, <img border="0" src="../images/30297464_icon.png" alt="_product">&nbsp;_product, <img border="0" src="../images/30297464_icon.png" alt="_resourceCharacteristicValue">&nbsp;_resourceCharacteristicValue, <img border="0" src="../images/30297464_icon.png" alt="_resourceSecurityEntity">&nbsp;_resourceSecurityEntity, <img border="0" src="../images/30297464_icon.png" alt="_securityEventCollectionMethod">&nbsp;_securityEventCollectionMethod, <img border="0" src="../images/30297464_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/30297464_icon.png" alt="_securityThreatTool">&nbsp;_securityThreatTool, <img border="0" src="../images/30297464_icon.png" alt="_commonResourceInfo">&nbsp;_commonResourceInfo, <img border="0" src="../images/30297464_icon.png" alt="_partyRole3">&nbsp;_partyRole3, <img border="0" src="../images/30297464_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacity">&nbsp;resourceCapacity, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacityDemand">&nbsp;resourceCapacityDemand, <img border="0" src="../images/30297464_icon.png" alt="_resourceInvolvementRole">&nbsp;_resourceInvolvementRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceUser">&nbsp;_resourceUser, <img border="0" src="../images/30297464_icon.png" alt="runningSoftwareStatistics">&nbsp;runningSoftwareStatistics, <img border="0" src="../images/30297464_icon.png" alt="software">&nbsp;software, <img border="0" src="../images/30297464_icon.png" alt="compoundResource">&nbsp;compoundResource, <img border="0" src="../images/30297464_icon.png" alt="resourceConfiguration">&nbsp;resourceConfiguration, <img border="0" src="../images/30297464_icon.png" alt="resourceConfigSpec">&nbsp;resourceConfigSpec, <img border="0" src="../images/30297464_icon.png" alt="resourceTest">&nbsp;resourceTest, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship">&nbsp;resourceRelationship, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship2">&nbsp;resourceRelationship2, <img border="0" src="../images/30297464_icon.png" alt="resource">&nbsp;resource, <img border="0" src="../images/30297464_icon.png" alt="resource22">&nbsp;resource22, <img border="0" src="../images/30297464_icon.png" alt="problem2">&nbsp;problem2, <img border="0" src="../images/30297464_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/30297464_icon.png" alt="_alarm_3">&nbsp;_alarm_3, <img border="0" src="../images/30297464_icon.png" alt="_alarm_2">&nbsp;_alarm_2, <img border="0" src="../images/30297464_icon.png" alt="_alarm_1">&nbsp;_alarm_1, <img border="0" src="../images/30297464_icon.png" alt="resourcePerformance">&nbsp;resourcePerformance</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/30297464_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/30297464_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/30297464_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">HolderComposite</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3D3900F5-content.html">HolderComposite ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3D3900F5-content.html">HolderComposite ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3D3900F5-content.html">HolderComposite ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93DDEEBE1036F">_equipmentHolder2</a></span>
+<pre>Public&nbsp;EquipmentHolder _equipmentHolder2</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93DDEEBE1036F"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">Shared</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEBE00092-content.html">HasHolders</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_equipmentHolder2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379">_holderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::_equipmentHolder2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEA6B0245-content.html">EquipmentHolder</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93DDEEBC60398">cableManagementStrategy</a></span>
+<pre>Public&nbsp;String cableManagementStrategy</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a free-form string that contains information on how the various cables contained in the Chassis, Rack, or other type of HolderComposite object are connected and bundled. This property contains information to aid in the assembly and service of the cables contained in a SecureHolder object. This is an optional attribute.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93DDEEBC60398"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">cableManagementStrategy</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::cableManagementStrategy</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93DDEEBC603A2">mountingOptions</a></span>
+<pre>Public&nbsp;Integer mountingOptions</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an enumerated 16-bit unsigned integer that defines how Equipment in this entity is mounted. Values include:</br></br> 0: Unknown</br> 1: Stand-alone</br> 2: Rack-mounted, free access</br> 3: Rack-mounted, restricted access</br> 4: Enclosed in another chassis</br></br>This is an optional attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93DDEEBC603A2"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">mountingOptions</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::mountingOptions</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93DDEEBC603AC">serviceApproach</a></span>
+<pre>Public&nbsp;String serviceApproach</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an enumerated, integer-valued array that defines how this entity is serviced (e.g., from the top or front), whether it has sliding trays or removable sides, and/or whether the Frame is moveable (e.g., it has rollers). Values include:</br></br> 0: Unknown</br> 1: Custom</br> 2: Service From Top</br> 3: Service From Front</br> 4: Service From Back</br> 5: Service From Side</br> 6: Sliding Trays</br> 7: Removable Sides</br> 8: Moveable</br></br>This is an optional attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93DDEEBC603AC"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">serviceApproach</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDEEB160255-content.html">HolderComposite</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Equipment Holder ABE::HolderComposite ABE::HolderComposite::serviceApproach</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E2C3D3900F5-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">HolderComposite ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

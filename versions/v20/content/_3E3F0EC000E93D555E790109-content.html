@@ -1,0 +1,422 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Resource Facing Service ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for ServiceBundle">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E379A590226-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Facing Service ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Service Domain::Service ABE::Resource Facing Service ABE</span>
+<br>
+<span class="ElementTitle">Class ServiceBundle</span>
+<p>
+<a name="documentationSection"></a>Conceptually, a ServiceBundle is thought of as a collection of ResourceFacingServiceSpecifications. This enables the needs of different sets of ResourceFacingServiceSpecifications to be grouped together, hence, the name "bundle". Since these are ResoureFacingSpecifications, they define reusable templates for implementing the ResourceFacingServices that are required by a particular CustomerFacingService (as represented by a ServicePackage).</br></br>ServiceBundles were designed to define a set of Class of Service specifications that were required by a CustomerFacingService to work together. A ServicePackage is the entity that models the requirements of the CustomerFacingService. Thus, ServicePackages can specify different packaging of CustomerFacingServices that are obtained by a Customer via a Product, and ServiceBundles specify the set of ResourceFacingServices that each CustomerFacingService requires.</br></br>ServiceBundles are a natural way to implement the requirements of a ServicePackage, and are related to a ServicePackage through the ServicePackageUsesServiceBundles aggregation.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">ServicePackage </td><td><a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle::_servicePackage" href="#_3E3F0EC000E93EBB022F0346"><img border="0" src="../images/30297464_icon.png" alt="_servicePackage"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle::_servicePackage" href="#_3E3F0EC000E93EBB022F0346">_servicePackage</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle::hasMultipleQoSTypes" href="#_3E3F0EC000E93EF33A4903C2"><img border="0" src="../images/30297464_icon.png" alt="hasMultipleQoSTypes"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle::hasMultipleQoSTypes" href="#_3E3F0EC000E93EF33A4903C2">hasMultipleQoSTypes</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, defines this ServiceBundle as containing more than a single type of QoSService (e.g., DiffServ and 802.1P as an example).</p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite" href="_3E3F0EC000E93E37C3B90187-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite" href="_3E3F0EC000E93E37C3B90187-content.html">SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite::_resourceFacingService" href="_3E3F0EC000E93E37C3B90187-content.html#_3E3F0EC000E93E37C4A60246"><img border="0" src="../images/30297464_icon.png" alt="_resourceFacingService"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingServiceComposite::_resourceFacingService" href="_3E3F0EC000E93E37C3B90187-content.html#_3E3F0EC000E93E37C4A60246">_resourceFacingService</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService" href="_3E3F0EC000E93D5091AC0353-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService" href="_3E3F0EC000E93D5091AC0353-content.html">SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_customerFacingService" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93DCC7513038B"><img border="0" src="../images/30297464_icon.png" alt="_customerFacingService"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_customerFacingService" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93DCC7513038B">_customerFacingService</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::rfsStatus" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E62A5D10351"><img border="0" src="../images/30297464_icon.png" alt="rfsStatus"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::rfsStatus" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E62A5D10351">rfsStatus</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resourceFacingServiceComposite" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E37C4A6026E"><img border="0" src="../images/30297464_icon.png" alt="_resourceFacingServiceComposite"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resourceFacingServiceComposite" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E37C4A6026E">_resourceFacingServiceComposite</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resourceFacingServiceRole" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E3F4B6A02EE"><img border="0" src="../images/30297464_icon.png" alt="_resourceFacingServiceRole"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resourceFacingServiceRole" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E3F4B6A02EE">_resourceFacingServiceRole</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_protocol" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5FC6D100DD"><img border="0" src="../images/30297464_icon.png" alt="_protocol"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_protocol" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5FC6D100DD">_protocol</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resource" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E944E4CFC00167"><img border="0" src="../images/30297464_icon.png" alt="_resource"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resource" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E944E4CFC00167">_resource</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resourceFacingServiceSpec" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5C4FDB0209"><img border="0" src="../images/30297464_icon.png" alt="_resourceFacingServiceSpec"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::_resourceFacingServiceSpec" href="_3E3F0EC000E93D5091AC0353-content.html#_3E3F0EC000E93E5C4FDB0209">_resourceFacingServiceSpec</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::serviceCandidate" href="_3E3F0EC000E93D5091AC0353-content.html#_WN.y9EI.xME.eGZ.s.pR.sLEOL2.w"><img border="0" src="../images/30297464_icon.png" alt="serviceCandidate"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::serviceCandidate" href="_3E3F0EC000E93D5091AC0353-content.html#_WN.y9EI.xME.eGZ.s.pR.sLEOL2.w">serviceCandidate</a>, <a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::logicalResource" href="_3E3F0EC000E93D5091AC0353-content.html#_.l_.s9.gEVOE.e.e3D.pN.i.z.pR.gTQ"><img border="0" src="../images/30297464_icon.png" alt="logicalResource"></a>&nbsp;<a title="SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ResourceFacingService::logicalResource" href="_3E3F0EC000E93D5091AC0353-content.html#_.l_.s9.gEVOE.e.e3D.pN.i.z.pR.gTQ">logicalResource</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Service Domain::Service ABE::Service">&nbsp;SID Models::Service Domain::Service ABE::Service</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/30297464_icon.png" alt="_device">&nbsp;_device, <img border="0" src="../images/30297464_icon.png" alt="isServiceEnabled">&nbsp;isServiceEnabled, <img border="0" src="../images/30297464_icon.png" alt="hasStarted">&nbsp;hasStarted, <img border="0" src="../images/30297464_icon.png" alt="isMandatory">&nbsp;isMandatory, <img border="0" src="../images/30297464_icon.png" alt="startMode">&nbsp;startMode, <img border="0" src="../images/30297464_icon.png" alt="isStateful">&nbsp;isStateful, <img border="0" src="../images/30297464_icon.png" alt="_serviceRole">&nbsp;_serviceRole, <img border="0" src="../images/30297464_icon.png" alt="_physicalResourceRole">&nbsp;_physicalResourceRole, <img border="0" src="../images/30297464_icon.png" alt="_serviceCharacteristicValue">&nbsp;_serviceCharacteristicValue, <img border="0" src="../images/30297464_icon.png" alt="_serviceSpecification">&nbsp;_serviceSpecification, <img border="0" src="../images/30297464_icon.png" alt="_serviceUsage">&nbsp;_serviceUsage, <img border="0" src="../images/30297464_icon.png" alt="_servicePerformance">&nbsp;_servicePerformance, <img border="0" src="../images/30297464_icon.png" alt="_partyRole4">&nbsp;_partyRole4, <img border="0" src="../images/30297464_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/30297464_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/30297464_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/30297464_icon.png" alt="_commonServiceInfo">&nbsp;_commonServiceInfo, <img border="0" src="../images/30297464_icon.png" alt="_serviceInvolvementRole">&nbsp;_serviceInvolvementRole, <img border="0" src="../images/30297464_icon.png" alt="serviceCapacity">&nbsp;serviceCapacity, <img border="0" src="../images/30297464_icon.png" alt="serviceCapacityDemand">&nbsp;serviceCapacityDemand, <img border="0" src="../images/30297464_icon.png" alt="serviceConfiguration">&nbsp;serviceConfiguration, <img border="0" src="../images/30297464_icon.png" alt="serviceConfigSpec">&nbsp;serviceConfigSpec, <img border="0" src="../images/30297464_icon.png" alt="serviceTest">&nbsp;serviceTest, <img border="0" src="../images/30297464_icon.png" alt="serviceRelationship">&nbsp;serviceRelationship, <img border="0" src="../images/30297464_icon.png" alt="serviceRelationship2">&nbsp;serviceRelationship2, <img border="0" src="../images/30297464_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/30297464_icon.png" alt="problem1">&nbsp;problem1</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/30297464_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/30297464_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/30297464_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">ServiceBundle</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E379A590226-content.html">Resource Facing Service ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E379A590226-content.html">Resource Facing Service ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E379A590226-content.html">Resource Facing Service ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EBB022F0346">_servicePackage</a></span>
+<pre>Public&nbsp;ServicePackage _servicePackage</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EBB022F0346"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EBB022D02CB-content.html">ServicePackageUsesServiceBundles</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D555E790109-content.html">ServiceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_servicePackage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D555E790109-content.html">ServiceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EBADAE50371-content.html#_3E3F0EC000E93EBB022F0332">_serviceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D555E790109-content.html">ServiceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle::_servicePackage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EBADAE50371-content.html">ServicePackage</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EF33A4903C2">hasMultipleQoSTypes</a></span>
+<pre>Public&nbsp;Boolean hasMultipleQoSTypes</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, defines this ServiceBundle as containing more than a single type of QoSService (e.g., DiffServ and 802.1P as an example).</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EF33A4903C2"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D555E790109-content.html">ServiceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">hasMultipleQoSTypes</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D555E790109-content.html">ServiceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D555E790109-content.html">ServiceBundle</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Service Domain::Service ABE::Resource Facing Service ABE::ServiceBundle::hasMultipleQoSTypes</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E379A590226-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Facing Service ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

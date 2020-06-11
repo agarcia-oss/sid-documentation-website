@@ -1,0 +1,97 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure LR.29 - Overview of the Top-Level Protocol Classes<br>
+</span><span class="ElementTitle">Diagram Figure LR.29 - Overview of the Top-Level Protocol Classes<br>
+</span><span class="ElementDocumentation">A protocol is a formal set of rules and conventions that governs how two entities exchange information (usually over one or more types of network media). This is an abstract base class for representing protocols that can be managed. This class represents a convenient aggregation point for defining how protocols are managed and used. The Figure below shows the structure of the Protocol class hierarchy.</br>The purpose of the taxonomy is to form an extensible classification structure to enable contributions from other TMF programs and other industry standards to be added. Note that there is a large amount of disagreement in the network management space over how to model protocols. By building taxonomy to normalize how different protocols are used, some of this confusion will be cleared up. Note also that this taxonomy specifically avoids any use of “layers”, since multiple protocol families (e.g., ATM and MPLS) do not fit neatly into a “layered” classification scheme.</br>A ManagementProtocol is an abstract superclass for protocols that are dedicated to exchanging management information between network devices. This type of protocol is an application layer protocol, and is used for configuring, monitoring, and gathering information about devices. An example of this type of protocol is SNMP.</br>RoutingProtocols is an abstract base class for representing different types of routing protocols that can be managed. Routing protocols are used to determine how information is routed (e.g., how it traverses an intermediate system). Examples of this type of protocol include OSPF, IS-IS, and BGP.</br>RoutedProtocols is an abstract base class for representing different types of routed protocols that can be managed. Routed protocols are those protocols that can be routed by a router. Specifically, the router must be able to interpret the logical internetwork as specified by that routed protocol. This class represents a convenient aggregation point for defining how routed protocols are managed and used. Examples of this type of protocol include IP and IPX.</br>In a network that uses standard routing, frames pass from a source to a destination in a hop-by-hop basis. Transit routers look at each frame’s Layer 3 header and perform a route table lookup to determine the next hop toward the destination. This means that layer 2 information is effectively ignored. A SwitchingProtocol replaces the above hop-by-hop method with a method to specify a path in the network. This path may be based on any number of different attributes, such as cost of the path and QoS. The most popular implementation of this approach is MPLS.</br>LANProtocols operate at the lowest two levels of the OSI model (i.e., physical and data link) and are used to define communications over different types of local area media. Bridging Protocols operate at the data link layer of the OSI model and are used to define communications over different types of homogeneous and heterogeneous local area networks. Examples of this type of protocol include Ethernet andToken Ring.</br>WANProtocols operate at the lowest three levels of the OSI model (i.e., physical, data link, and network) and are used to define communications over different types of wide-area media. Examples of this type of protocol include ATM, Frame Relay, and PPP.</br>SignalingProtocols is an abstract base class for representing different types of signaling protocols that can be managed. Signaling protocols are used to convey information along a specific path. This class represents a convenient aggregation point for defining how signaling protocols are managed and used. Examples of this type of protocol include RSVP and COPS.</br>Each of the Protocol subclasses described in the Figure above has multiple subclasses, but these are system-oriented and beyond the scope of this (business-oriented) document.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EA889DF02B5.PNG" alt="Figure LR.29 - Overview of the Top-Level Protocol Classes" usemap="#map_3E3F0EC000E93EA889DF02B5"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EA889DF02B5">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E6032CF0202-content.html" alt="Generalization">
+<area shape="poly" coords="747,334,747,167,360,167,360,126,369,126,369,157,757,157,757,334,747,334" href="_3E3F0EC000E93E6032CF0202-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93ED56FED0223-content.html" alt="Generalization">
+<area shape="poly" coords="389,334,389,167,360,167,360,126,369,126,369,157,399,157,399,334,389,334" href="_3E3F0EC000E93ED56FED0223-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C7D0600C8-content.html" alt="Generalization">
+<area shape="poly" coords="208,334,208,157,360,157,360,126,369,126,369,167,218,167,218,334,208,334" href="_3E3F0EC000E93E2C7D0600C8-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA88B5103C6-content.html" alt="Generalization">
+<area shape="poly" coords="584,334,584,167,360,167,360,126,369,126,369,157,594,157,594,334,584,334" href="_3E3F0EC000E93EA88B5103C6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E6031570342-content.html" alt="Generalization">
+<area shape="poly" coords="668,253,668,167,360,167,360,126,369,126,369,157,678,157,678,253,668,253" href="_3E3F0EC000E93E6031570342-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E3F12D7030A-content.html" alt="Generalization">
+<area shape="poly" coords="482,253,482,167,360,167,360,126,369,126,369,157,491,157,491,253,482,253" href="_3E3F0EC000E93E3F12D7030A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DCCA5AF008F-content.html" alt="Generalization">
+<area shape="poly" coords="303,253,303,157,360,157,360,126,369,126,369,167,313,167,313,253,303,253" href="_3E3F0EC000E93DCCA5AF008F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C7D0802E8-content.html" alt="Generalization">
+<area shape="poly" coords="96,253,96,157,360,157,360,126,369,126,369,167,106,167,106,253,96,253" href="_3E3F0EC000E93E2C7D0802E8-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="315,334,475,385" href="_3E3F0EC000E93ED562620218-content.html" alt="SwitchingProtocol">
+<area shape="rect" coords="677,334,830,385" href="_3E3F0EC000E93E6032A00182-content.html" alt="BridgingProtocol">
+<area shape="rect" coords="527,334,653,385" href="_3E3F0EC000E93EA88AFA0168-content.html" alt="LANProtocol">
+<area shape="rect" coords="608,253,740,304" href="_3E3F0EC000E93E603137006B-content.html" alt="WANProtocol">
+<area shape="rect" coords="409,253,567,304" href="_3E3F0EC000E93D8CE7A20137-content.html" alt="SignalingProtocol">
+<area shape="rect" coords="234,253,385,304" href="_3E3F0EC000E93DCCA5AF0090-content.html" alt="RoutingProtocol">
+<area shape="rect" coords="140,334,288,385" href="_3E3F0EC000E93E2C3670025C-content.html" alt="RoutedProtocol">
+<area shape="rect" coords="9,253,194,304" href="_3E3F0EC000E93E2C7CD60083-content.html" alt="ManagementProtocol">
+<area shape="rect" coords="272,97,453,112" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E943719374011D" alt="portRangeEnd">
+<area shape="rect" coords="272,81,453,96" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E9437193230112" alt="portRangeStart">
+<area shape="rect" coords="272,65,453,80" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E9437192950268" alt="protocolDirection">
+<area shape="rect" coords="272,49,453,64" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E94371924D00EA" alt="isEphemeral">
+<area shape="rect" coords="272,33,453,48" href="_3E3F0EC000E93DCCA5AF0087-content.html#_3E3F0EC000E943718DB0021C" alt="currentPortNumber">
+<area shape="rect" coords="265,9,462,129" href="_3E3F0EC000E93DCCA5AF0087-content.html" alt="Protocol">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure LR.29 - Overview of the Top-Level Protocol Classes</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,912 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Metric Definition Measure Threshold ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for MetricThresholdRuleDefinition">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.i.x.kCUN54E.eK.r.x6.vY.l-.rD.f.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Metric Definition Measure Threshold ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE</span>
+<br>
+<span class="ElementTitle">Class MetricThresholdRuleDefinition</span>
+<p>
+<a name="documentationSection"></a>Various types of threshold logic can be implemented by this entity. For example: Indicator > Value.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">MetricThresholdComparator </td><td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceComparatorLower" href="#_.t6_.v_H0WE.eO.iY.q.x.wU.q84N.g"><img border="0" src="../images/30297464_icon.png" alt="conformanceComparatorLower"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceComparatorLower" href="#_.t6_.v_H0WE.eO.iY.q.x.wU.q84N.g">conformanceComparatorLower</a></td><td>
+<p>
+<a name="documentationSection"></a>An operator that when applied on a value specifies whether a threshold is crossed or ceased to be crossed.</br>This operator is used to compare with the conformanceTargetLower.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">MetricThresholdComparator </td><td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceComparatorUpper" href="#_918T.kLN.sE.eO.s.zOI.e.h.a.dD.bQ"><img border="0" src="../images/30297464_icon.png" alt="conformanceComparatorUpper"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceComparatorUpper" href="#_918T.kLN.sE.eO.s.zOI.e.h.a.dD.bQ">conformanceComparatorUpper</a></td><td>
+<p>
+<a name="documentationSection"></a>An operator that when applied on a value specifies whether a threshold is crossed or ceased to be crossed.</br>This operator is used to compare with the conformanceTargetUpper.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">long </td><td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceTargetLower" href="#_.t6_.v-.n0WE.eO.iY.q.x.wU.q84N.g"><img border="0" src="../images/30297464_icon.png" alt="conformanceTargetLower"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceTargetLower" href="#_.t6_.v-.n0WE.eO.iY.q.x.wU.q84N.g">conformanceTargetLower</a></td><td>
+<p>
+<a name="documentationSection"></a>A value used to determine if the threshold is crossed or ceases to be crossed. It represents the Lower limit.  The value should be less than the conformanceTargetUpper.   The conformance comparators should also be logically defined so as to not lead to a logically impossible condition.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">long </td><td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceTargetUpper" href="#_.s7.e9.kLN.sE.eO.s.zOI.e.h.a.dD.bQ"><img border="0" src="../images/30297464_icon.png" alt="conformanceTargetUpper"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceTargetUpper" href="#_.s7.e9.kLN.sE.eO.s.zOI.e.h.a.dD.bQ">conformanceTargetUpper</a></td><td>
+<p>
+<a name="documentationSection"></a>A value used to determine if the threshold is crossed or ceases to be crossed. It represents the Upper limit. The value should be greater than the conformanceTargetLower.   The conformance comparators should also be logically defined so as to not lead to a logically impossible condition.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::numberOfAllowedCrossing" href="#_.t6_.wB.n0WE.eO.iY.q.x.wU.q84N.g"><img border="0" src="../images/30297464_icon.png" alt="numberOfAllowedCrossing"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::numberOfAllowedCrossing" href="#_.t6_.wB.n0WE.eO.iY.q.x.wU.q84N.g">numberOfAllowedCrossing</a></td><td>
+<p>
+<a name="documentationSection"></a>The number of allowed crossing occurrences in reference to the tolerancePeriod without a consequence being initiated.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">«baseType» Duration </td><td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::tolerancePeriod" href="#_.t6_.wBH0WE.eO.iY.q.x.wU.q84N.g"><img border="0" src="../images/30297464_icon.png" alt="tolerancePeriod"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::tolerancePeriod" href="#_.t6_.wBH0WE.eO.iY.q.x.wU.q84N.g">tolerancePeriod</a></td><td>
+<p>
+<a name="documentationSection"></a>An interval of time of allowed crossing occurrences before a consequence being initiated.</br></p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::thresholdRuleSeverity" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_.t6_.v7X0WE.eO.iY.q.x.wU.q84N.g"><img border="0" src="../images/30297464_icon.png" alt="thresholdRuleSeverity"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::thresholdRuleSeverity" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_.t6_.v7X0WE.eO.iY.q.x.wU.q84N.g">thresholdRuleSeverity</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::_metricDefMeasureConsequence" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_RQJHEJM.vE.eO.bUN.v1_8.v.h8.w"><img border="0" src="../images/30297464_icon.png" alt="_metricDefMeasureConsequence"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::_metricDefMeasureConsequence" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_RQJHEJM.vE.eO.bUN.v1_8.v.h8.w">_metricDefMeasureConsequence</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::_metricDefMeasureThreshold" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_FE3.n.kJM.wE.eO.bUN.v1_8.v.h8.w"><img border="0" src="../images/30297464_icon.png" alt="_metricDefMeasureThreshold"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::_metricDefMeasureThreshold" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_FE3.n.kJM.wE.eO.bUN.v1_8.v.h8.w">_metricDefMeasureThreshold</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::_metricMeasureThreshold" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_3.bQ28JM.yE.eO.bUN.v1_8.v.h8.w"><img border="0" src="../images/30297464_icon.png" alt="_metricMeasureThreshold"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::_metricMeasureThreshold" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_3.bQ28JM.yE.eO.bUN.v1_8.v.h8.w">_metricMeasureThreshold</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::name" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_C4.q.uIK.nLE.eOD.m.p8V.n277.lQ"><img border="0" src="../images/30297464_icon.png" alt="name"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::name" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_C4.q.uIK.nLE.eOD.m.p8V.n277.lQ">name</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::description" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.xT.z.oK.nLE.eOD.m.p8V.n277.lQ"><img border="0" src="../images/30297464_icon.png" alt="description"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::description" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.xT.z.oK.nLE.eOD.m.p8V.n277.lQ">description</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricApplicability" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_V.tA.p.wOA4E.eO.b.z5-YNRI.g0A"><img border="0" src="../images/30297464_icon.png" alt="metricApplicability"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricApplicability" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_V.tA.p.wOA4E.eO.b.z5-YNRI.g0A">metricApplicability</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureExpression" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_T.lAZ.sB.y4E.eS.a.i8.h.j.l.xT2RQ"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureExpression"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureExpression" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_T.lAZ.sB.y4E.eS.a.i8.h.j.l.xT2RQ">metricDefMeasureExpression</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThresholdRelationship" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_ZY5.hUD.hLE.eSA.n.e0.qJ.m.y.s.n.w"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureThresholdRelationship"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThresholdRelationship" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_ZY5.hUD.hLE.eSA.n.e0.qJ.m.y.s.n.w">metricDefMeasureThresholdRelationship</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThresholdRelationship2" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_.i.sEV0D.hLE.eSA.n.e0.qJ.m.y.s.n.w"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureThresholdRelationship2"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThresholdRelationship2" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_.i.sEV0D.hLE.eSA.n.e0.qJ.m.y.s.n.w">metricDefMeasureThresholdRelationship2</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThreshConsDependency" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_4MET.kD.hLE.eSA.n.e0.qJ.m.y.s.n.w"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureThreshConsDependency"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThreshConsDependency" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_4MET.kD.hLE.eSA.n.e0.qJ.m.y.s.n.w">metricDefMeasureThreshConsDependency</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThresholdConsequence" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_Q.zNBYD.hME.eSA.n.e0.qJ.m.y.s.n.w"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureThresholdConsequence"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureThresholdConsequence" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_Q.zNBYD.hME.eSA.n.e0.qJ.m.y.s.n.w">metricDefMeasureThresholdConsequence</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureConsequence" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_1_9_AEM5E.eS.fR5U.f.x.h.i3OQ"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureConsequence"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureConsequence" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_1_9_AEM5E.eS.fR5U.f.x.h.i3OQ">metricDefMeasureConsequence</a>, <a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureConsequence2" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.oHYME.h4E.eS.u.v7DNX.b4.w1.w"><img border="0" src="../images/30297464_icon.png" alt="metricDefMeasureConsequence2"></a>&nbsp;<a title="SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricDefMeasureThresholdRule::metricDefMeasureConsequence2" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.oHYME.h4E.eS.u.v7DNX.b4.w1.w">metricDefMeasureConsequence2</a></td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">MetricThresholdRuleDefinition</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.i.x.kCUN54E.eK.r.x6.vY.l-.rD.f.g-content.html">Metric Definition Measure Threshold ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.i.x.kCUN54E.eK.r.x6.vY.l-.rD.f.g-content.html">Metric Definition Measure Threshold ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_.i.x.kCUN54E.eK.r.x6.vY.l-.rD.f.g-content.html">Metric Definition Measure Threshold ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.t6_.v_H0WE.eO.iY.q.x.wU.q84N.g">conformanceComparatorLower</a></span>
+<pre>Public&nbsp;MetricThresholdComparator conformanceComparatorLower</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>An operator that when applied on a value specifies whether a threshold is crossed or ceased to be crossed.</br>This operator is used to compare with the conformanceTargetLower.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.t6_.v_H0WE.eO.iY.q.x.wU.q84N.g"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">conformanceComparatorLower</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceComparatorLower</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.t6_.wP.n0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdComparator</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_918T.kLN.sE.eO.s.zOI.e.h.a.dD.bQ">conformanceComparatorUpper</a></span>
+<pre>Public&nbsp;MetricThresholdComparator conformanceComparatorUpper</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>An operator that when applied on a value specifies whether a threshold is crossed or ceased to be crossed.</br>This operator is used to compare with the conformanceTargetUpper.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_918T.kLN.sE.eO.s.zOI.e.h.a.dD.bQ"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">conformanceComparatorUpper</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceComparatorUpper</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.t6_.wP.n0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdComparator</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.t6_.v-.n0WE.eO.iY.q.x.wU.q84N.g">conformanceTargetLower</a></span>
+<pre>Public&nbsp;long conformanceTargetLower</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A value used to determine if the threshold is crossed or ceases to be crossed. It represents the Lower limit.  The value should be less than the conformanceTargetUpper.   The conformance comparators should also be logically defined so as to not lead to a logically impossible condition.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.t6_.v-.n0WE.eO.iY.q.x.wU.q84N.g"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">conformanceTargetLower</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceTargetLower</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">long</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.s7.e9.kLN.sE.eO.s.zOI.e.h.a.dD.bQ">conformanceTargetUpper</a></span>
+<pre>Public&nbsp;long conformanceTargetUpper</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A value used to determine if the threshold is crossed or ceases to be crossed. It represents the Upper limit. The value should be greater than the conformanceTargetLower.   The conformance comparators should also be logically defined so as to not lead to a logically impossible condition.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.s7.e9.kLN.sE.eO.s.zOI.e.h.a.dD.bQ"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">conformanceTargetUpper</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::conformanceTargetUpper</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">long</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.t6_.wB.n0WE.eO.iY.q.x.wU.q84N.g">numberOfAllowedCrossing</a></span>
+<pre>Public&nbsp;Integer numberOfAllowedCrossing</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>The number of allowed crossing occurrences in reference to the tolerancePeriod without a consequence being initiated.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.t6_.wB.n0WE.eO.iY.q.x.wU.q84N.g"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">numberOfAllowedCrossing</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::numberOfAllowedCrossing</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.t6_.wBH0WE.eO.iY.q.x.wU.q84N.g">tolerancePeriod</a></span>
+<pre>Public&nbsp;«baseType» Duration tolerancePeriod</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>An interval of time of allowed crossing occurrences before a consequence being initiated.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_.t6_.wBH0WE.eO.iY.q.x.wU.q84N.g"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">tolerancePeriod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.t6_.v9X0WE.eO.iY.q.x.wU.q84N.g-content.html">MetricThresholdRuleDefinition</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Metric ABE::Metric Definition Measure ABE::Metric Definition Measure Threshold ABE::MetricThresholdRuleDefinition::tolerancePeriod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D72EFD0037F-content.html">«baseType» Duration</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.i.x.kCUN54E.eK.r.x6.vY.l-.rD.f.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Metric Definition Measure Threshold ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

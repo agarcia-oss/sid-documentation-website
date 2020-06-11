@@ -1,0 +1,1048 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Policy Framework Spec ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for PolicyRuleSpec">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED934800073-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Framework Spec ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Policy ABE::Policy Framework Spec ABE</span>
+<br>
+<span class="ElementTitle">Class PolicyRuleSpec</span>
+<p>
+<a name="documentationSection"></a>This is a concrete base class that is used to define the invariant characteristics (attributes, methods, constraints and relationships) of a PolicyRule entity.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicyRule </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::_policyRule" href="#_3E3F0EC000E93ED93574026B"><img border="0" src="../images/-1444971469_icon.png" alt="_policyRule"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::_policyRule" href="#_3E3F0EC000E93ED93574026B">_policyRule</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::executionStrategy" href="#_3E3F0EC000E93D77E58C025E"><img border="0" src="../images/-1444971469_icon.png" alt="executionStrategy"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::executionStrategy" href="#_3E3F0EC000E93D77E58C025E">executionStrategy</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:</br></br> 0: Unknown</br> 1: Do Until Success</br> 2: Do All</br> 3: Do Until Failure</br> 4: Do All Without Failure or Do Nothing</br></br>"Do Until Success" means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).</br></br>"Do All" means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.</br></br>"Do Until Failure" means that all actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.</br></br>Finally, "Do All Without Failure or Do Nothing" means that all actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyActionSelectCriteria" href="#_3E3F0EC000E93EDA2E7700D7"><img border="0" src="../images/-1444971469_icon.png" alt="policyActionSelectCriteria"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyActionSelectCriteria" href="#_3E3F0EC000E93EDA2E7700D7">policyActionSelectCriteria</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyActions that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyActions can be used to build PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality.</br></br>Notes: Not present in the ITU or CIM specs</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyConditionSelectCriteria" href="#_3E3F0EC000E93EDA2DD20146"><img border="0" src="../images/-1444971469_icon.png" alt="policyConditionSelectCriteria"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyConditionSelectCriteria" href="#_3E3F0EC000E93EDA2DD20146">policyConditionSelectCriteria</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyConditions that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyConditions can be used to build PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyEventSelectCriteria" href="#_3E3F0EC000E93EDA2E77029A"><img border="0" src="../images/-1444971469_icon.png" alt="policyEventSelectCriteria"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyEventSelectCriteria" href="#_3E3F0EC000E93EDA2E77029A">policyEventSelectCriteria</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyEvents that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyEvents can be used to trigger the evaluation of PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicyRuleBase </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyRuleBase" href="#_M87.dMI9EE.eOZE_.qG24Z4.xA"><img border="0" src="../images/-1444971469_icon.png" alt="policyRuleBase"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyRuleBase" href="#_M87.dMI9EE.eOZE_.qG24Z4.xA">policyRuleBase</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::sequencedActions" href="#_3E3F0EC000E93D77E58C025D"><img border="0" src="../images/-1444971469_icon.png" alt="sequencedActions"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::sequencedActions" href="#_3E3F0EC000E93D77E58C025D">sequencedActions</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer defines how the ordering of the PolicyActions associated with this PolicyRule is to be interpreted. </br></br>Notes: Not present in the ITU or CIM specs (the CIM defined a subset of these values as an attribute in the PolicyRule).</p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec" href="_3E3F0EC000E93F17BD6403DF-content.html"><img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec" href="_3E3F0EC000E93F17BD6403DF-content.html">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec::decisionStrategy" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93D77E58C0254"><img border="0" src="../images/-1444971469_icon.png" alt="decisionStrategy"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec::decisionStrategy" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93D77E58C0254">decisionStrategy</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec::_policySet" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107"><img border="0" src="../images/-1444971469_icon.png" alt="_policySet"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicySetSpec::_policySet" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107">_policySet</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::EntitySpecification">&nbsp;SID Models::Common Domain::Root Business Entities ABE::EntitySpecification</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-1444971469_icon.png" alt="_entityIdentificationSpecification">&nbsp;_entityIdentificationSpecification, <img border="0" src="../images/-1444971469_icon.png" alt="_entitySpecCharUse">&nbsp;_entitySpecCharUse, <img border="0" src="../images/-1444971469_icon.png" alt="_metricDefinition">&nbsp;_metricDefinition, <img border="0" src="../images/-1444971469_icon.png" alt="externalSystemCapability">&nbsp;externalSystemCapability, <img border="0" src="../images/-1444971469_icon.png" alt="entitySpecificationAction">&nbsp;entitySpecificationAction, <img border="0" src="../images/-1444971469_icon.png" alt="entitySpecificationType">&nbsp;entitySpecificationType, <img border="0" src="../images/-1444971469_icon.png" alt="validFor">&nbsp;validFor, <img border="0" src="../images/-1444971469_icon.png" alt="status">&nbsp;status</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-1444971469_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/-1444971469_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/-1444971469_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/-1444971469_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/-1444971469_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/-1444971469_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/-1444971469_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/-1444971469_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/-1444971469_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/-1444971469_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/-1444971469_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/-1444971469_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/-1444971469_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/-1444971469_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/-1444971469_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">PolicyRuleSpec</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED934800073-content.html">Policy Framework Spec ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED934800073-content.html">Policy Framework Spec ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED934800073-content.html">Policy Framework Spec ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93ED93574026B">_policyRule</a></span>
+<pre>Public&nbsp;PolicyRule _policyRule</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93ED93574026B"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">Shared</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9357301D3-content.html">SpecifiesPolicyRule</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_policyRule</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_J_K.yYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html#_3E3F0EC000E93ED935740275">_policyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::_policyRule</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_J_K.yYN.a.sE.d-.p.vYE.q.r-ER3Q-content.html">PolicyRule</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C025E">executionStrategy</a></span>
+<pre>Public&nbsp;Integer executionStrategy</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer that defines the strategy to be used when executing the sequenced actions aggregated by this PolicyRule. Defined execution strategies include:</br></br> 0: Unknown</br> 1: Do Until Success</br> 2: Do All</br> 3: Do Until Failure</br> 4: Do All Without Failure or Do Nothing</br></br>"Do Until Success" means that actions should be executed according to their predefined order, until successful execution of a single action. At that point, the process should stop (even if there are additional actions that could be executed).</br></br>"Do All" means that all actions should be executed that are part of the set, according to their predefined order. This should continue, even if one or more of the actions fails.</br></br>"Do Until Failure" means that all actions should be executed according to their predefined order until an action fails to execute. At that point, the entire sequence should be stopped.</br></br>Finally, "Do All Without Failure or Do Nothing" means that all actions specified should be performed. However, if a failure occurs, then NONE of the actions should be performed. This implies EITHER the ability to look-ahead and ensure that the actions will be able to be performed successfully, or the ability to perform a rollback of that action and all previous actions when an error is encountered.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C025E"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue">2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">()</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">executionStrategy</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::executionStrategy</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EDA2E7700D7">policyActionSelectCriteria</a></span>
+<pre>Public&nbsp;String policyActionSelectCriteria</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyActions that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyActions can be used to build PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality.</br></br>Notes: Not present in the ITU or CIM specs</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EDA2E7700D7"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">policyActionSelectCriteria</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyActionSelectCriteria</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EDA2DD20146">policyConditionSelectCriteria</a></span>
+<pre>Public&nbsp;String policyConditionSelectCriteria</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyConditions that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyConditions can be used to build PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EDA2DD20146"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">policyConditionSelectCriteria</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyConditionSelectCriteria</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EDA2E77029A">policyEventSelectCriteria</a></span>
+<pre>Public&nbsp;String policyEventSelectCriteria</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an attribute that contains an OCL expression to prescribe any limitations on the types of PolicyEvents that can be used with any PolicyRules that are derived from this particular PolicyRuleSpec. This enables a PolicyRuleSpec to be built that defines what types of PolicyEvents can be used to trigger the evaluation of PolicyRules. This in turn ensures that a given set of PolicyRules carry standard functionality.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EDA2E77029A"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">policyEventSelectCriteria</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyEventSelectCriteria</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_M87.dMI9EE.eOZE_.qG24Z4.xA">policyRuleBase</a></span>
+<pre>Public&nbsp;PolicyRuleBase policyRuleBase</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_M87.dMI9EE.eOZE_.qG24Z4.xA"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">Shared</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_M8.yTQI9EE.eOZE_.qG24Z4.xA-content.html">SpecifiesPolicRule</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">policyRuleBase</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C025B-content.html#_M9FOMI9EE.eOZE_.qG24Z4.xA">policyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::policyRuleBase</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C025B-content.html">PolicyRuleBase</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C025D">sequencedActions</a></span>
+<pre>Public&nbsp;Integer sequencedActions</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer defines how the ordering of the PolicyActions associated with this PolicyRule is to be interpreted. </br></br>Notes: Not present in the ITU or CIM specs (the CIM defined a subset of these values as an attribute in the PolicyRule).</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C025D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">()</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">sequencedActions</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93ED9349A0163-content.html">PolicyRuleSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework Spec ABE::PolicyRuleSpec::sequencedActions</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED934800073-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Framework Spec ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

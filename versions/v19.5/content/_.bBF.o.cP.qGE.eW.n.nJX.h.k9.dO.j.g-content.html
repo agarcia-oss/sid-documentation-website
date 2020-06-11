@@ -1,0 +1,124 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Product Specification Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.v.cK.h.oK7.fE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Product Specification Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Product Domain::Product Specification ABE::_Product Specification Addendum Figures::Figure Pr.02 - Product, Service, Resource Specification Relationships<br>
+</span><span class="ElementTitle">Diagram Figure Pr.02 - Product, Service, Resource Specification Relationships<br>
+</span><span class="ElementDocumentation">The following figure gives an overview of the relationships between Product, Service and Resource Specifications</br>A ProductOffering represents how the ProductSpecification is sold (i.e. packaging rules, prices, alterations, commitments…).</br>The ProductSpecification represents a product specification as perceived by the business user and specifies what the marketing operator wants to sell at a functional level (i.e. what are the capacities, which usages are available…).</br>It can represent:</br>        •	tangible goods (Terminal, phone, mobile, fax, modem)</br>        •	or intangible goods (like an Anti-Spam service for email).</br>When the ProductSpecification represents a tangible goods, it is realized as ResourceSpecification. Corresponding Resources are stored in warehouses or bought to a supplier on demand.</br>When the ProductSpecification is an intangible good, it is either realized as a CustomerFacingService (when the Service Provider is able to realize it) or bought as a ProductSpecification proposed by a Supplier (when the Service Provider is not able to realize it). For example, a Broadband know-how might be built or bought depending on the location of it.</br>The CustomerFacingServiceSpec represents all the Service Provider’s know-how of intangible goods at a functional level. It would be more appropriate to name it KonwHowSpec or ProductFacingServiceSpec, but the name is not changed as it is well known.</br>The ProductSpecification corresponds to a sub-set of the Service Provider’s know-how according to what marketing people want to sell. Therefore, a ProductSpecification is a restriction of CustomerFacingServiceSpecs.</br>When the ProductSpecification corresponds to a tangible good, then it is realized as a ResourceSpecification.</br>The ResourceFacingServiceSpec represents the technical solutions that the Service Provider can implement for CustomerFacingServiceSpec.</br>Each technical solution (ResourceFacingServiceSpec) requires ResourceSpecifications to be realized and might require buying part of the solution to a supplier (for example the Service Provider might have to buy the Local Loop to provide a broadband access).</br>Not presented in the diagram: Sometimes the company is not able to realize the ProductSpecification on its own; in these cases, they will have to buy all or part of the technical solution. This is the case for MVNOs that always have to buy what they sell from a Supplier.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.bBF.o.cP.qGE.eW.n.nJX.h.k9.dO.j.g.PNG" alt="Figure Pr.02 - Product, Service, Resource Specification Relationships" usemap="#map_.bBF.o.cP.qGE.eW.n.nJX.h.k9.dO.j.g"></td>
+</tr>
+</table>
+<map name="map_.bBF.o.cP.qGE.eW.n.nJX.h.k9.dO.j.g">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="307,490,333,507" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="313,398,321,415" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="179,416,457,433" href="_3E3F0EC000E93DD1D4720176-content.html" alt="RequiresResourceFacingServiceSpec">
+<area shape="poly" coords="304,391,304,515,294,515,294,391,304,391" href="_3E3F0EC000E93DD1D4720176-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_J.rIJ.sVK.gE.d2Z__GE9.qBD.pQ" alt="_customerfacingservicespec2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_J.rIJ.tFK.gE.d2Z__GE9.qBD.pQ" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_J.rIJ.sVK.gE.d2Z__GE9.qBD.pQ" alt="_customerfacingservicespec2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_J.rIJ.tFK.gE.d2Z__GE9.qBD.pQ" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_J.rIJ.sVK.gE.d2Z__GE9.qBD.pQ" alt="_customerfacingservicespec2">
+<area shape="rect" coords="311,310,319,327" href="_3E3F0EC000E93C5DB97B0118-content.html#_J.rIJ.sVK.gE.d2Z__GE9.qBD.pQ" alt="_customerfacingservicespec2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_J.rIJ.tFK.gE.d2Z__GE9.qBD.pQ" alt="_productSpecification">
+<area shape="rect" coords="311,240,319,257" href="_3E3F0EC000E93D9DADDE0194-content.html#_J.rIJ.tFK.gE.d2Z__GE9.qBD.pQ" alt="_productSpecification">
+<area shape="rect" coords="214,275,479,292" href="_J.rIJ.sFK.gE.d2Z__GE9.qBD.pQ-content.html" alt="ProdSpecRealizedAsCFServiceSpec">
+<area shape="poly" coords="309,234,309,328,299,328,299,234,309,234" href="_J.rIJ.sFK.gE.d2Z__GE9.qBD.pQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E9456B7F280196" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E9456B7F2801B5" alt="_productSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E9456B7F280196" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E9456B7F2801B5" alt="_productSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E9456B7F280196" alt="_resourceSpecification">
+<area shape="rect" coords="417,694,425,711" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E9456B7F280196" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E9456B7F2801B5" alt="_productSpecification2">
+<area shape="rect" coords="434,180,442,197" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E9456B7F2801B5" alt="_productSpecification2">
+<area shape="rect" coords="521,369,697,386" href="_3E3F0EC000E9456B7F2701E4-content.html" alt="ProductSpecRealizedAs">
+<area shape="poly" coords="424,192,596,192,596,684,413,684,413,674,586,674,586,202,424,202,424,192" href="_3E3F0EC000E9456B7F2701E4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="314,84,320,100" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="315,153,336,169" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="219,96,412,113" href="_3E3F0EC000E93D6BA1810024-content.html" alt="ProdSpecMadeAvailableAs">
+<area shape="poly" coords="301,170,301,82,311,82,311,170,301,170" href="_3E3F0EC000E93D6BA1810024-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1462F0005" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DD1462F000F" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1462F0005" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DD1462F000F" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1462F0005" alt="_resourceSpecification">
+<area shape="rect" coords="302,650,328,667" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1462F0005" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DD1462F000F" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="306,583,314,600" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DD1462F000F" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="186,609,440,626" href="_3E3F0EC000E93DD1462D011B-content.html" alt="RFServiceSpecHasResourceSpecs">
+<area shape="poly" coords="301,578,301,671,291,671,291,578,301,578" href="_3E3F0EC000E93DD1462D011B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6D16180227" alt="brand">
+<area shape="rect" coords="216,170,426,237" href="_3E3F0EC000E93C5DB97B0118-content.html" alt="ProductSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="234,34,365,85" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="195,671,415,738" href="_3E3F0EC000E93DDEC5E70323-content.html" alt="ResourceSpecification">
+<area shape="rect" coords="158,328,429,395" href="_3E3F0EC000E93D9DADDE0194-content.html" alt="CustomerFacingServiceSpec">
+<area shape="rect" coords="165,515,435,582" href="_3E3F0EC000E93D9DADF100B9-content.html" alt="ResourceFacingServiceSpec">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Pr.02 - Product, Service, Resource Specification Relationships</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.v.cK.h.oK7.fE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Product Specification Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.22 - HolderComposite in More Detail<br>
+</span><span class="ElementTitle">Diagram Figure PR.22 - HolderComposite in More Detail<br>
+</span><span class="ElementDocumentation">The HolderComposite class represents EquipmentHolders that are made up of other EquipmentHolders (i.e., instances of this class as well as the HolderAtomic base class). This provides the semantics of collecting a set of components, each of which is individually manageable, and being able to manage the set of objects as a whole.  This containment is modelled using the HasHolders aggregation.</br>Each HolderComposite element can be a FRU.</br>A characteristic of this class is that its subclasses are physical objects that have complex cabling and mounting options. This class is meant to differentiate complex holders, like a Chassis, from simple holders, like a Slot. Thus, the cableManagementStrategy attribute is a free-form string that contains information on how the various cables contained in the Chassis, Rack, or other type of HolderComposite object are connected and bundled.</br>The mountingOptions attribute defines how Equipment in this entity is mounted (e.g., rack-mounted, free-standing, or enclosed in another Chassis). Similarly serviceApproach defines how the entity is serviced (e.g., from the top or front), whether it has sliding trays or removable sides, and/or whether the Frame is moveable (e.g., it has rollers).</br>The Figure below shows the prominent subclasses of a HolderComposite entity.</br>The SecureHolder is a type of HolderComposite that serves as the parent for the Rack and Chassis classes. This class generalizes common properties that apply to Racks and Chassis. This class defines various types of locks and alarms, and adds the semantics of being able to indicate if a breach of this entity has been made.</br> </br>A Bay is a type of EquipmentHolder that is usually found in optical devices. It has a logical identifier, usually a component of port AIDs in TL1 based switches. A Bay is usually built as a pre-wired hardware assembly that contains a set of shelves and accompanying ancillary equipment. </br>A Shelf is a type of EquipmentHolder that is usually found in optical devices. It has a logical identifier that is often relative to the Bay that contains the Shelf (i.e., the unique identifier for a Shelf is often a concatenation of the network element identifier, the Bay identifier, and the Shelf identifier). Often, a Shelf is used to contain not just pluggable components (e.g., Cards, Power Supplies, etc.) but also cabling (e.g., both fiber and wire), with optional connections to external fuse, alarm, and other types of panels.</br>A Rack is a type of SecureHolder that represents an enclosure in which EquipmentHolders, such as Chassis, are placed. Typically a Rack is nothing more than the enclosure, and all the functioning componentry is packaged in the Chassis. The Rack typically serves as the "master enclosure" for Chassis, Shelves and Bays. In addition, Racks can have multiple instances of multiple Devices mounted in them.</br>A Chassis is a type of SecureHolder that encloses other ManagedPhysicalEntities and provides a definable functionality in its own right, such as a desktop or a network device (e.g., a router or a switch).<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE3FC67004B.PNG" alt="Figure PR.22 - HolderComposite in More Detail" usemap="#map_3E3F0EC000E93EE3FC67004B"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE3FC67004B">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD754A027A-content.html" alt="Generalization">
+<area shape="poly" coords="328,435,328,410,199,410,199,372,209,372,209,401,337,401,337,435,328,435" href="_3E3F0EC000E93CDD754A027A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD75450359-content.html" alt="Generalization">
+<area shape="poly" coords="157,433,157,401,199,401,199,372,209,372,209,410,166,410,166,433,157,433" href="_3E3F0EC000E93CDD75450359-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEDB00021-content.html" alt="Generalization">
+<area shape="poly" coords="197,322,197,267,293,267,293,236,303,236,303,277,207,277,207,322,197,322" href="_3E3F0EC000E93DDEEDB00021-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEED960287-content.html" alt="Generalization">
+<area shape="poly" coords="449,321,449,277,293,277,293,236,303,236,303,267,459,267,459,321,449,321" href="_3E3F0EC000E93DDEED960287-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEDAD0009-content.html" alt="Generalization">
+<area shape="poly" coords="334,321,334,277,293,277,293,236,303,236,303,267,344,267,344,321,334,321" href="_3E3F0EC000E93DDEEDAD0009-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD75720368" alt="_chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD75720372" alt="_rack">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD75720368" alt="_chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD75720372" alt="_rack">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD75720368" alt="_chassis">
+<area shape="rect" coords="300,531,308,548" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD75720368" alt="_chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD75720372" alt="_rack">
+<area shape="rect" coords="163,486,189,503" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD75720372" alt="_rack">
+<area shape="poly" coords="156,481,156,519,321,519,321,483,331,483,331,528,147,528,147,481,156,481" href="_3E3F0EC000E93CDD75710258-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240372" alt="_chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240374" alt="_chassis1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240372" alt="_chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240374" alt="_chassis1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240372" alt="_chassis">
+<area shape="rect" coords="365,521,373,538" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240372" alt="_chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240374" alt="_chassis1">
+<area shape="rect" coords="398,424,424,441" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD74240374" alt="_chassis1">
+<area shape="rect" coords="394,528,449,545" href="_3E3F0EC000E93CDD742200B2-content.html" alt="Docked">
+<area shape="poly" coords="394,454,453,454,453,528,343,528,343,483,353,483,353,519,443,519,443,464,394,464,394,454" href="_3E3F0EC000E93CDD742200B2-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEC410010-content.html" alt="Generalization">
+<area shape="poly" coords="600,152,600,115,490,115,490,74,500,74,500,105,610,105,610,152,600,152" href="_3E3F0EC000E93DDEEC410010-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEC3C03A2-content.html" alt="Generalization">
+<area shape="poly" coords="291,151,291,105,490,105,490,74,500,74,500,115,301,115,301,151,291,151" href="_3E3F0EC000E93DDEEC3C03A2-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="376,46,384,63" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="137,188,163,205" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="203,23,288,40" href="_3E3F0EC000E93DDEEBE00092-content.html" alt="HasHolders">
+<area shape="poly" coords="180,209,103,209,103,38,402,38,402,48,113,48,113,199,180,199,180,209" href="_3E3F0EC000E93DDEEBE00092-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203AA" alt="chassisType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A9" alt="numberOfChassisSlots">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A8" alt="powerCordNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A7" alt="installationOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A6" alt="heatGeneration">
+<area shape="rect" coords="271,435,397,486" href="_3E3F0EC000E93CDD73680050-content.html" alt="Chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD735203B7" alt="typeOfRack">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD735203B6" alt="heightInUs">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD7471011A-content.html#_3E3F0EC000E93CDD735203B5" alt="country">
+<area shape="rect" coords="117,433,208,484" href="_3E3F0EC000E93CDD7471011A-content.html" alt="Rack">
+<area shape="rect" coords="411,321,501,375" href="_3E3F0EC000E93CDD71310196-content.html" alt="Shelf">
+<area shape="rect" coords="295,321,385,375" href="_3E3F0EC000E93CDD70FF0180-content.html" alt="Bay">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100E1" alt="visibleAlarmDescription">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100E0" alt="visibleAlarm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100DF" alt="securityBreachDescription">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100DE" alt="securityBreach">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100DD" alt="lockPresent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100DC" alt="audibleAlarmDescription">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD708302D6-content.html#_3E3F0EC000E93CDD6F5100DB" alt="audibleAlarm">
+<area shape="rect" coords="133,322,274,376" href="_3E3F0EC000E93CDD708302D6-content.html" alt="SecureHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D0384" alt="holderStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93CDD6593000E" alt="isSolitaryHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D037B" alt="typeOfHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D037A" alt="acceptableEquipmentList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUK.cNXE.d.y.d.iYA.u_Q32IQ" alt="acceptableEquipmentTypeList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUL8NXE.d.y.d.iYA.u_Q32IQ" alt="asapRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUJ.sNXE.d.y.d.iYA.u_Q32IQ" alt="expectedOrInstalledEquipmentRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUIMNXE.d.y.d.iYA.u_Q32IQ" alt="isReportingAlarms">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_BZ.k.rIP.s.oE.d.y.b.z6.jV.d6YV.eQ" alt="ituArcStateAndStatusList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUM8NXE.d.y.d.iYA.u_Q32IQ" alt="manufacturer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xULMNXE.d.y.d.iYA.u_Q32IQ" alt="state">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUI8NXE.d.y.d.iYA.u_Q32IQ" alt="type">
+<area shape="rect" coords="402,18,588,78" href="_3E3F0EC000E93DDEEA6B0245-content.html" alt="EquipmentHolder">
+<area shape="rect" coords="187,207,405,222" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBC603AC" alt="serviceApproach">
+<area shape="rect" coords="187,191,405,206" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBC603A2" alt="mountingOptions">
+<area shape="rect" coords="187,175,405,190" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBC60398" alt="cableManagementStrategy">
+<area shape="rect" coords="180,151,414,239" href="_3E3F0EC000E93DDEEB160255-content.html" alt="HolderComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202C1" alt="uniquePhysical">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202AD" alt="physicalDescription">
+<area shape="rect" coords="527,152,684,212" href="_3E3F0EC000E93DDEEACC0367-content.html" alt="HolderAtomic">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.22 - HolderComposite in More Detail</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

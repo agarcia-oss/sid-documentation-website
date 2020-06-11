@@ -1,0 +1,93 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-16 - Simple PolicyVariable<br>
+</span><span class="ElementTitle">Diagram Figure 1P-16 - Simple PolicyVariable<br>
+</span><span class="ElementDocumentation">A PolicyVariable is an abstract class for modeling different types of variables that can be used to form a PolicyStatement. The variable specifies an attribute or concept that should either be matched or in some way compared to a value when the condition is evaluated.</br>There are three important factors that must be taken into account in the design of variables. The first is that not every combination of a variable and a value creates a meaningful condition. For example, port numbers cannot be negative. Rather, the type of variable in the condition defines the set of matchable value types.</br>Second, just because a value has the correct data type does not mean that it can be meaningfully compared to a variable. To continue the above example, a port of 1,000,000 is meaningless. This is handled in this model by specifying constraints (using OCL) that apply to a particular variable that must be obeyed by any value that it is being compared to. The ValueConstraintInVariable association binds a PolicyVariable to a PolicyValue; any constraints that are required in this binding are added to an instance of this association using OCL.</br>Third, while the model defines a set of useful PolicyVariables, there is a high likelihood that specific applications will need extensions to these variables. This is accommodated through the notion of standard and custom PolicyVariable classes.</br>There are two subclasses of PolicyVariable, called VariableCustom and VariableStandard. The VariableCustom class defines a set of standardized policy variables for use in an application-specific manner. The term “custom” means that such variables are explicitly designed to work with attributes that are not in any of the VariableStandard subclasses. This means that the particular semantics (including any applicable constraints) are not known to SID model.</br>The VariableCustom class is an abstract base class that provides two basic attributes to define custom variables that can be used in an application-specific fashion. The variableModelAttribute attribute is a string that defines the name of the attribute within the class specified in the variableModelClass attribute that is to be evaluated or set as a PolicyVariable. Similarly, the variableModelClass attribute is a string that defines the class name whose attribute is to be evaluated or set as a PolicyVariable. This enables the VariableCustom class to point to other attributes of other classes that can be defined as extensions of the standard SID model.</br>A simplified overview of PolicyVariables is shown in Figure below.</br>Thus, the combination of variableModelClass and variableModelAttribute enable an application to define a new class that contains an attribute to be used as a PolicyVariable. This provides important extensibility, and enables an application to define its own set of classes and attributes to extend the framework.</br>The VariableStandard class is an abstract base class for defining a standard set of PolicyVariable objects that are common to most applications. This is the superclass for a standard set of PolicyVariable subclasses that are part of the model.</br>Currently, the model defines fifteen different subclasses of the VariableStandard class. Two of the more important ones are shown in Figure below – these are the PolicyConditionTimePeriod and the PolicyConditionVendor classes.</br>PolicyConditionTimePeriod is based on [RFC 2445], and is used to enable or disable a PolicyCondition according to a pre-determined time schedule. The various attributes enable a simple or complex recurring time period to be defined.</br>PolicyConditionVendor is a concrete base class that provides a general extension mechanism for representing PolicyConditions that have not been modeled with the attributes specified in this model. This class uses two of its properties (constraintData and constraintEncoding) for defining the content and format of a vendor-specific condition. Thus, an application can define a set of encodings which determine how to interpret complex data. Each of these encodings can be given its own OID, enabling them to be registered with some external agency, such as IANA. Its other two attributes are used to describe the type of condition that this represents, and to provide a standard definition of a TRUE or FALSE response. This latter enables this object to interoperate with other PolicyVariableStandard objects as part of a PolicyConditon clause. Standardized extensions are not expected to use this class.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EDA6044009E.PNG" alt="Figure 1P-16 - Simple PolicyVariable" usemap="#map_3E3F0EC000E93EDA6044009E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EDA6044009E">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E04FEF0012E-content.html" alt="Generalization">
+<area shape="poly" coords="490,288,490,235,404,235,404,193,413,193,413,225,500,225,500,288,490,288" href="_3E3F0EC000E93E04FEF0012E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E04FEE800A0-content.html" alt="Generalization">
+<area shape="poly" coords="230,287,230,225,404,225,404,193,413,193,413,235,240,235,240,287,230,287" href="_3E3F0EC000E93E04FEE800A0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A0-content.html" alt="Generalization">
+<area shape="poly" coords="402,140,402,99,268,99,268,57,277,57,277,89,412,89,412,140,402,140" href="_3E3F0EC000E93D77E58C02A0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C029B-content.html" alt="Generalization">
+<area shape="poly" coords="108,140,108,89,268,89,268,57,277,57,277,99,118,99,118,140,108,140" href="_3E3F0EC000E93D77E58C029B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="403,360,586,375" href="_3E3F0EC000E93E04FBBE0313-content.html#_3E3F0EC000E93E5C468A0214" alt="conditionResponse">
+<area shape="rect" coords="403,344,586,359" href="_3E3F0EC000E93E04FBBE0313-content.html#_3E3F0EC000E93D77E58C027D" alt="conditionType">
+<area shape="rect" coords="403,328,586,343" href="_3E3F0EC000E93E04FBBE0313-content.html#_3E3F0EC000E93D77E58C027C" alt="constraintEncoding">
+<area shape="rect" coords="403,312,586,327" href="_3E3F0EC000E93E04FBBE0313-content.html#_3E3F0EC000E93D77E58C027B" alt="constraintData">
+<area shape="rect" coords="397,288,596,392" href="_3E3F0EC000E93E04FBBE0313-content.html" alt="PolicyConditionVendor">
+<area shape="rect" coords="137,391,332,406" href="_3E3F0EC000E93E04FB7901BF-content.html#_3E3F0EC000E93E04FB940288" alt="isLocalTime">
+<area shape="rect" coords="137,375,332,390" href="_3E3F0EC000E93E04FB7901BF-content.html#_3E3F0EC000E93E04FB940287" alt="timeOfDayMask">
+<area shape="rect" coords="137,359,332,374" href="_3E3F0EC000E93E04FB7901BF-content.html#_3E3F0EC000E93E04FB940286" alt="dayOfWeekMask">
+<area shape="rect" coords="137,343,332,358" href="_3E3F0EC000E93E04FB7901BF-content.html#_3E3F0EC000E93E04FB94027E" alt="dayOfMonthMask">
+<area shape="rect" coords="137,327,332,342" href="_3E3F0EC000E93E04FB7901BF-content.html#_3E3F0EC000E93E04FB94027D" alt="monthOfYearMask">
+<area shape="rect" coords="137,311,332,326" href="_3E3F0EC000E93E04FB7901BF-content.html#_3E3F0EC000E93E04FB94027C" alt="timePeriod">
+<area shape="rect" coords="130,287,341,423" href="_3E3F0EC000E93E04FB7901BF-content.html" alt="PolicyConditionTimePeriod">
+<area shape="rect" coords="319,164,495,179" href="_3E3F0EC000E93D77E58C02A1-content.html#_3E3F0EC000E93E03EC81020D" alt="allowedValueTypes">
+<area shape="rect" coords="312,140,504,196" href="_3E3F0EC000E93D77E58C02A1-content.html" alt="VariableStandard">
+<area shape="rect" coords="204,9,340,60" href="_3E3F0EC000E93D77E58C0298-content.html" alt="PolicyVariable">
+<area shape="rect" coords="16,180,210,195" href="_3E3F0EC000E93D77E58C029C-content.html#_3E3F0EC000E93E03C7420035" alt="variableModelClass">
+<area shape="rect" coords="16,164,210,179" href="_3E3F0EC000E93D77E58C029C-content.html#_3E3F0EC000E93E03C742002B" alt="variableModelAttribute">
+<area shape="rect" coords="9,140,219,212" href="_3E3F0EC000E93D77E58C029C-content.html" alt="VariableCustom">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-16 - Simple PolicyVariable</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.21 - HolderAtomic in More Detail<br>
+</span><span class="ElementTitle">Diagram Figure PR.21 - HolderAtomic in More Detail<br>
+</span><span class="ElementDocumentation">The HolderAtomic class represents atomic holders of Equipment that are individually manageable and do NOT form composite, or nested, Equipment Holders. Each HolderAtomic object can be a Field Replaceable Unit.</br>The physicalDescription attribute is a free-form string that defines the physically unique characteristics of this holder. The uniquePhysical and uniqueLogical attributes are Boolean attributes that signify that this holder is physically or logically different from other holders.</br>A model of the HolderAtomic class is shown in the Figure below.</br>A Slot is a concrete class that has two main purposes. One is to model the ability of a hosting board to accept a daughter card to add or complete the base functionality of the hosting board. The second is to represent the different expansion slots supported by a Chassis.</br>All Slots have a unique number – this is represented by the slotNumber attribute. The slotPurpose is an enumerated integer that defines the purpose of this Slot. This enables Slots to be easily identified according to their functional purpose.</br>This leaves the hasAdapter attribute. This attribute is a Boolean attribute that, if TRUE, indicates that this slot has an adapter installed that enables it to accept other types of cards (e.g., fitting an adapter on two Slots enable them to accept a Card that otherwise could not be accommodated).</br>Adapters are very important, as they enable an organization to keep its investment in expensive line Cards. This is represented in more detail using the SlotInSlot association. This association represents the ability of a special adapter to extend the existing Slot structure to enable otherwise incompatible Cards to be plugged into an EquipmentHolder. The adapter effectively creates a new Slot and can be thought of (conceptually) as a Slot in a Slot.</br>The AdjacentSlots association describes the layout of Slots in an EquipmentHolder. This association class includes attributes that are used to provide general layout information describing the Slots in the EquipmentHolder. An important use of this association is to signal when two Slots are so close to each other that if one of these Slots is populated by an adapter Card, the other Slot must be left empty.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE3F59F033E.PNG" alt="Figure PR.21 - HolderAtomic in More Detail" usemap="#map_3E3F0EC000E93EE3F59F033E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE3F59F033E">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D620270-content.html#_3E3F0EC000E93CDD6CD1012C" alt="slotSpacingMin">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D620270-content.html#_3E3F0EC000E93CDD6CD1012B" alt="slotSpacingMax">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D620270-content.html#_3E3F0EC000E93CDD6CD1012A" alt="sharedSlots">
+<area shape="rect" coords="621,274,792,325" href="_3E3F0EC000E93CDD6D620270-content.html" alt="AdjacentSlotDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D640309" alt="_slot">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D64030B" alt="_slot1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D640309" alt="_slot">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D64030B" alt="_slot1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D640309" alt="_slot">
+<area shape="rect" coords="552,399,560,416" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D640309" alt="_slot">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D64030B" alt="_slot1">
+<area shape="rect" coords="540,350,566,367" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6D64030B" alt="_slot1">
+<area shape="poly" coords="512,340,575,340,575,424,512,424,512,414,565,414,565,350,512,350,512,340" href="_3E3F0EC000E93CDD6D620270-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEC3C03A2-content.html" alt="Generalization">
+<area shape="poly" coords="159,181,159,123,261,123,261,69,271,69,271,133,169,133,169,181,159,181" href="_3E3F0EC000E93DDEEC3C03A2-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEC410010-content.html" alt="Generalization">
+<area shape="poly" coords="405,181,405,133,261,133,261,69,271,69,271,123,415,123,415,181,405,181" href="_3E3F0EC000E93DDEEC410010-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFC24F0073-content.html" alt="Generalization">
+<area shape="poly" coords="407,327,407,250,417,250,417,327,407,327" href="_3E3F0EC000E93DDFC24F0073-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE030B" alt="_slot2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE0315" alt="_slot3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE030B" alt="_slot2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE0315" alt="_slot3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE030B" alt="_slot2">
+<area shape="rect" coords="335,458,343,475" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE030B" alt="_slot2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE0315" alt="_slot3">
+<area shape="rect" coords="388,458,414,475" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6DFE0315" alt="_slot3">
+<area shape="rect" coords="330,512,406,529" href="_3E3F0EC000E93CDD6DFC0235-content.html" alt="SlotInSlot">
+<area shape="poly" coords="425,428,425,504,322,504,322,428,332,428,332,494,415,494,415,428,425,428" href="_3E3F0EC000E93CDD6DFC0235-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="222,59,230,76" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBE1036F" alt="_equipmentHolder2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="25,243,51,260" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEBE10379" alt="_holderComposite">
+<area shape="rect" coords="126,23,211,40" href="_3E3F0EC000E93DDEEBE00092-content.html" alt="HasHolders">
+<area shape="poly" coords="88,222,18,222,18,51,260,51,260,61,28,61,28,212,88,212,88,222" href="_3E3F0EC000E93DDEEBE00092-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="330,399,505,414" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD10122" alt="purposeDescription">
+<area shape="rect" coords="330,383,505,398" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD10121" alt="slotPurpose">
+<area shape="rect" coords="330,367,505,382" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD10120" alt="slotNumber">
+<area shape="rect" coords="330,351,505,366" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD1011F" alt="hasAdapter">
+<area shape="rect" coords="323,327,514,431" href="_3E3F0EC000E93CDD6D19036F-content.html" alt="Slot">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D0384" alt="holderStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93CDD6593000E" alt="isSolitaryHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D037B" alt="typeOfHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D037A" alt="acceptableEquipmentList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUK.cNXE.d.y.d.iYA.u_Q32IQ" alt="acceptableEquipmentTypeList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUL8NXE.d.y.d.iYA.u_Q32IQ" alt="asapRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUJ.sNXE.d.y.d.iYA.u_Q32IQ" alt="expectedOrInstalledEquipmentRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUIMNXE.d.y.d.iYA.u_Q32IQ" alt="isReportingAlarms">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_BZ.k.rIP.s.oE.d.y.b.z6.jV.d6YV.eQ" alt="ituArcStateAndStatusList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUM8NXE.d.y.d.iYA.u_Q32IQ" alt="manufacturer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xULMNXE.d.y.d.iYA.u_Q32IQ" alt="state">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUI8NXE.d.y.d.iYA.u_Q32IQ" alt="type">
+<area shape="rect" coords="260,22,415,73" href="_3E3F0EC000E93DDEEA6B0245-content.html" alt="EquipmentHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBC603AC" alt="serviceApproach">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBC603A2" alt="mountingOptions">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEB160255-content.html#_3E3F0EC000E93DDEEBC60398" alt="cableManagementStrategy">
+<area shape="rect" coords="88,181,243,232" href="_3E3F0EC000E93DDEEB160255-content.html" alt="HolderComposite">
+<area shape="rect" coords="322,221,496,236" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202C1" alt="uniquePhysical">
+<area shape="rect" coords="322,205,496,220" href="_3E3F0EC000E93DDEEACC0367-content.html#_3E3F0EC000E93DDEEAF202AD" alt="physicalDescription">
+<area shape="rect" coords="316,181,506,253" href="_3E3F0EC000E93DDEEACC0367-content.html" alt="HolderAtomic">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.21 - HolderAtomic in More Detail</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

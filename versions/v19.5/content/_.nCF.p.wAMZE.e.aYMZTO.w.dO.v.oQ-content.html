@@ -1,0 +1,270 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Resource Specification ABE Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fO.hA.wAMOE.e.aYMZTO.w.dO.v.oQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Specification ABE Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource Specification ABE::_ Resource Specification ABE Addendum Figures::Figure Res.12 - Use of Resource Function in Information Framework Models (OLD RS.02)<br>
+</span><span class="ElementTitle">Diagram Figure Res.12 - Use of Resource Function in Information Framework Models (OLD RS.02)<br>
+</span><span class="ElementDocumentation">A ResourceFunctionSpec specifies a function as a behavior to transform inputs of any nature into outputs of any nature independently from the way it is provided. It is typically created by a function designer who may not have specific knowledge on deployment architecture (for example using English text explanations with diagrams, like RFC standards, or preferably a machine interpretable language).</br>The realization/deployment of a ResourceFunctionSpec may be achieved by different ways; either SoftwareSpecification, PhysicalBlackBoxSpec or SoftBlackBoxSpecification.</br>Examples: manually or automated by software or hardware implementing algorithms etc.… without any impact on the definition of the functions itself.</br>A SoftwareSpecification specifies properties or associated information that characterizes a software, such as:</br>        •	the release number, the status of the release, license conditions…</br>        •	hosting platform requirements such as OS, disk and memory space…</br>        •	input and output configuration and requirements</br>and includes all files required for deployment and installation such as installation manager.</br></br>SoftBlackBoxSpec is a box with embedded software in it and PhysicalBlackBoxSpec is a box with any other internal mechanism realizing the function.</br></br>A SoftConnectionPointSpec, resp. an ElectronicConnectionPointSpec are realization of Connection Points either as software Programming Interfaces (API) or as Electronic interface (signal processing).</br>HostingPlatformRequirementSpec is used to represent the requirements that must be fulfilled by the platform that will run the software described in the SoftwareSpecification. These dependencies might include software libraries and packages as well as computing and network resources like CPU and memory.</br>The derived association /SoftwareSpecificatonRequires is used to document the set of requirements of a platform which can host the concerned software.</br>A SofwareSupportPackage represents the package acquired by a consumer from a software vendor. It can be materialized as one or several files (data) downloaded online or copied on a physical support. It contains all files required for deployment and installation such as installation manager and at minimum, one of the files constitutes the set of machine readable instructions that will be executed automatically after it is installed.</br>An InstalledSoftware (renaming the Software concept from previous releases) consists of encoded information or computer instructions deployed on a machine such that it can be executed. An InstalledSoftware is a SoftwareSpecification deployed using the SoftwareSupportPackage and HostingPlatformRequirements.</br>Each InstalledSoftware specifies their input and output respectively with SoftConnectionPoints.  </br>The attributes shown for InstalledSoftware should be contained in a SoftwareSpecification entity, because their values don’t change from one instance of the same “type” of Software to another.  Also, the association to Language should be moved to a SoftwareSpecification entity.  The Language(s) supported by instances of the same “type” of Software don’t change from one instance to another.  Additionally, the 1.* association should be changed to a * since an instance of Language does not have to be associated with an instance of Software or a SoftwareSpecification.</br><Note>Note: the Software entity has been renamed InstalledSoftware in SID 17.0.</Note></br>A ConfigurationFeatureSpec is a type of EntitySpecification.</br>It is used to expose one or several ResourceFunctionSpecs to a consumer in such a way that it is easier to configure these RFSpecs from a consumer view point, at the deployment stage (intend based deployment as opposed to detailed based deployment).</br>        •	Some ConfigurationFeatureSpec may be mandatory while others can be selected or not by the consumer (for a given instantiation).</br>        •	ConfigurationFeatureSpec may have characteristics which are settable by the consumer (at instantiation time and/or during the lifetime of the ResourceFunction).</br>The following diagram represents the main Business Entities related to ResourceFunctionSpec and their relationships:<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.nCF.p.wAMZE.e.aYMZTO.w.dO.v.oQ.PNG" alt="Figure Res.12 - Use of Resource Function in Information Framework Models (OLD RS.02)" usemap="#map_.nCF.p.wAMZE.e.aYMZTO.w.dO.v.oQ"></td>
+</tr>
+</table>
+<map name="map_.nCF.p.wAMZE.e.aYMZTO.w.dO.v.oQ">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.fJ4.w.cM6.vE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.fJ9B4M6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec2">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.fJ4.w.cM6.vE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.fJ9B4M6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec2">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.fJ4.w.cM6.vE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification2">
+<area shape="rect" coords="764,414,770,430" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.fJ4.w.cM6.vE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.fJ9B4M6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec2">
+<area shape="rect" coords="368,458,374,474" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.fJ9B4M6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec2">
+<area shape="rect" coords="407,471,727,487" href="_.fJ1.tIM6.vE.e.eHS.fTDQ0.v.qN.w-content.html" alt="CongifurationFeatureSpecRequiresDeploymentFrom">
+<area shape="poly" coords="395,451,395,491,751,491,751,406,761,406,761,501,385,501,385,451,395,451" href="_.fJ1.tIM6.vE.e.eHS.fTDQ0.v.qN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_E7BP0M6.vE.e.eHS.fTDQ0.v.qN.w" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_E7F.hQM6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_E7BP0M6.vE.e.eHS.fTDQ0.v.qN.w" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_E7F.hQM6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_E7BP0M6.vE.e.eHS.fTDQ0.v.qN.w" alt="resourceFunctionSpec">
+<area shape="rect" coords="334,292,352,308" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_E7BP0M6.vE.e.eHS.fTDQ0.v.qN.w" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_E7F.hQM6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="352,383,358,399" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_E7F.hQM6.vE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="344,350,509,366" href="_E6-M.gM6.vE.e.eHS.fTDQ0.v.qN.w-content.html" alt="ConfigFeatureSpecIncludes">
+<area shape="poly" coords="358,402,358,283,368,283,368,402,358,402" href="_E6-M.gM6.vE.e.eHS.fTDQ0.v.qN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.h.b.kU.oM6.uE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.h.b.q.bQM6.uE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.h.b.kU.oM6.uE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.h.b.q.bQM6.uE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="0,0,0,0" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.h.b.kU.oM6.uE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification">
+<area shape="rect" coords="705,405,712,421" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html#_.h.b.kU.oM6.uE.e.eHS.fTDQ0.v.qN.w" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.h.b.q.bQM6.uE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="576,419,582,435" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.h.b.q.bQM6.uE.e.eHS.fTDQ0.v.qN.w" alt="configurationFeatureSpec">
+<area shape="rect" coords="595,394,703,410" href="_.h.b.i.f.cM6.uE.e.eHS.fTDQ0.v.qN.w-content.html" alt="SoftSpecProposes">
+<area shape="poly" coords="560,407,646,407,646,393,726,393,726,403,656,403,656,417,560,417,560,407" href="_.h.b.i.f.cM6.uE.e.eHS.fTDQ0.v.qN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eK.kABL0E.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eP.c.gBL0E.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eK.kABL0E.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eP.c.gBL0E.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eK.kABL0E.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec2">
+<area shape="rect" coords="365,705,371,721" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eK.kABL0E.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eP.c.gBL0E.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec2">
+<area shape="rect" coords="678,704,685,720" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_A.eP.c.gBL0E.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec2">
+<area shape="rect" coords="418,718,604,734" href="_A.eH.g.sBL0E.e.e.iBJV.s.eVAY.dA-content.html" alt="PhysicalCPSpecIsAnOutputFor">
+<area shape="poly" coords="707,733,532,733,532,735,348,735,348,725,522,725,522,723,707,723,707,733" href="_A.eH.g.sBL0E.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.l.cEBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.p.t.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.l.cEBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.p.t.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.l.cEBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="365,677,371,693" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.l.cEBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.p.t.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="678,677,685,693" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_6.c.p.t.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="437,683,611,699" href="_6.c.iY.wBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="PhysicalCPSpecIsAnInputFor">
+<area shape="poly" coords="707,706,348,706,348,696,707,696,707,706" href="_6.c.iY.wBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_15XI.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_15.bZ8BL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_15XI.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_15.bZ8BL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_15XI.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec2">
+<area shape="rect" coords="489,616,495,632" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_15XI.gBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_15.bZ8BL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification2">
+<area shape="rect" coords="851,415,858,431" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_15.bZ8BL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification2">
+<area shape="rect" coords="589,592,749,608" href="_15UFMBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftCPSpecIsAnOutputFor">
+<area shape="poly" coords="849,406,849,615,450,615,450,605,839,605,839,406,849,406" href="_15UFMBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.t-.oG.kBL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification3">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.t-.s_EBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.t-.oG.kBL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification3">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.t-.s_EBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.t-.oG.kBL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification3">
+<area shape="rect" coords="813,418,820,434" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.t-.oG.kBL.zE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification3">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.t-.s_EBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="492,577,498,593" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.t-.s_EBL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="615,577,765,593" href="_.t-.lDQBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftCPSpecIsAnInputFor">
+<area shape="poly" coords="450,597,802,597,802,406,812,406,812,607,450,607,450,597" href="_.t-.lDQBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.k-R.gYBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.k-WY4BL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.k-R.gYBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.k-WY4BL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.k-R.gYBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="142,675,148,691" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.k-R.gYBL.zE.e.e.iBJV.s.eVAY.dA" alt="electronicConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.k-WY4BL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="143,506,150,522" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.k-WY4BL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="99,652,313,668" href="_.k-PEIBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="CPSpecRealizedByElectronicCPSpec">
+<area shape="poly" coords="171,482,171,695,161,695,161,482,171,482" href="_.k-PEIBL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.q.o4BL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.x9.oBL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.q.o4BL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.x9.oBL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.q.o4BL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="268,560,274,576" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.q.o4BL.zE.e.e.iBJV.s.eVAY.dA" alt="softConnectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.x9.oBL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="267,489,274,505" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.aB.x9.oBL.zE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="208,524,388,540" href="_.aB.g34BL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="CPSpecRealizedBySoftCPSpec">
+<area shape="poly" coords="295,482,295,583,285,583,285,482,295,482" href="_.aB.g34BL.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.vO.vRIBLTE.e.e.iBJV.s.eVAY.dA" alt="hostingPlatformRequirementSpec">
+<area shape="rect" coords="0,0,0,0" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.vO.z.i.kBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.vO.vRIBLTE.e.e.iBJV.s.eVAY.dA" alt="hostingPlatformRequirementSpec">
+<area shape="rect" coords="0,0,0,0" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.vO.z.i.kBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.vO.vRIBLTE.e.e.iBJV.s.eVAY.dA" alt="hostingPlatformRequirementSpec">
+<area shape="rect" coords="909,204,915,220" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.vO.vRIBLTE.e.e.iBJV.s.eVAY.dA" alt="hostingPlatformRequirementSpec">
+<area shape="rect" coords="0,0,0,0" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.vO.z.i.kBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="911,306,917,322" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.vO.z.i.kBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="832,245,1024,261" href="_.vO.sN0BLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftwareSpecificationRequires">
+<area shape="poly" coords="890,334,890,208,900,208,900,334,890,334" href="_.vO.sN0BLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.q.m.b.pQBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSupportPackage">
+<area shape="rect" coords="0,0,0,0" href="_WRCB8BLJE.e.e.iBJV.s.eVAY.dA-content.html#_.q.m.f6.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.q.m.b.pQBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSupportPackage">
+<area shape="rect" coords="0,0,0,0" href="_WRCB8BLJE.e.e.iBJV.s.eVAY.dA-content.html#_.q.m.f6.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.q.m.b.pQBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSupportPackage">
+<area shape="rect" coords="1149,356,1155,372" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.q.m.b.pQBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSupportPackage">
+<area shape="rect" coords="0,0,0,0" href="_WRCB8BLJE.e.e.iBJV.s.eVAY.dA-content.html#_.q.m.f6.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="969,344,987,360" href="_WRCB8BLJE.e.e.iBJV.s.eVAY.dA-content.html#_.q.m.f6.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="999,332,1146,348" href="_.q.mZNABLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftwareSpecReferences">
+<area shape="poly" coords="962,330,1069,330,1069,345,1162,345,1162,355,1059,355,1059,340,962,340,962,330" href="_.q.mZNABLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.jGM.yABLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.jGRD.cBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="0,0,0,0" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.jGM.yABLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.jGRD.cBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="0,0,0,0" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.jGM.yABLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="921,415,939,431" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_.jGM.yABLTE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.jGRD.cBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="933,574,939,590" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.jGRD.cBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="871,476,1075,492" href="_.jGJ.u.sBLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftBlackBoxSpecIsComposedOf">
+<area shape="poly" coords="946,596,946,406,956,406,956,596,946,596" href="_.jGJ.u.sBLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_X9.a.f.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="0,0,0,0" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_X9.e.xIBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_X9.a.f.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="0,0,0,0" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_X9.e.xIBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_X9.a.f.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="976,660,982,676" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_X9.a.f.sBLTE.e.e.iBJV.s.eVAY.dA" alt="softBlackBoxSpecification">
+<area shape="rect" coords="0,0,0,0" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_X9.e.xIBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="23,283,29,299" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html#_X9.e.xIBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="585,804,900,820" href="_X9WOQBLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="ResourceFunctionSpecProvidedBySoftBlackBoxSpec">
+<area shape="poly" coords="41,283,41,822,956,822,956,644,966,644,966,832,31,832,31,283,41,283" href="_X9WOQBLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_O.wIQ.wBLTE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_O.wN.wUBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_O.wIQ.wBLTE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_O.wN.wUBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_O.wIQ.wBLTE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="784,749,790,765" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_O.wIQ.wBLTE.e.e.iBJV.s.eVAY.dA" alt="physicalBlackBoxSpec">
+<area shape="rect" coords="0,0,0,0" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_O.wN.wUBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="75,292,81,308" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html#_O.wN.wUBLTE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="255,755,567,771" href="_O.wE.mYBLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="ResourceFunctionSpecProvidedByPhysicalBlackBox">
+<area shape="poly" coords="97,283,97,768,757,768,757,744,766,744,766,778,87,778,87,283,97,283" href="_O.wE.mYBLTE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_.f.q.h.g4BLJE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.f.q.mZYBLJE.e.e.iBJV.s.eVAY.dA" alt="software">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_.f.q.h.g4BLJE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.f.q.mZYBLJE.e.e.iBJV.s.eVAY.dA" alt="software">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_.f.q.h.g4BLJE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="714,306,721,322" href="_3E3F0EC000E93CDE25AD031F-content.html#_.f.q.h.g4BLJE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.f.q.mZYBLJE.e.e.iBJV.s.eVAY.dA" alt="software">
+<area shape="rect" coords="708,197,714,213" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_.f.q.mZYBLJE.e.e.iBJV.s.eVAY.dA" alt="software">
+<area shape="rect" coords="681,250,795,266" href="_.f.q.fE.oBLJE.e.e.iBJV.s.eVAY.dA-content.html" alt="SSpecImplements">
+<area shape="poly" coords="734,183,734,334,724,334,724,183,734,183" href="_.f.q.fE.oBLJE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_9HI.lUBLIE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_9HM2.wBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_9HI.lUBLIE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_9HM2.wBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_9HI.lUBLIE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="708,340,714,356" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_9HI.lUBLIE.e.e.iBJV.s.eVAY.dA" alt="softwareSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_9HM2.wBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="402,291,408,307" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_9HM2.wBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="412,315,701,331" href="_9HGJEBLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="ResourceFunctionSpecProvidedBySoftwareSpec">
+<area shape="poly" coords="399,283,399,330,726,330,726,339,390,339,390,283,399,283" href="_9HGJEBLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_1M.y.k8BLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec2">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_1M0.aIBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_1M.y.k8BLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec2">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_1M0.aIBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec2">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_1M.y.k8BLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec2">
+<area shape="rect" coords="255,297,262,313" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_1M.y.k8BLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec2">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_1M0.aIBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec2">
+<area shape="rect" coords="254,410,260,426" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_1M0.aIBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec2">
+<area shape="rect" coords="206,368,341,384" href="_1M.xW0BLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="CPSpecIsAnOutputFor">
+<area shape="poly" coords="235,434,235,283,245,283,245,434,235,434" href="_1M.xW0BLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.kMEBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.wZUBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.kMEBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.wZUBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="0,0,0,0" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.kMEBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="180,297,187,313" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.kMEBLIE.e.e.iBJV.s.eVAY.dA" alt="resourceFunctionSpec">
+<area shape="rect" coords="0,0,0,0" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.wZUBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="179,404,185,420" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_.w.a.wZUBLIE.e.e.iBJV.s.eVAY.dA" alt="connectionPointSpec">
+<area shape="rect" coords="104,337,228,353" href="_.w.a.d.eYBLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="CPSpecIsAnInputFor">
+<area shape="poly" coords="160,434,160,283,170,283,170,434,160,434" href="_.w.a.d.eYBLIE.e.e.iBJV.s.eVAY.dA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="358,402,562,454" href="_G.i5DAM6.jE.e.eHS.fTDQ0.v.qN.w-content.html" alt="ConfigurationFeatureSpec">
+<area shape="rect" coords="115,695,350,747" href="_.w.k.b.jABC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="ElectronicConnectionPointSpec">
+<area shape="rect" coords="732,376,954,392" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_R9.z.e8F88E.eKYG6QMPWHJ.eQ" alt="numberProcessActiveTotal">
+<area shape="rect" coords="732,359,954,375" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html#_R94-.gF88E.eKYG6QMPWHJ.eQ" alt="numUsersMax">
+<area shape="rect" coords="726,334,964,409" href="_.p5DIAFBSE.eK.n-K55.iA3.mNA-content.html" alt="SoftwareSpecification">
+<area shape="rect" coords="707,695,884,747" href="_.zT.oUMBC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="PhysicalBlackBoxSpec">
+<area shape="rect" coords="489,153,739,169" href="_3E3F0EC000E93CDE25AD031F-content.html#_FUR.m0I.l.mE.eK.p8Y.k.vI.m.e7GA" alt="serialNumber">
+<area shape="rect" coords="489,136,739,152" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE089301B6" alt="swapSpaceUsedCurrent">
+<area shape="rect" coords="489,119,739,135" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE0B1003E4" alt="processMemorySizeCurrent">
+<area shape="rect" coords="489,102,739,118" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE0AA202C1" alt="pagingFileSizeCurrent">
+<area shape="rect" coords="489,85,739,101" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E94366DA4E0249" alt="numUsersCurrent">
+<area shape="rect" coords="489,68,739,84" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE080903D4" alt="numberProcessesActiveCurrent">
+<area shape="rect" coords="489,51,739,67" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE03BB005F" alt="lastStartTime">
+<area shape="rect" coords="489,34,739,50" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE042603B6" alt="isUTCTime">
+<area shape="rect" coords="483,9,749,186" href="_3E3F0EC000E93CDE25AD031F-content.html" alt="InstalledSoftware">
+<area shape="rect" coords="1162,340,1359,392" href="_WRCB8BLJE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftwareSupportPackage">
+<area shape="rect" coords="826,178,1064,194" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html#_.l01.f.gBL0E.e.e.iBJV.s.eVAY.dA" alt="isVirtualizable">
+<area shape="rect" coords="819,153,1073,211" href="_L3JN.oBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="HostingPlatformRequirementSpec">
+<area shape="rect" coords="875,596,1077,648" href="_9UA0ABC1E.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftBlackBoxSpecification">
+<area shape="rect" coords="252,583,452,635" href="_PD.s.pMBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="SoftConnectionPointSpec">
+<area shape="rect" coords="146,434,321,486" href="_V.z-DIBC.zE.e.e.iBJV.s.eVAY.dA-content.html" alt="ConnectionPointSpec">
+<area shape="rect" coords="28,253,484,269" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html#_.a.dC40G8LE.e.i9W-GYK0.q.sK.w" alt="keyWords">
+<area shape="rect" coords="21,228,493,286" href="_S.eP58BC.yE.e.e.iBJV.s.eVAY.dA-content.html" alt="ResourceFunctionSpec">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Res.12 - Use of Resource Function in Information Framework Models (OLD RS.02)</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fO.hA.wAMOE.e.aYMZTO.w.dO.v.oQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Specification ABE Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

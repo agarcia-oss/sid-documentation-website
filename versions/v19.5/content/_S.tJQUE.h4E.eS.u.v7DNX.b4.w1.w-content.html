@@ -1,0 +1,152 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Metric Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.f.d.kB.cN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Metric Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Metric ABE::_Metric Addendum Figures::Figure Me.07a - Metric Threshold Definition - Derived Associations<br>
+</span><span class="ElementTitle">Diagram Figure Me.07a - Metric Threshold Definition - Derived Associations<br>
+</span><span class="ElementDocumentation">The following Figure shows an overview of how threshold are specified for a MetricDefMeasure.</br>A MetricDefMeasure specifies a measure of a specific aspect of an entity, such as lost packets or dealer sales target achievement, defined for a MetricDefinition that may trigger consequence (s) (MetricDefMeasureConsequence) if a threshold (MetricDefMeasureThreshold) is crossed.</br>A MetricDefMeasureThresholdSet provides a way to group a set of one or more MetricDefMeasureThresholdRules specifying the condition to evaluate for applying consequences.</br>The thresholdType specifies the type of MetricDefMeasureThresholdRule contained in the MetricDefMeasureThresholdSet.</br>The value is “LogicDefinition” if the MetricDefMeasureThresholdSet contains only MetricThresholdRuleDefinition instances and “PreDefined” if it contains only PreDefinedMetricThresholdRule instances.</br>A MetricDefMeasureThresholdSet is used to evaluate one or more MetricDefMesures.</br>Threshold rules (MetricDefMeasureThresholdRule) may differ in the condition that they apply, a raise condition or a clear condition, and in the severity of the threshold crossing.</br>A MetricDefMeasureConsequence defines the action (prescribed action or notification) taken when a MetricDefMeasureThresholdRule is crossed and might depend on MetricDefMeasureThresholdRule applied or not for the previous MetricMeasure..</br>When a MetricDefMeasureConsequence is applied (track as a MetricMeasureConsequence) this is the result of a single rule (MetricDefMeasureThresholdRule) being crossed.</br>Different consequences (MetricDefMeasureConsequence) can be defined for different severities. </br>The repeatAction attribute on MetricDefMeasureConsequence is an indicator used to specify that a consequence </br>        •	should cease  being applied if a value is in the same range as the previous value</br>        •	or continue being applied if a value is in the same range as the previous value.</br>If the repeatApplication is True, the consequence is always applied as soon as the MetricMeasure value is in the range of values and if the repeatApplication is False, the consequence is applied only if the previous MetricMeasure value wasn’t in the same range.</br>Nota: </br>        •	The two associations pre-fixed by a slash correspond to derived associations.</br>        •	A derived associations represents synthetically several associations. See example with the next figure.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_S.tJQUE.h4E.eS.u.v7DNX.b4.w1.w.PNG" alt="Figure Me.07a - Metric Threshold Definition - Derived Associations" usemap="#map_S.tJQUE.h4E.eS.u.v7DNX.b4.w1.w"></td>
+</tr>
+</table>
+<map name="map_S.tJQUE.h4E.eS.u.v7DNX.b4.w1.w">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC16IN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinitionThresholdSet">
+<area shape="rect" coords="0,0,0,0" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC_.rIN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasurement">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC16IN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinitionThresholdSet">
+<area shape="rect" coords="0,0,0,0" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC_.rIN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasurement">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC16IN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinitionThresholdSet">
+<area shape="rect" coords="516,543,522,559" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC16IN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinitionThresholdSet">
+<area shape="rect" coords="0,0,0,0" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC_.rIN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasurement">
+<area shape="rect" coords="509,600,527,616" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.xC_.rIN55E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasurement">
+<area shape="rect" coords="407,563,615,579" href="_.xC.i_MN55E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefMeasureEvaluatedUsing">
+<area shape="poly" coords="495,621,495,539,505,539,505,621,495,621" href="_.xC.i_MN55E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.oHYME.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureConsequence2">
+<area shape="rect" coords="0,0,0,0" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_G.oP7EE.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureThresholdRule2">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.oHYME.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureConsequence2">
+<area shape="rect" coords="0,0,0,0" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_G.oP7EE.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureThresholdRule2">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.oHYME.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureConsequence2">
+<area shape="rect" coords="421,221,439,237" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.oHYME.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureConsequence2">
+<area shape="rect" coords="0,0,0,0" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_G.oP7EE.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureThresholdRule2">
+<area shape="rect" coords="421,155,439,171" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_G.oP7EE.h4E.eS.u.v7DNX.b4.w1.w" alt="metricDefMeasureThresholdRule2">
+<area shape="rect" coords="23,183,481,199" href="_G.n7.yAE.h4E.eS.u.v7DNX.b4.w1.w-content.html" alt="MetricDefMeasureThresholdRuleResultsInMetricDefMeasureConsequence">
+<area shape="poly" coords="407,244,407,149,417,149,417,244,407,244" href="_G.n7.yAE.h4E.eS.u.v7DNX.b4.w1.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_1_34YEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_1_9_AEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureConsequence">
+<area shape="rect" coords="0,0,0,0" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_1_34YEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_1_9_AEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureConsequence">
+<area shape="rect" coords="0,0,0,0" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_1_34YEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureThresholdRule">
+<area shape="rect" coords="537,157,543,173" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_1_34YEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_1_9_AEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureConsequence">
+<area shape="rect" coords="537,228,543,244" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_1_9_AEM5E.eS.fR5U.f.x.h.i3OQ" alt="metricDefMeasureConsequence">
+<area shape="rect" coords="571,189,842,205" href="_1_.yY0EM5E.eS.fR5U.f.x.h.i3OQ-content.html" alt="MetricDefMeasureConsequenceDependsOn">
+<area shape="poly" coords="554,149,554,244,544,244,544,149,554,149" href="_1_.yY0EM5E.eS.fR5U.f.x.h.i3OQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_FFDN.wJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_FE3.n.kJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThreshold">
+<area shape="rect" coords="0,0,0,0" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_FFDN.wJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_FE3.n.kJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThreshold">
+<area shape="rect" coords="0,0,0,0" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_FFDN.wJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThresholdRule">
+<area shape="rect" coords="491,339,509,355" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_FFDN.wJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThresholdRule">
+<area shape="rect" coords="0,0,0,0" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_FE3.n.kJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThreshold">
+<area shape="rect" coords="496,410,503,426" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_FE3.n.kJM.wE.eO.bUN.v1_8.v.h8.w" alt="_metricDefMeasureThreshold">
+<area shape="rect" coords="349,375,596,391" href="_FE.s.o.cJM.wE.eO.bUN.v1_8.v.h8.w-content.html" alt="MetricDefMeasureThresholdSetContains">
+<area shape="poly" coords="476,434,476,333,486,333,486,434,476,434" href="_FE.s.o.cJM.wE.eO.bUN.v1_8.v.h8.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="209,581,216,597" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_5WH.p0N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefinition">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="408,663,414,679" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_5V0.u4N53E.eK.r.x6.vY.l-.rD.f.g" alt="_metricDefMeasure">
+<area shape="rect" coords="183,638,421,654" href="_5V.q94N53E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefinitionMeasuredAccordingTo">
+<area shape="poly" coords="420,667,196,667,196,581,205,581,205,657,420,657,420,667" href="_5V.q94N53E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.i.n2YALTUE.eO.s.zOI.e.h.a.dD.bQ" alt="collectionType">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.gZG.o.gLTUE.eO.s.zOI.e.h.a.dD.bQ" alt="perspective">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_R.aT.w.gP.k.wE.eK.y.aMFUG5.vBW.w" alt="metricLevel">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_-.pYWYN57E.eK.r.x6.vY.l-.rD.f.g" alt="lastUsed">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_8.x.n.j.gN57E.eK.r.x6.vY.l-.rD.f.g" alt="entryDate">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_.x.u.f0UN57E.eK.r.x6.vY.l-.rD.f.g" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_KJI44N5.pE.eK.r.x6.vY.l-.rD.f.g" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_U.lUBUN.z_E.eK.x.q4T-.pM.g.h.eQ" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_2.e7.u.gN.z8E.eK.x.q4T-.pM.g.h.eQ" alt="ID">
+<area shape="rect" coords="0,0,0,0" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html#_J.w.tPIH04E.eO.iY.q.x.wU.q84N.g" alt="validFor">
+<area shape="rect" coords="146,532,291,584" href="_ZBT.v.sN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html" alt="MetricDefinition">
+<area shape="rect" coords="324,303,617,319" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_G.xT.z.oK.nLE.eOD.m.p8V.n277.lQ" alt="description">
+<area shape="rect" coords="324,286,617,302" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_C4.q.uIK.nLE.eOD.m.p8V.n277.lQ" alt="name">
+<area shape="rect" coords="324,269,617,285" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html#_.t6_.v7X0WE.eO.iY.q.x.wU.q84N.g" alt="thresholdRuleSeverity">
+<area shape="rect" coords="318,244,627,336" href="_.t6_.v5H0WE.eO.iY.q.x.wU.q84N.g-content.html" alt="MetricDefMeasureThresholdRule">
+<area shape="rect" coords="383,119,605,135" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_.vGX.x.wD.j4E.eSA.n.e0.qJ.m.y.s.n.w" alt="repeatAction">
+<area shape="rect" coords="383,102,605,118" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_TB7A.wJO-E.eO.iIN0.e.pOQZO.g" alt="validFor">
+<area shape="rect" coords="383,85,605,101" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_TB5.y.oJO-E.eO.iIN0.e.pOQZO.g" alt="prescribedAction">
+<area shape="rect" coords="383,68,605,84" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_TB5L.kJO-E.eO.iIN0.e.pOQZO.g" alt="description">
+<area shape="rect" coords="383,51,605,67" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_TB4.k.gJO-E.eO.iIN0.e.pOQZO.g" alt="name">
+<area shape="rect" coords="383,34,605,50" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html#_TB3WYJO-E.eO.iIN0.e.pOQZO.g" alt="ID">
+<area shape="rect" coords="376,9,614,152" href="_4.b.l.s.sN6.iE.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefMeasureConsequence">
+<area shape="rect" coords="375,509,608,525" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.a2.i.a.l.t56E.eK.r.x6.vY.l-.rD.f.g" alt="thresholdType">
+<area shape="rect" coords="375,492,608,508" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.a2.i.a.lN56E.eK.r.x6.vY.l-.rD.f.g" alt="description">
+<area shape="rect" coords="375,475,608,491" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.a2.i.a.k.t56E.eK.r.x6.vY.l-.rD.f.g" alt="name">
+<area shape="rect" coords="375,458,608,474" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html#_.a2.i.a.kN56E.eK.r.x6.vY.l-.rD.f.g" alt="ID">
+<area shape="rect" coords="368,434,617,543" href="_YHP_QN55E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefMeasureThresholdSet">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.a.iJ.xULTWE.eO.s.zOI.e.h.a.dD.bQ" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_ITVLYBS.vE.eOJX4.jBMGKFN.w" alt="captureFrequency">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.x8P0.oBS.uE.eOJX4.jBMGKFN.w" alt="captureMethod">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_.y.l.hDQN54E.eK.r.x6.vY.l-.rD.f.g" alt="valueType">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_P5E5YN54E.eK.r.x6.vY.l-.rD.f.g" alt="capturePeriod">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_L6.q.jEN54E.eK.r.x6.vY.l-.rD.f.g" alt="accuracy">
+<area shape="rect" coords="0,0,0,0" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html#_I.xO.s8N54E.eK.r.x6.vY.l-.rD.f.g" alt="unitOfMeasure">
+<area shape="rect" coords="420,621,577,673" href="_0UB.o8N53E.eK.r.x6.vY.l-.rD.f.g-content.html" alt="MetricDefMeasure">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Me.07a - Metric Threshold Definition - Derived Associations</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.f.d.kB.cN.z4E.eK.x.q4T-.pM.g.h.eQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Metric Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

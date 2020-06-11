@@ -1,0 +1,103 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Customer Bill Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Customer Domain::Customer Bill ABE::_Customer Bill Addendum Figures::Figure C.28 - Customer Billing Credit<br>
+</span><span class="ElementTitle">Diagram Figure C.28 - Customer Billing Credit<br>
+</span><span class="ElementDocumentation">The creation of CustomerBillingCredit instances is usually governed by ProductOfferingPriceRules. The ProductOfferingPriceRule or some other business logic can grant a certain credit to a customer account. When a part of the credit is applied during the billing process, the available credit is reduced. The CustomerBillingCredit and related business entities keep track of the credit. Because the balance of the CustomerBillingCredit changes over the time, the CustomerBillingCreditBalance entity represents the balance valid for a certain time period.</br>The CustomerDiscount business entity is a type of the CustomerBillingCredit. It keeps track of the available discount quantity for the associated DiscountProductPriceAlteration. For example, the DiscountProductPriceAlteration grants $100 discount on the Product charge. As the customer uses the service, the billing process is creating AppliedCustomerBillingCharge instances during each billing cycle, and the available discount amount is reduced. The billing process utilizes the CustomerDiscountBalance to keep track of the available discount (that has not been used yet).</br>The CustomerAllowanceBalance business entity similarly keeps track of the available allowance (that has not been used yet).</br>The figure below serves merely as an example of possible types of the CustomerBillingCredit that can be easily extended to keep track of other credits. Moreover CustomerBillingCreditBalance is a subclass of CustomerAccountBalance. CustomerBillingCreditBalance can be extended to keep track of other credit balance, not only non-monetary credit balance but also monetary credit balance.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E942146E440355.PNG" alt="Figure C.28 - Customer Billing Credit" usemap="#map_3E3F0EC000E942146E440355"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E942146E440355">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B002D-content.html#_V.z.g.s4FH6E.eOKS8.k.mYO732.g" alt="discountProdPriceAlteration">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420A16E602B9-content.html#_V.z.l.lYFH6E.eOKS8.k.mYO732.g" alt="customerDiscount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B002D-content.html#_V.z.g.s4FH6E.eOKS8.k.mYO732.g" alt="discountProdPriceAlteration">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420A16E602B9-content.html#_V.z.l.lYFH6E.eOKS8.k.mYO732.g" alt="customerDiscount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B002D-content.html#_V.z.g.s4FH6E.eOKS8.k.mYO732.g" alt="discountProdPriceAlteration">
+<area shape="rect" coords="542,189,549,205" href="_3E3F0EC000E942146E4B002D-content.html#_V.z.g.s4FH6E.eOKS8.k.mYO732.g" alt="discountProdPriceAlteration">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420A16E602B9-content.html#_V.z.l.lYFH6E.eOKS8.k.mYO732.g" alt="customerDiscount">
+<area shape="rect" coords="241,189,247,205" href="_3E3F0EC000E9420A16E602B9-content.html#_V.z.l.lYFH6E.eOKS8.k.mYO732.g" alt="customerDiscount">
+<area shape="rect" coords="295,158,493,174" href="_V.z.dC.gFH6E.eOKS8.k.mYO732.g-content.html" alt="AvailableDiscountIsPresentedBy">
+<area shape="poly" coords="560,188,235,188,235,178,560,178,560,188" href="_V.z.dC.gFH6E.eOKS8.k.mYO732.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B0009-content.html#_3E3F0EC000E942146E4B000D" alt="_customerBillingCreditBalance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420F8BB1009B-content.html#_3E3F0EC000E942146E4B000E" alt="_customerBillingCredit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B0009-content.html#_3E3F0EC000E942146E4B000D" alt="_customerBillingCreditBalance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420F8BB1009B-content.html#_3E3F0EC000E942146E4B000E" alt="_customerBillingCredit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B0009-content.html#_3E3F0EC000E942146E4B000D" alt="_customerBillingCreditBalance">
+<area shape="rect" coords="924,420,950,437" href="_3E3F0EC000E942146E4B0009-content.html#_3E3F0EC000E942146E4B000D" alt="_customerBillingCreditBalance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420F8BB1009B-content.html#_3E3F0EC000E942146E4B000E" alt="_customerBillingCredit">
+<area shape="rect" coords="902,53,910,70" href="_3E3F0EC000E9420F8BB1009B-content.html#_3E3F0EC000E942146E4B000E" alt="_customerBillingCredit">
+<area shape="rect" coords="891,283,1153,300" href="_3E3F0EC000E942146E4B000C-content.html" alt="AvailableCustomerBillingCreditHas">
+<area shape="poly" coords="873,71,983,71,983,446,913,446,913,436,973,436,973,81,873,81,873,71" href="_3E3F0EC000E942146E4B000C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420F8BF9006B-content.html" alt="Generalization">
+<area shape="poly" coords="609,583,609,503,763,503,763,471,773,471,773,512,619,512,619,583,609,583" href="_3E3F0EC000E9420F8BF9006B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9420F8BF60221-content.html" alt="Generalization">
+<area shape="poly" coords="898,582,898,512,763,512,763,471,773,471,773,503,908,503,908,582,898,582" href="_3E3F0EC000E9420F8BF60221-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B002C-content.html" alt="Generalization">
+<area shape="poly" coords="634,169,634,112,725,112,725,80,735,80,735,121,644,121,644,169,634,169" href="_3E3F0EC000E942146E4B002C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942146E4B0028-content.html" alt="Generalization">
+<area shape="poly" coords="845,169,845,121,725,121,725,80,735,80,735,112,855,112,855,169,845,169" href="_3E3F0EC000E942146E4B0028-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="621,377,915,474" href="_3E3F0EC000E9420F8BB1009B-content.html" alt="CustomerBillingCreditBalance">
+<area shape="rect" coords="592,33,866,48" href="_3E3F0EC000E942146E4B0009-content.html#_3E3F0EC000E942146E4B000A" alt="validFor">
+<area shape="rect" coords="586,9,875,83" href="_3E3F0EC000E942146E4B0009-content.html" alt="CustomerBillingCredit">
+<area shape="rect" coords="766,169,937,220" href="_3E3F0EC000E942146E4B0029-content.html" alt="CustomerAllowance">
+<area shape="rect" coords="793,582,1014,633" href="_3E3F0EC000E9420F8BC8034A-content.html" alt="CustomerAllowanceBalance">
+<area shape="rect" coords="560,169,721,220" href="_3E3F0EC000E942146E4B002D-content.html" alt="CustomerDiscount">
+<area shape="rect" coords="9,170,237,221" href="_3E3F0EC000E9420A16E602B9-content.html" alt="DiscountProdPriceAlteration">
+<area shape="rect" coords="510,583,721,634" href="_3E3F0EC000E9420F8BD803E6-content.html" alt="CustomerDiscountBalance">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure C.28 - Customer Billing Credit</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,2475 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Converged Network ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for ForwardingRelationshipEncapsulation">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Converged Network ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE</span>
+<br>
+<span class="ElementTitle">Class ForwardingRelationshipEncapsulation</span>
+<p>
+<a name="documentationSection"></a>The ForwardingRelationshipEncapsulation (FRE) is bounded by two or more endpoints each of which may be associated with a TPEs. The FRE represents the enabled constrained potential for forwarding of information between those endpoints (i.e. to/from the associated TPEs) for a particular layer protocol (where the TPE must clearly have LayerTerminations (LTs) associated that operate with that layer protocol). Note that where the TPE is associated indirectly with a TopologicalLink (TL) the information from the FRE will be passed across the network via that TL and where the LT of the TPE is a layer protocol termination the information from the FRE will be prepared to transition layers of the network.</br></br>Each endpoint of the FRE has a specific role in the context of the FRE where the possible roles and the interpretation of the roles are goverened by the type of FRE. The types of FRE are equivalent to the types of SNC described in MTOSI SD1-36 (refer to SD1-36_SNCTypes for explanation of SNC Properties, SNC Parameters, unidirectional SNCs, Point-to-Multipoint SNC, Routing Constraints and Route Discovery).</br></br>An FRE may encompass a sequence of supporting FREs (which describe in more detail the route of the information comveyed by the FRE thorugh the network). The relationship is recursive such that a supporting FREs may itself be supported FREs (i.e. FREs supporting FREs supporting FREs). The FRE at the highest level of a recursion is referred to as top-level FRE. Note that a Call may have one or more parallel top-level Connection(s).</br></br>An FRE may be used to represent various planning states. In these planning states the FRE may have only partial values for associated TPE name etc.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">AlarmSeverityAssignmentProfile </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_asapRef" href="#_3M.bZW.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="_asapRef"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_asapRef" href="#_3M.bZW.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_asapRef</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute indicates the assignment of an Alarm Severity Assignment Profile (ASAP) to the FRE.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">FreConnectionless </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_freConnectionlessPackage" href="#_3M.bZX.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="_freConnectionlessPackage"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_freConnectionlessPackage" href="#_3M.bZX.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_freConnectionlessPackage</a></td><td>
+<p>
+<a name="documentationSection"></a>Pulls in to package of attributes that relate to preservation of information flow identifiers and other flow control properties across the FRE.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">FreControlPlane </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_freControlPlanePackage" href="#_3M.bZY.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="_freControlPlanePackage"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_freControlPlanePackage" href="#_3M.bZY.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_freControlPlanePackage</a></td><td>
+<p>
+<a name="documentationSection"></a>Pulls in the package of attributes that relate to delegated routing capability utilised during the construction and maintenance of the FRE such as that associated with a traditional control plane.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">NetworkForwardingDomain </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_nfdRef" href="#_3M.bZ.cPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="_nfdRef"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_nfdRef" href="#_3M.bZ.cPP.wE.e.i9.q9.cTJ.t.dZ6.w">_nfdRef</a></td><td>
+<p>
+<a name="documentationSection"></a>Where naming does not relate the FRE to the NFD this association is used. Identifies the NFD that the FRE is within. Applies where NFDs are defined for or within ManagedElements.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">ForwardingRelationshipEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_supportingFreRefList" href="#_3M.bZV.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="_supportingFreRefList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_supportingFreRefList" href="#_3M.bZV.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_supportingFreRefList</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::deploymentActivityState" href="#_3M.bZZ.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="deploymentActivityState"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::deploymentActivityState" href="#_3M.bZZ.vP.wE.e.i9.q9.cTJ.t.dZ6.w">deploymentActivityState</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute represents the activity state of the current deployment request (e.g. activate, modify, and deactivate). If there is no in-progress deployment request, then the activity state is INACTIVE.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::deploymentState" href="#_3M.bZR.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="deploymentState"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::deploymentState" href="#_3M.bZR.fP.wE.e.i9.q9.cTJ.t.dZ6.w">deploymentState</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute represents the state of provisioning of the forwarding relationship between the set of end points.</br>PARTIAL: Indicates that only part of the FRE has been activated in the network.</br>PENDING: Indicates that none of the FRE resources have been deployed.</br>COMPLETE: Indicates the FRE has been successfully deployed in all Network Elements and no further intervention is required.</br></br>Note that a COMPLETE FRE is not necessarily enabled to carry traffic or carrying traffic.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::direction" href="#_3M.bZU.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="direction"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::direction" href="#_3M.bZU.vP.wE.e.i9.q9.cTJ.t.dZ6.w">direction</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute represents the directionality of the FRE.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">ForwardingRelationshipEncapsulation </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::forwardingrelationshipencapsulation" href="#_3M.b.a.f.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="forwardingrelationshipencapsulation"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::forwardingrelationshipencapsulation" href="#_3M.b.a.f.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::freType" href="#_3M.bZUPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="freType"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::freType" href="#_3M.bZUPP.wE.e.i9.q9.cTJ.t.dZ6.w">freType</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute provides the name of the type of the FRE.</br>The type is an expression of the traffic flow and potential for flow (accounting for protection switching constructs etc) through the FRE between the EndPoints of the FRE.</br>This attribute essentially provides the name of the spec for the FRE. The FRE may have further specification details provided via other specification mechanisms.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::isAlarmReporting" href="#_3M.bZT.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="isAlarmReporting"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::isAlarmReporting" href="#_3M.bZT.fP.wE.e.i9.q9.cTJ.t.dZ6.w">isAlarmReporting</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute identifies whether alarm reporting for this FRE is administratively enabled or disabled. </br>True = alarm reporting is enabled; False = alarm reporting is disabled.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::isFixed" href="#_3M.bZS_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="isFixed"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::isFixed" href="#_3M.bZS_P.wE.e.i9.q9.cTJ.t.dZ6.w">isFixed</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute identifies whether the FRE can be deleted via the interface (isFixed = FALSE) or cannot be deleted (isFixed = TRUE). </br>Where isFixed = TRUE attempts to delete the FRE by the OS will be rejected.</br></br>Where an FRE has a route (i.e. is known to traverse multiple NEs) all NFREs of the FRE must be fxed for the FRE to be fixed.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">«preliminary, likelyToChange» ItuArcStateAndStatusList </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::ituArcStateAndStatusList" href="#_3M.bZR_P.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="ituArcStateAndStatusList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::ituArcStateAndStatusList" href="#_3M.bZR_P.wE.e.i9.q9.cTJ.t.dZ6.w">ituArcStateAndStatusList</a></td><td>
+<p>
+<a name="documentationSection"></a>See R_TMF518_NRB_I_0001 and R_TMF518_NRB_I_0004. </br>See supporting document SD1-8_encodingX731M3100...\..\Framework\SD\SD1-8_encodingX731M3100.pdf</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::layerProtocolName" href="#_3M.bZ.bPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="layerProtocolName"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::layerProtocolName" href="#_3M.bZ.bPP.wE.e.i9.q9.cTJ.t.dZ6.w">layerProtocolName</a></td><td>
+<p>
+<a name="documentationSection"></a>Provides the name and potentially additional information such as version number for the protocol/layer that the FRE supports. Syntax and semantic to be specified.</br></br>Note: allowed value examples: “X2”, “LR Optical Channel”.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType"> </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::managedelement" href="#_3M.bZ.dPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="managedelement"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::managedelement" href="#_3M.bZ.dPP.wE.e.i9.q9.cTJ.t.dZ6.w">managedelement</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">NetworkForwardingDomain </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::networkforwardingdomain" href="#_3M.b.aY.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="networkforwardingdomain"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::networkforwardingdomain" href="#_3M.b.aY.fP.wE.e.i9.q9.cTJ.t.dZ6.w">networkforwardingdomain</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">AttributeValuePair </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::transmissionParameterList" href="#_3M.bZ.aPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="transmissionParameterList"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::transmissionParameterList" href="#_3M.bZ.aPP.wE.e.i9.q9.cTJ.t.dZ6.w">transmissionParameterList</a></td><td>
+<p>
+<a name="documentationSection"></a>A list of specific parameters related to the layer of the FRE. </p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::wasRoutedByNetwork" href="#_3M.bZVPP.wE.e.i9.q9.cTJ.t.dZ6.w"><img border="0" src="../images/30297464_icon.png" alt="wasRoutedByNetwork"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::wasRoutedByNetwork" href="#_3M.bZVPP.wE.e.i9.q9.cTJ.t.dZ6.w">wasRoutedByNetwork</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute indicates if the current route of the FRE was computed by the managed system (i.e. "the network", all capabilities below the interface that defines the perspectiveof managed system) or not (e.g. the route was provided over an interface by a client EMS). </br></br>If rerouting is allowed, this attribute identifies whether the routing was carried out by "the network" or not.</br></br>If there is no network routing capability the attribute should be set to False.</p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::LogicalResource">&nbsp;SID Models::Resource Domain::Resource ABE::Logical Resource ABE::LogicalResource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="lrStatus">&nbsp;lrStatus, <img border="0" src="../images/30297464_icon.png" alt="serviceState">&nbsp;serviceState, <img border="0" src="../images/30297464_icon.png" alt="isOperational">&nbsp;isOperational, <img border="0" src="../images/30297464_icon.png" alt="resourceFacingService">&nbsp;resourceFacingService, <img border="0" src="../images/30297464_icon.png" alt="logicalResourceRole">&nbsp;logicalResourceRole, <img border="0" src="../images/30297464_icon.png" alt="physicalResource">&nbsp;physicalResource</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Resource">&nbsp;SID Models::Resource Domain::Resource ABE::Resource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_managementDomain">&nbsp;_managementDomain, <img border="0" src="../images/30297464_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/30297464_icon.png" alt="_resourceRole">&nbsp;_resourceRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceSpecification">&nbsp;_resourceSpecification, <img border="0" src="../images/30297464_icon.png" alt="_resourceUsage">&nbsp;_resourceUsage, <img border="0" src="../images/30297464_icon.png" alt="usageState">&nbsp;usageState, <img border="0" src="../images/30297464_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/30297464_icon.png" alt="_performance2">&nbsp;_performance2, <img border="0" src="../images/30297464_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService, <img border="0" src="../images/30297464_icon.png" alt="_product">&nbsp;_product, <img border="0" src="../images/30297464_icon.png" alt="_resourceCharacteristicValue">&nbsp;_resourceCharacteristicValue, <img border="0" src="../images/30297464_icon.png" alt="_resourceSecurityEntity">&nbsp;_resourceSecurityEntity, <img border="0" src="../images/30297464_icon.png" alt="_securityEventCollectionMethod">&nbsp;_securityEventCollectionMethod, <img border="0" src="../images/30297464_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/30297464_icon.png" alt="_securityThreatTool">&nbsp;_securityThreatTool, <img border="0" src="../images/30297464_icon.png" alt="_commonResourceInfo">&nbsp;_commonResourceInfo, <img border="0" src="../images/30297464_icon.png" alt="_partyRole3">&nbsp;_partyRole3, <img border="0" src="../images/30297464_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacity">&nbsp;resourceCapacity, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacityDemand">&nbsp;resourceCapacityDemand, <img border="0" src="../images/30297464_icon.png" alt="_resourceInvolvementRole">&nbsp;_resourceInvolvementRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceUser">&nbsp;_resourceUser, <img border="0" src="../images/30297464_icon.png" alt="runningSoftwareStatistics">&nbsp;runningSoftwareStatistics, <img border="0" src="../images/30297464_icon.png" alt="software">&nbsp;software, <img border="0" src="../images/30297464_icon.png" alt="compoundResource">&nbsp;compoundResource, <img border="0" src="../images/30297464_icon.png" alt="resourceConfiguration">&nbsp;resourceConfiguration, <img border="0" src="../images/30297464_icon.png" alt="resourceConfigSpec">&nbsp;resourceConfigSpec, <img border="0" src="../images/30297464_icon.png" alt="resourceTest">&nbsp;resourceTest, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship">&nbsp;resourceRelationship, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship2">&nbsp;resourceRelationship2, <img border="0" src="../images/30297464_icon.png" alt="resource">&nbsp;resource, <img border="0" src="../images/30297464_icon.png" alt="resource22">&nbsp;resource22, <img border="0" src="../images/30297464_icon.png" alt="problem2">&nbsp;problem2, <img border="0" src="../images/30297464_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/30297464_icon.png" alt="_alarm_3">&nbsp;_alarm_3, <img border="0" src="../images/30297464_icon.png" alt="_alarm_2">&nbsp;_alarm_2, <img border="0" src="../images/30297464_icon.png" alt="_alarm_1">&nbsp;_alarm_1, <img border="0" src="../images/30297464_icon.png" alt="resourcePerformance">&nbsp;resourcePerformance</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/30297464_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/30297464_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/30297464_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">ForwardingRelationshipEncapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Converged Network ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Converged Network ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Converged Network ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZW.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_asapRef</a></span>
+<pre>Public&nbsp;AlarmSeverityAssignmentProfile _asapRef</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute indicates the assignment of an Alarm Severity Assignment Profile (ASAP) to the FRE.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZW.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.a.gPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">AsapIsAssignedToFre</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_asapRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_.jB.gIAGA.gE.eCRR.pP5K.uJL.vQ-content.html#_3M.b.a.g.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_asapRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.jB.gIAGA.gE.eCRR.pP5K.uJL.vQ-content.html">AlarmSeverityAssignmentProfile</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZX.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_freConnectionlessPackage</a></span>
+<pre>Public&nbsp;FreConnectionless _freConnectionlessPackage</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Pulls in to package of attributes that relate to preservation of information flow identifiers and other flow control properties across the FRE.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZX.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">Composite</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.a.ePP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreIsExtendedByConnectionless</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_freConnectionlessPackage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.d_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.b.a.e.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_freConnectionlessPackage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.d_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreConnectionless</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZY.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_freControlPlanePackage</a></span>
+<pre>Public&nbsp;FreControlPlane _freControlPlanePackage</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Pulls in the package of attributes that relate to delegated routing capability utilised during the construction and maintenance of the FRE such as that associated with a traditional control plane.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZY.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">Composite</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.a.hPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreIsExtendedByControlPlane</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_freControlPlanePackage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.f_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.b.a.h.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_freControlPlanePackage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.f_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreControlPlane</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZ.cPP.wE.e.i9.q9.cTJ.t.dZ6.w">_nfdRef</a></span>
+<pre>Public&nbsp;NetworkForwardingDomain _nfdRef</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Where naming does not relate the FRE to the NFD this association is used. Identifies the NFD that the FRE is within. Applies where NFDs are defined for or within ManagedElements.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.cPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.a.dPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreIsInNfd</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_nfdRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZ.k_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.b.a.d.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_nfdRef</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.k_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">NetworkForwardingDomain</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZV.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_supportingFreRefList</a></span>
+<pre>Public&nbsp;ForwardingRelationshipEncapsulation _supportingFreRefList</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZV.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.a.fPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreSupportedByFre</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_supportingFreRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.b.a.f.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::_supportingFreRefList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZZ.vP.wE.e.i9.q9.cTJ.t.dZ6.w">deploymentActivityState</a></span>
+<pre>Public&nbsp;String deploymentActivityState</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute represents the activity state of the current deployment request (e.g. activate, modify, and deactivate). If there is no in-progress deployment request, then the activity state is INACTIVE.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZZ.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">deploymentActivityState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::deploymentActivityState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZR.fP.wE.e.i9.q9.cTJ.t.dZ6.w">deploymentState</a></span>
+<pre>Public&nbsp;String deploymentState</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute represents the state of provisioning of the forwarding relationship between the set of end points.</br>PARTIAL: Indicates that only part of the FRE has been activated in the network.</br>PENDING: Indicates that none of the FRE resources have been deployed.</br>COMPLETE: Indicates the FRE has been successfully deployed in all Network Elements and no further intervention is required.</br></br>Note that a COMPLETE FRE is not necessarily enabled to carry traffic or carrying traffic.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZR.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">deploymentState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::deploymentState</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZU.vP.wE.e.i9.q9.cTJ.t.dZ6.w">direction</a></span>
+<pre>Public&nbsp;String direction</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute represents the directionality of the FRE.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZU.vP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">direction</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::direction</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.b.a.f.fP.wE.e.i9.q9.cTJ.t.dZ6.w">forwardingrelationshipencapsulation</a></span>
+<pre>Public&nbsp;ForwardingRelationshipEncapsulation forwardingrelationshipencapsulation</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.a.f.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.a.fPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">FreSupportedByFre</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">forwardingrelationshipencapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html#_3M.bZV.vP.wE.e.i9.q9.cTJ.t.dZ6.w">_supportingFreRefList</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::forwardingrelationshipencapsulation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZUPP.wE.e.i9.q9.cTJ.t.dZ6.w">freType</a></span>
+<pre>Public&nbsp;String freType</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute provides the name of the type of the FRE.</br>The type is an expression of the traffic flow and potential for flow (accounting for protection switching constructs etc) through the FRE between the EndPoints of the FRE.</br>This attribute essentially provides the name of the spec for the FRE. The FRE may have further specification details provided via other specification mechanisms.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZUPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">freType</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::freType</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZT.fP.wE.e.i9.q9.cTJ.t.dZ6.w">isAlarmReporting</a></span>
+<pre>Public&nbsp;Boolean isAlarmReporting</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute identifies whether alarm reporting for this FRE is administratively enabled or disabled. </br>True = alarm reporting is enabled; False = alarm reporting is disabled.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZT.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">(false)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">isAlarmReporting</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::isAlarmReporting</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZS_P.wE.e.i9.q9.cTJ.t.dZ6.w">isFixed</a></span>
+<pre>Public&nbsp;Boolean isFixed</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute identifies whether the FRE can be deleted via the interface (isFixed = FALSE) or cannot be deleted (isFixed = TRUE). </br>Where isFixed = TRUE attempts to delete the FRE by the OS will be rejected.</br></br>Where an FRE has a route (i.e. is known to traverse multiple NEs) all NFREs of the FRE must be fxed for the FRE to be fixed.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZS_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">isFixed</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::isFixed</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZR_P.wE.e.i9.q9.cTJ.t.dZ6.w">ituArcStateAndStatusList</a></span>
+<pre>Public&nbsp;«preliminary, likelyToChange» ItuArcStateAndStatusList ituArcStateAndStatusList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>See R_TMF518_NRB_I_0001 and R_TMF518_NRB_I_0004. </br>See supporting document SD1-8_encodingX731M3100...\..\Framework\SD\SD1-8_encodingX731M3100.pdf</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZR_P.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">ituArcStateAndStatusList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::ituArcStateAndStatusList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_2GPEYOC.rE.d6.gSPU.fQ.cL.nZ.g-content.html">«preliminary, likelyToChange» ItuArcStateAndStatusList</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZ.bPP.wE.e.i9.q9.cTJ.t.dZ6.w">layerProtocolName</a></span>
+<pre>Public&nbsp;String layerProtocolName</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>Provides the name and potentially additional information such as version number for the protocol/layer that the FRE supports. Syntax and semantic to be specified.</br></br>Note: allowed value examples: “X2”, “LR Optical Channel”.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.bPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">layerProtocolName</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::layerProtocolName</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZ.dPP.wE.e.i9.q9.cTJ.t.dZ6.w">managedelement</a></span>
+<pre>Public&nbsp; managedelement</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.dPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">managedelement</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::managedelement</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.b.aY.fP.wE.e.i9.q9.cTJ.t.dZ6.w">networkforwardingdomain</a></span>
+<pre>Public&nbsp;NetworkForwardingDomain networkforwardingdomain</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3M.b.aY.fP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3M.b.aX.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">«names» NfdContainsFres</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">networkforwardingdomain</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::networkforwardingdomain</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3M.bZ.k_P.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">NetworkForwardingDomain</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZ.aPP.wE.e.i9.q9.cTJ.t.dZ6.w">transmissionParameterList</a></span>
+<pre>Public&nbsp;AttributeValuePair transmissionParameterList</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A list of specific parameters related to the layer of the FRE. </p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZ.aPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">transmissionParameterList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::transmissionParameterList</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_8_P-.sP.o7E.d.uV.sYI7.m.fNDXQ-content.html">AttributeValuePair</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3M.bZVPP.wE.e.i9.q9.cTJ.t.dZ6.w">wasRoutedByNetwork</a></span>
+<pre>Public&nbsp;Boolean wasRoutedByNetwork</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute indicates if the current route of the FRE was computed by the managed system (i.e. "the network", all capabilities below the interface that defines the perspectiveof managed system) or not (e.g. the route was provided over an interface by a client EMS). </br></br>If rerouting is allowed, this attribute identifies whether the routing was carried out by "the network" or not.</br></br>If there is no network routing capability the attribute should be set to False.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3M.bZVPP.wE.e.i9.q9.cTJ.t.dZ6.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">wasRoutedByNetwork</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3M.bZQ.vP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">ForwardingRelationshipEncapsulation</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Converged Network ABE::ForwardingRelationshipEncapsulation::wasRoutedByNetwork</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3M.bZQPP.wE.e.i9.q9.cTJ.t.dZ6.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Converged Network ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

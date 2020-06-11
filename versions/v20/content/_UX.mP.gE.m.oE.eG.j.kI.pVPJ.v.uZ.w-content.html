@@ -1,0 +1,134 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Customer Interaction Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_L.sSA.kJ2CE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Customer Interaction Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Customer Domain::Customer Interaction ABE::Customer Interaction Addendum Figures::Figure C.07 - CustomerDisputedAmount associations to other business entities<br>
+</span><span class="ElementTitle">Diagram Figure C.07 - CustomerDisputedAmount associations to other business entities<br>
+</span><span class="ElementDocumentation">CustomerDisputedAmount is a subclass of DisputedAmount which models amount in dispute between the enterprise and a customer (amount can be in dispute between the enterprise and other entities such as supplier or partner). The Customer can request a refund for a specific Charge (for example, because the service was not available in a specific time), for a bill (for example when a bill is too high because of unexpected charges such as data roaming) or by generic complaint (for example when the customer waited at home for a technician which did not arrive on time). Each such a request generates a CustomerDisputedAmount request which is associates optionally to the entity which is in dispute. The generic dispute is associated with the CustomerAccount.</br>In addition justified dispute generates AppliedCustomerBillingRebate for the justified amount. The association DisputeAppliesTo is required for accessing all CustomerDisputedAmounts which relate for specific CustomerAccount (for example when evaluating if the CustomerAccount should be moved to Collection handling)</br>All this is modeled in the following figure:<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_UX.mP.gE.m.oE.eG.j.kI.pVPJ.v.uZ.w.PNG" alt="Figure C.07 - CustomerDisputedAmount associations to other business entities" usemap="#map_UX.mP.gE.m.oE.eG.j.kI.pVPJ.v.uZ.w"></td>
+</tr>
+</table>
+<map name="map_UX.mP.gE.m.oE.eG.j.kI.pVPJ.v.uZ.w">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CBDAB5031B-content.html#_.iAA9MH.u.oE.e.m32PUJUD.d2.u.w" alt="_customerAccount2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.iAC.yYH.u.oE.e.m32PUJUD.d2.u.w" alt="appliedCustomerBillingRebate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CBDAB5031B-content.html#_.iAA9MH.u.oE.e.m32PUJUD.d2.u.w" alt="_customerAccount2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.iAC.yYH.u.oE.e.m32PUJUD.d2.u.w" alt="appliedCustomerBillingRebate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CBDAB5031B-content.html#_.iAA9MH.u.oE.e.m32PUJUD.d2.u.w" alt="_customerAccount2">
+<area shape="rect" coords="781,337,801,353" href="_3E3F0EC000E941CBDAB5031B-content.html#_.iAA9MH.u.oE.e.m32PUJUD.d2.u.w" alt="_customerAccount2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.iAC.yYH.u.oE.e.m32PUJUD.d2.u.w" alt="appliedCustomerBillingRebate">
+<area shape="rect" coords="266,368,272,384" href="_3E3F0EC000E93C8D16D901C7-content.html#_.iAC.yYH.u.oE.e.m32PUJUD.d2.u.w" alt="appliedCustomerBillingRebate">
+<area shape="rect" coords="394,306,623,322" href="_.iAAWIH.u.oE.e.m32PUJUD.d2.u.w-content.html" alt="ACBRebateRefersToCustomerAccount">
+<area shape="poly" coords="240,356,503,356,503,318,816,318,816,328,513,328,513,366,240,366,240,356" href="_.iAAWIH.u.oE.e.m32PUJUD.d2.u.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_YU.a.w.wE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_YU.d0EE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount2">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_YU.a.w.wE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_YU.d0EE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount2">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_YU.a.w.wE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount2">
+<area shape="rect" coords="793,321,801,340" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_YU.a.w.wE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_YU.d0EE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount2">
+<area shape="rect" coords="472,243,478,262" href="_3E3F0EC000E93C8D16D901C7-content.html#_YU.d0EE.m.wE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount2">
+<area shape="rect" coords="550,298,673,317" href="_YUY7.kE.m.wE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="DisputeAppliesTo">
+<area shape="poly" coords="491,238,491,312,816,312,816,322,481,322,481,238,491,238" href="_YUY7.kE.m.wE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.vM.rXYE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.vM.u.a.sE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.vM.rXYE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.vM.u.a.sE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.vM.rXYE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount">
+<area shape="rect" coords="831,259,853,278" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.vM.rXYE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.vM.u.a.sE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="533,227,539,246" href="_3E3F0EC000E93C8D16D901C7-content.html#_.vM.u.a.sE.m.vE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="602,227,796,246" href="_.vM.p.iME.m.vE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="GenericDisputGeneratedFor">
+<area shape="poly" coords="528,222,865,222,865,294,855,294,855,232,528,232,528,222" href="_.vM.p.iME.m.vE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_Q.tP18E.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCredit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CBDAB5031B-content.html#_Q.tT.gUE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_Q.tP18E.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCredit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CBDAB5031B-content.html#_Q.tT.gUE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_Q.tP18E.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCredit">
+<area shape="rect" coords="51,319,73,338" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_Q.tP18E.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCredit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CBDAB5031B-content.html#_Q.tT.gUE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="288,198,310,217" href="_3E3F0EC000E941CBDAB5031B-content.html#_Q.tT.gUE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="58,198,242,217" href="_Q.tNZ.sE.m.uE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="JustifiedDisputeGenerates">
+<area shape="poly" coords="322,233,78,233,78,344,68,344,68,223,322,223,322,233" href="_Q.tNZ.sE.m.uE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_DJ.s.xYE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCharge">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD7C1023E-content.html#_DJ.w.b.wE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_DJ.s.xYE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCharge">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD7C1023E-content.html#_DJ.w.b.wE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_DJ.s.xYE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCharge">
+<area shape="rect" coords="842,154,864,173" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_DJ.s.xYE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_appliedCustomerBillingCharge">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD7C1023E-content.html#_DJ.w.b.wE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="542,169,548,188" href="_3E3F0EC000E941CAD7C1023E-content.html#_DJ.w.b.wE.m.uE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="660,178,790,197" href="_DJ.qVIE.m.uE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="ChargeDisputedBy">
+<area shape="poly" coords="528,192,861,192,861,141,871,141,871,201,528,201,528,192" href="_DJ.qVIE.m.uE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.uJ.iKQE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.uJ.l0.oE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.uJ.iKQE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.uJ.l0.oE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="0,0,0,0" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.uJ.iKQE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerBill">
+<area shape="rect" coords="437,68,459,87" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html#_.uJ.iKQE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.uJ.l0.oE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="445,160,451,179" href="_3E3F0EC000E941CAC1D6038E-content.html#_.uJ.l0.oE.m.tE.eG.j.kI.pVPJ.v.uZ.w" alt="_customerDisputedAmount">
+<area shape="rect" coords="335,114,506,133" href="_.uJ.gVEE.m.tE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="CustomerBillDisputedBy">
+<area shape="poly" coords="425,189,425,58,435,58,435,189,425,189" href="_.uJ.gVEE.m.tE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="9,344,242,396" href="_3E3F0EC000E941CBDAB5031B-content.html" alt="AppliedCustomerBillingRebate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MBZW.cI3.sE.e.q__.p.b.k4J.i7KA" alt="pin">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_LDXA4I3.sE.e.q__.p.b.k4J.i7KA" alt="creditLimit">
+<area shape="rect" coords="816,294,969,346" href="_3E3F0EC000E93C8D16D901C7-content.html" alt="CustomerAccount">
+<area shape="rect" coords="775,92,1011,144" href="_3E3F0EC000E941CAD7C1023E-content.html" alt="AppliedCustomerBillingCharge">
+<area shape="rect" coords="370,9,492,61" href="_3E3F0EC000E941CAC1D6038E-content.html" alt="CustomerBill">
+<area shape="rect" coords="322,189,531,241" href="_U.y.a5YE.m.fE.eG.j.kI.pVPJ.v.uZ.w-content.html" alt="CustomerDisputedAmount">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure C.07 - CustomerDisputedAmount associations to other business entities</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_L.sSA.kJ2CE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Customer Interaction Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

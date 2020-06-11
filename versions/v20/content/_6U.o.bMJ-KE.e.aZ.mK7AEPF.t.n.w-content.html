@@ -1,0 +1,144 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Resource Order Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_O.iSH.oJ-IE.e.aZ.mK7AEPF.t.n.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Order Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource Order ABE::_ Resource Order Addendum Figures::Figure RO.06 - Resource Number - Number Portability Roles<br>
+</span><span class="ElementTitle">Diagram Figure RO.06 - Resource Number - Number Portability Roles<br>
+</span><span class="ElementDocumentation">The Resource Number Portability Role ABE contains the entity NumberPortabilityRole and the entities needed to complete the roles associated, like the clearinghouse, which is strongly related with the number portability.</br>NumberPortabilityRole is a class that gives a specific behavior and responsibilities to the requests, depending of many factors and the source provided. It has a portabilityStatus as a specific attribute and a generalization to an existing entity called LogicalResourceRole. This entity helps with the management and tracking of the status for the portability requests, since it can be initiated, started, completed, among others. This track is made for the requests through the continuous communications with other sources, like the entity NumberPortabilityClearinghouse as a party role, since the service providers don’t communicate directly for the number portability, and use the NumberPortabilityClearinghouse as an intermediary. Therefore, NumberPortability, because of its complexity, its management of different states between its flows with other sources, works with a NumberPortabilityRole through an aggregation. </br>All the number portability requests have a behavior with and affinity and dependency to the different parties created and added. (Number Portability Clearinghouse, Service Provider, Customer). This relation affects directly to the tracking for the portability through a status (portabilityStatus attribute).</br>In this figure it shows the relation of PartyRole (from Party ABE) with Party (Also from Party ABE) and how it relates with the role for number portability. For instance, there is a new subclass for PartyRole in order to reach every party who participates in the process. This new entity is NumberPortabilityClearinghouse, a very relevant party when a number portability is involved. </br>On the side for the roles, the new entity is called NumberPortabilityRole, with an aggregation of many to 0.1 with the NumberPortabilityRequest. This role entity inherits form LogicalResourceRole (from Logical Role ABE), who inherits from the main parent, ResourceRole (from Resource ABE). This last entity is the one who has the association with PartyRole, through this, the whole communication flows perfectly.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_6U.o.bMJ-KE.e.aZ.mK7AEPF.t.n.w.PNG" alt="Figure RO.06 - Resource Number - Number Portability Roles" usemap="#map_6U.o.bMJ-KE.e.aZ.mK7AEPF.t.n.w"></td>
+</tr>
+</table>
+<map name="map_6U.o.bMJ-KE.e.aZ.mK7AEPF.t.n.w">
+<area shape="rect" coords="0,0,0,0" href="_.jW.lVYA.e_E.e.q.i.y.rU.y.cDIGBA-content.html" alt="Generalization">
+<area shape="poly" coords="1162,407,1162,242,1172,242,1172,407,1162,407" href="_.jW.lVYA.e_E.e.q.i.y.rU.y.cDIGBA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.qY0.mEKBLE.e.aZ.mK7AEPF.t.n.w-content.html" alt="Generalization">
+<area shape="poly" coords="885,413,885,343,755,343,755,280,765,280,765,333,895,333,895,413,885,413" href="_.qY0.mEKBLE.e.aZ.mK7AEPF.t.n.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.u2EJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRole">
+<area shape="rect" coords="0,0,0,0" href="_GE.uF.cJ-IE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.x5YJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRequest">
+<area shape="rect" coords="0,0,0,0" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.u2EJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRole">
+<area shape="rect" coords="0,0,0,0" href="_GE.uF.cJ-IE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.x5YJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRequest">
+<area shape="rect" coords="0,0,0,0" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.u2EJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRole">
+<area shape="rect" coords="1183,470,1189,486" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.u2EJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRole">
+<area shape="rect" coords="0,0,0,0" href="_GE.uF.cJ-IE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.x5YJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRequest">
+<area shape="rect" coords="1182,549,1189,565" href="_GE.uF.cJ-IE.e.aZ.mK7AEPF.t.n.w-content.html#_A.f.x5YJ-ME.e.aZ.mK7AEPF.t.n.w" alt="numberPortabilityRequest">
+<area shape="rect" coords="1045,510,1271,526" href="_A.fT_UJ-ME.e.aZ.mK7AEPF.t.n.w-content.html" alt="NumberPortabilityRequestAppliedBy">
+<area shape="poly" coords="1162,575,1162,461,1172,461,1172,575,1162,575" href="_A.fT_UJ-ME.e.aZ.mK7AEPF.t.n.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="827,82,1107,98" href="_3E3F0EC000E943795DFA02CE-content.html#_3E3F0EC000E93EFD12D60005" alt="validForManagingResourceRole">
+<area shape="rect" coords="827,65,1107,81" href="_3E3F0EC000E943795DFA02CE-content.html#_3E3F0EC000E93EFD127F0122" alt="requisiteSkillSet">
+<area shape="rect" coords="821,23,1117,115" href="_3E3F0EC000E943795DFA02CE-content.html" alt="ResourceRolePartyRoleDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E943795DFB0280" alt="_resourceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E943795DFB029F" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E943795DFB0280" alt="_resourceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E943795DFB029F" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E943795DFB0280" alt="_resourceRole">
+<area shape="rect" coords="1054,224,1060,240" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E943795DFB0280" alt="_resourceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E943795DFB029F" alt="_partyRole">
+<area shape="rect" coords="879,224,885,240" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E943795DFB029F" alt="_partyRole">
+<area shape="poly" coords="844,209,1095,209,1095,219,844,219,844,209" href="_3E3F0EC000E943795DFA02CE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E920244-content.html" alt="Generalization">
+<area shape="poly" coords="692,500,692,333,755,333,755,280,765,280,765,343,702,343,702,500,692,500" href="_3E3F0EC000E93C247E920244-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E6D611202FE-content.html" alt="Generalization">
+<area shape="poly" coords="572,388,572,333,755,333,755,280,765,280,765,343,582,343,582,388,572,388" href="_3E3F0EC000E93E6D611202FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="169,280,176,296" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="645,192,651,208" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="342,186,429,202" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="689,215,204,215,204,325,195,325,195,206,689,206,689,215" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C231976037A-content.html" alt="Generalization">
+<area shape="poly" coords="127,500,127,414,137,414,137,500,127,500" href="_3E3F0EC000E93C231976037A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23197902E4-content.html" alt="Generalization">
+<area shape="poly" coords="246,500,246,414,256,414,256,500,246,500" href="_3E3F0EC000E93C23197902E4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="764,413,1011,465" href="_.f9.g.d.wKBLE.e.aZ.mK7AEPF.t.n.w-content.html" alt="NumberPortabilityClearinghouse">
+<area shape="rect" coords="1070,668,1262,684" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_.kX.u.y.oJ.cRE.e.a8.b.sEIR.y60H.g" alt="telephonyType">
+<area shape="rect" coords="1070,651,1262,667" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_IME6QIT_E.e.aD.y.t3-5E9U-A" alt="programDate">
+<area shape="rect" coords="1070,634,1262,650" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_BE5.j.kIT8E.e.aD.y.t3-5E9U-A" alt="source">
+<area shape="rect" coords="1070,617,1262,633" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_.iBX.aEIT7E.e.aD.y.t3-5E9U-A" alt="version">
+<area shape="rect" coords="1070,600,1262,616" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_.bA.cTEIH.cE.e.aJ361ZF.a5.f4A" alt="name">
+<area shape="rect" coords="1063,575,1271,701" href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html" alt="NumberPortabilityRequest">
+<area shape="rect" coords="1082,432,1252,448" href="_GE.uF.cJ-IE.e.aZ.mK7AEPF.t.n.w-content.html#_.g5.hHMI.wME.e.aD.y.t3-5E9U-A" alt="portabilityStatus">
+<area shape="rect" coords="1076,407,1262,465" href="_GE.uF.cJ-IE.e.aZ.mK7AEPF.t.n.w-content.html" alt="NumberPortabilityRole">
+<area shape="rect" coords="1095,176,1239,245" href="_3E3F0EC000E93DDEBDDA033E-content.html" alt="ResourceRole">
+<area shape="rect" coords="589,500,807,569" href="_3E3F0EC000E93C247E3903DE-content.html" alt="ServiceProvider">
+<area shape="rect" coords="477,430,676,446" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8D408B00E9" alt="customerRank">
+<area shape="rect" coords="471,388,686,463" href="_3E3F0EC000E93C8D1698008D-content.html" alt="Customer">
+<area shape="rect" coords="696,250,837,266" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="696,233,837,249" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="696,216,837,232" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="696,199,837,215" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="689,157,846,283" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="16,576,177,592" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93CAB8EBE00C7" alt="type">
+<area shape="rect" coords="16,559,177,575" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93C573E830212" alt="legalPeriod">
+<area shape="rect" coords="16,542,177,558" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93C310DC0017C" alt="isLegalEntity">
+<area shape="rect" coords="9,500,186,609" href="_3E3F0EC000E93C2319530014-content.html" alt="Organization">
+<area shape="rect" coords="228,644,388,660" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C573E620193" alt="aliveDuring">
+<area shape="rect" coords="228,627,388,643" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C4236070087" alt="disabilities">
+<area shape="rect" coords="228,610,388,626" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C42360302BC" alt="skills">
+<area shape="rect" coords="228,593,388,609" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C4235E10317" alt="maritalStatus">
+<area shape="rect" coords="228,576,388,592" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C60C10002FD" alt="nationality">
+<area shape="rect" coords="228,559,388,575" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C60C0FA01F0" alt="placeOfBirth">
+<area shape="rect" coords="228,542,388,558" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C310D110152" alt="gender">
+<area shape="rect" coords="222,500,398,677" href="_3E3F0EC000E93C2319480096-content.html" alt="Individual">
+<area shape="rect" coords="122,384,263,400" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93D8A882402B1" alt="validFor">
+<area shape="rect" coords="122,367,263,383" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C310D010249" alt="ID">
+<area shape="rect" coords="115,325,272,417" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure RO.06 - Resource Number - Number Portability Roles</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_O.iSH.oJ-IE.e.aZ.mK7AEPF.t.n.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Order Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

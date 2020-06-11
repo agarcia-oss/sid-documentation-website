@@ -1,0 +1,156 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Root Business Entities Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Root Business Entities ABE::_ Root Business Entities Addendum Figures::Figure R.23 - CharacteristicSpecification and Values<br>
+</span><span class="ElementTitle">Diagram Figure R.23 - CharacteristicSpecification and Values<br>
+</span><span class="ElementDocumentation">The minCardinality and maxCardinality attributes are used to specify the number of values that can be associated with an instance of a RootEntity.  In the example the faceplate color would have a minCardinality of 1 and a maxCardinality of 1.  A minCardinality of 0 implies that a value does not have to be assigned to a characteristic.</br>A valueType attribute exists for both CharacteristicSpecifications and CharacteristicSpecValue in order to have a mixture of value types for values.  For example, a CharacteristicSpecification may be enumerated by a combination of strings and integers.  The valueType of the CharacteristicSpecification is used if the valueType is the same for all CharacteristicSpecValue instances.</br>An instance CharacteristicSpecValue can represent discrete value or a range of values:  </br>        • An example of a discrete value is the values that the CharacteristicSpecification “color” can take on.  </br>        • An example of a range of values is the range of operating temperatures under which the cable modem can operate.  A rangeInterval attribute for CharacteristicSpecValue defines whether the valueFrom and valueTo attributes are inclusive or not.  This is equivalent to adding an “operator” attribute for valueFrom and an “operator” attribute for valueTo, such as “<=” or “<”. The rangeStep attribute specifies that a range of values increases in steps, such as a range from 0 to 100 in steps of 5 with the resulting permitted values being 0, 5, 10, 15,…100. This complements the valueFrom, valueTo, and rangeInterval attributes. Previously there was no way to do so, and individual CharacteristicSpecValues had to be created.</br>In some models the value attribute and the range attributes are contained within separate subclasses of the CharacteristicSpecValue entity.  This was not done in the Characteristic model in order to simplify it.  Also, some models may contain unit of measure as a separate entity with a recursive association and an association class that is used to define conversion factors between various units of measure.  This was not done in the Characteristic model.  However, both the subclasses and unit of measure entity and association class could be modelled as extensions to the SID if desired.</br>Some CharacteristicSpecifications are enumerated by a fixed value or set of values that remain constant for every instance of an Entity.  For example, the operating temperature range for the cable modem remains constant.  The attribute canBeOverridden is used to indicate this.  Additionally, the set of CharacteristicSpecValues may be open to extension as values are assigned to instances of EntityCharacteristics.  For example, there may be a desire to keep a list of userIDs as instances of CharacteristicSpecValues in addition to their existence as instances of CharacteristicValues.  The extensible attribute is used to indicate that new instances of CharacteristicSpecValues can be added as instances of CharacteristicValues are created.</br>More precisely:</br><Note>Values associated with CharSpecs can never be changed when an entity's CharValue instances are created. They are fixed but can be extended if the "extensible" attribute is true.</Note></br>[] example 1:</br>In the case the xxxSpeccharUse is a temperature range <-20, +50></br>        • If extensible = FALSE  => the range cannot be changed for any instance</br>        • If extensible = TRUE =>  the range can be changed for a given instance into (as example)  <-10, +40></br>[] example 2:</br>In the case the xxxSpeccharUse is a list of enum: e.g. Color with values Black and Blue </br>        • canBeOverriden = FALSE  => nothing can be changed, and instances will have both values Black and Blue </br>        • canBeOverriden = TRUE => one can chose Black OR Blue either for a given instance</br>[] example 3:</br>In the case the xxxSpecCharUse is a bandwidth range from 10 to 100 with a step of 10</br>        • If canBeOverridden = FALSE  => the range cannot be changed for any instance</br>        • If canBeOverridden = TRUE =>  the range still cannot be changed for any instance (e.g. we cannot select a subrange, like from 40 to 70 with same step of 10) but we can pick up one value (like 20) or we can select a set of values (like 30 and 60) from the range. The number of choices depends on the Min and Max attributes (in this case, the Min is 1 and the Max is 2.</br></br>CharacteristicSpecification does not use the composite/atomic pattern. Instead there is the recursive CharacteristicSpecRelationship association that can be used to associate several CharacteristicSpecification.</br>The CharacteristicSpecRelationship association can be used to represent/emulate a composite CharacteristicSpecification associated with several other CharacteristicSpecification. If used that way, the model does not restrict the possibility for the composite CharacteristicSpecification to have its own set of CharacteristicSpecValue, although it is not recommended.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_6UQ.qEMV6E.e.eOJKC.p.q41Q.uA.PNG" alt="Figure R.23 - CharacteristicSpecification and Values" usemap="#map_6UQ.qEMV6E.e.eOJKC.p.q41Q.uA"></td>
+</tr>
+</table>
+<map name="map_6UQ.qEMV6E.e.eOJKC.p.q41Q.uA">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="580,455,586,471" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="619,468,639,484" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="497,393,679,409" href="_3E3F0EC000E9463FD6220215-content.html" alt="CharacteristicValueReferences">
+<area shape="poly" coords="609,482,687,482,687,417,577,417,577,476,567,476,567,407,697,407,697,492,609,492,609,482" href="_3E3F0EC000E9463FD6220215-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="917,367,937,383" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="640,520,646,536" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="720,445,954,461" href="_K0AM4I.k.lE.eOS.uN.o.dS.uP.rOQ-content.html" alt="CharacteristicSpecValueInstantiatedAs">
+<area shape="poly" coords="609,509,892,509,892,361,902,361,902,519,609,519,609,509" href="_K0AM4I.k.lE.eOS.uN.o.dS.uP.rOQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="428,512,434,528" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="118,409,138,425" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="23,444,361,460" href="__.f.u.cQI.k.kE.eOS.uN.o.dS.uP.rOQ-content.html" alt="CharacteristicSpecificationDescribesCharacteristicValue">
+<area shape="poly" coords="159,403,159,498,450,498,450,508,149,508,149,403,159,403" href="__.f.u.cQI.k.kE.eOS.uN.o.dS.uP.rOQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="552,65,769,81" href="_3E3F0EC000E945FB03E102D7-content.html#_3E3F0EC000E945FB021E00D4" alt="validFor">
+<area shape="rect" coords="552,48,769,64" href="_3E3F0EC000E945FB03E102D7-content.html#_3E3F0EC000E945FB021E00D3" alt="charValueRelationshipType">
+<area shape="rect" coords="545,23,778,98" href="_3E3F0EC000E945FB03E102D7-content.html" alt="CharSpecValueRelationship">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DD" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DF" alt="_characteristicSpecValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DD" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DF" alt="_characteristicSpecValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DD" alt="_characteristicSpecValue">
+<area shape="rect" coords="788,151,794,167" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DD" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DF" alt="_characteristicSpecValue1">
+<area shape="rect" coords="862,151,868,167" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DF" alt="_characteristicSpecValue1">
+<area shape="poly" coords="874,170,874,119,805,119,805,170,795,170,795,109,884,109,884,170,874,170" href="_3E3F0EC000E945FB03E102D7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="747,229,753,245" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="292,236,299,252" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="394,197,644,213" href="_3E3F0EC000E94462B1B40297-content.html" alt="CharacteristicSpecificationEnumeratedBy">
+<area shape="poly" coords="272,214,774,214,774,224,272,224,272,214" href="_3E3F0EC000E94462B1B40297-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="171,82,387,98" href="_3E3F0EC000E94462B1C80150-content.html#_3E3F0EC000E94462B0290010" alt="validFor">
+<area shape="rect" coords="171,65,387,81" href="_3E3F0EC000E94462B1C80150-content.html#_3E3F0EC000E947A743E2030D" alt="charSpecSeq">
+<area shape="rect" coords="171,48,387,64" href="_3E3F0EC000E94462B1C80150-content.html#_3E3F0EC000E94462B029000F" alt="charRelationshipType">
+<area shape="rect" coords="164,23,396,115" href="_3E3F0EC000E94462B1C80150-content.html" alt="CharacteristicSpecRelationship">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="156,180,162,196" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="224,180,230,196" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="poly" coords="233,195,233,143,190,143,190,195,180,195,180,133,243,133,243,195,233,195" href="_3E3F0EC000E94462B1C80150-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="456,518,601,534" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D2" alt="validFor">
+<area shape="rect" coords="456,501,601,517" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D1" alt="value">
+<area shape="rect" coords="450,476,611,551" href="_3E3F0EC000E945FB02B00298-content.html" alt="CharacteristicValue">
+<area shape="rect" coords="780,331,953,347" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960087" alt="validFor">
+<area shape="rect" coords="780,314,953,330" href="_3E3F0EC000E94462AE0602C5-content.html#_.p.h.yZ0O.i.sE.e.a.pXJ.y.l.xL.zJMA" alt="rangeStep">
+<area shape="rect" coords="780,297,953,313" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E946B74C03001F" alt="rangeInterval">
+<area shape="rect" coords="780,280,953,296" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960086" alt="valueTo">
+<area shape="rect" coords="780,263,953,279" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960085" alt="valueFrom">
+<area shape="rect" coords="780,246,953,262" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E9466F668502C8" alt="unitOfMeasure">
+<area shape="rect" coords="780,229,953,245" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960077" alt="value">
+<area shape="rect" coords="780,212,953,228" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960076" alt="isDefault">
+<area shape="rect" coords="780,195,953,211" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960075" alt="valueType">
+<area shape="rect" coords="774,170,963,364" href="_3E3F0EC000E94462AE0602C5-content.html" alt="CharacteristicSpecValue">
+<area shape="rect" coords="76,373,265,389" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02B8" alt="validFor">
+<area shape="rect" coords="76,356,265,372" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AB" alt="derivationFormula">
+<area shape="rect" coords="76,339,265,355" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9475EBBC502C1" alt="extensible">
+<area shape="rect" coords="76,322,265,338" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60280" alt="maxCardinality">
+<area shape="rect" coords="76,305,265,321" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60271" alt="minCardinality">
+<area shape="rect" coords="76,288,265,304" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AA" alt="valueType">
+<area shape="rect" coords="76,271,265,287" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E946F97EB7003E" alt="unique">
+<area shape="rect" coords="76,254,265,270" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A9" alt="description">
+<area shape="rect" coords="76,237,265,253" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A8" alt="name">
+<area shape="rect" coords="76,220,265,236" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A7" alt="ID">
+<area shape="rect" coords="69,195,274,406" href="_3E3F0EC000E94462ADF80016-content.html" alt="CharacteristicSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure R.23 - CharacteristicSpecification and Values</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

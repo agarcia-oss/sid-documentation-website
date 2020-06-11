@@ -1,0 +1,119 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Root Business Entities Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Root Business Entities ABE::_ Root Business Entities Addendum Figures::Figure R.09 - The Basics of Roles – An Example<br>
+</span><span class="ElementTitle">Diagram Figure R.09 - The Basics of Roles – An Example<br>
+</span><span class="ElementDocumentation">Roles represent a fundamental way to provide extensibility in the model. The Role Object pattern [ROLEOBJ] is used to extend the use and application of an object. For example, by modeling the different functions that a device can play as a set of objects.</br>A role characterizes the function that a particular object plays. In the SID, the characterization may be to specify attributes and relationships.</br>Roles provide an extensible means of abstraction that enables the user to model the functions played by an entity as separate objects (instead of embedding that functionality in the entity itself). For example, suppose that you are modeling the business functions that your employees have. Basic organizational boundaries define some behavior (e.g., marketing vs. sales vs. engineering), but often employees play multiple roles (e.g., an engineer that has sales support functions). This phenomenon doesn’t just occur for people – other managed objects exhibit it as well. For example, in a VPN, some DeviceInterfaces talk to a customer, while others never touch a customer.</br>In general, managed objects don’t all have the same behavior, but different managed objects may have some common behavior. Worse, an object might exhibit more than one set of common behaviors, or may take on and remove different behaviors during its lifetime. Thus, we need a means to capture these and related cases. A set of role patterns provide an extensible and straightforward means of accomplishing this goal.</br>Before these different role patterns are discussed, it is important to differentiate between an instance or a type. Asking an object if it is an instance of type is something different than asking it if it is an instance of a class, since the types (interfaces) and the classes (implementations) can be different. (Note that there are patterns to accomplish this function.)</br>The SID is concerned with types, not implementation.</br>There are five types of role patterns that are extensions of [ROLEOBJ], described as follows:</br>        •	Single Role Type. This pattern combines all of the features of different roles into a single type, and is most useful for modeling objects having a few variations on the same basic behavior.</br>        •	Separate Role Type. This pattern models each role as its own separate type, and is most useful for modeling objects that have little if any common behavior.</br>        •	Role Subtype. This pattern models each role that exhibits different behavior as a subtype. Note that this does NOT mean that sub-classing is used, as this is an analysis pattern and is thus concerned with interfaces, not implementation. This pattern is all about maintaining the illusion that clients are dealing with a single object that has multiple, changeable types.</br>        •	Role Object. This pattern models each role that exhibits different behavior as a separate object. The separate role objects are then related to a single base object that ties the different behaviors together. This pattern is used when maintaining the illusions of a single object is too difficult, or doesn’t supply the correct semantics.</br>        •	Role Relationship. This pattern models each role as a relationship with an appropriate object.</br>Of these five patterns, the SID uses the fourth – Role Object – almost exclusively. Single Role Type and Role Type aren’t used because they best deal with behavior which is not included in the SID.</br>This leaves Role Subtype and Role Relationship. The problem with the Role Subtype pattern (in the context of the SID) is that this pattern cannot be used if there are multiple and/or changing roles.</br>The Role Relationship pattern is not used in the SID due to its complexity. This pattern is very well suited when the role itself embodies a relationship between a base object and some other object (usually a group). For example, consider an organization which requires new employees to spend an equal amount of time working for multiple departments. In this case, the role binds the person to the particular organization that he or she is currently working for. Thus, it is best modeled as a relationship between the person and the organization that the person is working for.</br>Figure below shows a simplified view of the concepts of using the Role Object pattern.</br>The figure shows that an Individual (or an Organization) can be assigned zero or more roles. Thus, an Employee can take on the roles of ServiceProvider and Partner.</br>The idea is to define the functionality that a business entity can play as a set of subclasses of EntityRole, and then associate the specific functionality that is desired using the EntityHasRoles aggregation. This enables the functionality and behavior of the business entity to be easily customized. For example, consider two different people working in the same department – both interact with a customer, but Bob is a manager and Joe isn’t. Rather than add employee-specific attributes to the definition of a Person, a Person can be kept general, and employee-specific attributes can be added to an appropriate role.</br>More formally, roles recognize the fact that different entities may have different roles that it can play when it collaborates with other entities in the system. Separating this into different roles enables behavior to be defined that involves just the role, as opposed to all of the attributes of the entity. This enables the communication to become more specific and thus easier to generalize.</br>[] Different Types of Roles in SID</br>The SID is unique, in that roles are used in the vast majority of its domains, to ensure that the above philosophy is applied wherever it makes sense. Three different examples that show the diversity of roles in the SID are as follows:</br>        •	Party and PartyRole (Party addendum). Party is a superclass for modeling people and organizations, and PartyRole is a superclass for modeling the different jobs that people can have.</br>        •	Resource and ResourceRole (Physical Resource addendum and Logical and Compound Resource addendum). Resources are physical, logical, and compound resource entities that represent the definition, development, and operational aspects of the information computing and processing infrastructure of a system. There are PhysicalResourceRoles as well as LogicalResourceRoles, which enable functions associated with the physical and logical aspects, respectively, of a resource to be modelled independent of that resource. There are also CompoundResourceRoles, which enable roles to be assigned to CompoundResources (Resources that contain one or more PhysicalResources and LogicalResources).</br>        •	Service and ServiceRole (Service Overview addendum and Quality of Service addendum). Services represent intangible functionality that is provided by the information computing and processing infrastructure of a system. CustomerFacingServiceRoles represent abstracted functionality that represent how a Product is realized, while ResourceFacingServiceRoles represent abstracted functionality that are required in order for the CustomerFacingService to function correctly.</br>All of these are currently defined in various GB922 Addenda as noted above.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_ZK6.tQO.t.tE.eW.c.l7R.f.d55.qF.g.PNG" alt="Figure R.09 - The Basics of Roles – An Example" usemap="#map_ZK6.tQO.t.tE.eW.c.l7R.f.d55.qF.g"></td>
+</tr>
+</table>
+<map name="map_ZK6.tQO.t.tE.eW.c.l7R.f.d55.qF.g">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C42378000A7-content.html" alt="Generalization">
+<area shape="poly" coords="544,160,544,116,507,116,507,74,516,74,516,106,554,106,554,160,544,160" href="_3E3F0EC000E93C42378000A7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.lQY14OE2E.d-_3M-_O.dW.b_A-content.html" alt="Generalization">
+<area shape="poly" coords="878,160,878,116,507,116,507,74,516,74,516,106,888,106,888,160,878,160" href="_.lQY14OE2E.d-_3M-_O.dW.b_A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E6D611202FE-content.html" alt="Generalization">
+<area shape="poly" coords="370,160,370,106,507,106,507,74,516,74,516,116,380,116,380,160,370,160" href="_3E3F0EC000E93E6D611202FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.m.v7WAOE2E.d-_3M-_O.dW.b_A-content.html" alt="Generalization">
+<area shape="poly" coords="1018,160,1018,116,507,116,507,74,516,74,516,106,1028,106,1028,160,1018,160" href="_.m.v7WAOE2E.d-_3M-_O.dW.b_A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E920244-content.html" alt="Generalization">
+<area shape="poly" coords="738,160,738,116,507,116,507,74,516,74,516,106,748,106,748,160,738,160" href="_3E3F0EC000E93C247E920244-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23197902E4-content.html" alt="Generalization">
+<area shape="poly" coords="221,160,221,116,164,116,164,74,174,74,174,106,231,106,231,160,221,160" href="_3E3F0EC000E93C23197902E4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C231976037A-content.html" alt="Generalization">
+<area shape="poly" coords="65,160,65,106,164,106,164,74,174,74,174,116,75,116,75,160,65,160" href="_3E3F0EC000E93C231976037A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="240,23,247,39" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="418,23,424,39" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="289,50,376,66" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="459,55,207,55,207,45,459,45,459,55" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C42376E0051-content.html#_3E3F0EC000E93C42379A0299" alt="currentSalary">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C42376E0051-content.html#_3E3F0EC000E93C423796027F" alt="employeeNr">
+<area shape="rect" coords="450,160,650,212" href="_3E3F0EC000E93C42376E0051-content.html" alt="ServiceProviderEmployee">
+<area shape="rect" coords="836,160,931,212" href="_.f.b.z.oIOE2E.d-_3M-_O.dW.b_A-content.html" alt="Supplier">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8D408B00E9" alt="customerRank">
+<area shape="rect" coords="325,160,428,212" href="_3E3F0EC000E93C8D1698008D-content.html" alt="Customer">
+<area shape="rect" coords="955,160,1044,212" href="_.j.jAHAOE2E.d-_3M-_O.dW.b_A-content.html" alt="Partner">
+<area shape="rect" coords="674,160,814,212" href="_3E3F0EC000E93C247E3903DE-content.html" alt="ServiceProvider">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C573E620193" alt="aliveDuring">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C4236070087" alt="disabilities">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C42360302BC" alt="skills">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C4235E10317" alt="maritalStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C60C10002FD" alt="nationality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C60C0FA01F0" alt="placeOfBirth">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C310D110152" alt="gender">
+<area shape="rect" coords="174,160,279,212" href="_3E3F0EC000E93C2319480096-content.html" alt="Individual">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93CAB8EBE00C7" alt="type">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93C573E830212" alt="legalPeriod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93C310DC0017C" alt="isLegalEntity">
+<area shape="rect" coords="9,160,132,212" href="_3E3F0EC000E93C2319530014-content.html" alt="Organization">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="459,26,562,78" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93D8A882402B1" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C310D010249" alt="ID">
+<area shape="rect" coords="130,26,209,78" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure R.09 - The Basics of Roles – An Example</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

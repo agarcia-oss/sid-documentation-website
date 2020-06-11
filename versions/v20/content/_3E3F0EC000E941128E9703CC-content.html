@@ -1,0 +1,113 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Party Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E389BB6023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Party ABE::_Party Addendum Figures::Figure P.09 - Demographic Characteristic Business Entities<br>
+</span><span class="ElementTitle">Diagram Figure P.09 - Demographic Characteristic Business Entities<br>
+</span><span class="ElementDocumentation">Demographics deal with the study of individuals and organizations (Parties), including their size, growth, density, and distribution, as well as statistics regarding birth, marriage, disease, and death.  Demographic data is information about parties that allows decisions to be made such as the make-up and size of a market segment, classification and ranking of customers, and so forth.  Demographics provide the key “what” information and can be broken down into two categories:  individual demographics and organization demographics.</br>Individual demographic data provides information pertaining to the consumer market.  Examples of this type of demographic are:</br>        •	Age, income, education, vehicle registration, gender, ethnicity, and the source of the information</br>        •	Geography, or sizing, demographics </br>        •	Number of households</br>        •	Number of telephone lines (single vs. multiple, switched vs. dedicated)</br>        •	Population</br>        •	Telecom spending by segment related back to another demographic (wireless, calling features, calling card, etc.)</br>Organization demographic data provides information pertaining to the non-consumer market.  Examples of business demographic data are:  </br>        •	Standard industry (SIC) code (for vertical industries)</br>        •	Geographic dispersal</br>        •	Headquarters location, number and location of offices (domestic vs. international, regions/triads); each have different access requirements</br>        •	By hierarchy (headquarters vs. regions vs. sales offices)</br>        •	Existing networks</br>        •	Private vs. frame relay</br>        •	WAN/LAN (in every office vs. stand-alone)</br>        •	By SIC code (partially)</br>        •	Network equipment</br>        •	Centralized vs. distributed processing</br>        •	Applications (Human Resources, Payroll, FTP, Intranet, and so forth)</br>        •	Voice mail, audio/video</br>        •	Infrastructure setup (type of computer) by geography</br>        •	Usage (switched vs. dedicated, intra-company vs. intercompany)</br>        •	Features (large sales force could indicate use of calling cards); related to number and type of employees</br>        •	Number of employees by type (for example, sales force)</br>        •	Number of customers and prospects</br>        •	Geographies covered</br>        •	Target markets</br>        •	Sales channels </br>        •	Current telecom spending by product (inbound vs. outbound vs. calling card)</br>        •	Date acquired, current provider, provider products</br>        •	Percent of existing telecom bill spent with the service provider by product</br>        •	Public information (revenue, profit, employees, and so forth)</br>The business entities that support PartyDemographic (and also support PartyProfileType and MarketSegment as described later) should be generic enough to allow new demographic characteristics and other types of characteristics to be defined as needed.  To accomplish this, the Demographic entity employs the Characteristic Spec/Characteristic pattern used throughout the SID.  PartyDemographic also employs the Composite/Atomic pattern to represent collections of related DemographicCharacteristics.</br><Note>Note: This pattern is used throughout the Market/Sales domain.  Additional information about the Characteristic pattern can be found in GB922 Root guide book. The application of the pattern in the Market/Sales domain does not use all the association classes defined by the pattern; if needed, they can be added by a SID implementer.</Note></br>An example of the use of the Composite/Atomic pattern from the list of example demographics above is a CompositeDemographicCharacteristic called “employee type and number” that aggregates the AtomicDemographicCharacteristics “type employee” and “number of employees”.</br>The DemographicCharacteristicValues for "type employee" might be engineer, salesperson, administrator and the values for ""number of employee" might be 0-50, 51-100, 101-500, +500.</br>A PartyDemographic is a feature or quality used to make recognizable or to define a Party playing a PartyRole, such as age, income, education, revenue, and so forth.  The figure below shows the entities that make up the PartyDemographic ABE.  Notice that PartyDemographic also uses the Composite/Atomic pattern for defining PartyDemographics that are aggregates of other PartyDemographics.  For example, a standard of living composite may be the aggregation of income level, value of investments, and home value (assuming a home is not an investment!).</br>Note that one of the members of the associations from PartyDemographicValue to DemographicCharacteristic and DemographciCharacteristicValue are of cardinality of 0,1.  This is because not all DemographicCharacteristics have a set of defined values.  For example, a characteristic of children’s names does not have set of “valid” values, but is entered as text for an instance of PartyDemographicValue; in this example there is not an instance of the association between PartyDemographicValue and DemographicCharacteristicValue.  Similarly, if there is a set of DemographicCharacteristic values (1, 2, 3 or more) for number of children living at home, there is an instance of the association between PartyDemographicValue and DemographicCharacteristicValue, but not one between PartyDemographicValue and DemogrpahicCharacteristic.  This second association is derived via the first association.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E941128E9703CC.PNG" alt="Figure P.09 - Demographic Characteristic Business Entities" usemap="#map_3E3F0EC000E941128E9703CC"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E941128E9703CC">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="815,195,823,212" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="500,195,508,212" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="506,150,818,167" href="_3E3F0EC000E94119464C01EF-content.html" alt="DemographicCharacteristicEnumeratedBy">
+<area shape="poly" coords="487,177,837,177,837,187,487,187,487,177" href="_3E3F0EC000E94119464C01EF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94112A5BF0145-content.html#_3E3F0EC000E94112A629007F" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94112A629009D" alt="_compositeDemographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94112A5BF0145-content.html#_3E3F0EC000E94112A629007F" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94112A629009D" alt="_compositeDemographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94112A5BF0145-content.html#_3E3F0EC000E94112A629007F" alt="_demographicCharacteristic">
+<area shape="rect" coords="228,167,236,184" href="_3E3F0EC000E94112A5BF0145-content.html#_3E3F0EC000E94112A629007F" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94112A629009D" alt="_compositeDemographicCharacteristic">
+<area shape="rect" coords="137,385,145,402" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94112A629009D" alt="_compositeDemographicCharacteristic">
+<area shape="rect" coords="23,319,345,336" href="_3E3F0EC000E94112A62800EC-content.html" alt="CompositeDemoCharacteristicComprisedOf">
+<area shape="poly" coords="161,420,161,186,268,186,268,196,171,196,171,420,161,420" href="_3E3F0EC000E94112A62800EC-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94112A61C006D-content.html" alt="Generalization">
+<area shape="poly" coords="230,420,230,238,374,238,374,206,383,206,383,247,240,247,240,420,230,420" href="_3E3F0EC000E94112A61C006D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94112A62000C3-content.html" alt="Generalization">
+<area shape="poly" coords="555,418,555,247,374,247,374,206,383,206,383,238,565,238,565,418,555,418" href="_3E3F0EC000E94112A62000C3-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="843,211,1033,226" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA222500301" alt="validFor">
+<area shape="rect" coords="843,195,1033,210" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E947BE4EDF033C" alt="rangeInterval">
+<area shape="rect" coords="843,179,1033,194" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA222360231" alt="toValue">
+<area shape="rect" coords="843,163,1033,178" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA2222301F8" alt="fromValue">
+<area shape="rect" coords="843,147,1033,162" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E947BE4EDF032C" alt="unitOfMeasure">
+<area shape="rect" coords="843,131,1033,146" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA2220B0370" alt="value">
+<area shape="rect" coords="843,115,1033,130" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E947D035C30222" alt="isDefault">
+<area shape="rect" coords="843,99,1033,114" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94149D7F002F1" alt="type">
+<area shape="rect" coords="837,75,1043,243" href="_3E3F0EC000E93C8FAA360266-content.html" alt="DemoCharacteristicValue">
+<area shape="rect" coords="274,177,479,192" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9443AA7BE01F2" alt="validFor">
+<area shape="rect" coords="274,161,479,176" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E941543F57019D" alt="derivationFormula">
+<area shape="rect" coords="274,145,479,160" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E947D0368E03A9" alt="extensible">
+<area shape="rect" coords="274,129,479,144" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94626DE180203" alt="maxCardinality">
+<area shape="rect" coords="274,113,479,128" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94626DE1801C5" alt="minCardinality">
+<area shape="rect" coords="274,97,479,112" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9443AA73C000D" alt="valueType">
+<area shape="rect" coords="274,81,479,96" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E947D0368E0399" alt="unique">
+<area shape="rect" coords="274,65,479,80" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E93CA221CA0055" alt="description">
+<area shape="rect" coords="274,49,479,64" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E941110B9300E4" alt="name">
+<area shape="rect" coords="274,33,479,48" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E93CA22125018E" alt="ID">
+<area shape="rect" coords="268,9,489,209" href="_3E3F0EC000E93C8FAA1A00CC-content.html" alt="DemographicCharacteristic">
+<area shape="rect" coords="93,420,378,471" href="_3E3F0EC000E94112A5BF0145-content.html" alt="CompositeDemographicCharacteristic">
+<area shape="rect" coords="429,418,692,469" href="_3E3F0EC000E94112A5D103A4-content.html" alt="AtomicDemographicCharacteristic">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure P.09 - Demographic Characteristic Business Entities</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E389BB6023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

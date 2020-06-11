@@ -1,0 +1,288 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Customer Bill Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Customer Domain::Customer Bill ABE::_Customer Bill Addendum Figures::Figure C.13 - Customer Bill<br>
+</span><span class="ElementTitle">Diagram Figure C.13 - Customer Bill<br>
+</span><span class="ElementDocumentation">The PartyBillllingSpecification describes the detailed structure of the customer’s bill. It describes which AppliedCustomerBillingRates should be included into the bill, when to initiate the bill creation and bill presentation formats. The presentation format of the bill and its aggregated AppliedCustomerBillingRates are described by the PartyBillFormat. The bill may be presented via various presentation media (for example, email, post mail, web page).</br>The PartyBillingCycleSpecification, as shown in the figure above, identifies when to initiate a billing cycle and various sub steps of a billing cycle. It defines a date to be shown on the bill, the date through which charges and credits previously received by the billing system will appear on the bill, the mailing date and the payment due date.</br>The PartyBillingCycle entity represents a particular occurrence of a billing cycle. Besides significant dates, it records who (or what) triggered the cycle. The PartyBillingCycle aggregates all PartyBillSpecs and in this way defines which bills are to be created during the represented billing cycle. </br>CustomerBills can be created as a result of a cycle run or as a result of other events such as customer request or account close. The bills which are created as a result of a cycle run are described by the entity OnCyclePartyBill (which is a subclass of CustomerBill) which includes a mandatory association to the PartyBillingCycle that triggered the cycle run. Bills which are generated as a result of a different event are represented by the entity OffCyclePartyBill.</br>The CustomerBill entity is used to model a bill (an invoice). It represents a total amount due for all products during the billing period and all significant dates (i.e. billDate, chargeDate, creditDate, mailingDate and paymentDueDate). The structure of the bill and its presentation formats are described by the PartyBillSpec. OnCyclePartyBill is generated during the PartyBillingCycle and is associated with a customer account. The CustomerBill aggregates FinancialCharges and displays AppliedCustomerBillingRates.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.nT.w.z8ANDE.e.eSVOL.c.z.oHDU.w.PNG" alt="Figure C.13 - Customer Bill" usemap="#map_.nT.w.z8ANDE.e.eSVOL.c.z.oHDU.w"></td>
+</tr>
+</table>
+<map name="map_.nT.w.z8ANDE.e.eSVOL.c.z.oHDU.w">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.e6.vA.oJO.iE.e.qMRPZ.l1.hI.nC.g" alt="partyBillSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.e6.zSEJO.iE.e.qMRPZ.l1.hI.nC.g" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.e6.vA.oJO.iE.e.qMRPZ.l1.hI.nC.g" alt="partyBillSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.e6.zSEJO.iE.e.qMRPZ.l1.hI.nC.g" alt="customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_.e6.vA.oJO.iE.e.qMRPZ.l1.hI.nC.g" alt="partyBillSpec2">
+<area shape="rect" coords="829,306,835,322" href="_3E3F0EC000E93C8D16D901C7-content.html#_.e6.vA.oJO.iE.e.qMRPZ.l1.hI.nC.g" alt="partyBillSpec2">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.e6.zSEJO.iE.e.qMRPZ.l1.hI.nC.g" alt="customerAccount">
+<area shape="rect" coords="1312,331,1319,347" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.e6.zSEJO.iE.e.qMRPZ.l1.hI.nC.g" alt="customerAccount">
+<area shape="rect" coords="1009,300,1159,316" href="_.e6.tL.cJO.iE.e.qMRPZ.l1.hI.nC.g-content.html" alt="CustomerBillSpecifiedBy">
+<area shape="poly" coords="1305,384,1305,330,807,330,807,320,1315,320,1315,384,1305,384" href="_.e6.tL.cJO.iE.e.qMRPZ.l1.hI.nC.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillPresentationMedia">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v4U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillPresentationMedia">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v4U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillPresentationMedia">
+<area shape="rect" coords="1053,99,1071,115" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillPresentationMedia">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v4U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="849,99,855,115" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v4U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="850,72,1064,88" href="_.a.e.b.v7.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillFormatAppearsBasedUpon">
+<area shape="poly" coords="807,84,1108,84,1108,94,807,94,807,84" href="_.a.e.b.v7.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJI.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.zE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJI.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.zE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJI.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="710,253,717,269" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJI.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.zE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="711,151,717,167" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.zE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillFormat">
+<area shape="rect" coords="631,202,851,218" href="_.a.e.b.v6U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillSpecAppearanceBasedUpon">
+<area shape="poly" coords="738,137,738,284,728,284,728,137,738,137" href="_.a.e.b.v6U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.z04.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJCE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.z04.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJCE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.z04.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="727,522,733,538" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.z04.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJCE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="733,386,740,402" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJCE4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="626,474,819,490" href="_.a.e.b.v6.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillStructureIsDescribedBy">
+<area shape="poly" coords="720,373,720,546,710,546,710,373,720,373" href="_.a.e.b.v6.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI304.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v2E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI304.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v2E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI304.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="641,384,659,400" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI304.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v2E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="262,680,268,696" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v2E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="288,407,532,423" href="_.a.e.b.v7U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="CycleTriggersCreationOfBillDescribedBy">
+<area shape="poly" coords="238,708,238,427,656,427,656,373,666,373,666,437,248,437,248,708,238,708" href="_.a.e.b.v7U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI_E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v1U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI_E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v1U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI_E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="590,369,596,385" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI_E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillSpec">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v1U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="353,327,359,343" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v1U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="318,325,601,341" href="_.a.e.b.v7E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="CycleSpecSchedulesCreationOfBillDescribedBy">
+<area shape="poly" coords="296,312,390,312,390,354,652,354,652,364,380,364,380,322,296,322,296,312" href="_.a.e.b.v7E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI9.k4.cE.eO_X.pEX.s37Q.e.w" alt="_billingPeriod">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI9.k4.cE.eO_X.pEX.s37Q.e.w" alt="_billingPeriod">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI9.k4.cE.eO_X.pEX.s37Q.e.w" alt="_billingPeriod">
+<area shape="rect" coords="200,102,207,118" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI9.k4.cE.eO_X.pEX.s37Q.e.w" alt="_billingPeriod">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="201,157,207,173" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="69,130,283,146" href="_.a.e.b.v5E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="BillingCycleRecurrenceDescribedBy">
+<area shape="poly" coords="180,178,180,98,190,98,190,178,180,178" href="_.a.e.b.v5E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI-U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI2U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI-U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI2U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI-U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="23,699,29,715" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI-U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI2U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="134,426,141,442" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI2U4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycleSpecification">
+<area shape="rect" coords="49,606,207,622" href="_.a.e.b.v5U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="BillingCycleSpecDescribes">
+<area shape="poly" coords="162,351,162,708,50,708,50,726,104,726,104,736,40,736,40,698,152,698,152,351,162,351" href="_.a.e.b.v5U4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI3E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.v04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI3E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.v04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI3E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="507,790,513,806" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI3E4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.v04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="334,790,341,806" href="_.a.e.bI.v04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.wU4.cE.eO_X.pEX.s37Q.e.w" alt="_partyBillingCycle">
+<area shape="rect" coords="335,763,512,779" href="_.a.e.b.v5.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillCreationTriggeredBy">
+<area shape="poly" coords="302,775,546,775,546,785,302,785,302,775" href="_.a.e.b.v5.k4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.s04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Generalization">
+<area shape="poly" coords="831,758,831,659,663,659,663,618,673,618,673,649,840,649,840,758,831,758" href="_.a.e.bI.s04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI.wE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Generalization">
+<area shape="poly" coords="613,758,613,649,663,649,663,618,673,618,673,659,623,659,623,758,613,758" href="_.a.e.bI.wE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_ARD.n.gFL.tE.eWPA.vIYYW.iWM.g" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_ARH48FL.tE.eWPA.vIYYW.iWM.g" alt="customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_ARD.n.gFL.tE.eWPA.vIYYW.iWM.g" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_ARH48FL.tE.eWPA.vIYYW.iWM.g" alt="customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_ARD.n.gFL.tE.eWPA.vIYYW.iWM.g" alt="partyBill">
+<area shape="rect" coords="727,589,734,605" href="_3E3F0EC000E941CAC1D6038E-content.html#_ARD.n.gFL.tE.eWPA.vIYYW.iWM.g" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_ARH48FL.tE.eWPA.vIYYW.iWM.g" alt="customerBill">
+<area shape="rect" coords="911,589,931,605" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_ARH48FL.tE.eWPA.vIYYW.iWM.g" alt="customerBill">
+<area shape="rect" coords="741,551,911,567" href="_ARBLQFL.tE.eWPA.vIYYW.iWM.g-content.html" alt="CustomerBillFurtherDefines">
+<area shape="poly" coords="939,580,718,580,718,570,939,570,939,580" href="_ARBLQFL.tE.eWPA.vIYYW.iWM.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="1557,521,1563,540" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="1070,540,1078,559" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="1183,545,1443,564" href="_.n.c-48E.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="CustomerBillPresentsFinancialCharge">
+<area shape="poly" coords="1060,559,1317,559,1317,539,1582,539,1582,549,1327,549,1327,569,1060,569,1060,559" href="_.n.c-48E.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="1645,503,1651,522" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="1376,432,1384,451" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="1382,395,1646,414" href="_MJ.b.oME.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="CustomerAccountChargedBasedUpon">
+<area shape="poly" coords="1365,414,1638,414,1638,515,1628,515,1628,424,1365,424,1365,414" href="_MJ.b.oME.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="1693,567,1701,586" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="1694,764,1700,783" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="1534,720,1733,739" href="_7.xQ.f4E.s8E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="FinancialChargeAccumulates">
+<area shape="poly" coords="1679,799,1679,563,1689,563,1689,799,1679,799" href="_7.xQ.f4E.s8E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD617033A-content.html" alt="Generalization">
+<area shape="poly" coords="1307,799,1307,716,1458,716,1458,684,1468,684,1468,726,1317,726,1317,799,1307,799" href="_3E3F0EC000E941CAD617033A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="1309,648,1329,667" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="1135,816,1141,835" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="1025,697,1277,716" href="_3E3F0EC000E941CAD63901A5-content.html" alt="CompositeAppliedRateComprisedOf">
+<area shape="poly" coords="1171,839,1114,839,1114,644,1351,644,1351,653,1124,653,1124,830,1171,830,1171,839" href="_3E3F0EC000E941CAD63901A5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD6280202-content.html" alt="Generalization">
+<area shape="poly" coords="1614,799,1614,726,1458,726,1458,684,1468,684,1468,716,1623,716,1623,799,1614,799" href="_3E3F0EC000E941CAD6280202-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="1009,523,1017,540" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="1198,439,1206,456" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="999,395,1179,412" href="_3E3F0EC000E941D0164B0160-content.html" alt="CustomerBillCreatedFor">
+<area shape="poly" coords="1208,431,1007,431,1007,545,997,545,997,421,1208,421,1208,431" href="_3E3F0EC000E941D0164B0160-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="1329,594,1337,611" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="1060,602,1086,619" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="1109,568,1311,585" href="_3E3F0EC000E941D016980039-content.html" alt="CustomerBillPresentsACBR">
+<area shape="poly" coords="1060,583,1351,583,1351,593,1060,593,1060,583" href="_3E3F0EC000E941D016980039-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1114,83,1309,99" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v304.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="1114,66,1309,82" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v3U4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="1108,41,1319,116" href="_.a.e.b.v204.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillPresentationMedia">
+<area shape="rect" coords="671,108,799,124" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJIE4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="671,91,799,107" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJH.k4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="665,66,809,141" href="_.a.e.bJHE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillFormat">
+<area shape="rect" coords="659,343,800,359" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.y.k4.cE.eO_X.pEX.s37Q.e.w" alt="validFor">
+<area shape="rect" coords="659,326,800,342" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.yE4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="659,309,800,325" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.b.v.x.k4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="652,284,809,376" href="_.a.e.b.v.xE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillSpec">
+<area shape="rect" coords="121,68,249,84" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_C.w.p.f.gM3.qE.e.e.hC.p.q.uE0_75.g" alt="frequency">
+<area shape="rect" coords="121,51,249,67" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.yE4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="121,34,249,50" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.x.k4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="115,9,259,101" href="_.a.e.bI.xE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="BillingPeriod">
+<area shape="rect" coords="79,322,289,338" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI9E4.cE.eO_X.pEX.s37Q.e.w" alt="paymentDueDateOffset">
+<area shape="rect" coords="79,305,289,321" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI8.k4.cE.eO_X.pEX.s37Q.e.w" alt="mailingDateOffset">
+<area shape="rect" coords="79,288,289,304" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI8E4.cE.eO_X.pEX.s37Q.e.w" alt="creditDateOffset">
+<area shape="rect" coords="79,271,289,287" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI7.k4.cE.eO_X.pEX.s37Q.e.w" alt="chargeDateOffset">
+<area shape="rect" coords="79,254,289,270" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI7E4.cE.eO_X.pEX.s37Q.e.w" alt="billingDateShift">
+<area shape="rect" coords="79,237,289,253" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI6.k4.cE.eO_X.pEX.s37Q.e.w" alt="validFor">
+<area shape="rect" coords="79,220,289,236" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI6E4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="79,203,289,219" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI5.k4.cE.eO_X.pEX.s37Q.e.w" alt="name">
+<area shape="rect" coords="72,178,298,355" href="_.a.e.bI5E4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillingCycleSpecification">
+<area shape="rect" coords="110,818,294,834" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI4.k4.cE.eO_X.pEX.s37Q.e.w" alt="productionReason">
+<area shape="rect" coords="110,801,294,817" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI104.cE.eO_X.pEX.s37Q.e.w" alt="paymentDueDate">
+<area shape="rect" coords="110,784,294,800" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI1U4.cE.eO_X.pEX.s37Q.e.w" alt="mailingDate">
+<area shape="rect" coords="110,767,294,783" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI004.cE.eO_X.pEX.s37Q.e.w" alt="creditDate">
+<area shape="rect" coords="110,750,294,766" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI0U4.cE.eO_X.pEX.s37Q.e.w" alt="chargeDate">
+<area shape="rect" coords="110,733,294,749" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.z04.cE.eO_X.pEX.s37Q.e.w" alt="billingDate">
+<area shape="rect" coords="104,708,304,851" href="_.a.e.bI.zU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBillingCycle">
+<area shape="rect" coords="728,868,943,884" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bI.vU4.cE.eO_X.pEX.s37Q.e.w" alt="offCycleProductionReason">
+<area shape="rect" coords="728,851,943,867" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.s.nLP.sO.zXE.eS.b.h.fJ2.yJ.d.zZ.g" alt="creditDate">
+<area shape="rect" coords="728,834,943,850" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.nL.k.i.oO.zXE.eS.b.h.fJ2.yJ.d.zZ.g" alt="chargeDate">
+<area shape="rect" coords="728,817,943,833" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html#_1P.o6UO.zXE.eS.b.h.fJ2.yJ.d.zZ.g" alt="mailingDate">
+<area shape="rect" coords="728,800,943,816" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html#_6.jJ.bUO.zXE.eS.b.h.fJ2.yJ.d.zZ.g" alt="paymentDueDate">
+<area shape="rect" coords="728,783,943,799" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html#_Z.bG.cYO.zXE.eS.b.h.fJ2.yJ.d.zZ.g" alt="billDate">
+<area shape="rect" coords="721,758,952,901" href="_.a.e.bI.sU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="OffCyclePartyBill">
+<area shape="rect" coords="546,758,691,810" href="_.a.e.bI.v04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="OnCyclePartyBill">
+<area shape="rect" coords="597,588,711,604" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJA04.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="597,571,711,587" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJAU4.cE.eO_X.pEX.s37Q.e.w" alt="billNo">
+<area shape="rect" coords="590,546,720,621" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBill">
+<area shape="rect" coords="1582,515,1724,567" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="FinancialCharge">
+<area shape="rect" coords="1171,799,1455,851" href="_3E3F0EC000E941CAD607004B-content.html" alt="CompositeAppliedCustomerBillingRate">
+<area shape="rect" coords="1488,799,1751,851" href="_3E3F0EC000E941CAD61C0398-content.html" alt="AtomicAppliedCustomerBillingRate">
+<area shape="rect" coords="939,545,1062,596" href="_3E3F0EC000E941CAC1D6038E-content.html" alt="CustomerBill">
+<area shape="rect" coords="1214,424,1357,439" href="_3E3F0EC000E93C8D16D901C7-content.html#_MBZW.cI3.sE.e.q__.p.b.k4J.i7KA" alt="pin">
+<area shape="rect" coords="1214,408,1357,423" href="_3E3F0EC000E93C8D16D901C7-content.html#_LDXA4I3.sE.e.q__.p.b.k4J.i7KA" alt="creditLimit">
+<area shape="rect" coords="1208,384,1367,456" href="_3E3F0EC000E93C8D16D901C7-content.html" alt="CustomerAccount">
+<area shape="rect" coords="1357,655,1564,670" href="_3E3F0EC000E941CAC71B0187-content.html#_.m.d.qZQF.u.wE.eWQJND.nU7AOQA" alt="description">
+<area shape="rect" coords="1357,639,1564,654" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CFCA4F002A" alt="quantity">
+<area shape="rect" coords="1357,623,1564,638" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CACE360134" alt="date">
+<area shape="rect" coords="1357,607,1564,622" href="_3E3F0EC000E941CAC71B0187-content.html#_YU.y3UH1.kE.e.mN2Z.iF.eKDB8.w" alt="ID">
+<area shape="rect" coords="1351,583,1574,687" href="_3E3F0EC000E941CAC71B0187-content.html" alt="AppliedCustomerBillingRate">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure C.13 - Customer Bill</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

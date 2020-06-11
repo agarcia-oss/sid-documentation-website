@@ -1,0 +1,537 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Resource Number ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for ResourceNumber">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_NR_.hQJ-EE.e.aK3.eS.rHK.k.z.x.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Number ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE</span>
+<br>
+<span class="ElementTitle">Class ResourceNumber</span>
+<p>
+<a name="documentationSection"></a>Sub-class of the abstract LogicalResource. This is the main class for numbers that relates to the number portability, but it can contain more general and shared characteristics like the inventory of numbers. It has an ID (inherited), name (inherited), description(inherited), status (inherited) and a dialedNumber (For mobile: MDN, fixed, and IP type of numbers) - escribir más sobre resourceNumber. The association with NumberPortabilityRequest is of one-to-many since a number can have many ports and a port can happen to a specific number. Nevertheless, they are already related through the order, for that reason the relationship they have is derived.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::dialedNumber" href="#_N.y.uZMJABE.e.aD.y.t3-5E9U-A"><img border="0" src="../images/30297464_icon.png" alt="dialedNumber"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::dialedNumber" href="#_N.y.uZMJABE.e.aD.y.t3-5E9U-A">dialedNumber</a></td><td>
+<p>
+<a name="documentationSection"></a>This attribute called dialedNumber exist to specify the number, for any of those types: mobile like MDN, fixed, and IP type of numbers.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">NumberPortabilityRequest </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::numberPortabilityRequest" href="#_.s31M8J-ME.e.aZ.mK7AEPF.t.n.w"><img border="0" src="../images/30297464_icon.png" alt="numberPortabilityRequest"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::numberPortabilityRequest" href="#_.s31M8J-ME.e.aZ.mK7AEPF.t.n.w">numberPortabilityRequest</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">ResourceNumberSpecification </td><td><a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::resourceNumberSpecification" href="#_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w"><img border="0" src="../images/30297464_icon.png" alt="resourceNumberSpecification"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::resourceNumberSpecification" href="#_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w">resourceNumberSpecification</a></td><td></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Logical Resource ABE::LogicalResource">&nbsp;SID Models::Resource Domain::Resource ABE::Logical Resource ABE::LogicalResource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="lrStatus">&nbsp;lrStatus, <img border="0" src="../images/30297464_icon.png" alt="serviceState">&nbsp;serviceState, <img border="0" src="../images/30297464_icon.png" alt="isOperational">&nbsp;isOperational, <img border="0" src="../images/30297464_icon.png" alt="resourceFacingService">&nbsp;resourceFacingService, <img border="0" src="../images/30297464_icon.png" alt="logicalResourceRole">&nbsp;logicalResourceRole, <img border="0" src="../images/30297464_icon.png" alt="physicalResource">&nbsp;physicalResource</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Resource">&nbsp;SID Models::Resource Domain::Resource ABE::Resource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_managementDomain">&nbsp;_managementDomain, <img border="0" src="../images/30297464_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/30297464_icon.png" alt="_resourceRole">&nbsp;_resourceRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceSpecification">&nbsp;_resourceSpecification, <img border="0" src="../images/30297464_icon.png" alt="_resourceUsage">&nbsp;_resourceUsage, <img border="0" src="../images/30297464_icon.png" alt="usageState">&nbsp;usageState, <img border="0" src="../images/30297464_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/30297464_icon.png" alt="_performance2">&nbsp;_performance2, <img border="0" src="../images/30297464_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService, <img border="0" src="../images/30297464_icon.png" alt="_product">&nbsp;_product, <img border="0" src="../images/30297464_icon.png" alt="_resourceCharacteristicValue">&nbsp;_resourceCharacteristicValue, <img border="0" src="../images/30297464_icon.png" alt="_resourceSecurityEntity">&nbsp;_resourceSecurityEntity, <img border="0" src="../images/30297464_icon.png" alt="_securityEventCollectionMethod">&nbsp;_securityEventCollectionMethod, <img border="0" src="../images/30297464_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/30297464_icon.png" alt="_securityThreatTool">&nbsp;_securityThreatTool, <img border="0" src="../images/30297464_icon.png" alt="_commonResourceInfo">&nbsp;_commonResourceInfo, <img border="0" src="../images/30297464_icon.png" alt="_partyRole3">&nbsp;_partyRole3, <img border="0" src="../images/30297464_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacity">&nbsp;resourceCapacity, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacityDemand">&nbsp;resourceCapacityDemand, <img border="0" src="../images/30297464_icon.png" alt="_resourceInvolvementRole">&nbsp;_resourceInvolvementRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceUser">&nbsp;_resourceUser, <img border="0" src="../images/30297464_icon.png" alt="runningSoftwareStatistics">&nbsp;runningSoftwareStatistics, <img border="0" src="../images/30297464_icon.png" alt="software">&nbsp;software, <img border="0" src="../images/30297464_icon.png" alt="compoundResource">&nbsp;compoundResource, <img border="0" src="../images/30297464_icon.png" alt="resourceConfiguration">&nbsp;resourceConfiguration, <img border="0" src="../images/30297464_icon.png" alt="resourceConfigSpec">&nbsp;resourceConfigSpec, <img border="0" src="../images/30297464_icon.png" alt="resourceTest">&nbsp;resourceTest, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship">&nbsp;resourceRelationship, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship2">&nbsp;resourceRelationship2, <img border="0" src="../images/30297464_icon.png" alt="resource">&nbsp;resource, <img border="0" src="../images/30297464_icon.png" alt="resource22">&nbsp;resource22, <img border="0" src="../images/30297464_icon.png" alt="problem2">&nbsp;problem2, <img border="0" src="../images/30297464_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/30297464_icon.png" alt="_alarm_3">&nbsp;_alarm_3, <img border="0" src="../images/30297464_icon.png" alt="_alarm_2">&nbsp;_alarm_2, <img border="0" src="../images/30297464_icon.png" alt="_alarm_1">&nbsp;_alarm_1, <img border="0" src="../images/30297464_icon.png" alt="resourcePerformance">&nbsp;resourcePerformance</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/30297464_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/30297464_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/30297464_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">ResourceNumber</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_NR_.hQJ-EE.e.aK3.eS.rHK.k.z.x.g-content.html">Resource Number ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_NR_.hQJ-EE.e.aK3.eS.rHK.k.z.x.g-content.html">Resource Number ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_NR_.hQJ-EE.e.aK3.eS.rHK.k.z.x.g-content.html">Resource Number ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_N.y.uZMJABE.e.aD.y.t3-5E9U-A">dialedNumber</a></span>
+<pre>Public&nbsp;String dialedNumber</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This attribute called dialedNumber exist to specify the number, for any of those types: mobile like MDN, fixed, and IP type of numbers.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_N.y.uZMJABE.e.aD.y.t3-5E9U-A"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">dialedNumber</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::dialedNumber</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.s31M8J-ME.e.aZ.mK7AEPF.t.n.w">numberPortabilityRequest</a></span>
+<pre>Public&nbsp;NumberPortabilityRequest numberPortabilityRequest</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_.s31M8J-ME.e.aZ.mK7AEPF.t.n.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_.s3.v.tYJ-ME.e.aZ.mK7AEPF.t.n.w-content.html">NumberPortabilityRequestHas</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">numberPortabilityRequest</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html#_.s3.x.i.kJ-ME.e.aZ.mK7AEPF.t.n.w">resourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::numberPortabilityRequest</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.lV9JMJ-HE.e.aZ.mK7AEPF.t.n.w-content.html">NumberPortabilityRequest</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w">resourceNumberSpecification</a></span>
+<pre>Public&nbsp;ResourceNumberSpecification resourceNumberSpecification</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_.nNO.p.gJ-.rE.e.aZ.mK7AEPF.t.n.w-content.html">ResourceNumberSpecificationDescribes</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">resourceNumberSpecification</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html#_.nNRF.wJ-.rE.e.aZ.mK7AEPF.t.n.w">resourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html">ResourceNumber</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Logical Resource ABE::Resource Number ABE::ResourceNumber::resourceNumberSpecification</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html">ResourceNumberSpecification</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_NR_.hQJ-EE.e.aK3.eS.rHK.k.z.x.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Number ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

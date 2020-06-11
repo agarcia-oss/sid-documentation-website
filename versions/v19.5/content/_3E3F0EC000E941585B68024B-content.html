@@ -1,0 +1,134 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Competitor Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_P7JTAK9.wE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Competitor Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Market_Sales Domain::Competitor ABE::_Competitor Addendum Figures::Figure MS.16 - Product Domain Entities Support of Competitor Product Information<br>
+</span><span class="ElementTitle">Diagram Figure MS.16 - Product Domain Entities Support of Competitor Product Information<br>
+</span><span class="ElementDocumentation">The Competitor Product Correlation ABE compares an enterprise’s ProductOfferings with its Competitors’ ProductOfferings.</br></br>Gathering Competitor intelligence includes information about the ProductOfferings a Competitor markets, the ProductPrices for which payment is expected, ProductPromotions offered by Competitors, and so forth.  Therefore, it would be expected that the SID model would contain these Product domain entities for Competitors.  And, some modelers would expect to find entities such as CompetitorProductOffering, CompetitorProductPrice, and so forth.  SID team members working in the Product and Marketing domains have in the past constructed a separate information model of these Competitor-related entities.  And, when complete, have found striking similarities to Product domain entities.</br>It’s really all a matter of perspective.  Suppose a Competitor used the SID as the basis for an information model.  The Competitor Product domain model would the same model as used by a competing enterprise.  The perspective is provided by introducing the PartyRole entity into the Product domain as shown in the figure below.  </br></br>When a Competitor is associated with an instance of ProductOffering, all related Product domains “inherit” the association to Competitor via their associations with ProductOffering.  An enterprise can decide how much detail, in the form of instances of entities related to are necessary.  For example, an enterprise may not be interested in keeping ProductPriceRules associated with a Competitor’s ProductOfferings.  Using PartyRole also provides a means for an enterprise to segregate ProductOfferings made available by different organizations within the enterprise.</br><Note>Note:  From an implementation view, an enterprise may choose to develop a database that only contains the enterprise’s Product domain entities, and a separate one that contains the enterprise’s Competitors’ Product domain entities.  Both data bases are based on the same information model.</Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E941585B68024B.PNG" alt="Figure MS.16 - Product Domain Entities Support of Competitor Product Information" usemap="#map_3E3F0EC000E941585B68024B"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E941585B68024B">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB967008D-content.html#_.zH.bY.oL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_.zH.l.w.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productCatalog">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB967008D-content.html#_.zH.bY.oL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_.zH.l.w.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productCatalog">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB967008D-content.html#_.zH.bY.oL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="217,376,223,392" href="_3E3F0EC000E93C5DB967008D-content.html#_.zH.bY.oL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_.zH.l.w.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productCatalog">
+<area shape="rect" coords="216,442,223,458" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_.zH.l.w.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productCatalog">
+<area shape="rect" coords="118,409,266,425" href="_.zHPLYL.bJE.eS.g.m.dZHU.p.t.gYA-content.html" alt="ProductCatalogContains">
+<area shape="poly" coords="196,465,196,370,206,370,206,465,196,465" href="_.zHPLYL.bJE.eS.g.m.dZHU.p.t.gYA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_2.u.w.r.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2.u_8QL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_2.u.w.r.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2.u_8QL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_2.u.w.r.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productOffering">
+<area shape="rect" coords="217,258,224,274" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_2.u.w.r.sL.bJE.eS.g.m.dZHU.p.t.gYA" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2.u_8QL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="218,298,224,314" href="_3E3F0EC000E93C5DB96E00DD-content.html#_2.u_8QL.bJE.eS.g.m.dZHU.p.t.gYA" alt="prodCatProdOffer">
+<area shape="rect" coords="23,281,293,297" href="_2.u.m6.sL.bJE.eS.g.m.dZHU.p.t.gYA-content.html" alt="ProductOfferingContainedInProductCatalog">
+<area shape="poly" coords="197,315,197,257,207,257,207,315,197,315" href="_2.u.m6.sL.bJE.eS.g.m.dZHU.p.t.gYA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_4F3.e.cO51E.eSZV94.b.vCW.mCQ" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_4GBP.cO51E.eSZV94.b.vCW.mCQ" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_4F3.e.cO51E.eSZV94.b.vCW.mCQ" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_4GBP.cO51E.eSZV94.b.vCW.mCQ" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_4F3.e.cO51E.eSZV94.b.vCW.mCQ" alt="productOffering">
+<area shape="rect" coords="351,197,357,213" href="_3E3F0EC000E93C2319BC02EE-content.html#_4F3.e.cO51E.eSZV94.b.vCW.mCQ" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_4GBP.cO51E.eSZV94.b.vCW.mCQ" alt="partyRole">
+<area shape="rect" coords="600,97,620,113" href="_3E3F0EC000E93C5DB96E00DD-content.html#_4GBP.cO51E.eSZV94.b.vCW.mCQ" alt="partyRole">
+<area shape="rect" coords="424,190,596,206" href="_4F.x-4O51E.eSZV94.b.vCW.mCQ-content.html" alt="ProductOfferingMarketedBy">
+<area shape="poly" coords="647,89,647,227,340,227,340,217,638,217,638,89,647,89" href="_4F.x-4O51E.eSZV94.b.vCW.mCQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="349,333,357,350" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BDB0B0364" alt="_productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="352,267,360,284" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDB0B036E" alt="_productOffering">
+<area shape="rect" coords="358,309,548,326" href="_3E3F0EC000E93D6BDB0A03C7-content.html" alt="ProductOfferingValuedBy">
+<area shape="poly" coords="338,257,338,359,328,359,328,257,338,257" href="_3E3F0EC000E93D6BDB0A03C7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="215,157,223,174" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="208,90,234,107" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="136,126,343,143" href="_3E3F0EC000E93D6BA1810024-content.html" alt="ProdSpecMadeAvailableAs">
+<area shape="poly" coords="246,88,246,181,236,181,236,88,246,88" href="_3E3F0EC000E93D6BA1810024-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="113,465,252,517" href="_3E3F0EC000E93C5DB967008D-content.html" alt="ProductCatalog">
+<area shape="rect" coords="63,340,204,356" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html#_3E3F0EC000E93EE8919A00F7" alt="validFor">
+<area shape="rect" coords="57,315,214,373" href="_.tTU.y.cLO.cE.eS.g.m.dZHU.p.t.gYA-content.html" alt="ProdCatProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="507,20,684,92" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="146,181,343,260" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDBC900B4" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EC019DF02A2" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EBFBE720167" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_-.eXZ4H.u4E.e.m32PUJUD.d2.u.w" alt="ID">
+<area shape="rect" coords="325,359,562,436" href="_3E3F0EC000E93CD366DF029E-content.html" alt="ProductOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6D16180227" alt="brand">
+<area shape="rect" coords="131,9,350,91" href="_3E3F0EC000E93C5DB97B0118-content.html" alt="ProductSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure MS.16 - Product Domain Entities Support of Competitor Product Information</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_P7JTAK9.wE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Competitor Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

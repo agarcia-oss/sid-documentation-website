@@ -1,0 +1,177 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Project Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E38ABFD0107-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Project Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Project ABE::_ Project Addendum Figures::Figure Proj.01 - basic structure<br>
+</span><span class="ElementTitle">Diagram Figure Proj.01 - basic structure<br>
+</span><span class="ElementDocumentation">Projects are made up of Sub-Projects, Work Breakdown Structure (WBS) Elements and Activities, as shown in figure 1. </br>Projects can be established for many reasons in an Enterprise and Activities can cover any task in the Enterprise, from Strategic work, Product Development through to Repair and Maintenance. A Project can be thought of as a grouping of Activities to achieve one or more business goals.</br>We will define an abstract entity “ProjectElement” that contains the common attributes and associations of Project, WBS Element and Activity. This will help in making the model simpler, more robust and more flexible.</br>Note that in the model, many of the relationships have been generalized to link to ProjectElement. This allows the relationships to be defined at a high level (e.g. per Project) or at the lowest level (e.g. per Activity). To reduce data entry and data maintenance, the linkages should be made at the highest practical level. For example, if a Project is all at a certain Location then this linkage should be done at the Project level. If the Project is at 3 locations then link to the Locations at the highest level practical (e.g. a t the WBS or Activity level).</br>Projects can be decomposed into smaller parts (sub-projects) forming a hierarchy.</br>Similarly, WBS Elements are broken down using a strict hierarchy.</br>Activities can also be formed into a hierarchy, allowing us to deal with them at both a summary and a detailed level.</br><Note>Note that Project, WBS Element & Activity are linked at the abstract level, allowing for greater flexibility.</Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93D65A1E701F0.PNG" alt="Figure Proj.01 - basic structure" usemap="#map_3E3F0EC000E93D65A1E701F0"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93D65A1E701F0">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_5.rE.fMN.z1E.d-904N.hZB0G.mA" alt="sIDABE">
+<area shape="rect" coords="0,0,0,0" href="_.dLS.r4N.z1E.d-904N.hZB0G.mA-content.html#_5.rGUYN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_5.rE.fMN.z1E.d-904N.hZB0G.mA" alt="sIDABE">
+<area shape="rect" coords="0,0,0,0" href="_.dLS.r4N.z1E.d-904N.hZB0G.mA-content.html#_5.rGUYN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_5.rE.fMN.z1E.d-904N.hZB0G.mA" alt="sIDABE">
+<area shape="rect" coords="59,339,65,355" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_5.rE.fMN.z1E.d-904N.hZB0G.mA" alt="sIDABE">
+<area shape="rect" coords="0,0,0,0" href="_.dLS.r4N.z1E.d-904N.hZB0G.mA-content.html#_5.rGUYN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="156,229,162,245" href="_.dLS.r4N.z1E.d-904N.hZB0G.mA-content.html#_5.rGUYN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="23,279,175,296" href="_5.rDREN.z1E.d-904N.hZB0G.mA-content.html" alt="ScopeIncludeSIDABE">
+<area shape="poly" coords="197,246,92,292,82,381,72,380,83,286,193,237,197,246" href="_5.rDREN.z1E.d-904N.hZB0G.mA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_3.pSN.oN.z1E.d-904N.hZB0G.mA" alt="tAMApplication">
+<area shape="rect" coords="0,0,0,0" href="_.m4P5YN.z1E.d-904N.hZB0G.mA-content.html#_3.pU.p4N.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_3.pSN.oN.z1E.d-904N.hZB0G.mA" alt="tAMApplication">
+<area shape="rect" coords="0,0,0,0" href="_.m4P5YN.z1E.d-904N.hZB0G.mA-content.html#_3.pU.p4N.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_3.pSN.oN.z1E.d-904N.hZB0G.mA" alt="tAMApplication">
+<area shape="rect" coords="448,348,454,364" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_3.pSN.oN.z1E.d-904N.hZB0G.mA" alt="tAMApplication">
+<area shape="rect" coords="0,0,0,0" href="_.m4P5YN.z1E.d-904N.hZB0G.mA-content.html#_3.pU.p4N.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="326,230,332,246" href="_.m4P5YN.z1E.d-904N.hZB0G.mA-content.html#_3.pU.p4N.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="276,275,490,292" href="_3.pQY.cN.z1E.d-904N.hZB0G.mA-content.html" alt="ScopeIncludesTAMApplication">
+<area shape="poly" coords="294,237,386,290,431,378,422,383,379,297,289,246,294,237" href="_3.pQY.cN.z1E.d-904N.hZB0G.mA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_.s.w.k-.sN.z1E.d-904N.hZB0G.mA" alt="eTOMProcessElement">
+<area shape="rect" coords="0,0,0,0" href="_.i1T.oYN.z1E.d-904N.hZB0G.mA-content.html#_.s.w.pQIN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_.s.w.k-.sN.z1E.d-904N.hZB0G.mA" alt="eTOMProcessElement">
+<area shape="rect" coords="0,0,0,0" href="_.i1T.oYN.z1E.d-904N.hZB0G.mA-content.html#_.s.w.pQIN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="0,0,0,0" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_.s.w.k-.sN.z1E.d-904N.hZB0G.mA" alt="eTOMProcessElement">
+<area shape="rect" coords="227,351,233,367" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html#_.s.w.k-.sN.z1E.d-904N.hZB0G.mA" alt="eTOMProcessElement">
+<area shape="rect" coords="0,0,0,0" href="_.i1T.oYN.z1E.d-904N.hZB0G.mA-content.html#_.s.w.pQIN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="227,254,233,270" href="_.i1T.oYN.z1E.d-904N.hZB0G.mA-content.html#_.s.w.pQIN.z1E.d-904N.hZB0G.mA" alt="projectscope">
+<area shape="rect" coords="140,311,360,328" href="_.s.w.i.i.cN.z1E.d-904N.hZB0G.mA-content.html" alt="ScopeIncludesProcessElement">
+<area shape="poly" coords="253,242,253,380,243,380,243,242,253,242" href="_.s.w.i.i.cN.z1E.d-904N.hZB0G.mA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="187,194,315,245" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html" alt="ProjectScope">
+<area shape="rect" coords="0,0,0,0" href="_FJ.z6.wN.z.zE.d-904N.hZB0G.mA-content.html#_VM.nQAN.z.zE.d-904N.hZB0G.mA" alt="_project">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C7EC6037A-content.html#_VM.r.h.cN.z.zE.d-904N.hZB0G.mA" alt="_vision">
+<area shape="rect" coords="0,0,0,0" href="_FJ.z6.wN.z.zE.d-904N.hZB0G.mA-content.html#_VM.nQAN.z.zE.d-904N.hZB0G.mA" alt="_project">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C7EC6037A-content.html#_VM.r.h.cN.z.zE.d-904N.hZB0G.mA" alt="_vision">
+<area shape="rect" coords="0,0,0,0" href="_FJ.z6.wN.z.zE.d-904N.hZB0G.mA-content.html#_VM.nQAN.z.zE.d-904N.hZB0G.mA" alt="_project">
+<area shape="rect" coords="344,163,350,179" href="_FJ.z6.wN.z.zE.d-904N.hZB0G.mA-content.html#_VM.nQAN.z.zE.d-904N.hZB0G.mA" alt="_project">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C7EC6037A-content.html#_VM.r.h.cN.z.zE.d-904N.hZB0G.mA" alt="_vision">
+<area shape="rect" coords="149,172,155,188" href="_3E3F0EC000E93D5C7EC6037A-content.html#_VM.r.h.cN.z.zE.d-904N.hZB0G.mA" alt="_vision">
+<area shape="poly" coords="109,158,388,147,389,156,109,168,109,158" href="_VM.iX.gN.z.zE.d-904N.hZB0G.mA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1A1033A-content.html" alt="Generalization">
+<area shape="poly" coords="1126,384,949,233,955,225,1132,377,1126,384" href="_3E3F0EC000E93D61F1A1033A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93DEAA6B80251" alt="_wBSElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93DEAA6B80252" alt="_activity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93DEAA6B80251" alt="_wBSElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93DEAA6B80252" alt="_activity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93DEAA6B80251" alt="_wBSElement">
+<area shape="rect" coords="924,429,932,446" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93DEAA6B80251" alt="_wBSElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93DEAA6B80252" alt="_activity">
+<area shape="rect" coords="1090,422,1098,439" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93DEAA6B80252" alt="_activity">
+<area shape="rect" coords="960,389,1059,406" href="_3E3F0EC000E93DEAA6B80250-content.html" alt="WBSContains">
+<area shape="poly" coords="1107,420,916,420,916,410,1107,410,1107,420" href="_3E3F0EC000E93DEAA6B80250-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F2C6034D-content.html" alt="Generalization">
+<area shape="poly" coords="837,380,837,250,847,250,847,380,837,380" href="_3E3F0EC000E93D72F2C6034D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D72F27603C1" alt="_wBSElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93D72F27603C2" alt="_project">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D72F27603C1" alt="_wBSElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93D72F27603C2" alt="_project">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D72F27603C1" alt="_wBSElement">
+<area shape="rect" coords="764,378,772,395" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D72F27603C1" alt="_wBSElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93D72F27603C2" alt="_project">
+<area shape="rect" coords="553,225,561,242" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93D72F27603C2" alt="_project">
+<area shape="rect" coords="616,290,734,307" href="_3E3F0EC000E93D72F27603C0-content.html" alt="ProjectContains">
+<area shape="poly" coords="542,197,800,376,795,385,537,205,542,197" href="_3E3F0EC000E93D72F27603C0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F19E03B7-content.html" alt="Generalization">
+<area shape="poly" coords="539,141,733,134,733,144,540,151,539,141" href="_3E3F0EC000E93D61F19E03B7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1132,47,1337,62" href="_3E3F0EC000E93D5C67940209-content.html#_3E3F0EC000E93E1B71EB01B0" alt="validFor">
+<area shape="rect" coords="1126,23,1347,79" href="_3E3F0EC000E93D5C67940209-content.html" alt="ProjectElementRelationship">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F5" alt="_projectElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F7" alt="_projectElement1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F5" alt="_projectElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F7" alt="_projectElement1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F5" alt="_projectElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F5" alt="_projectElement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F7" alt="_projectElement1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5C678601F7" alt="_projectElement1">
+<area shape="poly" coords="952,27,1046,27,1046,159,952,159,952,149,1037,149,1037,37,952,37,952,27" href="_3E3F0EC000E93D5C67940209-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="369,380,511,431" href="_.m4P5YN.z1E.d-904N.hZB0G.mA-content.html" alt="TAMApplication">
+<area shape="rect" coords="149,380,331,431" href="_.i1T.oYN.z1E.d-904N.hZB0G.mA-content.html" alt="eTOMProcessElement">
+<area shape="rect" coords="29,380,121,431" href="_.dLS.r4N.z1E.d-904N.hZB0G.mA-content.html" alt="SIDABE">
+<area shape="rect" coords="29,141,111,192" href="_FJ.z6.wN.z.zE.d-904N.hZB0G.mA-content.html" alt="Vision">
+<area shape="rect" coords="1114,436,1242,451" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93DC879D002C3" alt="actualCost">
+<area shape="rect" coords="1114,420,1242,435" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93D5C673503E4" alt="name">
+<area shape="rect" coords="1114,404,1242,419" href="_3E3F0EC000E93D5C65CD031E-content.html#_3E3F0EC000E93D6081A000DC" alt="activityNr">
+<area shape="rect" coords="1107,380,1251,468" href="_3E3F0EC000E93D5C65CD031E-content.html" alt="Activity">
+<area shape="rect" coords="784,420,908,435" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93D72F23D0260" alt="wbsLevel">
+<area shape="rect" coords="784,404,908,419" href="_3E3F0EC000E93D72F1F5031B-content.html#_3E3F0EC000E93D72F238017C" alt="wbsNr">
+<area shape="rect" coords="778,380,918,452" href="_3E3F0EC000E93D72F1F5031B-content.html" alt="WBSElement">
+<area shape="rect" coords="395,202,532,217" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93DDAF9640124" alt="type">
+<area shape="rect" coords="395,186,532,201" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D609CD80122" alt="exclusions">
+<area shape="rect" coords="395,170,532,185" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D609CCF0093" alt="inclusions">
+<area shape="rect" coords="395,154,532,169" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D6090DC03BF" alt="constraints">
+<area shape="rect" coords="395,138,532,153" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D6090D80323" alt="assumptions">
+<area shape="rect" coords="395,122,532,137" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D5CAA6E032F" alt="projectNr">
+<area shape="rect" coords="395,106,532,121" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D5CAA8502E2" alt="title">
+<area shape="rect" coords="395,90,532,105" href="_3E3F0EC000E93D5C7EC6037A-content.html#_3E3F0EC000E93D5CAA7D0023" alt="versionNr">
+<area shape="rect" coords="389,66,542,234" href="_3E3F0EC000E93D5C7EC6037A-content.html" alt="Project">
+<area shape="rect" coords="739,221,944,236" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93EB5BD2A019E" alt="timingConstraintDate">
+<area shape="rect" coords="739,205,944,220" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93EB5BD23028E" alt="timingConstraint">
+<area shape="rect" coords="739,189,944,204" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93DC74CBA0311" alt="description">
+<area shape="rect" coords="739,173,944,188" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D6081910185" alt="priority">
+<area shape="rect" coords="739,157,944,172" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D60818301F3" alt="status">
+<area shape="rect" coords="739,141,944,156" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D72F09503E7" alt="scheduledDuration">
+<area shape="rect" coords="739,125,944,140" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D72F0BA037C" alt="currentDuration">
+<area shape="rect" coords="739,109,944,124" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D609DF3011F" alt="actualDuration">
+<area shape="rect" coords="739,93,944,108" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D608195034D" alt="plannedDuration">
+<area shape="rect" coords="739,77,944,92" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D72F08401F8" alt="ACWP">
+<area shape="rect" coords="739,61,944,76" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D609DDB00E8" alt="BCWP">
+<area shape="rect" coords="739,45,944,60" href="_3E3F0EC000E93D61F1900104-content.html#_3E3F0EC000E93D5CAEE20003" alt="BCWS">
+<area shape="rect" coords="733,21,954,253" href="_3E3F0EC000E93D61F1900104-content.html" alt="ProjectElement">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Proj.01 - basic structure</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E38ABFD0107-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Project Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

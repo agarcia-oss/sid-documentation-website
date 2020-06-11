@@ -1,0 +1,130 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.03 - Relating the Physical and Logical Aspects of a Device to Each Other<br>
+</span><span class="ElementTitle">Diagram Figure PR.03 - Relating the Physical and Logical Aspects of a Device to Each Other<br>
+</span><span class="ElementDocumentation">If we remember that a “Device” is really just a type of Resource that can be managed, we can make it more extensible. This is done by defining two classes – PhysicalResource and LogicalResource – that show the inherent correlation between the physical and logical aspects of a given Resource. Then, we can represent particular physical and logical aspects of a resource as subclasses of either PhysicalResource or LogicalResource. This also enables us to define a more accurate and rigorous class structure for the various types of managed objects that are aggregated by a “Device”. This is illustrated in Figure below.</br><Note>Note that this enables the physical and logical description of managed entities to be decoupled from each other. This enables different subject matter experts to work on the areas that they are interested in.</Note></br>Please see GB922 Service Domain guide book for an overview of Service entities, and how they interact with Resource entities.</br>Note that PhysicalDevice is a subclass of PhysicalResource. PhysicalResource will be used to gather the common management characteristics of “Devices” (which are represented by the PhysicalDevice class) and components of a “Device” (which are represented by subclasses of the Hardware class). Similarly, the logical features seen in the Figure below are grouped under a common base class, called LogicalResource. Note that LogicalResource is explained further in Addendum for Logical Resource, which is a separate Addendum. This Addendum also describes managed entities that are associated with a LogicalResource, such as Software and Protocol. Similarly, Service is in a separate Addendum.</br>Management information is not shown in the following Figure in order to keep the model as simple as possible for right now.</br>This structure enables us to focus on specific relationships between PhysicalResource and other entities and LogicalResource and other entities. It is imprecise to say that a Device hosts a Service– there are in reality several relationships that describe this. A PhysicalResource supports LogicalResources, as indicated by the LogicalPhysicalResource aggregation in the following Figure. But the actual running of the Service is a logical concept, and hence is associated with a LogicalResource. The value of this Addendum is that it describes all physical entities that are used to host or support logical entities, and corresponds to viewing a Resource as consisting of physical and logical aspects that each needs to be managed.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE22A150274.PNG" alt="Figure PR.03 - Relating the Physical and Logical Aspects of a Device to Each Other" usemap="#map_3E3F0EC000E93EE22A150274"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE22A150274">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_.p6K.hQK.t2E.eK.mG5.cSW.dFH.t.g" alt="resource2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.p6U5UK.t2E.eK.mG5.cSW.dFH.t.g" alt="software">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_.p6K.hQK.t2E.eK.mG5.cSW.dFH.t.g" alt="resource2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.p6U5UK.t2E.eK.mG5.cSW.dFH.t.g" alt="software">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_.p6K.hQK.t2E.eK.mG5.cSW.dFH.t.g" alt="resource2">
+<area shape="rect" coords="441,54,448,70" href="_3E3F0EC000E93CDE25AD031F-content.html#_.p6K.hQK.t2E.eK.mG5.cSW.dFH.t.g" alt="resource2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.p6U5UK.t2E.eK.mG5.cSW.dFH.t.g" alt="software">
+<area shape="rect" coords="712,60,718,76" href="_3E3F0EC000E93DDE851703CB-content.html#_.p6U5UK.t2E.eK.mG5.cSW.dFH.t.g" alt="software">
+<area shape="rect" coords="551,23,633,39" href="_.p6F.o.wK.t2E.eK.mG5.cSW.dFH.t.g-content.html" alt="ResourceUses">
+<area shape="poly" coords="730,52,429,52,429,42,730,42,730,52" href="_.p6F.o.wK.t2E.eK.mG5.cSW.dFH.t.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Generalization">
+<area shape="poly" coords="838,167,838,126,373,126,373,85,383,85,383,117,848,117,848,167,838,167" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Generalization">
+<area shape="poly" coords="203,167,203,117,373,117,373,85,383,85,383,126,213,126,213,167,203,167" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB6030096-content.html" alt="Generalization">
+<area shape="poly" coords="314,317,314,256,204,256,204,215,214,215,214,247,323,247,323,317,314,317" href="_3E3F0EC000E93CDAB6030096-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Generalization">
+<area shape="poly" coords="74,317,74,247,204,247,204,215,214,215,214,256,84,256,84,317,74,317" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="271,378,279,395" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="85,372,111,389" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="116,413,310,430" href="_3E3F0EC000E93CDAC2DC00B4-content.html" alt="PhysicalDeviceConsistsOf">
+<area shape="poly" coords="127,365,127,403,299,403,299,365,309,365,309,413,117,413,117,365,127,365" href="_3E3F0EC000E93CDAC2DC00B4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_FUR.m0I.l.mE.eK.p8Y.k.vI.m.e7GA" alt="serialNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE089301B6" alt="swapSpaceUsedCurrent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE0B1003E4" alt="processMemorySizeCurrent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE0AA202C1" alt="pagingFileSizeCurrent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E94366DA4E0249" alt="numUsersCurrent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE080903D4" alt="numberProcessesActiveCurrent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE03BB005F" alt="lastStartTime">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDE25AD031F-content.html#_3E3F0EC000E93EFE042603B6" alt="isUTCTime">
+<area shape="rect" coords="730,37,892,88" href="_3E3F0EC000E93CDE25AD031F-content.html" alt="InstalledSoftware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018D" alt="width">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018C" alt="weightUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018B" alt="weight">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018A" alt="measurementUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0189" alt="height">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0188" alt="depth">
+<area shape="rect" coords="264,317,375,368" href="_3E3F0EC000E93CDAB5F60264-content.html" alt="Hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDDB56400AB" alt="canMixPower">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5910219" alt="isComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5A801C2" alt="deviceGroupID">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0180" alt="configurationOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0182" alt="backplaneNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0181" alt="backplaneIndependent">
+<area shape="rect" coords="9,317,150,368" href="_3E3F0EC000E93CDAB4C90013-content.html" alt="PhysicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="324,37,431,88" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+<area shape="rect" coords="765,226,920,242" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAD87C026B" alt="isOperational">
+<area shape="rect" coords="765,209,920,225" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0164" alt="serviceState">
+<area shape="rect" coords="765,192,920,208" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0166" alt="lrStatus">
+<area shape="rect" coords="758,167,929,259" href="_3E3F0EC000E93CDAA51A00F6-content.html" alt="LogicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0167" alt="versionNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0163" alt="serialNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0162" alt="powerState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0160" alt="otherIdentifier">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD015E" alt="manufactureDate">
+<area shape="rect" coords="129,167,288,218" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.03 - Relating the Physical and Logical Aspects of a Device to Each Other</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Product Offering Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_PE.zRYK7.iE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Product Offering Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Product Domain::Product Offering ABE::_Product Offering Addendum Figures::Figure Pr.05c - BundleProductOffering Details<br>
+</span><span class="ElementTitle">Diagram Figure Pr.05c - BundleProductOffering Details<br>
+</span><span class="ElementDocumentation">In some cases, there are limits to the number of ProductOfferings that can be procured as part of a BundledProductOffering.  For example, when subscribing to a mobile telephone service up to five phones can be procured at a special price.  The BundledProdOfferOption handle these cases by allowing lower and upper limits to be set for ProductOfferings that comprise a BundledProductOffering as shown in Figure Pr.5c. The figure also shows via the defaultRelOfferNumber attribute that is used to initialize the number of ProductOffering instances when ordering the ProductOffering that is contained within an instance of BundledProductOffering.</br>Some Information Framework users may want a ProductOffering instance that is part of a BundledProductOffering instance to not be individually procurable. For example, a free SMS offering cannot be procured by itself. A separate SimpleProductOffering can be created to allow for add-on SMS service. Other Information Framework users may feel that that this may result in ProductOffering instance explosion. They want a ProductOffering instance that is part of a BundledProductOffering instance to be individually procurable rather than creating another instance of ProductOffering that is individually procurable. </br>Prior to release 17.5 of this guide book these two options were described as implementation options. In release 17.5 an isSellableStandAlone attribute shown in Figure Pr.5c was added satisfy the needs of both groups of users. If the isSellableStandAlone attribute is TRUE, it indicates that a ProductOffering instance, which is part of a BundledProductOffering instance, can also be offered stand-alone, if FALSE means that the ProductOffering instance can only be acquired within a BundledProductOffering instance. NOTE: This attribute only applies to offering instances (bundles and simple offerings) that are part of a BundledProductOffering instance.</br>There are some considerations that can be taken into account to assist in determining when this attribute should be set to FALSE or TRUE for applicable instances of ProductOffering.</br>If the attribute is set to FALSE there is an increase in the number of ProductOffering instances as previously mentioned.</br>If the attribute is set to TRUE and associations to all related entity instances, such as, but not limited to, ProductOfferingPrice and ProdSpecCharValueUse, remain the same there are no other considerations.</br>If the attribute is set to TRUE and some associations, such as, but not limited to, ProductOfferingPrice and ProdSpecCharValueUse, are to different instances of these entities then there are other considerations. Note that this is not a complete list of considerations, but each association should be should be analyzed to determine if the ProductOffering instance is related to different entity instances:</br>        •	Requires the use of the Product Offering Price Rule ABE to define a rule to determine the price for the ProductOffering in the bundle and the price for the stand-alone ProductOffering. This introduces approximately 20 policy entity instances to define the rules rather than creating an additional instance of a ProductOffering.</br>        •	For a ProductOffering instance there may be different instances of ProdSpecCharValueUse that apply to the offering when it is part of a bundle versus when it is sellable stand-alone. For example, a single device color may be made available in a bundle, but multiple colors available for the stand-alone offering. It appears that this consideration may require the creation of an association between ProdSpecCharValueUse and BundledProdOfferOption; the current association between ProductOffering and ProdSpecCharValueUse could be used for the stand-alone offering.</br>        •	For a ProductOffering instance there may be different instances of ProductOfferingTerm that apply to the offering when it is part of a bundle versus when it is sellable stand-alone. For example, a device in a bundle may have a different agreement length than for the stand-alone offering. It appears that this consideration may require the creation of an association between ProductOfferingTerm and BundledProdOfferOption; the current association between ProductOffering and ProductOfferingTerm could be used for the stand-alone offering.</br>        •	This is a catalog consideration that is based on if there is a price for the stand-alone offering and different price for the offering in a bundle. If the price is the same then it could appear once in the catalog as part of the bundle with a notation that it can be individually acquired. If there are different prices then a determination must be made on how to represent the prices. For example, both prices could be shown for the offering with a notation on the price for when the offering is acquired stand-alone.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E94460E6F301E6.PNG" alt="Figure Pr.05c - BundleProductOffering Details" usemap="#map_3E3F0EC000E94460E6F301E6"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E94460E6F301E6">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9FA6A90186-content.html" alt="Generalization">
+<area shape="poly" coords="699,352,699,257,515,257,515,216,525,216,525,247,709,247,709,352,699,352" href="_3E3F0EC000E93C9FA6A90186-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9FA6B1019A-content.html" alt="Generalization">
+<area shape="poly" coords="257,355,257,247,515,247,515,216,525,216,525,257,267,257,267,355,257,355" href="_3E3F0EC000E93C9FA6B1019A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="29,79,254,94" href="_3E3F0EC000E93C9FA6DA0000-content.html#_O.i.g8YF.p.tE.e.e01.bH.lYEX1T.w" alt="defaultRelOfferNumber">
+<area shape="rect" coords="29,63,254,78" href="_3E3F0EC000E93C9FA6DA0000-content.html#_3E3F0EC000E94460E834030B" alt="numberRelOfferUpperLimit">
+<area shape="rect" coords="29,47,254,62" href="_3E3F0EC000E93C9FA6DA0000-content.html#_3E3F0EC000E94460E82D006B" alt="numberRelOfferLowerLimit">
+<area shape="rect" coords="23,23,264,111" href="_3E3F0EC000E93C9FA6DA0000-content.html" alt="BundledProdOfferOption">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9FA68E035C-content.html#_3E3F0EC000E93C9FA6DD023A" alt="_productOffering4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93C9FA6DE00B4" alt="_bundledProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9FA68E035C-content.html#_3E3F0EC000E93C9FA6DD023A" alt="_productOffering4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93C9FA6DE00B4" alt="_bundledProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9FA68E035C-content.html#_3E3F0EC000E93C9FA6DD023A" alt="_productOffering4">
+<area shape="rect" coords="389,168,397,185" href="_3E3F0EC000E93C9FA68E035C-content.html#_3E3F0EC000E93C9FA6DD023A" alt="_productOffering4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93C9FA6DE00B4" alt="_bundledProductOffering">
+<area shape="rect" coords="198,331,206,348" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93C9FA6DE00B4" alt="_bundledProductOffering">
+<area shape="poly" coords="224,355,224,190,410,190,410,199,234,199,234,355,224,355" href="_3E3F0EC000E93C9FA6DA0000-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="578,352,766,403" href="_3E3F0EC000E93C9FA67F02BC-content.html" alt="SimpleProductOffering">
+<area shape="rect" coords="417,187,613,202" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="410,163,622,219" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="164,355,362,406" href="_3E3F0EC000E93C9FA68E035C-content.html" alt="BundledProductOffering">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Pr.05c - BundleProductOffering Details</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_PE.zRYK7.iE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Product Offering Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

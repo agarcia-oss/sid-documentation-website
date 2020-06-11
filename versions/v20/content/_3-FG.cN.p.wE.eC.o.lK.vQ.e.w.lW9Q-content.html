@@ -1,0 +1,116 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Workforce Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.hJAOMN.mWE.eC.z9.a.o.eR.f.u.g.hA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Workforce Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Enterprise Domain::Workforce ABE::_ Workforce Addendum Figures::Figure WFM.13 - Workforce Organization Role<br>
+</span><span class="ElementTitle">Diagram Figure WFM.13 - Workforce Organization Role<br>
+</span><span class="ElementDocumentation">There is a need to model an entity that can show the current schedules of an organization. The schedules are to show customer support agents, dispatchers, and managers what work requests with what skills, time, and location have been received, what employees or pools are reserved for the requests, and what employees are assigned to do the work tasks. Besides the Pools of available capacity, the schedules support CSR, Workforce managers, and dispatchers, allowing them to have an overall view of current assignments, to make decisions about further reservations and assignments, or the planning of future capacity.</br>For this purpose we introduce WorkSchedule, which can hold Reservation (booking) and Assignment. An example of WorkSchedule is when a contractor team responsible for the New York market has been receiving 100 appointment requests for fiber installation during July and currently reserves employees to perform 80 of them in particular timeslots.</br>The explicit modeling of WorkSchedule and its association with other entities like Pools, Reservation, and Assignment is a subject of a future revision of this Workforce Management addendum. In this version, following the model of ProjectSchedule, we propose that WorkSchedule is also to be a type of SimpleCalendar, defined in Common guide book section Calendar ABE.</br>The following Figure represents the WorkSchedule entity.</br>Being an extension of Simple Calendar, WorkSchedule inherently contains CalendarEntry (start–end time, or time slot). We can use CalendarEntry to associate it with the Appointment, Reservation, and Assignment records.</br>An organization can have more than one WorkSchedule for various purposes (e.g. for a time period, some work types, or serving areas).<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3-FG.cN.p.wE.eC.o.lK.vQ.e.w.lW9Q.PNG" alt="Figure WFM.13 - Workforce Organization Role" usemap="#map_3-FG.cN.p.wE.eC.o.lK.vQ.e.w.lW9Q"></td>
+</tr>
+</table>
+<map name="map_3-FG.cN.p.wE.eC.o.lK.vQ.e.w.lW9Q">
+<area shape="rect" coords="0,0,0,0" href="_1.r.zP.oC.fLE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="362,144,362,58,372,58,372,144,362,144" href="_1.r.zP.oC.fLE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_S_W2Q.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceEmployeePool">
+<area shape="rect" coords="0,0,0,0" href="_6.o.u.q.oN.p3E.eC.o.lK.vQ.e.w.lW9Q-content.html#_S_.gAM.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_S_W2Q.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceEmployeePool">
+<area shape="rect" coords="0,0,0,0" href="_6.o.u.q.oN.p3E.eC.o.lK.vQ.e.w.lW9Q-content.html#_S_.gAM.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_S_W2Q.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceEmployeePool">
+<area shape="rect" coords="638,276,646,293" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_S_W2Q.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceEmployeePool">
+<area shape="rect" coords="0,0,0,0" href="_6.o.u.q.oN.p3E.eC.o.lK.vQ.e.w.lW9Q-content.html#_S_.gAM.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="495,150,503,167" href="_6.o.u.q.oN.p3E.eC.o.lK.vQ.e.w.lW9Q-content.html#_S_.gAM.d.qDE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="533,209,841,226" href="_S_W2QN.qDE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WfOrganizationDefinesWfEmployeePools">
+<area shape="poly" coords="469,159,666,159,666,294,656,294,656,169,469,169,469,159" href="_S_W2QN.qDE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_64XBE.d.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSchedule">
+<area shape="rect" coords="0,0,0,0" href="_B.n.x.cMN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html#_64.g.yE.t.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_64XBE.d.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSchedule">
+<area shape="rect" coords="0,0,0,0" href="_B.n.x.cMN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html#_64.g.yE.t.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_64XBE.d.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSchedule">
+<area shape="rect" coords="128,257,136,274" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_64XBE.d.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSchedule">
+<area shape="rect" coords="0,0,0,0" href="_B.n.x.cMN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html#_64.g.yE.t.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="205,143,213,160" href="_B.n.x.cMN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html#_64.g.yE.t.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="23,213,276,230" href="_64XBEN.qCE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WfOrganizationHasWorkSchedule">
+<area shape="poly" coords="250,172,114,172,114,294,104,294,104,162,250,162,250,172" href="_64XBEN.qCE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_2T27IN.qCE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Generalization">
+<area shape="poly" coords="112,347,112,384,102,384,102,347,112,347" href="_2T27IN.qCE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Y.g.z.p.cN.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_place2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_Y.g.z.p.c9.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Y.g.z.p.cN.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_place2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_Y.g.z.p.c9.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="0,0,0,0" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Y.g.z.p.cN.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_place2">
+<area shape="rect" coords="346,271,354,288" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Y.g.z.p.cN.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_place2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_Y.g.z.p.c9.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="346,203,354,220" href="_3E3F0EC000E93C86C87200D8-content.html#_Y.g.z.p.c9.p_E.eC.o.lK.vQ.e.w.lW9Q" alt="_workforceOrganizationRole">
+<area shape="rect" coords="267,242,495,259" href="_Y.g.p4.cN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WorkforceOrganizationServes">
+<area shape="poly" coords="371,197,371,294,361,294,361,197,371,197" href="_Y.g.p4.cN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="325,9,428,61" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="556,318,784,333" href="_6.o.u.q.oN.p3E.eC.o.lK.vQ.e.w.lW9Q-content.html#_.v.t.aL.kN.qCE.eC.o.lK.vQ.e.w.lW9Q" alt="isWfSupplierEmployeePool">
+<area shape="rect" coords="549,294,793,350" href="_6.o.u.q.oN.p3E.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WorkforceEmployeePool">
+<area shape="rect" coords="32,318,183,333" href="_B.n.x.cMN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html#_KN.c3.cB.uME.eGSPP.o.aD41WR.w" alt="granularity">
+<area shape="rect" coords="25,294,192,350" href="_B.n.x.cMN.p_E.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WorkSchedule">
+<area shape="rect" coords="25,384,192,451" href="_3E3F0EC000E93E516E910264-content.html" alt="SimpleCalendar">
+<area shape="rect" coords="301,350,443,365" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C89BE780116" alt="validFor">
+<area shape="rect" coords="301,334,443,349" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C89BE750112" alt="ID">
+<area shape="rect" coords="295,294,453,382" href="_3E3F0EC000E93C86C87200D8-content.html" alt="Place">
+<area shape="rect" coords="256,168,461,183" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html#__F6-0B.uKE.eGSPP.o.aD41WR.w" alt="organizationRoleName">
+<area shape="rect" coords="250,144,471,200" href="_.vHX.l.sN.nGE.eC.z9.a.o.eR.f.u.g.hA-content.html" alt="WorkforceOrganizationRole">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure WFM.13 - Workforce Organization Role</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.hJAOMN.mWE.eC.z9.a.o.eR.f.u.g.hA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Workforce Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.11 - The Relationship Between PhysicalResource and PhysicalResourceSpecification<br>
+</span><span class="ElementTitle">Diagram Figure PR.11 - The Relationship Between PhysicalResource and PhysicalResourceSpecification<br>
+</span><span class="ElementDocumentation">Now, if we look at these attributes, we see that some of them lend themselves to being templatized, while some don’t. </br>That is, we can use the concept of a PhysicalResourceSpecification to supply the ModelNumber, PartNumber, SKUNumber, and VendorName attributes, because these correspond to a generic specification describing a particular type of PhysicalResource. The other two attributes (ManufactureDate and SerialNumber) are specific to a particular instance of a PhysicalResource object, and therefore are not contained in the PhysicalResourceSpecification. </br>We separate PhysicalResourceSpecs from LogicalResourceSpecs because they are fundamentally different in nature. In addition, they have different attributes, methods, constraints, and relationships in the System view.</br>Both PhysicalResourceSpecs and LogicalResourceSpecs use the composite pattern for extensibility. Only the PhysicalResourceSpec classes are shown in The following Figure above for simplicity.</br>A PhysicalResourceSpecAtomic class is a concrete class for describing specific attributes, behavior, relationships, constraints, and semantics for building PhysicalResource objects. The purpose of this class is to be able to track PhysicalResourceSpecifications separately from other types of ResourceSpecifications. Note that this class inherits the SpecifiesResource aggregation, and therefore can be used with the corresponding PhysicalResource class.</br>The difference between this class and the PhysicalResourceSpecComposite class is that this class represents stand-alone PhysicalResourceSpecifications. The PhysicalResourceSpecComposite class represents a specification that is in reality made up of a set (usually a hierarchy) of PhysicalResourceSpecifications.</br>The composite pattern is completed by defining the HasPhysicalResourceSpecs aggregation. This aggregation defines the set of PhysicalResourceSpecs that are contained by this particular PhysicalResourceSpecComposite entity.</br>The SpecifiesResource aggregation defines the particular ResourceSpecification that is used to provide the invariant characteristics (i.e., attributes and relationships, as well as methods and constraints in the System View) of a given Resource. This enables multiple Resources that each use a common set of attributes, methods, constraints, and/or relationships to be related to a single invariant specification of those characteristics and behavior. This facilitates their updating.</br>The cardinality of the SpecifiesResource aggregation is 1 on the ResourceSpecification side and 0..n on the Resource side. This means that a ResourceSpecification can be written that isn't related to any specific Resources, but if a Resource is built, it must be derived from a ResourceSpecification. Furthermore, this is an aggregation because this is a whole-part relationship: the ResourceSpecification defines the invariant attributes and behavior of zero or more Resources, and each Resource derived from the ResourceSpecification uses all of these invariant attributes and behavior (and presumably adds its own instance-specific attributes and behavior).</br>Since this aggregation is defined at the Resource and ResourceSpecification level, each of the subclasses of Resource and ResourceSpecification inherit its use. This is why (for example) there isn’t a relationship connecting a PhysicalResourceSpec to a PhysicalResource.</br>The SpecifiesResource association is used to add the attributes and relationships of a ResourceSpecification to a Resource. The various subclasses of PhysicalResouce inherits the ability to have its own PhysicalResourceSpecification (or subclass of PhysicalResourceSpecification). This enables any specific needs of one of the various subclasses of PhysicalResource to be met by subclassing the PhysicalResourceSpecification corresponding to that object.</br>We’ll look at the definitions of each of these major entities in the following sections.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE257A2016E.PNG" alt="Figure PR.11 - The Relationship Between PhysicalResource and PhysicalResourceSpecification" usemap="#map_3E3F0EC000E93EE257A2016E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE257A2016E">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.dWY_.kBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.dW.c.p8BX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource22">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.dWY_.kBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.dW.c.p8BX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource22">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.dWY_.kBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource">
+<area shape="rect" coords="186,79,192,95" href="_3E3F0EC000E93DDE851703CB-content.html#_.dWY_.kBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_.dW.c.p8BX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource22">
+<area shape="rect" coords="292,79,298,95" href="_3E3F0EC000E93DDE851703CB-content.html#_.dW.c.p8BX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="resource22">
+<area shape="rect" coords="182,45,296,61" href="_.dWXKYBX.oE.e.a-.p.d6A.n.c.wZ1Q-content.html" alt="InvolvedResource">
+<area shape="poly" coords="279,98,279,74,203,74,203,98,193,98,193,64,289,64,289,98,279,98" href="_.dWXKYBX.oE.e.a-.p.d6A.n.c.wZ1Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25C630091-content.html#_HJ.l.mMBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpecAttributes">
+<area shape="rect" coords="0,0,0,0" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_HJ.q.e.sBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25C630091-content.html#_HJ.l.mMBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpecAttributes">
+<area shape="rect" coords="0,0,0,0" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_HJ.q.e.sBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25C630091-content.html#_HJ.l.mMBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpecAttributes">
+<area shape="rect" coords="837,370,857,386" href="_3E3F0EC000E93EE25C630091-content.html#_HJ.l.mMBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpecAttributes">
+<area shape="rect" coords="0,0,0,0" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_HJ.q.e.sBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpec">
+<area shape="rect" coords="844,307,851,323" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_HJ.q.e.sBX.oE.e.a-.p.d6A.n.c.wZ1Q" alt="physicalResourceSpec">
+<area shape="rect" coords="750,338,999,354" href="_HJ.gG.oBX.oE.e.a-.p.d6A.n.c.wZ1Q-content.html" alt="PhysicalResourceSpecFurtherExtendedBy">
+<area shape="poly" coords="871,302,871,392,861,392,861,302,871,302" href="_HJ.gG.oBX.oE.e.a-.p.d6A.n.c.wZ1Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Generalization">
+<area shape="poly" coords="504,483,504,412,354,412,354,371,364,371,364,402,514,402,514,483,504,483" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="212,511,220,528" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="379,515,405,532" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="228,486,422,503" href="_3E3F0EC000E93CDAC2DC00B4-content.html" alt="PhysicalDeviceConsistsOf">
+<area shape="poly" coords="440,512,202,512,202,502,440,502,440,512" href="_3E3F0EC000E93CDAC2DC00B4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="31,477,39,494" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="153,524,179,541" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD" alt="_hardware1">
+<area shape="rect" coords="23,571,161,588" href="_3E3F0EC000E93DDEE7070297-content.html" alt="ContainsHardware">
+<area shape="poly" coords="154,519,154,565,50,565,50,491,93,491,93,501,60,501,60,555,144,555,144,519,154,519" href="_3E3F0EC000E93DDEE7070297-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Generalization">
+<area shape="poly" coords="79,248,79,178,234,178,234,146,244,146,244,187,89,187,89,248,79,248" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB6030096-content.html" alt="Generalization">
+<area shape="poly" coords="142,471,142,402,354,402,354,371,364,371,364,412,152,412,152,471,142,471" href="_3E3F0EC000E93CDAB6030096-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Generalization">
+<area shape="poly" coords="352,248,352,187,234,187,234,146,244,146,244,178,362,178,362,248,352,248" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CF80294-content.html" alt="Generalization">
+<area shape="poly" coords="816,254,816,164,905,164,905,133,915,133,915,174,826,174,826,254,816,254" href="_3E3F0EC000E93EE25CF80294-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EE25CFB00FE-content.html" alt="Generalization">
+<area shape="poly" coords="1134,254,1134,174,905,174,905,133,915,133,915,164,1144,164,1144,254,1134,254" href="_3E3F0EC000E93EE25CFB00FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DDEC6D202A5" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93DDEC6D202AF" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DDEC6D202A5" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93DDEC6D202AF" alt="_resourceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DDEC6D202A5" alt="_resource">
+<area shape="rect" coords="333,119,341,136" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93DDEC6D202A5" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93DDEC6D202AF" alt="_resourceSpecification">
+<area shape="rect" coords="748,124,774,141" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93DDEC6D202AF" alt="_resourceSpecification">
+<area shape="rect" coords="470,94,608,111" href="_3E3F0EC000E93DDEC6D00202-content.html" alt="SpecifiesResource">
+<area shape="poly" coords="801,121,290,121,290,111,801,111,801,121" href="_3E3F0EC000E93DDEC6D00202-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA027A" alt="_resourceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA0298" alt="_resourceSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA027A" alt="_resourceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA0298" alt="_resourceSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA027A" alt="_resourceSpecification2">
+<area shape="rect" coords="820,63,828,80" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA027A" alt="_resourceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA0298" alt="_resourceSpecification1">
+<area shape="rect" coords="964,69,972,86" href="_3E3F0EC000E93DDEC5E70323-content.html#_3E3F0EC000E93EA5E2BA0298" alt="_resourceSpecification1">
+<area shape="rect" coords="814,23,1002,40" href="_3E3F0EC000E93EA5E2B8000A-content.html" alt="InvolvedResourceSpecs">
+<area shape="poly" coords="949,85,949,51,846,51,846,85,836,85,836,41,959,41,959,85,949,85" href="_3E3F0EC000E93EA5E2B8000A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="265,341,448,357" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0167" alt="versionNumber">
+<area shape="rect" coords="265,324,448,340" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0163" alt="serialNumber">
+<area shape="rect" coords="265,307,448,323" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0162" alt="powerState">
+<area shape="rect" coords="265,290,448,306" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0160" alt="otherIdentifier">
+<area shape="rect" coords="265,273,448,289" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD015E" alt="manufactureDate">
+<area shape="rect" coords="259,248,458,374" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+<area shape="rect" coords="752,467,974,483" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_3E3F0EC000E93EAAC620002F" alt="partNumber">
+<area shape="rect" coords="752,450,974,466" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_3E3F0EC000E93EAAC6200030" alt="skuNumber">
+<area shape="rect" coords="752,433,974,449" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_3E3F0EC000E93EAAC6200038" alt="vendorName">
+<area shape="rect" coords="752,417,974,433" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html#_3E3F0EC000E93EAAC620002E" alt="modelNumber">
+<area shape="rect" coords="745,392,983,501" href="_.hXQ.p.cBX.nE.e.a-.p.d6A.n.c.wZ1Q-content.html" alt="PhysicalResourceSpecAttributes">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018D" alt="width">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018C" alt="weightUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018B" alt="weight">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018A" alt="measurementUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0189" alt="height">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0188" alt="depth">
+<area shape="rect" coords="93,471,204,522" href="_3E3F0EC000E93CDAB5F60264-content.html" alt="Hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDDB56400AB" alt="canMixPower">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5910219" alt="isComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5A801C2" alt="deviceGroupID">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0180" alt="configurationOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0182" alt="backplaneNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0181" alt="backplaneIndependent">
+<area shape="rect" coords="440,483,581,534" href="_3E3F0EC000E93CDAB4C90013-content.html" alt="PhysicalDevice">
+<area shape="rect" coords="772,254,959,305" href="_3E3F0EC000E93EE25C630091-content.html" alt="PhysicalResourceSpec">
+<area shape="rect" coords="1048,254,1227,305" href="_3E3F0EC000E93EE25CAA036E-content.html" alt="LogicalResourceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAD87C026B" alt="isOperational">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0164" alt="serviceState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0166" alt="lrStatus">
+<area shape="rect" coords="9,248,160,299" href="_3E3F0EC000E93CDAA51A00F6-content.html" alt="LogicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="185,98,292,149" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+<area shape="rect" coords="801,85,991,136" href="_3E3F0EC000E93DDEC5E70323-content.html" alt="ResourceSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.11 - The Relationship Between PhysicalResource and PhysicalResourceSpecification</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

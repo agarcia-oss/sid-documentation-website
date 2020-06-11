@@ -1,0 +1,102 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Root Business Entities Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Root Business Entities ABE::_ Root Business Entities Addendum Figures::Figure R.29 - Content Characteristic Specs<br>
+</span><span class="ElementTitle">Diagram Figure R.29 - Content Characteristic Specs<br>
+</span><span class="ElementDocumentation">[] Characteristic-Based Pricing and Charging</br>In the not-so-distant past factors influencing the price of a product were based on the usage of network resources and other resources, measured by such factors as amount of time, or some other unit, a resource was used or the amount of bandwidth consumed.  But once the usage of other types of resources, such as content, is included, many other characteristics influence the price.</br>This model was originally envisioned to support content pricing and charging, but it can be used for any type of pricing and charging that is based on characteristics and their values.  As will be seen it can also be used for usage-based pricing d charging also.</br>[] Policy versus Simplicity</br>When rules for pricing (and charging) were first being developed in the Information Framework (SID) many years ago, Reliance on the policy model was not total.  An additional set of entities were under development to support simple rules, such as quantity-based pricing and tiered-based pricing.  However, this additional set was not introduced in the released version of the SID.  Rather, all rules relied on policy.  Many members believe that using only policy is a bit extreme.  A balance can be achieved between simplicity and complexity.</br>This balance was introduced into the SID in release 6.0 with the addition of an association between ProductSpecCharacteristicValue and ProductOfferingPrice.  This provided a simple rule that enabled a price to be dependent on value(s) of one or more characteristics.</br>This balance continued in SID in release 9.0 with the arrival of a new Level 2 ABE (Aggregate Business Entity, a cohesive group of entities) named Pricing Logic Algorithm within the Product Offering Level 1 ABE. This ABE used Product Specification Characteristics to provide support for pricing that involves parameters which are multi-dimensional matrices, in which each dimension is defined by the valid values for a specific characteristic.  For example, a PLA which rates events based on customer type, there is one instantiation in which customer type is either residential or commercial (and in which case the size of the dimension of the matrix is 2) and in other instantiation the customer type can be student, normal and senior citizen (in this case the size of the dimension is 3).</br>And, the use of a simple approach is used here.</br>        •	The Characteristic Model</br>        •	The generalized application of the CharacteristicSpecification/CharacteristicValue pattern will be used to demonstrate this. </br>        •	The Pricing and Charging Scenario</br>A typical and simple scenario will be used to demonstrate the model.  Pay per view Video on Demand (VoD) product depends on the format, standard (STD) or high definition (HD) with a special price given for certain movies viewed in HD during a Saturday and Sunday period.</br>Shown in the following Figure is an Object Diagram that shows how the current model supports movies.  There are other attributes associated with a movie, such as run time, director, and so forth that are not shown in this example.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_JEK.e.cO.r_E.d-.j-.bEBR.yNKGQ.PNG" alt="Figure R.29 - Content Characteristic Specs" usemap="#map_JEK.e.cO.r_E.d-.j-.bEBR.yNKGQ"></td>
+</tr>
+</table>
+<map name="map_JEK.e.cO.r_E.d-.j-.bEBR.yNKGQ">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BD" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1CA01BF" alt="_characteristicSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_.g.h3.p.kO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharacteristicSpecRelationshipInstance">
+<area shape="rect" coords="300,161,673,213" href="_.g.h3.p.kO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharacteristicSpecRelationshipInstance">
+<area shape="poly" coords="183,153,183,228,174,228,174,153,183,153" href="_.g.h3.p.kO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DD" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DF" alt="_characteristicSpecValue1">
+<area shape="rect" coords="0,0,0,0" href="_O.eJ.l.cO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharSpecValueRelationshipInstance2">
+<area shape="rect" coords="695,313,1127,372" href="_O.eJ.l.cO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharSpecValueRelationshipInstance2">
+<area shape="poly" coords="865,40,1162,40,1162,377,1152,377,1152,50,865,50,865,40" href="_O.eJ.l.cO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DD" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E945FB03E301DF" alt="_characteristicSpecValue1">
+<area shape="rect" coords="0,0,0,0" href="_GY.y.n4O.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharSpecValueRelationshipInstance">
+<area shape="rect" coords="760,111,1076,165" href="_GY.y.n4O.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharSpecValueRelationshipInstance">
+<area shape="poly" coords="743,90,743,215,733,215,733,90,743,90" href="_GY.y.n4O.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_B_58EO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharacteristicSpecificationEnumeratedByInstance3">
+<area shape="poly" coords="1007,414,174,414,174,284,183,284,183,404,1007,404,1007,414" href="_B_58EO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_B.oW-.wO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharacteristicSpecificationEnumeratedByInstance2">
+<area shape="poly" coords="602,261,348,261,348,251,602,251,602,261" href="_B.oW-.wO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_BP.oV.sO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="CharacteristicSpecificationEnumeratedByInstance">
+<area shape="poly" coords="608,50,180,50,180,97,170,97,170,40,608,40,608,50" href="_BP.oV.sO.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1014,421,1295,438" href="_O.eJ.l.c.e.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Slot">
+<area shape="rect" coords="1007,377,1304,443" href="_7A.b.o.gO.r_E.d-.j-.bEBR.yNKGQ-content.html" alt="2012 SD Format">
+<area shape="rect" coords="608,259,866,294" href="_GY.y.n4.e.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Slot">
+<area shape="rect" coords="602,215,876,299" href="_.z.c4-.kO.r_E.d-.j-.bEBR.yNKGQ-content.html" alt="2012 HD Format">
+<area shape="rect" coords="615,53,858,88" href="_GY.y.n4-.sAE.d-.j-.bEBR.yNKGQ-content.html" alt="Slot">
+<area shape="rect" coords="608,9,867,93" href="_.wLY.x.kO.r_E.d-.j-.bEBR.yNKGQ-content.html" alt="2012 Title">
+<area shape="rect" coords="9,228,350,287" href="_W7.qBQO.rUE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Movie Format">
+<area shape="rect" coords="16,97,344,156" href="_.sM.fX.cO.i.sE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Movie Title">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure R.29 - Content Characteristic Specs</td><td><b>Type</b></td><td>Object Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fUW.x8JL.fE.eWKV.aDAY.sD7.q.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Root Business Entities Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

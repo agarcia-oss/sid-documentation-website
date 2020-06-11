@@ -1,0 +1,246 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Location Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E8CECE30318-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Location Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Location ABE::_ Location Addendum Figures::Figure L.15 - Links to Other Parts of the SID Model<br>
+</span><span class="ElementTitle">Diagram Figure L.15 - Links to Other Parts of the SID Model<br>
+</span><span class="ElementDocumentation">[] Location & Address Role</br>In the Party SID model facet, we defined roles that parties (people and organizations) may play. In a similar fashion, we may find it useful to define location and address roles. This will allow us to use a single location or address for different purposes, e.g. a single address may be a:</br>        •	Customer billing address</br>        •	Phone directory address</br>        •	CPE equipment location address and a</br>        •	Geographic plant reference address (pillar outside the front of …).</br>Because the role requirements are simpler than in the Party SID model facet, Location roles have been modeled as associations. [Fowler-role]</br>Care should be taken not to confuse when to create address & location subtypes versus address & location roles.</br></br>[] Interworking with the rest of the SID model</br>Fig 15 shows some possible connections from Location to other parts of the SID model. This diagram is intended to be illustrative rather than prescriptive.</br>The SID model doesn’t store GeoSpatial information as a part of every entity. As each entity is modeled, we determine whether the entity has GeoSpatial attributes or refers to GeoSpatial attributes. For network equipment, we create abstract GeoSpatial entities of location and route section etc. and reference these from the network elements.</br>To reiterate; Location information should not be stored in Product, Party or Network Resource entities but associated with a Place. </br>If a Place exists, it should be shared and not duplicated.</br>This allows queries that would otherwise require GeoSpatial queries to be done textually, i.e. to check if two network elements are at the same location, just see if the place ids are the same. </br>When placing a Resource or a Product, the choice is to associate to an:</br>        •	address, or</br>        •	site, or</br>        •	location<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93C42691D0115.PNG" alt="Figure L.15 - Links to Other Parts of the SID Model" usemap="#map_3E3F0EC000E93C42691D0115"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93C42691D0115">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93CB27036025D" alt="_postalDeliveryAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C997CC600D0-content.html#_3E3F0EC000E93CB270360267" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93CB27036025D" alt="_postalDeliveryAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C997CC600D0-content.html#_3E3F0EC000E93CB270360267" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93CB27036025D" alt="_postalDeliveryAddress">
+<area shape="rect" coords="279,729,286,745" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93CB27036025D" alt="_postalDeliveryAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C997CC600D0-content.html#_3E3F0EC000E93CB270360267" alt="_contactMedium">
+<area shape="rect" coords="736,792,743,808" href="_3E3F0EC000E93C997CC600D0-content.html#_3E3F0EC000E93CB270360267" alt="_contactMedium">
+<area shape="rect" coords="393,755,623,771" href="_3E3F0EC000E93CB2703600F4-content.html" alt="PostalDeliveryAddressCorrespondsTo">
+<area shape="poly" coords="755,822,258,758,260,748,756,812,755,822" href="_3E3F0EC000E93CB2703600F4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="484,664,709,691" href="_3E3F0EC000E93EEEBCF80106-content.html" alt="AddressContactMediumRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93EEEBCF80110" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEBCF80111" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93EEEBCF80110" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEBCF80111" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93EEEBCF80110" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93EEEBCF80110" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEBCF80111" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEBCF80111" alt="_contactMedium">
+<area shape="poly" coords="819,817,607,300,616,296,828,813,819,817" href="_3E3F0EC000E93EEEBCF80106-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="1231,849,1239,866" href="_3E3F0EC000E93C23250A0154-content.html#_3E3F0EC000E93D813C62019E" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="905,843,913,860" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D813C62019F" alt="_contactMedium">
+<area shape="rect" coords="983,849,1170,866" href="_3E3F0EC000E93D813C62019D-content.html" alt="PartyRoleContactableVia">
+<area shape="poly" coords="901,830,1247,830,1247,840,901,840,901,830" href="_3E3F0EC000E93D813C62019D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA059002E-content.html" alt="Generalization">
+<area shape="poly" coords="605,274,605,33,615,33,615,274,605,274" href="_3E3F0EC000E93EEEA059002E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93EEEA46502FF" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEA4650300" alt="_localAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93EEEA46502FF" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEA4650300" alt="_localAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93EEEA46502FF" alt="_abstractGeographicAddress">
+<area shape="rect" coords="647,310,673,327" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93EEEA46502FF" alt="_abstractGeographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEA4650300" alt="_localAddress">
+<area shape="rect" coords="821,501,829,518" href="_3E3F0EC000E93EEEA0260066-content.html#_3E3F0EC000E93EEEA4650300" alt="_localAddress">
+<area shape="rect" coords="750,411,929,454" href="_3E3F0EC000E93EEEA46502FE-content.html" alt="LocalAddressDefinedRelativeToGeoAddress">
+<area shape="poly" coords="811,528,614,301,621,295,819,521,811,528" href="_3E3F0EC000E93EEEA46502FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA45F03B4-content.html" alt="Generalization">
+<area shape="poly" coords="489,579,598,296,607,300,498,582,489,579" href="_3E3F0EC000E93EEEA45F03B4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EEEA05F02B7-content.html" alt="Generalization">
+<area shape="poly" coords="430,443,591,294,597,301,436,450,430,443" href="_3E3F0EC000E93EEEA05F02B7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1316,589,1496,616" href="_3E3F0EC000E93C31124B0138-content.html" alt="PlacePartyRoleAssoc">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C31124B0337" alt="_place">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C31124B0341" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C31124B0337" alt="_place">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C31124B0341" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C31124B0337" alt="_place">
+<area shape="rect" coords="1266,288,1274,305" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C31124B0337" alt="_place">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C31124B0341" alt="_partyRole">
+<area shape="rect" coords="1270,794,1278,811" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93C31124B0341" alt="_partyRole">
+<area shape="poly" coords="1293,824,1240,255,1250,254,1303,823,1293,824" href="_3E3F0EC000E93C31124B0138-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="1116,801,1124,818" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="1221,820,1229,837" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="1136,773,1246,790" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="1254,828,1090,784,1092,774,1256,819,1254,828" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4276310173-content.html" alt="Generalization">
+<area shape="poly" coords="159,862,159,752,169,752,169,862,159,862" href="_3E3F0EC000E93C4276310173-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C997CD1009A-content.html" alt="Generalization">
+<area shape="poly" coords="162,728,162,470,172,470,172,728,162,728" href="_3E3F0EC000E93C997CD1009A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C91D0034-content.html" alt="Generalization">
+<area shape="poly" coords="855,520,1047,446,1050,455,858,529,855,520" href="_3E3F0EC000E93C86C91D0034-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93C9E98920213" alt="_localLocation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93C9E9892021D" alt="_localAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93C9E98920213" alt="_localLocation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93C9E9892021D" alt="_localAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93C9E98920213" alt="_localLocation">
+<area shape="rect" coords="1027,570,1035,587" href="_3E3F0EC000E93C4275AE0002-content.html#_3E3F0EC000E93C9E98920213" alt="_localLocation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93C9E9892021D" alt="_localAddress">
+<area shape="rect" coords="899,535,925,552" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93C9E9892021D" alt="_localAddress">
+<area shape="rect" coords="796,568,971,585" href="_3E3F0EC000E93C9E989200AB-content.html" alt="LocalAddressLocatedAt">
+<area shape="poly" coords="875,544,1036,584,1034,594,873,553,875,544" href="_3E3F0EC000E93C9E989200AB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="770,203,999,230" href="_3E3F0EC000E93EE7D7750205-content.html" alt="PlacePhysicalResourceAssoc">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93EE7D7750206" alt="_physicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D7750207" alt="_place2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93EE7D7750206" alt="_physicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D7750207" alt="_place2">
+<area shape="rect" coords="1015,296,1148,313" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93EE7D7750206" alt="_physicalResource">
+<area shape="rect" coords="981,263,989,280" href="_3E3F0EC000E93C86C87200D8-content.html#_3E3F0EC000E93EE7D7750206" alt="_physicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D7750207" alt="_place2">
+<area shape="rect" coords="1149,230,1157,247" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D7750207" alt="_place2">
+<area shape="poly" coords="1206,255,980,299,978,289,1204,245,1206,255" href="_3E3F0EC000E93EE7D7750205-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C88803AB-content.html" alt="Generalization">
+<area shape="poly" coords="1086,424,1230,251,1237,257,1093,430,1086,424" href="_3E3F0EC000E93C86C88803AB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C88703A9-content.html" alt="Generalization">
+<area shape="poly" coords="646,29,1211,226,1208,235,643,38,646,29" href="_3E3F0EC000E93C86C88703A9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E985A00D2-content.html" alt="Generalization">
+<area shape="poly" coords="1075,589,1075,451,1085,451,1085,589,1075,589" href="_3E3F0EC000E93C9E985A00D2-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E21018C" alt="_to">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E210196" alt="_from">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E21018C" alt="_to">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E210196" alt="_from">
+<area shape="rect" coords="1005,621,1042,638" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E21018C" alt="_to">
+<area shape="rect" coords="1061,629,1069,646" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E21018C" alt="_to">
+<area shape="rect" coords="1127,628,1181,645" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E210196" alt="_from">
+<area shape="rect" coords="1092,627,1100,644" href="_3E3F0EC000E93C9E984E02B6-content.html#_3E3F0EC000E93CA29E210196" alt="_from">
+<area shape="poly" coords="1098,609,1183,698,1056,701,1045,613,1054,612,1065,691,1160,689,1091,616,1098,609" href="_3E3F0EC000E93CA29E4D0058-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C86100DE-content.html#_3E3F0EC000E93EE7D77B024B" alt="_holder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D77B024C" alt="_localPlace">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C86100DE-content.html#_3E3F0EC000E93EE7D77B024B" alt="_holder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D77B024C" alt="_localPlace">
+<area shape="rect" coords="872,326,935,343" href="_3E3F0EC000E93C86C86100DE-content.html#_3E3F0EC000E93EE7D77B024B" alt="_holder">
+<area shape="rect" coords="972,323,998,340" href="_3E3F0EC000E93C86C86100DE-content.html#_3E3F0EC000E93EE7D77B024B" alt="_holder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D77B024C" alt="_localPlace">
+<area shape="rect" coords="1064,393,1072,410" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93EE7D77B024C" alt="_localPlace">
+<area shape="rect" coords="884,373,1108,390" href="_3E3F0EC000E93EE7D77B024A-content.html" alt="ResourceProvidesLocalPlaces">
+<area shape="poly" coords="1062,431,929,322,936,314,1068,423,1062,431" href="_3E3F0EC000E93EE7D77B024A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C4276000209" alt="_geographicSubAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275C102B3-content.html#_3E3F0EC000E93C4276000213" alt="_geographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C4276000209" alt="_geographicSubAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275C102B3-content.html#_3E3F0EC000E93C4276000213" alt="_geographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C4276000209" alt="_geographicSubAddress">
+<area shape="rect" coords="477,525,485,542" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C4276000209" alt="_geographicSubAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275C102B3-content.html#_3E3F0EC000E93C4276000213" alt="_geographicAddress">
+<area shape="rect" coords="445,460,453,477" href="_3E3F0EC000E93C4275C102B3-content.html#_3E3F0EC000E93C4276000213" alt="_geographicAddress">
+<area shape="rect" coords="227,509,449,526" href="_3E3F0EC000E93C4275FF00DB-content.html" alt="GeoAddressHasSubAddresses">
+<area shape="poly" coords="430,468,487,578,479,582,422,473,430,468" href="_3E3F0EC000E93C4275FF00DB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C969B3D0245" alt="_logicalAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C969B2603D2-content.html#_3E3F0EC000E93C969B3D024F" alt="_geographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C969B3D0245" alt="_logicalAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C969B2603D2-content.html#_3E3F0EC000E93C969B3D024F" alt="_geographicAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C969B3D0245" alt="_logicalAddress">
+<area shape="rect" coords="248,470,256,487" href="_3E3F0EC000E93C4275B903D3-content.html#_3E3F0EC000E93C969B3D0245" alt="_logicalAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C969B2603D2-content.html#_3E3F0EC000E93C969B3D024F" alt="_geographicAddress">
+<area shape="rect" coords="314,470,322,487" href="_3E3F0EC000E93C969B2603D2-content.html#_3E3F0EC000E93C969B3D024F" alt="_geographicAddress">
+<area shape="rect" coords="155,398,402,415" href="_3E3F0EC000E93C969B3C0352-content.html" alt="GeoAddressHasLogicalAddresses">
+<area shape="poly" coords="335,463,238,463,238,453,335,453,335,463" href="_3E3F0EC000E93C969B3C0352-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93C9976C10388" alt="_geographicLocation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93C9976C10389" alt="_geographicSite_1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93C9976C10388" alt="_geographicLocation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93C9976C10389" alt="_geographicSite_1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93C9976C10388" alt="_geographicLocation">
+<area shape="rect" coords="316,197,342,214" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93C9976C10388" alt="_geographicLocation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93C9976C10389" alt="_geographicSite_1">
+<area shape="rect" coords="236,79,262,96" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93C9976C10389" alt="_geographicSite_1">
+<area shape="rect" coords="235,132,385,149" href="_3E3F0EC000E93C9976C10387-content.html" alt="GeoSiteIsRelatedTo">
+<area shape="poly" coords="174,78,328,232,321,239,168,85,174,78" href="_3E3F0EC000E93C9976C10387-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93CA9450B00DB" alt="_datumPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93CA9450B00DC" alt="_geographicSite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93CA9450B00DB" alt="_datumPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93CA9450B00DC" alt="_geographicSite">
+<area shape="rect" coords="145,254,242,271" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93CA9450B00DB" alt="_datumPoint">
+<area shape="rect" coords="222,224,248,241" href="_3E3F0EC000E93C86C7BA01BA-content.html#_3E3F0EC000E93CA9450B00DB" alt="_datumPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93CA9450B00DC" alt="_geographicSite">
+<area shape="rect" coords="168,87,176,104" href="_3E3F0EC000E93C9976AE02B8-content.html#_3E3F0EC000E93CA9450B00DC" alt="_geographicSite">
+<area shape="rect" coords="23,165,253,182" href="_3E3F0EC000E93CA9450B00DA-content.html" alt="GeographicSiteHasDatumPoint">
+<area shape="poly" coords="156,82,156,244,250,244,250,254,146,254,146,82,156,82" href="_3E3F0EC000E93CA9450B00DA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9976BD013D-content.html" alt="Generalization">
+<area shape="poly" coords="347,232,593,30,599,37,354,239,347,232" href="_3E3F0EC000E93C9976BD013D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C8D902FD-content.html" alt="Generalization">
+<area shape="poly" coords="228,58,535,25,536,34,229,67,228,58" href="_3E3F0EC000E93C86C8D902FD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="755,815,903,842" href="_3E3F0EC000E93C23250A0154-content.html" alt="ContactMedium">
+<area shape="rect" coords="493,274,723,301" href="_3E3F0EC000E93EEEA0260066-content.html" alt="AbstractGeographicAddress">
+<area shape="rect" coords="1247,823,1354,850" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="68,728,261,755" href="_3E3F0EC000E93C997CC600D0-content.html" alt="PostalDeliveryAddress">
+<area shape="rect" coords="760,525,893,552" href="_3E3F0EC000E93C4275AE0002-content.html" alt="LocalAddress">
+<area shape="rect" coords="1205,230,1285,257" href="_3E3F0EC000E93C86C87200D8-content.html" alt="Place">
+<area shape="rect" coords="1011,756,1093,783" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+<area shape="rect" coords="1017,589,1152,616" href="_3E3F0EC000E93C9E984E02B6-content.html" alt="LocalLocation">
+<area shape="rect" coords="839,294,998,321" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+<area shape="rect" coords="1024,427,1137,454" href="_3E3F0EC000E93C86C86100DE-content.html" alt="LocalPlace">
+<area shape="rect" coords="1403,821,1579,848" href="_3E3F0EC000E93C19002102B4-content.html" alt="BusinessInteraction">
+<area shape="rect" coords="392,580,588,607" href="_3E3F0EC000E93C4275C102B3-content.html" alt="GeographicSubAddress">
+<area shape="rect" coords="335,447,507,474" href="_3E3F0EC000E93C4275B903D3-content.html" alt="GeographicAddress">
+<area shape="rect" coords="96,446,240,473" href="_3E3F0EC000E93C969B2603D2-content.html" alt="LogicalAddress">
+<area shape="rect" coords="250,235,424,262" href="_3E3F0EC000E93C9976AE02B8-content.html" alt="GeographicLocation">
+<area shape="rect" coords="90,58,230,85" href="_3E3F0EC000E93C86C7BA01BA-content.html" alt="GeographicSite">
+<area shape="rect" coords="535,9,687,36" href="_3E3F0EC000E93C86C868025A-content.html" alt="GeographicPlace">
+<area shape="rect" coords="98,862,234,889" href="_3E3F0EC000E93C4276200092-content.html" alt="PoBoxAddress">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure L.15 - Links to Other Parts of the SID Model</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E8CECE30318-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Location Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>
