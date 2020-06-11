@@ -4,6 +4,7 @@
 
 Servidor web para alojar la versión navegable de la documentación del modelo SID que publica TMForum. Test de deploy
 
-Production version: 19.5 
-Release canditate: 20
+* Deprecated version: 19 
+* Production version: 19.5 
+* Release canditate: 20
 
