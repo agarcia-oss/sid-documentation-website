@@ -1,0 +1,124 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-15 - Simple PolicyStatement<br>
+</span><span class="ElementTitle">Diagram Figure 1P-15 - Simple PolicyStatement<br>
+</span><span class="ElementDocumentation">There is significant similarity between the most common types of PolicyConditions and PolicyActions. Specifically:</br>        •	PolicyConditions are of the form: “IF <policy-condition> is TRUE”</br>        •	PolicyActions are of the form: “SET <action-target> to <value></br>Both the condition clause and the action clause are in reality of the same form:</br>{ variable, operator, value }</br>where the braces are used to denote a tuple. To see this, we can write a PolicyCondition as:</br>IF <variable> <operator> <value> is TRUE	(1)</br>For example, consider:</br>IF sourcePort == 21	(2)</br>In equation (2), sourcePort is an example of a variable, “==” is an example of an operator, and “21” is an example of a value. More formally, equation (2) tests the value of the sourcePort variable, to see if it is equal to the value 21 or not.</br>Similarly, a PolicyAction can be represented as:</br><operator  <variable> to <value></br>For example, consider:</br>SET ToS = 5	(3)</br>In equation (3), ToS is an example of a variable, “=” is an example of an operator, and “5” is an example of a value. More formally, equation (3) sets the value of the ToS (type of service) field in the IP header to the value of 5.</br>Clearly, values can have different data types besides integers, and variables can represent any concept, not just fields in the IP header. In fact, the Policy model provides a standard set of variables and values, as well as the ability to represent custom variables and values, so that different applications can use the same set of classes to represent different policy expressions (which are called PolicyStatements in this model).</br> </br>More specifically, this enables the model to generalize the standard form of a PolicyCondition and a PolicyAction into an object that is called a PolicyStatement. This has important implications, since a Policy Decision Point, a Policy Enforcement Point, and a Policy Execution Point can now share the same basic syntax. Both PolicyConditions as well as PolicyActions share the same variables and values; the difference in semantics is reflected in the types of operators that are allowed to be used for PolicyConditions versus PolicyActions. For conditions, we want the semantics of “variable relates to value”, where “relates to” is usually the match operator, but could also be other applicable operators (e.g., a comparison operator). For actions, we want the semantics of “set variable to value”. These semantics are enforced using OCL, but that is beyond the scope of this Addendum. A simplified representation of the PolicyStatement entity is shown in Figure below.</br>The cardinality of each of the three aggregations that involve PolicyStatement (i.e., UsesValue, UsesOperator, and UsesVariable) are each 0..n on the PolicyStatement side. This means that a given PolicyValue, PolicyOperator, and PolicyVariable can be used in zero or more PolicyStatement entities, respectively. The 0..n is used to enable the design of each of these three entities independent of the PolicyStatement.</br>The cardinality on the PolicyValue and PolicyVariable ends of the UsesValue and UsesVariable compositions is each 1..n. This means that a PolicyStatement must contain at least one or more PolicyValue and PolicyVariable entities, respectively, in order to be a valid PolicyStatement. Similarly, the cardinality on the PolicyOperator end of the UsesOperator composition is 1, because a PolicyStatement is a single clause, and therefore requires only a single PolicyOperator.</br>The ValueConstraintInVariable association enables a PolicyVariable to use a constrained, or limited, set of PolicyValues, compared to what it would normally use. Similarly, the OperatorConstraintInVariable association limits the type of operators that could be used with a given PolicyVariable to a smaller subset. The power of these two association classes lies in the fact that an external policy application can adjust these constraints at run-time by populating the attributes of these classes. This enables the same generic model to be used for multiple applications for consistency. At the same time, it enables the effects of the changing environment to be taken into account at run-time in the form of these constraints.</br>A PolicyOperator is a concrete class for modeling different types of operators in a PolicyStatement. By restricting the type of operator used in a PolicyStatement, one can effectively restrict the semantics of that PolicyStatement. This is done using the OperatorConstraintInVariable association.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EDA498F0178.PNG" alt="Figure 1P-15 - Simple PolicyStatement" usemap="#map_3E3F0EC000E93EDA498F0178"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EDA498F0178">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A340234" alt="_policyValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D9F7A34023E" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A340234" alt="_policyValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D9F7A34023E" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A340234" alt="_policyValue">
+<area shape="rect" coords="64,139,90,156" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A340234" alt="_policyValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D9F7A34023E" alt="_policyStatement">
+<area shape="rect" coords="241,54,249,71" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D9F7A34023E" alt="_policyStatement">
+<area shape="rect" coords="108,24,186,41" href="_3E3F0EC000E93D9F7A3202BD-content.html" alt="UsesValue">
+<area shape="poly" coords="265,50,51,50,51,176,113,176,113,186,42,186,42,40,265,40,265,50" href="_3E3F0EC000E93D9F7A3202BD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="113,301,288,316" href="_3E3F0EC000E93D790E340297-content.html#_3E3F0EC000E93E028F910127" alt="valueConstraint">
+<area shape="rect" coords="106,277,297,333" href="_3E3F0EC000E93D790E340297-content.html" alt="ValueConstraintDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072" alt="_policyValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D790E3B007C" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072" alt="_policyValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D790E3B007C" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072" alt="_policyValue">
+<area shape="rect" coords="134,201,160,218" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072" alt="_policyValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D790E3B007C" alt="_policyVariable">
+<area shape="rect" coords="274,199,300,216" href="_3E3F0EC000E93D77E58C02A7-content.html#_3E3F0EC000E93D790E3B007C" alt="_policyVariable">
+<area shape="poly" coords="310,196,310,248,124,248,124,196,134,196,134,238,300,238,300,196,310,196" href="_3E3F0EC000E93D790E340297-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A4503DD" alt="_policyOperator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93D9F7A4503DF" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A4503DD" alt="_policyOperator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93D9F7A4503DF" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A4503DD" alt="_policyOperator">
+<area shape="rect" coords="627,194,635,211" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A4503DD" alt="_policyOperator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93D9F7A4503DF" alt="_policyStatement">
+<area shape="rect" coords="434,54,442,71" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93D9F7A4503DF" alt="_policyStatement">
+<area shape="rect" coords="485,23,588,40" href="_3E3F0EC000E93D9F7A42022A-content.html" alt="UsesOperator">
+<area shape="poly" coords="415,39,666,39,666,191,617,191,617,181,656,181,656,49,415,49,415,39" href="_3E3F0EC000E93D9F7A42022A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A2D0194" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A2D0194" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E" alt="_policyStatement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A2D0194" alt="_policyVariable">
+<area shape="rect" coords="354,133,380,150" href="_3E3F0EC000E93D77E58C0294-content.html#_3E3F0EC000E93D9F7A2D0194" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E" alt="_policyStatement">
+<area shape="rect" coords="362,79,370,96" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E" alt="_policyStatement">
+<area shape="rect" coords="240,109,338,126" href="_3E3F0EC000E93D9F7A2B02F9-content.html" alt="UsesVariable">
+<area shape="poly" coords="349,81,349,148,339,148,339,81,349,81" href="_3E3F0EC000E93D9F7A2B02F9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="394,295,592,310" href="_3E3F0EC000E93E039F050105-content.html#_3E3F0EC000E93E033D530046" alt="operatorConstraint">
+<area shape="rect" coords="388,271,602,327" href="_3E3F0EC000E93E039F050105-content.html" alt="OperatorConstraintDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E" alt="_policyOperator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93E039F0701A0" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E" alt="_policyOperator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93E039F0701A0" alt="_policyVariable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E" alt="_policyOperator">
+<area shape="rect" coords="520,207,546,224" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E" alt="_policyOperator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93E039F0701A0" alt="_policyVariable">
+<area shape="rect" coords="398,200,424,217" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93E039F0701A0" alt="_policyVariable">
+<area shape="poly" coords="399,196,399,235,546,235,546,202,556,202,556,245,390,245,390,196,399,196" href="_3E3F0EC000E93E039F050105-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="113,148,232,199" href="_3E3F0EC000E93D77E58C02A7-content.html" alt="PolicyValue">
+<area shape="rect" coords="265,33,417,84" href="_3E3F0EC000E93D77E58C0294-content.html" alt="PolicyStatement">
+<area shape="rect" coords="275,148,411,199" href="_3E3F0EC000E93D77E58C0298-content.html" alt="PolicyVariable">
+<area shape="rect" coords="487,173,610,188" href="_3E3F0EC000E93D77E58C02CA-content.html#_3E3F0EC000E93D77E58C02CB" alt="opType">
+<area shape="rect" coords="481,149,620,205" href="_3E3F0EC000E93D77E58C02CA-content.html" alt="PolicyOperator">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-15 - Simple PolicyStatement</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Policy Server ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for PolicyEnforcementPoint">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93F16A60901F6-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Server ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE</span>
+<br>
+<span class="ElementTitle">Class PolicyEnforcementPoint</span>
+<p>
+<a name="documentationSection"></a>A PolicyEnforcementPoint is a type of PolicyApplication, and is used to verify that a prescribed set of PolicyActions have been successfully executed on a set of PolicyTargets.</br> </br>A PolicyEnforcementPoint serves as an interface between the devices that policy is executed on and the policy decision-makers (such as the PolicyDecisionPoint) of the policy. PolicyEnforcementPoints request work to be performed from PolicyDecisionPoints, and then enforce decisions made by PolicyExecutionPoints on their PolicyTargets. One or more PolicyEnforcementPoints are contained in a PolicyServer.</br></br>The combination of a PolicyExecutionPoint and a PolicyEnforcementPoint enable the act of executing a decision (made by a PolicyExecutionPoint) to be separated from the act of ensuring that the executing actions were performed correctly, and had the desired results (both of these latter two functions are performed by the PolicyEnforcementPoint).</br></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">ManagedEntity </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_managedEntity3" href="#_3E3F0EC000E93EDB8C5D02A4"><img border="0" src="../images/30297464_icon.png" alt="_managedEntity3"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_managedEntity3" href="#_3E3F0EC000E93EDB8C5D02A4">_managedEntity3</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicyDecisionPoint </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_policyDecisionPoint" href="#_3E3F0EC000E93F169F0902C1"><img border="0" src="../images/30297464_icon.png" alt="_policyDecisionPoint"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_policyDecisionPoint" href="#_3E3F0EC000E93F169F0902C1">_policyDecisionPoint</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicyExecutionPoint </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_policyExecutionPoint" href="#_3E3F0EC000E93EDA89BE0321"><img border="0" src="../images/30297464_icon.png" alt="_policyExecutionPoint"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_policyExecutionPoint" href="#_3E3F0EC000E93EDA89BE0321">_policyExecutionPoint</a></td><td></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Application ABE::PolicyApplication">&nbsp;SID Models::Common Domain::Policy ABE::Policy Application ABE::PolicyApplication</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_policyDomain">&nbsp;_policyDomain, <img border="0" src="../images/30297464_icon.png" alt="_policyApplicationRole">&nbsp;_policyApplicationRole, <img border="0" src="../images/30297464_icon.png" alt="_managedEntity2">&nbsp;_managedEntity2, <img border="0" src="../images/30297464_icon.png" alt="_policy">&nbsp;_policy, <img border="0" src="../images/30297464_icon.png" alt="_policyServer">&nbsp;_policyServer</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/30297464_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/30297464_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/30297464_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">PolicyEnforcementPoint</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F16A60901F6-content.html">Policy Server ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F16A60901F6-content.html">Policy Server ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F16A60901F6-content.html">Policy Server ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EDB8C5D02A4">_managedEntity3</a></span>
+<pre>Public&nbsp;ManagedEntity _managedEntity3</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EDB8C5D02A4"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EDB8C580397-content.html">PolicyActionEnforcedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_managedEntity3</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB8C5D02B8">_policyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_managedEntity3</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93DDE84F30225-content.html">ManagedEntity</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93F169F0902C1">_policyDecisionPoint</a></span>
+<pre>Public&nbsp;PolicyDecisionPoint _policyDecisionPoint</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93F169F0902C1"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F169F050294-content.html">PEPDirectionDetails</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_policyDecisionPoint</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93F169F0902B7">_policyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_policyDecisionPoint</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE090153-content.html">PolicyDecisionPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93EDA89BE0321">_policyExecutionPoint</a></span>
+<pre>Public&nbsp;PolicyExecutionPoint _policyExecutionPoint</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93EDA89BE0321"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EDA89BB00CE-content.html">PXPEnforcementDetails</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1..*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_policyExecutionPoint</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323">_policyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77EE1201C6-content.html">PolicyEnforcementPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Application ABE::Policy Server ABE::PolicyEnforcementPoint::_policyExecutionPoint</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93EDA857301A5-content.html">PolicyExecutionPoint</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93F16A60901F6-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Server ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

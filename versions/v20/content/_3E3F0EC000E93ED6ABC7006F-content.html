@@ -1,0 +1,116 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Service Spec Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_FM.aKIM8GE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Service Spec Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Service Domain::Service Specification ABE::_Service Spec Addendum Figures::Figure SO.11 - Modeling Stand-Alone and Aggregate ServiceSpecifications<br>
+</span><span class="ElementTitle">Diagram Figure SO.11 - Modeling Stand-Alone and Aggregate ServiceSpecifications<br>
+</span><span class="ElementDocumentation">There are two basic ways to define and use a ServiceSpecification. One is to define a stand-alone ServiceSpecification, while the other is to define an aggregate ServiceSpecification. The difference is straightforward – aggregate ServiceSpecifications are used to define collections of ServiceSpecifications, whereas stand-alone ServiceSpecifications define all the functionality that is needed by themselves.</br>If we did this, then the ServiceSpecAtomic would be defined as an abstract base class for defining ServiceSpecifications that do not have any subordinate ServiceSpecifications. These ServiceSpecifications are stand-alone in definition and use, and don’t require any supporting ServiceSpecifications to define the common characteristics of Services that it serves as a template for.</br>Similarly, a ServiceSpecComposite class would be defined as an abstract base class for defining ServiceSpecifications that are formed by aggregating other ServiceSpecifications. The types of ServiceSpecifications that are aggregated may be ServiceSpecAtomic and/or ServiceSpecComposite instances. A ServiceSpecComposite collectively defines all of the common characteristics of Services that it serves as a template for.</br>However, we already have defined two subclasses of ServiceSpecification, called CustomerFacingService and ResourceFacingService. We can just as easily apply the composite pattern to these classes instead of defining a ServiceSpecAtomic and a ServiceSpecComposite class. This is exactly what is done in the model shown in the following Figure. We can reserve the right to define generic ServiceSpecAtomic and ServiceSpecComposite classes that are not CustomerFacingServices or ResourceFacingServices in the future. Note that at this time, no examples of such ServiceSpecifications exist. </br>Therefore, we will proceed with the definition of CustomerFacingServiceSpecs and ResourceFacingServiceSpecs using the composite pattern to model this.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93ED6ABC7006F.PNG" alt="Figure SO.11 - Modeling Stand-Alone and Aggregate ServiceSpecifications" usemap="#map_3E3F0EC000E93ED6ABC7006F"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93ED6ABC7006F">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5C520A00B9-content.html" alt="Generalization">
+<area shape="poly" coords="911,309,911,253,1092,253,1092,192,1102,192,1102,263,921,263,921,309,911,309" href="_3E3F0EC000E93E5C520A00B9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5C522C02DE-content.html" alt="Generalization">
+<area shape="poly" coords="1242,309,1242,263,1092,263,1092,192,1102,192,1102,253,1252,253,1252,309,1242,309" href="_3E3F0EC000E93E5C522C02DE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5C51B20383-content.html#_3E3F0EC000E93E5D5802005B" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93E5D5802006F" alt="_resourceFacingServiceSpecComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5C51B20383-content.html#_3E3F0EC000E93E5D5802005B" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93E5D5802006F" alt="_resourceFacingServiceSpecComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5C51B20383-content.html#_3E3F0EC000E93E5D5802005B" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="1196,155,1204,172" href="_3E3F0EC000E93E5C51B20383-content.html#_3E3F0EC000E93E5D5802005B" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93E5D5802006F" alt="_resourceFacingServiceSpecComposite">
+<area shape="rect" coords="1324,292,1350,309" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93E5D5802006F" alt="_resourceFacingServiceSpecComposite">
+<area shape="rect" coords="1229,200,1476,217" href="_3E3F0EC000E93E5D580003B6-content.html" alt="HasResourceFacingServiceSpecs">
+<area shape="poly" coords="1366,309,1366,172,1184,172,1184,162,1376,162,1376,309,1366,309" href="_3E3F0EC000E93E5D580003B6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DAE400164-content.html" alt="Generalization">
+<area shape="poly" coords="1077,144,1077,131,753,131,753,57,763,57,763,121,1086,121,1086,144,1077,144" href="_3E3F0EC000E93D9DAE400164-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="934,171,960,188" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="580,176,588,193" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="625,134,903,151" href="_3E3F0EC000E93DD1D4720176-content.html" alt="RequiresResourceFacingServiceSpec">
+<area shape="poly" coords="550,162,979,162,979,172,550,172,550,162" href="_3E3F0EC000E93DD1D4720176-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DAE3C01FF-content.html" alt="Generalization">
+<area shape="poly" coords="442,141,442,121,753,121,753,57,763,57,763,131,452,131,452,141,442,141" href="_3E3F0EC000E93D9DAE3C01FF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5CFC8802DE-content.html" alt="Generalization">
+<area shape="poly" coords="297,309,297,255,463,255,463,189,472,189,472,265,307,265,307,309,297,309" href="_3E3F0EC000E93E5CFC8802DE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5CFC86014B-content.html" alt="Generalization">
+<area shape="poly" coords="633,309,633,265,463,265,463,189,472,189,472,255,642,255,642,309,633,309" href="_3E3F0EC000E93E5CFC86014B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5CFC4B01DC-content.html#_3E3F0EC000E93E5D58630336" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93E5D58630340" alt="_customerFacingServiceSpecComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5CFC4B01DC-content.html#_3E3F0EC000E93E5D58630336" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93E5D58630340" alt="_customerFacingServiceSpecComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5CFC4B01DC-content.html#_3E3F0EC000E93E5D58630336" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="332,141,340,158" href="_3E3F0EC000E93E5CFC4B01DC-content.html#_3E3F0EC000E93E5D58630336" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93E5D58630340" alt="_customerFacingServiceSpecComposite">
+<area shape="rect" coords="158,292,184,309" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93E5D58630340" alt="_customerFacingServiceSpecComposite">
+<area shape="rect" coords="23,208,271,225" href="_3E3F0EC000E93E5D58610026-content.html" alt="HasCustomerFacingServiceSpecs">
+<area shape="poly" coords="197,309,197,162,344,162,344,172,207,172,207,309,197,309" href="_3E3F0EC000E93E5D58610026-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="979,144,1186,195" href="_3E3F0EC000E93D9DADF100B9-content.html" alt="ResourceFacingServiceSpec">
+<area shape="rect" coords="1113,309,1384,360" href="_3E3F0EC000E93E5C51B20383-content.html" alt="ResourceFacingServiceSpecComposite">
+<area shape="rect" coords="344,141,552,192" href="_3E3F0EC000E93D9DADDE0194-content.html" alt="CustomerFacingServiceSpec">
+<area shape="rect" coords="169,309,441,360" href="_3E3F0EC000E93E5CFC4B01DC-content.html" alt="CustomerFacingServiceSpecComposite">
+<area shape="rect" coords="828,309,1077,360" href="_3E3F0EC000E93E5C519901F7-content.html" alt="ResourceFacingServiceSpecAtomic">
+<area shape="rect" coords="514,309,764,360" href="_3E3F0EC000E93E5CFC420048-content.html" alt="CustomerFacingServiceSpecAtomic">
+<area shape="rect" coords="678,9,836,60" href="_3E3F0EC000E93D5092210347-content.html" alt="ServiceSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure SO.11 - Modeling Stand-Alone and Aggregate ServiceSpecifications</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_FM.aKIM8GE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Service Spec Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

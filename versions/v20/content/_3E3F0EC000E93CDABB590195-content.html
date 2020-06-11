@@ -1,0 +1,516 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Root Business Entities ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for Role">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93CF68FE80295-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Root Business Entities ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Root Business Entities ABE</span>
+<br>
+<span class="ElementTitle">Class Role</span>
+<p>
+<a name="documentationSection"></a>This is an abstract base class that defines the concept of various types of roles used in the  model.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">RoleSpecification </td><td><a title="SID Models::Common Domain::Root Business Entities ABE::Role::_specificationRole" href="#_P.z30EDS.xE.e.e2C.oC.qW21.c.f.w"><img border="0" src="../images/30297464_icon.png" alt="_specificationRole"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::Role::_specificationRole" href="#_P.z30EDS.xE.e.e2C.oC.qW21.c.f.w">_specificationRole</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Root Business Entities ABE::Role::roleCombination" href="#_3E3F0EC000E93E628704034D"><img border="0" src="../images/30297464_icon.png" alt="roleCombination"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::Role::roleCombination" href="#_3E3F0EC000E93E628704034D">roleCombination</a></td><td>
+<p>
+<a name="documentationSection"></a>A roleCombination is an array of string attributes that are used to identify and potentially select one or more policies for a set of managed entities from among a much larger set of available policies.</br></br>Values of this attribute should be entered in comma separated value format; white space should be ignored.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Integer </td><td><a title="SID Models::Common Domain::Root Business Entities ABE::Role::roleSelectionMethod" href="#_3E3F0EC000E93E628B5901EB"><img border="0" src="../images/30297464_icon.png" alt="roleSelectionMethod"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::Role::roleSelectionMethod" href="#_3E3F0EC000E93E628B5901EB">roleSelectionMethod</a></td><td>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer that defines the precise means used to select one or more entities which map to one or more roles contained in the roleCombination attribute of this object. Values include:</br></br> 0: retrieve all</br> 1: retrieve intersection</br></br>For exampe, assume that there is an external query engine that is looking for the roles edge or ethernet. The result of this query will look at the roleCombination and roleSelectionMethod attributes of each managed object that it is querying.</br></br>If the value of this attribute is 0, then all managed objects that have their roleCombination set to either {edge}, {ethernet}, or {edge, ethernet} will be retrieved. In contrast, if the value of this attribute is 1, then only those managed objects whose roleCombination attribute is set to {edge, ethernet} will be retrieved.</br></p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity" href="_3E3F0EC000E93CDA9E0C0384-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity" href="_3E3F0EC000E93CDA9E0C0384-content.html">SID Models::Common Domain::Root Business Entities ABE::RootEntity</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_rootEntityType" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E94649F45C02EE"><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_rootEntityType" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E94649F45C02EE">_rootEntityType</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_revenueAssuranceParmValue" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E9431EF7B800D3"><img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_revenueAssuranceParmValue" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E9431EF7B800D3">_revenueAssuranceParmValue</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_characteristicValue" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E945FB06B00141"><img border="0" src="../images/30297464_icon.png" alt="_characteristicValue"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_characteristicValue" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E945FB06B00141">_characteristicValue</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::name" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038E"><img border="0" src="../images/30297464_icon.png" alt="name"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::name" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038E">name</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::description" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038F"><img border="0" src="../images/30297464_icon.png" alt="description"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::description" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C038F">description</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::ID" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C0390"><img border="0" src="../images/30297464_icon.png" alt="ID"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::ID" href="_3E3F0EC000E93CDA9E0C0384-content.html#_3E3F0EC000E93CDA9E0C0390">ID</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::metric" href="_3E3F0EC000E93CDA9E0C0384-content.html#_Q.dRQ.cBV_E.eOT6.s.gJ.t.s-.j4.g"><img border="0" src="../images/30297464_icon.png" alt="metric"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::metric" href="_3E3F0EC000E93CDA9E0C0384-content.html#_Q.dRQ.cBV_E.eOT6.s.gJ.t.s-.j4.g">metric</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_monitoredMetricInstancesCriteria" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.rO.k.eQJP7E.eO.iIN0.e.pOQZO.g"><img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::_monitoredMetricInstancesCriteria" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.rO.k.eQJP7E.eO.iIN0.e.pOQZO.g">_monitoredMetricInstancesCriteria</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::directedEdge" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.i.u.kQYONWE.eSK.n.e.r.d.a0C.s.qA"><img border="0" src="../images/30297464_icon.png" alt="directedEdge"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::directedEdge" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.i.u.kQYONWE.eSK.n.e.r.d.a0C.s.qA">directedEdge</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::vertex" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.o.rQ4UONWE.eSK.n.e.r.d.a0C.s.qA"><img border="0" src="../images/30297464_icon.png" alt="vertex"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::vertex" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.o.rQ4UONWE.eSK.n.e.r.d.a0C.s.qA">vertex</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::entityCatalogItem" href="_3E3F0EC000E93CDA9E0C0384-content.html#_9UQ-8IL_E.eW.o.n.fY.bK9DA.p.w"><img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::entityCatalogItem" href="_3E3F0EC000E93CDA9E0C0384-content.html#_9UQ-8IL_E.eW.o.n.fY.bK9DA.p.w">entityCatalogItem</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityGroupMember" href="_3E3F0EC000E93CDA9E0C0384-content.html#_WW.zD.oDS.zE.e.e2C.oC.qW21.c.f.w"><img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityGroupMember" href="_3E3F0EC000E93CDA9E0C0384-content.html#_WW.zD.oDS.zE.e.e2C.oC.qW21.c.f.w">rootEntityGroupMember</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityGroup" href="_3E3F0EC000E93CDA9E0C0384-content.html#_GTF6ADS0E.e.e2C.oC.qW21.c.f.w"><img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityGroup" href="_3E3F0EC000E93CDA9E0C0384-content.html#_GTF6ADS0E.e.e2C.oC.qW21.c.f.w">rootEntityGroup</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityRelationship" href="_3E3F0EC000E93CDA9E0C0384-content.html#_2A.u.pUDS0E.e.e2C.oC.qW21.c.f.w"><img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityRelationship" href="_3E3F0EC000E93CDA9E0C0384-content.html#_2A.u.pUDS0E.e.e2C.oC.qW21.c.f.w">rootEntityRelationship</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityRelationship2" href="_3E3F0EC000E93CDA9E0C0384-content.html#_-4.z.dQDS0E.e.e2C.oC.qW21.c.f.w"><img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::rootEntityRelationship2" href="_3E3F0EC000E93CDA9E0C0384-content.html#_-4.z.dQDS0E.e.e2C.oC.qW21.c.f.w">rootEntityRelationship2</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::associationRole" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.o.b.tF8O.y.mE.e.a.pXJ.y.l.xL.zJMA"><img border="0" src="../images/30297464_icon.png" alt="associationRole"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::associationRole" href="_3E3F0EC000E93CDA9E0C0384-content.html#_.o.b.tF8O.y.mE.e.a.pXJ.y.l.xL.zJMA">associationRole</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::entitySpecificationAttachment" href="_3E3F0EC000E93CDA9E0C0384-content.html#_B.b-I.oK0.xE.e.a.zDMG.f.zT.b.l9.g"><img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::entitySpecificationAttachment" href="_3E3F0EC000E93CDA9E0C0384-content.html#_B.b-I.oK0.xE.e.a.zDMG.f.zT.b.l9.g">entitySpecificationAttachment</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::interactionUseCase" href="_3E3F0EC000E93CDA9E0C0384-content.html#_7.i.w.eIMV-E.e.iA.o9CXTCG.m.b.g"><img border="0" src="../images/30297464_icon.png" alt="interactionUseCase"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::interactionUseCase" href="_3E3F0EC000E93CDA9E0C0384-content.html#_7.i.w.eIMV-E.e.iA.o9CXTCG.m.b.g">interactionUseCase</a>, <a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::interactionResult" href="_3E3F0EC000E93CDA9E0C0384-content.html#_-N1KAMWOE.e.iA.o9CXTCG.m.b.g"><img border="0" src="../images/30297464_icon.png" alt="interactionResult"></a>&nbsp;<a title="SID Models::Common Domain::Root Business Entities ABE::RootEntity::interactionResult" href="_3E3F0EC000E93CDA9E0C0384-content.html#_-N1KAMWOE.e.iA.o9CXTCG.m.b.g">interactionResult</a></td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">Role</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CF68FE80295-content.html">«011» Root Business Entities ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CF68FE80295-content.html">«011» Root Business Entities ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CF68FE80295-content.html">«011» Root Business Entities ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Root Business Entities ABE::Role</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_P.z30EDS.xE.e.e2C.oC.qW21.c.f.w">_specificationRole</a></span>
+<pre>Public&nbsp;RoleSpecification _specificationRole</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_P.z30EDS.xE.e.e2C.oC.qW21.c.f.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_P.z.p.x.oDS.xE.e.e2C.oC.qW21.c.f.w-content.html">SpecifiesRoles</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_specificationRole</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_.wL45.sDS.wE.e.e2C.oC.qW21.c.f.w-content.html#_P.z.vRMDS.xE.e.e2C.oC.qW21.c.f.w">_role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Root Business Entities ABE::Role::_specificationRole</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_.wL45.sDS.wE.e.e2C.oC.qW21.c.f.w-content.html">RoleSpecification</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E628704034D">roleCombination</a></span>
+<pre>Public&nbsp;String roleCombination</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>A roleCombination is an array of string attributes that are used to identify and potentially select one or more policies for a set of managed entities from among a much larger set of available policies.</br></br>Values of this attribute should be entered in comma separated value format; white space should be ignored.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E628704034D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">roleCombination</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Root Business Entities ABE::Role::roleCombination</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E628B5901EB">roleSelectionMethod</a></span>
+<pre>Public&nbsp;Integer roleSelectionMethod</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is an enumerated integer that defines the precise means used to select one or more entities which map to one or more roles contained in the roleCombination attribute of this object. Values include:</br></br> 0: retrieve all</br> 1: retrieve intersection</br></br>For exampe, assume that there is an external query engine that is looking for the roles edge or ethernet. The result of this query will look at the roleCombination and roleSelectionMethod attributes of each managed object that it is querying.</br></br>If the value of this attribute is 0, then all managed objects that have their roleCombination set to either {edge}, {ethernet}, or {edge, ethernet} will be retrieved. In contrast, if the value of this attribute is 1, then only those managed objects whose roleCombination attribute is set to {edge, ethernet} will be retrieved.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E628B5901EB"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">roleSelectionMethod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDABB590195-content.html">Role</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Root Business Entities ABE::Role::roleSelectionMethod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Integer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93CF68FE80295-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Root Business Entities ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

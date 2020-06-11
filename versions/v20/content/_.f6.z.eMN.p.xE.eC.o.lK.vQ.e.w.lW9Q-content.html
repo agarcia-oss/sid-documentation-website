@@ -1,0 +1,173 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Workforce Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.hJAOMN.mWE.eC.z9.a.o.eR.f.u.g.hA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Workforce Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Enterprise Domain::Workforce ABE::_ Workforce Addendum Figures::Figure WFM.10 - Workforce Appointment<br>
+</span><span class="ElementTitle">Diagram Figure WFM.10 - Workforce Appointment<br>
+</span><span class="ElementDocumentation">The scheduling process involves planning available workforce capacity, handling the appointment request (booking), and reservation and assignment (dispatch) of the workforce. These processes are supported by the workforce business calendar, appointment, workforce pool, reservation, and assignment entities.</br>Correspondingly, we introduce the Appointment, Reservation (Booking), and Assignment (Dispatch) entities along with WorkSchedule. Though Appointment is defined in Project ABE, we present its association with WF entities here too.</br></br>To deliver a service, a specific Work Order, with its WorkItems and the associated Work tasks, is generated. Some work is to be performed onsite and needs an agreement about time and other terms (e.g. in the form of a letter of authorization). Appointment is an agreement between service representatives and the customer about the time and terms to do the work.</br>In SID, the Appointment entity is modeled in the Time ABE of the Common Business Entity domain. It results from an Agreement, a business interaction between the service provider and the customer, about terms of the services to be ordered. The Appointment is associated with a Calendar Entry of a WorkSchedule (described below), to model the start–end time of the visit.</br>The following Figure represents Appointment and its association to Work and Calendar Entry (refer to Common guide book section Calendar ABE).</br>The appointment of a Work task to be done in a certain time period is defined by considering the available capacity of a WorkforceEmployeePool, which shows the availability of the work force. Various other criteria can be also considered for making an appointment, like the WorkSpecFulfillmentRate of an organization, priority of the work order, etc.</br>In real life, the appointment times, when agreed on with the customer by a call, can be flexible (at a date, in the morning, afternoon, evening, etc.). The exact time of the visit will be defined during a particular technician reservation and then dispatched, considering many optimization factors or preferences of the technician (for example, driving distance to the site).</br><Note>Note: In some cases, a particular technician is assigned to an Appointment. That is done either on request from a customer, or because of a CSP’s approach to simplify the reservation and assignment rules. In this case, the Reservation and Assignment records can be created at the same time as the creation of the Appointment.</Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.f6.z.eMN.p.xE.eC.o.lK.vQ.e.w.lW9Q.PNG" alt="Figure WFM.10 - Workforce Appointment" usemap="#map_.f6.z.eMN.p.xE.eC.o.lK.vQ.e.w.lW9Q"></td>
+</tr>
+</table>
+<map name="map_.f6.z.eMN.p.xE.eC.o.lK.vQ.e.w.lW9Q">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40176E017B-content.html#_.pPX.kYB7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.pPX.kY.x7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_agreement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40176E017B-content.html#_.pPX.kYB7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.pPX.kY.x7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_agreement">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40176E017B-content.html#_.pPX.kYB7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_appointment">
+<area shape="rect" coords="244,234,252,251" href="_3E3F0EC000E93D40176E017B-content.html#_.pPX.kYB7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.pPX.kY.x7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_agreement">
+<area shape="rect" coords="244,136,252,153" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.pPX.kY.x7OE.eG.x.m.o.yO.lWV.p.r.w" alt="_agreement">
+<area shape="rect" coords="194,185,347,202" href="_.pKS3IB7OE.eG.x.m.o.yO.lWV.p.r.w-content.html" alt="AgreementResultsIn">
+<area shape="poly" coords="269,124,269,264,259,264,259,124,269,124" href="_.pKS3IB7OE.eG.x.m.o.yO.lWV.p.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.f.f114R0.fE.eG.j2N4.y.qC.kGJA" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.f.f115B0.fE.eG.j2N4.y.qC.kGJA" alt="_appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.f.f114R0.fE.eG.j2N4.y.qC.kGJA" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.f.f115B0.fE.eG.j2N4.y.qC.kGJA" alt="_appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.f.f114R0.fE.eG.j2N4.y.qC.kGJA" alt="_work">
+<area shape="rect" coords="317,585,325,602" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.f.f114R0.fE.eG.j2N4.y.qC.kGJA" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.f.f115B0.fE.eG.j2N4.y.qC.kGJA" alt="_appointment">
+<area shape="rect" coords="325,322,351,339" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.f.f115B0.fE.eG.j2N4.y.qC.kGJA" alt="_appointment">
+<area shape="rect" coords="220,428,421,445" href="_.f.f114B0.fE.eG.j2N4.y.qC.kGJA-content.html" alt="WorkRequiresAppointment">
+<area shape="poly" coords="317,312,317,574,370,574,370,584,307,584,307,312,317,312" href="_.f.f114B0.fE.eG.j2N4.y.qC.kGJA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_RUU80N.f.bE.eCDTKS_5Z.qIOA" alt="calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_RVX.e.oN.f.bE.eCDTKS_5Z.qIOA" alt="appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_RUU80N.f.bE.eCDTKS_5Z.qIOA" alt="calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_RVX.e.oN.f.bE.eCDTKS_5Z.qIOA" alt="appointment">
+<area shape="rect" coords="0,0,0,0" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_RUU80N.f.bE.eCDTKS_5Z.qIOA" alt="calendarEntry">
+<area shape="rect" coords="118,433,144,450" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_RUU80N.f.bE.eCDTKS_5Z.qIOA" alt="calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_RVX.e.oN.f.bE.eCDTKS_5Z.qIOA" alt="appointment">
+<area shape="rect" coords="127,282,135,299" href="_3E3F0EC000E93E41B1110189-content.html#_RVX.e.oN.f.bE.eCDTKS_5Z.qIOA" alt="appointment">
+<area shape="rect" coords="23,352,252,391" href="_RTS.bAN.f.bE.eCDTKS_5Z.qIOA-content.html" alt="AppointmentIsAssociatedWithCalendarEntry">
+<area shape="poly" coords="175,293,152,293,152,474,142,474,142,283,175,283,175,293" href="_RTS.bAN.f.bE.eCDTKS_5Z.qIOA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D401BD501D5-content.html" alt="Generalization">
+<area shape="poly" coords="409,74,640,74,640,84,409,84,409,74" href="_3E3F0EC000E93D401BD501D5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Q.e.o9M.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_Q.e.o9NN.tYE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Q.e.o9M.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_Q.e.o9NN.tYE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Q.e.o9M.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="755,466,763,483" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_Q.e.o9M.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_Q.e.o9NN.tYE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="734,512,760,529" href="_3E3F0EC000E93DDAC897022E-content.html#_Q.e.o9NN.tYE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="603,484,862,501" href="_Q.e.o9MN.tYE.eCCS6PJ.w.v.kP.vA-content.html" alt="WorkOrderItemInvolvesWorkSpec">
+<area shape="poly" coords="728,533,728,493,739,493,739,463,749,463,749,503,738,503,738,533,728,533" href="_Q.e.o9MN.tYE.eCCS6PJ.w.v.kP.vA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_ANO.kM.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_ANX.uIN.tYE.eCCS6PJ.w.v.kP.vA" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_ANO.kM.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_ANX.uIN.tYE.eCCS6PJ.w.v.kP.vA" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_ANO.kM.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="616,423,624,440" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_ANO.kM.d.tYE.eCCS6PJ.w.v.kP.vA" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_ANX.uIN.tYE.eCCS6PJ.w.v.kP.vA" alt="_work">
+<area shape="rect" coords="478,491,504,508" href="_3E3F0EC000E93DDAC897022E-content.html#_ANX.uIN.tYE.eCCS6PJ.w.v.kP.vA" alt="_work">
+<area shape="rect" coords="436,386,660,403" href="_ANO.kMN.tYE.eCCS6PJ.w.v.kP.vA-content.html" alt="WorkOrderItemInvolvesWork">
+<area shape="poly" coords="471,549,471,412,670,412,670,422,481,422,481,549,471,549" href="_ANO.kMN.tYE.eCCS6PJ.w.v.kP.vA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DD99B0A00A0-content.html#_3E3F0EC000E93DDAC8AB00B0" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_3E3F0EC000E93DDAC8AB00BA" alt="_workOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DD99B0A00A0-content.html#_3E3F0EC000E93DDAC8AB00B0" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_3E3F0EC000E93DDAC8AB00BA" alt="_workOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DD99B0A00A0-content.html#_3E3F0EC000E93DDAC8AB00B0" alt="_workOrderItem">
+<area shape="rect" coords="846,405,854,422" href="_3E3F0EC000E93DD99B0A00A0-content.html#_3E3F0EC000E93DDAC8AB00B0" alt="_workOrderItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDAC897022E-content.html#_3E3F0EC000E93DDAC8AB00BA" alt="_workOrder">
+<area shape="rect" coords="919,405,927,422" href="_3E3F0EC000E93DDAC897022E-content.html#_3E3F0EC000E93DDAC8AB00BA" alt="_workOrder">
+<area shape="rect" coords="795,366,975,383" href="_3E3F0EC000E93DDAC8AA0249-content.html" alt="WorkOrderComprisedOf">
+<area shape="poly" coords="939,433,835,433,835,424,939,424,939,433" href="_3E3F0EC000E93DDAC8AA0249-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942D2D1E501A9-content.html" alt="Generalization">
+<area shape="poly" coords="744,399,744,364,731,364,731,319,741,319,741,354,754,354,754,399,744,399" href="_3E3F0EC000E942D2D1E501A9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942D2D1E00061-content.html" alt="Generalization">
+<area shape="poly" coords="1050,384,1050,298,1059,298,1059,384,1050,384" href="_3E3F0EC000E942D2D1E00061-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19021B030C-content.html" alt="Generalization">
+<area shape="poly" coords="1036,234,1036,81,843,81,843,72,1046,72,1046,234,1036,234" href="_3E3F0EC000E93C19021B030C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C1F5C1C0015" alt="_businessInteractionItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C1F5B0A0134-content.html#_3E3F0EC000E93C1F5C1C0029" alt="_businessInteraction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C1F5C1C0015" alt="_businessInteractionItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C1F5B0A0134-content.html#_3E3F0EC000E93C1F5C1C0029" alt="_businessInteraction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C1F5C1C0015" alt="_businessInteractionItem">
+<area shape="rect" coords="722,211,730,228" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C1F5C1C0015" alt="_businessInteractionItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C1F5B0A0134-content.html#_3E3F0EC000E93C1F5C1C0029" alt="_businessInteraction">
+<area shape="rect" coords="722,147,730,164" href="_3E3F0EC000E93C1F5B0A0134-content.html#_3E3F0EC000E93C1F5C1C0029" alt="_businessInteraction">
+<area shape="rect" coords="625,170,871,205" href="_3E3F0EC000E93C1F5C1B008C-content.html" alt="BusinessInteractionComprisedOf">
+<area shape="poly" coords="747,142,747,234,737,234,737,142,747,142" href="_3E3F0EC000E93C1F5C1B008C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="182,288,349,303" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html#_.p.uE8EBBIE.e.q268.p.hCF9GW.g" alt="ID">
+<area shape="rect" coords="175,264,358,315" href="_FQ.v2MN.f.bE.eCDTKS_5Z.qIOA-content.html" alt="Appointment">
+<area shape="rect" coords="121,95,402,110" href="_3E3F0EC000E93D40176E017B-content.html#_3E3F0EC000E93D58060003C8" alt="validFor">
+<area shape="rect" coords="121,79,402,94" href="_3E3F0EC000E93D40176E017B-content.html#_3E3F0EC000E93D5804D60031" alt="statementOfIntent">
+<area shape="rect" coords="121,63,402,78" href="_3E3F0EC000E93D40176E017B-content.html#_3E3F0EC000E93D58164C007E" alt="documentNumber">
+<area shape="rect" coords="115,39,412,127" href="_3E3F0EC000E93D40176E017B-content.html" alt="Agreement">
+<area shape="rect" coords="71,474,209,513" href="_3E3F0EC000E93E41B1110189-content.html" alt="CalendarEntry">
+<area shape="rect" coords="631,605,852,620" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_GI.rXQB.uIE.eGSPP.o.aD41WR.w" alt="standardCapacityRequired">
+<area shape="rect" coords="631,589,852,604" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#__.s1VMB.uHE.eGSPP.o.aD41WR.w" alt="standardDuration">
+<area shape="rect" coords="631,573,852,588" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.a.y.u.g.kOR2E.eC7LKB5.e.tJ.t.b.g" alt="status">
+<area shape="rect" coords="631,557,852,572" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_G6.a.p4N.o.kE.eC.z9.a.o.eR.f.u.g.hA" alt="isAppointmentRequired">
+<area shape="rect" coords="625,533,862,637" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html" alt="WorkSpecification">
+<area shape="rect" coords="377,573,490,604" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_V.a-.y0O.n.nE.eC.c6.q.r.r.iD.h.hZA" alt="quantity">
+<area shape="rect" coords="370,549,499,621" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Work">
+<area shape="rect" coords="670,399,838,466" href="_3E3F0EC000E93DDAC897022E-content.html" alt="WorkOrderItem">
+<area shape="rect" coords="946,440,1160,455" href="_3E3F0EC000E93DD99B0A00A0-content.html#_3E3F0EC000E942D2D3260329" alt="possibleDeliveryDate">
+<area shape="rect" coords="946,424,1160,439" href="_3E3F0EC000E93DD99B0A00A0-content.html#_3E3F0EC000E942D2D2F8009D" alt="requestedDeliveryDate">
+<area shape="rect" coords="939,384,1169,472" href="_3E3F0EC000E93DD99B0A00A0-content.html" alt="WorkOrder">
+<area shape="rect" coords="954,234,1159,301" href="_3E3F0EC000E93C19003E037E-content.html" alt="Request">
+<area shape="rect" coords="646,290,837,305" href="_3E3F0EC000E93C1F5B0A0134-content.html#_3E3F0EC000E93C45EFDF02F3" alt="action">
+<area shape="rect" coords="646,274,837,289" href="_3E3F0EC000E93C1F5B0A0134-content.html#_3E3F0EC000E93C45EF770005" alt="quantity">
+<area shape="rect" coords="640,234,847,322" href="_3E3F0EC000E93C1F5B0A0134-content.html" alt="BusinessInteractionItem">
+<area shape="rect" coords="646,113,835,128" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C445E9D0326" alt="status">
+<area shape="rect" coords="646,97,835,112" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C2C94CB02FC" alt="endDate">
+<area shape="rect" coords="646,81,835,96" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C221C9301AC" alt="description">
+<area shape="rect" coords="646,65,835,80" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C221C4A039C" alt="startDate">
+<area shape="rect" coords="646,49,835,64" href="_3E3F0EC000E93C19002102B4-content.html#_3E3F0EC000E93C447FD80224" alt="ID">
+<area shape="rect" coords="640,9,845,145" href="_3E3F0EC000E93C19002102B4-content.html" alt="BusinessInteraction">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure WFM.10 - Workforce Appointment</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.hJAOMN.mWE.eC.z9.a.o.eR.f.u.g.hA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Workforce Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

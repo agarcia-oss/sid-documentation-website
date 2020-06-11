@@ -1,0 +1,193 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Enterprise Security Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_87MU4G.p.yE.d-YI.u.d.m.h.f.tT.l.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Enterprise Security Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Enterprise Domain::Enterprise Risk ABE::Enterprise Security ABE::_ Enterprise Security Addendum Figures::Figure SE.07 - Security Event Types<br>
+</span><span class="ElementTitle">Diagram Figure SE.07 - Security Event Types<br>
+</span><span class="ElementDocumentation">Several event types are defined, primarily as placeholders, pending development of better standards and guidance on how the data elements they may contain are defined.  </br>[] Anomaly Event </br>The Anomaly Event type is one of these types.  The elements that are used to extend the base event type for anomalies consist of a text field to describe the anomaly and a text field to contain log data.</br>[]Network Access Control (NAC)</br>Network Access Control (NAC) events are generated whenever new devices and/or users attempt to gain access to a network.  The NAC event record will record the name of the network where access was attempted, the access decision (permit/deny), IP and MAC address of the device/user, and the name provided on the credential that was used to gain access – X.509 subject name, MAC address, or another name.  Network access may be granted on the basis of either device or user credentials depending on the local security policy.</br>[] Network Address Translation (NAT) </br>Network Address Translation (NAT) events are recorded so that network defenders can discover the true originating IP address and port number of a device, which has sent information through a firewall proxy or another type of proxying device, which changes the internal source IP address.  The NAT event will record the internal source IP address and port number, the IP address and port number it was translated to, as well as the external destination IP address and port number.</br>[] Signature </br>Signature events are the most mature of the event model.  The signature event model is composed to meet the reporting requirement of signature-based applications, to include IDSs, IPSs, antivirus applications, anti-spyware applications, and any other sensing technology that is signature based.  Core signature event information includes data the sensor collected, including the total amount of packets collected and the total bytes of data collected.</br>[] Network Flow</br>The Network Flow event type directly mirrors a network flow as transmitted by the Internet Protocol Flow Information eXport (IPFIX) standard.  A net flow is a summary set of metadata about a one-way portion of a network session.  A net flow will not provide any layer 7 information about the data that was transmitted but will instead summarize information about where the transaction originated, where it terminated, how long it lasted, how many bytes were passed, and what ports and protocols were used.  These flows, while not exclusively security events, do aid attack analysis by highlighting traffic trends that is abnormal to normal business and could indicate a variety of security incidents.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3.v3.k.gA.c.tE.eK.g.cNXQ.x.w.nL.f.g.PNG" alt="Figure SE.07 - Security Event Types" usemap="#map_3.v3.k.gA.c.tE.eK.g.cNXQ.x.w.nL.f.g"></td>
+</tr>
+</table>
+<map name="map_3.v3.k.gA.c.tE.eK.g.cNXQ.x.w.nL.f.g">
+<area shape="rect" coords="0,0,0,0" href="_Y-.f.xELSBE.d-_U.u.g9Q-2KVA-content.html#_.sZOEYLSBE.d-_U.u.g9Q-2KVA" alt="_signatureSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.sZOEY7SBE.d-_U.u.g9Q-2KVA" alt="_securitySignature">
+<area shape="rect" coords="0,0,0,0" href="_Y-.f.xELSBE.d-_U.u.g9Q-2KVA-content.html#_.sZOEYLSBE.d-_U.u.g9Q-2KVA" alt="_signatureSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.sZOEY7SBE.d-_U.u.g9Q-2KVA" alt="_securitySignature">
+<area shape="rect" coords="0,0,0,0" href="_Y-.f.xELSBE.d-_U.u.g9Q-2KVA-content.html#_.sZOEYLSBE.d-_U.u.g9Q-2KVA" alt="_signatureSecurityEvent">
+<area shape="rect" coords="1311,347,1317,363" href="_Y-.f.xELSBE.d-_U.u.g9Q-2KVA-content.html#_.sZOEYLSBE.d-_U.u.g9Q-2KVA" alt="_signatureSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.sZOEY7SBE.d-_U.u.g9Q-2KVA" alt="_securitySignature">
+<area shape="rect" coords="1378,466,1398,482" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.sZOEY7SBE.d-_U.u.g9Q-2KVA" alt="_securitySignature">
+<area shape="rect" coords="1286,437,1463,453" href="_.sZETYLSBE.d-_U.u.g9Q-2KVA-content.html" alt="SecuritySignatureDetectedBy">
+<area shape="poly" coords="1359,497,1359,420,1296,420,1296,328,1306,328,1306,410,1369,410,1369,497,1359,497" href="_.sZETYLSBE.d-_U.u.g9Q-2KVA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.yA.mFQ.eF.zE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.yA.v2Q.eF.zE.d-.x.o.o.yONAY-M.g" alt="_signatureSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.yA.mFQ.eF.zE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.yA.v2Q.eF.zE.d-.x.o.o.yONAY-M.g" alt="_signatureSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.yA.mFQ.eF.zE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="1198,532,1218,548" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.yA.mFQ.eF.zE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.yA.v2Q.eF.zE.d-.x.o.o.yONAY-M.g" alt="_signatureSecurityEvent">
+<area shape="rect" coords="1205,357,1211,373" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.yA.v2Q.eF.zE.d-.x.o.o.yONAY-M.g" alt="_signatureSecurityEvent">
+<area shape="rect" coords="1042,399,1339,415" href="_.yA.mFQOF.zE.d-.x.o.o.yONAY-M.g-content.html" alt="SecurityEventEndpointInvolvedInSignatureEvent">
+<area shape="poly" coords="1232,328,1232,578,1222,578,1222,328,1232,328" href="_.yA.mFQOF.zE.d-.x.o.o.yONAY-M.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_O3R.b.sLR8E.d-_U.u.g9Q-2KVA-content.html" alt="Generalization">
+<area shape="poly" coords="1258,223,1258,136,374,136,374,81,384,81,384,127,1268,127,1268,223,1258,223" href="_O3R.b.sLR8E.d-_U.u.g9Q-2KVA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.wEO.eIG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVBP.wG2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVL.n0G2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_NATSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_.wEO.eIG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVBP.wG2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVL.n0G2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_NATSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_.wEO.eIG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVBP.wG2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="762,379,780,395" href="_.wEO.eIG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVBP.wG2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVL.n0G2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_NATSecurityEvent">
+<area shape="rect" coords="767,278,774,294" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.sVL.n0G2GE.d-YI.u.d.m.h.f.tT.l.g" alt="_NATSecurityEvent">
+<area shape="rect" coords="625,344,932,360" href="_.sU_.a.kG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="SecurityEventEnpointsInvolvedInNatSecurityEvent">
+<area shape="poly" coords="795,265,795,409,785,409,785,265,795,265" href="_.sU_.a.kG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_Y.jTOMG2FE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Generalization">
+<area shape="poly" coords="765,216,765,136,374,136,374,81,384,81,384,127,775,127,775,216,765,216" href="_Y.jTOMG2FE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_.p.iKV0OF.yE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.p.iKV0-F.yE.d-.x.o.o.yONAY-M.g" alt="_netFlowSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_.p.iKV0OF.yE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.p.iKV0-F.yE.d-.x.o.o.yONAY-M.g" alt="_netFlowSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_.p.iKV0OF.yE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="986,413,1006,429" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_.p.iKV0OF.yE.d-.x.o.o.yONAY-M.g" alt="_securityEventEndpoint">
+<area shape="rect" coords="0,0,0,0" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.p.iKV0-F.yE.d-.x.o.o.yONAY-M.g" alt="_netFlowSecurityEvent">
+<area shape="rect" coords="993,331,999,347" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.p.iKV0-F.yE.d-.x.o.o.yONAY-M.g" alt="_netFlowSecurityEvent">
+<area shape="rect" coords="856,369,1200,385" href="_.p.iBL4OF.yE.d-.x.o.o.yONAY-M.g-content.html" alt="SecurityEventEndpointsInvolvedInNetFlowSecurityEvent">
+<area shape="poly" coords="1020,322,1020,439,1010,439,1010,322,1020,322" href="_.p.iBL4OF.yE.d-.x.o.o.yONAY-M.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.t.wUN.cLR.xE.d-_U.u.g9Q-2KVA-content.html" alt="Generalization">
+<area shape="poly" coords="976,216,976,136,374,136,374,81,384,81,384,127,986,127,986,216,976,216" href="_.t.wUN.cLR.xE.d-_U.u.g9Q-2KVA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_4JNRA.eF.tE.d-.x.o.o.yONAY-M.g" alt="_ipAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_4JXCAOF.tE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="0,0,0,0" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_4JNRA.eF.tE.d-.x.o.o.yONAY-M.g" alt="_ipAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_4JXCAOF.tE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="0,0,0,0" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_4JNRA.eF.tE.d-.x.o.o.yONAY-M.g" alt="_ipAddress">
+<area shape="rect" coords="562,613,569,629" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_4JNRA.eF.tE.d-.x.o.o.yONAY-M.g" alt="_ipAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_4JXCAOF.tE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="563,557,569,573" href="_3E3F0EC000E93E2C995F0308-content.html#_4JXCAOF.tE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="505,585,681,601" href="_4JNRAOF.tE.d-.x.o.o.yONAY-M.g-content.html" alt="IPAddressAssignedToSubject">
+<area shape="poly" coords="590,553,590,633,580,633,580,553,590,553" href="_4JNRAOF.tE.d-.x.o.o.yONAY-M.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html#_YENVYOF.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="0,0,0,0" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_YENVY-F.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html#_YENVYOF.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="0,0,0,0" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_YENVY-F.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html#_YENVYOF.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="555,459,562,475" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html#_YENVYOF.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEventSubject">
+<area shape="rect" coords="0,0,0,0" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_YENVY-F.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEvent">
+<area shape="rect" coords="555,311,562,327" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_YENVY-F.rE.d-.x.o.o.yONAY-M.g" alt="_nacSecurityEvent">
+<area shape="rect" coords="497,432,667,448" href="_YEEL.cOF.rE.d-.x.o.o.yONAY-M.g-content.html" alt="SubjectOfNACSecurityEvent">
+<area shape="poly" coords="582,288,582,499,572,499,572,288,582,288" href="_YEEL.cOF.rE.d-.x.o.o.yONAY-M.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_UE70YLR.xE.d-_U.u.g9Q-2KVA-content.html" alt="Generalization">
+<area shape="poly" coords="572,216,572,136,374,136,374,81,384,81,384,127,582,127,582,216,572,216" href="_UE70YLR.xE.d-_U.u.g9Q-2KVA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_USW.o.s.a.rWE.d-2.u.a.o.n0S.u.oZA" alt="_ipAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_US.gZ.sK.rWE.d-2.u.a.o.n0S.u.oZA" alt="_dhcpSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_USW.o.s.a.rWE.d-2.u.a.o.n0S.u.oZA" alt="_ipAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_US.gZ.sK.rWE.d-2.u.a.o.n0S.u.oZA" alt="_dhcpSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_USW.o.s.a.rWE.d-2.u.a.o.n0S.u.oZA" alt="_ipAddress">
+<area shape="rect" coords="341,356,361,372" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_USW.o.s.a.rWE.d-2.u.a.o.n0S.u.oZA" alt="_ipAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_US.gZ.sK.rWE.d-2.u.a.o.n0S.u.oZA" alt="_dhcpSecurityEvent">
+<area shape="rect" coords="348,291,354,307" href="_3E3F0EC000E93E2C995F0308-content.html#_US.gZ.sK.rWE.d-2.u.a.o.n0S.u.oZA" alt="_dhcpSecurityEvent">
+<area shape="rect" coords="320,324,436,340" href="_USW.o.sK.rWE.d-2.u.a.o.n0S.u.oZA-content.html" alt="IPAddressAssigned">
+<area shape="poly" coords="375,286,375,379,365,379,365,286,375,286" href="_USW.o.sK.rWE.d-2.u.a.o.n0S.u.oZA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_VBQD.wG2FE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Generalization">
+<area shape="poly" coords="370,214,370,127,374,127,374,81,384,81,384,136,380,136,380,214,370,214" href="_VBQD.wG2FE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.gC.l3UOF.iE.d-.x.o.o.yONAY-M.g-content.html" alt="Generalization">
+<area shape="poly" coords="148,214,148,127,374,127,374,81,384,81,384,136,158,136,158,214,148,214" href="_.gC.l3UOF.iE.d-.x.o.o.yONAY-M.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.b22C.kG2FE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Generalization">
+<area shape="poly" coords="18,304,18,127,374,127,374,81,384,81,384,136,28,136,28,304,18,304" href="_.b22C.kG2FE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1275,497,1427,549" href="_Y-.f.xELSBE.d-_U.u.g9Q-2KVA-content.html" alt="SecuritySignature">
+<area shape="rect" coords="1107,620,1274,636" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.w.u.u.f.oOF.xE.d-.x.o.o.yONAY-M.g" alt="port">
+<area shape="rect" coords="1107,603,1274,619" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_LB2.w.gG2HE.d-YI.u.d.m.h.f.tT.l.g" alt="endpointRole">
+<area shape="rect" coords="1100,578,1283,653" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="SecurityEventEndpoint">
+<area shape="rect" coords="1175,298,1349,314" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.l.y.pD4LR_E.d-_U.u.g9Q-2KVA" alt="dataFlowDirection">
+<area shape="rect" coords="1175,281,1349,297" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_IF.z.n.kLR_E.d-_U.u.g9Q-2KVA" alt="packetCaptureData">
+<area shape="rect" coords="1175,264,1349,280" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_4.b.lKYLR-E.d-_U.u.g9Q-2KVA" alt="numberOfBytes">
+<area shape="rect" coords="1175,248,1349,264" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html#_.i2K.hILR-E.d-_U.u.g9Q-2KVA" alt="numberOfPackets">
+<area shape="rect" coords="1169,223,1359,332" href="_K6.q.cMLR8E.d-_U.u.g9Q-2KVA-content.html" alt="SignatureSecurityEvent">
+<area shape="rect" coords="726,451,893,467" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.w.u.u.f.oOF.xE.d-.x.o.o.yONAY-M.g" alt="port">
+<area shape="rect" coords="726,434,893,450" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_LB2.w.gG2HE.d-YI.u.d.m.h.f.tT.l.g" alt="endpointRole">
+<area shape="rect" coords="719,409,902,484" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="SecurityEventEndpoint">
+<area shape="rect" coords="695,216,848,268" href="_.wEO.eIG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="NATSecurityEvent">
+<area shape="rect" coords="965,481,1132,497" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.w.u.u.f.oOF.xE.d-.x.o.o.yONAY-M.g" alt="port">
+<area shape="rect" coords="965,464,1132,480" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html#_LB2.w.gG2HE.d-YI.u.d.m.h.f.tT.l.g" alt="endpointRole">
+<area shape="rect" coords="959,439,1142,514" href="_.jBM7AG2GE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="SecurityEventEndpoint">
+<area shape="rect" coords="895,292,1067,308" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_UAMS.wLR7E.d-_U.u.g9Q-2KVA" alt="flags">
+<area shape="rect" coords="895,275,1067,291" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_.wTF.aQLR.zE.d-_U.u.g9Q-2KVA" alt="numberOfBytes">
+<area shape="rect" coords="895,258,1067,274" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_.hX.p8.wLR.zE.d-_U.u.g9Q-2KVA" alt="numberOfPackets">
+<area shape="rect" coords="895,241,1067,257" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html#_L.c.iJQLR.zE.d-_U.u.g9Q-2KVA" alt="protocol">
+<area shape="rect" coords="888,216,1076,325" href="_.q.f.iZMLR.xE.d-_U.u.g9Q-2KVA-content.html" alt="NetFlowSecurityEvent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_3E3F0EC000E93E2EFDB00381" alt="subnetMask">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_3E3F0EC000E93E2CCF8C00C5" alt="hostNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_3E3F0EC000E93E2CCE82039E" alt="networkNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E2C995F0308-content.html#_3E3F0EC000E9448391D203B0" alt="_performanceIPAddress">
+<area shape="rect" coords="539,633,646,685" href="_3E3F0EC000E93E2C995F0308-content.html" alt="IPAddress">
+<area shape="rect" coords="486,524,669,540" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html#_C2ZXAOF.vE.d-.x.o.o.yONAY-M.g" alt="macAddress">
+<area shape="rect" coords="480,499,679,557" href="_S.w6P.wOF.rE.d-.x.o.o.yONAY-M.g-content.html" alt="NACSecurityEventSubject">
+<area shape="rect" coords="502,258,652,274" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html#_OQ_.kUOF.qE.d-.x.o.o.yONAY-M.g" alt="accessDecision">
+<area shape="rect" coords="502,241,652,257" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html#_7K.p.l.kOF.pE.d-.x.o.o.yONAY-M.g" alt="targetNetwork">
+<area shape="rect" coords="495,216,661,291" href="_QVS54LR.xE.d-_U.u.g9Q-2KVA-content.html" alt="NACSecurityEvent">
+<area shape="rect" coords="313,379,420,419" href="_3E3F0EC000E93E2C995F0308-content.html" alt="IPAddress">
+<area shape="rect" coords="290,256,459,272" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.d8R.j.sOF.lE.d-.x.o.o.yONAY-M.g" alt="clientMACAddress">
+<area shape="rect" coords="290,239,459,255" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#_D7.y.l8K.sCE.d-2.u.a.o.n0S.u.oZA" alt="leaseDuration">
+<area shape="rect" coords="283,214,468,289" href="_.t.eBQ4G0SE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="DHCPSecurityEvent">
+<area shape="rect" coords="59,239,246,255" href="_.t.sXVIOF.hE.d-.x.o.o.yONAY-M.g-content.html#_.kUB3UOF.iE.d-.x.o.o.yONAY-M.g" alt="logData">
+<area shape="rect" coords="53,214,256,272" href="_.t.sXVIOF.hE.d-.x.o.o.yONAY-M.g-content.html" alt="AuditRecordSecurityEvent">
+<area shape="rect" coords="22,329,188,345" href="_.q.bC.oEG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html#__.m-9EOF.gE.d-.x.o.o.yONAY-M.g" alt="logData">
+<area shape="rect" coords="15,304,197,362" href="_.q.bC.oEG0SE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="AnomalySecurityEvent">
+<area shape="rect" coords="356,51,497,67" href="_KPL6.gG.p.zE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.z.x8T.sK.r.kE.d-2.u.a.o.n0S.u.oZA" alt="validFor">
+<area shape="rect" coords="356,34,497,50" href="_KPL6.gG.p.zE.d-YI.u.d.m.h.f.tT.l.g-content.html#_.s.b7.v.sK.pFE.d-2.u.a.o.n0S.u.oZA" alt="comments">
+<area shape="rect" coords="349,9,506,84" href="_KPL6.gG.p.zE.d-YI.u.d.m.h.f.tT.l.g-content.html" alt="SecurityEvent">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure SE.07 - Security Event Types</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_87MU4G.p.yE.d-YI.u.d.m.h.f.tT.l.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Enterprise Security Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

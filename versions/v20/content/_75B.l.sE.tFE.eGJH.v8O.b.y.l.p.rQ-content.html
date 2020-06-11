@@ -1,0 +1,203 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Customer Bill Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Customer Domain::Customer Bill ABE::_Customer Bill Addendum Figures::Figure C.14 - FinancialCharge accumulates AtomicAppliedCustomerBillingRate<br>
+</span><span class="ElementTitle">Diagram Figure C.14 - FinancialCharge accumulates AtomicAppliedCustomerBillingRate<br>
+</span><span class="ElementDocumentation">Let’s imagine the AtomicAppliedCustomerBillingRate and CompositeAppliedCustomerBillingRate, the latter containing the former. While both applied rates may be included into the bill, only one of both may be summarized into the bill amount. The typical reason to include CompositeAppliedCustomerBillingRate into the bill is to present a partial sum, either for customer information or because some other applied rates refer to it. FinancialCharge, on the other hand, is the entity that accumulates AtomicAppliedCustomerBillingRate into the bill amount, and therefore the entity which influences the customer account’s balance. The accumulation is based on characteristic values of AppliedCustomerBillingRate as described in the figure below.</br></br>In this figure, we see that the CustomerBill presents both AppliedCustomerBillingRates and FinancialCharges – this depends on the business requirements, configuration and regulations – one or both options are possible pending the CSP business.</br>The important thing (and change from Information Framework versions prior to version 12) is that the CustomerAccount now is based upon the FinancialCharges and not upon the AppliedCustomerBillingRate, for reasons which are explained above. FinancialCharge can accumulate AppliedCustomerBillingRates based on its characteristic values, so that it can accumulate based on ACBR type, line of business, service type or any other ACBR characteristic. </br>The presented model by no means represents the complete set of bill elements that can be incurred. The model provides a framework into which other types of bill elements can easily fit.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_75B.l.sE.tFE.eGJH.v8O.b.y.l.p.rQ.PNG" alt="Figure C.14 - FinancialCharge accumulates AtomicAppliedCustomerBillingRate" usemap="#map_75B.l.sE.tFE.eGJH.v8O.b.y.l.p.rQ"></td>
+</tr>
+</table>
+<map name="map_75B.l.sE.tFE.eGJH.v8O.b.y.l.p.rQ">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="657,455,663,471" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="816,455,836,471" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="689,482,797,498" href="_.l.f3.q.cFB.tE.eO1.nKYNE9.e.tSA-content.html" alt="ACBRDescribedBy">
+<area shape="poly" coords="862,487,625,487,625,477,862,477,862,487" href="_.l.f3.q.cFB.tE.eO1.nKYNE9.e.tSA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_7.s.cUEFFOE.eO81M.cS.lTWO9Q" alt="financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_7.sZ30FFOE.eO81M.cS.lTWO9Q" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_7.s.cUEFFOE.eO81M.cS.lTWO9Q" alt="financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_7.sZ30FFOE.eO81M.cS.lTWO9Q" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_7.s.cUEFFOE.eO81M.cS.lTWO9Q" alt="financialCharge">
+<area shape="rect" coords="162,433,182,449" href="_3E3F0EC000E945FB02B00298-content.html#_7.s.cUEFFOE.eO81M.cS.lTWO9Q" alt="financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_7.sZ30FFOE.eO81M.cS.lTWO9Q" alt="characteristicValue">
+<area shape="rect" coords="442,433,448,449" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_7.sZ30FFOE.eO81M.cS.lTWO9Q" alt="characteristicValue">
+<area shape="rect" coords="217,418,387,434" href="_7.sYC.oFFOE.eO81M.cS.lTWO9Q-content.html" alt="FCAAccumulatesACBRUsing">
+<area shape="poly" coords="459,453,149,453,149,443,459,443,459,453" href="_7.sYC.oFFOE.eO81M.cS.lTWO9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="657,455,663,471" href="_3E3F0EC000E941CAC71B0187-content.html#_.l.f6.t.wFB.tE.eO1.nKYNE9.e.tSA" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="816,455,836,471" href="_3E3F0EC000E945FB02B00298-content.html#_.l.f-_MFB.tE.eO1.nKYNE9.e.tSA" alt="appliedCustomerBillingRate">
+<area shape="rect" coords="689,482,797,498" href="_.l.f3.q.cFB.tE.eO1.nKYNE9.e.tSA-content.html" alt="ACBRDescribedBy">
+<area shape="poly" coords="862,487,625,487,625,477,862,477,862,487" href="_.l.f3.q.cFB.tE.eO1.nKYNE9.e.tSA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="41,405,47,424" href="_3E3F0EC000E93C8D16D901C7-content.html#_MJ.b.oMU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="746,23,754,42" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_MJ.t8EU.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerAccount">
+<area shape="rect" coords="93,24,357,43" href="_MJ.b.oME.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="CustomerAccountChargedBasedUpon">
+<area shape="poly" coords="773,57,60,57,60,439,50,439,50,48,773,48,773,57" href="_MJ.b.oME.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="535,184,541,203" href="_3E3F0EC000E93C8D16D901C7-content.html#_3E3F0EC000E941D0164B0325" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="732,92,740,111" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0164B0327" alt="_customerAccount">
+<area shape="rect" coords="512,62,678,81" href="_3E3F0EC000E941D0164B0160-content.html" alt="CustomerBillCreatedFor">
+<area shape="poly" coords="773,91,551,91,551,215,541,215,541,82,773,82,773,91" href="_3E3F0EC000E941D0164B0160-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="908,377,914,396" href="_3E3F0EC000E941CAC1D6038E-content.html#_3E3F0EC000E941D0169803B4" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="637,221,659,240" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941D0169803C4" alt="_customerBill">
+<area shape="rect" coords="699,224,888,243" href="_3E3F0EC000E941D016980039-content.html" alt="CustomerBillPresentsACBR">
+<area shape="poly" coords="594,246,928,246,928,427,918,427,918,255,594,255,594,246" href="_3E3F0EC000E941D016980039-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="95,396,101,415" href="_3E3F0EC000E941CAC1D6038E-content.html#_.n.dBVME.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="433,222,441,241" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_.n.d.j.g.sE.s9E.eGJH.v8O.b.y.l.p.rQ" alt="_customerBill">
+<area shape="rect" coords="78,222,338,241" href="_.n.c-48E.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="CustomerBillPresentsFinancialCharge">
+<area shape="poly" coords="474,248,109,248,109,439,99,439,99,239,474,239,474,248" href="_.n.c-48E.s9E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="67,506,75,525" href="_3E3F0EC000E941CAD61C0398-content.html#_7.x71UE.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_financialCharge">
+<area shape="rect" coords="0,0,0,0" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="649,642,655,661" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html#_70NGME.s8E.eGJH.v8O.b.y.l.p.rQ" alt="_atomicAppliedCustomerBillingRate">
+<area shape="rect" coords="101,627,300,646" href="_7.xQ.f4E.s8E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="FinancialChargeAccumulates">
+<area shape="poly" coords="668,664,47,664,47,488,57,488,57,654,668,654,668,664" href="_7.xQ.f4E.s8E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="430,495,436,514" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="470,541,492,560" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="316,565,526,584" href="_3E3F0EC000E9463FD6220215-content.html" alt="CharacteristicValueReferences">
+<area shape="poly" coords="498,528,498,571,413,571,413,479,459,479,459,489,423,489,423,561,488,561,488,528,498,528" href="_3E3F0EC000E9463FD6220215-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.f1.v9.oE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="1127,245,1127,169,1137,169,1137,245,1127,245" href="_.f1.v9.oE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_VX.l8.sE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html#_.i.b.zZ4U.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.i.b5.g.g.k.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRateSpec">
+<area shape="rect" coords="0,0,0,0" href="_VX.l8.sE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html#_.i.b.zZ4U.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.i.b5.g.g.k.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRateSpec">
+<area shape="rect" coords="0,0,0,0" href="_VX.l8.sE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html#_.i.b.zZ4U.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="1043,401,1049,420" href="_VX.l8.sE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html#_.i.b.zZ4U.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_.i.b5.g.g.k.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRateSpec">
+<area shape="rect" coords="1042,323,1050,342" href="_3E3F0EC000E941CAC71B0187-content.html#_.i.b5.g.g.k.tEE.eGJH.v8O.b.y.l.p.rQ" alt="_appliedCustomerBillingRateSpec">
+<area shape="rect" coords="1005,362,1143,381" href="_.i.b.zZ4E.tEE.eGJH.v8O.b.y.l.p.rQ-content.html" alt="ACBRSpecDescribes">
+<area shape="poly" coords="1070,316,1070,427,1060,427,1060,316,1070,316" href="_.i.b.zZ4E.tEE.eGJH.v8O.b.y.l.p.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD617033A-content.html" alt="Generalization">
+<area shape="poly" coords="1149,634,1149,575,968,575,968,533,978,533,978,565,1159,565,1159,634,1149,634" href="_3E3F0EC000E941CAD617033A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="1100,451,1120,470" href="_3E3F0EC000E941CAD607004B-content.html#_3E3F0EC000E941CAD6390389" alt="_appliedCustomerBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="1337,657,1343,676" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CAD6390399" alt="_compositeAppliedCustomerBillingRate">
+<area shape="rect" coords="1096,481,1348,500" href="_3E3F0EC000E941CAD63901A5-content.html" alt="CompositeAppliedRateComprisedOf">
+<area shape="poly" coords="1295,656,1348,656,1348,484,1080,484,1080,474,1358,474,1358,666,1295,666,1295,656" href="_3E3F0EC000E941CAD63901A5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941CAD6280202-content.html" alt="Generalization">
+<area shape="poly" coords="794,634,794,565,968,565,968,533,978,533,978,575,804,575,804,634,794,634" href="_3E3F0EC000E941CAD6280202-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="780,77,917,93" href="_3E3F0EC000E93C8D16D901C7-content.html#_MBZW.cI3.sE.e.q__.p.b.k4J.i7KA" alt="pin">
+<area shape="rect" coords="780,60,917,76" href="_3E3F0EC000E93C8D16D901C7-content.html#_LDXA4I3.sE.e.q__.p.b.k4J.i7KA" alt="creditLimit">
+<area shape="rect" coords="773,35,926,110" href="_3E3F0EC000E93C8D16D901C7-content.html" alt="CustomerAccount">
+<area shape="rect" coords="474,215,596,267" href="_3E3F0EC000E941CAC1D6038E-content.html" alt="CustomerBill">
+<area shape="rect" coords="9,439,151,491" href="_.p.j.m.c.oE.s8E.eGJH.v8O.b.y.l.p.rQ-content.html" alt="FinancialCharge">
+<area shape="rect" coords="465,498,617,514" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D2" alt="validFor">
+<area shape="rect" coords="465,481,617,497" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D1" alt="value">
+<area shape="rect" coords="459,439,627,531" href="_3E3F0EC000E945FB02B00298-content.html" alt="CharacteristicValue">
+<area shape="rect" coords="1019,139,1219,155" href="_3E3F0EC000E93DDEC52B0188-content.html#_3E3F0EC000E93C5DC5040164" alt="status">
+<area shape="rect" coords="1019,122,1219,138" href="_3E3F0EC000E93DDEC52B0188-content.html#_3E3F0EC000E93C5DC4F6015A" alt="validFor">
+<area shape="rect" coords="1013,80,1229,172" href="_3E3F0EC000E93DDEC52B0188-content.html" alt="EntitySpecification">
+<area shape="rect" coords="1004,286,1283,302" href="_VX.l8.sE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html#_JVJ1.wGWOE.eSJS8.c-D.n.d.u9A" alt="revenueCode">
+<area shape="rect" coords="998,245,1293,320" href="_VX.l8.sE.tEE.eGJH.v8O.b.y.l.p.rQ-content.html" alt="AppliedCustomerBillingRateSpec">
+<area shape="rect" coords="1013,634,1297,686" href="_3E3F0EC000E941CAD607004B-content.html" alt="CompositeAppliedCustomerBillingRate">
+<area shape="rect" coords="668,634,931,686" href="_3E3F0EC000E941CAD61C0398-content.html" alt="AtomicAppliedCustomerBillingRate">
+<area shape="rect" coords="869,503,1073,519" href="_3E3F0EC000E941CAC71B0187-content.html#_.m.d.qZQF.u.wE.eWQJND.nU7AOQA" alt="description">
+<area shape="rect" coords="869,486,1073,502" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CFCA4F002A" alt="quantity">
+<area shape="rect" coords="869,469,1073,485" href="_3E3F0EC000E941CAC71B0187-content.html#_3E3F0EC000E941CACE360134" alt="date">
+<area shape="rect" coords="869,452,1073,468" href="_3E3F0EC000E941CAC71B0187-content.html#_YU.y3UH1.kE.e.mN2Z.iF.eKDB8.w" alt="ID">
+<area shape="rect" coords="862,427,1082,536" href="_3E3F0EC000E941CAC71B0187-content.html" alt="AppliedCustomerBillingRate">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure C.14 - FinancialCharge accumulates AtomicAppliedCustomerBillingRate</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.g.p.zG4J2DE.e.m.iVP.iIB18S.oA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Customer Bill Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

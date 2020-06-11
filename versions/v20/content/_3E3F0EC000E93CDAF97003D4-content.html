@@ -1,0 +1,691 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Hardware ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for PhysicalContainer">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E2C3EF2015D-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Hardware ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE</span>
+<br>
+<span class="ElementTitle">Class PhysicalContainer</span>
+<p>
+<a name="documentationSection"></a>This is an abstract class that is used to add additional semantics to the ManagedHardware class. Its attributes define whether a ManagedHardware object can be removed and/or replaced, and whether this action requires power to be removed or not when the action is performed.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">«likelyToBeDeprecated» PhysicalCapacity </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::_physicalCapacity" href="#_3E3F0EC000E93CDD9BAF031E"><img border="0" src="../images/30297464_icon.png" alt="_physicalCapacity"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::_physicalCapacity" href="#_3E3F0EC000E93CDD9BAF031E">_physicalCapacity</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::hotSwappable" href="#_3E3F0EC000E93CDAD87C026A"><img border="0" src="../images/30297464_icon.png" alt="hotSwappable"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::hotSwappable" href="#_3E3F0EC000E93CDAD87C026A">hotSwappable</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that defines whether it is possible to replace this object instance with a physically different, but equivalent, object instance while the containing Equipment has power applied to it. TRUE means that it is HotSwappable, and FALSE means that it is not.</br></br>All HotSwappable PhysicalComponents are inherently Removable and Replaceable.</br></br>This is a required attribute.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::removable" href="#_3E3F0EC000E93CDAD87C026D"><img border="0" src="../images/30297464_icon.png" alt="removable"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::removable" href="#_3E3F0EC000E93CDAD87C026D">removable</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean that defines whether it is possible to insert and remove this object instance from the Equipment in which it is installed, without impairing the function or packaging of the Equipment. TRUE means that it is removable, and FALSE means that it is not.</br></br>A Package can still be Removable if power must be 'off' in order to perform the removal. If power can be 'on' and this object instance can still be removed, then this object instance is both Removable and HotSwappable.</br></br>This is a required attribute.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::replaceable" href="#_3E3F0EC000E93CDAD87C026E"><img border="0" src="../images/30297464_icon.png" alt="replaceable"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::replaceable" href="#_3E3F0EC000E93CDAD87C026E">replaceable</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean that defines whether it is possible to replace this object instance with a physically different instance of the same type. For example, some types of device allow various Chips to be upgraded. TRUE means that it is replaceable, and FALSE means that it is not.</br></br>All Removable packages are inherently Replaceable.</br></br>This is a required attribute.</br></p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware" href="_3E3F0EC000E93CDAD87C0261-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware" href="_3E3F0EC000E93CDAD87C0261-content.html">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::additionalInfo" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0265"><img border="0" src="../images/30297464_icon.png" alt="additionalInfo"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::additionalInfo" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0265">additionalInfo</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::administrativeState" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0266"><img border="0" src="../images/30297464_icon.png" alt="administrativeState"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::administrativeState" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0266">administrativeState</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::physicalAlarmReportingEnabled" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0267"><img border="0" src="../images/30297464_icon.png" alt="physicalAlarmReportingEnabled"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::physicalAlarmReportingEnabled" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0267">physicalAlarmReportingEnabled</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::physicalAlarmStatus" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0268"><img border="0" src="../images/30297464_icon.png" alt="physicalAlarmStatus"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::physicalAlarmStatus" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0268">physicalAlarmStatus</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::coolingRequirements" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0269"><img border="0" src="../images/30297464_icon.png" alt="coolingRequirements"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::coolingRequirements" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0269">coolingRequirements</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::hardwarePurpose" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C026C"><img border="0" src="../images/30297464_icon.png" alt="hardwarePurpose"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::hardwarePurpose" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C026C">hardwarePurpose</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::_hardwareRole" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93DDEBF9A0306"><img border="0" src="../images/30297464_icon.png" alt="_hardwareRole"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::ManagedHardware::_hardwareRole" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93DDEBF9A0306">_hardwareRole</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware" href="_3E3F0EC000E93CDAB5F60264-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware" href="_3E3F0EC000E93CDAB5F60264-content.html">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::depth" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0188"><img border="0" src="../images/30297464_icon.png" alt="depth"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::depth" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0188">depth</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::height" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0189"><img border="0" src="../images/30297464_icon.png" alt="height"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::height" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0189">height</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::measurementUnits" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018A"><img border="0" src="../images/30297464_icon.png" alt="measurementUnits"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::measurementUnits" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018A">measurementUnits</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::weight" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018B"><img border="0" src="../images/30297464_icon.png" alt="weight"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::weight" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018B">weight</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::weightUnits" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018C"><img border="0" src="../images/30297464_icon.png" alt="weightUnits"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::weightUnits" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018C">weightUnits</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::width" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018D"><img border="0" src="../images/30297464_icon.png" alt="width"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::width" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018D">width</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_physicalConnector" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAF3570004"><img border="0" src="../images/30297464_icon.png" alt="_physicalConnector"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_physicalConnector" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAF3570004">_physicalConnector</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_hardware" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB"><img border="0" src="../images/30297464_icon.png" alt="_hardware"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_hardware" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AB">_hardware</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_hardware1" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD"><img border="0" src="../images/30297464_icon.png" alt="_hardware1"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_hardware1" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93DDEE70A01AD">_hardware1</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_physicalLink" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDD69470319"><img border="0" src="../images/30297464_icon.png" alt="_physicalLink"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_physicalLink" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDD69470319">_physicalLink</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_physicalDevice" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B"><img border="0" src="../images/30297464_icon.png" alt="_physicalDevice"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_physicalDevice" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B">_physicalDevice</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_device" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE2246B02D3"><img border="0" src="../images/30297464_icon.png" alt="_device"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_device" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE2246B02D3">_device</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_equipmentHolder" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE23B12017D"><img border="0" src="../images/30297464_icon.png" alt="_equipmentHolder"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_equipmentHolder" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE23B12017D">_equipmentHolder</a>, <a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_commonPlatformEnumeration" href="_3E3F0EC000E93CDAB5F60264-content.html#_.zBZ.d.oL.bDE.d-.b.n.b.r.m.vJF.a.n.w"><img border="0" src="../images/30297464_icon.png" alt="_commonPlatformEnumeration"></a>&nbsp;<a title="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::Hardware::_commonPlatformEnumeration" href="_3E3F0EC000E93CDAB5F60264-content.html#_.zBZ.d.oL.bDE.d-.b.n.b.r.m.vJF.a.n.w">_commonPlatformEnumeration</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Physical Resource ABE::PhysicalResource">&nbsp;SID Models::Resource Domain::Resource ABE::Physical Resource ABE::PhysicalResource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_uniqueRepresentation">&nbsp;_uniqueRepresentation, <img border="0" src="../images/30297464_icon.png" alt="_place2">&nbsp;_place2, <img border="0" src="../images/30297464_icon.png" alt="_localPlace">&nbsp;_localPlace, <img border="0" src="../images/30297464_icon.png" alt="_replacementSet">&nbsp;_replacementSet, <img border="0" src="../images/30297464_icon.png" alt="manufactureDate">&nbsp;manufactureDate, <img border="0" src="../images/30297464_icon.png" alt="otherIdentifier">&nbsp;otherIdentifier, <img border="0" src="../images/30297464_icon.png" alt="powerState">&nbsp;powerState, <img border="0" src="../images/30297464_icon.png" alt="serialNumber">&nbsp;serialNumber, <img border="0" src="../images/30297464_icon.png" alt="versionNumber">&nbsp;versionNumber, <img border="0" src="../images/30297464_icon.png" alt="_product2">&nbsp;_product2, <img border="0" src="../images/30297464_icon.png" alt="physicalResourceRole">&nbsp;physicalResourceRole, <img border="0" src="../images/30297464_icon.png" alt="logicalResource">&nbsp;logicalResource</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Resource Domain::Resource ABE::Resource">&nbsp;SID Models::Resource Domain::Resource ABE::Resource</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_managementDomain">&nbsp;_managementDomain, <img border="0" src="../images/30297464_icon.png" alt="_businessInteractionItem">&nbsp;_businessInteractionItem, <img border="0" src="../images/30297464_icon.png" alt="_resourceRole">&nbsp;_resourceRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceSpecification">&nbsp;_resourceSpecification, <img border="0" src="../images/30297464_icon.png" alt="_resourceUsage">&nbsp;_resourceUsage, <img border="0" src="../images/30297464_icon.png" alt="usageState">&nbsp;usageState, <img border="0" src="../images/30297464_icon.png" alt="_place">&nbsp;_place, <img border="0" src="../images/30297464_icon.png" alt="_performance2">&nbsp;_performance2, <img border="0" src="../images/30297464_icon.png" alt="_resourceFacingService">&nbsp;_resourceFacingService, <img border="0" src="../images/30297464_icon.png" alt="_product">&nbsp;_product, <img border="0" src="../images/30297464_icon.png" alt="_resourceCharacteristicValue">&nbsp;_resourceCharacteristicValue, <img border="0" src="../images/30297464_icon.png" alt="_resourceSecurityEntity">&nbsp;_resourceSecurityEntity, <img border="0" src="../images/30297464_icon.png" alt="_securityEventCollectionMethod">&nbsp;_securityEventCollectionMethod, <img border="0" src="../images/30297464_icon.png" alt="_serviceAccessPoint">&nbsp;_serviceAccessPoint, <img border="0" src="../images/30297464_icon.png" alt="_securityThreatTool">&nbsp;_securityThreatTool, <img border="0" src="../images/30297464_icon.png" alt="_commonResourceInfo">&nbsp;_commonResourceInfo, <img border="0" src="../images/30297464_icon.png" alt="_partyRole3">&nbsp;_partyRole3, <img border="0" src="../images/30297464_icon.png" alt="_partyRole">&nbsp;_partyRole, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacity">&nbsp;resourceCapacity, <img border="0" src="../images/30297464_icon.png" alt="resourceCapacityDemand">&nbsp;resourceCapacityDemand, <img border="0" src="../images/30297464_icon.png" alt="_resourceInvolvementRole">&nbsp;_resourceInvolvementRole, <img border="0" src="../images/30297464_icon.png" alt="_resourceUser">&nbsp;_resourceUser, <img border="0" src="../images/30297464_icon.png" alt="runningSoftwareStatistics">&nbsp;runningSoftwareStatistics, <img border="0" src="../images/30297464_icon.png" alt="software">&nbsp;software, <img border="0" src="../images/30297464_icon.png" alt="compoundResource">&nbsp;compoundResource, <img border="0" src="../images/30297464_icon.png" alt="resourceConfiguration">&nbsp;resourceConfiguration, <img border="0" src="../images/30297464_icon.png" alt="resourceConfigSpec">&nbsp;resourceConfigSpec, <img border="0" src="../images/30297464_icon.png" alt="resourceTest">&nbsp;resourceTest, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship">&nbsp;resourceRelationship, <img border="0" src="../images/30297464_icon.png" alt="resourceRelationship2">&nbsp;resourceRelationship2, <img border="0" src="../images/30297464_icon.png" alt="resource">&nbsp;resource, <img border="0" src="../images/30297464_icon.png" alt="resource22">&nbsp;resource22, <img border="0" src="../images/30297464_icon.png" alt="problem2">&nbsp;problem2, <img border="0" src="../images/30297464_icon.png" alt="problem">&nbsp;problem, <img border="0" src="../images/30297464_icon.png" alt="_alarm_3">&nbsp;_alarm_3, <img border="0" src="../images/30297464_icon.png" alt="_alarm_2">&nbsp;_alarm_2, <img border="0" src="../images/30297464_icon.png" alt="_alarm_1">&nbsp;_alarm_1, <img border="0" src="../images/30297464_icon.png" alt="resourcePerformance">&nbsp;resourcePerformance</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::Entity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::Entity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_entityIdentification">&nbsp;_entityIdentification, <img border="0" src="../images/30297464_icon.png" alt="_entityRole">&nbsp;_entityRole, <img border="0" src="../images/30297464_icon.png" alt="managedEntity">&nbsp;managedEntity, <img border="0" src="../images/30297464_icon.png" alt="characteristicValue">&nbsp;characteristicValue</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">PhysicalContainer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3EF2015D-content.html">Hardware ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3EF2015D-content.html">Hardware ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E2C3EF2015D-content.html">Hardware ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDD9BAF031E">_physicalCapacity</a></span>
+<pre>Public&nbsp;«likelyToBeDeprecated» PhysicalCapacity _physicalCapacity</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDD9BAF031E"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD9BA9009E-content.html">PhysicalCapacityDetails</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_physicalCapacity</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD89460086-content.html#_3E3F0EC000E93CDD9BAF0328">_physicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::_physicalCapacity</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDD89460086-content.html">«likelyToBeDeprecated» PhysicalCapacity</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDAD87C026A">hotSwappable</a></span>
+<pre>Public&nbsp;Boolean hotSwappable</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that defines whether it is possible to replace this object instance with a physically different, but equivalent, object instance while the containing Equipment has power applied to it. TRUE means that it is HotSwappable, and FALSE means that it is not.</br></br>All HotSwappable PhysicalComponents are inherently Removable and Replaceable.</br></br>This is a required attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDAD87C026A"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">hotSwappable</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::hotSwappable</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDAD87C026D">removable</a></span>
+<pre>Public&nbsp;Boolean removable</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean that defines whether it is possible to insert and remove this object instance from the Equipment in which it is installed, without impairing the function or packaging of the Equipment. TRUE means that it is removable, and FALSE means that it is not.</br></br>A Package can still be Removable if power must be 'off' in order to perform the removal. If power can be 'on' and this object instance can still be removed, then this object instance is both Removable and HotSwappable.</br></br>This is a required attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDAD87C026D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">removable</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::removable</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93CDAD87C026E">replaceable</a></span>
+<pre>Public&nbsp;Boolean replaceable</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean that defines whether it is possible to replace this object instance with a physically different instance of the same type. For example, some types of device allow various Chips to be upgraded. TRUE means that it is replaceable, and FALSE means that it is not.</br></br>All Removable packages are inherently Replaceable.</br></br>This is a required attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93CDAD87C026E"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">replaceable</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CDAF97003D4-content.html">PhysicalContainer</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Resource Domain::Resource ABE::Physical Resource ABE::Hardware ABE::PhysicalContainer::replaceable</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E2C3EF2015D-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Hardware ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

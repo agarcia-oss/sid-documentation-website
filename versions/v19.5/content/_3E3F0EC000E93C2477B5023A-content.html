@@ -1,0 +1,158 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Party Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E389BB6023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Party ABE::_Party Addendum Figures::Figure P.04 - Party and the Main eTOM Roles<br>
+</span><span class="ElementTitle">Diagram Figure P.04 - Party and the Main eTOM Roles<br>
+</span><span class="ElementDocumentation">People and Organizations exhibit complex behavior. A lot of the behavior can be grouped, based on a particular context, or participation in a certain interaction. </br>For instance, a child at school will behave as a student and an adult may behave as a teacher. A person playing cricket may behave as a bowler, a batsman or as a fielder or wicket-keeper.</br>These behavior groups will change over time and will cause problems if we model them using inheritance / specialization. Also, we need to allow for the fact that a Party may play more than one role at any given point in time (an employee may also be a customer; a graduate student may also be a tutor).</br>By modeling PartyRole as a separate concept from Party, we allow for proper representation of these complex sets of behaviors.</br>When looking at the eTOM, we see that Parties play roles in the context of an interaction to provide Customer value. </br>This interaction may be per service or per event (e.g. a phone call).</br><Note> “Note that these are roles and that individual enterprises can adopt different roles in different value networks. Roles represent activities that businesses can engage in and, for example, a service provider may be the customer-facing service provider in one value network and a third party (e.g. wholesale) service provider in another. Relationships are established between the roles, hence the business relationship context model. In today’s fast-moving marketplace, relationships can be very short-lived compared with the more static relationships of the traditional telecommunications market. By focusing on roles rather than organizations, a more flexible business relationship context model can be achieved. Enterprises can adopt and shed roles dynamically, but the relationships between the roles are established, so the adoption of a particular role will also define the relationship of the enterprise playing that role towards another role player.” [eTOM]</Note></br>The roles defined in the eTOM are shown as subclasses of PartyRole in Figure P.04 – Party and the Main eTOM Roles.</br>Note:</br>        •	To support these roles, we will use the “Role Object” pattern [Fowler-Role] [Larman].</br>        •	The PartyRole entity represents the common behavior by a Party when acting in the role.</br>        •	This model explicitly separates the information held about individuals and organizations from the roles that they perform and the relationships between the roles.</br>        •	PartyRole is shown with an id attribute. Existing data may have different id formats for different role types, e.g. “customer number”, “supplier id”, “employee nr” … </br>        •	In a value fabric, roles may not be exclusive, e.g. a customer may also be a supplier</br>        •	In a number of cases we are interested in parties playing a combination of roles, e.g. staff who use our products get staff discount, suppliers who use our products are “preferred suppliers”</br>        •	If the number of roles becomes very large, then it may be necessary to create “sub-roles” so that the inheritance tree does not become unmanageable.</br>Parties & PartyRoles may be recorded, even if there is no interaction with the Service Provider.</br>e.g. a Service Provider may wish to keep a list of Phone Dealers (including competitors) to help in determining shop placements. The Organizations are stored, with a role of “Phone Dealer”, but there may never be any “Interaction” between the dealers and the Service Provider.</br></br>Other roles are governmental entities, such as regulators, law enforcement, and tax. Shareholders also have a place. Such Business Process Framework process areas, such as Stakeholder and External Relations Management and Enterprise Risk Management (Fraud Management processes often engage Law Enforcement parties) and Shareholder & External Relations Management have various modes of engagement with these. </br>Examples of roles played by parties include those of interest, such as competitors, sales prospects that provides value directly or indirectly, such as service providers, operators, cloud brokers, infrastructure providers, application developers.</br>So, there is a need to maintain information about many different roles played by parties and for a common set of business process elements with which many roles are involved.  </br>The introduction of a Party ABE in the Common domain with the PartyRole entity in it simplifies interactions among business enablers, enabling other organizations playing new/different roles in the value fabric to be represented in the model in their specific domain as specialization of PartyRole. Companies become more open to sharing information and process visibility. And the community of actors self-select themselves into like-minded communities of parties.</br>Process flows that show the roles engaged in a scenario or use case can take advantage of the common process elements. It contains information about the entities whose lifecycles are managed by these process elements.</br>It keeps Frameworx sufficiently agile to not require major structure changes to four of the component frameworks when new roles are introduced.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93C2477B5023A.PNG" alt="Figure P.04 - Party and the Main eTOM Roles" usemap="#map_3E3F0EC000E93C2477B5023A"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93C2477B5023A">
+<area shape="rect" coords="0,0,0,0" href="_.kAR.zIG.y.yE.e.m4D99.v.o.lZ1FA-content.html" alt="Generalization">
+<area shape="poly" coords="885,496,885,321,414,321,414,280,424,280,424,311,895,311,895,496,885,496" href="_.kAR.zIG.y.yE.e.m4D99.v.o.lZ1FA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.lQY14OE2E.d-_3M-_O.dW.b_A-content.html" alt="Generalization">
+<area shape="poly" coords="575,415,575,321,414,321,414,280,424,280,424,311,585,311,585,415,575,415" href="_.lQY14OE2E.d-_3M-_O.dW.b_A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.m.v7WAOE2E.d-_3M-_O.dW.b_A-content.html" alt="Generalization">
+<area shape="poly" coords="509,515,509,321,414,321,414,280,424,280,424,311,519,311,519,515,509,515" href="_.m.v7WAOE2E.d-_3M-_O.dW.b_A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="438,415,438,321,414,321,414,280,424,280,424,311,448,311,448,415,438,415" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.q.v4.c0F.e4E.e.mE.q8.y.oC5.f.j.jQ-content.html" alt="Generalization">
+<area shape="poly" coords="362,515,362,311,414,311,414,280,424,280,424,321,372,321,372,515,362,515" href="_.q.v4.c0F.e4E.e.mE.q8.y.oC5.f.j.jQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.mZO.y0MR5E.e.eN0_.w.z6.h.a8F.g-content.html" alt="Generalization">
+<area shape="poly" coords="275,415,275,311,414,311,414,280,424,280,424,321,285,321,285,415,275,415" href="_.mZO.y0MR5E.e.eN0_.w.z6.h.a8F.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94150418102CF-content.html" alt="Generalization">
+<area shape="poly" coords="90,415,90,311,414,311,414,280,424,280,424,321,99,321,99,415,90,415" href="_3E3F0EC000E94150418102CF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.gJC.nIDR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation">
+<area shape="rect" coords="0,0,0,0" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.gJC.nI.zR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.gJC.nIDR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation">
+<area shape="rect" coords="0,0,0,0" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.gJC.nI.zR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.gJC.nIDR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation">
+<area shape="rect" coords="491,102,497,118" href="_3E3F0EC000E93C2319BC02EE-content.html#_.gJC.nIDR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation">
+<area shape="rect" coords="0,0,0,0" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.gJC.nI.zR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole">
+<area shape="rect" coords="490,158,497,174" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.gJC.nI.zR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole">
+<area shape="rect" coords="491,131,600,147" href="_.gI42IDR.wE.eC6.f.oX.d.y.w02.lQ-content.html" alt="PartyRoleInvolves">
+<area shape="poly" coords="471,179,471,98,481,98,481,179,471,179" href="_.gI42IDR.wE.eC6.f.oX.d.y.w02.lQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.oDY.n.gTR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.oD.h.x.c.jR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation2">
+<area shape="rect" coords="0,0,0,0" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.oDY.n.gTR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.oD.h.x.c.jR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation2">
+<area shape="rect" coords="0,0,0,0" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.oDY.n.gTR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole2">
+<area shape="rect" coords="328,158,335,174" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_.oDY.n.gTR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRole2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.oD.h.x.c.jR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation2">
+<area shape="rect" coords="329,102,335,118" href="_3E3F0EC000E93C2319BC02EE-content.html#_.oD.h.x.c.jR.wE.eC6.f.oX.d.y.w02.lQ" alt="_partyRoleAssociation2">
+<area shape="rect" coords="199,125,340,141" href="_.oDY.n.gDR.wE.eC6.f.oX.d.y.w02.lQ-content.html" alt="PartyRoleInvolvedWith">
+<area shape="poly" coords="356,98,356,179,346,179,346,98,356,98" href="_.oDY.n.gDR.wE.eC6.f.oX.d.y.w02.lQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E6D611202FE-content.html" alt="Generalization">
+<area shape="poly" coords="192,515,192,311,414,311,414,280,424,280,424,321,202,321,202,515,192,515" href="_3E3F0EC000E93E6D611202FE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961ABC0303" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E961ABC0318" alt="_partyRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961ABC0303" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E961ABC0318" alt="_partyRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961ABC0303" alt="_partyRole">
+<area shape="rect" coords="516,235,524,252" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961ABC0303" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E961ABC0318" alt="_partyRoleSpecification">
+<area shape="rect" coords="717,235,743,252" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93E961ABC0318" alt="_partyRoleSpecification">
+<area shape="rect" coords="496,197,742,214" href="_3E3F0EC000E93E961ABB03DE-content.html" alt="PartyRoleSpecificationDescribes">
+<area shape="poly" coords="745,234,495,234,495,224,745,224,745,234" href="_3E3F0EC000E93E961ABB03DE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C42378000A7-content.html" alt="Generalization">
+<area shape="poly" coords="687,496,687,321,414,321,414,280,424,280,424,311,697,311,697,496,687,496" href="_3E3F0EC000E93C42378000A7-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="202,235,210,252" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="322,232,330,249" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="216,210,326,227" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="339,235,167,235,167,225,339,225,339,235" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E920244-content.html" alt="Generalization">
+<area shape="poly" coords="787,409,787,321,414,321,414,280,424,280,424,311,797,311,797,409,787,409" href="_3E3F0EC000E93C247E920244-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="839,496,943,548" href="_IX.g.gUG.y.yE.e.m4D99.v.o.lZ1FA-content.html" alt="Regulator">
+<area shape="rect" coords="533,415,628,467" href="_.f.b.z.oIOE2E.d-_3M-_O.dW.b_A-content.html" alt="Supplier">
+<area shape="rect" coords="471,515,560,567" href="_.j.jAHAOE2E.d-_3M-_O.dW.b_A-content.html" alt="Partner">
+<area shape="rect" coords="390,415,498,467" href="_3E3F0EC000E93F008E7F0264-content.html" alt="Technician">
+<area shape="rect" coords="296,515,439,567" href="_.h2.b.v4F.e4E.e.mE.q8.y.oC5.f.j.jQ-content.html" alt="ServiceDesigner">
+<area shape="rect" coords="222,415,341,467" href="_.g.e.p.q.wMR5E.e.eN0_.w.z6.h.a8F.g-content.html" alt="ProductUser">
+<area shape="rect" coords="16,457,172,473" href="_3E3F0EC000E9414F493000D0-content.html#_3E3F0EC000E941504BD401C1" alt="dateCreated">
+<area shape="rect" coords="16,440,172,456" href="_3E3F0EC000E9414F493000D0-content.html#_3E3F0EC000E941504BCC00B1" alt="description">
+<area shape="rect" coords="9,415,181,490" href="_3E3F0EC000E9414F493000D0-content.html" alt="Competitor">
+<area shape="rect" coords="328,68,485,84" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_3E3F0EC000E93C74490F02E8" alt="status">
+<area shape="rect" coords="328,51,485,67" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_3E3F0EC000E93C74490603C2" alt="validFor">
+<area shape="rect" coords="328,34,485,50" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html#_3E3F0EC000E93C7448F3011C" alt="associationType">
+<area shape="rect" coords="321,9,494,101" href="_I.g.k.hADR.wE.eC6.f.oX.d.y.w02.lQ-content.html" alt="PartyRoleAssociation">
+<area shape="rect" coords="128,539,265,554" href="_3E3F0EC000E93C8D1698008D-content.html#_3E3F0EC000E93C8D408B00E9" alt="customerRank">
+<area shape="rect" coords="122,515,275,571" href="_3E3F0EC000E93C8D1698008D-content.html" alt="Customer">
+<area shape="rect" coords="751,251,925,266" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AE10325" alt="validFor">
+<area shape="rect" coords="751,235,925,250" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AFA019A" alt="description">
+<area shape="rect" coords="751,219,925,234" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AF403C2" alt="name">
+<area shape="rect" coords="745,195,935,283" href="_3E3F0EC000E93E961AB2001A-content.html" alt="PartyRoleSpecification">
+<area shape="rect" coords="345,251,487,266" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="345,235,487,250" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="345,219,487,234" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="345,203,487,218" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="339,179,497,283" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="17,235,159,250" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93D8A882402B1" alt="validFor">
+<area shape="rect" coords="17,219,159,234" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C310D010249" alt="ID">
+<area shape="rect" coords="11,195,169,267" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+<area shape="rect" coords="596,536,787,551" href="_3E3F0EC000E93C42376E0051-content.html#_3E3F0EC000E93C42379A0299" alt="currentSalary">
+<area shape="rect" coords="596,520,787,535" href="_3E3F0EC000E93C42376E0051-content.html#_3E3F0EC000E93C423796027F" alt="employeeNr">
+<area shape="rect" coords="589,496,796,568" href="_3E3F0EC000E93C42376E0051-content.html" alt="ServiceProviderEmployee">
+<area shape="rect" coords="720,409,866,460" href="_3E3F0EC000E93C247E3903DE-content.html" alt="ServiceProvider">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure P.04 - Party and the Main eTOM Roles</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E389BB6023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

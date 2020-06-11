@@ -1,0 +1,207 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Calendar Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Calendar ABE::_ Calendar Addendum Figures::Figure Cal.10 - Entry Characteristics<br>
+</span><span class="ElementTitle">Diagram Figure Cal.10 - Entry Characteristics<br>
+</span><span class="ElementDocumentation">This section explains the remaining entities that relate directly to CalendarEntry.</br>CalendarEntries can be categorized to allow for easier sorting and filtering.</br>We can also attach files to CalendarEntries, which could be items like a document sent out with a meeting request. The attachments may either be in-line or via a URI reference.</br>To allow for working across different time zones, we need to tag each Calendar Entry TemporalExpression with a time zone. An implementation may decide to make timezone issues invisible to the user by converting all entries on receipt, to the Calendar TimeZone.</br>Similarly, CalendarEntityTemporalExpressions may be translated from the calendricalSystem that they were created with to the Calendar default.</br>The CalendarEntry TemporalExpression could be a simple TimePoint or TimePeriod for a non-repeating Entry.</br>For a repeating Entry, we will need some sort of rule to enable us to specify how long it should repeat for (interval) and how often (frequency).</br>e.g. we may decide to go to the gym every Wednesday in Summer 2003/4.</br>So, an entry could be created on 24 Dec 2003 at 5:00pm – 6:30pm. It could be set to repeat weekly, stopping on 17 Mar 2004. As noted before, depending on the complexity required, the RecurrenceRules entity could be implemented using rules or policy engines or simple templates.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93E7FB191019E.PNG" alt="Figure Cal.10 - Entry Characteristics" usemap="#map_3E3F0EC000E93E7FB191019E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93E7FB191019E">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93E4823EC02EE" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E4823EC02F9" alt="_country">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93E4823EC02EE" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E4823EC02F9" alt="_country">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93E4823EC02EE" alt="_timeZone">
+<area shape="rect" coords="969,63,976,79" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93E4823EC02EE" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E4823EC02F9" alt="_country">
+<area shape="rect" coords="1011,63,1018,79" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E4823EC02F9" alt="_country">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E4823EB03C8-content.html" alt="Association">
+<area shape="poly" coords="1024,95,964,95,964,85,1024,85,1024,95" href="_3E3F0EC000E93E4823EB03C8-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3G5.c.wF.g.jE.e.i.h.gO3GTM8.tN.g" alt="attachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_3G-VQF.g.jE.e.i.h.gO3GTM8.tN.g" alt="calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3G5.c.wF.g.jE.e.i.h.gO3GTM8.tN.g" alt="attachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_3G-VQF.g.jE.e.i.h.gO3GTM8.tN.g" alt="calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3G5.c.wF.g.jE.e.i.h.gO3GTM8.tN.g" alt="attachment">
+<area shape="rect" coords="95,543,101,559" href="_3E3F0EC000E93E41B1110189-content.html#_3G5.c.wF.g.jE.e.i.h.gO3GTM8.tN.g" alt="attachment">
+<area shape="rect" coords="0,0,0,0" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_3G-VQF.g.jE.e.i.h.gO3GTM8.tN.g" alt="calendarEntry">
+<area shape="rect" coords="87,467,107,483" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_3G-VQF.g.jE.e.i.h.gO3GTM8.tN.g" alt="calendarEntry">
+<area shape="rect" coords="55,505,195,521" href="_3G1.yYF.g.jE.e.i.h.gO3GTM8.tN.g-content.html" alt="CalendarEntryContains">
+<area shape="poly" coords="122,459,122,567,112,567,112,459,122,459" href="_3G1.yYF.g.jE.e.i.h.gO3GTM8.tN.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9CB1A8026A" alt="_language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93E9CB1A8027E" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9CB1A8026A" alt="_language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93E9CB1A8027E" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9CB1A8026A" alt="_language">
+<area shape="rect" coords="946,514,954,531" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9CB1A8026A" alt="_language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93E9CB1A8027E" alt="_calendarEntry">
+<area shape="rect" coords="256,400,264,417" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93E9CB1A8027E" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9CB1A702B9-content.html" alt="Association">
+<area shape="poly" coords="210,382,610,382,610,497,1001,497,1001,507,600,507,600,392,210,392,210,382" href="_3E3F0EC000E93E9CB1A702B9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="215,272,223,289" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E9B896E03D5" alt="_calendarEntry2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="211,225,237,242" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B896F000B" alt="_simpleTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B896D0289-content.html" alt="Association">
+<area shape="poly" coords="202,220,202,274,192,274,192,220,202,220" href="_3E3F0EC000E93E9B896D0289-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="545,232,571,249" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9B89580009" alt="_recurrenceTemporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="231,358,239,375" href="_3E3F0EC000E93E9B886E01E2-content.html#_3E3F0EC000E93E9B8958000A" alt="_calendarEntry1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B89580008-content.html" alt="Association">
+<area shape="poly" coords="210,341,532,341,532,215,542,215,542,351,210,351,210,341" href="_3E3F0EC000E93E9B89580008-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E46F8630151-content.html#_3E3F0EC000E93E46F86E0193" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F86E0195" alt="_calendarEntryCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E46F8630151-content.html#_3E3F0EC000E93E46F86E0193" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F86E0195" alt="_calendarEntryCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E46F8630151-content.html#_3E3F0EC000E93E46F86E0193" alt="_calendarEntry">
+<area shape="rect" coords="126,261,134,278" href="_3E3F0EC000E93E46F8630151-content.html#_3E3F0EC000E93E46F86E0193" alt="_calendarEntry">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F86E0195" alt="_calendarEntryCategory">
+<area shape="rect" coords="123,121,131,138" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F86E0195" alt="_calendarEntryCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E46F86D03A4-content.html" alt="Association">
+<area shape="poly" coords="113,97,113,274,104,274,104,97,113,97" href="_3E3F0EC000E93E46F86D03A4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93C2714DB02EE" alt="_language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C2714DB02EF" alt="_country">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93C2714DB02EE" alt="_language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C2714DB02EF" alt="_country">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93C2714DB02EE" alt="_language">
+<area shape="rect" coords="1104,458,1112,475" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93C2714DB02EE" alt="_language">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C2714DB02EF" alt="_country">
+<area shape="rect" coords="1093,149,1119,166" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C2714DB02EF" alt="_country">
+<area shape="rect" coords="979,342,1174,359" href="_3E3F0EC000E93C2714DB0096-content.html" alt="LanguageOfficiallyUsedIn">
+<area shape="poly" coords="1091,134,1091,474,1082,474,1081,134,1091,134" href="_3E3F0EC000E93C2714DB0096-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9FA102AA-content.html" alt="Generalization">
+<area shape="poly" coords="278,167,278,99,461,99,461,68,470,68,470,109,288,109,288,167,278,167" href="_3E3F0EC000E93E7F9FA102AA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9B88A7009A-content.html" alt="Generalization">
+<area shape="poly" coords="558,167,558,109,461,109,461,68,470,68,470,99,567,99,567,167,558,167" href="_3E3F0EC000E93E9B88A7009A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="562,23,570,40" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E9BA26703B1" alt="_temporalExpression">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="780,23,788,40" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E9BA26703B2" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9BA26703B0-content.html" alt="Association">
+<area shape="poly" coords="795,58,555,58,555,48,795,48,795,58" href="_3E3F0EC000E93E9BA26703B0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B99C013E" alt="_timeZoneRule">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B99C0140" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B99C013E" alt="_timeZoneRule">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B99C0140" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B99C013E" alt="_timeZoneRule">
+<area shape="rect" coords="890,202,898,219" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B99C013E" alt="_timeZoneRule">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B99C0140" alt="_timeZone">
+<area shape="rect" coords="890,143,898,160" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B99C0140" alt="_timeZone">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E41B99B0359-content.html" alt="Association">
+<area shape="poly" coords="882,135,882,224,872,224,872,135,882,135" href="_3E3F0EC000E93E41B99B0359-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="16,711,222,727" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_.vU.i.xQF.dTE.e.i.pG64.fM.wB.h3.g" alt="attachedOnDateTime">
+<area shape="rect" coords="16,694,222,710" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_IN.uG.wF.dTE.e.i.pG64.fM.wB.h3.g" alt="content">
+<area shape="rect" coords="16,677,222,693" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_A.qKC.gM.oYE.e.e.lAO.fXBP7.b.b.g" alt="mimeType">
+<area shape="rect" coords="16,660,222,676" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHEK0.wE.e.a.zDMG.f.zT.b.l9.g" alt="type">
+<area shape="rect" coords="16,643,222,659" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHD.q0.wE.e.a.zDMG.f.zT.b.l9.g" alt="validFor">
+<area shape="rect" coords="16,626,222,642" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHDK0.wE.e.a.zDMG.f.zT.b.l9.g" alt="description">
+<area shape="rect" coords="16,609,222,625" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHC.q0.wE.e.a.zDMG.f.zT.b.l9.g" alt="name">
+<area shape="rect" coords="16,592,222,608" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html#_I.a.vHCK0.wE.e.a.zDMG.f.zT.b.l9.g" alt="link">
+<area shape="rect" coords="9,567,231,744" href="_I.a.vHA60.wE.e.a.zDMG.f.zT.b.l9.g-content.html" alt="Attachment">
+<area shape="rect" coords="22,442,202,457" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93EA48337020C" alt="lastModifiedDate">
+<area shape="rect" coords="22,426,202,441" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E9E199B0100" alt="creationDate">
+<area shape="rect" coords="22,410,202,425" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F80D0053" alt="isRVSPRequested">
+<area shape="rect" coords="22,394,202,409" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F7E803C1" alt="accessClassification">
+<area shape="rect" coords="22,378,202,393" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0F201CF" alt="status">
+<area shape="rect" coords="22,362,202,377" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0F00117" alt="comment">
+<area shape="rect" coords="22,346,202,361" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E42F0EC0176" alt="versionNr">
+<area shape="rect" coords="22,330,202,345" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41BAD30127" alt="summary">
+<area shape="rect" coords="22,314,202,329" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E41BACD0178" alt="description">
+<area shape="rect" coords="22,298,202,313" href="_3E3F0EC000E93E41B1110189-content.html#_3E3F0EC000E93E46F7E303CD" alt="ID">
+<area shape="rect" coords="16,274,212,462" href="_3E3F0EC000E93E41B1110189-content.html" alt="CalendarEntry">
+<area shape="rect" coords="1008,514,1156,529" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C29382000E9" alt="dialectNames">
+<area shape="rect" coords="1008,498,1156,513" href="_3E3F0EC000E93C271496017C-content.html#_3E3F0EC000E93C29381B015A" alt="alphabetName">
+<area shape="rect" coords="1001,474,1165,546" href="_3E3F0EC000E93C271496017C-content.html" alt="Language">
+<area shape="rect" coords="184,191,381,206" href="_3E3F0EC000E93E7F9F5B019B-content.html#_3E3F0EC000E93E7F9F7A02FE" alt="timePeriod">
+<area shape="rect" coords="178,167,391,223" href="_3E3F0EC000E93E7F9F5B019B-content.html" alt="SimpleTemporalExpression">
+<area shape="rect" coords="439,167,689,218" href="_3E3F0EC000E93E9B886E01E2-content.html" alt="RecurrenceTemporalExpression">
+<area shape="rect" coords="16,80,195,95" href="_3E3F0EC000E93E46F8630151-content.html#_3E3F0EC000E93E48239900A9" alt="name">
+<area shape="rect" coords="9,56,204,100" href="_3E3F0EC000E93E46F8630151-content.html" alt="CalendarEntryCategory">
+<area shape="rect" coords="1031,117,1149,132" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93CBE229101A5" alt="type">
+<area shape="rect" coords="1031,101,1149,116" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93CA2A4DB011A" alt="iso3Code">
+<area shape="rect" coords="1031,85,1149,100" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93CA2A4C9020E" alt="iso2Code">
+<area shape="rect" coords="1031,69,1149,84" href="_3E3F0EC000E93C2714A1005A-content.html#_3E3F0EC000E93C997A1901B2" alt="name">
+<area shape="rect" coords="1024,45,1158,137" href="_3E3F0EC000E93C2714A1005A-content.html" alt="Country">
+<area shape="rect" coords="802,118,957,133" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E4823C80242" alt="principalLocation">
+<area shape="rect" coords="802,102,957,117" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E42F095003A" alt="comment">
+<area shape="rect" coords="802,86,957,101" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B9BA02C8" alt="timezoneUrl">
+<area shape="rect" coords="802,70,957,85" href="_3E3F0EC000E93E41B4F400D6-content.html#_3E3F0EC000E93E41B9B90045" alt="name">
+<area shape="rect" coords="795,46,966,138" href="_3E3F0EC000E93E41B4F400D6-content.html" alt="TimeZone">
+<area shape="rect" coords="379,51,548,66" href="_3E3F0EC000E93E7F9C9A03B4-content.html#_3E3F0EC000E93E46F7F901A8" alt="calendricalSystem">
+<area shape="rect" coords="372,27,557,71" href="_3E3F0EC000E93E7F9C9A03B4-content.html" alt="TemporalExpression">
+<area shape="rect" coords="797,312,939,327" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E48248D033F" alt="comment">
+<area shape="rect" coords="797,296,939,311" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B9D4012A" alt="abbreviation">
+<area shape="rect" coords="797,280,939,295" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B9D00189" alt="UTCOffset">
+<area shape="rect" coords="797,264,939,279" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E41B9C502B9" alt="validFor">
+<area shape="rect" coords="797,248,939,263" href="_3E3F0EC000E93E41B4FA0034-content.html#_3E3F0EC000E93E42F09A0395" alt="ID">
+<area shape="rect" coords="790,224,948,332" href="_3E3F0EC000E93E41B4FA0034-content.html" alt="TimeZoneRule">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Cal.10 - Entry Characteristics</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

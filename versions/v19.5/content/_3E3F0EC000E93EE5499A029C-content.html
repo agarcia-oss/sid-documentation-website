@@ -1,0 +1,125 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.29 - Overview of Party and PartyRole<br>
+</span><span class="ElementTitle">Diagram Figure PR.29 - Overview of Party and PartyRole<br>
+</span><span class="ElementDocumentation">This section will outline some of the business entities that interact with business entities defined in the PhysicalResource model. </br>This has already been referenced briefly above. To recap, Party and PartyRole are needed for a number of important reasons, including:</br>        •	Identification of an owner of the Device or Hardware</br>        •	Identification of the manufacturer of the Device and possibly the manufacturer of some or all of its components</br>        •	Identification of who is responsible to administer the Device or Hardware</br>        •	Identification of who installed the device</br>        •	Identification of what management domain the Device or Hardware is in</br>        •	Identification of who in a particular management domain can administer the Resource</br>        •	Identification of who last changed the device</br>The above are exemplary, and identify some of the links between these classes and the physical resource model. The above is not meant to imply that these are the only links between these models.</br>It is important to realize that the owner of a Device or Hardware is not the same as the person or group that is responsible for administering the Device or Hardware.</br>While the eTOM talks about the need to administer different types of managed objects, it doesn’t identify the concepts of owner and administrator. These are needed to support the inventory and other use cases we introduced at the start of this document. Every effort will be made to take this data and feed it back to the eTOM team.</br>Referring to the SID Party model (in Common guide book), there is an 0..n to 0..n association (implemented as an association class) with a PartyInvolvement attribute that define what responsibility the PartyRole (e.g., customer, provider, employee, management domain) plays. Example responsibilities are owner, lessee, lessor, and administrator. Note that this involvement does not have to be established via an Interaction; there can be a direct relationship that defines this involvement. It is important that the SID not dictate this, so that applications are free to implement the precise semantics of this relationship according to their own needs.</br>Given this background, we can define additional relationships needed to represent administration and ownership of PhysicalResources.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE5499A029C.PNG" alt="Figure PR.29 - Overview of Party and PartyRole" usemap="#map_3E3F0EC000E93EE5499A029C"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE5499A029C">
+<area shape="rect" coords="0,0,0,0" href="_.mAQ48C.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="945,171,945,110,687,110,687,69,697,69,697,100,955,100,955,171,945,171" href="_.mAQ48C.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="568,171,568,100,687,100,687,69,697,69,697,110,578,110,578,171,568,171" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E98015E-content.html" alt="Generalization">
+<area shape="poly" coords="744,451,744,413,638,413,638,372,648,372,648,403,754,403,754,451,744,451" href="_3E3F0EC000E93C247E98015E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E960366-content.html" alt="Generalization">
+<area shape="poly" coords="471,449,471,403,638,403,638,372,648,372,648,413,481,413,481,449,471,449" href="_3E3F0EC000E93C247E960366-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E920244-content.html" alt="Generalization">
+<area shape="poly" coords="669,324,669,100,687,100,687,69,697,69,697,110,678,110,678,324,669,324" href="_3E3F0EC000E93C247E920244-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247ED901EA-content.html" alt="Generalization">
+<area shape="poly" coords="318,323,318,100,687,100,687,69,697,69,697,110,328,110,328,323,318,323" href="_3E3F0EC000E93C247ED901EA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247E8D0280-content.html" alt="Generalization">
+<area shape="poly" coords="462,323,462,100,687,100,687,69,697,69,697,110,472,110,472,323,462,323" href="_3E3F0EC000E93C247E8D0280-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C247EFC028A-content.html" alt="Generalization">
+<area shape="poly" coords="784,324,784,110,687,110,687,69,697,69,697,100,794,100,794,324,784,324" href="_3E3F0EC000E93C247EFC028A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23197902E4-content.html" alt="Generalization">
+<area shape="poly" coords="236,171,236,101,254,101,254,70,264,70,264,111,246,111,246,171,236,171" href="_3E3F0EC000E93C23197902E4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C231976037A-content.html" alt="Generalization">
+<area shape="poly" coords="66,171,66,101,254,101,254,70,264,70,264,111,76,111,76,171,66,171" href="_3E3F0EC000E93C231976037A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="330,23,338,40" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="618,27,626,44" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="416,46,526,63" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="638,51,304,51,304,42,638,42,638,51" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="650,451,849,502" href="_3E3F0EC000E93C247E4500BE-content.html" alt="ComplementaryProvider">
+<area shape="rect" coords="370,449,584,500" href="_3E3F0EC000E93C247E5C01E0-content.html" alt="ThirdPartyServiceProvider">
+<area shape="rect" coords="519,171,630,222" href="_3E3F0EC000E93F008E7F0264-content.html" alt="Technician">
+<area shape="rect" coords="848,171,1054,238" href="_3E3F0EC000E93F008F7602AD-content.html" alt="TechnologyAdministrator">
+<area shape="rect" coords="569,324,715,375" href="_3E3F0EC000E93C247E3903DE-content.html" alt="ServiceProvider">
+<area shape="rect" coords="279,323,369,390" href="_3E3F0EC000E93C247E2C0096-content.html" alt="Vendor">
+<area shape="rect" coords="404,323,532,390" href="_3E3F0EC000E93C247E240384-content.html" alt="Intermediary">
+<area shape="rect" coords="754,324,972,391" href="_3E3F0EC000E93C247E67038E-content.html" alt="FunctionOrProcessProvider">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C573E620193" alt="aliveDuring">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C4236070087" alt="disabilities">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C42360302BC" alt="skills">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C4235E10317" alt="maritalStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C60C10002FD" alt="nationality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C60C0FA01F0" alt="placeOfBirth">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319480096-content.html#_3E3F0EC000E93C310D110152" alt="gender">
+<area shape="rect" coords="189,171,295,222" href="_3E3F0EC000E93C2319480096-content.html" alt="Individual">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93CAB8EBE00C7" alt="type">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93C573E830212" alt="legalPeriod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319530014-content.html#_3E3F0EC000E93C310DC0017C" alt="isLegalEntity">
+<area shape="rect" coords="9,171,135,222" href="_3E3F0EC000E93C2319530014-content.html" alt="Organization">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="638,21,745,72" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93D8A882402B1" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C310D010249" alt="ID">
+<area shape="rect" coords="224,23,306,74" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.29 - Overview of Party and PartyRole</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

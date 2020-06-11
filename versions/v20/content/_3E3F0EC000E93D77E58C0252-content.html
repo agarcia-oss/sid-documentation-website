@@ -1,0 +1,2013 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Policy Framework ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for PolicySet">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E1B4A79039D-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Framework ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Policy ABE::Policy Framework ABE</span>
+<br>
+<span class="ElementTitle">Class PolicySet</span>
+<p>
+<a name="documentationSection"></a>This is an abstract class for defining two types of collection classes. PolicyRule collects PolicyEvents, PolicyConditions, and PolicyActions, while PolicyGroup collects PolicyRules and PolicyGroups.</br></br>Two important and powerful features of this arrangement are that a PolicySet defines a common decision strategy and a common set of PolicyRoles to be used by the PolicyGroups and the PolicyRules that inherit from it.</br></p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">BusinessInteractionItemPrice </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_businessInteractionItemPrice" href="#_3E3F0EC000E9409967E1022D"><img border="0" src="../images/30297464_icon.png" alt="_businessInteractionItemPrice"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_businessInteractionItemPrice" href="#_3E3F0EC000E9409967E1022D">_businessInteractionItemPrice</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicySet </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySet1" href="#_3E3F0EC000E93D77E58C0336"><img border="0" src="../images/30297464_icon.png" alt="_policySet1"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySet1" href="#_3E3F0EC000E93D77E58C0336">_policySet1</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicySet </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySet2" href="#_3E3F0EC000E93D77E58C0335"><img border="0" src="../images/30297464_icon.png" alt="_policySet2"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySet2" href="#_3E3F0EC000E93D77E58C0335">_policySet2</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">PolicySetSpec </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySetSpec" href="#_3E3F0EC000E93F17BE370111"><img border="0" src="../images/30297464_icon.png" alt="_policySetSpec"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySetSpec" href="#_3E3F0EC000E93F17BE370111">_policySetSpec</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">ProductOffering </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productOffering" href="#_3E3F0EC000E940994B250337"><img border="0" src="../images/30297464_icon.png" alt="_productOffering"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productOffering" href="#_3E3F0EC000E940994B250337">_productOffering</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">ProductPrice </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productPrice" href="#_3E3F0EC000E9424873BC0365"><img border="0" src="../images/30297464_icon.png" alt="_productPrice"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productPrice" href="#_3E3F0EC000E9424873BC0365">_productPrice</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">ProductPricePartyRole </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productPricePartyRole" href="#_3E3F0EC000E9434433340044"><img border="0" src="../images/30297464_icon.png" alt="_productPricePartyRole"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productPricePartyRole" href="#_3E3F0EC000E9434433340044">_productPricePartyRole</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">RevenueAssuranceObjective </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_revenueAssuranceObjective" href="#_3E3F0EC000E9430DE074039D"><img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceObjective"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_revenueAssuranceObjective" href="#_3E3F0EC000E9430DE074039D">_revenueAssuranceObjective</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">CatalogSpecification </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::catalogSpecification" href="#_F.z.k.b4D.uWE.eWST.v.f.f.k.uT.y.bA"><img border="0" src="../images/30297464_icon.png" alt="catalogSpecification"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::catalogSpecification" href="#_F.z.k.b4D.uWE.eWST.v.f.f.k.uT.y.bA">catalogSpecification</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">ConfigurationSpecification </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::configurationSpecification2" href="#_WJZ.t8I.k.cE.eOS.uN.o.dS.uP.rOQ"><img border="0" src="../images/30297464_icon.png" alt="configurationSpecification2"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::configurationSpecification2" href="#_WJZ.t8I.k.cE.eOS.uN.o.dS.uP.rOQ">configurationSpecification2</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">EntitySpecCharValueUse </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::entitySpecCharValueUse" href="#_A.kCZ8MV.xE.eG1T.sX.x.t59.mNA"><img border="0" src="../images/30297464_icon.png" alt="entitySpecCharValueUse"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::entitySpecCharValueUse" href="#_A.kCZ8MV.xE.eG1T.sX.x.t59.mNA">entitySpecCharValueUse</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::isMandatoryEvaluation" href="#_3E3F0EC000E93D77E58C0257"><img border="0" src="../images/30297464_icon.png" alt="isMandatoryEvaluation"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::isMandatoryEvaluation" href="#_3E3F0EC000E93D77E58C0257">isMandatoryEvaluation</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is FALSE, then the evaluation of this entity is considered to be "best effort" and may be ignored.</br></br>Notes:</br>Not present in the ITU or CIM specs.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">ProductOfferingPrice </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::productOfferingPrice" href="#_9.o9.x.oFNKE.e.a.tKZB.y.u.yUO.r.w"><img border="0" src="../images/30297464_icon.png" alt="productOfferingPrice"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::productOfferingPrice" href="#_9.o9.x.oFNKE.e.a.tKZB.y.u.yUO.r.w">productOfferingPrice</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">RevShareModelSpecNegotiableRange </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::revShareModelSpecNegotiableRange" href="#_FYQ.x.oELOE.e.a.l.i52.m.s.tF-.o.w"><img border="0" src="../images/30297464_icon.png" alt="revShareModelSpecNegotiableRange"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::revShareModelSpecNegotiableRange" href="#_FYQ.x.oELOE.e.a.l.i52.m.s.tF-.o.w">revShareModelSpecNegotiableRange</a></td><td></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::usage" href="#_3E3F0EC000E93D77E58C0258"><img border="0" src="../images/30297464_icon.png" alt="usage"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::usage" href="#_3E3F0EC000E93D77E58C0258">usage</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a free-form string attribute that recommends how this policy object should be used.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy" href="_3E3F0EC000E93D77E58C0262-content.html"><img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy" href="_3E3F0EC000E93D77E58C0262-content.html">SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::_policyApplication" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93F18405C020E"><img border="0" src="../images/30297464_icon.png" alt="_policyApplication"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::_policyApplication" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93F18405C020E">_policyApplication</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::keywords" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D77E58C0263"><img border="0" src="../images/30297464_icon.png" alt="keywords"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::keywords" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D77E58C0263">keywords</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::policyName" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93DCFD5D20220"><img border="0" src="../images/30297464_icon.png" alt="policyName"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::policyName" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93DCFD5D20220">policyName</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::_policyRepository" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D77F0600005"><img border="0" src="../images/30297464_icon.png" alt="_policyRepository"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::_policyRepository" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D77F0600005">_policyRepository</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::_policyDomain" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D7D01BC0273"><img border="0" src="../images/30297464_icon.png" alt="_policyDomain"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy::_policyDomain" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D7D01BC0273">_policyDomain</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/839059786_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/30297464_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/30297464_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/30297464_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/30297464_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/30297464_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/30297464_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/30297464_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/30297464_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/30297464_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/30297464_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/30297464_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/30297464_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/30297464_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/30297464_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/30297464_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/30297464_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/30297464_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">PolicySet</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E1B4A79039D-content.html">Policy Framework ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E1B4A79039D-content.html">Policy Framework ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E1B4A79039D-content.html">Policy Framework ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E9409967E1022D">_businessInteractionItemPrice</a></span>
+<pre>Public&nbsp;BusinessInteractionItemPrice _businessInteractionItemPrice</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E9409967E1022D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E9409967DC0199-content.html">BusinessInteractionItemPriceInfluencedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_businessInteractionItemPrice</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_E.p2Q.wGFVE.e.e.e.f.tA8.oZW.b.gA-content.html#_3E3F0EC000E9409967E10237">_policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_businessInteractionItemPrice</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_E.p2Q.wGFVE.e.e.e.f.tA8.oZW.b.gA-content.html">BusinessInteractionItemPrice</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C0336">_policySet1</a></span>
+<pre>Public&nbsp;PolicySet _policySet1</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C0336"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0334-content.html">ContainedPolicySetsDetail</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">0..1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_policySet1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0335">_policySet2</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySet1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C0335">_policySet2</a></span>
+<pre>Public&nbsp;PolicySet _policySet2</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C0335"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">Shared</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0334-content.html">ContainedPolicySetsDetail</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_policySet2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0336">_policySet1</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySet2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93F17BE370111">_policySetSpec</a></span>
+<pre>Public&nbsp;PolicySetSpec _policySetSpec</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93F17BE370111"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F17BE36020A-content.html">SpecifiesPolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_policySetSpec</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107">_policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_policySetSpec</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93F17BD6403DF-content.html">PolicySetSpec</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E940994B250337">_productOffering</a></span>
+<pre>Public&nbsp;ProductOffering _productOffering</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E940994B250337"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E940994B240187-content.html">ProductOfferingPriceGovernedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_productOffering</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E940994B250319">_policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productOffering</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93C5DB96E00DD-content.html">ProductOffering</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E9424873BC0365">_productPrice</a></span>
+<pre>Public&nbsp;ProductPrice _productPrice</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E9424873BC0365"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E9424873BB02F6-content.html">ProductPriceGovernedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_productPrice</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E941C7ED3803C2-content.html#_3E3F0EC000E9424873BC0329">_policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productPrice</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E941C7ED3803C2-content.html">ProductPrice</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E9434433340044">_productPricePartyRole</a></span>
+<pre>Public&nbsp;ProductPricePartyRole _productPricePartyRole</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E9434433340044"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E9434433330024-content.html">PolicySetGoverns</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_productPricePartyRole</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E94344289B022C-content.html#_3E3F0EC000E9434433340005">_policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_productPricePartyRole</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E94344289B022C-content.html">ProductPricePartyRole</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E9430DE074039D">_revenueAssuranceObjective</a></span>
+<pre>Public&nbsp;RevenueAssuranceObjective _revenueAssuranceObjective</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E9430DE074039D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_3E3F0EC000E9430DE074004A-content.html">RevenueAssuranceObjectiveDefinedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">_revenueAssuranceObjective</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E9430DE04F0141-content.html#_3E3F0EC000E9430DE0740375">_policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::_revenueAssuranceObjective</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E9430DE04F0141-content.html">RevenueAssuranceObjective</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_F.z.k.b4D.uWE.eWST.v.f.f.k.uT.y.bA">catalogSpecification</a></span>
+<pre>Public&nbsp;CatalogSpecification catalogSpecification</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_F.z.k.b4D.uWE.eWST.v.f.f.k.uT.y.bA"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_F.zSIAD.uWE.eWST.v.f.f.k.uT.y.bA-content.html">CatalogSpecificationContentGovernedByPolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">catalogSpecification</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_QSK64I.xGE.eGZ.s.pR.sLEOL2.w-content.html#_F.zWZ.cD.uWE.eWST.v.f.f.k.uT.y.bA">policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::catalogSpecification</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_QSK64I.xGE.eGZ.s.pR.sLEOL2.w-content.html">CatalogSpecification</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_WJZ.t8I.k.cE.eOS.uN.o.dS.uP.rOQ">configurationSpecification2</a></span>
+<pre>Public&nbsp;ConfigurationSpecification configurationSpecification2</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_WJZ.t8I.k.cE.eOS.uN.o.dS.uP.rOQ"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_WJMS.kI.k.cE.eOS.uN.o.dS.uP.rOQ-content.html">ConfigurationSpecificationDeterminedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">configurationSpecification2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_5S3.fE4R3E.eOHC.rP.bIP.kY.wA-content.html#_WJXR.sI.k.cE.eOS.uN.o.dS.uP.rOQ">policySet2</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::configurationSpecification2</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_5S3.fE4R3E.eOHC.rP.bIP.kY.wA-content.html">ConfigurationSpecification</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_A.kCZ8MV.xE.eG1T.sX.x.t59.mNA">entitySpecCharValueUse</a></span>
+<pre>Public&nbsp;EntitySpecCharValueUse entitySpecCharValueUse</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_A.kCZ8MV.xE.eG1T.sX.x.t59.mNA"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_5S3.fAYR3E.eOHC.rP.bIP.kY.wA-content.html">EntitySpecCharValueUseDeterminedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">entitySpecCharValueUse</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_QZ.p.qEO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html#_A.j.y.iUMV.xE.eG1T.sX.x.t59.mNA">policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::entitySpecCharValueUse</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_QZ.p.qEO.f.lE.d-.qM.vG.jM6.f.x.w.w-content.html">EntitySpecCharValueUse</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C0257">isMandatoryEvaluation</a></span>
+<pre>Public&nbsp;Boolean isMandatoryEvaluation</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, signifies that evaluation (and possibly action execution) of this entity is mandatory and must be attempted. If the Mandatory property value of this entity is FALSE, then the evaluation of this entity is considered to be "best effort" and may be ignored.</br></br>Notes:</br>Not present in the ITU or CIM specs.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C0257"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">(true)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">isMandatoryEvaluation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::isMandatoryEvaluation</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_9.o9.x.oFNKE.e.a.tKZB.y.u.yUO.r.w">productOfferingPrice</a></span>
+<pre>Public&nbsp;ProductOfferingPrice productOfferingPrice</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_9.o9.x.oFNKE.e.a.tKZB.y.u.yUO.r.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_9.o5.gMFNKE.e.a.tKZB.y.u.yUO.r.w-content.html">PolicySetGovernsRevenueShare</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">productOfferingPrice</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CD366DF029E-content.html#_9.o7VYFNKE.e.a.tKZB.y.u.yUO.r.w">policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::productOfferingPrice</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93CD366DF029E-content.html">ProductOfferingPrice</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_FYQ.x.oELOE.e.a.l.i52.m.s.tF-.o.w">revShareModelSpecNegotiableRange</a></span>
+<pre>Public&nbsp;RevShareModelSpecNegotiableRange revShareModelSpecNegotiableRange</pre>
+<dl>
+<dd></dd>
+<dt>
+<a name="attributeConstraintsTable_FYQ.x.oELOE.e.a.l.i52.m.s.tF-.o.w"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"><a href="_FYK.rAELOE.e.a.l.i52.m.s.tF-.o.w-content.html">RevenueShareNegotiableRangeDefinedBy</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">0</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue">(0)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">revShareModelSpecNegotiableRange</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"><a href="_U.eN.a4EK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_FYNHQELOE.e.a.l.i52.m.s.tF-.o.w">policySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::revShareModelSpecNegotiableRange</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue"><a href="_U.eN.a4EK_E.e.a.l.i52.m.s.tF-.o.w-content.html">RevShareModelSpecNegotiableRange</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">*</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue">(*)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/30297464_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93D77E58C0258">usage</a></span>
+<pre>Public&nbsp;String usage</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a free-form string attribute that recommends how this policy object should be used.</br></br>Notes: Not present in the ITU or CIM specs.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93D77E58C0258"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">usage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93D77E58C0252-content.html">PolicySet</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Framework ABE::PolicySet::usage</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E1B4A79039D-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Framework ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

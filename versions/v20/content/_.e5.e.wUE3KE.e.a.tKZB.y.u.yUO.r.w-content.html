@@ -1,0 +1,233 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Party Revenue Sharing Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.u5.n.x.cEK5E.e.a.m.lL.c.v.q.v7Y.pA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Party Revenue Sharing Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Business Partner Domain::Party Revenue &amp; Settlement ABE::Party Revenue Sharing ABE::_ Party Revenue Sharing Addendum Figures::Figure PRS.04 - Party Revenue Share and Product Offering<br>
+</span><span class="ElementTitle">Diagram Figure PRS.04 - Party Revenue Share and Product Offering<br>
+</span><span class="ElementDocumentation">The Party Revenue Share ABE represents the amount of revenue shared among parties involved in a revenue sharing agreement. Revenue share is determined using existing artifacts such as usage, invoices, product prices, and applied billing rates. The revenue share may result in a payment to/from a party and/or a bill/invoice to/from a party. It may also be shown as a reduction of or increase to a bill/invoice sent to or received from a party, or a credit/debit to a party's account balance. There are a variety of revenue sharing models that determines how revenue may be split among an enterprise and other parties. Based on the type of revenue sharing model different determinants are used to calculate the final bill/invoice or payment. Flat rate and usage based revenue sharing models are just two of a number of models, which also include but are not limited to tiered, commitment, progressive, along with multi-party variations of each. </br>A party revenue sharing agreement defines the period for which a revenue share for a product offering is determined.</br>PartyRevenueShare represents the amount of revenue shared among parties involved in a revenue sharing agreement. Revenue share is determined using existing artifacts such as usage, invoices, product prices, and applied billing rates. The revenue share may result in a payment to/from a party and/or a bill/invoice to/from a party. It may also be shown as a reduction of or increase to a bill/invoice sent to or received from a party, or a credit/debit to a party's account balance. (Note that the Party Account Balance ABE needs to be added to the model.) PartyRevenueShareRelationship is a categorization of the relationship, such as reconciled to, replaces, and so forth. PartyRevenueShareNotification is a communication of the revenue to be shared to processes and/or a party with whom revenue will be shared. The notification includes the revenue to be shared for all product offerings. For example, to a Party Revenue Sharing Reconciliation process for reconciliation with a received bill/invoice, to Party Payment Management to make a payment to another party, or to a party so that they can reconcile what is to be shared before sending or receiving a bill/invoice.</br>PartyRevenueShareProdOffer is a ProductOffering which qualifies for revenue sharing, including the quantity of offerings and the amount of revenue to be shared for the offering. RevenueShareProdOfferRelationship is a relationship between two PartyRevenueShareProdOffers. For example, after shares are reconciled a new PartyRevenueShareProdOffer may be determined that replaces the original share that was determined.</br>ComponentRevShareProdOffer is a base amount of revenue shared for a ProductOffering. AggregateRevShareProdOffer is the total revenue to be shared for a product offering when the party revenue sharing agreement specifies an aggregation must be provided. The aggregation is performed after the determination of the revenue share represented by ComponentRevShareProdOffer. For example, a flat rate model calculates a revenue share for each acquisition of a product offering, and AggregateRevShareProdOffer contains the total revenue share for the offering.</br>The following Figure shows an initial view of the Party Revenue ABE.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.e5.e.wUE3KE.e.a.tKZB.y.u.yUO.r.w.PNG" alt="Figure PRS.04 - Party Revenue Share and Product Offering" usemap="#map_.e5.e.wUE3KE.e.a.tKZB.y.u.yUO.r.w"></td>
+</tr>
+</table>
+<map name="map_.e5.e.wUE3KE.e.a.tKZB.y.u.yUO.r.w">
+<area shape="rect" coords="0,0,0,0" href="_T64.c.cPM.aE.e.i4.j.cQ.r.uTR2.nQ-content.html" alt="Generalization">
+<area shape="poly" coords="889,185,889,115,898,115,898,185,889,185" href="_T64.c.cPM.aE.e.i4.j.cQ.r.uTR2.nQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.sQ5.aYI_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyBill2">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.sQ-58I_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyRevenueShare2">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.sQ5.aYI_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyBill2">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.sQ-58I_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyRevenueShare2">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.sQ5.aYI_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyBill2">
+<area shape="rect" coords="140,418,160,434" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.sQ5.aYI_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyBill2">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.sQ-58I_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyRevenueShare2">
+<area shape="rect" coords="436,418,442,434" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.sQ-58I_WE.e.a.wE.b6WF.m.wV.f.w" alt="partyRevenueShare2">
+<area shape="rect" coords="214,393,364,409" href="_.sQ0.h4I_WE.e.a.wE.b6WF.m.wV.f.w-content.html" alt="PartyRevShareAppliedTo">
+<area shape="poly" coords="459,416,132,416,132,406,459,406,459,416" href="_.sQ0.h4I_WE.e.a.wE.b6WF.m.wV.f.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.fR.b.sEIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.fR.e.vYIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.fR.b.sEIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.fR.e.vYIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.fR.b.sEIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyPayment">
+<area shape="rect" coords="958,447,978,463" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.fR.b.sEIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.fR.e.vYIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="666,447,672,463" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.fR.e.vYIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="719,429,914,445" href="_.fRZP0IT.aE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyPaymentMadeResultsFrom">
+<area shape="poly" coords="651,441,983,441,983,451,651,451,651,441" href="_.fRZP0IT.aE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.e.h.i.gMIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.e.h.l.j.gIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.e.h.i.gMIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.e.h.l.j.gIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.e.h.i.gMIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyBill">
+<area shape="rect" coords="962,368,982,384" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.e.h.i.gMIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.e.h.l.j.gIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="666,398,672,414" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.e.h.l.j.gIT.aE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="754,380,881,396" href="_.e.h.gD8IT.aE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyBIllResultsFrom">
+<area shape="poly" coords="651,392,936,392,936,354,946,354,946,402,651,402,651,392" href="_.e.h.gD8IT.aE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.z.gEHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer1">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ0.uMHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship">
+<area shape="rect" coords="0,0,0,0" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.z.gEHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer1">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ0.uMHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship">
+<area shape="rect" coords="0,0,0,0" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.z.gEHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer1">
+<area shape="rect" coords="675,605,682,621" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.z.gEHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer1">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ0.uMHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship">
+<area shape="rect" coords="792,559,798,575" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ0.uMHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship">
+<area shape="rect" coords="645,575,889,591" href="_VQ.yR8HB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyRevenueShareProdOfferReferences">
+<area shape="poly" coords="812,557,812,624,665,624,665,615,802,615,802,557,812,557" href="_VQ.yR8HB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ.pIAHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship1">
+<area shape="rect" coords="0,0,0,0" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.sLUHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ.pIAHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship1">
+<area shape="rect" coords="0,0,0,0" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.sLUHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ.pIAHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship1">
+<area shape="rect" coords="972,560,978,576" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VQ.pIAHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="revenueShareProdOfferRelationship1">
+<area shape="rect" coords="0,0,0,0" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.sLUHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="676,636,683,652" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_VQ.sLUHB.fE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="736,621,997,637" href="_VQ.m.r.wHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyRevenueShareProdOfferReferencedBy">
+<area shape="poly" coords="665,646,951,646,951,557,961,557,961,656,665,656,665,646" href="_VQ.m.r.wHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.p.e.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.s.rT4HB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship1">
+<area shape="rect" coords="0,0,0,0" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.p.e.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.s.rT4HB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship1">
+<area shape="rect" coords="0,0,0,0" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.p.e.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="589,341,596,357" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.p.e.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.s.rT4HB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship1">
+<area shape="rect" coords="590,265,596,281" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.s.rT4HB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship1">
+<area shape="rect" coords="560,298,760,314" href="_L.s.oQ.kHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyRevenueShareReferencedBy">
+<area shape="poly" coords="617,257,617,365,607,365,607,257,617,257" href="_L.s.oQ.kHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.sL.k.oHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship">
+<area shape="rect" coords="0,0,0,0" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.f.t.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare1">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.sL.k.oHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship">
+<area shape="rect" coords="0,0,0,0" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.f.t.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare1">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.sL.k.oHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship">
+<area shape="rect" coords="523,265,529,281" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_L.sL.k.oHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShareRelationship">
+<area shape="rect" coords="0,0,0,0" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.f.t.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare1">
+<area shape="rect" coords="522,341,529,357" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_L.s.f.t.sHB.eE.e.a.y.e.o.qY.sJ.yQN.w" alt="partyRevenueShare1">
+<area shape="rect" coords="349,313,532,329" href="_L.r.z.xMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyRevenueShareReferences">
+<area shape="poly" coords="502,365,502,257,512,257,512,365,502,365" href="_L.r.z.xMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_7.pRLAE3JE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kUI.n0E6.eE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer2">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kULEEE6.eE.e.a.tKZB.y.u.yUO.r.w" alt="aggregateRevShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_7.pRLAE3JE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kUI.n0E6.eE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer2">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kULEEE6.eE.e.a.tKZB.y.u.yUO.r.w" alt="aggregateRevShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_7.pRLAE3JE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kUI.n0E6.eE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer2">
+<area shape="rect" coords="429,657,435,673" href="_7.pRLAE3JE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kUI.n0E6.eE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer2">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kULEEE6.eE.e.a.tKZB.y.u.yUO.r.w" alt="aggregateRevShareProdOffer">
+<area shape="rect" coords="283,769,290,785" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.kULEEE6.eE.e.a.tKZB.y.u.yUO.r.w" alt="aggregateRevShareProdOffer">
+<area shape="rect" coords="129,688,390,704" href="_.kUGL.kE6.eE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="AggregateRevShareProdOfferComprisedOf">
+<area shape="poly" coords="307,784,307,653,444,653,444,663,317,663,317,784,307,784" href="_.kUGL.kE6.eE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.t.g.s6.gE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyInteractionRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA1FD3B015D-content.html#_.t.g.v90E6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.t.g.s6.gE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyInteractionRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA1FD3B015D-content.html#_.t.g.v90E6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.t.g.s6.gE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyInteractionRole">
+<area shape="rect" coords="150,264,157,280" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.t.g.s6.gE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyInteractionRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA1FD3B015D-content.html#_.t.g.v90E6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="445,357,451,373" href="_3E3F0EC000E93EA1FD3B015D-content.html#_.t.g.v90E6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="107,312,285,328" href="_.t.g.q.eQE6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareAppliesTo">
+<area shape="poly" coords="459,376,174,376,174,264,184,264,184,366,459,366,459,376" href="_.t.g.q.eQE6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.r.eK.bAE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueSharingModelInvolvement">
+<area shape="rect" coords="0,0,0,0" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_.r.eN.eUE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.r.eK.bAE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueSharingModelInvolvement">
+<area shape="rect" coords="0,0,0,0" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_.r.eN.eUE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.r.eK.bAE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueSharingModelInvolvement">
+<area shape="rect" coords="147,536,154,552" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.r.eK.bAE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueSharingModelInvolvement">
+<area shape="rect" coords="0,0,0,0" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_.r.eN.eUE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="426,613,432,629" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_.r.eN.eUE6.dE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="39,583,305,599" href="_.r.eH-.wE6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareProdOfferDeterminedBy">
+<area shape="poly" coords="444,633,156,633,156,534,166,534,166,623,444,623,444,633" href="_.r.eH-.wE6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.nCO.bME6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Generalization">
+<area shape="poly" coords="719,784,719,718,551,718,551,677,561,677,561,709,729,709,729,784,719,784" href="_.nCO.bME6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.l.qPU.kE6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Generalization">
+<area shape="poly" coords="371,784,371,709,551,709,551,677,561,677,561,718,380,718,380,784,371,784" href="_.l.qPU.kE6.dE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.sL.wE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.vPEE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.sL.wE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.vPEE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.sL.wE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="533,576,539,592" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.sL.wE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.vPEE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="532,483,539,499" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_XS.vPEE6TE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="471,529,654,545" href="_XS.p.v.gE6TE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareConsistsOf">
+<area shape="poly" coords="560,471,560,605,550,605,550,471,560,471" href="_XS.p.v.gE6TE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKD.g0E3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareNotification">
+<area shape="rect" coords="0,0,0,0" href="_R.rKU4E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKHLME3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKD.g0E3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareNotification">
+<area shape="rect" coords="0,0,0,0" href="_R.rKU4E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKHLME3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKD.g0E3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareNotification">
+<area shape="rect" coords="868,238,874,254" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKD.g0E3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareNotification">
+<area shape="rect" coords="0,0,0,0" href="_R.rKU4E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKHLME3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="664,357,671,373" href="_R.rKU4E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_VKHLME3OE.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="751,267,997,283" href="_VKB.r.oE3OE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareCommunicatedUsing">
+<area shape="poly" coords="651,366,877,366,877,234,887,234,887,376,651,376,651,366" href="_VKB.r.oE3OE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="787,85,1007,101" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_4S.kTIMZXE.e.iA.o9CXTCG.m.b.g" alt="description">
+<area shape="rect" coords="787,68,1007,84" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_.wJE.c.cMZXE.e.iA.o9CXTCG.m.b.g" alt="period">
+<area shape="rect" coords="787,51,1007,67" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_.iW.e1MMV5E.e.iA.o9CXTCG.m.b.g" alt="type">
+<area shape="rect" coords="787,34,1007,50" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_.wSM.p.gMV2E.e.iA.o9CXTCG.m.b.g" alt="sequence">
+<area shape="rect" coords="780,9,1016,118" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html" alt="CommunicationInteractionItem">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJA04.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJAU4.cE.eO_X.pEX.s37Q.e.w" alt="billNo">
+<area shape="rect" coords="39,380,134,432" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.zU.zJ.gFJJE.eWPA.vIYYW.iWM.g" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_B.h4.s.kFJFE.eWPA.vIYYW.iWM.g" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_APC.k.oFJFE.eWPA.vIYYW.iWM.g" alt="direction">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b.k4.cE.eO_X.pEX.s37Q.e.w" alt="remainingAmount">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.bU4.cE.eO_X.pEX.s37Q.e.w" alt="date">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.bE4.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.a04.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="983,410,1113,462" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJA04.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJAU4.cE.eO_X.pEX.s37Q.e.w" alt="billNo">
+<area shape="rect" coords="908,305,1003,357" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBill">
+<area shape="rect" coords="750,527,1002,543" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_.u1_.n.kE6.fE.e.a.tKZB.y.u.yUO.r.w" alt="validFor">
+<area shape="rect" coords="750,510,1002,526" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_.u1-Z.cE6.fE.e.a.tKZB.y.u.yUO.r.w" alt="type">
+<area shape="rect" coords="743,485,1011,560" href="_VQYCQHB.fE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="RevenueShareProdOfferRelationship">
+<area shape="rect" coords="450,227,673,243" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_NB0.q4E3NE.e.a.tKZB.y.u.yUO.r.w" alt="validFor">
+<area shape="rect" coords="450,210,673,226" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html#_NB.z.c.wE3NE.e.a.tKZB.y.u.yUO.r.w" alt="type">
+<area shape="rect" coords="444,185,683,260" href="_L.h.l.eMHB.eE.e.a.y.e.o.qY.sJ.yQN.w-content.html" alt="PartyRevenueShareRelationship">
+<area shape="rect" coords="609,784,842,836" href="_CXF.t4E3KE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="ComponentRevShareProdOffer">
+<area shape="rect" coords="264,784,489,836" href="_7.pRLAE3JE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="AggregateRevShareProdOffer">
+<area shape="rect" coords="0,0,0,0" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_.uK.hDIEOSE.e.a.l.i52.m.s.tF-.o.w" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html#_.xF.aG8EOSE.e.a.l.i52.m.s.tF-.o.w" alt="involvementType">
+<area shape="rect" coords="9,485,300,537" href="_Q.v.s.h.wEK_E.e.a.l.i52.m.s.tF-.o.w-content.html" alt="PartyRevenueSharingModelInvolvement">
+<area shape="rect" coords="94,215,264,267" href="_3E3F0EC000E93EA1FD3B015D-content.html" alt="PartyInteractionRole">
+<area shape="rect" coords="450,647,657,663" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.iY.j.s8E6TE.e.a.tKZB.y.u.yUO.r.w" alt="amount">
+<area shape="rect" coords="450,630,657,646" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.d.z.dKEE6TE.e.a.tKZB.y.u.yUO.r.w" alt="quantity">
+<area shape="rect" coords="444,605,667,680" href="_T5N.g0E3KE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareProdOffer">
+<area shape="rect" coords="773,185,1008,237" href="_R.rKU4E3KE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareNotification">
+<area shape="rect" coords="465,441,643,457" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_A2S-.oE3ME.e.a.tKZB.y.u.yUO.r.w" alt="amount">
+<area shape="rect" coords="465,424,643,440" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.y.k0.dEE3LE.e.a.tKZB.y.u.yUO.r.w" alt="description">
+<area shape="rect" coords="465,407,643,423" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_4.l.uP.kE3LE.e.a.tKZB.y.u.yUO.r.w" alt="dateDetermined">
+<area shape="rect" coords="465,390,643,406" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.y.k.zO8E3LE.e.a.tKZB.y.u.yUO.r.w" alt="ID">
+<area shape="rect" coords="459,365,653,474" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShare">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PRS.04 - Party Revenue Share and Product Offering</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.u5.n.x.cEK5E.e.a.m.lL.c.v.q.v7Y.pA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Party Revenue Sharing Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

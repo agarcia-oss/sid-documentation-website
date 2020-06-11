@@ -1,0 +1,76 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-17 - Simple PolicyValue<br>
+</span><span class="ElementTitle">Diagram Figure 1P-17 - Simple PolicyValue<br>
+</span><span class="ElementDocumentation">The PolicyValue class is an abstract base class for modeling different types of values that occur in a PolicyStatement. The PolicyValue specifies an attribute that should either be set or cleared (if used in a PolicyAction) or matched or compared in some way to a value of the PolicyVariable in a PolicyCondition. It is shown in Figure below.</br>Note the similarity in the basic design approach between PolicyVariables and PolicyValues.</br>The ValueStandard class is an abstract base class for defining a set of standardized PolicyValues. This set of PolicyValues will be added to over time, and represents a set of common values that are useful in a variety of applications. The subclasses of ValueStandard are a set of classes that define the semantics of commonly occurring variables that occur in applications. There are currently six subclasses of the ValueStandard object defined in the model.</br>The ValueCustom class is an abstract base class that provides two basic attributes to define custom value objects that can be used in an application-specific fashion. These two attributes are called valueModelAttribute and valueModelClass. The valueModelAttribute is a string attribute that defines the name of the attribute within the class specified in the valueModelClass attribute that is to be evaluated or set as a PolicyValue. The valueModelClass is a string attribute that defines the class name whose attribute is to be evaluated or set as a PolicyValue. This combination enables new custom subclasses of ValueCustom to be defined that specify the class and attribute that they are modeling. </br>Thus, the combination of valueModelClass and valueModelAttribute enable an application to define a new class that contains an attribute to be used as a PolicyValue. This provides important extensibility, and enables an application to define its own set of classes and attributes to extend the Framework.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EDA7145021E.PNG" alt="Figure 1P-17 - Simple PolicyValue" usemap="#map_3E3F0EC000E93EDA7145021E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EDA7145021E">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DAD9C6E01E4-content.html" alt="Generalization">
+<area shape="poly" coords="499,130,499,101,365,101,365,59,375,59,375,91,509,91,509,130,499,130" href="_3E3F0EC000E93DAD9C6E01E4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DAD9C6B03D5-content.html" alt="Generalization">
+<area shape="poly" coords="175,130,175,91,365,91,365,59,375,59,375,101,184,101,184,130,175,130" href="_3E3F0EC000E93DAD9C6B03D5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="414,170,593,185" href="_3E3F0EC000E93D9F75CC000B-content.html#_3E3F0EC000E93E04E1DE0386" alt="valueModelClass">
+<area shape="rect" coords="414,154,593,169" href="_3E3F0EC000E93D9F75CC000B-content.html#_3E3F0EC000E93E04E1DE037C" alt="valueModelAttribute">
+<area shape="rect" coords="408,130,603,202" href="_3E3F0EC000E93D9F75CC000B-content.html" alt="ValueCustom">
+<area shape="rect" coords="109,130,252,181" href="_3E3F0EC000E93D9F74DA0360-content.html" alt="ValueStandard">
+<area shape="rect" coords="310,12,429,63" href="_3E3F0EC000E93D77E58C02A7-content.html" alt="PolicyValue">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-17 - Simple PolicyValue</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

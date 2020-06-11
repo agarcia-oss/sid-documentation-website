@@ -1,0 +1,80 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ User and Roles Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_2.n.d.eYE.d0E.eG.cM.fR.d.w6U4D.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ User and Roles Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Users and Roles ABE::_ User and Roles Addendum Figures::Figure UR.01 - Resource Roles<br>
+</span><span class="ElementTitle">Diagram Figure UR.01 - Resource Roles<br>
+</span><span class="ElementDocumentation">Before presenting in detail the new proposed entities, it is essential to highlight some important concepts of the TMF Information Framework:</br>        •	Roles, and Involvement Roles</br>        •	Role is an ABE which has several specializations such as PartyRole, ResourceRole (among others)</br>SID defines the abstract artifact PartyRole as “the role played by a Party in a given context”.</br></br>This definition is deliberately vague; it must be interpreted as a way to characterize the behavior of a Party. The default interpretation of this definition as represented in the model is “the role played by a party relative to enterprise in a given context”. </br></br>Here are some existing concrete specializations of PartyRole:</br>        •	ServiceProviderEmployee (but not a CustomerEmployee – this requires minor extension to the model)</br>        •	Vendor, Intermediary, (partner) ServiceProvider… </br></br><Note>Note that a PartyRole can be defined independently of any possible involvement with a Product, a Service or a Resource (same remark applies as well to ResourceRole).</Note></br></br>[] InvolvementRole: </br>Involvement Role classes represent the association between two classes. These are association classes that were ‘promoted’ to become normal classes. ProductInvolvementRole, for example, describes the association between Product and other entities.</br>Up to release 9.5, the TMF Information Framework Model captures the concept of InvolvementRole for a given Product through the ProductInvolvementRole abstract artifact (up to release 9.5, there is no equivalent for ServiceInvolvementRole and ResourceInvolvementRole; these entities are proposed to be added in the present document – see below); </br>SID defines a ProductInvolvementRole as “a role a Party or Resource plays in the relationship with a Product (such as user, subscriber…), the model implementation also includes CustomerAccount which is missing from the definition”.</br>In other words, it characterizes the involvement of a Party, CustomerAccount or Resource w.r.t. a Product.</br>[] PartyRole, ResourceRole and InvolvementRole:</br>The concepts of PartyRole (or ResourceRole) and InvolvementRole must be considered as orthogonal to each other and complementary. </br>        •	The characteristics of a PartyRole (e.g. Customer, Vendor) can be modeled independently from any product at all and remains valid and relevant for all products involved presently and in the future. </br>        •	The characteristics of a ProductInvolvementRole can be modeled independently from the nature of the Party or Resource for which this ProductInvolvementRole will apply; however, up to version 9.5 of the Information Framework it must be associated with a PartyRole, a ResourceRole or a CustomerAccount.</br>It means that the characteristics of the involvement itself can be modeled on its own, but it must always be associated with the actor involved.</br>[] Separation of Party versus Resource:</br>A Party represents an individual or an organization unit. Although not explicitly stated, it is hinted that a Party is an entity that can be considered responsible with regard to the law.</br>Individuals or organizations can be internal or external to the Service Provider: employees, company department are examples of internal individuals and organizations; Individual customers, suppliers’ organizations are examples of external individuals and organizations.</br></br>By definition, a Party cannot be a Resource. Both Parties and Resources can be the subject (i.e. actor) of InvolvementRoles.</br></br>[] New Artifacts</br>This document proposes the introduction of new artifacts; they are represented in green and orange in the picture below:</br>First of all, we create a new example class UserNameResourceRole for clarifying the following diagrams.</br>UserNameResourceRole represents the role of a user name in the system. It is a LogicalResourceRole because from life cycle management perspective a user name behaves just like any other LogicalResource (such as phone number or email address) and therefore it must be managed like any other LogicalResource (to prevent duplication, etc.). This is a LogicalResourceRole because the same logical resource (phone number or email address) can play in multiple roles, for example, the email address can play the roles of user name, and email contact address.  </br>In real world implementations the base class (ResourceRole) can be used directly instead of the example class. This is because the same logical resource (e.g. email address) can play many roles including the role of a user name.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_6Y2FUE.d0E.eG.cM.fR.d.w6U4D.g.PNG" alt="Figure UR.01 - Resource Roles" usemap="#map_6Y2FUE.d0E.eG.cM.fR.d.w6U4D.g"></td>
+</tr>
+</table>
+<map name="map_6Y2FUE.d0E.eG.cM.fR.d.w6U4D.g">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E94382743602E8" alt="_resourceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E94382743602F8" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E94382743602E8" alt="_resourceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E94382743602F8" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E94382743602E8" alt="_resourceRole">
+<area shape="rect" coords="355,50,361,69" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E94382743602E8" alt="_resourceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E94382743602F8" alt="_resource">
+<area shape="rect" coords="140,50,162,69" href="_3E3F0EC000E93DDEBDDA033E-content.html#_3E3F0EC000E94382743602F8" alt="_resource">
+<area shape="rect" coords="175,23,335,42" href="_3E3F0EC000E9438274340343-content.html" alt="ResourceTakesOnRoles">
+<area shape="poly" coords="107,37,403,37,403,47,107,47,107,37" href="_3E3F0EC000E9438274340343-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="9,17,109,69" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+<area shape="rect" coords="403,17,529,69" href="_3E3F0EC000E93DDEBDDA033E-content.html" alt="ResourceRole">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure UR.01 - Resource Roles</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_2.n.d.eYE.d0E.eG.cM.fR.d.w6U4D.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ User and Roles Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

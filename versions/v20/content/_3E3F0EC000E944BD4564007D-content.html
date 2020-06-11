@@ -1,0 +1,244 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Performance Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E944BD39480138-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Performance Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Performance ABE::_ Performance Addendum Figures::Figure PF.03 - Performance Specification<br>
+</span><span class="ElementTitle">Diagram Figure PF.03 - Performance Specification<br>
+</span><span class="ElementDocumentation">The definition of performance specification and performance entities is based on four other key types of entities</br>        •	Performance Indicator (KPI) entities</br>        •	Performance Category entities</br>        •	Performance Network Address (IP and Point Code) entities</br>        •	Performance Characteristic (dynamic attribute) entities</br></br>Each of these types of entities is detailed in separate sections of this document.  Following Figure shows the core entities for each type and their relationship with PerformanceSpecification and Performance.  These types of entities also employ the EntitySpecification/Entity pattern.  For example, the PeformanceIndicatorSpecification entity defines a KPI with a name of pealPacketJitter, its description, how it is derived, and so forth; the PerformanceIndicator for peakPacketJitter contains the value for the KPI and the time at which it was calculated and so forth.</br>Note that all the performance specification related entities have an n-n association with PerformanceSpecification.  This enables instances of these entities, such as PerformanceIndicatorSpecification, to be shared by many PerformanceSpecifications.  For example, peakPacketDelay can be a KPI for a PerformanceSpecification that measures the performance of a GGSN to a SGSN and a SGSN and a BSS.  From a PerformanceIndicator perspective, it does not make sense that all the instances of these entities be shared by instances of Performance.  Entities that classify or further define the Performance, such as PeformanceCategory and PerformanceNetworkAddress, are shared.  For example, a Codec with a value of GSM can classify many instances of Performance.  Entities, such as PerformanceIndicator and PerformanceCharacteristicValue, define a single instance of Performance and are not shared.  For example, the 1000 sent packets defines a single instance of the Performance between the north Dallas BSS and the Dallas SGSN.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E944BD4564007D.PNG" alt="Figure PF.03 - Performance Specification" usemap="#map_3E3F0EC000E944BD4564007D"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E944BD4564007D">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94460090D0261" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94460090D0263" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94460090D0261" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94460090D0263" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94460090D0261" alt="_performanceIndicator">
+<area shape="rect" coords="1044,212,1052,229" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94460090D0261" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94460090D0263" alt="_performance">
+<area shape="rect" coords="1031,153,1039,170" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94460090D0263" alt="_performance">
+<area shape="rect" coords="873,190,1045,207" href="_3E3F0EC000E94460090B036B-content.html" alt="PerformanceDefinedBy">
+<area shape="poly" coords="1059,143,1059,238,1042,238,1042,238,1032,238,1032,228,1049,228,1049,143,1059,143" href="_3E3F0EC000E94460090B036B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="841,245,849,262" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E94470F6090347" alt="_performanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="512,244,520,261" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E94470F6090356" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="554,243,812,260" href="_3E3F0EC000E94470F6080356-content.html" alt="PerformanceIndicatorSpecDefines">
+<area shape="poly" coords="503,263,862,263,862,272,503,272,503,263" href="_3E3F0EC000E94470F6080356-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02EE" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02F0" alt="_performance1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02EE" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02F0" alt="_performance1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02EE" alt="_performance">
+<area shape="rect" coords="1044,72,1052,89" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02EE" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02F0" alt="_performance1">
+<area shape="rect" coords="1163,78,1171,95" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446161AE02F0" alt="_performance1">
+<area shape="rect" coords="1063,28,1243,45" href="_3E3F0EC000E9446161AC038A-content.html" alt="PerformanceReferences">
+<area shape="poly" coords="1152,96,1152,54,1066,54,1066,96,1056,96,1056,44,1162,44,1162,96,1152,96" href="_3E3F0EC000E9446161AC038A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94462B893002F" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462B8930031" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94462B893002F" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462B8930031" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94462B893002F" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="1151,585,1159,602" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94462B893002F" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462B8930031" alt="_performance">
+<area shape="rect" coords="1186,151,1194,168" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462B8930031" alt="_performance">
+<area shape="rect" coords="1087,556,1276,573" href="_3E3F0EC000E94462B88A005E-content.html" alt="PerformanceDescribedBy">
+<area shape="poly" coords="1177,143,1177,607,1167,607,1167,143,1177,143" href="_3E3F0EC000E94462B88A005E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944600871000F" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446008710011" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944600871000F" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446008710011" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944600871000F" alt="_performance">
+<area shape="rect" coords="1011,98,1019,115" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944600871000F" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446008710011" alt="_performanceSpecification">
+<area shape="rect" coords="284,96,292,113" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E9446008710011" alt="_performanceSpecification">
+<area shape="rect" coords="530,86,780,103" href="_3E3F0EC000E944600870006D-content.html" alt="PerformanceSpecificationDefines">
+<area shape="poly" coords="263,114,1048,114,1048,124,263,124,263,114" href="_3E3F0EC000E944600870006D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E944BD559A0196" alt="_performanceNetworkAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710E9C004A-content.html#_3E3F0EC000E944BD559A01A5" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E944BD559A0196" alt="_performanceNetworkAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710E9C004A-content.html#_3E3F0EC000E944BD559A01A5" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E944BD559A0196" alt="_performanceNetworkAddress">
+<area shape="rect" coords="1107,462,1115,479" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E944BD559A0196" alt="_performanceNetworkAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710E9C004A-content.html#_3E3F0EC000E944BD559A01A5" alt="_performance">
+<area shape="rect" coords="1142,151,1150,168" href="_3E3F0EC000E944710E9C004A-content.html#_3E3F0EC000E944BD559A01A5" alt="_performance">
+<area shape="rect" coords="955,423,1125,440" href="_3E3F0EC000E944BD559800CB-content.html" alt="PeformancePertainsTo">
+<area shape="poly" coords="1137,143,1137,492,1127,492,1127,143,1137,143" href="_3E3F0EC000E944BD559800CB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94473C3CD0047" alt="_performanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E94473C3CD0049" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94473C3CD0047" alt="_performanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E94473C3CD0049" alt="_performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94473C3CD0047" alt="_performanceCategory">
+<area shape="rect" coords="981,319,989,336" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94473C3CD0047" alt="_performanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E94473C3CD0049" alt="_performance">
+<area shape="rect" coords="1093,162,1101,179" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E94473C3CD0049" alt="_performance">
+<area shape="rect" coords="872,188,1076,205" href="_3E3F0EC000E94473C3CB0276-content.html" alt="PerformanceCategorizedBy">
+<area shape="poly" coords="1082,143,1082,249,1006,249,1006,356,996,356,996,239,1072,239,1072,143,1082,143" href="_3E3F0EC000E94473C3CB0276-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9445D7F7B02CE" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445D7F7B02DE" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9445D7F7B02CE" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445D7F7B02DE" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9445D7F7B02CE" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="241,220,249,237" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9445D7F7B02CE" alt="_performanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445D7F7B02DE" alt="_performanceSpecification">
+<area shape="rect" coords="163,172,171,189" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9445D7F7B02DE" alt="_performanceSpecification">
+<area shape="rect" coords="67,97,376,114" href="_3E3F0EC000E9445D7F7A00CB-content.html" alt="PerformanceSpecificationMeasuredUsing">
+<area shape="poly" coords="195,152,195,205,272,205,272,257,262,257,262,215,185,215,185,152,195,152" href="_3E3F0EC000E9445D7F7A00CB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462BA310181" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462BA310191" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462BA310181" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462BA310191" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462BA310181" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="1009,644,1017,661" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462BA310181" alt="_performanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462BA310191" alt="_characteristicSpecification">
+<area shape="rect" coords="229,610,255,627" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462BA310191" alt="_characteristicSpecification">
+<area shape="rect" coords="463,609,781,626" href="_3E3F0EC000E94462BA300049-content.html" alt="CharSpecDescribesPerformanceCharValue">
+<area shape="poly" coords="224,627,1056,627,1056,636,224,636,224,627" href="_3E3F0EC000E94462BA300049-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E94462B1A802B6" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1A802C6" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E94462B1A802B6" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1A802C6" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E94462B1A802B6" alt="_characteristicSpecification">
+<area shape="rect" coords="40,581,48,598" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E94462B1A802B6" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1A802C6" alt="_performanceSpecification">
+<area shape="rect" coords="30,160,38,177" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1A802C6" alt="_performanceSpecification">
+<area shape="rect" coords="60,557,337,574" href="_3E3F0EC000E94462B1A70324-content.html" alt="CharacteristicSpecificationDescribes">
+<area shape="poly" coords="63,152,63,609,53,609,53,152,63,152" href="_3E3F0EC000E94462B1A70324-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446E289C0138" alt="_performanceCatSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E9446E289C013A" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446E289C0138" alt="_performanceCatSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E9446E289C013A" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446E289C0138" alt="_performanceCatSpecification">
+<area shape="rect" coords="291,329,299,346" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446E289C0138" alt="_performanceCatSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E9446E289C013A" alt="_performanceSpecification">
+<area shape="rect" coords="115,177,123,194" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E9446E289C013A" alt="_performanceSpecification">
+<area shape="rect" coords="176,180,462,197" href="_3E3F0EC000E9446E289A02BF-content.html" alt="PerformanceSpecificationClassifiedBy">
+<area shape="poly" coords="217,152,217,262,317,262,317,372,307,372,307,272,207,272,207,152,217,152" href="_3E3F0EC000E9446E289A02BF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E202FD" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E2030D" alt="_performanceSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E202FD" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E2030D" alt="_performanceSpecification1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E202FD" alt="_performanceSpecification">
+<area shape="rect" coords="80,84,88,101" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E202FD" alt="_performanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E2030D" alt="_performanceSpecification1">
+<area shape="rect" coords="229,84,237,101" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E9446156E2030D" alt="_performanceSpecification1">
+<area shape="rect" coords="85,23,363,40" href="_3E3F0EC000E9446156DF035B-content.html" alt="PerformanceSpecificationReferences">
+<area shape="poly" coords="220,104,220,54,100,54,100,104,90,104,90,44,230,44,230,104,220,104" href="_3E3F0EC000E9446156DF035B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944BD562C037A" alt="_performanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E944BD562C0399" alt="_performanceCatSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944BD562C037A" alt="_performanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E944BD562C0399" alt="_performanceCatSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944BD562C037A" alt="_performanceCategory">
+<area shape="rect" coords="869,362,877,379" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944BD562C037A" alt="_performanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E944BD562C0399" alt="_performanceCatSpecification">
+<area shape="rect" coords="460,362,468,379" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E944BD562C0399" alt="_performanceCatSpecification">
+<area shape="rect" coords="500,363,818,380" href="_3E3F0EC000E944BD562A02EE-content.html" alt="PerformanceCategorySpecificationDefines">
+<area shape="poly" coords="450,379,893,379,893,389,450,389,450,379" href="_3E3F0EC000E944BD562A02EE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D694A00AB-content.html#_3E3F0EC000E944CAE16B02EE" alt="value">
+<area shape="rect" coords="862,238,1050,289" href="_3E3F0EC000E9445D694A00AB-content.html" alt="PerformanceIndicator">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9446007290232-content.html#_3E3F0EC000E94484EBEC0034" alt="intervalTime">
+<area shape="rect" coords="1048,96,1177,147" href="_3E3F0EC000E9446007290232-content.html" alt="Performance">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_.hUVB.cK.wEE.eC.w.u4.oQ.b.aL0.w.w" alt="indicatorUnit">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_MRQ3UK.wEE.eC.w.u4.oQ.b.aL0.w.w" alt="collectionType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060280" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E944765A01030D" alt="derivationMethod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060271" alt="derivationAlgorithm">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E944E4EAD00109" alt="indicatorType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060251" alt="indicatorCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060242" alt="perspective">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060232" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E9446166060222" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D647E029F-content.html#_3E3F0EC000E944CAEA200157" alt="ID">
+<area shape="rect" coords="237,257,505,308" href="_3E3F0EC000E9445D647E029F-content.html" alt="PerformanceIndicatorSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462B001038A" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE1C0045-content.html#_3E3F0EC000E94462B0010389" alt="value">
+<area shape="rect" coords="1056,607,1309,658" href="_3E3F0EC000E94462AE1C0045-content.html" alt="PerformanceCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944C5C40F004E" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944C5C40801E4" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944C5C4030203" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9445D646F006D-content.html#_3E3F0EC000E944C5C3FD0290" alt="ID">
+<area shape="rect" coords="53,104,265,155" href="_3E3F0EC000E9445D646F006D-content.html" alt="PerformanceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710E9C004A-content.html#_3E3F0EC000E9449605D90385" alt="validFor">
+<area shape="rect" coords="898,492,1135,543" href="_3E3F0EC000E944710E9C004A-content.html" alt="PerformanceNetworkAddress">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E944CB30770153" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E9448ED989015B" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E9448ED9840127" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E944710EE001D4-content.html#_3E3F0EC000E9448ED9A202FB" alt="ID">
+<area shape="rect" coords="893,356,1079,407" href="_3E3F0EC000E944710EE001D4-content.html" alt="PerformanceCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02B8" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AB" alt="derivationFormula">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9475EBBC502C1" alt="extensible">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60280" alt="maxCardinality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60271" alt="minCardinality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AA" alt="valueType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E946F97EB7003E" alt="unique">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A9" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A8" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A7" alt="ID">
+<area shape="rect" coords="9,609,226,660" href="_3E3F0EC000E94462ADF80016-content.html" alt="CharacteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944CB2F5601BD" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944CB2F56017E" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944CB2F560140" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94466F7C502AF-content.html#_3E3F0EC000E944CB2F560101" alt="ID">
+<area shape="rect" coords="219,372,453,423" href="_3E3F0EC000E94466F7C502AF-content.html" alt="PerformanceCatSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PF.03 - Performance Specification</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E944BD39480138-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Performance Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

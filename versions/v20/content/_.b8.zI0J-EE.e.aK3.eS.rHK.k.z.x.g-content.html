@@ -1,0 +1,89 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Resource Specification ABE Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fO.hA.wAMOE.e.aYMZTO.w.dO.v.oQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Specification ABE Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource Specification ABE::_ Resource Specification ABE Addendum Figures::Figure Res.09 - Resource Number - Number Specification (OLD RN.01)<br>
+</span><span class="ElementTitle">Diagram Figure Res.09 - Resource Number - Number Specification (OLD RN.01)<br>
+</span><span class="ElementDocumentation">This new ABE has only two entities, since it inherits everything needed and a figure to represent the relationship between them.</br>This new entity called ResourceNumber exists not to only manage the specification, but to associate it with portability. The number is a very complex and broad entity, with specific things like format, ranges, area code and other characteristics for the number that vary for each country. Its purpose is to fill the number specification according to Number Portability, but it can be used for number inventory. Both, ResourceNumber and ResourceNumberSpecification, inherit from existing entities, LogicalResourceSpec (from LogicalResource Specification ABE) and LogicalResource (from LogicalResource ABE).</br>ResourceNumber, as it shows, is a sub-class of the abstract class LogicalResource. This is the main class for numbers that relates to the number portability. It has an ID, name, description (inherited by RootEntity), a status (inherited by LogicalResource) and a dialedNumber (For Mobile, Fixed, or IP type of numbers). This entity encapsulates the whole concept of a number in the most general idea and has a relation of many-to-0.1 with the specification (new entity, as well).</br>ResourceNumberSpecification is a sub-class of LogicalResourceSpec (existing entity) from LogicalResource Specification ABE. It defines the number and follows the path for the Characteristic/CharacteristicValue pattern to complete the complexity of the number itself.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.b8.zI0J-EE.e.aK3.eS.rHK.k.z.x.g.PNG" alt="Figure Res.09 - Resource Number - Number Specification (OLD RN.01)" usemap="#map_.b8.zI0J-EE.e.aK3.eS.rHK.k.z.x.g"></td>
+</tr>
+</table>
+<map name="map_.b8.zI0J-EE.e.aK3.eS.rHK.k.z.x.g">
+<area shape="rect" coords="0,0,0,0" href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html#_.nNRF.wJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumber">
+<area shape="rect" coords="0,0,0,0" href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html#_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumberSpecification">
+<area shape="rect" coords="0,0,0,0" href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html#_.nNRF.wJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumber">
+<area shape="rect" coords="0,0,0,0" href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html#_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumberSpecification">
+<area shape="rect" coords="0,0,0,0" href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html#_.nNRF.wJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumber">
+<area shape="rect" coords="593,247,599,263" href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html#_.nNRF.wJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumber">
+<area shape="rect" coords="0,0,0,0" href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html#_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumberSpecification">
+<area shape="rect" coords="291,240,311,256" href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html#_.nNU.wIJ-.rE.e.aZ.mK7AEPF.t.n.w" alt="resourceNumberSpecification">
+<area shape="rect" coords="328,214,570,230" href="_.nNO.p.gJ-.rE.e.aZ.mK7AEPF.t.n.w-content.html" alt="ResourceNumberSpecificationDescribes">
+<area shape="poly" coords="265,226,633,226,633,236,265,236,265,226" href="_.nNO.p.gJ-.rE.e.aZ.mK7AEPF.t.n.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_-.t.n.i.wJ-ME.e.aZ.mK7AEPF.t.n.w-content.html" alt="Generalization">
+<area shape="poly" coords="723,209,723,115,733,115,733,209,723,209" href="_-.t.n.i.wJ-ME.e.aZ.mK7AEPF.t.n.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_-.b.y.y8J-ME.e.aZ.mK7AEPF.t.n.w-content.html" alt="Generalization">
+<area shape="poly" coords="143,203,143,100,152,100,152,203,143,203" href="_-.b.y.y8J-ME.e.aZ.mK7AEPF.t.n.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="633,85,856,101" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAD87C026B" alt="isOperational">
+<area shape="rect" coords="633,68,856,84" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0164" alt="serviceState">
+<area shape="rect" coords="633,51,856,67" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0166" alt="lrStatus">
+<area shape="rect" coords="627,9,866,118" href="_3E3F0EC000E93CDAA51A00F6-content.html" alt="LogicalResource">
+<area shape="rect" coords="9,34,271,103" href="_3E3F0EC000E93EE25CAA036E-content.html" alt="LogicalResourceSpec">
+<area shape="rect" coords="41,203,268,255" href="_T.b.g2EIA8E.e.aJ361ZF.a5.f4A-content.html" alt="ResourceNumberSpecification">
+<area shape="rect" coords="640,234,787,250" href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html#_N.y.uZMJABE.e.aD.y.t3-5E9U-A" alt="dialedNumber">
+<area shape="rect" coords="633,209,796,267" href="_.tJP.c.cIDUE.e.aJ361ZF.a5.f4A-content.html" alt="ResourceNumber">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Res.09 - Resource Number - Number Specification (OLD RN.01)</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.fO.hA.wAMOE.e.aYMZTO.w.dO.v.oQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Resource Specification ABE Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

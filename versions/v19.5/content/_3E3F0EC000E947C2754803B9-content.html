@@ -1,0 +1,121 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Usage Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E947BF8F9702FD-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Usage Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Usage ABE::Usage Addendum Figures::Figure U.10 - Mapping IPDR base model to SID<br>
+</span><span class="ElementTitle">Diagram Figure U.10 - Mapping IPDR base model to SID<br>
+</span><span class="ElementDocumentation">The following Figure describes the mapping between the IPDR base model and the SID.</br>The anchor for all record definitions in the IPDR base model is the IPDRType. In other words, all records definitions must be extensions of the IPDRType and instance of IPDRType (or one of its derived classes) is usage record. Usage class has exactly the same role in the SID. So IPDRType in the IPDR maps to the Usage class in the SID.</br>In the SID there are three predefined Usage records (Resource Usage, Service Usage and Product Usage abstract records) but as information model it does not define any specific resource usage, service usage or product usage. The IPDR model does not define any layer between the IPDRType and each specific IPDR Service Specification.</br>The IPDR Service Specifications that are defined and standardized up to the time this document is written, can all be considered as Service Usage.</br>The instance of UsageSpecCharacteristic class in the SID presents a Usage's attribute. Exactly the same role holds by the elements referred by IPDRType definition or its inherited classes definitions. For example seqNum in the IPDRType or VoIP:callProgressState in the IPDR-VoIP-Type are attributes in the proper IPDR Service Specification.</br>As a rule: each element referred by IPDRType definition or its inherited classes definitions in the IPDR model is mapped to specific instance UsageSpecCharacteristic in the SID.</br>The UsageSpecCharacteristicValue in the SID is responsible for specifying constrains and default value for each specific UsageCharacteristicValue.</br>In the IPDR model there is no clear separation between the attribute definition and its behavior definition (default values and constrains). An attribute in the IPDR model is first defined with its behavior definition values and then can be used by referring to it in specific IPDR Service Specification definition.</br>As a rule: each data type and Element whenever it includes constrains and default values mapped logically to UsageSpecCharacteristicValue. </br>Note: SID UsageSpecification and IPDR Service Specification cannot be mapped to each other. Instance of SID UsageSpecification and the IPDR Service Specification itself can be logically mapped to each other. </br>An instance of SID UsageSpecification defines the usage Meta data. Realization of usage Meta data is the usage record itself.</br>IPDR Service Specification itself is the usage metadata and instance of it is usage record.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E947C2754803B9.PNG" alt="Figure U.10 - Mapping IPDR base model to SID" usemap="#map_3E3F0EC000E947C2754803B9"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E947C2754803B9">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C27EC00000-content.html" alt="Generalization">
+<area shape="poly" coords="1111,73,1111,210,146,210,146,238,136,238,136,200,1101,200,1101,73,1111,73" href="_3E3F0EC000E947C27EC00000-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C27EBD00EA-content.html" alt="Generalization">
+<area shape="poly" coords="882,73,882,210,146,210,146,238,136,238,136,200,872,200,872,73,882,73" href="_3E3F0EC000E947C27EBD00EA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C27EBA037A-content.html" alt="Generalization">
+<area shape="poly" coords="700,73,700,210,146,210,146,238,136,238,136,200,690,200,690,73,700,73" href="_3E3F0EC000E947C27EBA037A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C27EB80280-content.html" alt="Generalization">
+<area shape="poly" coords="460,73,460,210,146,210,146,238,136,238,136,200,450,200,450,73,460,73" href="_3E3F0EC000E947C27EB80280-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C27EB6002E-content.html" alt="Generalization">
+<area shape="poly" coords="236,73,236,210,146,210,146,238,136,238,136,200,226,200,226,73,236,73" href="_3E3F0EC000E947C27EB6002E-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C27EAF02FD-content.html" alt="Generalization">
+<area shape="poly" coords="78,73,78,200,146,200,146,238,136,238,136,210,68,210,68,73,78,73" href="_3E3F0EC000E947C27EAF02FD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C29C45004C-content.html#_3E3F0EC000E941C2D0CB03A9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2D0CB03AB" alt="_usageSpecCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C29C45004C-content.html#_3E3F0EC000E941C2D0CB03A9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2D0CB03AB" alt="_usageSpecCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C29C45004C-content.html#_3E3F0EC000E941C2D0CB03A9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="663,466,671,483" href="_3E3F0EC000E941C29C45004C-content.html#_3E3F0EC000E941C2D0CB03A9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2D0CB03AB" alt="_usageSpecCharacteristicValue">
+<area shape="rect" coords="1016,466,1042,483" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2D0CB03AB" alt="_usageSpecCharacteristicValue">
+<area shape="rect" coords="652,427,1045,444" href="_3E3F0EC000E941C2D0CB006D-content.html" alt="UsageCharInstantiatedAsUsageCharacteristicValue">
+<area shape="poly" coords="1064,458,634,458,634,448,1064,448,1064,458" href="_3E3F0EC000E941C2D0CB006D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C2C33001D9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2C33001DB" alt="_usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C2C33001D9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2C33001DB" alt="_usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C2C33001D9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="404,476,412,493" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C2C33001D9" alt="_usageCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2C33001DB" alt="_usage">
+<area shape="rect" coords="230,476,238,493" href="_3E3F0EC000E941C2A6920012-content.html#_3E3F0EC000E941C2C33001DB" alt="_usage">
+<area shape="rect" coords="256,431,395,448" href="_3E3F0EC000E941C2C32F0321-content.html" alt="UsageDescribedBy">
+<area shape="poly" coords="224,458,428,458,428,468,224,468,224,458" href="_3E3F0EC000E941C2C32F0321-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C271E903C8-content.html#_3E3F0EC000E947C2800202CE" alt="_usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E947C2800202DE" alt="_iPDRType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C271E903C8-content.html#_3E3F0EC000E947C2800202CE" alt="_usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E947C2800202DE" alt="_iPDRType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C271E903C8-content.html#_3E3F0EC000E947C2800202CE" alt="_usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E947C271E903C8-content.html#_3E3F0EC000E947C2800202CE" alt="_usage">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E947C2800202DE" alt="_iPDRType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E947C2800202DE" alt="_iPDRType">
+<area shape="rect" coords="109,359,197,376" href="_3E3F0EC000E947C27FFF0261-content.html" alt="Association">
+<area shape="poly" coords="149,301,149,435,139,435,139,301,149,301" href="_3E3F0EC000E947C27FFF0261-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="428,434,637,485" href="_3E3F0EC000E941C2A6920012-content.html" alt="UsageCharacteristicValue">
+<area shape="rect" coords="1064,415,1304,466" href="_3E3F0EC000E941C29C45004C-content.html" alt="UsageSpecCharacteristicValue">
+<area shape="rect" coords="71,475,217,490" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C18A1403DC" alt="usageStatus">
+<area shape="rect" coords="71,459,217,474" href="_3E3F0EC000E941C175ED0356-content.html#_3E3F0EC000E941C1761B021F" alt="usageDate">
+<area shape="rect" coords="64,435,226,507" href="_3E3F0EC000E941C175ED0356-content.html" alt="Usage">
+<area shape="rect" coords="90,238,195,305" href="_3E3F0EC000E947C271E903C8-content.html" alt="IPDRType">
+<area shape="rect" coords="1003,9,1212,76" href="_3E3F0EC000E947C27CC0004E-content.html" alt="IPDRStreamingMediaType">
+<area shape="rect" coords="793,9,965,76" href="_3E3F0EC000E947C27B4202AF-content.html" alt="IPDRWholeSaleType">
+<area shape="rect" coords="627,9,764,76" href="_3E3F0EC000E947C27B1201B5-content.html" alt="IPDREmailType">
+<area shape="rect" coords="340,9,578,76" href="_3E3F0EC000E947C27AC502CE-content.html" alt="PublicWLANAccessUsageEntry">
+<area shape="rect" coords="174,9,307,76" href="_3E3F0EC000E947C27A97029F-content.html" alt="IPDRVoiPType">
+<area shape="rect" coords="9,9,130,76" href="_3E3F0EC000E947C27A630203-content.html" alt="DOCSISType">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure U.10 - Mapping IPDR base model to SID</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E947BF8F9702FD-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Usage Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

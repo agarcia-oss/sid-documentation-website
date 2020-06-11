@@ -1,0 +1,166 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Capacity Addendum figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_WB.e.n.k.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Capacity Addendum figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Capacity ABE::_Capacity Addendum figures::Figure CM.02 - Basic Capacity Entities<br>
+</span><span class="ElementTitle">Diagram Figure CM.02 - Basic Capacity Entities<br>
+</span><span class="ElementDocumentation">A generalized capacity and capacity demand model is shown in the following Figure.</br>The need to satisfy the capacity requirement during the first week in June is expressed using the fromToDateTime attribute, which is a composite of from and to dates/times, and the rangeInterval attribute of ApplicableTimePeriod.    Refinements to the schedule can include days of the week as shown by the daysOfWeek attribute in the ApplicableTimePeriod entity.  The rangeInterval attribute is used to handle some combination of >, <, >=, <=.  It is assumed this is a planned Capacity, which would be indicated using the plannedOrActutalCapacity attribute.  The CapacityRelationship entity enables a planned Capacity to be associated with an actual Capacity or for Capacities to be aggregated.</br></br>The requirement for this capacity to be available in the Northeast geographic area is expressed using the relationship to GeographicPlace.  Other entities that further define/refine capacity requirements could be added as needed by extending the SID.</br></br>The ability to deliver 10000 units of Product described in the previous example is expressed via the CapacityAmount, whose datatype is Quantity.  Quantity is a composite of an amount attribute and a units (unit of measure) attribute. For this instance of Capacity, the capacityAmount attribute contains the amount “10000”, and the unit of measure “units”.  Other examples of units of measure could be transaction volumes, storage requirements, traffic volumes, port availabilities, and so forth.  The capacityAmountFrom, capacityAmountTo, and rangeInterval enable ranges of capacity to be specified.</br></br>Demands are placed on the capacity as defined by the CapacityDemand entity.  The related ApplicableTimePeriod is used to here to express the timeframe over which the demand exists.  It may or may not be the same instance of the ApplicableTimePeriod associated with the Capacity.  Therefore, it may be a demand placed on more  el one CapacityAmount.  Similarly, the CapacityAmount may have many demands placed against it.</br></br>The attributes are similar to those in CapacityAmount with the addition of a priority attribute that defines the relative importance of this demand.</br></br>The AppliedCapacityDemand entity represents the amount of the CapacityDemand that has been applied against a CapacityAmount.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_WB.e.sBD.gGE.eGEK_B.c.w.f.w4.zQ.PNG" alt="Figure CM.02 - Basic Capacity Entities" usemap="#map_WB.e.sBD.gGE.eGEK_B.c.w.f.w4.zQ"></td>
+</tr>
+</table>
+<map name="map_WB.e.sBD.gGE.eGEK_B.c.w.f.w4.zQ">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_G11HUD.gHE.eGEK_B.c.w.f.w4.zQ" alt="_geographicPlace">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C868025A-content.html#_G1-4UD.gHE.eGEK_B.c.w.f.w4.zQ" alt="capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_G11HUD.gHE.eGEK_B.c.w.f.w4.zQ" alt="_geographicPlace">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C868025A-content.html#_G1-4UD.gHE.eGEK_B.c.w.f.w4.zQ" alt="capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_G11HUD.gHE.eGEK_B.c.w.f.w4.zQ" alt="_geographicPlace">
+<area shape="rect" coords="79,360,86,375" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_G11HUD.gHE.eGEK_B.c.w.f.w4.zQ" alt="_geographicPlace">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C86C868025A-content.html#_G1-4UD.gHE.eGEK_B.c.w.f.w4.zQ" alt="capacity">
+<area shape="rect" coords="242,274,249,289" href="_3E3F0EC000E93C86C868025A-content.html#_G1-4UD.gHE.eGEK_B.c.w.f.w4.zQ" alt="capacity">
+<area shape="rect" coords="62,280,180,295" href="_G1.r9YD.gHE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityAppliesTo">
+<area shape="poly" coords="296,272,102,272,102,409,92,409,92,262,296,262,296,272" href="_G1.r9YD.gHE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="345,73,508,88" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_16H7QJ.tVE.eS5.l.a.b_.r61M.a.g" alt="validFor">
+<area shape="rect" coords="345,57,508,72" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_.sX9.o.gJ.tVE.eS5.l.a.b_.r61M.a.g" alt="capRelType">
+<area shape="rect" coords="338,33,517,105" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityRelationship">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY5.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacity1">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY6.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY5.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacity1">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY6.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY5.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacity1">
+<area shape="rect" coords="299,166,306,181" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY5.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacity1">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY6.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="438,166,445,181" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY6.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="poly" coords="419,203,419,162,327,162,327,203,317,203,317,152,428,152,428,203,419,203" href="_WB.oY5.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.m.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.lT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.m.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.lT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.m.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="802,231,809,246" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.m.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.lT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="802,151,809,166" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.lT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="735,191,931,206" href="_WB.oY5T.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityDemandDistributedAs">
+<area shape="poly" coords="830,142,830,257,820,257,820,142,830,142" href="_WB.oY5T.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.k.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityAmount">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.jT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.k.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityAmount">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.jT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.k.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityAmount">
+<area shape="rect" coords="795,384,802,399" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.k.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityAmount">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.jT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="795,316,802,331" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.jT.gGE.eGEK_B.c.w.f.w4.zQ" alt="_appliedCapacityDemand">
+<area shape="rect" coords="737,350,915,365" href="_WB.oY5D.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityAmountReducedBy">
+<area shape="poly" coords="823,309,823,406,813,406,813,309,823,309" href="_WB.oY5D.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.mD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.t.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.mD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.t.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.mD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="1112,104,1134,119" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.mD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.t.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="983,72,990,87" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.t.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacityDemand">
+<area shape="rect" coords="1004,36,1180,51" href="_WB.oY4.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityDemandDefinedFor">
+<area shape="poly" coords="949,56,1139,56,1139,128,1129,128,1129,66,949,66,949,56" href="_WB.oY4.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.f.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacityAmount">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.i.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.f.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacityAmount">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.i.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.f.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacityAmount">
+<area shape="rect" coords="640,487,647,502" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.f.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacityAmount">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.i.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacity">
+<area shape="rect" coords="333,364,340,379" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.i.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="_availableCapacity">
+<area shape="rect" coords="384,439,582,454" href="_WB.oY4T.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="AvailableCapacityExpressedAs">
+<area shape="poly" coords="361,287,361,472,728,472,728,482,351,482,351,287,361,287" href="_WB.oY4T.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.s.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.fD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.s.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.fD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="0,0,0,0" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.s.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="247,236,254,251" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.s.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacity">
+<area shape="rect" coords="0,0,0,0" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.fD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="58,170,80,185" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.fD.gGE.eGEK_B.c.w.f.w4.zQ" alt="_capacitySchedule">
+<area shape="rect" coords="96,196,253,211" href="_WB.oY3.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityAvailableDuring">
+<area shape="poly" coords="93,133,93,221,296,221,296,231,83,231,83,133,93,133" href="_WB.oY3.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1032,200,1226,215" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.s.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="validFor">
+<area shape="rect" coords="1032,184,1226,199" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.sT.gGE.eGEK_B.c.w.f.w4.zQ" alt="daysOfWeek">
+<area shape="rect" coords="1032,168,1226,183" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.sD.gGE.eGEK_B.c.w.f.w4.zQ" alt="rangeInterval">
+<area shape="rect" coords="1032,152,1226,167" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.r.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="fromToDateTime">
+<area shape="rect" coords="1026,128,1236,232" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="ApplicableTimePeriod">
+<area shape="rect" coords="696,113,942,128" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.l.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="priority">
+<area shape="rect" coords="696,97,942,112" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.l.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="rangeInterval">
+<area shape="rect" coords="696,81,942,96" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.lT.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityDemandAmountTo">
+<area shape="rect" coords="696,65,942,80" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.lD.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityDemandAmountFrom">
+<area shape="rect" coords="696,49,942,64" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.k.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityDemandAmount">
+<area shape="rect" coords="696,33,942,48" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.k.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityDemandType">
+<area shape="rect" coords="689,9,951,145" href="_WB.oY.kT.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityDemand">
+<area shape="rect" coords="705,280,961,295" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.kT.gGE.eGEK_B.c.w.f.w4.zQ" alt="appliedDemandAmount">
+<area shape="rect" coords="698,257,970,313" href="_WB.e.t.kD.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="AppliedCapacityDemand">
+<area shape="rect" coords="735,478,934,493" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.iT.gGE.eGEK_B.c.w.f.w4.zQ" alt="rangeInterval">
+<area shape="rect" coords="735,462,934,477" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.iD.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityAmountTo">
+<area shape="rect" coords="735,446,934,461" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.h.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityAmountFrom">
+<area shape="rect" coords="735,430,934,445" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.h.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="capacityAmount">
+<area shape="rect" coords="728,406,943,510" href="_WB.e.t.hT.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="CapacityAmount">
+<area shape="rect" coords="16,104,210,119" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.s.j.gGE.eGEK_B.c.w.f.w4.zQ" alt="validFor">
+<area shape="rect" coords="16,88,210,103" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.sT.gGE.eGEK_B.c.w.f.w4.zQ" alt="daysOfWeek">
+<area shape="rect" coords="16,72,210,87" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.sD.gGE.eGEK_B.c.w.f.w4.zQ" alt="rangeInterval">
+<area shape="rect" coords="16,56,210,71" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.oY.r.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="fromToDateTime">
+<area shape="rect" coords="9,32,219,136" href="_WB.oY.r.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="ApplicableTimePeriod">
+<area shape="rect" coords="303,227,511,242" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html#_WB.e.t.e.z.gGE.eGEK_B.c.w.f.w4.zQ" alt="plannedOrActualCapacity">
+<area shape="rect" coords="296,203,520,291" href="_WB.e.t.d.z.gGE.eGEK_B.c.w.f.w4.zQ-content.html" alt="Capacity">
+<area shape="rect" coords="34,409,186,460" href="_3E3F0EC000E93C86C868025A-content.html" alt="GeographicPlace">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure CM.02 - Basic Capacity Entities</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_WB.e.n.k.j.gGE.eGEK_B.c.w.f.w4.zQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Capacity Addendum figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

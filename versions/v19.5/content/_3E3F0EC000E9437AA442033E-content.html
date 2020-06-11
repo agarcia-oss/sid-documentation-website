@@ -1,0 +1,149 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure LR.54 - Concepts of ManagementInfo and ManagementMethodEntity<br>
+</span><span class="ElementTitle">Diagram Figure LR.54 - Concepts of ManagementInfo and ManagementMethodEntity<br>
+</span><span class="ElementDocumentation">If we are to manage and control ManagedEntities, then we need two additional things: (1) a means to manage ManagedEntities, and (2) a means to represent management information. These concepts are shown in the Figure below.</br>A ManagedEntity is an abstract base class that is used to represent entities in a managed environment that have the following semantics in common: (1) a PartyRole owns or is otherwise responsible for them, (2) management of the entity is critical for providing a service and/or maintaining the environment, and (3) the entity is “important” from a management point-of-view. Thus, ManagedEntity is the base class for representing manageable parts of a Product (such as PhysicalResources and CustomerFacingServices).</br>ManagementInfo is an abstract base class that is used to represent management information obtained from one or more managed entities in a managed environment. Specifically, in the process of managing an entity, information of various forms is created. A ManagementInfo entity represents different types of management information that describes the state of a particular Resource or Service. A Finite State Machine management model is used to represent the lifecycle of a managed entity. This class represents one state of that Finite State Machine. Note that the Finite State Machine is derived from the UML Metamodel State Machine metaclass.</br>ManagementMethodEntity is an abstract base class for representing the different types of management methods that can be used to gather a particular type of management information. For example, this enables configuration setting classes to be defined as using CLI, while configuration monitoring classes could be defined as using a different method, such as SNMP. The subclasses of ManagementMethodEntity are system concepts and are shown for illustrative purposes only.</br>Thus, ManagementMethodEntities can be defined to produce specific types of ManagementInfo for a particular ManagedEntity. This is done through the use of three relationships that tie these concepts together. The SupportedMgmtMethods aggregation defines the set of different management methods that can be used to manage and control a particular ManagedEntity. The DescribedByManagementInfo aggregation is used to define the different types of management information that a particular ManagedEntity can produce. Finally, the MgmtInfoObtainedBy association defines which set of ManagementMethodEntities were used to obtain a particular type of management data.</br>There are four primary subclasses of ManagementMethodEntity – CLIMethod, SNMPMethod, TL1Method, and ProprietaryMethod. (These are not inclusive, but rather representative, of the most popular methods of managing Resources and Services that are currently available.) CLIMethod is an abstract base class for using a device-specific CLI to obtain management information. Similarly, the SNMPMethod, TL1Method, and ProprietaryMethod entities are abstract base classes for using device-specific SNMP, TL1, and proprietary methods to obtain management method. RMONMethod uses SNMP, and thus is a subclass of SNMPMethod.</br>It should be noted that these are all abstract base classes. While there are standard objects defined for SNMP, RMON, and TL1, the majority of information obtained using these approaches (with the possible exception of TL1) comes in the form of proprietary objects. In addition, CLI is essentially proprietary, so no standard exists to define information obtainable from CLI.</br>The nine subclasses of ManagementInfo are also exemplary in nature and are not meant to be all-inclusive.</br>ResourceStateInfo is an abstract base class for representing different types of management information that describes the state of a particular Resource. A Finite State Machine management model is used to represent the lifecycle of a managed entity. This class represents one state of that Finite State Machine. (Note that the Finite State Machine is derived from the UML Metamodel State Machine metaclass.) Subclasses of this class include classes to represent Faults, Outages, Alarms, the usage of this Resource, and its current operational state.</br>ResourceStatisticalInfo is an abstract base class for representing different types of statistical information that describes the state of a particular Resource or set of Resources (or a particular Service or set of Services). Subclasses of this class represent domain-specific information, including:</br>        •	specific LogicalResource statistics, such as those for a DeviceInterface (e.g., number of packets dropped)</br>        •	specific PhysicalResource statistics, such as a fiber cut</br>ServiceStateInfo is an abstract base class for representing different types of management information that describes the state of a particular Service. This can be a CustomerFacingService or a ResourceFacingService. As with a ResourceStateInfo, this represents the lifecycle of a Service as one state of the Finite State Machine.</br>ServiceStatisticalInfo is an abstract base class for representing different types of statistical information that describes the state of a particular Resource or set of Resources (or a particular Service or set of Services). Subclasses of this class represent domain-specific information, including:</br>        •	generic Service statistics (e.g., uptime and current status)</br>        •	specific Service statistics (e.g., number of SLA violations, current QoS data, etc.)</br>        •	generic Customer statistics (e.g., number of Customers using a particular network, number of Subscribers and their subscription levels)</br>The remaining five entities are generic in nature and apply to Resources and Services.</br>AccountingInfo is the base class for defining how accounting is performed for a particular ManagedEntity. AccountingInfo keeps track of how a Resource or Service is being used (both quantity as well as by which PartyRole). Accounting is associated with a particular Resource or Service using the DescribedByMgmtInfo aggregation. Subclasses of the Accounting class define the detailed characteristics and behavior of how accounting is performed. Accounting is implemented by associating the parent of this class, ManagementInfo, with the appropriate ManagementMethodEntity class through a combination of the DescribedByMgmtInfo and the MgmtInfoObtainedBy aggregation.</br>PerformanceInfo is the base class for all performance monitoring classes. Resource Performance is the act of collecting, correlating, consolidating, and validating various performance statistics and other operational characteristics of PhysicalResource, LogicalResource, CompoundResource, and Network entities. Service Performance is similar, except that it applies to CustomerFacingServices and ResourceFacingServices. Both of these entities also include specific subclasses for conducting network performance assessment against planned goals, performs various aspects of trend analysis, including error rate and cause analysis and Resource degradation. Different types of performance indicators are associated with a particular Resource or Service using the DescribedByMgmtInfo aggregation. Performance information Subclasses of this class defines the detailed characteristics and behavior of this class. Performance monitors are reported by associating the parent of this class, ManagementInfo, with the ManagementMethodEntity class through a combination of the DescribedByMgmtInfo and the MgmtInfoObtainedBy aggregation.</br>SecurityInfo is the base class for all security classes. Different types of security settings and semantics are associated with a particular Resource or Service using the DescribedByMgmtInfo aggregation. Subclasses of this class define the detailed characteristics and behavior of this class. Examples of security subclasses include AuthenticationEntity, AuthorizationEntity, and AuditingEntity. Security settings are implemented and reported on by associating the parent of this class, ManagementInfo, with the ManagementMethodEntity class through a combination of the DescribedByMgmtInfo and the MgmtInfoObtainedBy aggregation.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E9437AA442033E.PNG" alt="Figure LR.54 - Concepts of ManagementInfo and ManagementMethodEntity" usemap="#map_3E3F0EC000E9437AA442033E"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E9437AA442033E">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9C09601CF-content.html" alt="Generalization">
+<area shape="poly" coords="666,127,666,99,402,99,402,57,412,57,412,89,675,89,675,127,666,127" href="_3E3F0EC000E93EA9C09601CF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E5E8F09017B-content.html" alt="Generalization">
+<area shape="poly" coords="102,125,102,89,402,89,402,57,412,57,412,99,112,99,112,125,102,125" href="_3E3F0EC000E93E5E8F09017B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F04E6F00257-content.html#_3E3F0EC000E93F04E7A7025A" alt="preferredMonitorMethod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F04E6F00257-content.html#_3E3F0EC000E93F04E73E0213" alt="preferredConfigMethod">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F04E6F00257-content.html#_3E3F0EC000E93F04E63603E0" alt="supportedMgmtMethods">
+<area shape="rect" coords="178,246,412,297" href="_3E3F0EC000E93F04E6F00257-content.html" alt="SupportedMgmtMethodDetail">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9EABA02F6" alt="_managementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9EABA030A" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9EABA02F6" alt="_managementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9EABA030A" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9EABA02F6" alt="_managementMethodEntity">
+<area shape="rect" coords="193,224,219,241" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9EABA02F6" alt="_managementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9EABA030A" alt="_managedEntity">
+<area shape="rect" coords="371,182,379,199" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9EABA030A" alt="_managedEntity">
+<area shape="poly" coords="403,176,403,224,179,224,179,173,189,173,189,214,393,214,393,176,403,176" href="_3E3F0EC000E93F04E6F00257-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="458,247,652,298" href="_3E3F0EC000E93EA9E5A800AA-content.html" alt="DescribedMgmtInfoDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9E36D00A8" alt="_managementInfo">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9E36D00AA" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9E36D00A8" alt="_managementInfo">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9E36D00AA" alt="_managedEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9E36D00A8" alt="_managementInfo">
+<area shape="rect" coords="596,196,604,213" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EA9E36D00A8" alt="_managementInfo">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9E36D00AA" alt="_managedEntity">
+<area shape="rect" coords="430,183,438,200" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9E36D00AA" alt="_managedEntity">
+<area shape="poly" coords="425,176,425,216,624,216,624,175,634,175,634,225,415,225,415,176,425,176" href="_3E3F0EC000E93EA9E5A800AA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E302025005A-content.html" alt="Generalization">
+<area shape="poly" coords="225,432,225,371,105,371,105,173,115,173,115,361,235,361,235,432,225,432" href="_3E3F0EC000E93E302025005A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9E0AE00E3-content.html" alt="Generalization">
+<area shape="poly" coords="312,503,312,371,105,371,105,173,115,173,115,361,321,361,321,503,312,503" href="_3E3F0EC000E93EA9E0AE00E3-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E30201C030C-content.html" alt="Generalization">
+<area shape="poly" coords="72,432,72,361,105,361,105,173,115,173,115,371,82,371,82,432,72,432" href="_3E3F0EC000E93E30201C030C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E30202201F1-content.html" alt="Generalization">
+<area shape="poly" coords="141,504,141,371,105,371,105,173,115,173,115,361,151,361,151,504,141,504" href="_3E3F0EC000E93E30202201F1-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9E5A800AA-content.html#_3E3F0EC000E93EA9E6060185" alt="_managementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9E606018F" alt="_describedMgmtInfoDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9E5A800AA-content.html#_3E3F0EC000E93EA9E6060185" alt="_managementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9E606018F" alt="_describedMgmtInfoDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9E5A800AA-content.html#_3E3F0EC000E93EA9E6060185" alt="_managementMethodEntity">
+<area shape="rect" coords="154,182,180,199" href="_3E3F0EC000E93EA9E5A800AA-content.html#_3E3F0EC000E93EA9E6060185" alt="_managementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9E606018F" alt="_describedMgmtInfoDetails">
+<area shape="rect" coords="557,300,565,317" href="_3E3F0EC000E93E301ED6039E-content.html#_3E3F0EC000E93EA9E606018F" alt="_describedMgmtInfoDetails">
+<area shape="rect" coords="292,322,450,339" href="_3E3F0EC000E93EA9E6030375-content.html" alt="MgmtInfoObtainedBy">
+<area shape="poly" coords="555,294,555,343,140,343,140,173,150,173,150,334,545,334,545,294,555,294" href="_3E3F0EC000E93EA9E6030375-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9C65E0082-content.html" alt="Generalization">
+<area shape="poly" coords="490,458,490,392,701,392,701,175,711,175,711,402,500,402,500,458,490,458" href="_3E3F0EC000E93EA9C65E0082-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFFC198014F-content.html" alt="Generalization">
+<area shape="poly" coords="979,549,979,403,701,403,701,175,711,175,711,393,989,393,989,549,979,549" href="_3E3F0EC000E93EFFC198014F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EFFC148032B-content.html" alt="Generalization">
+<area shape="poly" coords="685,456,685,393,701,393,701,175,711,175,711,403,695,403,695,456,685,456" href="_3E3F0EC000E93EFFC148032B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9D38E00C3-content.html" alt="Generalization">
+<area shape="poly" coords="1062,456,1062,403,701,403,701,175,711,175,711,393,1071,393,1071,456,1062,456" href="_3E3F0EC000E93EA9D38E00C3-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9D38A02D0-content.html" alt="Generalization">
+<area shape="poly" coords="1170,549,1170,403,701,403,701,175,711,175,711,393,1179,393,1179,549,1170,549" href="_3E3F0EC000E93EA9D38A02D0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9D386034C-content.html" alt="Generalization">
+<area shape="poly" coords="884,456,884,403,701,403,701,175,711,175,711,393,894,393,894,456,884,456" href="_3E3F0EC000E93EA9D386034C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9C66201BE-content.html" alt="Generalization">
+<area shape="poly" coords="588,549,588,393,701,393,701,175,711,175,711,403,598,403,598,549,588,549" href="_3E3F0EC000E93EA9C66201BE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EA9E078021F-content.html" alt="Generalization">
+<area shape="poly" coords="145,594,145,552,155,552,155,594,145,594" href="_3E3F0EC000E93EA9E078021F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8EB0004E" alt="managementMethodSupported">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8E85007E" alt="managementMethodCurrent">
+<area shape="rect" coords="310,128,434,179" href="_3E3F0EC000E93DDE84F30225-content.html" alt="ManagedEntity">
+<area shape="rect" coords="9,125,207,176" href="_3E3F0EC000E93E301ED6039E-content.html" alt="ManagementMethodEntity">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9C4B00192" alt="retrievalMethodsSupported">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9C4B00188" alt="retrievalMethodCurrent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E9C638A02CB-content.html#_3E3F0EC000E93EA9C0A8027F" alt="mgmtInfoValidFor">
+<area shape="rect" coords="603,127,741,178" href="_3E3F0EC000E93E9C638A02CB-content.html" alt="ManagementInfo">
+<area shape="rect" coords="901,549,1068,600" href="_3E3F0EC000E93EFFC16A01F3-content.html" alt="ServiceStatisticalInfo">
+<area shape="rect" coords="621,456,756,507" href="_3E3F0EC000E93EFFC1300196-content.html" alt="ServiceStateInfo">
+<area shape="rect" coords="242,503,394,554" href="_3E3F0EC000E93EA9E09101AB-content.html" alt="ProprietaryMethod">
+<area shape="rect" coords="182,432,282,483" href="_3E3F0EC000E93E301FB5017B-content.html" alt="TL1Method">
+<area shape="rect" coords="94,504,207,555" href="_3E3F0EC000E93E301FAA00AE-content.html" alt="SNMPMethod">
+<area shape="rect" coords="95,594,210,645" href="_3E3F0EC000E93E301FB0000C-content.html" alt="RMONMethod">
+<area shape="rect" coords="29,432,126,483" href="_3E3F0EC000E93E301F9E00A9-content.html" alt="CLIMethod">
+<area shape="rect" coords="1014,456,1122,507" href="_3E3F0EC000E93E300B6E017B-content.html" alt="SecurityInfo">
+<area shape="rect" coords="1107,549,1244,600" href="_3E3F0EC000E93E300B650205-content.html" alt="PerformanceInfo">
+<area shape="rect" coords="826,456,953,507" href="_3E3F0EC000E93E34D5C10262-content.html" alt="AccountingInfo">
+<area shape="rect" coords="502,549,682,600" href="_3E3F0EC000E93EA9C6030136-content.html" alt="ResourceStatisticalInfo">
+<area shape="rect" coords="422,458,573,509" href="_3E3F0EC000E93EA9C5CE02F2-content.html" alt="ResourceStateInfo">
+<area shape="rect" coords="374,9,439,60" href="_3E3F0EC000E93DDE84EE01B9-content.html" alt="Entity">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure LR.54 - Concepts of ManagementInfo and ManagementMethodEntity</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

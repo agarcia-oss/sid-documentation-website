@@ -1,0 +1,145 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Calendar Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Calendar ABE::_ Calendar Addendum Figures::Figure Cal.12 - Schedule Definition<br>
+</span><span class="ElementTitle">Diagram Figure Cal.12 - Schedule Definition<br>
+</span><span class="ElementDocumentation">The Schedule Definition model is targeted to answer the need of applications to schedule jobs either on a recurring basis or at specific dates and times. The base entity for Schedule Definition is the ScheduleDefinition entity. A ScheduleDefinition entity is associated with a management job entity when it is scheduled. ScheduleDefinition is an abstract entity as any schedule definition has specific parameters that need to be defined by using its sub-entities.</br>The following diagram shows the data model of the Schedule Definition.</br>A Schedule Definition may be either Recurring or Fixed. A Recurring schedule definition is composed of four parts: </br>        •	The base RecurringScheduleDefinition entity. This entity has the general attributes necessary for any definition of a recurring schedule. RecurringScheduleDefinition is an abstract entity as any schedule definition having a specific recurrence pattern needs to be defined by using its sub-entities. The general attributes of a base recurring schedule definition entity are:</br>             •	scheduleDefinitionStartTime -- The start time of a schedule definition.</br>             •	scheduleDefinitionEndTime -- The end time of a schedule definition.</br>             •	recurringFrequency -- An optional intra-day schedule recurrence, such as: every 5 minutes, 15 minutes, 30 minutes, 1 hour.</br>             •	scheduleDefinitionHoursRange -- A list of time ranges within a specific day when the schedule should be active, for example 08:00-12:00, 16:00-19:00.</br>             •	scheduleStartOffset -- An offset relating to the recurring interval. For example, if the recurring interval is 1 hour and the offset is 10 minutes, a job will be executed at 1:10, 2:10, 3:10, etc.</br>        •	The supported recurrence patterns are defined via the sub-entities of the RecurringScheduleDefinition:</br>             •	WeeklyScheduleDefinition -- A schedule definition based on days of the week, for example every Saturday and Sunday. For this schedule an additional dayOfWeekRecurrence is added to define the list of the requested days. If no day is defined the schedule will be executed every day.</br>             •	MonthlyScheduleDaysofMonthDefinition -- A schedule definition based on days of the month, such as: 1st, 20th, 30th. For this schedule an additional dayOfMonthRecurrence is added to define the list of days.</br>             •	MonthlyScheduleDaysofWeekDefinition -- A schedule definition based on instances of days of week in the month, for example: the 1st Monday in a month. Two attributes are added to support this schedule: recurringWeekSequence for selecting the requested week and daysOfWeekRecurrence to indicate the requested days(s).</br>             •	DateScheduleDefinition -- This schedule definition supports the selection of specific dates such as: January</br>             •	1st 2012, July 4th 2015, etc. A scheduledDates attribute is used to define the list of the requested dates.</br>             •	A recurring schedule may optionally define the exclusion of specific dates from the scheduling definition is defined by associating a ScheduleDefinitionExclusion with the RecurringScheduleDefinition entity.</br>        •	The scheduleDefinitionExcludedDates Entity is optimally used to define the list of dates that should be excluded from the schedule.</br>        •	Finally, a Schedule Duration may optionally be defined by associating a Scheduled Duration Entity to the Recurring Schedule. A duration of a schedule is defined by specifying a base duration, an expected duration for the execution of a job. Extensions to the base duration may be optionally specified. It is possible to define expected duration for the extensions, the mean number of expected extensions and the maximal number of the expected extensions.</br>Unlike the Recurring schedule definition; it is possible to define a schedule containing exact execution times. This is done by using the FixedScheduleDefinition entity. Each fixed schedule is composed of a list of fixed scheduleitems. A fixed schedule item provides the schedule for a specific execution, supplying the fixScheduleStartTime and Schedule duration (as explained above).<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_R.m.vAJ9.u.sE.eGD0K.rE.cT.g.u.rQ.PNG" alt="Figure Cal.12 - Schedule Definition" usemap="#map_R.m.vAJ9.u.sE.eGD0K.rE.cT.g.u.rQ"></td>
+</tr>
+</table>
+<map name="map_R.m.vAJ9.u.sE.eGD0K.rE.cT.g.u.rQ">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOW.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingScheduledDuration">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOY.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduledItem">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOW.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingScheduledDuration">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOY.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduledItem">
+<area shape="rect" coords="1393,277,1556,292" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOW.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingScheduledDuration">
+<area shape="rect" coords="1439,323,1461,338" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOW.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingScheduledDuration">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOY.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduledItem">
+<area shape="rect" coords="1392,315,1399,330" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOY.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduledItem">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOY.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="FixedScheduleItemHasScheduleDuration">
+<area shape="poly" coords="1374,300,1474,300,1474,352,1464,352,1464,310,1374,310,1374,300" href="_R.m.wOY.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOTN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOU.d.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingFixedScheduleItem">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOX.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduleDefinition">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOTN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOU.d.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingFixedScheduleItem">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOX.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduleDefinition">
+<area shape="rect" coords="1001,212,1164,227" href="_R.m.wOTN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOU.d.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingFixedScheduleItem">
+<area shape="rect" coords="1108,288,1130,303" href="_R.m.wOTN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOU.d.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_havingFixedScheduleItem">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOX.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduleDefinition">
+<area shape="rect" coords="1028,288,1035,303" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOX.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_fixedScheduleDefinition">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOX.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="FixedScheduleDefinitionHasScheduleItems">
+<area shape="poly" coords="1013,272,1138,272,1138,282,1013,282,1013,272" href="_R.m.wOX.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOUN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="912,246,912,157,720,157,720,73,730,73,730,147,922,147,922,246,912,246" href="_R.m.wOUN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOM.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="582,203,582,147,720,147,720,73,730,73,730,157,592,157,592,203,582,203" href="_R.m.wOM.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n3.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="138,452,138,367,592,367,592,336,602,336,602,377,148,377,148,452,138,452" href="_R.m.v.n3.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n59.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="443,452,443,367,592,367,592,336,602,336,602,377,453,377,453,452,443,452" href="_R.m.v.n59.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n8.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="781,452,781,377,592,377,592,336,602,336,602,367,791,367,791,452,781,452" href="_R.m.v.n8.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOE.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Generalization">
+<area shape="poly" coords="1121,452,1121,377,592,377,592,336,602,336,602,367,1131,367,1131,452,1121,452" href="_R.m.wOE.d.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wON9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduledActivation">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOK9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="recurringscheduledefinition">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wON9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduledActivation">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOK9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="recurringscheduledefinition">
+<area shape="rect" coords="1180,373,1304,388" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wON9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduledActivation">
+<area shape="rect" coords="1276,398,1298,413" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wON9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduledActivation">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOK9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="recurringscheduledefinition">
+<area shape="rect" coords="766,279,773,294" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOK9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="recurringscheduledefinition">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOK.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Association">
+<area shape="poly" coords="729,267,1032,267,1032,386,1325,386,1325,396,1022,396,1022,277,729,277,729,267" href="_R.m.wOK.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOM9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinitionExcludedDates">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n9.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n_N.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinition">
+<area shape="rect" coords="0,0,0,0" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOM9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinitionExcludedDates">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n9.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n_N.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinition">
+<area shape="rect" coords="164,321,368,336" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOM9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinitionExcludedDates">
+<area shape="rect" coords="279,248,301,263" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOM9.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinitionExcludedDates">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n9.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n_N.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinition">
+<area shape="rect" coords="415,248,422,263" href="_R.m.v.n9.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n_N.u.sE.eGD0K.rE.cT.g.u.rQ" alt="_scheduleDefinition">
+<area shape="rect" coords="0,0,0,0" href="_R.m.v.n-9.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="ScheduleDefinitionExcludedDates">
+<area shape="poly" coords="446,280,263,280,263,270,446,270,446,280" href="_R.m.v.n-9.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="1145,280,1367,295" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOWN.u.sE.eGD0K.rE.cT.g.u.rQ" alt="fixedScheduleStartTime">
+<area shape="rect" coords="1138,240,1376,312" href="_R.m.wOVN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="FixedScheduleItem">
+<area shape="rect" coords="820,246,1015,313" href="_R.m.wOTN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="FixedScheduleDefinition">
+<area shape="rect" coords="452,307,721,322" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOSN.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduleStartOffset">
+<area shape="rect" coords="452,291,721,306" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wORN.u.sE.eGD0K.rE.cT.g.u.rQ" alt="recurringFrequency">
+<area shape="rect" coords="452,275,721,290" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOQ.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduleDefinitionHoursRange">
+<area shape="rect" coords="452,259,721,274" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOP.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduleDefinitionEndTime">
+<area shape="rect" coords="452,243,721,258" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOO.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduleDefinitionStartTime">
+<area shape="rect" coords="446,203,731,339" href="_R.m.wOL.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="RecurringScheduleDefinition">
+<area shape="rect" coords="1332,440,1514,455" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOJ.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="maxExtensions">
+<area shape="rect" coords="1332,424,1514,439" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOI.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="meanExtensions">
+<area shape="rect" coords="1332,408,1514,423" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOH.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="extensionDuration">
+<area shape="rect" coords="1332,392,1514,407" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOHN.u.sE.eGD0K.rE.cT.g.u.rQ" alt="baseDuration">
+<area shape="rect" coords="1325,352,1523,472" href="_R.m.wOGN.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="ScheduledDuration">
+<area shape="rect" coords="976,508,1250,523" href="_R.m.v.n_9.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOF.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="monthlyDaysOfWeekInstance">
+<area shape="rect" coords="976,492,1250,507" href="_R.m.v.n_9.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.wOE.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="daysOfWeek">
+<area shape="rect" coords="970,452,1260,540" href="_R.m.v.n_9.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="MonthlyScheduleDayOfWeekDefinition">
+<area shape="rect" coords="16,280,256,295" href="_R.m.v.n9.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n-.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="excludedDates">
+<area shape="rect" coords="9,240,265,312" href="_R.m.v.n9.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="ScheduleDefinitionExcludedDates">
+<area shape="rect" coords="615,492,894,507" href="_R.m.v.n7N.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n8.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="daysOfMonthRecurrence">
+<area shape="rect" coords="608,452,903,524" href="_R.m.v.n7N.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="MonthlyScheduleDayOfMonthDefinition">
+<area shape="rect" coords="359,492,537,507" href="_R.m.v.n4.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n6N.u.sE.eGD0K.rE.cT.g.u.rQ" alt="scheduledDates">
+<area shape="rect" coords="352,452,546,524" href="_R.m.v.n4.t.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="DateScheduleDefinition">
+<area shape="rect" coords="22,492,262,507" href="_R.m.v.n2N.u.sE.eGD0K.rE.cT.g.u.rQ-content.html#_R.m.v.n3.t.u.sE.eGD0K.rE.cT.g.u.rQ" alt="daysOfWeekRecurrence">
+<area shape="rect" coords="16,452,272,524" href="_R.m.v.n2N.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="WeeklyScheduleDefinition">
+<area shape="rect" coords="664,9,830,76" href="_R.m.v.n0N.u.sE.eGD0K.rE.cT.g.u.rQ-content.html" alt="ScheduleDefinition">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Cal.12 - Schedule Definition</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E7F96BB0290-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Calendar Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

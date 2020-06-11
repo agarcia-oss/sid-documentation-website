@@ -1,0 +1,200 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ TIP Service Management Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.z.bBQ4A.i.hE.e.a.mD.sE9.f2.uOU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ TIP Service Management Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Service Domain::TIP Service Management ABE::_ TIP Service Management Addendum Figures::Figure SO.31 TIP Service Management - Service Definition and Service Template<br>
+</span><span class="ElementTitle">Diagram Figure SO.31 TIP Service Management - Service Definition and Service Template<br>
+</span><span class="ElementDocumentation">The abstract class ServiceSpecification has been extended to support two new concepts introduced in the TIP Service Management interfaces:</br>[] ServiceDefinition</br>        •	used during service design time to define the characteristics of a service, their associated data types, and default values. These characteristics, known as ServiceSpecCharacteristics (SSC), may be globally set, which implies they can be defined in a service template, or otherwise only passed in real-time over an activation interface</br></br>[] ServiceTemplate	</br>        •	defines specific ServiceSpecCharacteristicsValues (SSCVs) for the SSCs that were defined in the Service Definition as being globally settable. The Service Template is checked against its associated Service Definition by verifying the presence of the SSCs and the validity of the corresponding assigned SSCVs. Only Service Templates that contain SSCs/SSCVs that are in conformance with their specification in the Service Definition are considered valid.</br></br>Both Service Activation interfaces make use of the Service Definition and Service Template concepts in the activation of CustomerFacingServices and ResourceFacingServices.</br>The ServiceDefinition and ServiceTemplate further define the Service Specification through their respective associations, with the versions being identified through the ServiceSpecVersion. The association class ServiceSpecRelationship allows for Service Specifications to contain other Service Specifications, which thus holds true for Service Definitions and Service Templates.  For example, there may be a type of Service Definition for Ethernet Services, and contained within that type are E-LINE, E-LAN, and E-TREE Service Definitions. </br>The ServiceAccessPoint (SAP) represents a unique (logical and/or physical) resource where the Service can be accessed. The Sap Specification defines a set of attributes and associated values that may be applied to one or more SAPs. The relationship between the Service Specification and the Sap Specification illustrates that for every Service Specification, there may be associated multiple Sap Specifications. For example, given an Ethernet E-LINE Service Specification, there may be multiple Sap Specifications that correspond to various Bandwidth Profile Specifications that can be applied to the Sap – one for GOLD, one for SILVER, and one for BRONZE. Likewise, there may be a single Sap Specification , or in this case Bandwidth Profile Specification, that is used for multiple Ethernet Service Specifications – E-LINE and E-LAN. A Bandwidth Profile Specification defines Service Level Agreement guarantees and may be applied per UNI, per EVC, or per CoS Id. They contain frame delivery per Service Level Objectives (Committed Information Rate, Committed Burst Size), and amount of excess frame delivery allowed (Excess Information Rate, Excess Burst Size).</br>A ServiceCatalog represents a grouping of Service Specifications and SSCs.  For example, a catalog could group all internet related Service Specifications. The following figure illustrates the Service Definition, and Service Template concepts, and the relationship between the Service Catalog and the Service Specification.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.mZ_UENMFE.d-5.oM.nZ.gPZ.l5A.PNG" alt="Figure SO.31 TIP Service Management - Service Definition and Service Template" usemap="#map_.mZ_UENMFE.d-5.oM.nZ.gPZ.l5A"></td>
+</tr>
+</table>
+<map name="map_.mZ_UENMFE.d-5.oM.nZ.gPZ.l5A">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_G.f.e.c.cA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship2">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_G.f.g4.sA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_G.f.e.c.cA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship2">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_G.f.g4.sA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_G.f.e.c.cA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship2">
+<area shape="rect" coords="935,326,941,342" href="_3E3F0EC000E93D5092210347-content.html#_G.f.e.c.cA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship2">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_G.f.g4.sA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification2">
+<area shape="rect" coords="685,248,692,264" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_G.f.g4.sA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification2">
+<area shape="rect" coords="755,245,943,261" href="_G.f.dOUA.i.mE.e.a.mD.sE9.f2.uOU.g-content.html" alt="ServiceSpecificationReferences">
+<area shape="poly" coords="670,257,953,257,953,344,943,344,943,267,670,267,670,257" href="_G.f.dOUA.i.mE.e.a.mD.sE9.f2.uOU.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_F.c.m.qMA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_F.c.sJ.wA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_F.c.m.qMA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_F.c.sJ.wA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_F.c.m.qMA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship">
+<area shape="rect" coords="836,325,842,341" href="_3E3F0EC000E93D5092210347-content.html#_F.c.m.qMA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecRelationship">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_F.c.sJ.wA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification">
+<area shape="rect" coords="686,306,693,322" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_F.c.sJ.wA.i.mE.e.a.mD.sE9.f2.uOU.g" alt="serviceSpecification">
+<area shape="rect" coords="700,276,905,292" href="_F.c.j.m4A.i.mE.e.a.mD.sE9.f2.uOU.g-content.html" alt="ServiceSpecificationReferencedBy">
+<area shape="poly" coords="670,294,858,294,858,344,848,344,848,304,670,304,670,294" href="_F.c.j.m4A.i.mE.e.a.mD.sE9.f2.uOU.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_X4O_.sA.hNE.eK.d772E.jCNG2A-content.html#_UUF.uEA.hOE.eK.d772E.jCNG2A" alt="validFor">
+<area shape="rect" coords="152,125,359,177" href="_X4O_.sA.hNE.eK.d772E.jCNG2A-content.html" alt="ServCatalogServCandidate">
+<area shape="rect" coords="0,0,0,0" href="_TL.sY.kNMYE.d-5.oM.nZ.gPZ.l5A-content.html#_X4VGUA.hNE.eK.d772E.jCNG2A" alt="servicecandidate">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_X4.dCIA.hNE.eK.d772E.jCNG2A" alt="servicecatalog">
+<area shape="rect" coords="0,0,0,0" href="_TL.sY.kNMYE.d-5.oM.nZ.gPZ.l5A-content.html#_X4VGUA.hNE.eK.d772E.jCNG2A" alt="servicecandidate">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_X4.dCIA.hNE.eK.d772E.jCNG2A" alt="servicecatalog">
+<area shape="rect" coords="0,0,0,0" href="_TL.sY.kNMYE.d-5.oM.nZ.gPZ.l5A-content.html#_X4VGUA.hNE.eK.d772E.jCNG2A" alt="servicecandidate">
+<area shape="rect" coords="78,204,84,220" href="_TL.sY.kNMYE.d-5.oM.nZ.gPZ.l5A-content.html#_X4VGUA.hNE.eK.d772E.jCNG2A" alt="servicecandidate">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_X4.dCIA.hNE.eK.d772E.jCNG2A" alt="servicecatalog">
+<area shape="rect" coords="78,76,84,92" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_X4.dCIA.hNE.eK.d772E.jCNG2A" alt="servicecatalog">
+<area shape="poly" coords="105,57,105,240,95,240,95,57,105,57" href="_X4O_.sA.hNE.eK.d772E.jCNG2A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_3.q.hK.sI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3.q.eHYI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceCandidate">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_3.q.hK.sI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3.q.eHYI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceCandidate">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_3.q.hK.sI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceSpecification">
+<area shape="rect" coords="463,247,483,263" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_3.q.hK.sI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3.q.eHYI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceCandidate">
+<area shape="rect" coords="172,241,178,257" href="_3E3F0EC000E93D5092210347-content.html#_3.q.eHYI.x8E.eGZ.s.pR.sLEOL2.w" alt="serviceCandidate">
+<area shape="rect" coords="212,251,440,267" href="_3.q.bEEI.x8E.eGZ.s.pR.sLEOL2.w-content.html" alt="ServiceSpecificationMadeAvailableAs">
+<area shape="poly" coords="157,263,495,263,495,273,157,273,157,263" href="_3.q.bEEI.x8E.eGZ.s.pR.sLEOL2.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93E5C4C0F02A2" alt="_service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93E5C4C0F02C0" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93E5C4C0F02A2" alt="_service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93E5C4C0F02C0" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93E5C4C0F02A2" alt="_service">
+<area shape="rect" coords="956,83,964,100" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93E5C4C0F02A2" alt="_service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93E5C4C0F02C0" alt="_serviceSpecification">
+<area shape="rect" coords="639,239,647,256" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93E5C4C0F02C0" alt="_serviceSpecification">
+<area shape="rect" coords="747,98,873,115" href="_3E3F0EC000E93E5C4C0C01DF-content.html" alt="SpecifiesService">
+<area shape="poly" coords="649,254,649,123,957,123,957,76,967,76,967,133,659,133,659,254,649,254" href="_3E3F0EC000E93E5C4C0C01DF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_.j.rDW8ON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_.j.rNH8.eN_E.d-.aE.a3H1.f.r.m.uA" alt="_servicetemplate">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_.j.rDW8ON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_.j.rNH8.eN_E.d-.aE.a3H1.f.r.m.uA" alt="_servicetemplate">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_.j.rDW8ON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="595,308,603,325" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_.j.rDW8ON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_.j.rNH8.eN_E.d-.aE.a3H1.f.r.m.uA" alt="_servicetemplate">
+<area shape="rect" coords="869,518,895,535" href="_3E3F0EC000E93D5092210347-content.html#_.j.rNH8.eN_E.d-.aE.a3H1.f.r.m.uA" alt="_servicetemplate">
+<area shape="rect" coords="617,429,968,446" href="_.j.q6NAON_E.d-.aE.a3H1.f.r.m.uA-content.html" alt="ServiceSpecFurtherDefinedByServiceTemplate">
+<area shape="poly" coords="850,539,850,426,603,426,603,302,613,302,613,416,860,416,860,539,850,539" href="_.j.q6NAON_E.d-.aE.a3H1.f.r.m.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_X.y.h.p.wON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_X.y0.k.sON_E.d-.aE.a3H1.f.r.m.uA" alt="_servicedefinition">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_X.y.h.p.wON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_X.y0.k.sON_E.d-.aE.a3H1.f.r.m.uA" alt="_servicedefinition">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_X.y.h.p.wON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="573,304,581,321" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_X.y.h.p.wON_E.d-.aE.a3H1.f.r.m.uA" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_X.y0.k.sON_E.d-.aE.a3H1.f.r.m.uA" alt="_servicedefinition">
+<area shape="rect" coords="385,522,411,539" href="_3E3F0EC000E93D5092210347-content.html#_X.y0.k.sON_E.d-.aE.a3H1.f.r.m.uA" alt="_servicedefinition">
+<area shape="rect" coords="213,427,570,444" href="_X.yX4.wON_E.d-.aE.a3H1.f.r.m.uA-content.html" alt="ServiceSpecFurtherDefinedByServiceDefinition">
+<area shape="poly" coords="375,539,375,414,558,414,558,302,568,302,568,424,384,424,384,539,375,539" href="_X.yX4.wON_E.d-.aE.a3H1.f.r.m.uA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="199,364,207,381" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="478,269,486,286" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="215,334,386,351" href="_3E3F0EC000E93DB248EB0118-content.html" alt="ServSpecModifications">
+<area shape="poly" coords="495,298,425,298,425,360,186,360,186,350,415,350,415,288,495,288,495,298" href="_3E3F0EC000E93DB248EB0118-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50922C0285-content.html#_3E3F0EC000E93D5145C903D6" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93D5145C903E0" alt="_serviceSpecificationType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50922C0285-content.html#_3E3F0EC000E93D5145C903D6" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93D5145C903E0" alt="_serviceSpecificationType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50922C0285-content.html#_3E3F0EC000E93D5145C903D6" alt="_serviceSpecification">
+<area shape="rect" coords="559,216,567,233" href="_3E3F0EC000E93D50922C0285-content.html#_3E3F0EC000E93D5145C903D6" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93D5145C903E0" alt="_serviceSpecificationType">
+<area shape="rect" coords="559,82,567,99" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93D5145C903E0" alt="_serviceSpecificationType">
+<area shape="rect" coords="342,127,621,144" href="_3E3F0EC000E93D5145C90155-content.html" alt="ServiceSpecificationTypeCategorizes">
+<area shape="poly" coords="587,62,587,254,577,254,577,62,587,62" href="_3E3F0EC000E93D5145C90155-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.d.l.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceTemplate">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.nW.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceDefinition">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.d.l.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceTemplate">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.nW.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceDefinition">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.d.l.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceTemplate">
+<area shape="rect" coords="715,577,723,594" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.d.l.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceTemplate">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.nW.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceDefinition">
+<area shape="rect" coords="507,577,515,594" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_73.nW.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="_serviceDefinition">
+<area shape="rect" coords="515,550,715,567" href="_73U.b.gNMJE.d-5.oM.nZ.gPZ.l5A-content.html" alt="ServiceDefinitionValidates">
+<area shape="poly" coords="467,563,764,563,764,573,467,573,467,563" href="_73U.b.gNMJE.d-5.oM.nZ.gPZ.l5A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_-.r.h_AA.i.lE.e.a.mD.sE9.f2.uOU.g" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html#_-.r.g.w4A.i.lE.e.a.mD.sE9.f2.uOU.g" alt="type">
+<area shape="rect" coords="809,344,1002,396" href="_.v.r.m.cAA.i.lE.e.a.mD.sE9.f2.uOU.g-content.html" alt="ServiceSpecRelationship">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#__HL.n.oI6ME.eG1.z.p.x01B96.s.g" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_7.tI.i.oI6ME.eG1.z.p.x01B96.s.g" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_4RN1YI6ME.eG1.z.p.x01B96.s.g" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_1.m.bDEI6ME.eG1.z.p.x01B96.s.g" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html#_.yHI4.wI6ME.eG1.z.p.x01B96.s.g" alt="ID">
+<area shape="rect" coords="9,240,159,280" href="_6T8JAI.xFE.eGZ.s.pR.sLEOL2.w-content.html" alt="ServiceCandidate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93E62A81E03CE" alt="isStateful">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB20E0A020D" alt="startMode">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB20FB10355" alt="isMandatory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB20EE901D1" alt="hasStarted">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB597CC0294" alt="isServiceEnabled">
+<area shape="rect" coords="895,28,989,79" href="_3E3F0EC000E93D50919E00E6-content.html" alt="Service">
+<area shape="rect" coords="47,9,188,60" href="_TL.sY.kNMYE.d-5.oM.nZ.gPZ.l5A-content.html" alt="ServiceCatalog">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24B2702A1" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24AD90032" alt="timestamp">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24C6302B9" alt="semantics">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24C2602F7" alt="reason">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24B4E0333" alt="number">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24BA502D4" alt="format">
+<area shape="rect" coords="16,346,188,397" href="_3E3F0EC000E93DB2481E005F-content.html" alt="ServiceSpecVersion">
+<area shape="rect" coords="480,14,684,65" href="_3E3F0EC000E93D50922C0285-content.html" alt="ServiceSpecificationType">
+<area shape="rect" coords="495,254,672,305" href="_3E3F0EC000E93D5092210347-content.html" alt="ServiceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_.p5G.i.cNMJE.d-5.oM.nZ.gPZ.l5A" alt="serviceLocation">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_.m.rUX0NMJE.d-5.oM.nZ.gPZ.l5A" alt="source">
+<area shape="rect" coords="0,0,0,0" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_U.j.t5QNMJE.d-5.oM.nZ.gPZ.l5A" alt="stStatus">
+<area shape="rect" coords="764,539,1007,601" href="_.cY.oR8NMHE.d-5.oM.nZ.gPZ.l5A-content.html" alt="ServiceTemplate">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_7JH.uMNMIE.d-5.oM.nZ.gPZ.l5A" alt="activationMode">
+<area shape="rect" coords="0,0,0,0" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html#_F.tTUENMIE.d-5.oM.nZ.gPZ.l5A" alt="sdStatus">
+<area shape="rect" coords="255,539,469,590" href="_SD6.g4NMHE.d-5.oM.nZ.gPZ.l5A-content.html" alt="ServiceDefinition">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure SO.31 TIP Service Management - Service Definition and Service Template</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.z.bBQ4A.i.hE.e.a.mD.sE9.f2.uOU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ TIP Service Management Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

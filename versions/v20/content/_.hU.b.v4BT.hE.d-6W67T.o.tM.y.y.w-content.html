@@ -1,0 +1,139 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Product Offering Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_PE.zRYK7.iE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Product Offering Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Product Domain::Product Offering ABE::_Product Offering Addendum Figures::Figure Pr.31 - Modeling matrix values<br>
+</span><span class="ElementTitle">Diagram Figure Pr.31 - Modeling matrix values<br>
+</span><span class="ElementDocumentation">We can look at each value (cell) of n dimensional matrix as n+1-tupple of Characteristic Values, one describes the cell value and the other n are the indices of the dimensions (not numeric indices, but the values are themselves indices). Since each index can be either CharacteristicValue or ProductCharacteristicValue we cannot use the self-association for the CharacteristcValue class. Instead we define the class MatrixCharValueIndex which associate either CharacteristcValue or ProductCharacteristicValue. In addition we define a class which is derived from CharacteristicValue which represent a matrix value and includes associations to the matrix dimensions (defined by either CharacteristicValue or ProductCharacteristicValue) and aggregates the matrix cell values which are derived from CharValue (to include the value) and associated with the MatrixCharValueIndex for the indices of this cell value.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_.hU.b.v4BT.hE.d-6W67T.o.tM.y.y.w.PNG" alt="Figure Pr.31 - Modeling matrix values" usemap="#map_.hU.b.v4BT.hE.d-6W67T.o.tM.y.y.w"></td>
+</tr>
+</table>
+<map name="map_.hU.b.v4BT.hE.d-6W67T.o.tM.y.y.w">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.bNR.cABT.vE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex2">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.bNR.cA.xT.vE.d-6W67T.o.tM.y.y.w" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.bNR.cABT.vE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex2">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.bNR.cA.xT.vE.d-6W67T.o.tM.y.y.w" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.bNR.cABT.vE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex2">
+<area shape="rect" coords="199,510,207,527" href="_3E3F0EC000E945FB02B00298-content.html#_.bNR.cABT.vE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex2">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.bNR.cA.xT.vE.d-6W67T.o.tM.y.y.w" alt="_characteristicValue">
+<area shape="rect" coords="348,123,374,140" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.bNR.cA.xT.vE.d-6W67T.o.tM.y.y.w" alt="_characteristicValue">
+<area shape="rect" coords="80,85,360,102" href="_.bNH.rABT.vE.d-6W67T.o.tM.y.y.w-content.html" alt="MatrixDimensionDefinedByCharValue">
+<area shape="poly" coords="381,120,143,120,143,496,228,496,228,505,133,505,133,110,381,110,381,120" href="_.bNH.rABT.vE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D6E322B021D-content.html#__.i3K.cRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#__.jA7.cBT.uE.d-6W67T.o.tM.y.y.w" alt="_productCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D6E322B021D-content.html#__.i3K.cRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#__.jA7.cBT.uE.d-6W67T.o.tM.y.y.w" alt="_productCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D6E322B021D-content.html#__.i3K.cRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="283,517,291,534" href="_3E3F0EC000E93D6E322B021D-content.html#__.i3K.cRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#__.jA7.cBT.uE.d-6W67T.o.tM.y.y.w" alt="_productCharacteristicValue">
+<area shape="rect" coords="464,533,490,550" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#__.jA7.cBT.uE.d-6W67T.o.tM.y.y.w" alt="_productCharacteristicValue">
+<area shape="rect" coords="148,572,463,589" href="__.i3K.cBT.uE.d-6W67T.o.tM.y.y.w-content.html" alt="MatrixDimensionDefinedByProdCharValue">
+<area shape="poly" coords="496,568,270,568,270,514,279,514,279,559,496,559,496,568" href="__.i3K.cBT.uE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.oBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="0,0,0,0" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.o.xT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex3">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.oBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="0,0,0,0" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.o.xT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex3">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.oBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="671,345,697,362" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.oBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="0,0,0,0" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.o.xT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex3">
+<area shape="rect" coords="413,473,439,490" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.b.q.mG.o.xT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex3">
+<area shape="rect" coords="454,448,653,465" href="_.b.q.cV.oBT.uE.d-6W67T.o.tM.y.y.w-content.html" alt="MatrixCellValueIndexedBy">
+<area shape="poly" coords="413,468,656,468,656,327,666,327,666,478,413,478,413,468" href="_.b.q.cV.oBT.uE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.sRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.tBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="0,0,0,0" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.sRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.tBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="0,0,0,0" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.sRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="240,432,266,449" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.sRT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixCharValueIndex">
+<area shape="rect" coords="0,0,0,0" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.tBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="249,338,257,355" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_L.q.b1.tBT.uE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="168,403,456,420" href="_L.q.b1.sBT.uE.d-6W67T.o.tM.y.y.w-content.html" alt="MatrixCharValueDimensionsDefinedBy">
+<area shape="poly" coords="277,327,277,461,267,461,267,327,277,327" href="_L.q.b1.sBT.uE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_.tZSLYRT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="0,0,0,0" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.tZ.b8YBT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="0,0,0,0" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_.tZSLYRT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="0,0,0,0" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.tZ.b8YBT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="0,0,0,0" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_.tZSLYRT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="638,333,646,350" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html#_.tZSLYRT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixCellCharValue">
+<area shape="rect" coords="0,0,0,0" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.tZ.b8YBT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="333,333,341,350" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html#_.tZ.b8YBT.tE.d-6W67T.o.tM.y.y.w" alt="_matrixcharvalue">
+<area shape="rect" coords="335,378,633,395" href="_.tZSLYBT.tE.d-6W67T.o.tM.y.y.w-content.html" alt="MatrixCharValueComposedOfCellValues">
+<area shape="poly" coords="327,327,327,373,629,373,629,327,639,327,639,383,317,383,317,327,327,327" href="_.tZSLYBT.tE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.g8.hI.sBT.tE.d-6W67T.o.tM.y.y.w-content.html" alt="Generalization">
+<area shape="poly" coords="584,279,584,232,465,232,465,169,475,169,475,222,594,222,594,279,584,279" href="_.g8.hI.sBT.tE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.f.kA.d.oBT.tE.d-6W67T.o.tM.y.y.w-content.html" alt="Generalization">
+<area shape="poly" coords="346,279,346,222,466,222,466,169,476,169,476,232,356,232,356,279,346,279" href="_.f.kA.d.oBT.tE.d-6W67T.o.tM.y.y.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="480,59,488,76" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401E6" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="548,115,574,132" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E9463FD62401F6" alt="_characteristicValue1">
+<area shape="rect" coords="473,23,705,40" href="_3E3F0EC000E9463FD6220215-content.html" alt="CharacteristicValueReferences">
+<area shape="poly" coords="549,100,601,100,601,57,521,57,521,84,511,84,511,47,611,47,611,110,549,110,549,100" href="_3E3F0EC000E9463FD6220215-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="496,523,717,590" href="_3E3F0EC000E93D6E322B021D-content.html" alt="ProductCharacteristicValue">
+<area shape="rect" coords="234,485,405,500" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html#_81.q.lUBW.nE.d-.c9.bE.s6.v.qP.w.g" alt="seqNum">
+<area shape="rect" coords="228,461,415,517" href="_M.m.z.i.wBP7E.d-O57.wBCB.zL.fA-content.html" alt="MatrixCharValueIndex">
+<area shape="rect" coords="546,279,718,330" href="_I.bL24BP7E.d-O57.wBCB.zL.fA-content.html" alt="MatrixCellCharValue">
+<area shape="rect" coords="247,279,397,330" href="_A.z6.j.gBP7E.d-O57.wBCB.zL.fA-content.html" alt="MatrixCharValue">
+<area shape="rect" coords="388,140,542,155" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D2" alt="validFor">
+<area shape="rect" coords="388,124,542,139" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D1" alt="value">
+<area shape="rect" coords="381,84,551,172" href="_3E3F0EC000E945FB02B00298-content.html" alt="CharacteristicValue">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure Pr.31 - Modeling matrix values</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_PE.zRYK7.iE.e.m4MLRDQ.x.u.uU.g-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Product Offering Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

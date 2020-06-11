@@ -1,0 +1,198 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Workforce Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.hJAOMN.mWE.eC.z9.a.o.eR.f.u.g.hA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Workforce Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Enterprise Domain::Workforce ABE::_ Workforce Addendum Figures::Figure WFM.03 - Work / Work Specification<br>
+</span><span class="ElementTitle">Diagram Figure WFM.03 - Work / Work Specification<br>
+</span><span class="ElementDocumentation">Following the Entity/EntitySpecification pattern, with WorkSpecification we also introduce the Work ABE. It contains the entities of Work and WorkRole.</br>Work is instantiated from WorkSpecification, with template invariant characteristics, and the addition of specific attributes with values of the work for a specific context.</br>This Figure depicts the Work and WorkSpecification entities, along with their related instance entities, WorkRole and WorkSpecificationRole. They represent an application of the SID EntitySpecification/Entity pattern, CharacteristicUse, etc.</br><Note>Note: Instead of modeling WorkSpecificationCharacteristic, WorkSpecCharacteristicValue, and WorkCharacteristicValue as new classes, we relate WorkSpecification to EntitySpecCharUse, and relate Work with CharacteristicValue.</Note></br>Role class model can be used to simplify the modeling of different types of WorkSpecification and Work, to make the model inherently more extensible.</br>Instead of trying to define many subclasses (one for each different type of Work) or introduce multiple inheritances (so that a new Work would derive from a set of existing Works), we can instead define a set of roles that a Work is meant to play. For example, a Work of fiber rollout at a location on a date can be a build task in an infrastructure project, or a role of installation task in a service fulfillment project. So the specification of these variants of the work can be a bit different. Instead of making sub-classes of this work to cover these cases, two roles of fiber rollout for network build, and fiber rollout for service delivery, can be introduced.</br>The Cardinality is 1-* because Work can have more than one role with different characteristics in different contexts.</br>Similarly, WorkSpecficationRole can extend the invariant characteristics of a WorkSpecification (a set of roles is used to characterize different sets of functionalities of the WorkSpecification) in different contexts. For example, a CPE installation work specification may have in addition, via WorkSpecificationRoles, the specifications of ONT installation, Cable modem installation, or DSL modem installation.</br><Note>Note: Project ABE can interact with Workforce ABE via Work Order. WorkOrderItem is associated with Work. </Note><br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_7VB4.kN.nKE.eC.z9.a.o.eR.f.u.g.hA.PNG" alt="Figure WFM.03 - Work / Work Specification" usemap="#map_7VB4.kN.nKE.eC.z9.a.o.eR.f.u.g.hA"></td>
+</tr>
+</table>
+<map name="map_7VB4.kN.nKE.eC.z9.a.o.eR.f.u.g.hA">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="839,488,845,504" href="_3E3F0EC000E94462AE0602C5-content.html#_K0I.v.wI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="839,426,859,442" href="_3E3F0EC000E945FB02B00298-content.html#_K0Q.r.kI.k.lE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecValue">
+<area shape="rect" coords="650,457,884,473" href="_K0AM4I.k.lE.eOS.uN.o.dS.uP.rOQ-content.html" alt="CharacteristicSpecValueInstantiatedAs">
+<area shape="poly" coords="818,537,818,389,827,389,827,537,818,537" href="_K0AM4I.k.lE.eOS.uN.o.dS.uP.rOQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="682,304,688,320" href="_3E3F0EC000E94462ADF80016-content.html#__.f_.iAI.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="288,555,308,571" href="_3E3F0EC000E945FB02B00298-content.html#__.gH.d0I.k.kE.eOS.uN.o.dS.uP.rOQ" alt="characteristicSpecification">
+<area shape="rect" coords="350,405,688,421" href="__.f.u.cQI.k.kE.eOS.uN.o.dS.uP.rOQ-content.html" alt="CharacteristicSpecificationDescribesCharacteristicValue">
+<area shape="poly" coords="270,575,468,575,468,323,700,323,700,333,478,333,478,585,270,585,270,575" href="__.f.u.cQI.k.kE.eOS.uN.o.dS.uP.rOQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t0.d.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecificationRole">
+<area shape="rect" coords="0,0,0,0" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t1N.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t0.d.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecificationRole">
+<area shape="rect" coords="0,0,0,0" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t1N.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t0.d.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecificationRole">
+<area shape="rect" coords="190,66,198,83" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t0.d.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecificationRole">
+<area shape="rect" coords="0,0,0,0" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t1N.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="190,113,198,130" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.j.cM.t1N.s.gE.eCCS6PJ.w.v.kP.vA" alt="_workSpecification">
+<area shape="rect" coords="73,90,259,107" href="_.j.cM.t0N.s.gE.eCCS6PJ.w.v.kP.vA-content.html" alt="SpecifiesWorkSpecRoles">
+<area shape="poly" coords="171,132,171,65,180,65,180,132,171,132" href="_.j.cM.t0N.s.gE.eCCS6PJ.w.v.kP.vA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_X.f.sGU.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_X.f.sGVN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecification">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_X.f.sGU.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_X.f.sGVN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecification">
+<area shape="rect" coords="0,0,0,0" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_X.f.sGU.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_entitySpecCharUse">
+<area shape="rect" coords="156,230,164,247" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_X.f.sGU.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_X.f.sGVN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecification">
+<area shape="rect" coords="147,172,173,189" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_X.f.sGVN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecification">
+<area shape="rect" coords="78,201,286,218" href="_X.f.sGUN.p.hE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WorkSpecFurtherDefinedBy">
+<area shape="poly" coords="180,168,180,252,171,252,171,168,180,168" href="_X.f.sGUN.p.hE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_AQ2BI.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="0,0,0,0" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_AQ2BJN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecificationRole">
+<area shape="rect" coords="0,0,0,0" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_AQ2BI.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="0,0,0,0" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_AQ2BJN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecificationRole">
+<area shape="rect" coords="0,0,0,0" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_AQ2BI.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="634,45,642,62" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_AQ2BI.d.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="0,0,0,0" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_AQ2BJN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecificationRole">
+<area shape="rect" coords="352,45,360,62" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_AQ2BJN.p.hE.eC.o.lK.vQ.e.w.lW9Q" alt="_workSpecificationRole">
+<area shape="rect" coords="422,23,572,40" href="_AQ2BIN.p.hE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="SpecifiesWorkRoles">
+<area shape="poly" coords="295,34,700,34,700,44,295,44,295,34" href="_AQ2BIN.p.hE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.qZ6KE.d.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="0,0,0,0" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.q.aDUA.t.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.qZ6KE.d.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="0,0,0,0" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.q.aDUA.t.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.qZ6KE.d.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="807,71,815,88" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.qZ6KE.d.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_workRole">
+<area shape="rect" coords="0,0,0,0" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.q.aDUA.t.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="807,141,815,158" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.q.aDUA.t.p.gE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="715,106,863,123" href="_.qZ6KEN.p.gE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="RolesDescribeWork">
+<area shape="poly" coords="792,165,792,65,802,65,802,165,792,165" href="_.qZ6KEN.p.gE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.xQ.z.tQ.d.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.xQ9.eQN.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.xQ.z.tQ.d.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.xQ9.eQN.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="0,0,0,0" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.xQ.z.tQ.d.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_characteristicValue">
+<area shape="rect" coords="765,296,773,313" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_.xQ.z.tQ.d.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_characteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E945FB02B00298-content.html#_.xQ9.eQN.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="756,224,782,241" href="_3E3F0EC000E945FB02B00298-content.html#_.xQ9.eQN.p.cE.eC.o.lK.vQ.e.w.lW9Q" alt="_work">
+<area shape="rect" coords="724,260,857,277" href="_.xQ.z.tQN.p.cE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WorkDescribedBy">
+<area shape="poly" coords="789,217,789,320,779,320,779,217,789,217" href="_.xQ.z.tQN.p.cE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="618,633,626,650" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462B1B502B7" alt="_characteristicSpecValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="328,633,336,650" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462B1B502B9" alt="_characteristicSpecification">
+<area shape="rect" coords="332,603,644,620" href="_3E3F0EC000E94462B1B40297-content.html" alt="CharacteristicSpecificationEnumeratedBy">
+<area shape="poly" coords="270,622,685,622,685,632,270,632,270,622" href="_3E3F0EC000E94462B1B40297-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="178,437,186,454" href="_3E3F0EC000E94462ADF80016-content.html#_.s6E.u4.e.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_entitySpecCharUse">
+<area shape="rect" coords="0,0,0,0" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="178,499,186,516" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.s6O.f4O.f.rE.d-.qM.vG.jM6.f.x.w.w" alt="_characteristicSpecification2">
+<area shape="rect" coords="23,468,297,485" href="_.s6E.u4O.f.rE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="CharacteristicSpecFurtherDefinedBy">
+<area shape="poly" coords="162,522,162,433,172,433,172,522,162,522" href="_.s6E.u4O.f.rE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="707,360,861,375" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D2" alt="validFor">
+<area shape="rect" coords="707,344,861,359" href="_3E3F0EC000E945FB02B00298-content.html#_3E3F0EC000E945FB02DC03D1" alt="value">
+<area shape="rect" coords="700,320,870,392" href="_3E3F0EC000E945FB02B00298-content.html" alt="CharacteristicValue">
+<area shape="rect" coords="691,688,876,703" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960087" alt="validFor">
+<area shape="rect" coords="691,672,876,687" href="_3E3F0EC000E94462AE0602C5-content.html#_.p.h.yZ0O.i.sE.e.a.pXJ.y.l.xL.zJMA" alt="rangeStep">
+<area shape="rect" coords="691,656,876,671" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E946B74C03001F" alt="rangeInterval">
+<area shape="rect" coords="691,640,876,655" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960086" alt="valueTo">
+<area shape="rect" coords="691,624,876,639" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960085" alt="valueFrom">
+<area shape="rect" coords="691,608,876,623" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E9466F668502C8" alt="unitOfMeasure">
+<area shape="rect" coords="691,593,876,608" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960077" alt="value">
+<area shape="rect" coords="691,577,876,592" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960076" alt="isDefault">
+<area shape="rect" coords="691,561,876,576" href="_3E3F0EC000E94462AE0602C5-content.html#_3E3F0EC000E94462AE960075" alt="valueType">
+<area shape="rect" coords="685,537,886,721" href="_3E3F0EC000E94462AE0602C5-content.html" alt="CharacteristicSpecValue">
+<area shape="rect" coords="62,689,263,704" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02B8" alt="validFor">
+<area shape="rect" coords="62,673,263,688" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AB" alt="derivationFormula">
+<area shape="rect" coords="62,657,263,672" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9475EBBC502C1" alt="extensible">
+<area shape="rect" coords="62,641,263,656" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60280" alt="maxCardinality">
+<area shape="rect" coords="62,625,263,640" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E9461BA2D60271" alt="minCardinality">
+<area shape="rect" coords="62,609,263,624" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02AA" alt="valueType">
+<area shape="rect" coords="62,594,263,609" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E946F97EB7003E" alt="unique">
+<area shape="rect" coords="62,578,263,593" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A9" alt="description">
+<area shape="rect" coords="62,562,263,577" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A8" alt="name">
+<area shape="rect" coords="62,546,263,561" href="_3E3F0EC000E94462ADF80016-content.html#_3E3F0EC000E94462AE6B02A7" alt="ID">
+<area shape="rect" coords="56,522,273,722" href="_3E3F0EC000E94462ADF80016-content.html" alt="CharacteristicSpecification">
+<area shape="rect" coords="62,404,288,419" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.w8P.oAO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="validFor">
+<area shape="rect" coords="62,388,288,403" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.t.n6J.cO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="extensible">
+<area shape="rect" coords="62,372,288,387" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.o_O.uIO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="maxCardinality">
+<area shape="rect" coords="62,356,288,371" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.lM.y-UO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="minCardinality">
+<area shape="rect" coords="62,340,288,355" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_.c.bVI.sO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="canBeOverridden">
+<area shape="rect" coords="62,324,288,339" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_UT4.g.cO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="isPackage">
+<area shape="rect" coords="62,308,288,323" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_N.p.a.z.kO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="unique">
+<area shape="rect" coords="62,292,288,307" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_H.zG.g.cO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="description">
+<area shape="rect" coords="62,276,288,291" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html#_CQUNUO.f.kE.d-.qM.vG.jM6.f.x.w.w" alt="name">
+<area shape="rect" coords="56,252,298,436" href="_.sD.gM4O.f.jE.d-.qM.vG.jM6.f.x.w.w-content.html" alt="EntitySpecCharUse">
+<area shape="rect" coords="56,132,298,171" href="_QZDX.sN.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html" alt="WorkSpecification">
+<area shape="rect" coords="701,189,882,204" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_V.a-.y0O.n.nE.eC.c6.q.r.r.iD.h.hZA" alt="quantity">
+<area shape="rect" coords="694,165,891,221" href="_.c4IEQN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="Work">
+<area shape="rect" coords="706,36,887,51" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html#_Z.t.rWAB.uKE.eGSPP.o.aD41WR.w" alt="name">
+<area shape="rect" coords="700,12,897,68" href="_.hG.u.y.sN.pZE.eC.o.lK.vQ.e.w.lW9Q-content.html" alt="WorkRole">
+<area shape="rect" coords="62,36,288,51" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html#_.h1_.g8B.uKE.eGSPP.o.aD41WR.w" alt="name">
+<area shape="rect" coords="56,12,298,68" href="_.z-.xS8N.mZE.eC.z9.a.o.eR.f.u.g.hA-content.html" alt="WorkSpecificationRole">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure WFM.03 - Work / Work Specification</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.hJAOMN.mWE.eC.z9.a.o.eR.f.u.g.hA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Workforce Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

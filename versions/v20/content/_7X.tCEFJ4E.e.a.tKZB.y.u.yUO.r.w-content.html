@@ -1,0 +1,193 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Party Revenue Sharing Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.u5.n.x.cEK5E.e.a.m.lL.c.v.q.v7Y.pA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Party Revenue Sharing Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Business Partner Domain::Party Revenue &amp; Settlement ABE::Party Revenue Sharing ABE::_ Party Revenue Sharing Addendum Figures::Figure PRS.06 - Party Revenue Share Reconciliation<br>
+</span><span class="ElementTitle">Diagram Figure PRS.06 - Party Revenue Share Reconciliation<br>
+</span><span class="ElementDocumentation">The Party Revenue Sharing Reconciliation ABE ensures that two sets of party revenue sharing records are aligned and agreed upon. For example, an enterprise may receive an invoice from another party that is compared to the revenue share that has been determined to be shared with the party contained in the Party Revenue Share ABE.</br>Reconciliation includes comparing what is received with what is to be paid, invoiced or credited/debited to a bill/invoice or account balance, identifying and resolving discrepancies, identifying adjustments to revenue to be shared, and tracking discrepancy resolution.</br>PartyRevenueShareReconciliation and PartyRevShareConciliationItem represent a comparison of two sets of party revenue sharing records to ensure they are aligned and agreed upon. A comparison identifies and resolves discrepancies and identifies revenue share adjustments. This is done by comparing the revenue determined by an enterprise that is to be shared with another party with the information provided by the party. The information used in the reconciliation is provided on a revenue sharing notice, bill/invoice, or payment according to terms specified by a party revenue sharing agreement. For example, a party may provide their own version of a party revenue share for one or more of its product offerings.</br>PartyRevShareReconDiscrepancy represents the result of comparing information received from another party with the revenue share determined by an enterprise. Differences are classified as a discrepancy that is to be resolved. For example, an enterprise's calculated revenue share for a product offering may be missing a product that has been acquired that appears on a bill/invoice from another party. A discrepancy is communicated using RevShareReconDiscrepNotification. The communication contains information used in the reconciliation process from another party. The information provided is designated as preliminary until the reconciliation is complete. Because different forms of information can be provided by a party other processes and their associated entities may be involved. For example, if a bill/invoice is provided by a party then the Party Bill Inquiry Handling process may be invoked; if a payment is provided then the Party Payment Handling process may be invoked; if a revenue share notification is provided then the Identify Party Revenue Share Adjustment process may be invoked.</br>An overview of the entities within the Party Revenue Share Reconciliation ABE is shown in the following Figure.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_7X.tCEFJ4E.e.a.tKZB.y.u.yUO.r.w.PNG" alt="Figure PRS.06 - Party Revenue Share Reconciliation" usemap="#map_7X.tCEFJ4E.e.a.tKZB.y.u.yUO.r.w"></td>
+</tr>
+</table>
+<map name="map_7X.tCEFJ4E.e.a.tKZB.y.u.yUO.r.w">
+<area shape="rect" coords="0,0,0,0" href="_.jQ3.vAPM.aE.e.i4.j.cQ.r.uTR2.nQ-content.html" alt="Generalization">
+<area shape="poly" coords="325,610,243,610,243,600,325,600,325,610" href="_.jQ3.vAPM.aE.e.i4.j.cQ.r.uTR2.nQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_2T.r.f0FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="appliedPartyBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_2T.t8EFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_2T.r.f0FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="appliedPartyBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_2T.t8EFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_2T.r.f0FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="appliedPartyBillingRate">
+<area shape="rect" coords="810,561,816,577" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_2T.r.f0FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="appliedPartyBillingRate">
+<area shape="rect" coords="0,0,0,0" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_2T.t8EFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="576,468,596,484" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_2T.t8EFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="680,528,942,544" href="_2T.pD.kFJ-E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="AppliedPartyBillingRateCreatedBasedUpon">
+<area shape="poly" coords="565,478,828,478,828,579,818,579,818,488,565,488,565,478" href="_2T.pD.kFJ-E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPN1.sFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="revShareReconDiscrepNotification">
+<area shape="rect" coords="0,0,0,0" href="_24CY0FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPQR8FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPN1.sFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="revShareReconDiscrepNotification">
+<area shape="rect" coords="0,0,0,0" href="_24CY0FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPQR8FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPN1.sFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="revShareReconDiscrepNotification">
+<area shape="rect" coords="427,557,433,573" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPN1.sFJ-E.e.a.tKZB.y.u.yUO.r.w" alt="revShareReconDiscrepNotification">
+<area shape="rect" coords="0,0,0,0" href="_24CY0FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPQR8FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="426,497,433,513" href="_24CY0FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.tPQR8FJ-E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="301,527,613,543" href="_.tPLZ.cFJ-E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevShareReconDiscrepancyCommunicatedVia">
+<area shape="poly" coords="454,493,454,579,444,579,444,493,454,493" href="_.tPLZ.cFJ-E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vW.z.wFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareAdjustment">
+<area shape="rect" coords="0,0,0,0" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vZQAFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vW.z.wFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareAdjustment">
+<area shape="rect" coords="0,0,0,0" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vZQAFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vW.z.wFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareAdjustment">
+<area shape="rect" coords="120,285,126,301" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vW.z.wFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareAdjustment">
+<area shape="rect" coords="0,0,0,0" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vZQAFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="301,438,321,454" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.f.vZQAFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="25,363,279,379" href="_.f.vU-.kFJ9E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevShareReconDiscrepancyResultsIn">
+<area shape="poly" coords="325,458,128,458,128,283,138,283,138,448,325,448,325,458" href="_.f.vU-.kFJ9E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.aNQFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.c.p.gFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.aNQFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.c.p.gFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.aNQFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="435,427,441,443" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.aNQFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.c.p.gFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="434,299,441,315" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_H.c.c.p.gFJ9E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="330,358,579,374" href="_H.cX.xAFJ9E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevSgareReconDiscrepancyFoundIn">
+<area shape="poly" coords="451,289,451,444,441,444,441,289,451,289" href="_H.cX.xAFJ9E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_825AEFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_827.cUFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_825AEFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_827.cUFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_825AEFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyPayment">
+<area shape="rect" coords="803,374,823,390" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_825AEFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_827.cUFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="521,303,527,319" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_827.cUFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="613,325,753,341" href="_823K4FJ8E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyPaymentServesAs">
+<area shape="poly" coords="544,289,544,337,829,337,829,399,819,399,819,347,535,347,535,289,544,289" href="_823K4FJ8E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.vM58UFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.vM8Y.kFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.vM58UFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.vM8Y.kFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.vM58UFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyBill">
+<area shape="rect" coords="922,181,942,197" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.vM58UFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyBill">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.vM8Y.kFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="578,269,584,285" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.vM8Y.kFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="751,251,857,267" href="_.vM4HIFJ8E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyBillServesAs">
+<area shape="poly" coords="569,264,938,264,938,171,947,171,947,274,569,274,569,264" href="_.vM4HIFJ8E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.j86O.wFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.j88.rAFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.j86O.wFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.j88.rAFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.j86O.wFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="743,61,763,77" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.j86O.wFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShare">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.j88.rAFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="576,228,582,244" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.j88.rAFJ8E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="677,153,854,169" href="_.j83.y.gFJ8E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartytRevenueShareServesAs">
+<area shape="poly" coords="569,238,758,238,758,58,768,58,768,248,569,248,569,238" href="_.j83.y.gFJ8E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.g.b0FJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.i4EFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareReconciliation">
+<area shape="rect" coords="0,0,0,0" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.g.b0FJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.i4EFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareReconciliation">
+<area shape="rect" coords="0,0,0,0" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.g.b0FJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="412,210,430,226" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.g.b0FJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevShareReconciliationItem">
+<area shape="rect" coords="0,0,0,0" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.i4EFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareReconciliation">
+<area shape="rect" coords="418,139,425,155" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.k.x.i4EFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="partyRevenueShareReconciliation">
+<area shape="rect" coords="314,175,584,191" href="_.k.x.d_.kFJ5E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareReconciliationConsistsOf">
+<area shape="poly" coords="445,132,445,234,436,234,436,132,445,132" href="_.k.x.d_.kFJ5E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="16,630,236,646" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_4S.kTIMZXE.e.iA.o9CXTCG.m.b.g" alt="description">
+<area shape="rect" coords="16,613,236,629" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_.wJE.c.cMZXE.e.iA.o9CXTCG.m.b.g" alt="period">
+<area shape="rect" coords="16,596,236,612" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_.iW.e1MMV5E.e.iA.o9CXTCG.m.b.g" alt="type">
+<area shape="rect" coords="16,579,236,595" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html#_.wSM.p.gMV2E.e.iA.o9CXTCG.m.b.g" alt="sequence">
+<area shape="rect" coords="9,554,245,663" href="_.h.bZ0YMV2E.e.iA.o9CXTCG.m.b.g-content.html" alt="CommunicationInteractionItem">
+<area shape="rect" coords="0,0,0,0" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eW3.a.k4.cE.eO_X.pEX.s37Q.e.w" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eW3.aE4.cE.eO_X.pEX.s37Q.e.w" alt="quantity">
+<area shape="rect" coords="0,0,0,0" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.eW3Z.k4.cE.eO_X.pEX.s37Q.e.w" alt="date">
+<area shape="rect" coords="730,579,925,648" href="_.a.eW3ZE4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="AppliedPartyBillingRate">
+<area shape="rect" coords="325,579,581,631" href="_24CY0FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="RevShareReconDiscrepNotification">
+<area shape="rect" coords="0,0,0,0" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_V_.z1MFA.gE.e.a.tKZB.y.u.yUO.r.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_W2FV4FA.gE.e.a.tKZB.y.u.yUO.r.w" alt="adjustmentReason">
+<area shape="rect" coords="0,0,0,0" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_V_.y.nEFA.gE.e.a.tKZB.y.u.yUO.r.w" alt="dateDetermined">
+<area shape="rect" coords="26,234,260,286" href="_PC.p.a.gE3KE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareAdjustment">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.l0H.j0FKDE.e.a.tKZB.y.u.yUO.r.w" alt="actionTaken">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_.kSV.oAFKDE.e.a.tKZB.y.u.yUO.r.w" alt="dateResolved">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_P.tF.bQFKDE.e.a.tKZB.y.u.yUO.r.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_P.tE0MFKDE.e.a.tKZB.y.u.yUO.r.w" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_P.tD.mEFKDE.e.a.tKZB.y.u.yUO.r.w" alt="dateIdentified">
+<area shape="rect" coords="325,444,567,496" href="_0MF.v8FJ4E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevShareReconDiscrepancy">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.zU.zJ.gFJJE.eWPA.vIYYW.iWM.g" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_B.h4.s.kFJFE.eWPA.vIYYW.iWM.g" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_APC.k.oFJFE.eWPA.vIYYW.iWM.g" alt="direction">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.b.k4.cE.eO_X.pEX.s37Q.e.w" alt="remainingAmount">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.bU4.cE.eO_X.pEX.s37Q.e.w" alt="date">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.bE4.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.i.f.w.a04.cE.eO_X.pEX.s37Q.e.w" alt="ID">
+<area shape="rect" coords="760,399,890,451" href="_.a.i.f.w.aU4.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyPayment">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJA04.cE.eO_X.pEX.s37Q.e.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html#_.a.e.bJAU4.cE.eO_X.pEX.s37Q.e.w" alt="billNo">
+<area shape="rect" coords="895,122,990,174" href="_.a.e.bI_04.cE.eO_X.pEX.s37Q.e.w-content.html" alt="PartyBill">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_A2S-.oE3ME.e.a.tKZB.y.u.yUO.r.w" alt="amount">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.y.k0.dEE3LE.e.a.tKZB.y.u.yUO.r.w" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_4.l.uP.kE3LE.e.a.tKZB.y.u.yUO.r.w" alt="dateDetermined">
+<area shape="rect" coords="0,0,0,0" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html#_.y.k.zO8E3LE.e.a.tKZB.y.u.yUO.r.w" alt="ID">
+<area shape="rect" coords="685,9,847,61" href="_M.y.o.f.sE3KE.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShare">
+<area shape="rect" coords="332,259,562,275" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_8.vPK0FJ6E.e.a.tKZB.y.u.yUO.r.w" alt="description">
+<area shape="rect" coords="325,234,571,292" href="_.wQ4.e.oFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevShareReconciliationItem">
+<area shape="rect" coords="317,102,561,118" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_7V.iCYFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="status">
+<area shape="rect" coords="317,85,561,101" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_CJMH.gFJ6E.e.a.tKZB.y.u.yUO.r.w" alt="reconciliationDateComplete">
+<area shape="rect" coords="317,68,561,84" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_7V.h.bUFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="description">
+<area shape="rect" coords="317,51,561,67" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_9J.mBAFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="reconciliationDate">
+<area shape="rect" coords="317,34,561,50" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html#_7V.gNMFJ5E.e.a.tKZB.y.u.yUO.r.w" alt="ID">
+<area shape="rect" coords="310,9,570,135" href="_.s8GUIFJ4E.e.a.tKZB.y.u.yUO.r.w-content.html" alt="PartyRevenueShareReconciliation">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PRS.06 - Party Revenue Share Reconciliation</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.u5.n.x.cEK5E.e.a.m.lL.c.v.q.v7Y.pA-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Party Revenue Sharing Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-33 - PolicySetSpec<br>
+</span><span class="ElementTitle">Diagram Figure 1P-33 - PolicySetSpec<br>
+</span><span class="ElementDocumentation">This aggregation defines the set of PolicySets that can be defined from a particular PolicySetSpec. This enables the PolicySetSpec to define the invariant attributes, methods, relationships, and constraints that different PolicySets all contain. This standardizes the construction and usage of a PolicySet, and enables different PolicySets to define different variations of the PolicySetSpec to suit the needs of different applications. </br>The PolicySetSpec defines a single attribute called decisionStrategy. This attribute is an enumerated integer that specifies the particular decision strategy to be used in this PolicySet. This attribute defines how PolicyRules in a PolicyGroup or a PolicyRule are to be evaluated. </br>The values of this attribute can include:</br>        •	0:  Unknown</br>        •	1:  MatchFirst</br>        •	2:  MatchAll</br>Unknown can be used at initialization time, or if an error occurs, as an easy way to signify that an error in this PolicySet has occurred, since the two legal values of this attribute are MatchFirst and MatchAll.</br>MatchFirst looks for the first PolicyRule whose condition clause evaluates to TRUE in a PolicySet; and then evaluates that PolicyRule. Policy evaluation in this PolicySet then STOPS, and all subsequent PolicySets are no longer evaluated.</br>In contrast, MatchAll evaluates all PolicyRules. Those whose condition clauses evaluate to TRUE are (conceptually) put in a bucket. When all PolicyRules have been evaluated, a second pass is performed that executes all the PolicyRules that are in the (conceptual) bucket. Execution of these rules is controlled through the Priority attribute, which is defined as part of the PolicySetComponent aggregation, and prescribes the order in which the PolicyRules execute.</br>Thus, a PolicySet can be configured to either execute the first PolicyRule whose condition clause evaluates to TRUE, or to execute all PolicyRules whose condition clauses evaluate to TRUE.</br>The semantics of this attribute are identical for PolicyGroups as well as for PolicyRules. In a PolicyGroup, this attribute defines how to evaluate the set of PolicyRules that are contained in a PolicyGroup. In a PolicyRule, this attribute defines how to evaluate nested PolicyRules within a higher-level PolicyRule.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93F17BD340336.PNG" alt="Figure 1P-33 - PolicySetSpec" usemap="#map_3E3F0EC000E93F17BD340336"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93F17BD340336">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107" alt="_policySet">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93F17BE370111" alt="_policySetSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107" alt="_policySet">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93F17BE370111" alt="_policySetSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107" alt="_policySet">
+<area shape="rect" coords="151,223,159,240" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93F17BE370107" alt="_policySet">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93F17BE370111" alt="_policySetSpec">
+<area shape="rect" coords="148,319,156,336" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93F17BE370111" alt="_policySetSpec">
+<area shape="rect" coords="139,271,279,288" href="_3E3F0EC000E93F17BE36020A-content.html" alt="SpecifiesPolicySet">
+<area shape="poly" coords="132,341,132,220,142,220,142,341,132,341" href="_3E3F0EC000E93F17BE36020A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0253-content.html" alt="Generalization">
+<area shape="poly" coords="128,133,128,93,425,93,425,61,435,61,435,102,137,102,137,133,128,133" href="_3E3F0EC000E93D77E58C0253-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0295-content.html" alt="Generalization">
+<area shape="poly" coords="580,145,580,102,425,102,425,61,435,61,435,93,589,93,589,145,580,145" href="_3E3F0EC000E93D77E58C0295-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0265-content.html" alt="Generalization">
+<area shape="poly" coords="365,145,365,93,425,93,425,61,435,61,435,102,375,102,375,145,365,145" href="_3E3F0EC000E93D77E58C0265-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E3-content.html" alt="Generalization">
+<area shape="poly" coords="782,145,782,102,425,102,425,61,435,61,435,93,792,93,792,145,782,145" href="_3E3F0EC000E93D77E58C02E3-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="32,365,240,380" href="_3E3F0EC000E93F17BD6403DF-content.html#_3E3F0EC000E93D77E58C0254" alt="decisionStrategy">
+<area shape="rect" coords="25,341,248,408" href="_3E3F0EC000E93F17BD6403DF-content.html" alt="PolicySetSpec">
+<area shape="rect" coords="16,173,249,188" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0258" alt="usage">
+<area shape="rect" coords="16,157,249,172" href="_3E3F0EC000E93D77E58C0252-content.html#_3E3F0EC000E93D77E58C0257" alt="isMandatoryEvaluation">
+<area shape="rect" coords="9,133,258,223" href="_3E3F0EC000E93D77E58C0252-content.html" alt="PolicySet">
+<area shape="rect" coords="490,145,682,199" href="_3E3F0EC000E93D77E58C0294-content.html" alt="PolicyStatement">
+<area shape="rect" coords="280,145,463,199" href="_3E3F0EC000E93D77E58C0266-content.html" alt="PolicyCondition">
+<area shape="rect" coords="714,145,861,202" href="_3E3F0EC000E93D77E58C02E2-content.html" alt="PolicyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93DCFD5D20220" alt="policyName">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0262-content.html#_3E3F0EC000E93D77E58C0263" alt="keywords">
+<area shape="rect" coords="336,9,523,64" href="_3E3F0EC000E93D77E58C0262-content.html" alt="Policy">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-33 - PolicySetSpec</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

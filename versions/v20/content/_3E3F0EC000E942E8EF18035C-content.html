@@ -1,0 +1,166 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Revenue Assurance Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E942E8EECA0396-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Revenue Assurance Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Enterprise Domain::Enterprise Risk ABE::Revenue Assurance ABE::_ Revenue Assurance Addendum Figures::Figure RA.11 - RA Trouble Ticket<br>
+</span><span class="ElementTitle">Diagram Figure RA.11 - RA Trouble Ticket<br>
+</span><span class="ElementDocumentation">Revenue Assurance Trouble Ticket ABE entities represent trouble tickets opened to resolve one or several causes (for example, Revenue Assurance Violations) that resulted in a Revenue Assurance KPI not meeting a Revenue Assurance Objective.</br>Just as the model for controls and KPIs were similar, so are the models for RevenueAssuranceViolations and RevenueAssuranceTroubleTickets as shown in figure RA.11.  There are two primary differences in the two models.</br>First, a RevenueAssuranceTroubleTicket is a type of TroubleTicket, which in turn is a type of BusinessInteraction.  Therefore, the TroubleTicket inherits the same characteristics from BusinessInteraction as RevenueAssuranceViolation.</br>Second, RevenueAssurranceViolations may be used in the derivation of a RevenueAssuranceKPI, which then may trigger a RevenueAssuranceTroubleTicket.  For example, if more than “X” number of customers are not billed in a given billing cycle for services used, a trouble ticket is generated.  This KPI is a sum of all the “true” parameters that were RevenueAssuranceControl parameter values representing a single unbilled customer.  For this reason, the RevenueAssuranceViolationSpec may influence the creation of a RevenueAssuranceTroubleTicket via the specification’s association with a RevenueAssuranceTroubleTicketSpec.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E942E8EF18035C.PNG" alt="Figure RA.11 - RA Trouble Ticket" usemap="#map_3E3F0EC000E942E8EF18035C"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E942E8EF18035C">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E943173DE801D5-content.html" alt="Generalization">
+<area shape="poly" coords="911,130,911,86,921,86,921,130,911,130" href="_3E3F0EC000E943173DE801D5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761E50251" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761E50253" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761E50251" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761E50253" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761E50251" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="368,312,376,329" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761E50251" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761E50253" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="740,312,748,329" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761E50253" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="382,276,736,293" href="_3E3F0EC000E9431761E400DA-content.html" alt="RevenueAssuranceTroubleTicketSpecDescribes">
+<area shape="poly" coords="759,313,361,313,361,303,759,303,759,313" href="_3E3F0EC000E9431761E400DA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761DA03E4" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E9431761DB000B" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761DA03E4" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E9431761DB000B" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761DA03E4" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="915,450,923,467" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431761DA03E4" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E9431761DB000B" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="911,350,919,367" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E9431761DB000B" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="734,396,1058,413" href="_3E3F0EC000E9431761D80385-content.html" alt="RevenueAssuranceViolationSpecInfluences">
+<area shape="poly" coords="903,341,903,478,893,478,893,341,903,341" href="_3E3F0EC000E9431761D80385-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE21E0043-content.html#_3E3F0EC000E943173E47023E" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E943173E470240" alt="_revenueAssuranceKPIConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE21E0043-content.html#_3E3F0EC000E943173E47023E" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E943173E470240" alt="_revenueAssuranceKPIConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE21E0043-content.html#_3E3F0EC000E943173E47023E" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="933,240,941,257" href="_3E3F0EC000E9430DE21E0043-content.html#_3E3F0EC000E943173E47023E" alt="_revenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E943173E470240" alt="_revenueAssuranceKPIConsequence">
+<area shape="rect" coords="930,188,938,205" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E943173E470240" alt="_revenueAssuranceKPIConsequence">
+<area shape="rect" coords="744,213,1089,230" href="_3E3F0EC000E943173E4601F0-content.html" alt="RevenueAssuranceKPIConsequenceInfluences">
+<area shape="poly" coords="920,178,920,256,911,256,911,178,920,178" href="_3E3F0EC000E943173E4601F0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761CC02C6" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E9431761CC02C8" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761CC02C6" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E9431761CC02C8" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761CC02C6" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="268,453,276,470" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761CC02C6" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E9431761CC02C8" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="266,340,274,357" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E9431761CC02C8" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="126,394,397,411" href="_3E3F0EC000E9431761CB02D5-content.html" alt="RevenueAssuranceViolationTriggers">
+<area shape="poly" coords="257,329,257,482,247,482,247,329,257,329" href="_3E3F0EC000E9431761CB02D5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E9431761C700EF" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761C700FF" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E9431761C700EF" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761C700FF" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E9431761C700EF" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="256,271,264,288" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E9431761C700EF" alt="_revenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761C700FF" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="251,94,259,111" href="_3E3F0EC000E942E8EEDB00FB-content.html#_3E3F0EC000E9431761C700FF" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="94,150,383,167" href="_3E3F0EC000E9431761C601BA-content.html" alt="RAParmValueTriggersRATroubleTicket">
+<area shape="poly" coords="244,86,244,281,234,281,234,86,244,86" href="_3E3F0EC000E9431761C601BA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E943175CDB02D1-content.html" alt="Generalization">
+<area shape="poly" coords="108,331,25,331,25,248,35,248,35,321,108,321,108,331" href="_3E3F0EC000E943175CDB02D1-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E943174E5600FC" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E943174E5600FE" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E943174E5600FC" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E943174E5600FE" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E943174E5600FC" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="382,475,390,492" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E943174E5600FC" alt="_revenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E943174E5600FE" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="764,476,772,493" href="_3E3F0EC000E9430DE15200A3-content.html#_3E3F0EC000E943174E5600FE" alt="_revenueAssuranceViolationSpec">
+<area shape="rect" coords="423,471,732,488" href="_3E3F0EC000E943174E5203CB-content.html" alt="RevenueAssuraceViolationSpecDescribes">
+<area shape="poly" coords="777,508,379,508,379,499,777,499,777,508" href="_3E3F0EC000E943174E5203CB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E943174E67038A" alt="_revenueAssuranceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E943174E670399" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E943174E67038A" alt="_revenueAssuranceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E943174E670399" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E943174E67038A" alt="_revenueAssuranceConsequence">
+<area shape="rect" coords="750,28,758,45" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E943174E67038A" alt="_revenueAssuranceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E943174E670399" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="379,28,387,45" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E943174E670399" alt="_revenueAssuranceParmValue">
+<area shape="rect" coords="424,23,719,40" href="_3E3F0EC000E943174E5E0020-content.html" alt="RevenueAssuranceParmValueResultsIn">
+<area shape="poly" coords="366,51,778,51,778,60,366,60,366,51" href="_3E3F0EC000E943174E5E0020-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="766,312,1036,327" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E9431765360352" alt="validFor">
+<area shape="rect" coords="766,296,1036,311" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E94317652D03BC" alt="description">
+<area shape="rect" coords="766,280,1036,295" href="_3E3F0EC000E9430DE0EB0091-content.html#_3E3F0EC000E94317652B0002" alt="name">
+<area shape="rect" coords="759,256,1045,344" href="_3E3F0EC000E9430DE0EB0091-content.html" alt="RevenueAssuranceTroubleTicketSpec">
+<area shape="rect" coords="108,281,363,332" href="_3E3F0EC000E942E8EEDB00FB-content.html" alt="RevenueAssuranceTroubleTicket">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E94317585202FF" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E94317584C0206" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE1410081-content.html#_3E3F0EC000E9431758480070" alt="name">
+<area shape="rect" coords="777,478,1033,529" href="_3E3F0EC000E9430DE1410081-content.html" alt="RevenueAssuranceViolationSpec">
+<area shape="rect" coords="766,130,1042,181" href="_3E3F0EC000E9430DE21E0043-content.html" alt="RevenueAssuranceKPIConsequence">
+<area shape="rect" coords="156,482,382,533" href="_3E3F0EC000E9430DE15200A3-content.html" alt="RevenueAssuranceViolation">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E9430E0E5202B1" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E943174D6500CD" alt="dateCreated">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430DE16002C0-content.html#_3E3F0EC000E9430E0E4C037B" alt="value">
+<area shape="rect" coords="130,38,368,89" href="_3E3F0EC000E9430DE16002C0-content.html" alt="RevenueAssuranceParmValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E94317444E02D5" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E9431744460005" alt="prescribedAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E9431744400340" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9430E0D8B0046-content.html#_3E3F0EC000E94317443C0283" alt="name">
+<area shape="rect" coords="778,38,1036,89" href="_3E3F0EC000E9430E0D8B0046-content.html" alt="RevenueAssuranceConsequence">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942D47D2D00F3-content.html#_3E3F0EC000E942DEA81A034B" alt="troubleState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942D47D2D00F3-content.html#_3E3F0EC000E942D47D6D00EB" alt="serviceRestoredDate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942D47D2D00F3-content.html#_3E3F0EC000E942D47D5C0295" alt="troubleDetectionDate">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E942D47D2D00F3-content.html#_3E3F0EC000E942D47D4F020A" alt="troubleTicketState">
+<area shape="rect" coords="29,200,158,251" href="_3E3F0EC000E942D47D2D00F3-content.html" alt="TroubleTicket">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure RA.11 - RA Trouble Ticket</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E942E8EECA0396-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Revenue Assurance Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.30 - Representing Administering and Owning a Resource<br>
+</span><span class="ElementTitle">Diagram Figure PR.30 - Representing Administering and Owning a Resource<br>
+</span><span class="ElementDocumentation">Given this background, we can define additional relationships needed to represent administration and ownership of PhysicalResources.</br>Briefly, the owner of the Resource is the person or group that is responsible (e.g., organizational, financial, and so forth) for the Resource. This is a different concept than the person or group that administers the Resource. From a business perspective, the owner has to either appoint or give permission to the administrator to administer the Resource that is owned. This is shown in the Figure below.</br>The two associations, called OwnsResource and AdministersResource, serve these roles. Note that the OwnsResource aggregation defines the set of Resources (physical and/or logical) that a particular Party, playing the role of Administrator, can administer (through the AdministersResource association). The owner of the Resource is the person or group that is responsible (e.g., organizational, financial, and so forth) for the Resource.</br>In contrast, the AdministersResource association defines the set of Resources (physical and/or logical) that a particular Party, playing the role of Administrator. From a business perspective, the owner has to either appoint or give permission to the administrator to administer the Resource that is owned.</br>The third item, ManagementDomain, is fundamental to how network management is done. Addendum 1-POL defines a ManagementDomain as follows:  A ManagementDomain class represents a special grouping of ManagedEntities that has two important properties. First, it is used to partition managed objects into a meaningful logical grouping. One important use of such a grouping is to provide a means to define which EMS (as well as which NMS) manages, monitors, etc. which set of devices. It also provides a means to show how management functions are distributed and scaled. Second, it defines a common administrative domain that is used to administer the managed objects that it contains. This implies that all of the managed objects contained in this ManagementDomain are administered similarly - either by the same user, group of users or policy.</br>ManagementDomains often have a direct correlation with DeviceRoles. For example, in an MPLS VPN, there is a fundamental difference between routers that are operating as customer premise, provider edge, and provider core routers. (For those not familiar with MPLS VPNs, a customer premise device provides customer access to the Service Provider network over a data link to one or more provider edge routers; provider edge routers function as the ingress and egress routers of the Service Provider network; provider core routers provide connectivity between the provider edge routers. An example of a high-level MPLS VPN model is provided in part of Addendum 4). This can be done by associating a type of PartyRole (representing a ManagementDomain) with a type of DeviceRole. Note that in this use case, there are specific hardware as well as software requirements of the different types of routers playing the CustomerPremise, ProviderEdge, and ProviderCore roles. This is where the concepts of PhysicalDeviceRole and LogicalDeviceRole will pay dividends in the overall model.</br>Thus, ManagementDomains are intelligent containers of managed entities, where different container represent different domains of control that reflect one or more appropriate management structures, such as organizational structure. PhysicalResources within a particular domain are administered by a particular person or group of people. While it is easy enough to define a relationship between ManagementDomain and PartyRole, the management of PhysicalResources in ManagementDomains by Party and PartyRole entities should be represented and controlled using policies. Thus, this topic will be deferred to the Policy Addendum.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE54DB003C8.PNG" alt="Figure PR.30 - Representing Administering and Owning a Resource" usemap="#map_3E3F0EC000E93EE54DB003C8"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE54DB003C8">
+<area shape="rect" coords="0,0,0,0" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="419,320,419,272,616,272,616,158,625,158,625,282,429,282,429,320,419,320" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="131,23,314,74" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html" alt="OwnsResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="23,226,31,243" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="534,96,542,113" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="poly" coords="568,125,42,125,42,258,32,258,32,115,568,115,568,125" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.mAQ48C.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="781,320,781,282,616,282,616,158,625,158,625,272,791,272,791,320,781,320" href="_.mAQ48C.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="224,201,442,252" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html" alt="AdministerResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="104,227,112,244" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="rect" coords="532,134,540,151" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="poly" coords="568,153,123,153,123,258,113,258,113,144,568,144,568,153" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="830,145,838,162" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C26F8900014" alt="_party">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="693,139,701,156" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C26F8900015" alt="_partyRole">
+<area shape="rect" coords="701,109,811,126" href="_3E3F0EC000E93C26F88E0212-content.html" alt="HasPartyRoles">
+<area shape="poly" coords="673,129,853,129,853,139,673,139,673,129" href="_3E3F0EC000E93C26F88E0212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F008E900362-content.html" alt="Generalization">
+<area shape="poly" coords="520,440,520,412,425,412,425,368,434,368,434,402,530,402,530,440,520,440" href="_3E3F0EC000E93F008E900362-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F00908F0026-content.html" alt="Generalization">
+<area shape="poly" coords="283,440,283,402,425,402,425,368,434,368,434,412,293,412,293,440,283,440" href="_3E3F0EC000E93F00908F0026-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="23,258,130,309" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="568,110,675,161" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93D8A882402B1" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C23195B0104-content.html#_3E3F0EC000E93C310D010249" alt="ID">
+<area shape="rect" coords="853,110,935,161" href="_3E3F0EC000E93C23195B0104-content.html" alt="Party">
+<area shape="rect" coords="205,440,363,491" href="_3E3F0EC000E93F00903802B6-content.html" alt="ResourceInstaller">
+<area shape="rect" coords="684,320,890,387" href="_3E3F0EC000E93F008F7602AD-content.html" alt="TechnologyAdministrator">
+<area shape="rect" coords="370,320,481,371" href="_3E3F0EC000E93F008E7F0264-content.html" alt="Technician">
+<area shape="rect" coords="444,440,607,491" href="_3E3F0EC000E93F007F81039C-content.html" alt="TelecomTechnician">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.30 - Representing Administering and Owning a Resource</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure LR.15 - Using Roles to Represent Device Functionality<br>
+</span><span class="ElementTitle">Diagram Figure LR.15 - Using Roles to Represent Device Functionality<br>
+</span><span class="ElementDocumentation">But what about the so-called “Layer 3” switches, which are switches that have routing capability? The method shown above encourages subclassing. For example, this could be done by creating a subclass of Switch, called Layer3Switch, which adds routing capabilities to the Switch. This is a poor solution, because now every time routing changes, we have to update the Router class as well as the Layer3Switch class. Besides, this implies that a Layer3Switch can do everything that a full-blown Router can do, which is almost never the case. There are other problems with this approach too, but this is enough for now.</br>One may also be tempted to use multiple inheritances. If we ignore the fact that multiple inheritance is not always supported when the system is implemented, the problem then becomes one of extensibility. What if there is a “Layer4Switch” (unfortunately, some vendors do label their products like this!)? What if we want to differentiate between the type of routing done in a Router vs. the type of routing done in the Layer3Switch vs. the type of routing done in the Layer4Switch? What if there is a Router that has firewalling capabilities, how is that modeled? There are simply too many permutations to account for using this approach.</br>Instead, a much more elegant and extensible solution is available – we can use the notion of roles. This simplifies our approach tremendously. Instead of trying to either define many subclasses or introduce multiple inheritances, we can instead define a set of roles that the device is meant to play. (Note that if LogicalDevice had not been split out, there would have been nothing to attach the roles to; since LogicalDevice has the conceptualization of being the “brains” of the Resource, attaching roles to LogicalDevice has the connotation of abstracting certain functions that the LogicalDevice controls using one or more roles). </br>Thus, by modeling DeviceRole as a separate concept from Device, we can build subclasses of DeviceRole to model different functions. Then, it’s a simple matter of aggregating the appropriate DeviceRoles to represent the different functions and roles that a particular device can play. We specifically avoid having to subclass Device to do this!<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E943795C3801B5.PNG" alt="Figure LR.15 - Using Roles to Represent Device Functionality" usemap="#map_3E3F0EC000E943795C3801B5"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E943795C3801B5">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="253,47,261,64" href="_3E3F0EC000E93EB1D514027E-content.html#_3E3F0EC000E93EB1D53A009D" alt="_deviceRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="95,55,121,72" href="_3E3F0EC000E93EB1D5240301-content.html#_3E3F0EC000E93EB1D53A009F" alt="_device">
+<area shape="rect" coords="128,23,244,40" href="_3E3F0EC000E93EB1D5390286-content.html" alt="DeviceTakesOn">
+<area shape="poly" coords="94,40,276,40,276,50,94,50,94,40" href="_3E3F0EC000E93EB1D5390286-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5CB00D6-content.html" alt="Generalization">
+<area shape="poly" coords="498,145,498,117,343,117,343,77,353,77,353,107,508,107,508,145,498,145" href="_3E3F0EC000E93EB1D5CB00D6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5D402F4-content.html" alt="Generalization">
+<area shape="poly" coords="389,145,389,117,343,117,343,77,353,77,353,107,398,107,398,145,389,145" href="_3E3F0EC000E93EB1D5D402F4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5CE03AA-content.html" alt="Generalization">
+<area shape="poly" coords="257,145,257,107,343,107,343,77,353,77,353,117,267,117,267,145,257,145" href="_3E3F0EC000E93EB1D5CE03AA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EB1D5D2002A-content.html" alt="Generalization">
+<area shape="poly" coords="139,145,139,107,343,107,343,77,353,77,353,117,148,117,148,145,139,145" href="_3E3F0EC000E93EB1D5D2002A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="9,14,96,81" href="_3E3F0EC000E93EB1D514027E-content.html" alt="Device">
+<area shape="rect" coords="276,13,390,80" href="_3E3F0EC000E93EB1D5240301-content.html" alt="DeviceRole">
+<area shape="rect" coords="471,145,566,212" href="_3E3F0EC000E93EB1D59D02CB-content.html" alt="Encoder">
+<area shape="rect" coords="328,145,441,212" href="_3E3F0EC000E93EB1D5970237-content.html" alt="Encryption">
+<area shape="rect" coords="209,145,301,212" href="_3E3F0EC000E93EB1D58600EB-content.html" alt="Firewall">
+<area shape="rect" coords="91,145,178,212" href="_3E3F0EC000E93EB1D5900148-content.html" alt="Switch">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure LR.15 - Using Roles to Represent Device Functionality</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

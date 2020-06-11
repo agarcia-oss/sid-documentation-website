@@ -1,0 +1,160 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure LR.05 - Relationship between Resource and Product<br>
+</span><span class="ElementTitle">Diagram Figure LR.05 - Relationship between Resource and Product<br>
+</span><span class="ElementDocumentation">Before we develop too much of the LogicalResource structure, let’s link this concept to two other important SID entities: Product and Service. This linking must support the following two basic premises:</br>        •	A PhysicalResource may be a part of a Product, that is bought by a Customer</br>        •	A Resource can support one or more Services</br>The first relationship is modeled as shown in the Figure below.</br>The cardinality of the ProductHasPhysicalResources relationship is 0..1 on the Product side and * on the PhysicalResource side. This means that PhysicalResources can be instantiated independent of a Product but may also be bound to a Product. It also means that a Product can have zero or more PhysicalResources. (The Service Guide Book also explains how a Product may be realized as a Service.)</br>The reason that PhysicalResources are associated to Products is that the definition and use of a Product is essential to the business view of the overall SID model. Customers buy Products, not Resources. Similarly, Enterprise users utilize Products that contain Resources (here, the Enterprise has purchased or manufactured the Product). Both types of users use Services that are supported by Resources. This implies that Resources can’t exist “in the ether” – rather, they must be bound to a particular Product.</br>More specifically, a PhysicalResource is an instance of a Resource, just like a Product represents the instance of a Product that a PartyRole (such as a Customer) can buy. </br>Consider two PhysicalResources – one is part of a Product that will be shipped to a Customer, and the second is a spare. BOTH of these are indeed PhysicalResources. The difference is that a PhysicalResource can be associated with a Product (the “1” in the “0..1” part of the ProductHasPhysicalResources) or not (the “0” in the “0..1” part of this same relationship). Thus, we can distinguish between the PhysicalResource that is a spare and the PhysicalResource that is part of a Product, because the former will not have an association to any Product, and the latter will.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E94367FDD700A2.PNG" alt="Figure LR.05 - Relationship between Resource and Product" usemap="#map_3E3F0EC000E94367FDD700A2"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E94367FDD700A2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TO.kEP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TQZQP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TO.kEP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TQZQP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TO.kEP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering">
+<area shape="rect" coords="149,414,155,430" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TO.kEP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TQZQP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering2">
+<area shape="rect" coords="236,414,242,430" href="_3E3F0EC000E93C5DB96E00DD-content.html#_5TQZQP1.hE.eW.pN.dW.v.uS.pN.u.w" alt="productOffering2">
+<area shape="rect" coords="63,437,333,453" href="_5TNV8P1.hE.eW.pN.dW.v.uS.pN.u.w-content.html" alt="ProductOfferingReferencesOrReferencedBy">
+<area shape="poly" coords="253,409,253,441,143,441,143,409,153,409,153,431,243,431,243,409,253,409" href="_5TNV8P1.hE.eW.pN.dW.v.uS.pN.u.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bO.q.sP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bR.uAP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bO.q.sP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bR.uAP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bO.q.sP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification">
+<area shape="rect" coords="539,394,545,410" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bO.q.sP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bR.uAP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification2">
+<area shape="rect" coords="657,394,663,410" href="_3E3F0EC000E93C5DB97B0118-content.html#_.m.bR.uAP1.eE.eW.pN.dW.v.uS.pN.u.w" alt="productSpecification2">
+<area shape="rect" coords="452,437,748,453" href="_.m.bL.nYP1.eE.eW.pN.dW.v.uS.pN.u.w-content.html" alt="ProductSpecificationReferencesOrReferencedBy">
+<area shape="poly" coords="674,397,674,441,527,441,527,397,536,397,536,431,664,431,664,397,674,397" href="_.m.bL.nYP1.eE.eW.pN.dW.v.uS.pN.u.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C7AD5BB0256" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93C7AD5BB0260" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C7AD5BB0256" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93C7AD5BB0260" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C7AD5BB0256" alt="_resource">
+<area shape="rect" coords="639,114,647,131" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C7AD5BB0256" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93C7AD5BB0260" alt="_product">
+<area shape="rect" coords="307,114,315,131" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93C7AD5BB0260" alt="_product">
+<area shape="rect" coords="371,88,581,105" href="_3E3F0EC000E93C7AD5BB004D-content.html" alt="ProductRealizedAsResource">
+<area shape="poly" coords="296,101,656,101,656,111,296,111,296,101" href="_3E3F0EC000E93C7AD5BB004D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="286,385,294,402" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6BA182021A" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="483,389,509,406" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93D6BA1820238" alt="_productSpecification">
+<area shape="rect" coords="290,358,497,375" href="_3E3F0EC000E93D6BA1810024-content.html" alt="ProdSpecMadeAvailableAs">
+<area shape="poly" coords="519,385,269,385,269,376,519,376,519,385" href="_3E3F0EC000E93D6BA1810024-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93E94D11D01AE" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93E94D11D01CC" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93E94D11D01AE" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93E94D11D01CC" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93E94D11D01AE" alt="_product">
+<area shape="rect" coords="187,125,195,142" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E93E94D11D01AE" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93E94D11D01CC" alt="_productOffering">
+<area shape="rect" coords="23,327,49,344" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93E94D11D01CC" alt="_productOffering">
+<area shape="rect" coords="49,232,197,249" href="_3E3F0EC000E93E94D11A029A-content.html" alt="ProdOfferDescribes">
+<area shape="poly" coords="121,393,37,393,37,116,202,116,202,126,47,126,47,384,121,384,121,393" href="_3E3F0EC000E93E94D11A029A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E94367FE73030F" alt="_physicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E94367FE7303E2" alt="_product2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E94367FE73030F" alt="_physicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E94367FE7303E2" alt="_product2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E94367FE73030F" alt="_physicalResource">
+<area shape="rect" coords="473,273,481,290" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E94367FE73030F" alt="_physicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E94367FE7303E2" alt="_product2">
+<area shape="rect" coords="219,152,245,169" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E94367FE7303E2" alt="_product2">
+<area shape="rect" coords="149,189,384,206" href="_3E3F0EC000E94367FE7200B5-content.html" alt="ProductHasPhysicalResources">
+<area shape="poly" coords="255,143,255,259,492,259,492,269,246,269,246,143,255,143" href="_3E3F0EC000E94367FE7200B5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF00F1" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF010F" alt="_product1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF00F1" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF010F" alt="_product1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF00F1" alt="_product">
+<area shape="rect" coords="219,84,227,101" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF00F1" alt="_product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF010F" alt="_product1">
+<area shape="rect" coords="300,78,308,95" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DD3FF010F" alt="_product1">
+<area shape="rect" coords="172,23,448,40" href="_3E3F0EC000E93C5DD3F8019B-content.html" alt="ProductReferencesOrReferencedBy">
+<area shape="poly" coords="291,95,291,52,238,52,238,95,228,95,228,43,300,43,300,95,291,95" href="_3E3F0EC000E93C5DD3F8019B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Generalization">
+<area shape="poly" coords="536,247,536,169,696,169,696,124,706,124,706,179,546,179,546,247,536,247" href="_3E3F0EC000E93DDE855B0365-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Generalization">
+<area shape="poly" coords="858,247,858,179,696,179,696,124,706,124,706,169,868,169,868,247,858,247" href="_3E3F0EC000E93DDEF1EC0283-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="121,361,271,412" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB97B0118-content.html#_3E3F0EC000E93D6D16180227" alt="brand">
+<area shape="rect" coords="519,350,699,401" href="_3E3F0EC000E93C5DB97B0118-content.html" alt="ProductSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DC43C01F3" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB98B03E2-content.html#_3E3F0EC000E93C5DC4480254" alt="status">
+<area shape="rect" coords="202,95,299,146" href="_3E3F0EC000E93C5DB98B03E2-content.html" alt="Product">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0167" alt="versionNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0163" alt="serialNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0162" alt="powerState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0160" alt="otherIdentifier">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD015E" alt="manufactureDate">
+<area shape="rect" coords="492,247,632,298" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAD87C026B" alt="isOperational">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0164" alt="serviceState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA51A00F6-content.html#_3E3F0EC000E93CDAA4DD0166" alt="lrStatus">
+<area shape="rect" coords="798,247,930,298" href="_3E3F0EC000E93CDAA51A00F6-content.html" alt="LogicalResource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="656,76,744,127" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure LR.05 - Relationship between Resource and Product</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

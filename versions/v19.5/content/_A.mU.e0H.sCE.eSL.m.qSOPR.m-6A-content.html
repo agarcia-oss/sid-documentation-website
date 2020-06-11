@@ -1,0 +1,155 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Party Product Specification and Offering Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.r.gLQ.cO5NE.eSQHL.k.hYUW.b.f.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Product Specification and Offering Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Business Partner Domain::Party Product Specification and Offering ABE::_Party Product Specification and Offering Addendum Figures::Figure PPSO.02 - Party Role Product Offering<br>
+</span><span class="ElementTitle">Diagram Figure PPSO.02 - Party Role Product Offering<br>
+</span><span class="ElementDocumentation">The Party Role Product Offering ABE has been added as a level 2 ABE within the level 1 Product Offering ABE. Figure PrPo.01 Party Role Product Offering shows the PartyRoleProductOffering entity and its related entities.</br>Below is a description of each Boolean attribute:</br>        •	marketedBy is an indicator that specifies if the PartyRoleProductOffering is marketed by the related PartyRole. For example a Competitor PartyRole may only have this attribute set to true and the other boolean attributes set to false.</br>        •	orderTakenBy is an indicator that specifies that the associated PartyRole takes an order for the ProductOffering.</br>        •	paymentAcceptedBy is an indicator that specifies that the associated PartyRole accepts payment for the ProductOffering.</br>        •	paymentMadeTo is an indicator that specifies that payment is made to the associated PartyRole for the ProductOffering.  For example, an entrprise may accept payment on behalf of PartyRole and then send the payment to the PartyRole.</br>        •	billedBy is an indicator that specifies that the associated PartyRole submits a bill for the ProductOffering.</br>        •	postOrderFulfilledBy is used to indicate which PartyRole fulfills the order after it is taken by a PartyRole. </br>        •	afterSalesServiceProvidedBy is an indicator that specifies which PartyRole provides the after-sales service.</br>Originally the orderTakenBy attribute was contained in the PartyRoleProductSpecification entity.  However it has been moved to PartyRoleProductOffering. This was done because BundleProductOfferings do not have to have a related ProductSpecification so there would be no way to indicate who takes an order for a BundledProductOffering.</br>Additional attributes could be added to specify other processes responsibilities such as warehousedBy, manufacturedBy, etc.</br></br>Another way of specifying the processes responsibilities, instead of using Boolean attributes, would be to use a relationship with Process.</br>Some examples:</br>        •	Amazon takes an order on behalf of Quidsi and also fulfills the order. In this case the attribute postOrderFulfilledBy is set to true for Amazon and false for Quidsi</br>        •	Amazon takes on order on behalf of Global Pets, sends the order to Global Pets who finishes the fulfillment of the order. In this case the attribute postOrderFulfilledBy is set to false for Amazon and true for Global Pets.</br>The PartyRoleProdOffRelationship entity defines relationships between/among PartyRoleProductOffering entities, such as purchase for resell, broker as-is for resale, or ordered from (For example, an enterprise orders resources for its infrastructure from an equipment manufacturer).</br>There can be many PartyRoleProductOfferings for one ProductOffering, therefore the relationship between PartyRoleProductOffering and AgreementItem is needed to specify which party’s ProductOffering applies to the AgreementItem such as SLAItem.</br>An example of how an SLA can be either with the re-seller or with the "underlying" whole seller/manufacturer in a multi-party sell:</br>        •	When a tourist from Europe walks into an electronics shop in Hongkong, and buys a Sony camera, she/he is typically given the choice of either taking the standard "warranty agreement" (a kind of SLA), which is an agreement with the shop (the reseller) or exchange it for an "international warranty" that is offered by the original manufacturer, Sony, through its international representatives.</br>        •	The two agreements have different Terms & Conditions for the end customer of course, and are with two different parties... Tourists will typically choose the international one, as the local one would require them to bring/send the camera back to the shop for inspection.</br>There is also the need to specify a ProductOfferingPrice with each party’s ProductOffering.</br>There are two options to support this need, which can be chosen by an implementer of this part of the SID model:</br>      1. Using the association between PartyRoleProductOffering and ProductOfferingPrice</br>      2. Creating an instance of a ProductOffering for each PartyRole.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_A.mU.e0H.sCE.eSL.m.qSOPR.m-6A.PNG" alt="Figure PPSO.02 - Party Role Product Offering" usemap="#map_A.mU.e0H.sCE.eSL.m.qSOPR.m-6A"></td>
+</tr>
+</table>
+<map name="map_A.mU.e0H.sCE.eSL.m.qSOPR.m-6A">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.d9XZ.cO5SE.eSQHL.k.hYUW.b.f.w" alt="agreementItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D4017B80285-content.html#_.d9.bD0O5SE.eSQHL.k.hYUW.b.f.w" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.d9XZ.cO5SE.eSQHL.k.hYUW.b.f.w" alt="agreementItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D4017B80285-content.html#_.d9.bD0O5SE.eSQHL.k.hYUW.b.f.w" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.d9XZ.cO5SE.eSQHL.k.hYUW.b.f.w" alt="agreementItem">
+<area shape="rect" coords="504,478,510,494" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.d9XZ.cO5SE.eSQHL.k.hYUW.b.f.w" alt="agreementItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D4017B80285-content.html#_.d9.bD0O5SE.eSQHL.k.hYUW.b.f.w" alt="partyRoleProductOffering">
+<area shape="rect" coords="496,349,516,365" href="_3E3F0EC000E93D4017B80285-content.html#_.d9.bD0O5SE.eSQHL.k.hYUW.b.f.w" alt="partyRoleProductOffering">
+<area shape="rect" coords="490,433,736,449" href="_.d9U9MO5SE.eSQHL.k.hYUW.b.f.w-content.html" alt="PartyRoleProductOfferingCompilesWith">
+<area shape="poly" coords="530,329,530,515,520,515,520,329,530,329" href="_.d9U9MO5SE.eSQHL.k.hYUW.b.f.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_VF.gHAL.bSE.eS.g.m.dZHU.p.t.gYA" alt="productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_VF.rGIL.bSE.eS.g.m.dZHU.p.t.gYA" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_VF.gHAL.bSE.eS.g.m.dZHU.p.t.gYA" alt="productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_VF.rGIL.bSE.eS.g.m.dZHU.p.t.gYA" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_VF.gHAL.bSE.eS.g.m.dZHU.p.t.gYA" alt="productOfferingPrice">
+<area shape="rect" coords="383,478,389,494" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_VF.gHAL.bSE.eS.g.m.dZHU.p.t.gYA" alt="productOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_VF.rGIL.bSE.eS.g.m.dZHU.p.t.gYA" alt="partyRoleProductOffering">
+<area shape="rect" coords="383,349,389,365" href="_3E3F0EC000E93CD366DF029E-content.html#_VF.rGIL.bSE.eS.g.m.dZHU.p.t.gYA" alt="partyRoleProductOffering">
+<area shape="rect" coords="222,426,438,442" href="_VFW9EL.bSE.eS.g.m.dZHU.p.t.gYA-content.html" alt="PartyRoleProductOfferingValuedBy">
+<area shape="poly" coords="410,329,410,515,400,515,400,329,410,329" href="_VFW9EL.bSE.eS.g.m.dZHU.p.t.gYA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40107C02B4-content.html#_.b.xF.eAKAEE.eS5.l.a.b_.r61M.a.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.b.xO.n8KAEE.eS5.l.a.b_.r61M.a.g" alt="serviceLevelSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40107C02B4-content.html#_.b.xF.eAKAEE.eS5.l.a.b_.r61M.a.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.b.xO.n8KAEE.eS5.l.a.b_.r61M.a.g" alt="serviceLevelSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40107C02B4-content.html#_.b.xF.eAKAEE.eS5.l.a.b_.r61M.a.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="337,248,343,264" href="_3E3F0EC000E93D40107C02B4-content.html#_.b.xF.eAKAEE.eS5.l.a.b_.r61M.a.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.b.xO.n8KAEE.eS5.l.a.b_.r61M.a.g" alt="serviceLevelSpecification">
+<area shape="rect" coords="128,355,134,371" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.b.xO.n8KAEE.eS5.l.a.b_.r61M.a.g" alt="serviceLevelSpecification">
+<area shape="rect" coords="23,240,301,256" href="_.b.w7.tAKAEE.eS5.l.a.b_.r61M.a.g-content.html" alt="PartyRoleProductOfferingQualityMeasuredBy">
+<area shape="poly" coords="137,370,137,257,357,257,357,267,146,267,146,370,137,370" href="_.b.w7.tAKAEE.eS5.l.a.b_.r61M.a.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="774,391,987,407" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.j.u.o2.oH7XE.eS.vT74G8.e6.uFA" alt="validFor">
+<area shape="rect" coords="774,375,987,391" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.f3.j3YH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProdOffRelType">
+<area shape="rect" coords="767,350,996,425" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html" alt="PartyRoleProdOffRelationship">
+<area shape="rect" coords="0,0,0,0" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z.q.f.sH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffeing">
+<area shape="rect" coords="0,0,0,0" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z6XUH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffering1">
+<area shape="rect" coords="0,0,0,0" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z.q.f.sH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffeing">
+<area shape="rect" coords="0,0,0,0" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z6XUH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffering1">
+<area shape="rect" coords="0,0,0,0" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z.q.f.sH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffeing">
+<area shape="rect" coords="624,377,630,393" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z.q.f.sH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffeing">
+<area shape="rect" coords="0,0,0,0" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z6XUH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffering1">
+<area shape="rect" coords="627,289,633,305" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html#_.a.z6XUH7XE.eS.vT74G8.e6.uFA" alt="partyRoleProductOffering1">
+<area shape="poly" coords="611,282,708,282,708,394,593,394,593,329,603,329,603,384,698,384,698,291,611,291,611,282" href="_.a.zP.o8H7XE.eS.vT74G8.e6.uFA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.f3.sN4H.o.vE.eSZB.o.aVZH9S.o.g" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.f4AW8H.o.vE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.f3.sN4H.o.vE.eSZB.o.aVZH9S.o.g" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.f4AW8H.o.vE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.f3.sN4H.o.vE.eSZB.o.aVZH9S.o.g" alt="productOffering">
+<area shape="rect" coords="137,68,144,84" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.f3.sN4H.o.vE.eSZB.o.aVZH9S.o.g" alt="productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.f4AW8H.o.vE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="335,173,341,189" href="_3E3F0EC000E93C5DB96E00DD-content.html#_.f4AW8H.o.vE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="66,128,198,144" href="_.f3.j.rAH.o.vE.eSZB.o.aVZH9S.o.g-content.html" alt="ProductOfferingPlays">
+<area shape="poly" coords="357,188,122,188,122,58,132,58,132,178,357,178,357,188" href="_.f3.j.rAH.o.vE.eSZB.o.aVZH9S.o.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.l.j.eD.wH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.l.j13MH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.l.j.eD.wH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.l.j13MH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.l.j.eD.wH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="619,168,625,184" href="_3E3F0EC000E93C2319BC02EE-content.html#_.l.j.eD.wH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.l.j13MH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRole">
+<area shape="rect" coords="803,62,810,78" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.l.j13MH.oVE.eSZB.o.aVZH9S.o.g" alt="partyRole">
+<area shape="rect" coords="650,113,902,129" href="_.l.jM-AH.oVE.eSZB.o.aVZH9S.o.g-content.html" alt="PartyRoleProvidesPartyRoleProdOffering">
+<area shape="poly" coords="801,58,801,191,611,191,611,181,791,181,791,58,801,58" href="_.l.jM-AH.oVE.eSZB.o.aVZH9S.o.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="501,515,640,567" href="_3E3F0EC000E93D4017B80285-content.html" alt="AgreementItem">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93D6BDBC900B4" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EC019DF02A2" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_3E3F0EC000E93EBFBE720167" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CD366DF029E-content.html#_-.eXZ4H.u4E.e.m32PUJUD.d2.u.w" alt="ID">
+<area shape="rect" coords="239,515,414,567" href="_3E3F0EC000E93CD366DF029E-content.html" alt="ProductOfferingPrice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D40107C02B4-content.html#_3E3F0EC000E93D650C8A02EC" alt="validFor">
+<area shape="rect" coords="37,370,237,422" href="_3E3F0EC000E93D40107C02B4-content.html" alt="ServiceLevelSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="45,9,190,61" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="364,299,604,315" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_57V.b.wL.bRE.eS.g.m.dZHU.p.t.gYA" alt="afterSalesServiceProvidedBy">
+<area shape="rect" coords="364,282,604,298" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.m.sMYIIUSE.eS.rC.fUYA.hW.a2.g" alt="billedBy">
+<area shape="rect" coords="364,265,604,281" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.dSN.n.kKDKE.eS5.l.a.b_.r61M.a.g" alt="paymentMadeTo">
+<area shape="rect" coords="364,248,604,264" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.g.f5N8IUSE.eS.rC.fUYA.hW.a2.g" alt="paymentAcceptedBy">
+<area shape="rect" coords="364,231,604,247" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.fCKM.sH.o.yE.eSZB.o.aVZH9S.o.g" alt="postOrderFulfilledBy">
+<area shape="rect" coords="364,215,604,231" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.uZD4QH-.jE.eS.rV7B5.u.v.k.kSA" alt="orderTakenBy">
+<area shape="rect" coords="364,198,604,214" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_8G-LAJW.iE.eS.a.c7.xEOS.sTEA" alt="marketedBy">
+<area shape="rect" coords="364,181,604,197" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.mX.f.g.cH-.hE.eS.rV7B5.u.v.k.kSA" alt="validFor">
+<area shape="rect" coords="364,164,604,180" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.lZL.eEH-.hE.eS.rV7B5.u.v.k.kSA" alt="purpose">
+<area shape="rect" coords="364,147,604,163" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html#_.k.f.uG.gH-.hE.eS.rV7B5.u.v.k.kSA" alt="partyRoleProdOfferStatus">
+<area shape="rect" coords="357,122,613,333" href="_F.s.p.cIH.oVE.eSZB.o.aVZH9S.o.g-content.html" alt="PartyRoleProductOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="744,9,847,61" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PPSO.02 - Party Role Product Offering</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_.r.gLQ.cO5NE.eSQHL.k.hYUW.b.f.w-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Product Specification and Offering Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Resource Domain UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93DDEA08E02BD-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Domain UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Figure [ReD-01] Resource ABEs Level 1<br>
+</span><span class="ElementTitle">Diagram Figure [ReD-01] Resource ABEs Level 1<br>
+</span><span class="ElementDocumentation">The Resource Domain consists of a structured set of ABEs that are used to manage the definition, development, and operational aspects of the information computing and processing infrastructure of a system. It supports the eTOM processes that deal with the definition, development and management of the infrastructure of an enterprise. This includes the components of the infrastructure as well as Products and Services that use this infrastructure.</br>The Resource Domain has three important objectives. </br>        •	To associate Resources to Products and Services and provide a detailed enough set of Resource entities (organized as ABEs) to facilitate this association. </br>        •	To ensure that Resources can support and deliver Services offered by the enterprise. Management of resources involves planning, configuration, and monitoring to capture performance, usage, and security information. This also includes the ability to reconfigure Resources in order to fine tune performance, respond to faults, and correct operational deficiencies in the infrastructure. Resources also provide usage information which is subsequently aggregated to the customer level for billing purposes. </br>        •	To enable strategy and planning processes to be defined. Entities in the Resource domain may be associated with processes that involve planning new and/or enhanced Services, or even the retirement of Services, offered by the Enterprise.</br>The following are brief descriptions of each of these ABEs.</br></br>[] Resource Party Roles ABE</br>        •	Resource Party Roles ABE contains all PartyRoles related to the Resource Domain such as Technician, ResourceManager.</br>[] Resource Specification ABE</br>        •	The Resource Specification ABE contains entities that define the shared characteristics and behavior of each type of Resource entities. This enables multiple instances to be derived from a single specification entity. In this derivation, each instance will use the shared characteristics and behavior defined in its associated template Resource Strategy & Plan.</br>[] Resource ABE</br>        •	The Resource ABE contains entities that are used to represent the various aspects of a Resource. This includes four sets of entities that represent: the physical and logical aspects of a Resource; show how to aggregate such resources into aggregate entities that have physical and logical characteristics and behavior; and show how to represent networks, sub-networks, network components, and other related aspects of a network. </br>[] Resource Order ABE</br>        •	The Resource Order ABE contains entities related to a request to provide / update / remove Resources.</br>[] Resource Configuration ABE</br>        •	The definition of how a Resource operates or functions in terms of CharacteristicSpecification(s) and related ResourceSpec(s), as well as a representation of how a Resource operates or functions in terms of characteristics and related Resource(s). </br>[] Resource Usage ABE</br>        •	The Resource Usage ABE collects Resource consumption data, and generates Resource usage records, for use by other business entities. The entities in this ABE provide physical, logical, and network usage information.</br>[] Resource Performance ABE</br>        •	The Resource Performance ABE collects, correlates, consolidates, and validates various performance statistics and other operational characteristics of Resource entities. It provides a set of entities that can monitor and report on performance. The entities in this ABE provide physical, logical, and performance information. Each of these entities also conducts network performance assessment against planned goals, performs various aspects of trend analysis, including error rate and cause analysis and Resource degradation. Entities in this ABE also manage traffic in a Resource. This includes statistics defining Resource loading, and traffic trend analysis.</br>[] Resource Test ABE</br>        •	The Resource Test ABE contains entities that are used to test PhysicalResources, LogicalResources and CompoundResources. These entities are usually invoked during installation, as a part of trouble diagnosis or after trouble repair has been completed.</br>[] Resource Trouble ABE (not fully developed)</br>        •	The Resource Trouble ABE manages problems found in allocated resource instances, regardless of whether the problem is physical or logical. Entities in this ABE detect these problems, act to determine their root cause, resolve these problems and maintain a history of the activities involved in diagnosing and solving the problem. Detecting problems can be done via software (e.g. responding to an alarm) and/or by hardware (e.g. a measurement or probe) and/or manually (e.g. visual inspection). This includes tracking, reporting, assigning people to fix the problem, testing and verification, and overall administration of repair activities.</br>[] Resource Strategy and Plan ABE (not fully developed)</br>        •	The Resource Strategy and Plan ABE is used to plan networks and resource elements both initially and for growth. It will coordinate both logical and physical resource growth. Inputs are budgets from business sources, service forecasts, current and projected network utilization, new technologies, and retiring technologies. It handles the lifecycle (installation, modification, removal, and retirement) for both logical and physical resources.</br>[] Resource Topology ABE (not fully developed)</br>        •	The Resource Topology ABE contains entities that define physical, logical, and network topological information. This information is critical for assessing the current state of the network, as well as providing information on how to fix problems, tune performance, and in general work with the network (both as a whole and with its components). Each of these topological views provides its own physical, logical, or network related information that can be used to manage one or more layers in a layered network.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_X.uDG.cA.eHE.e.q.i.y.rU.y.cDIGBA.PNG" alt="Figure [ReD-01] Resource ABEs Level 1" usemap="#map_X.uDG.cA.eHE.e.q.i.y.rU.y.cDIGBA"></td>
+</tr>
+</table>
+<map name="map_X.uDG.cA.eHE.e.q.i.y.rU.y.cDIGBA">
+<area shape="rect" coords="16,115,148,161" href="_3E3F0EC000E942D29EE30267-content.html" alt="Resource Order ABE">
+<area shape="rect" coords="16,59,182,105" href="_8.cOA8F.b.iE.e.m.m.yNU.cH.yO.c.hQ-content.html" alt="Resource Party Roles ABE">
+<area shape="rect" coords="209,172,331,218" href="_0D.iKAFL8E.eS.r_.v9.y.r.bM0P.g-content.html" alt="Resource Test ABE">
+<area shape="rect" coords="346,172,490,218" href="_NAAF8E_.nE.d6I.mL.l24.rKBUQ-content.html" alt="Resource Trouble ABE">
+<area shape="rect" coords="359,115,493,161" href="_3E3F0EC000E9421E1C8001B3-content.html" alt="Resource Usage ABE">
+<area shape="rect" coords="159,115,342,161" href="_72Q8ALEVE.eO.zH-.sW.b.tWA.yQ-content.html" alt="Resource Configuration ABE">
+<area shape="rect" coords="203,59,379,105" href="_3E3F0EC000E93EA5CCD30232-content.html" alt="Resource Specification ABE">
+<area shape="rect" coords="16,234,210,280" href="_A.b.n.z.kG.aHE.eW.o.jY.x.lKF12.eA-content.html" alt="Resource Strategy &amp; Plan ABE">
+<area shape="rect" coords="16,172,191,218" href="_3E3F0EC000E9445AC2430167-content.html" alt="Resource Performance ABE">
+<area shape="rect" coords="228,234,383,280" href="_SV.q.pMG.aFE.eW.o.jY.x.lKF12.eA-content.html" alt="Resource Topology ABE">
+<area shape="rect" coords="402,59,495,105" href="_3E3F0EC000E9430ADC580046-content.html" alt="Resource ABE">
+<area shape="rect" coords="9,9,512,295" href="_3E3F0EC000E93DDEA08E02BD-content.html" alt="Resource Domain">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure [ReD-01] Resource ABEs Level 1</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93DDEA08E02BD-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Resource Domain UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

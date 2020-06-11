@@ -1,0 +1,88 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.16 - PhysicalPort in More Detail<br>
+</span><span class="ElementTitle">Diagram Figure PR.16 - PhysicalPort in More Detail<br>
+</span><span class="ElementDocumentation">PhysicalPorts are an important type of object to keep track of. This is where communication begins and/or ends on a PhysicalDevice. PhysicalPorts also play a prominent role in topology and FCAPS applications, and enable Service Providers to determine what Customers are running what Services where in the network. </br>A PhysicalPort represents an actual or potential end point of a topological (physical) link, and corresponds directly to a physical port on a topology map. PhysicalPorts are always contained by another physical object - they can't exist by themselves. The two most common examples are PhysicalPorts on a Card and on a Chassis. These are represented using separate aggregations, and will be described in the sections that explain Card and Chassis. The following Figure illustrates the concept of a PhysicalPort.</br>PhysicalContainer, as we will see in the next section, is the superclass for Equipment, EquipmentHolders, PhysicalComponents, and AuxiliaryComponents. Note that a PhysicalPort is not a type of PhysicalContainer. This is because a PhysicalPort contains logical components. </br>The ifType attribute is an enumerated integer, and specifies the particular media type of the link. This is closely related to the typeOfPort attribute, which is an enumerated integer that defines the particular type of PhysicalPort this instance is (e.g., Ethernet vs. ATM). The portNumber attribute is the number of this physical port as defined by the application, and the vendorPortName is a critical attribute that contains the name of the port according to the vendor. This enables an enterprise-wide naming scheme to be correlated with vendor-specific names, which are necessary for configuring the port.</br>For example, an enterprise may need to assign either special strings, or a monotonically increasing number to distinguish all of their PhysicalPorts. Or, an enterprise may want to reuse PhysicalPort numbers, so that “port 1” on any device has special significance. Both of these schemes are very common, and must be accommodated in the model.</br>However, if an enterprise chooses to use their own naming scheme, then this makes it difficult, if not impossible, to program the device. This is because a (logical) DeviceInterface is contained within a PhysicalPort. Programming a device also means programming its device interfaces.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE3A8840222.PNG" alt="Figure PR.16 - PhysicalPort in More Detail" usemap="#map_3E3F0EC000E93EE3A8840222"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE3A8840222">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB2D023A-content.html" alt="Generalization">
+<area shape="poly" coords="240,121,240,79,372,79,372,57,382,57,382,89,250,89,250,121,240,121" href="_3E3F0EC000E93CDAFB2D023A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFAD701BE-content.html" alt="Generalization">
+<area shape="poly" coords="509,121,509,89,372,89,372,57,382,57,382,79,519,79,519,121,509,121" href="_3E3F0EC000E93CDAFAD701BE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAF97003D4-content.html#_3E3F0EC000E93CDAD87C026E" alt="replaceable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAF97003D4-content.html#_3E3F0EC000E93CDAD87C026D" alt="removable">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAF97003D4-content.html#_3E3F0EC000E93CDAD87C026A" alt="hotSwappable">
+<area shape="rect" coords="434,121,595,172" href="_3E3F0EC000E93CDAF97003D4-content.html" alt="PhysicalContainer">
+<area shape="rect" coords="164,209,325,224" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B70020" alt="vendorPortName">
+<area shape="rect" coords="164,193,325,208" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001F" alt="typeOfPPort">
+<area shape="rect" coords="164,177,325,192" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001E" alt="portNumber">
+<area shape="rect" coords="164,161,325,176" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001D" alt="ifType">
+<area shape="rect" coords="164,145,325,160" href="_3E3F0EC000E93CDADAAE016F-content.html#_3E3F0EC000E93CDAF7B7001C" alt="duplexMode">
+<area shape="rect" coords="157,121,334,241" href="_3E3F0EC000E93CDADAAE016F-content.html" alt="PhysicalPort">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C026C" alt="hardwarePurpose">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0269" alt="coolingRequirements">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0268" alt="physicalAlarmStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0267" alt="physicalAlarmReportingEnabled">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0266" alt="administrativeState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAD87C0261-content.html#_3E3F0EC000E93CDAD87C0265" alt="additionalInfo">
+<area shape="rect" coords="290,9,460,60" href="_3E3F0EC000E93CDAD87C0261-content.html" alt="ManagedHardware">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.16 - PhysicalPort in More Detail</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

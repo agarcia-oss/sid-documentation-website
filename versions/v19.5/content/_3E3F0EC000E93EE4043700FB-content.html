@@ -1,0 +1,82 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.23 - AdapterRoles and HolderRoles<br>
+</span><span class="ElementTitle">Diagram Figure PR.23 - AdapterRoles and HolderRoles<br>
+</span><span class="ElementDocumentation">While this is a workable model, it still isn’t capable of modelling some important cases. For example, think of a Card that has a physical connector on it that accepts either another (daughter) Card or even a Chip (e.g., Memory, or a routing or encryption ASIC). The model shown in Figure above mandates the use of a Holder.  However, in the above example, there is no explicit EquipmentHolder – we are forced to either make a physical connector a holder, or insert an artificial holder. Both are incorrect.</br>Recall the HardwareRole from the Figure above. The purpose of the PhysicalHardwareRole class is to represent the different types of roles that various types of Hardware components can take on. For this first iteration, two specialized roles have been defined: HolderRole and AdapterRole. Their purpose is to cover situations where an Equipment also acts like an EquipmentHolder. Without these classes, such common situations are very difficult to model. We can use the PhysicalConnector class to connect appropriate Hardware entities together, which transmit signals and/or power between them. Thus, our previous model is modified as follows.</br>The HolderRole enables different types of PhysicalResources, such as a Card, to take on the role of holding other Equipment. This addresses the problem that we described above, where a Card took on the additional role of holding another Card. This enables a single managed entity, such as a NetworkCard, to have multiple roles - it can function as a Route Processor as well as a Holder of Equipment.</br>The Adapter role enables a piece of Hardware to adapt its use. For example, sometimes Cards and Chassis evolve along separate paths, causing future versions of one to no longer be physically compatible with present and/or future versions of the other. The solution to this is to use an intermediate piece of Hardware, called an Adapter, to extend the existing physical structure of an EquipmentHolder to enable otherwise incompatible Equipment to be plugged into an EquipmentHolder. The Adapter conceptually creates a new type of EquipmentHolder that fits into the existing EquipmentHolder. This enables Cards that would otherwise be physically and/or electrically incompatible with the existing EquipmentHolder to be supported, by interfacing to the old EquipmentHolder via the new Adapter. </br>The additional semantics provided by the Adapter can be captured as a second type of PhysicalResourceRole. This represents the common practice of vendors providing special adapters that enable old Equipment or EquipmentHolders to be used with new EquipmentHolders or Equipment, respectively.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE4043700FB.PNG" alt="Figure PR.23 - AdapterRoles and HolderRoles" usemap="#map_3E3F0EC000E93EE4043700FB"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE4043700FB">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFD33202AA-content.html" alt="Generalization">
+<area shape="poly" coords="423,253,423,232,341,232,341,190,350,190,350,222,432,222,432,253,423,253" href="_3E3F0EC000E93DDFD33202AA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFD32602D5-content.html" alt="Generalization">
+<area shape="poly" coords="203,252,203,222,341,222,341,190,350,190,350,232,213,232,213,252,203,252" href="_3E3F0EC000E93DDFD32602D5-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEBF3800CA-content.html" alt="Generalization">
+<area shape="poly" coords="339,126,339,108,244,108,244,63,254,63,254,98,348,98,348,126,339,126" href="_3E3F0EC000E93DDEBF3800CA-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEC0E100F3-content.html" alt="Generalization">
+<area shape="poly" coords="103,126,103,98,244,98,244,63,254,63,254,108,113,108,113,126,103,126" href="_3E3F0EC000E93DDEC0E100F3-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFD2A20004-content.html#_3E3F0EC000E93DDFD2E20395" alt="typeOfAdapterRole">
+<area shape="rect" coords="105,252,313,319" href="_3E3F0EC000E93DDFD2A20004-content.html" alt="PhysicalAdapterRole">
+<area shape="rect" coords="353,293,502,308" href="_3E3F0EC000E93DDFD2B103A9-content.html#_3E3F0EC000E93DDFD30302C0" alt="type">
+<area shape="rect" coords="346,253,511,325" href="_3E3F0EC000E93DDFD2B103A9-content.html" alt="PhysicalHolderRole">
+<area shape="rect" coords="256,126,433,193" href="_3E3F0EC000E93DDEBE440214-content.html" alt="HardwareRole">
+<area shape="rect" coords="9,126,208,193" href="_3E3F0EC000E93DDEBE7903D3-content.html" alt="PhysicalDeviceRole">
+<area shape="rect" coords="122,9,362,66" href="_3E3F0EC000E93DDEBE0A02CF-content.html" alt="PhysicalResourceRole">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.23 - AdapterRoles and HolderRoles</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

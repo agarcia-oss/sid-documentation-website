@@ -1,0 +1,149 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-08 - Conceptual PolicyRule<br>
+</span><span class="ElementTitle">Diagram Figure 1P-08 - Conceptual PolicyRule<br>
+</span><span class="ElementDocumentation">The purpose of this section is to show how the Policy model can be used to represent policy in a standard format that is independent of the content of the PolicyRule.</br>As stated previously, a PolicyRule is a triplet, containing an event clause, a condition clause, and an action clause. In addition, a PolicyRule itself has additional data and metadata that enable behavior to be associated with a PolicyRule. Conceptually, a PolicyRule can be thought of as follows:</br>In the simple representation shown in Figure 1P- 6.  A Conceptual Representation of a PolicyRule, a PolicyRule is really an intelligent data container that serves to aggregate one or more PolicyEvents, one or more PolicyConditions, and one or more PolicyActions. Note that the cardinality of the three aggregations that define the characteristics of this intelligent data container (i.e., PolicyConditionInPolicyRule, IsTriggeredBy, and PolicyActionInPolicyRule) are each 1..n on the composite side. This means that a PolicyRule must contain at least one or more PolicyConditions, PolicyEvents, and PolicyActions in order to be instantiated. Since the cardinality of these three aggregations is 0..n on the aggregate side, this means that a PolicyCondition, a PolicyEvent, and a PolicyAction can exist on their own without being bound to a PolicyRule. This enables PolicyEvents, PolicyConditions, and PolicyActions to be designed and stored in a PolicyRepository and then bound to a PolicyRule at run-time.</br>This is a very important point, as it enables the concept of reusable Policy components to be defined. This is discussed later in this Addendum in the section titled Reusable vs. Ad-Hoc Policy Entities.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93ED929140319.PNG" alt="Figure 1P-08 - Conceptual PolicyRule" usemap="#map_3E3F0EC000E93ED929140319"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93ED929140319">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F14461500AF-content.html" alt="Generalization">
+<area shape="poly" coords="441,57,441,174,431,174,431,57,441,57" href="_3E3F0EC000E93F14461500AF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F14461903E0-content.html" alt="Generalization">
+<area shape="poly" coords="555,57,555,174,545,174,545,57,555,57" href="_3E3F0EC000E93F14461903E0-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F1442FF00F9-content.html#_3E3F0EC000E93F14463A0152" alt="_policyEvent">
+<area shape="rect" coords="0,0,0,0" href="_H.a.n_8N.bWE.d-.p.vYE.q.r-ER3Q-content.html#_3E3F0EC000E93F14463A0166" alt="_policyEventComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93F1442FF00F9-content.html#_3E3F0EC000E93F14463A0152" alt="_policyEvent">
+<area shape="rect" coords="0,0,0,0" href="_H.a.n_8N.bWE.d-.p.vYE.q.r-ER3Q-content.html#_3E3F0EC000E93F14463A0166" alt="_policyEventComposite">
+<area shape="rect" coords="699,143,795,160" href="_3E3F0EC000E93F1442FF00F9-content.html#_3E3F0EC000E93F14463A0152" alt="_policyEvent">
+<area shape="rect" coords="665,148,673,165" href="_3E3F0EC000E93F1442FF00F9-content.html#_3E3F0EC000E93F14463A0152" alt="_policyEvent">
+<area shape="rect" coords="700,68,863,85" href="_H.a.n_8N.bWE.d-.p.vYE.q.r-ER3Q-content.html#_3E3F0EC000E93F14463A0166" alt="_policyEventComposite">
+<area shape="rect" coords="640,68,666,85" href="_H.a.n_8N.bWE.d-.p.vYE.q.r-ER3Q-content.html#_3E3F0EC000E93F14463A0166" alt="_policyEventComposite">
+<area shape="rect" coords="696,110,819,127" href="_3E3F0EC000E93F144639001A-content.html" alt="HasPolicyEvents">
+<area shape="poly" coords="689,57,689,174,679,174,679,57,689,57" href="_3E3F0EC000E93F144639001A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_TU0.hEN.bWE.d-.p.vYE.q.r-ER3Q-content.html" alt="Generalization">
+<area shape="poly" coords="510,227,510,304,500,304,500,227,510,227" href="_TU0.hEN.bWE.d-.p.vYE.q.r-ER3Q-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D8104A200B7" alt="_policyEventBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93D8104A200C1" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D8104A200B7" alt="_policyEventBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93D8104A200C1" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D8104A200B7" alt="_policyEventBase">
+<area shape="rect" coords="480,359,506,376" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D8104A200B7" alt="_policyEventBase">
+<area shape="rect" coords="518,434,635,451" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93D8104A200C1" alt="_policyRuleBase">
+<area shape="rect" coords="483,439,491,456" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93D8104A200C1" alt="_policyRuleBase">
+<area shape="poly" coords="507,459,507,358,516,358,516,459,507,459" href="_3E3F0EC000E93DFE696503B6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A6005D" alt="_policyEventBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A60068" alt="_policyEventBase1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A6005D" alt="_policyEventBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A60068" alt="_policyEventBase1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A6005D" alt="_policyEventBase">
+<area shape="rect" coords="374,323,382,340" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A6005D" alt="_policyEventBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A60068" alt="_policyEventBase1">
+<area shape="rect" coords="361,278,387,295" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93E5D95A60068" alt="_policyEventBase1">
+<area shape="rect" coords="168,296,307,313" href="_3E3F0EC000E93E5D95A30226-content.html" alt="ContainsEventSets">
+<area shape="poly" coords="386,309,316,309,316,345,386,345,386,355,306,355,306,299,386,299,386,309" href="_3E3F0EC000E93E5D95A30226-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="834,497,860,514" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782D2301A4" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="rect" coords="646,503,654,520" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93D782D2301AE" alt="_policyRuleBase">
+<area shape="poly" coords="633,488,866,488,866,498,633,498,633,488" href="_3E3F0EC000E93D782DB0014A-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782C25017E" alt="_policyCondition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93D782C250188" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782C25017E" alt="_policyCondition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93D782C250188" alt="_policyRuleBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782C25017E" alt="_policyCondition">
+<area shape="rect" coords="177,497,203,514" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D782C25017E" alt="_policyCondition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93D782C250188" alt="_policyRuleBase">
+<area shape="rect" coords="406,503,414,520" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93D782C250188" alt="_policyRuleBase">
+<area shape="poly" coords="430,498,171,498,171,488,430,488,430,498" href="_3E3F0EC000E93D782C53024F-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="989,438,997,455" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803B1" alt="_policyAction">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="rect" coords="865,432,891,449" href="_3E3F0EC000E93D77E58C02E2-content.html#_3E3F0EC000E93E06669803BB" alt="_policyAction1">
+<area shape="poly" coords="910,459,910,412,984,412,984,459,974,459,974,422,920,422,920,459,910,459" href="_3E3F0EC000E93E0666920069-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E0603900140" alt="_policyCondition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E060390014A" alt="_policyCondition1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E0603900140" alt="_policyCondition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E060390014A" alt="_policyCondition1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E0603900140" alt="_policyCondition">
+<area shape="rect" coords="147,438,155,455" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E0603900140" alt="_policyCondition">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E060390014A" alt="_policyCondition1">
+<area shape="rect" coords="23,432,49,449" href="_3E3F0EC000E93D77E58C0266-content.html#_3E3F0EC000E93E060390014A" alt="_policyCondition1">
+<area shape="poly" coords="59,459,59,411,142,411,142,459,132,459,132,421,69,421,69,459,59,459" href="_3E3F0EC000E93E06038C002C-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="317,198,693,213" href="_H.a.n_8N.bWE.d-.p.vYE.q.r-ER3Q-content.html#_3E3F0EC000E93DFE8F1F01FB" alt="eventSequenceNumber">
+<area shape="rect" coords="310,174,702,230" href="_H.a.n_8N.bWE.d-.p.vYE.q.r-ER3Q-content.html" alt="PolicyEvent">
+<area shape="rect" coords="505,9,717,60" href="_3E3F0EC000E93F1442FF00F9-content.html" alt="PolicyEventComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D8104040150-content.html#_3E3F0EC000E93DFE8F8B02C9" alt="hasEventEvaluated">
+<area shape="rect" coords="386,304,627,361" href="_3E3F0EC000E93D8104040150-content.html" alt="PolicyEventBase">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D78120401C2" alt="hasSubRules">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77E58C025B-content.html#_3E3F0EC000E93D77E58C025C" alt="isCNF">
+<area shape="rect" coords="430,459,635,531" href="_3E3F0EC000E93D77E58C025B-content.html" alt="PolicyRuleBase">
+<area shape="rect" coords="866,459,1023,531" href="_3E3F0EC000E93D77E58C02E2-content.html" alt="PolicyAction">
+<area shape="rect" coords="18,459,174,531" href="_3E3F0EC000E93D77E58C0266-content.html" alt="PolicyCondition">
+<area shape="rect" coords="265,9,470,60" href="_3E3F0EC000E93F1445E801E1-content.html" alt="PolicyEventAtomic">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-08 - Conceptual PolicyRule</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

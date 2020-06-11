@@ -1,0 +1,202 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure PR.06 - Our Simple Example Router - Illustrative<br>
+</span><span class="ElementTitle">Diagram Figure PR.06 - Our Simple Example Router - Illustrative<br>
+</span><span class="ElementDocumentation">Recapping, this is what we know:</br>        •	A Router is-a type of Device</br>        •	There are two types of EquipmentHolders, Slots and Chassis</br>        •	A PowerSupply is-a type of AuxiliaryComponent</br>        •	A LineCard is-a type of Card, which is-a type of Hardware (for a more concrete illustration, we are substituting different types of cards that are part of the “real” model that is being developed; a LineCard is a synonym for a NetworkCard, but the following Figure shows other types of Cards as well)</br>        •	A NetworkCard fits into a Slot of a Chassis</br>        •	A PowerSupply fits directly into the Chassis</br>The physical part of the Router consists of all of the above Equipment and EquipmentHolders</br></br>Thus, what we conceptually have is the following model of our simple Router (note that not all subclasses are shown; rather, this is a simple example to define the concepts that we have developed to date).</br><Note>Router and Switch are for illustrative purposes only. Such classes are modelled using roles, but roles haven’t been introduced to the reader yet.</Note></br><Note> Chassi and Slot inheritance relationships are for illustrative purposes only. The real inheritance will be shown later in this Addendum.</Note></br>The power of inheritance works well for us. Since PowerSupply and NetworkCard both ultimately inherit from Hardware, they also inherit the attributes and relationships that Hardware participates in. Thus, both a PowerSupply as well as a LineCard can be contained in an EquipmentHolder (not necessarily the same one) via the HoldsHardware aggregation. Similarly, both can be used to build a Router via the ConsistsOf aggregation.</br>As for the two EquipmentHolders, we’ve chosen to make them siblings. That is, they are two separate objects that are derived from a common superclass (EquipmentHolder). This is an example of the object-oriented concept of specialization. Specialization is used to take a single concept and add detail to it. The added detail is in the form of subclasses that inherit all of the attributes and relationships (and, in the System view, methods and constraints as well) of their parent superclasses, but add their own characteristics and behavior (in the form of attributes and relationships, as well as methods and constraints in the System view).</br>In this case, there is a fundamental difference between a Slot and a Chassis. However, since both of these classes are subclasses (i.e., types) of EquipmentHolder, we can simply reuse the HoldsHardware composition to enable a Chassis to contain Slots. Finally, the HoldsHardware aggregation can also be used to nest EquipmentHolders, as previously discussed.</br>We’ve also added some additional detail, showing that there are (for now) three different types of Cards – MemoryCards, NetworkCards, and SystemCards. A MemoryCard is a type of Card that is dedicated to providing additional memory for use by other components of a Resource. Such Cards can be used to expand memory, or provide different types of memory.</br>A NetworkCard is a type of Card that is dedicated to providing networking functions, such as routing and forwarding. Line cards and port adapter cards are examples of this type of card.</br>Finally, a SystemCard is a type of Card that is dedicated to providing system functions. Main processor boards and controller boards are examples of this type of Card.</br>Given this introduction, we will now introduce the concept of Roles. Roles are a fundamental means of providing an extensible model. An innovative feature is that it has physical as well as logical roles.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EE23C7600AD.PNG" alt="Figure PR.06 - Our Simple Example Router - Illustrative" usemap="#map_3E3F0EC000E93EE23C7600AD"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EE23C7600AD">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFC0F90356-content.html" alt="Generalization">
+<area shape="poly" coords="337,577,337,533,529,533,529,510,539,510,539,543,347,543,347,577,337,577" href="_3E3F0EC000E93DDFC0F90356-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFC0F50396-content.html" alt="Generalization">
+<area shape="poly" coords="492,577,492,533,529,533,529,510,539,510,539,543,502,543,502,577,492,577" href="_3E3F0EC000E93DDFC0F50396-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDFC0F200E9-content.html" alt="Generalization">
+<area shape="poly" coords="666,577,666,543,529,543,529,510,539,510,539,533,676,533,676,577,666,577" href="_3E3F0EC000E93DDFC0F200E9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE23B120169" alt="_hardware2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE23B12017D" alt="_equipmentHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE23B120169" alt="_hardware2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE23B12017D" alt="_equipmentHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE23B120169" alt="_hardware2">
+<area shape="rect" coords="533,156,541,173" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE23B120169" alt="_hardware2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE23B12017D" alt="_equipmentHolder">
+<area shape="rect" coords="771,299,797,316" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93EE23B12017D" alt="_equipmentHolder">
+<area shape="rect" coords="597,179,712,196" href="_3E3F0EC000E93EE23B10038D-content.html" alt="HoldsHardware">
+<area shape="poly" coords="754,329,754,181,508,181,508,171,764,171,764,329,754,329" href="_3E3F0EC000E93EE23B10038D-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB6030096-content.html" alt="Generalization">
+<area shape="poly" coords="448,134,448,98,275,98,275,57,284,57,284,88,458,88,458,134,448,134" href="_3E3F0EC000E93CDAB6030096-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="378,227,386,244" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAC2DD0001" alt="_hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="176,200,202,217" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAC2DD000B" alt="_physicalDevice">
+<area shape="rect" coords="192,235,386,252" href="_3E3F0EC000E93CDAC2DC00B4-content.html" alt="PhysicalDeviceConsistsOf">
+<area shape="poly" coords="179,188,179,227,399,227,399,182,409,182,409,237,169,237,169,188,179,188" href="_3E3F0EC000E93CDAC2DC00B4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE21D01018A" alt="_equipment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93EE21D01019E" alt="_equipmentHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE21D01018A" alt="_equipment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93EE21D01019E" alt="_equipmentHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE21D01018A" alt="_equipment">
+<area shape="rect" coords="606,377,614,394" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93EE21D01018A" alt="_equipment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93EE21D01019E" alt="_equipmentHolder">
+<area shape="rect" coords="703,378,729,395" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93EE21D01019E" alt="_equipmentHolder">
+<area shape="rect" coords="594,420,738,437" href="_3E3F0EC000E93EE21D0002C9-content.html" alt="EquipmentInHolder">
+<area shape="poly" coords="746,376,746,420,586,420,586,376,596,376,596,410,736,410,736,376,746,376" href="_3E3F0EC000E93EE21D0002C9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Generalization">
+<area shape="poly" coords="136,140,136,88,275,88,275,57,284,57,284,98,146,98,146,140,136,140" href="_3E3F0EC000E93CDAB5E00104-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBD790241-content.html" alt="Generalization">
+<area shape="poly" coords="541,463,541,376,551,376,551,463,541,463" href="_3E3F0EC000E93CDDBD790241-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB3830161-content.html" alt="Generalization">
+<area shape="poly" coords="359,461,359,376,369,376,369,461,359,461" href="_3E3F0EC000E93DDEB3830161-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018D" alt="width">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018C" alt="weightUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018B" alt="weight">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD018A" alt="measurementUnits">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0189" alt="height">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB5F60264-content.html#_3E3F0EC000E93CDAA4DD0188" alt="depth">
+<area shape="rect" coords="399,134,510,185" href="_3E3F0EC000E93CDAB5F60264-content.html" alt="Hardware">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D0384" alt="holderStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93CDD6593000E" alt="isSolitaryHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D037B" alt="typeOfHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_3E3F0EC000E93DDEEA8D037A" alt="acceptableEquipmentList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUK.cNXE.d.y.d.iYA.u_Q32IQ" alt="acceptableEquipmentTypeList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUL8NXE.d.y.d.iYA.u_Q32IQ" alt="asapRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUJ.sNXE.d.y.d.iYA.u_Q32IQ" alt="expectedOrInstalledEquipmentRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUIMNXE.d.y.d.iYA.u_Q32IQ" alt="isReportingAlarms">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_BZ.k.rIP.s.oE.d.y.b.z6.jV.d6YV.eQ" alt="ituArcStateAndStatusList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUM8NXE.d.y.d.iYA.u_Q32IQ" alt="manufacturer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xULMNXE.d.y.d.iYA.u_Q32IQ" alt="state">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEEA6B0245-content.html#_T_.xUI8NXE.d.y.d.iYA.u_Q32IQ" alt="type">
+<area shape="rect" coords="682,329,837,380" href="_3E3F0EC000E93DDEEA6B0245-content.html" alt="EquipmentHolder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDDB56400AB" alt="canMixPower">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5910219" alt="isComposite">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAB5A801C2" alt="deviceGroupID">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0180" alt="configurationOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0182" alt="backplaneNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAB4C90013-content.html#_3E3F0EC000E93CDAA4DD0181" alt="backplaneIndependent">
+<area shape="rect" coords="71,140,212,191" href="_3E3F0EC000E93CDAB4C90013-content.html" alt="PhysicalDevice">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_N.oSL8KCOE.d6.o1MC_.xFA.j.tA" alt="asapRef">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93CDD91A3007D" alt="redundancy">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93CDD91A3007B" alt="installedEquipmentType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93CDD91A3007A" alt="expectedEquipmentType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_3E3F0EC000E93CDD91A30081" alt="installStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e5.sNVE.d.y.d.iYA.u_Q32IQ" alt="expectedEquipmentObjectType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e6.cNVE.d.y.d.iYA.u_Q32IQ" alt="installedEquipmentObjectType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e7MNVE.d.y.d.iYA.u_Q32IQ" alt="installedPartNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e78NVE.d.y.d.iYA.u_Q32IQ" alt="installedSerialNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e8.sNVE.d.y.d.iYA.u_Q32IQ" alt="installedVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e48NVE.d.y.d.iYA.u_Q32IQ" alt="isReportingAlarms">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_B3.y.t.oP.s.nE.d.y.b.z6.jV.d6YV.eQ" alt="ituArcStateAndStatusList">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e9.cNVE.d.y.d.iYA.u_Q32IQ" alt="manufacturer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z1IP48NVE.d.y.d.iYA.u_Q32IQ" alt="protectionRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z1IP5.sNVE.d.y.d.iYA.u_Q32IQ" alt="protectionSchemeState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAFB610004-content.html#_Z0-.e4MNVE.d.y.d.iYA.u_Q32IQ" alt="resourceFulfillmentState">
+<area shape="rect" coords="510,329,623,380" href="_3E3F0EC000E93CDAFB610004-content.html" alt="Equipment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203AA" alt="chassisType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A9" alt="numberOfChassisSlots">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A8" alt="powerCordNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A7" alt="installationOrder">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD73680050-content.html#_3E3F0EC000E93CDD735203A6" alt="heatGeneration">
+<area shape="rect" coords="673,473,764,524" href="_3E3F0EC000E93CDD73680050-content.html" alt="Chassis">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD10122" alt="purposeDescription">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD10121" alt="slotPurpose">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD10120" alt="slotNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDD6D19036F-content.html#_3E3F0EC000E93CDD6CD1011F" alt="hasAdapter">
+<area shape="rect" coords="821,473,889,524" href="_3E3F0EC000E93CDD6D19036F-content.html" alt="Slot">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB288005C" alt="isRedundant">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F0324" alt="dcOutputPower">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F031A" alt="inputCurrentMin">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F0310" alt="inputCurrentMax">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F0306" alt="inputVoltageHigh">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F02FD" alt="inputVoltageLow">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F02FC" alt="isSwitching">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F02F2" alt="isAC">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F02E8" alt="acFrequencyHigh">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDEB2440375-content.html#_3E3F0EC000E93DDEB25F02DE" alt="acFrequencyLow">
+<area shape="rect" coords="301,461,428,512" href="_3E3F0EC000E93DDEB2440375-content.html" alt="PowerSupply">
+<area shape="rect" coords="610,577,735,628" href="_3E3F0EC000E93DDFC04301E2-content.html" alt="SystemCard">
+<area shape="rect" coords="436,577,567,628" href="_3E3F0EC000E93DDFC0C7008D-content.html" alt="NetworkCard">
+<area shape="rect" coords="282,577,412,628" href="_3E3F0EC000E93DDFC0D203DC-content.html" alt="MemoryCard">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA46503A4" alt="hardwareVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA46503A6" alt="uniqueRequirementsPhysical">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA46503A3" alt="slotsRequired">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA46503A2" alt="slotLayout">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA46503A1" alt="maxDataWidth">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA46503A0" alt="isUniquePhysical">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA465039E" alt="isMotherBoard">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA465039D" alt="isConfigurablePhysically">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA465039B" alt="daughterCardRequirements">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93EE9F35E0129" alt="daughterCardOperatingStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA465039C" alt="daughterCardInstallStatus">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDDBBD0013B-content.html#_3E3F0EC000E93CDDA465039A" alt="cardCompatibilityResults">
+<area shape="rect" coords="496,463,573,514" href="_3E3F0EC000E93CDDBBD0013B-content.html" alt="Card">
+<area shape="rect" coords="153,329,240,396" href="_3E3F0EC000E93EB1D5900148-content.html" alt="Switch">
+<area shape="rect" coords="9,329,97,396" href="_3E3F0EC000E93EB1D58C0139-content.html" alt="Router">
+<area shape="rect" coords="284,329,459,380" href="_3E3F0EC000E93DDEB2290290-content.html" alt="AuxiliaryComponent">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0167" alt="versionNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0163" alt="serialNumber">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0162" alt="powerState">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD0160" alt="otherIdentifier">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93CDAA53A023C-content.html#_3E3F0EC000E93CDAA4DD015E" alt="manufactureDate">
+<area shape="rect" coords="200,9,359,60" href="_3E3F0EC000E93CDAA53A023C-content.html" alt="PhysicalResource">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure PR.06 - Our Simple Example Router - Illustrative</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

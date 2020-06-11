@@ -1,0 +1,240 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Party Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E389BB6023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Party ABE::_Party Addendum Figures::Figure P.11 - Party Profile Type Entities<br>
+</span><span class="ElementTitle">Diagram Figure P.11 - Party Profile Type Entities<br>
+</span><span class="ElementDocumentation">A PartyProfileType defines the characteristics used to group Parties that typify MarketSegments and for the formulation and targeting of MarketingCampaigns.  A PartyProfileType is might be used to categorize one or more PartyRoleSpecifications. In this case, the resulting PartyProfiles categorize PartyRoles else they categorize directly one or many PartiesTypes.</br> A PartyProflieType can be defined for one or more GeographicAreas.  The profile type can target one or more ProductOfferings and one or more MarketSegments.  PartyProfileTypes can be based on (or defined by) DemographicCharacteristics.</br>The following Figure shows the entities that make up a PartyProfileType.</br>The PartyProfileTypeCharacteristic may be based on a DemographicCharacteristic or may represent another data point that is not a demographic.  For example, the number of Parties in the profile may be of interest.  For this reason, PartyProfileTypeCharacteristic and PartyProfileTypeCharacteristicValue have fully optional associations with DemographicCharacteristic and DemographicCharacteristicValue.</br>Note the n-n associations between PartyProfileType and the two entities PartyProfileTypeCharacteristic and PartyProfileTypeCharacteristicValue.  This allows the same characteristic, such as age range, income range, and so forth to be shared by many types of profiles.  The two associations are also mutually exclusive.  If a PartyProfileType includes all the values for a characteristic, then the profile is associated to the characteristic and not the values.  If a PartyProflieType includes a subset of the values for a characteristic, then the profile is associated to the values that define the profile.  For example, if the possible age ranges are under 18, 18-35, 36-54, 55-65, over 65 and a profile is looking for baby boomers in the age ranges of 55 and above, the profile would be associated with the two ranges 55-65, and over 65.  No association would be made to the characteristic.  If this is done then the profile would appear to include all age ranges, which is not correct.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E941125B19024A.PNG" alt="Figure P.11 - Party Profile Type Entities" usemap="#map_3E3F0EC000E941125B19024A"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E941125B19024A">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411CC9E803BF" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411CC9E803C9" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411CC9E803BF" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411CC9E803C9" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411CC9E803BF" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="539,431,547,448" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411CC9E803BF" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411CC9E803C9" alt="_partyProfileType">
+<area shape="rect" coords="459,322,467,339" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411CC9E803C9" alt="_partyProfileType">
+<area shape="rect" coords="437,357,968,374" href="_3E3F0EC000E9411CC9E60271-content.html" alt="PartyRoleProfileTypeDescribedByPartyProfileTypeCharacteristicValue">
+<area shape="poly" coords="445,302,445,453,574,453,574,463,435,463,435,302,445,302" href="_3E3F0EC000E9411CC9E60271-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411BBC000258" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411BBC0002B2" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411BBC000258" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411BBC0002B2" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411BBC000258" alt="_productOffering">
+<area shape="rect" coords="636,54,644,71" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411BBC000258" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411BBC0002B2" alt="_partyProfileType">
+<area shape="rect" coords="361,160,369,177" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411BBC0002B2" alt="_partyProfileType">
+<area shape="rect" coords="412,23,596,40" href="_3E3F0EC000E9411BBBFE038B-content.html" alt="PartyProfileTypeTargets">
+<area shape="poly" coords="345,185,345,43,652,43,652,53,354,53,354,185,345,185" href="_3E3F0EC000E9411BBBFE038B-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192DDA0321" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941192DDA032B" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192DDA0321" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941192DDA032B" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192DDA0321" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="1020,208,1028,225" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192DDA0321" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941192DDA032B" alt="_partyProfileType">
+<area shape="rect" coords="480,206,488,223" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941192DDA032B" alt="_partyProfileType">
+<area shape="rect" coords="523,186,979,203" href="_3E3F0EC000E941192DD90212-content.html" alt="PartyProfileTypeDescribedByPartyProfileTypeCharacteristic">
+<area shape="poly" coords="450,233,1061,233,1061,242,450,242,450,233" href="_3E3F0EC000E941192DD90212-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410EBE160332" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9410EBE160334" alt="_marketSegment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410EBE160332" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9410EBE160334" alt="_marketSegment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410EBE160332" alt="_partyProfileType">
+<area shape="rect" coords="396,306,404,323" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410EBE160332" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9410EBE160334" alt="_marketSegment">
+<area shape="rect" coords="160,653,168,670" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9410EBE160334" alt="_marketSegment">
+<area shape="rect" coords="207,641,403,658" href="_3E3F0EC000E9410EBE160115-content.html" alt="MarketSegmentProfiledBy">
+<area shape="poly" coords="156,670,412,670,412,302,422,302,422,679,156,679,156,670" href="_3E3F0EC000E9410EBE160115-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E941192C1100E9" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192C1100F3" alt="_partyRoleType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E941192C1100E9" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192C1100F3" alt="_partyRoleType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E941192C1100E9" alt="_partyProfileType">
+<area shape="rect" coords="329,315,337,332" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E941192C1100E9" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192C1100F3" alt="_partyRoleType">
+<area shape="rect" coords="213,462,221,479" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192C1100F3" alt="_partyRoleType">
+<area shape="rect" coords="169,390,405,407" href="_3E3F0EC000E941192C0F02F9-content.html" alt="PartyProfileTypeCategorizedBy">
+<area shape="poly" coords="197,451,345,451,345,302,355,302,355,461,197,461,197,451" href="_3E3F0EC000E941192C0F02F9-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E941192BD90193" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192BD901A8" alt="_geographicArea">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E941192BD90193" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192BD901A8" alt="_geographicArea">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E941192BD90193" alt="_partyProfileType">
+<area shape="rect" coords="345,304,353,321" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E941192BD90193" alt="_partyProfileType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192BD901A8" alt="_geographicArea">
+<area shape="rect" coords="171,543,179,560" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941192BD901A8" alt="_geographicArea">
+<area shape="rect" coords="164,514,359,531" href="_3E3F0EC000E941192BD80174-content.html" alt="GeographicAreaOrganizes">
+<area shape="poly" coords="154,560,363,560,363,302,373,302,373,570,154,570,154,560" href="_3E3F0EC000E941192BD80174-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E941194562036A" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E941194562036C" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E941194562036A" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E941194562036C" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E941194562036A" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="550,526,558,543" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E941194562036A" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E941194562036C" alt="_demoCharacteristicValue">
+<area shape="rect" coords="482,723,508,740" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E941194562036C" alt="_demoCharacteristicValue">
+<area shape="rect" coords="450,650,766,667" href="_3E3F0EC000E94119456200AD-content.html" alt="PartyProfileTypeCharactertisticDefinedBy">
+<area shape="poly" coords="469,750,469,508,574,508,574,518,478,518,478,750,469,750" href="_3E3F0EC000E94119456200AD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194621002B" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411946210035" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194621002B" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411946210035" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194621002B" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="900,468,908,485" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194621002B" alt="_partyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411946210035" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="1112,350,1120,367" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411946210035" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="875,433,1217,450" href="_3E3F0EC000E9411946200124-content.html" alt="PartyProfileTypeCharacteristicEnumeratedBy">
+<area shape="poly" coords="1100,337,1100,463,850,463,850,453,1090,453,1090,337,1100,337" href="_3E3F0EC000E9411946200124-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411944050238" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194405024C" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411944050238" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194405024C" alt="_productOffering">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411944050238" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="1244,76,1252,93" href="_3E3F0EC000E93C5DB96E00DD-content.html#_3E3F0EC000E9411944050238" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194405024C" alt="_productOffering">
+<area shape="rect" coords="870,72,878,89" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941194405024C" alt="_productOffering">
+<area shape="rect" coords="891,41,1218,58" href="_3E3F0EC000E94119440402EB-content.html" alt="PartyProfileTypeCharacteristicDescribedBy">
+<area shape="poly" coords="866,61,1242,61,1242,140,1232,140,1232,71,866,71,866,61" href="_3E3F0EC000E94119440402EB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E9411945280050" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9411945280064" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E9411945280050" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9411945280064" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E9411945280050" alt="_demographicCharacteristic">
+<area shape="rect" coords="1164,704,1190,721" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E9411945280050" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9411945280064" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="1172,355,1180,372" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9411945280064" alt="_partyProfileTypeCharacteristic">
+<area shape="rect" coords="984,616,1294,633" href="_3E3F0EC000E9411945260382-content.html" alt="PartyProfileTypeCharacteristicDefinedBy">
+<area shape="poly" coords="1160,337,1160,741,1150,741,1150,337,1160,337" href="_3E3F0EC000E9411945260382-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="555,750,563,767" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94119464D0331" alt="_demoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="1018,752,1026,769" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94119464D0345" alt="_demographicCharacteristic">
+<area shape="rect" coords="634,747,946,764" href="_3E3F0EC000E94119464C01EF-content.html" alt="DemographicCharacteristicEnumeratedBy">
+<area shape="poly" coords="1038,781,532,781,532,771,1038,771,1038,781" href="_3E3F0EC000E94119464C01EF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="300,273,442,288" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E94112621E014F" alt="validFor">
+<area shape="rect" coords="300,257,442,272" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E942D3CD21022A" alt="category">
+<area shape="rect" coords="300,241,442,256" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941126200008F" alt="description">
+<area shape="rect" coords="300,225,442,240" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E941126200008E" alt="name">
+<area shape="rect" coords="300,209,442,224" href="_3E3F0EC000E9410E990C035F-content.html#_3E3F0EC000E9411262000084" alt="ID">
+<area shape="rect" coords="294,185,452,305" href="_3E3F0EC000E9410E990C035F-content.html" alt="PartyProfileType">
+<area shape="rect" coords="580,567,842,582" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411A48BC01D7" alt="validFor">
+<area shape="rect" coords="580,551,842,566" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E947D033CB02DE" alt="rangeInterval">
+<area shape="rect" coords="580,535,842,550" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411A48BC01CD" alt="toValue">
+<area shape="rect" coords="580,519,842,534" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411A48BC01C4" alt="fromValue">
+<area shape="rect" coords="580,503,842,518" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E947D033CB02CE" alt="unitOfMeasure">
+<area shape="rect" coords="580,487,842,502" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E9411A48BC01C3" alt="value">
+<area shape="rect" coords="580,471,842,486" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E947D035CE0196" alt="isDefault">
+<area shape="rect" coords="580,455,842,470" href="_3E3F0EC000E9411288EA0278-content.html#_3E3F0EC000E94149D8460285" alt="valueType">
+<area shape="rect" coords="574,431,852,599" href="_3E3F0EC000E9411288EA0278-content.html" alt="PartyProfileTypeCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C5DB96E00DD-content.html#_O.tN.l8F.p.sE.e.e01.bH.lYEX1T.w" alt="isSellableStandAlone">
+<area shape="rect" coords="652,26,869,105" href="_3E3F0EC000E93C5DB96E00DD-content.html" alt="ProductOffering">
+<area shape="rect" coords="1068,308,1297,323" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E94626DE7201D4" alt="validFor">
+<area shape="rect" coords="1068,292,1297,307" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E941192FAC019C" alt="derivationFormula">
+<area shape="rect" coords="1068,276,1297,291" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E947BE530D02DE" alt="extensible">
+<area shape="rect" coords="1068,260,1297,275" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E947BE533801B5" alt="maxCardinality">
+<area shape="rect" coords="1068,244,1297,259" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E947BE533801A5" alt="minCardinality">
+<area shape="rect" coords="1068,228,1297,243" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E9443AA72E03A3" alt="valueType">
+<area shape="rect" coords="1068,212,1297,227" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E947BE530D02CE" alt="unique">
+<area shape="rect" coords="1068,196,1297,211" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E94119308E03C3" alt="description">
+<area shape="rect" coords="1068,180,1297,195" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E94119308E03B9" alt="name">
+<area shape="rect" coords="1068,164,1297,179" href="_3E3F0EC000E9411288AA0294-content.html#_3E3F0EC000E942D3CA4401DF" alt="ID">
+<area shape="rect" coords="1061,140,1306,340" href="_3E3F0EC000E9411288AA0294-content.html" alt="PartyProfileTypeCharacteristic">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410FE18A03B9" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410FDF460354" alt="subCategory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410FDF3D00E5" alt="category">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410FDF38007A" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410FDF310066" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FA9A80096-content.html#_3E3F0EC000E9410FDF25004B" alt="ID">
+<area shape="rect" coords="9,655,158,706" href="_3E3F0EC000E93C8FA9A80096-content.html" alt="MarketSegment">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AE10325" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AFA019A" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93E961AB2001A-content.html#_3E3F0EC000E93E961AF403C2" alt="name">
+<area shape="rect" coords="9,437,199,488" href="_3E3F0EC000E93E961AB2001A-content.html" alt="PartyRoleSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E93C9AA9A4011C" alt="type">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E93CB108D00368" alt="code">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C9AA98D02A0-content.html#_3E3F0EC000E93C9AA9A202F0" alt="name">
+<area shape="rect" coords="9,562,156,613" href="_3E3F0EC000E93C9AA98D02A0-content.html" alt="GeographicArea">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA222500301" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E947BE4EDF033C" alt="rangeInterval">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA222360231" alt="toValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA2222301F8" alt="fromValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E947BE4EDF032C" alt="unitOfMeasure">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E93CA2220B0370" alt="value">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E947D035C30222" alt="isDefault">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA360266-content.html#_3E3F0EC000E94149D7F002F1" alt="type">
+<area shape="rect" coords="300,750,535,832" href="_3E3F0EC000E93C8FAA360266-content.html" alt="DemoCharacteristicValue">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9443AA7BE01F2" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E941543F57019D" alt="derivationFormula">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E947D0368E03A9" alt="extensible">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94626DE180203" alt="maxCardinality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E94626DE1801C5" alt="minCardinality">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E9443AA73C000D" alt="valueType">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E947D0368E0399" alt="unique">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E93CA221CA0055" alt="description">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E941110B9300E4" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C8FAA1A00CC-content.html#_3E3F0EC000E93CA22125018E" alt="ID">
+<area shape="rect" coords="1038,741,1259,792" href="_3E3F0EC000E93C8FAA1A00CC-content.html" alt="DemographicCharacteristic">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure P.11 - Party Profile Type Entities</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E389BB6023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Party Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

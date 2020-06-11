@@ -1,0 +1,939 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Policy Variable ABE UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<meta name="description" content="Content for PolicyConditionTimePeriod">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E03C76B023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Variable ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE</span>
+<br>
+<span class="ElementTitle">Class PolicyConditionTimePeriod</span>
+<p>
+<a name="documentationSection"></a>This is a concrete class that provides the capability of enabling or disabling a PolicyCondition according to a pre-determined time schedule. This enables this class to effectively enable or disable evaluation of the entire condition clause. The simplest way to do this is to specify a value for the TimePeriod class attribute; this may of course be modified by other class attributes as necessary.</p>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3"><a name="attributeSummary">Attributes</a></td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::dayOfMonthMask" href="#_3E3F0EC000E93E04FB94027E"><img border="0" src="../images/-1444971469_icon.png" alt="dayOfMonthMask"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::dayOfMonthMask" href="#_3E3F0EC000E93E04FB94027E">dayOfMonthMask</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a string attribute that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying the days of the month when the policy is valid.</br></br>These attributes work together, with the timePeriod attribute used to specify the overall time period during which the PolicyRule might be valid, and the dayOfMonthMask attribute used to pick out the specific days of the month within that time period when the PolicyRule is valid.</br></br>This property is formatted as a fixed string of 64 bits. The first 31 bits correspond to the days of the month counting from the beginning, followed by 31 more bits identifying the days of the month counting from the end, followed by 2 bits that are always set to '0'.</br></br>For each day, the value '1' indicates that the policy is valid for that day, and the value '0' indicates that it is not valid. The value X'80 00 00 01 00 00 00 00', for example, indicates that a PolicyRule is valid on the first and last days of the month.</br></br>For months with fewer than 31 days, the digits corresponding to days that the months do not have (counting in both directions) are ignored.</br></br>The encoding of the 62 significant bits in the octet string matches that used for the schedDay object in the DISMAN-SCHEDULE-MIB.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for all days in the months specified by the timePeriod attribute.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::dayOfWeekMask" href="#_3E3F0EC000E93E04FB940286"><img border="0" src="../images/-1444971469_icon.png" alt="dayOfWeekMask"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::dayOfWeekMask" href="#_3E3F0EC000E93E04FB940286">dayOfWeekMask</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a string attribute that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying the days of the week when the PolicyRule is valid. These attributes work together, with the timePeriod attribute used to specify the overall time period when the policy might be valid, and the DayOfWeekMask used to pick out the specific days of the week in that time period when the PolicyRule is valid.</br></br>This property is formatted as a fixed length string of 8 bits. The first 7 bits identify the 7 days of the week, beginning with Sunday and ending with Saturday, followed by 1 bit that is always set to '0'. For each day of the week, the value '1' indicates that the PolicyRule is valid for that day, and the value '0' indicates that it is not valid.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for all 7 days in the weeks specified by the timePeriod attribute.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called DayOfWeekMask.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">Boolean </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::isLocalTime" href="#_3E3F0EC000E93E04FB940288"><img border="0" src="../images/-1444971469_icon.png" alt="isLocalTime"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::isLocalTime" href="#_3E3F0EC000E93E04FB940288">isLocalTime</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, signifies that the times represented in the timePeriod attribute and in the various Mask attributes represent local times. If the value of this attribute is FALSE, then this means that the times represented in the timePeriod attribute and in the various Mask attributes represent UTC times.</br></br>There is no provision for mixing of local times and UTC times: the value of this attribute applies to all of the other time-related attributes.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called LocalOrUtcTime.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::monthOfYearMask" href="#_3E3F0EC000E93E04FB94027D"><img border="0" src="../images/-1444971469_icon.png" alt="monthOfYearMask"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::monthOfYearMask" href="#_3E3F0EC000E93E04FB94027D">monthOfYearMask</a></td><td>
+<p>
+<a name="documentationSection"></a>The monthOfYearMask attribute is a string that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying the months when the policy is valid. Thus, the timePeriod attribute is used to specify the overall time period during which the policy might be valid, and the monthOfYearMask attribute is used to pick out the specific months within that time period when the PolicyRule is valid. This attribute consists of a fixed string of 16 bits. The first 12 bits correspond to the 12 months of the year, beginning with January and ending with December. The last 4 bits are always set to "0". For each month, the value "1" indicates that the policy is valid for that month, and the value "0" indicates that it is not valid.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for all twelve months.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called MonthOfYearMask.</p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::timeOfDayMask" href="#_3E3F0EC000E93E04FB940287"><img border="0" src="../images/-1444971469_icon.png" alt="timeOfDayMask"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::timeOfDayMask" href="#_3E3F0EC000E93E04FB940287">timeOfDayMask</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a string attribute that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying a range of times in a day the PolicyRule is valid for. These attributes work together, with the timePeriod attribute used to specify the overall time period that the PolicyRule is valid for, and the timeOfDayMask attribute used to pick out which range of time periods in a given day of that time period the PolicyRule is valid for.</br></br>This attribute is formatted in the style of RFC 2445: a time string beginning with the character 'T', followed by the solidus character ('/'), followed by a second time string. The first time indicates the beginning of the range, while the second time indicates the end. Times are expressed as substrings of the form "Thhmmss".</br></br>The second substring always identifies a later time than the first substring. To allow for ranges that span midnight, however, the value of the second string may be smaller than the value of the first substring. Thus, "T080000/T210000" identifies the range from 0800 until 2100, while "T210000/T080000" identifies the range from 2100 until 0800 of the following day.</br></br>When a range spans midnight, it by definition includes parts of two</br>successive days. When one of these days is also selected by either the monthOfYearMask, dayOfMonthMask, and/or dayOfWeekMask, but the other day is not, then the policy is active only during the portion of the range that falls on the selected day. For example, if the range extends from 2100 until 0800, and the day of week mask selects Monday and Tuesday, then the policy is active during the following three intervals:</br></br> From midnight Sunday until 0800 Monday;</br> From 2100 Monday until 0800 Tuesday;</br> From 2100 Tuesday until 23:59:59 Tuesday.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for the entire day, for all days specified by the timePeriod attribute.</br></p>
+</td>
+</tr>
+<tr>
+<td class="packagedElementType">String </td><td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::timePeriod" href="#_3E3F0EC000E93E04FB94027C"><img border="0" src="../images/-1444971469_icon.png" alt="timePeriod"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::timePeriod" href="#_3E3F0EC000E93E04FB94027C">timePeriod</a></td><td>
+<p>
+<a name="documentationSection"></a>This is a string attribute that defines an overall range of calendar dates and times over which a PolicyRule is valid. As such, this is the most basic way to use date and/or time to enable or disable a given PolicyRule.</br>Date/times are expressed as substrings of the form:</br>"yyyymmddThhmmss".</br></br></br>This attribute is based on time as defined in RFC 2445. This calls for a string to represent a starting date and time, in which the character 'T' indicates the beginning of the time portion, followed by the solidus character ('/'), followed by a similar string representing an end date and time. The first date indicates the beginning of the range, while the second date indicates the end. The second date and time must be later than the first.</br></br></br>For example:</br></br> 20000101T080000/20000131T120000</br></br>is interpreted as:</br> January 1, 2000, 0800 through January 31, 2000, noon</br></br>There are also two special cases in which one of the date/time strings is replaced with a special string defined in RFC 2445. </br></br> - If the first date/time is replaced with the string "THISANDPRIOR", then the property indicates that a policy rule is valid, from now until the date/time that appears after the '/'.</br></br> - If the second date/time is replaced with the string "THISANDFUTURE", then the property indicates that a policy rule becomes valid on the date/time that appears before the '/', and remains valid from that point on.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called TimePeriod.</br></p>
+</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard" href="_3E3F0EC000E93D77E58C02A1-content.html"><img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard" href="_3E3F0EC000E93D77E58C02A1-content.html">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard::allowedValueTypes" href="_3E3F0EC000E93D77E58C02A1-content.html#_3E3F0EC000E93E03EC81020D"><img border="0" src="../images/-1444971469_icon.png" alt="allowedValueTypes"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::VariableStandard::allowedValueTypes" href="_3E3F0EC000E93D77E58C02A1-content.html#_3E3F0EC000E93E03EC81020D">allowedValueTypes</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable" href="_3E3F0EC000E93D77E58C0298-content.html"><img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable" href="_3E3F0EC000E93D77E58C0298-content.html">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable</a></td>
+</tr>
+<tr>
+<td><a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyValue" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072"><img border="0" src="../images/-1444971469_icon.png" alt="_policyValue"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyValue" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D790E3B0072">_policyValue</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyOperator" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E"><img border="0" src="../images/-1444971469_icon.png" alt="_policyOperator"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyOperator" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93E039F07019E">_policyOperator</a>, <a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyStatement" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E"><img border="0" src="../images/-1444971469_icon.png" alt="_policyStatement"></a>&nbsp;<a title="SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyVariable::_policyStatement" href="_3E3F0EC000E93D77E58C0298-content.html#_3E3F0EC000E93D9F7A2D019E">_policyStatement</a></td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy">&nbsp;SID Models::Common Domain::Policy ABE::Policy Framework ABE::Policy</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-1444971469_icon.png" alt="_policyApplication">&nbsp;_policyApplication, <img border="0" src="../images/-1444971469_icon.png" alt="keywords">&nbsp;keywords, <img border="0" src="../images/-1444971469_icon.png" alt="policyName">&nbsp;policyName, <img border="0" src="../images/-1444971469_icon.png" alt="_policyRepository">&nbsp;_policyRepository, <img border="0" src="../images/-1444971469_icon.png" alt="_policyDomain">&nbsp;_policyDomain</td>
+</tr>
+</table>
+<p></p>
+<table class="SummaryTable" border="1">
+<tr>
+<td class="SummaryTitle" colspan="3">Attributes inherited from <img border="0" src="../images/-1308781703_icon.png" alt="SID Models::Common Domain::Root Business Entities ABE::RootEntity">&nbsp;SID Models::Common Domain::Root Business Entities ABE::RootEntity</td>
+</tr>
+<tr>
+<td><img border="0" src="../images/-1444971469_icon.png" alt="_rootEntityType">&nbsp;_rootEntityType, <img border="0" src="../images/-1444971469_icon.png" alt="_revenueAssuranceParmValue">&nbsp;_revenueAssuranceParmValue, <img border="0" src="../images/-1444971469_icon.png" alt="_characteristicValue">&nbsp;_characteristicValue, <img border="0" src="../images/-1444971469_icon.png" alt="name">&nbsp;name, <img border="0" src="../images/-1444971469_icon.png" alt="description">&nbsp;description, <img border="0" src="../images/-1444971469_icon.png" alt="ID">&nbsp;ID, <img border="0" src="../images/-1444971469_icon.png" alt="metric">&nbsp;metric, <img border="0" src="../images/-1444971469_icon.png" alt="_monitoredMetricInstancesCriteria">&nbsp;_monitoredMetricInstancesCriteria, <img border="0" src="../images/-1444971469_icon.png" alt="directedEdge">&nbsp;directedEdge, <img border="0" src="../images/-1444971469_icon.png" alt="vertex">&nbsp;vertex, <img border="0" src="../images/-1444971469_icon.png" alt="entityCatalogItem">&nbsp;entityCatalogItem, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityGroupMember">&nbsp;rootEntityGroupMember, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityGroup">&nbsp;rootEntityGroup, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityRelationship">&nbsp;rootEntityRelationship, <img border="0" src="../images/-1444971469_icon.png" alt="rootEntityRelationship2">&nbsp;rootEntityRelationship2, <img border="0" src="../images/-1444971469_icon.png" alt="associationRole">&nbsp;associationRole, <img border="0" src="../images/-1444971469_icon.png" alt="entitySpecificationAttachment">&nbsp;entitySpecificationAttachment, <img border="0" src="../images/-1444971469_icon.png" alt="interactionUseCase">&nbsp;interactionUseCase, <img border="0" src="../images/-1444971469_icon.png" alt="interactionResult">&nbsp;interactionResult</td>
+</tr>
+</table>
+<br>
+<a name="propertiesTable">
+<p class="LargeTitle">Properties:</p>
+</a>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Classifier Behavior</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Abstract</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Active</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">PolicyConditionTimePeriod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E03C76B023C-content.html">Policy Variable ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owned Template Signature</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E03C76B023C-content.html">Policy Variable ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Package</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E03C76B023C-content.html">Policy Variable ABE</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Representation</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+<p></p>
+<table class="DetailsTable">
+<tr>
+<td class="DetailsTitle" colspan="2"><a name="attributeDetail">Attribute Details</a></td>
+</tr>
+</table>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E04FB94027E">dayOfMonthMask</a></span>
+<pre>Public&nbsp;String dayOfMonthMask</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a string attribute that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying the days of the month when the policy is valid.</br></br>These attributes work together, with the timePeriod attribute used to specify the overall time period during which the PolicyRule might be valid, and the dayOfMonthMask attribute used to pick out the specific days of the month within that time period when the PolicyRule is valid.</br></br>This property is formatted as a fixed string of 64 bits. The first 31 bits correspond to the days of the month counting from the beginning, followed by 31 more bits identifying the days of the month counting from the end, followed by 2 bits that are always set to '0'.</br></br>For each day, the value '1' indicates that the policy is valid for that day, and the value '0' indicates that it is not valid. The value X'80 00 00 01 00 00 00 00', for example, indicates that a PolicyRule is valid on the first and last days of the month.</br></br>For months with fewer than 31 days, the digits corresponding to days that the months do not have (counting in both directions) are ignored.</br></br>The encoding of the 62 significant bits in the octet string matches that used for the schedDay object in the DISMAN-SCHEDULE-MIB.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for all days in the months specified by the timePeriod attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E04FB94027E"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">dayOfMonthMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::dayOfMonthMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E04FB940286">dayOfWeekMask</a></span>
+<pre>Public&nbsp;String dayOfWeekMask</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a string attribute that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying the days of the week when the PolicyRule is valid. These attributes work together, with the timePeriod attribute used to specify the overall time period when the policy might be valid, and the DayOfWeekMask used to pick out the specific days of the week in that time period when the PolicyRule is valid.</br></br>This property is formatted as a fixed length string of 8 bits. The first 7 bits identify the 7 days of the week, beginning with Sunday and ending with Saturday, followed by 1 bit that is always set to '0'. For each day of the week, the value '1' indicates that the PolicyRule is valid for that day, and the value '0' indicates that it is not valid.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for all 7 days in the weeks specified by the timePeriod attribute.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called DayOfWeekMask.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E04FB940286"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">dayOfWeekMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::dayOfWeekMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E04FB940288">isLocalTime</a></span>
+<pre>Public&nbsp;Boolean isLocalTime</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a Boolean attribute that, if TRUE, signifies that the times represented in the timePeriod attribute and in the various Mask attributes represent local times. If the value of this attribute is FALSE, then this means that the times represented in the timePeriod attribute and in the various Mask attributes represent UTC times.</br></br>There is no provision for mixing of local times and UTC times: the value of this attribute applies to all of the other time-related attributes.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called LocalOrUtcTime.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E04FB940288"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue">(true)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">isLocalTime</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::isLocalTime</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">Boolean</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E04FB94027D">monthOfYearMask</a></span>
+<pre>Public&nbsp;String monthOfYearMask</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>The monthOfYearMask attribute is a string that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying the months when the policy is valid. Thus, the timePeriod attribute is used to specify the overall time period during which the policy might be valid, and the monthOfYearMask attribute is used to pick out the specific months within that time period when the PolicyRule is valid. This attribute consists of a fixed string of 16 bits. The first 12 bits correspond to the 12 months of the year, beginning with January and ending with December. The last 4 bits are always set to "0". For each month, the value "1" indicates that the policy is valid for that month, and the value "0" indicates that it is not valid.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for all twelve months.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called MonthOfYearMask.</p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E04FB94027D"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">monthOfYearMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::monthOfYearMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E04FB940287">timeOfDayMask</a></span>
+<pre>Public&nbsp;String timeOfDayMask</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a string attribute that refines the definition of the valid time period that is defined by the timePeriod attribute. This is done by explicitly specifying a range of times in a day the PolicyRule is valid for. These attributes work together, with the timePeriod attribute used to specify the overall time period that the PolicyRule is valid for, and the timeOfDayMask attribute used to pick out which range of time periods in a given day of that time period the PolicyRule is valid for.</br></br>This attribute is formatted in the style of RFC 2445: a time string beginning with the character 'T', followed by the solidus character ('/'), followed by a second time string. The first time indicates the beginning of the range, while the second time indicates the end. Times are expressed as substrings of the form "Thhmmss".</br></br>The second substring always identifies a later time than the first substring. To allow for ranges that span midnight, however, the value of the second string may be smaller than the value of the first substring. Thus, "T080000/T210000" identifies the range from 0800 until 2100, while "T210000/T080000" identifies the range from 2100 until 0800 of the following day.</br></br>When a range spans midnight, it by definition includes parts of two</br>successive days. When one of these days is also selected by either the monthOfYearMask, dayOfMonthMask, and/or dayOfWeekMask, but the other day is not, then the policy is active only during the portion of the range that falls on the selected day. For example, if the range extends from 2100 until 0800, and the day of week mask selects Monday and Tuesday, then the policy is active during the following three intervals:</br></br> From midnight Sunday until 0800 Monday;</br> From 2100 Monday until 0800 Tuesday;</br> From 2100 Tuesday until 23:59:59 Tuesday.</br></br>If this attribute is not specified, then the PolicyRule is treated as valid for the entire day, for all days specified by the timePeriod attribute.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E04FB940287"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">timeOfDayMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::timeOfDayMask</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<span class="ListItem">
+<br>
+<img src="../images/-1444971469_icon.png" alt="">&nbsp;<a name="_3E3F0EC000E93E04FB94027C">timePeriod</a></span>
+<pre>Public&nbsp;String timePeriod</pre>
+<dl>
+<dd>
+<p>
+<a name="documentationSection"></a>This is a string attribute that defines an overall range of calendar dates and times over which a PolicyRule is valid. As such, this is the most basic way to use date and/or time to enable or disable a given PolicyRule.</br>Date/times are expressed as substrings of the form:</br>"yyyymmddThhmmss".</br></br></br>This attribute is based on time as defined in RFC 2445. This calls for a string to represent a starting date and time, in which the character 'T' indicates the beginning of the time portion, followed by the solidus character ('/'), followed by a similar string representing an end date and time. The first date indicates the beginning of the range, while the second date indicates the end. The second date and time must be later than the first.</br></br></br>For example:</br></br> 20000101T080000/20000131T120000</br></br>is interpreted as:</br> January 1, 2000, 0800 through January 31, 2000, noon</br></br>There are also two special cases in which one of the date/time strings is replaced with a special string defined in RFC 2445. </br></br> - If the first date/time is replaced with the string "THISANDPRIOR", then the property indicates that a policy rule is valid, from now until the date/time that appears after the '/'.</br></br> - If the second date/time is replaced with the string "THISANDFUTURE", then the property indicates that a policy rule becomes valid on the date/time that appears before the '/', and remains valid from that point on.</br></br>Notes: Not present in the ITU specs. The CIM defines a similar attribute called TimePeriod.</br></p>
+</dd>
+<dt>
+<a name="attributeConstraintsTable_3E3F0EC000E93E04FB94027C"><b>Constraints:</b></a>
+</dt>
+<dt>
+<b>Properties:</b>
+</dt>
+<dd>
+<br>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="PropertyName"><b>Aggregation</b></td><td class="PropertyValue">None</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Alias</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Association End</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Class</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Datatype</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Default Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Composite</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Derived Union</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Leaf</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Ordered</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Read Only</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Static</b></td><td class="PropertyValue">false</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Is Unique</b></td><td class="PropertyValue">true</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Keywords</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Lower Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Multiplicity</b></td><td class="PropertyValue">None (1)</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name</b></td><td class="PropertyValue">timePeriod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Name Expression</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Namespace</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Opposite</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owner</b></td><td class="PropertyValue"><a href="_3E3F0EC000E93E04FB7901BF-content.html">PolicyConditionTimePeriod</a></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Association</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Owning Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Qualified Name</b></td><td class="PropertyValue">SID Models::Common Domain::Policy ABE::Policy Structure ABE::Policy Variable ABE::PolicyConditionTimePeriod::timePeriod</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Stereotype</b></td><td class="PropertyValue">required</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Template Parameter</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Type</b></td><td class="PropertyValue">String</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper</b></td><td class="PropertyValue">1</td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Upper Value</b></td><td class="PropertyValue"></td>
+</tr>
+<tr>
+<td class="PropertyName"><b>Visibility</b></td><td class="PropertyValue">Public</td>
+</tr>
+</table>
+</dd>
+</dl>
+<hr>
+<br>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93E03C76B023C-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">Policy Variable ABE UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"><span class="BookMarkElements">Summary:</span><span class="BookMarkElements"><a href="#attributeSummary" title="Attributes">Attributes</a></span><span class="BookMarkElements"><a href="#propertiesTable" title="Properties">Properties</a></span></td><td class="BookMarkSections"><span class="BookMarkElements">Detail:</span><span class="BookMarkElements"><a href="#attributeDetail" title="Attributes">Attributes</a></span></td>
+</tr>
+</table>
+</body>
+</html>

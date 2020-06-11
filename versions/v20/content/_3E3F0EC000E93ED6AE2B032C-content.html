@@ -1,0 +1,133 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Service Spec Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_FM.aKIM8GE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Service Spec Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Service Domain::Service Specification ABE::_Service Spec Addendum Figures::Figure SO.13 - Modeling the Versioning of a ServiceSpecification<br>
+</span><span class="ElementTitle">Diagram Figure SO.13 - Modeling the Versioning of a ServiceSpecification<br>
+</span><span class="ElementDocumentation">Applications often require the ability to distinguish between different versions of objects in general. This Addendum applies this principal to ServiceSpecifications. The ServiceSpecVersion class represents a particular form or variety of a ServiceSpecification that is different from others or from the original.  The form represents differences in attributes, relationships, and/or constraints that characterize this particular ServiceSpecification, but which are not enough to warrant creating a new ServiceSpecification.</br>The CustomerFacingServiceSpecVersion and ResourceFacingServiceSpecVersion subclasses are defined to enable an application to track different versions of CustomerFacingServiceSpecs and ResourceFacingServiceSpecs independently.</br>The ServSpecModifications aggregation represents the set of versions of this ServiceSpecification. The semantics of this aggregation are implemented with the ServiceSpecVersionDetails class.</br>The two version details association classes are both derived from the ServSpecModifications aggregation. They add additional detail to the generic concept of defining a version of a ServiceSpecification.</br>The same exact principle applies to tracking different versions of the more generic ServiceSpecAtomic and ServiceSpecComposite objects. This is not shown because the focus of this Addendum is on the definition of CustomerFacingServices and ResourceFacingServices.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93ED6AE2B032C.PNG" alt="Figure SO.13 - Modeling the Versioning of a ServiceSpecification" usemap="#map_3E3F0EC000E93ED6AE2B032C"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93ED6AE2B032C">
+<area shape="rect" coords="473,522,671,538" href="_3E3F0EC000E93EACAD8102C1-content.html#_3E3F0EC000E93EACB1F4023D" alt="minVersionForUse">
+<area shape="rect" coords="473,505,671,521" href="_3E3F0EC000E93EACAD8102C1-content.html#_3E3F0EC000E93EACB1F40234" alt="preferredVersionToUse">
+<area shape="rect" coords="473,488,671,504" href="_3E3F0EC000E93EACAD8102C1-content.html#_3E3F0EC000E93EACB1F40233" alt="validFor">
+<area shape="rect" coords="466,464,680,556" href="_3E3F0EC000E93EACAD8102C1-content.html" alt="RFSSpecVersionDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93EACAD8401A2" alt="_resourceFacingServiceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC21029C-content.html#_3E3F0EC000E93EACAD8401AC" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93EACAD8401A2" alt="_resourceFacingServiceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC21029C-content.html#_3E3F0EC000E93EACAD8401AC" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93EACAD8401A2" alt="_resourceFacingServiceSpecVersion">
+<area shape="rect" coords="192,394,198,410" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93EACAD8401A2" alt="_resourceFacingServiceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC21029C-content.html#_3E3F0EC000E93EACAD8401AC" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="909,394,916,410" href="_3E3F0EC000E93EACAC21029C-content.html#_3E3F0EC000E93EACAD8401AC" alt="_resourceFacingServiceSpec">
+<area shape="poly" coords="975,324,975,427,133,427,133,324,143,324,143,417,965,417,965,324,975,324" href="_3E3F0EC000E93EACAD8102C1-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="460,183,658,199" href="_3E3F0EC000E93EACAD1800AD-content.html#_3E3F0EC000E93EACB0B202F8" alt="minVersionForUse">
+<area shape="rect" coords="460,166,658,182" href="_3E3F0EC000E93EACAD1800AD-content.html#_3E3F0EC000E93EACB0B202EF" alt="preferredVersionToUse">
+<area shape="rect" coords="460,149,658,165" href="_3E3F0EC000E93EACAD1800AD-content.html#_3E3F0EC000E93EACB0B202EE" alt="validFor">
+<area shape="rect" coords="453,124,667,216" href="_3E3F0EC000E93EACAD1800AD-content.html" alt="CFSSpecVersionDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93EACAD1A024A" alt="_customerFacingServiceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC0C03DD-content.html#_3E3F0EC000E93EACAD1A0254" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93EACAD1A024A" alt="_customerFacingServiceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC0C03DD-content.html#_3E3F0EC000E93EACAD1A0254" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93EACAD1A024A" alt="_customerFacingServiceSpecVersion">
+<area shape="rect" coords="487,214,493,230" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93EACAD1A024A" alt="_customerFacingServiceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC0C03DD-content.html#_3E3F0EC000E93EACAD1A0254" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="651,214,658,230" href="_3E3F0EC000E93EACAC0C03DD-content.html#_3E3F0EC000E93EACAD1A0254" alt="_customerFacingServiceSpec">
+<area shape="poly" coords="650,277,650,247,495,247,495,277,485,277,485,237,660,237,660,277,650,277" href="_3E3F0EC000E93EACAD1800AD-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC430287-content.html" alt="Generalization">
+<area shape="poly" coords="337,277,337,184,242,184,242,142,252,142,252,174,347,174,347,277,337,277" href="_3E3F0EC000E93EACAC430287-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EACAC4102B6-content.html" alt="Generalization">
+<area shape="poly" coords="131,277,131,174,242,174,242,142,252,142,252,184,140,184,140,277,131,277" href="_3E3F0EC000E93EACAC4102B6-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DAE3C01FF-content.html" alt="Generalization">
+<area shape="poly" coords="756,277,756,133,816,133,816,88,826,88,826,143,766,143,766,277,756,277" href="_3E3F0EC000E93D9DAE3C01FF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="914,330,940,347" href="_3E3F0EC000E93D9DADDE0194-content.html#_3E3F0EC000E93DD1D4740328" alt="_resourceFacingServiceSpec">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="708,332,716,349" href="_3E3F0EC000E93D9DADF100B9-content.html#_3E3F0EC000E93DD1D474032A" alt="_customerFacingServiceSpec">
+<area shape="rect" coords="684,392,962,409" href="_3E3F0EC000E93DD1D4720176-content.html" alt="RequiresResourceFacingServiceSpec">
+<area shape="poly" coords="742,324,742,371,903,371,903,324,913,324,913,381,732,381,732,324,742,324" href="_3E3F0EC000E93DD1D4720176-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D9DAE400164-content.html" alt="Generalization">
+<area shape="poly" coords="931,277,931,143,816,143,816,88,826,88,826,133,941,133,941,277,931,277" href="_3E3F0EC000E93D9DAE400164-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="379,76,387,93" href="_3E3F0EC000E93D5092210347-content.html#_3E3F0EC000E93DB248ED0251" alt="_serviceSpecVersion">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="699,79,707,96" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB248ED025B" alt="_serviceSpecification">
+<area shape="rect" coords="451,48,622,65" href="_3E3F0EC000E93DB248EB0118-content.html" alt="ServSpecModifications">
+<area shape="poly" coords="743,75,335,75,335,65,743,65,743,75" href="_3E3F0EC000E93DB248EB0118-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="294,277,549,328" href="_3E3F0EC000E93EACAC0C03DD-content.html" alt="CustomerFacingServiceSpecVersion">
+<area shape="rect" coords="594,277,802,328" href="_3E3F0EC000E93D9DADDE0194-content.html" alt="CustomerFacingServiceSpec">
+<area shape="rect" coords="833,277,1040,328" href="_3E3F0EC000E93D9DADF100B9-content.html" alt="ResourceFacingServiceSpec">
+<area shape="rect" coords="9,277,263,328" href="_3E3F0EC000E93EACAC21029C-content.html" alt="ResourceFacingServiceSpecVersion">
+<area shape="rect" coords="182,113,328,128" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24B2702A1" alt="validFor">
+<area shape="rect" coords="182,97,328,112" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24AD90032" alt="timestamp">
+<area shape="rect" coords="182,81,328,96" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24C6302B9" alt="semantics">
+<area shape="rect" coords="182,65,328,80" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24C2602F7" alt="reason">
+<area shape="rect" coords="182,49,328,64" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24B4E0333" alt="number">
+<area shape="rect" coords="182,33,328,48" href="_3E3F0EC000E93DB2481E005F-content.html#_3E3F0EC000E93DB24BA502D4" alt="format">
+<area shape="rect" coords="175,9,337,145" href="_3E3F0EC000E93DB2481E005F-content.html" alt="ServiceSpecVersion">
+<area shape="rect" coords="743,41,901,92" href="_3E3F0EC000E93D5092210347-content.html" alt="ServiceSpecification">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure SO.13 - Modeling the Versioning of a ServiceSpecification</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_FM.aKIM8GE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Service Spec Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

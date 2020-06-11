@@ -1,0 +1,170 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_Resource Addendum Figuers UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Resource Domain::Resource ABE::_Resource Addendum Figuers::Figure LR.64 - Interaction between PartyRole and LogicalResource<br>
+</span><span class="ElementTitle">Diagram Figure LR.64 - Interaction between PartyRole and LogicalResource<br>
+</span><span class="ElementDocumentation">A PartyRole defines the function that a Party takes on. PartyRoles can represent the ability to manage, configure, use, and perform other types of interactions with LogicalResources. A simple starting model is shown in Figure below. One can see that the Service and Resource management methods are symmetrical.</br>The OwnsResource association defines the set of Resources (PhysicalResources and/or LogicalResources) that a particular PartyRole owns. Note that this is a very different relationship than the AdministersResource association. The OwnsResource association defines the PartyRole that is the owner of the Resource. Here, “owner” is the person or group that is responsible (e.g., organizational, financial, and so forth) for the Resource. Note that the cardinality of the OwnsResource association on the PartyRole side is 1 – this means that a Resource MUST have at least one PartyRole to manage it. Furthermore, the cardinality of this association on the Resource side is 0..n, which ensures that a PartyRole doesn’t have to own a Resource.</br>The AdministersResource association defines the set of Resources (PhysicalResources and/or LogicalResources) that a particular Party, playing the role of ValueNetworkRole, administers. From a business perspective, the Owner has to either appoint or give permission to the Administrator to administer the Resource that is owned. This is done using the GrantsServiceAdminRights association. Note that a ValueNetworkRole, not just a PartyRole, is required to administer the Service. This is because a ValueNetworkRole possesses additional skills that a PartyRole doesn’t necessarily have. </br>The GrantsResourceAdminRights association defines which ValueNetworkRoles are allowed to administer a particular owned Resource. Different ValueNetworkRoles will in general have different administration rights for the same Resource. For example, different types of Administrators will in general each have the ability to make more changes than different types of Technicians.</br>Policies can be defined for controlling the specific rights of administering a Resource. This is the function of the ResourceManagementPolicy class. Since this is the business view of this relationship, only a simple single attribute is shown. </br>The ResourceManagementPolicy class defines the particular policies that are used to define how different aspects of the Resource are managed and maintained. For example, assume that a Resource is made up of several different Equipment entities. One of these Equipment entities might require multiple PartyRoles to approve changes to its configuration, whereas another Equipment entity might not require any approvals to change its configuration. Since Policy also uses the composite pattern, if a set of Policies are needed, these can be aggregated into a single Policy).</br>Note the power of this pattern – the ManagementPolicyForResource association, along with its ResourceManagementPolicy class, provide a generic template for defining which set of PartyRoles can perform which type of management function for which type of Resource. Figure 5LR-40 shows that Services and Resources can be managed using the same pattern, even though the contents of the classes will be different.</br>There is a lot more to this model; it will be further discussed in the System View.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93EAAAFFB03B1.PNG" alt="Figure LR.64 - Interaction between PartyRole and LogicalResource" usemap="#map_3E3F0EC000E93EAAAFFB03B1"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93EAAAFFB03B1">
+<area shape="rect" coords="0,0,0,0" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="569,471,569,389,419,389,419,263,429,263,429,379,578,379,578,471,569,471" href="_.n.n.f8.gC.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.mAQ48C.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Generalization">
+<area shape="poly" coords="360,471,360,379,419,379,419,263,429,263,429,389,370,389,370,471,360,471" href="_.mAQ48C.fNE.eS6.l.aW.t.p0.k.z.zQ-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.m7MPXCE.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.s.a.wPXCE.d6MA.e.iF.vB.jZX.g" alt="_ownsResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.m7MPXCE.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.s.a.wPXCE.d6MA.e.iF.vB.jZX.g" alt="_ownsResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.m7MPXCE.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="760,348,766,367" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.m7MPXCE.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.s.a.wPXCE.d6MA.e.iF.vB.jZX.g" alt="_ownsResourceDetails">
+<area shape="rect" coords="755,157,777,176" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.q.f.s.a.wPXCE.d6MA.e.iF.vB.jZX.g" alt="_ownsResourceDetails">
+<area shape="rect" coords="691,191,893,210" href="_.q.f.i.p.wPXCE.d6MA.e.iF.vB.jZX.g-content.html" alt="GrantsResourceAdminRights">
+<area shape="poly" coords="787,154,787,394,777,394,777,154,787,154" href="_.q.f.i.p.wPXCE.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="700,105,875,157" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html" alt="OwnsResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="621,253,627,272" href="_3E3F0EC000E93C2319BC02EE-content.html#_GKN2.gPXCE.d6MA.e.iF.vB.jZX.g" alt="_resource">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="496,253,504,272" href="_3E3F0EC000E93DDE851703CB-content.html#_GKTWEPXCE.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="poly" coords="474,239,541,239,650,239,650,249,541,249,474,249,474,239" href="_GKKMIPXCE.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.z.h.o.c.sPW_E.d6MA.e.iF.vB.jZX.g" alt="_resourceManagementPolicy">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EAAB1F3013F-content.html#_.z.h.u.jUPW_E.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.z.h.o.c.sPW_E.d6MA.e.iF.vB.jZX.g" alt="_resourceManagementPolicy">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EAAB1F3013F-content.html#_.z.h.u.jUPW_E.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.z.h.o.c.sPW_E.d6MA.e.iF.vB.jZX.g" alt="_resourceManagementPolicy">
+<area shape="rect" coords="746,536,752,555" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html#_.z.h.o.c.sPW_E.d6MA.e.iF.vB.jZX.g" alt="_resourceManagementPolicy">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EAAB1F3013F-content.html#_.z.h.u.jUPW_E.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="746,451,752,470" href="_3E3F0EC000E93EAAB1F3013F-content.html#_.z.h.u.jUPW_E.d6MA.e.iF.vB.jZX.g" alt="_adminsterResourceDetails">
+<area shape="rect" coords="666,494,888,513" href="_.z.h.kLQPW_E.d6MA.e.iF.vB.jZX.g-content.html" alt="ManagementPolicyForResource">
+<area shape="poly" coords="773,443,773,564,763,564,763,443,773,443" href="_.z.h.kLQPW_E.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="675,394,884,446" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html" alt="AdministerResourceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="683,273,689,292" href="_3E3F0EC000E93C2319BC02EE-content.html#_ZP3ZEPW_E.d6MA.e.iF.vB.jZX.g" alt="_resource1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="rect" coords="442,272,448,291" href="_3E3F0EC000E93DDE851703CB-content.html#_ZP84.oPW_E.d6MA.e.iF.vB.jZX.g" alt="_partyRole3">
+<area shape="poly" coords="461,263,461,313,691,313,691,268,701,268,701,323,452,323,452,263,461,263" href="_ZP.zH.oPW_E.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="67,471,231,523" href="_.aE.s.aMPW9E.d6MA.e.iF.vB.jZX.g-content.html" alt="OwnsServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.aE.y.g0PW9E.d6MA.e.iF.vB.jZX.g" alt="_service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_.aE5O.gPW9E.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.aE.y.g0PW9E.d6MA.e.iF.vB.jZX.g" alt="_service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_.aE5O.gPW9E.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_.aE.y.g0PW9E.d6MA.e.iF.vB.jZX.g" alt="_service">
+<area shape="rect" coords="193,200,199,219" href="_3E3F0EC000E93C2319BC02EE-content.html#_.aE.y.g0PW9E.d6MA.e.iF.vB.jZX.g" alt="_service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_.aE5O.gPW9E.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="rect" coords="342,251,350,270" href="_3E3F0EC000E93D50919E00E6-content.html#_.aE5O.gPW9E.d6MA.e.iF.vB.jZX.g" alt="_partyRole">
+<area shape="poly" coords="369,244,204,244,204,193,214,193,214,234,369,234,369,244" href="_.aE.s.aMPW9E.d6MA.e.iF.vB.jZX.g-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="48,31,253,82" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html" alt="AdministerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_X.b49UVLAE.d2O.x5.x.f0.v.u4.p.w" alt="_partyRole4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_X.b49U.lLAE.d2O.x5.x.f0.v.u4.p.w" alt="_service1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_X.b49UVLAE.d2O.x5.x.f0.v.u4.p.w" alt="_partyRole4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_X.b49U.lLAE.d2O.x5.x.f0.v.u4.p.w" alt="_service1">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_X.b49UVLAE.d2O.x5.x.f0.v.u4.p.w" alt="_partyRole4">
+<area shape="rect" coords="410,176,418,193" href="_3E3F0EC000E93D50919E00E6-content.html#_X.b49UVLAE.d2O.x5.x.f0.v.u4.p.w" alt="_partyRole4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_X.b49U.lLAE.d2O.x5.x.f0.v.u4.p.w" alt="_service1">
+<area shape="rect" coords="294,153,302,170" href="_3E3F0EC000E93C2319BC02EE-content.html#_X.b49U.lLAE.d2O.x5.x.f0.v.u4.p.w" alt="_service1">
+<area shape="poly" coords="256,165,430,165,430,215,421,215,421,175,256,175,256,165" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDC23CE00D3-content.html#_3E3F0EC000E93F00A55100A1" alt="_administerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A55100A3" alt="_serviceManagementPolicy">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDC23CE00D3-content.html#_3E3F0EC000E93F00A55100A1" alt="_administerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A55100A3" alt="_serviceManagementPolicy">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDC23CE00D3-content.html#_3E3F0EC000E93F00A55100A1" alt="_administerServiceDetails">
+<area shape="rect" coords="277,70,285,87" href="_3E3F0EC000E93EDC23CE00D3-content.html#_3E3F0EC000E93F00A55100A1" alt="_administerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A55100A3" alt="_serviceManagementPolicy">
+<area shape="rect" coords="519,49,527,66" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A55100A3" alt="_serviceManagementPolicy">
+<area shape="rect" coords="264,46,486,63" href="_3E3F0EC000E93F00A5500280-content.html" alt="ManagementPolicyForService">
+<area shape="poly" coords="544,48,403,48,403,67,251,67,251,57,393,57,393,38,544,38,544,48" href="_3E3F0EC000E93F00A5500280-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_.aE.s.aMPW9E.d6MA.e.iF.vB.jZX.g-content.html#_3E3F0EC000E93F00A4B3023E" alt="_administerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A4B30240" alt="_ownsServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_.aE.s.aMPW9E.d6MA.e.iF.vB.jZX.g-content.html#_3E3F0EC000E93F00A4B3023E" alt="_administerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A4B30240" alt="_ownsServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_.aE.s.aMPW9E.d6MA.e.iF.vB.jZX.g-content.html#_3E3F0EC000E93F00A4B3023E" alt="_administerServiceDetails">
+<area shape="rect" coords="107,87,115,104" href="_.aE.s.aMPW9E.d6MA.e.iF.vB.jZX.g-content.html#_3E3F0EC000E93F00A4B3023E" alt="_administerServiceDetails">
+<area shape="rect" coords="0,0,0,0" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A4B30240" alt="_ownsServiceDetails">
+<area shape="rect" coords="100,409,126,426" href="_X.b49UFLAE.d2O.x5.x.f0.v.u4.p.w-content.html#_3E3F0EC000E93F00A4B30240" alt="_ownsServiceDetails">
+<area shape="rect" coords="23,267,223,284" href="_3E3F0EC000E93F00A4B20305-content.html" alt="GrantsServiceAdminRights">
+<area shape="poly" coords="90,471,90,78,99,78,99,471,90,471" href="_3E3F0EC000E93F00A4B20305-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E946110F0800AB" alt="name">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D8A88F2007C" alt="validFor">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93C4236910017" alt="status">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93C2319BC02EE-content.html#_3E3F0EC000E93D7D6F530055" alt="ID">
+<area shape="rect" coords="369,215,476,266" href="_3E3F0EC000E93C2319BC02EE-content.html" alt="PartyRole">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93E62A81E03CE" alt="isStateful">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB20E0A020D" alt="startMode">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB20FB10355" alt="isMandatory">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB20EE901D1" alt="hasStarted">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D50919E00E6-content.html#_3E3F0EC000E93DB597CC0294" alt="isServiceEnabled">
+<area shape="rect" coords="164,145,258,196" href="_3E3F0EC000E93D50919E00E6-content.html" alt="Service">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE851703CB-content.html#_3E3F0EC000E93CDA9E0C0394" alt="usageState">
+<area shape="rect" coords="650,220,757,271" href="_3E3F0EC000E93DDE851703CB-content.html" alt="Resource">
+<area shape="rect" coords="644,588,870,603" href="_3E3F0EC000E93EAAB1F3013F-content.html#_3E3F0EC000E93EAAB25203DB" alt="resourcePolicyValidFor">
+<area shape="rect" coords="638,564,880,620" href="_3E3F0EC000E93EAAB1F3013F-content.html" alt="ResourceManagementPolicy">
+<area shape="rect" coords="551,33,767,48" href="_3E3F0EC000E93EDC23CE00D3-content.html#_3E3F0EC000E93EDC23E6004B" alt="servicePolicyValidFor">
+<area shape="rect" coords="544,9,776,65" href="_3E3F0EC000E93EDC23CE00D3-content.html" alt="ServiceManagementPolicy">
+<area shape="rect" coords="519,471,630,522" href="_3E3F0EC000E93F008E7F0264-content.html" alt="Technician">
+<area shape="rect" coords="263,471,469,538" href="_3E3F0EC000E93F008F7602AD-content.html" alt="TechnologyAdministrator">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure LR.64 - Interaction between PartyRole and LogicalResource</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_G3K.u4M8.eE.e.m.mQ.d2J0.qVR.iQ-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_Resource Addendum Figuers UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>

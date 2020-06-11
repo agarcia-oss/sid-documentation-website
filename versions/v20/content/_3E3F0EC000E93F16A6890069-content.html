@@ -1,0 +1,133 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>_ Policy Addendum Figures UML Documentation</title>
+<meta name="generator" content="IBM Rational Model Publisher">
+<link rel="stylesheet" type="text/css" href="WebPublish.css">
+</head>
+<body>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+<hr>
+<span class="PackageFullyQualifiedName">SID Models::Common Domain::Policy ABE::_ Policy Addendum Figures::Figure 1P-25 - Principal Relationships of a PolicyExecutionPoint<br>
+</span><span class="ElementTitle">Diagram Figure 1P-25 - Principal Relationships of a PolicyExecutionPoint<br>
+</span><span class="ElementDocumentation">A PolicyExecutionPoint is an entity that is used to execute a prescribed set of PolicyActions on a set of PolicyTargets. The PolicyExecutionPoint is an entity that executes a policy decision give to it by a PDP. A high-level drawing of the PXP and its important relationships is shown in Figure below.</br>The PolicyActionPerformedOn association defines the set of PolicyActions that are performed on a ManagedEntity as a part of the policy management process. The semantics of this association are implemented by the PolicyActionPerformedDetails association class (not shown in the figure). The system view of the Model defines much more detailed semantics to implement this association, such as policies that control what types of actions can be performed on which entities during what time periods. However, this is beyond the scope of this Addendum, and consequently is not shown in Figure below. </br>The EnforcesExecutionOf association defines the set of PolicyExecutionPoints whose actions are enforced by a particular PolicyEnforcementPoint.</br>In contrast to the DirectsExecution association, the cardinality of this association is 1..n on both sides. Each side is 1..n because all PolicyExecutionPoints must have at least one associated PolicyEnforcementPoint, but may have more (if, for example, different PolicyEnforcementPoints are used for different functions that are controlled in a PolicyExecutionPoint). This ensure that the PolicyActions sent by a PolicyExecutionPoint can be checked (by the PolicyEnforcementPoint). Some PolicyEnforcementPoints, however, are capable of enforcing multiple PolicyExecutionPoints, and a PolicyEnforcementPoint is only relevant if it enforces the actions of a PolicyExecutionPoint.</br>The semantics of the EnforcesExecutionOf association are implemented by the PXPEnforcementDetails association class (not shown in the figure). This association defines the set of PolicyExecutionPoints whose actions are enforced by this PolicyEnforcementPoint. However, its description is beyond the scope of this Addendum, and consequently is not shown in Figure below.</br>Note that the EnforcesExecutionOf, DirectsExecutionOf, and PolicyActionPerformedOn associations are all implemented by association classes. This is because each of these associations has rich semantics that require a class to be properly expressed.<br>
+</span>
+<br>
+<table class="ImageTable" border="1">
+<tr>
+<td><img border="0" src="../images/_3E3F0EC000E93F16A6890069.PNG" alt="Figure 1P-25 - Principal Relationships of a PolicyExecutionPoint" usemap="#map_3E3F0EC000E93F16A6890069"></td>
+</tr>
+</table>
+<map name="map_3E3F0EC000E93F16A6890069">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="544,347,570,364" href="_3E3F0EC000E93D77EE090153-content.html#_3E3F0EC000E93EDA898501C1" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="rect" coords="438,347,446,364" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA898501CB" alt="_policyDecisionPoint">
+<area shape="poly" coords="425,370,425,327,581,327,581,370,571,370,571,337,435,337,435,370,425,370" href="_3E3F0EC000E93EDA89820144-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F521B02BB-content.html" alt="Generalization">
+<area shape="poly" coords="390,370,390,238,423,238,423,207,433,207,433,248,400,248,400,370,390,370" href="_3E3F0EC000E93D7F521B02BB-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="519,427,545,444" href="_3E3F0EC000E93D77EE1201C6-content.html#_3E3F0EC000E93EDA89BE0321" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="rect" coords="148,424,174,441" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDA89BE0323" alt="_policyEnforcementPoint">
+<area shape="poly" coords="146,420,146,468,548,468,548,422,558,422,558,478,136,478,136,420,146,420" href="_3E3F0EC000E93EDA89BB00CE-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDB8AE8037A" alt="_managedEntity4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDB8AE10059-content.html#_3E3F0EC000E93EDB8AE803AC" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDB8AE8037A" alt="_managedEntity4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDB8AE10059-content.html#_3E3F0EC000E93EDB8AE803AC" alt="_policyExecutionPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDB8AE8037A" alt="_managedEntity4">
+<area shape="rect" coords="479,37,487,54" href="_3E3F0EC000E93EDA857301A5-content.html#_3E3F0EC000E93EDB8AE8037A" alt="_managedEntity4">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDB8AE10059-content.html#_3E3F0EC000E93EDB8AE803AC" alt="_policyExecutionPoint">
+<area shape="rect" coords="617,427,625,444" href="_3E3F0EC000E93EDB8AE10059-content.html#_3E3F0EC000E93EDB8AE803AC" alt="_policyExecutionPoint">
+<area shape="poly" coords="627,422,627,468,976,468,976,28,446,28,446,59,437,59,437,18,986,18,986,478,617,478,617,422,627,422" href="_3E3F0EC000E93EDB8AE10059-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93EDA86100007-content.html" alt="Generalization">
+<area shape="poly" coords="619,370,619,248,423,248,423,207,433,207,433,238,629,238,629,370,619,370" href="_3E3F0EC000E93EDA86100007-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F52170319-content.html" alt="Generalization">
+<area shape="poly" coords="132,368,132,238,423,238,423,207,433,207,433,248,141,248,141,368,132,368" href="_3E3F0EC000E93D7F52170319-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F5D4D0095-content.html" alt="Generalization">
+<area shape="poly" coords="808,368,808,248,423,248,423,207,433,207,433,238,818,238,818,368,808,368" href="_3E3F0EC000E93D7F5D4D0095-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="287,70,295,87" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDB86840397" alt="_managedEntity2">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="298,169,306,186" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93EDB868403AC" alt="_policyApplication">
+<area shape="rect" coords="77,136,252,153" href="_3E3F0EC000E93EDB868202A4-content.html" alt="PolicyAppInvolvedWith">
+<area shape="poly" coords="319,194,248,194,248,85,306,85,306,95,258,95,258,184,319,184,319,194" href="_3E3F0EC000E93EDB868202A4-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="551,147,704,165" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="551,129,704,147" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="551,111,704,129" href="_3E3F0EC000E93D77EE190131-content.html#attributeConstraintsTable_3E3F0EC000E93EDA87DA0239" alt="Constraint">
+<area shape="rect" coords="546,111,710,164" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="539,191,565,208" href="_3E3F0EC000E93D77EE190131-content.html#_3E3F0EC000E93EDA87DA0239" alt="_policyApplication">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="877,362,903,379" href="_3E3F0EC000E93D7F51F50392-content.html#_3E3F0EC000E93EDA87DA0243" alt="_policyServer">
+<area shape="rect" coords="734,193,880,210" href="_3E3F0EC000E93EDA87CC00EF-content.html" alt="ContainsPolicyApps">
+<area shape="poly" coords="883,394,916,394,916,193,532,193,532,183,926,183,926,403,883,403,883,394" href="_3E3F0EC000E93EDA87CC00EF-content.html" alt="Polyline coordinates describing hotspot on the image">
+<area shape="rect" coords="293,370,499,425" href="_3E3F0EC000E93D77EE090153-content.html" alt="PolicyDecisionPoint">
+<area shape="rect" coords="532,370,718,425" href="_3E3F0EC000E93EDA857301A5-content.html" alt="PolicyExecutionPoint">
+<area shape="rect" coords="9,368,265,423" href="_3E3F0EC000E93D77EE1201C6-content.html" alt="PolicyEnforcementPoint">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8EB0004E" alt="managementMethodSupported">
+<area shape="rect" coords="0,0,0,0" href="_3E3F0EC000E93DDE84F30225-content.html#_3E3F0EC000E93DDE8E85007E" alt="managementMethodCurrent">
+<area shape="rect" coords="306,59,481,113" href="_3E3F0EC000E93DDE84F30225-content.html" alt="ManagedEntity">
+<area shape="rect" coords="319,159,534,210" href="_3E3F0EC000E93D7F51F50392-content.html" alt="PolicyApplication">
+<area shape="rect" coords="742,368,886,422" href="_3E3F0EC000E93D77EE190131-content.html" alt="PolicyServer">
+</map>
+<p class="LargeTitle">Properties:</p>
+<table class="PropertiesTable" cellpadding="4" cellspacing="0" border="1">
+<tr>
+<td class="CategoryTitle" colspan="4">View</td>
+</tr>
+<tr>
+<td><b>Name</b></td><td>Figure 1P-25 - Principal Relationships of a PolicyExecutionPoint</td><td><b>Type</b></td><td>Class Diagram</td>
+</tr>
+</table>
+<p></p>
+<hr>
+<table class="NavigationBar">
+<tr>
+<td>
+<table class="NavBarLeft">
+<tr>
+<td class="NavBarMainLink"><a target="_top" href="../index.html">Overview</a></td><td class="NavBarMainLink"><a href="3E3F0EC000E9-top-summary.html">Top</a></td><td class="NavBarMainLink"><a href="_3E3F0EC000E93ED9292403E4-content.html">Package</a></td><td class="NavBarMainHighlight">Element</td>
+</tr>
+</table>
+</td><td class="NavBarRight">_ Policy Addendum Figures UML Documentation</td>
+</tr>
+</table>
+<table>
+<tr class="NavBarBookMarks">
+<td class="BookMarkSections"></td><td class="BookMarkSections"></td>
+</tr>
+</table>
+</body>
+</html>
